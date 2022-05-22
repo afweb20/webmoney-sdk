@@ -9,6 +9,14 @@ export default {
 
     var view = options.view;
 
+    return ml("div", { class: "n9g" }, [
+      this.generateIlliciumBlock(options),
+      this.generateTopPartFooter(options),
+      this.generateMiddlePartFooter(options),
+      this.generateBottomPartFooter(options),
+    ]);
+
+    /*
     if (view == consts.VIEW_MOBILE) {
 
       return ml("div", { "class": "n21g21 n21g21-mobile" },
@@ -46,7 +54,52 @@ export default {
 
         ])
       );
+    } */
+  },
+
+  generateIlliciumBlock: function (options) {
+
+    if (options.illiciumPlaceId != null && options.illiciumView == consts.ILLICIUM_VIEW_TOP) {
+
+      return ml("div", {"class": "n9g-bnr"}, 
+        ml("div", {"class": "n9g-ctr"},
+          ml("div", { "id": "place" + options.illiciumPlaceId, "data-role": "illicium", "data-placeid": options.illiciumPlaceId, "class": "illiciumItem n9g-ibr" })
+        )
+      );
+
     }
+
+
+  },
+
+  generateTopPartFooter: function (options) {
+
+    return ml("div", { class: "n9g-ln" }
+    );
+
+  },
+
+  generateMiddlePartFooter: function (options) {
+    
+    return ml("div", { class: "n9g-ln" }
+    );
+
+  },
+
+  generateBottomPartFooter: function (options) {
+    
+    return ml("div", { class: "n9g-btm" }, 
+      ml("div", { class: "n9g-ctr" },
+        ml("div", { class: "n9g-brw" }, [
+          ml("div", { class: "n9g-btp" }, [
+            ml("img", { class: "n9g-blg", src: require("../images/logo.svg") }),
+            this.generateLangSelector(options),
+          ]),
+          ml("div", { class: "n9g-bbp" })
+        ])
+      )
+    );
+
   },
 
   generateTopMenu: function (options) {
@@ -70,7 +123,7 @@ export default {
               ml("i", { "class": "n21g21-top-menu-icon" }),
               ml("span", {}, local(options, "menuFooterNews")),
               ml("span", { "class": "n21g21-top-menu-news-counter" },
-                ml("img", { "src": require("../images/news-count-many.png") })
+                ml("img", { "src": require("../images/old/news-count-many.png") })
               ),
             ])
         ),
@@ -108,17 +161,14 @@ export default {
         continue;
       }
 
-      htmlSelectLangs.push(ml("div", { "class": "n21g21-bottom-language-select-li" },
-        ml("a", { "class": "n21g21-bottom-language-select-a n21g21-bottom-lang-" + supportedLangs[i], "href": "#", "data-lang": supportedLangs[i] }, local(options, "langTitle_" + supportedLangs[i]))
-      ));
+      htmlSelectLangs.push(ml("a", { "class": "n9g-lgi n9g-f" + supportedLangs[i], "href": "#", "data-lang": supportedLangs[i] }, local(options, "langTitle_" + supportedLangs[i]))
+      );
     }
 
-    return ml("div", { "class": "n21g21-bottom-language-select js-lang-selector" },
-      ml("div", { "class": "n21g21-bottom-language-select-toggle", "rel": "toggle-actions" }, [
-        ml("span", { "class": "n21g21-bottom-language-selected n21g21-bottom-lang-" + options.lang }, local(options, "langTitle_" + options.lang)),
-        ml("div", { "class": "n21g21-bottom-language-select-more" },
-          ml("div", { "class": "n21g21-bottom-language-select-ul" }, htmlSelectLangs)
-        )
+    return ml("div", { "class": "n9g-lngs js-lang-selector" },
+      ml("div", { "class": "n9g-lgsl", "rel": "toggle-actions" }, [
+        ml("span", { "class": "n9g-lgc n9g-f" + options.lang }, local(options, "langTitle_" + options.lang)),
+        ml("div", { "class": "n9g-lgl" }, htmlSelectLangs)
       ])
     );
   },
@@ -143,13 +193,13 @@ export default {
 
     var view = options.view;
     
-    var vkIconUrl = require("../images/socials/gray-vk.png");
-    var facebookIconUrl = require("../images/socials/gray-facebook.png");
-    var twitterIconUrl = require("../images/socials/gray-twitter.png");
-    var odnoklassnikiIconUrl = require("../images/socials/gray-odnoklassniki.png");
-    var youtubeIconUrl = require("../images/socials/gray-youtube.png");
-    var instagramIconUrl = require("../images/socials/gray-instagram.png");
-    var telegramIconUrl = require("../images/socials/gray-telegram.png");
+    var vkIconUrl = require("../images/old/socials/gray-vk.png");
+    var facebookIconUrl = require("../images/old/socials/gray-facebook.png");
+    var twitterIconUrl = require("../images/old/socials/gray-twitter.png");
+    var odnoklassnikiIconUrl = require("../images/old/socials/gray-odnoklassniki.png");
+    var youtubeIconUrl = require("../images/old/socials/gray-youtube.png");
+    var instagramIconUrl = require("../images/old/socials/gray-instagram.png");
+    var telegramIconUrl = require("../images/old/socials/gray-telegram.png");
     var showFacebookIcon = false;
     
     if (options.domainType == consts.DOMAIN_TYPE_MONEY || options.lang == consts.LANG_EN) {
@@ -158,13 +208,13 @@ export default {
 
     if (view == consts.VIEW_MOBILE) {
 
-      vkIconUrl = require("../images/socials/white-vk.png");
-      facebookIconUrl = require("../images/socials/white-facebook.png");
-      twitterIconUrl = require("../images/socials/white-twitter.png");
-      odnoklassnikiIconUrl = require("../images/socials/white-odnoklassniki.png");
-      youtubeIconUrl = require("../images/socials/white-youtube.png");
-      instagramIconUrl = require("../images/socials/white-instagram.png");
-      telegramIconUrl = require("../images/socials/white-telegram.png");
+      vkIconUrl = require("../images/old/socials/white-vk.png");
+      facebookIconUrl = require("../images/old/socials/white-facebook.png");
+      twitterIconUrl = require("../images/old/socials/white-twitter.png");
+      odnoklassnikiIconUrl = require("../images/old/socials/white-odnoklassniki.png");
+      youtubeIconUrl = require("../images/old/socials/white-youtube.png");
+      instagramIconUrl = require("../images/old/socials/white-instagram.png");
+      telegramIconUrl = require("../images/old/socials/white-telegram.png");
     }
 
     return ml("div", { "class": "n21g21-bottom-right-socials" }, [ 
@@ -193,19 +243,19 @@ export default {
     return ml("div", { "class": "n21g21-bottom-right-apps" }, [
       ml("a", { "class": "n21g21-bottom-right-apps-title", "href": appUrl }, local(options, "menuFooterOurApps") + ":"),
       ml("a", { "href": "https://winpro.web.money/", "target": "_blank", "class": "n21g21-bottom-right-apps-link", "title": "MS Windows", "rel": "noopener noreferrer" },
-        ml("img", { "src": require("../images/windows.png") })
+        ml("img", { "src": require("../images/old/windows.png") })
       ),
       ml("a", { "href": "https://play.google.com/store/apps/details?id=com.webmoney.my", "target": "_blank", "title": "Google Android", "class": "n21g21-bottom-right-apps-link", "rel": "noopener noreferrer" },
-        ml("img", { "src": require("../images/android.png") })
+        ml("img", { "src": require("../images/old/android.png") })
       ),
       ml("a", { "href": "https://itunes.apple.com/us/app/my-webmoney/id524382727", "target": "_blank", "title": "Apple iOS", "class": "n21g21-bottom-right-apps-link", "rel": "noopener noreferrer" },
-        ml("img", { "src": require("../images/apple-ios.png") })
+        ml("img", { "src": require("../images/old/apple-ios.png") })
       ),
       ml("a", { "href": "https://itunes.apple.com/ru/app/my-webmoney/id807337125?l=ru&amp;ls=1&amp;mt=12", "target": "_blank", "title": "Apple MacOS X", "class": "n21g21-bottom-right-apps-link", "rel": "noopener noreferrer" },
-        ml("img", { "src": require("../images/max-os-x-new.png") })
+        ml("img", { "src": require("../images/old/max-os-x-new.png") })
       ),
       ml("a", { "href": "https://www.microsoft.com/store/apps/9NQ5N286PQC0", "target": "_blank", "class": "n21g21-bottom-right-apps-link", "title": "Windows Phone", "rel": "noopener noreferrer" },
-        ml("img", { "src": require("../images/windows-phone-new.png") })
+        ml("img", { "src": require("../images/old/windows-phone-new.png") })
       )
     ])
 
