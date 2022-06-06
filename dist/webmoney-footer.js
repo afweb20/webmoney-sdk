@@ -8898,8 +8898,14 @@ __webpack_require__.r(__webpack_exports__);
   },
   generateMiddlePartFooter: function generateMiddlePartFooter(options) {
     return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      class: "n9g-ln"
-    });
+      class: "n9g-mdl"
+    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-ctr"
+    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-lnf"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-ll"
+    }), this.generateMiddlePartSocials(options)])));
   },
   generateBottomPartFooter: function generateBottomPartFooter(options) {
     var supportedLangs = options.supportedLangs;
@@ -9003,22 +9009,22 @@ __webpack_require__.r(__webpack_exports__);
       "href": supportUrl
     }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterSupport"))]);
   },
-  generateBottomRightSocials: function generateBottomRightSocials(options) {
+  generateMiddlePartSocials: function generateMiddlePartSocials(options) {
     var view = options.view;
 
-    var vkIconUrl = __webpack_require__(/*! ../images/old/socials/gray-vk.png */ "./src/webMoneyFooter/images/old/socials/gray-vk.png");
+    var vkIconUrl = __webpack_require__(/*! ../images/socials/vk.svg */ "./src/webMoneyFooter/images/socials/vk.svg");
 
     var facebookIconUrl = __webpack_require__(/*! ../images/old/socials/gray-facebook.png */ "./src/webMoneyFooter/images/old/socials/gray-facebook.png");
 
-    var twitterIconUrl = __webpack_require__(/*! ../images/old/socials/gray-twitter.png */ "./src/webMoneyFooter/images/old/socials/gray-twitter.png");
+    var twitterIconUrl = __webpack_require__(/*! ../images/socials/tw.svg */ "./src/webMoneyFooter/images/socials/tw.svg");
 
-    var odnoklassnikiIconUrl = __webpack_require__(/*! ../images/old/socials/gray-odnoklassniki.png */ "./src/webMoneyFooter/images/old/socials/gray-odnoklassniki.png");
+    var odnoklassnikiIconUrl = __webpack_require__(/*! ../images/socials/od.svg */ "./src/webMoneyFooter/images/socials/od.svg");
 
-    var youtubeIconUrl = __webpack_require__(/*! ../images/old/socials/gray-youtube.png */ "./src/webMoneyFooter/images/old/socials/gray-youtube.png");
+    var youtubeIconUrl = __webpack_require__(/*! ../images/socials/yt.svg */ "./src/webMoneyFooter/images/socials/yt.svg");
 
     var instagramIconUrl = __webpack_require__(/*! ../images/old/socials/gray-instagram.png */ "./src/webMoneyFooter/images/old/socials/gray-instagram.png");
 
-    var telegramIconUrl = __webpack_require__(/*! ../images/old/socials/gray-telegram.png */ "./src/webMoneyFooter/images/old/socials/gray-telegram.png");
+    var telegramIconUrl = __webpack_require__(/*! ../images/socials/tg.svg */ "./src/webMoneyFooter/images/socials/tg.svg");
 
     var showFacebookIcon = false;
 
@@ -9026,66 +9032,51 @@ __webpack_require__.r(__webpack_exports__);
       showFacebookIcon = true;
     }
 
-    if (view == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].VIEW_MOBILE) {
-      vkIconUrl = __webpack_require__(/*! ../images/old/socials/white-vk.png */ "./src/webMoneyFooter/images/old/socials/white-vk.png");
-      facebookIconUrl = __webpack_require__(/*! ../images/old/socials/white-facebook.png */ "./src/webMoneyFooter/images/old/socials/white-facebook.png");
-      twitterIconUrl = __webpack_require__(/*! ../images/old/socials/white-twitter.png */ "./src/webMoneyFooter/images/old/socials/white-twitter.png");
-      odnoklassnikiIconUrl = __webpack_require__(/*! ../images/old/socials/white-odnoklassniki.png */ "./src/webMoneyFooter/images/old/socials/white-odnoklassniki.png");
-      youtubeIconUrl = __webpack_require__(/*! ../images/old/socials/white-youtube.png */ "./src/webMoneyFooter/images/old/socials/white-youtube.png");
-      instagramIconUrl = __webpack_require__(/*! ../images/old/socials/white-instagram.png */ "./src/webMoneyFooter/images/old/socials/white-instagram.png");
-      telegramIconUrl = __webpack_require__(/*! ../images/old/socials/white-telegram.png */ "./src/webMoneyFooter/images/old/socials/white-telegram.png");
-    }
-
     return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-bottom-right-socials"
+      "class": "n9g-lr"
     }, [options.lang == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_RU ? (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": "n21g21-bottom-right-social",
+      "class": "n9g-lrl n9g-lrl--vk",
       "target": "_blank",
       "rel": "noopener noreferrer",
       "href": _consts__WEBPACK_IMPORTED_MODULE_0__["default"].VKONTAKTE_URL[options.lang]
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
+      "class": "n9g-lri",
       "src": vkIconUrl
-    })) : "", showFacebookIcon ? (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": "n21g21-bottom-right-social",
-      "target": "_blank",
-      "rel": "noopener noreferrer",
-      "href": _consts__WEBPACK_IMPORTED_MODULE_0__["default"].FACEBOOK_URL[options.lang]
-    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      "src": facebookIconUrl
-    })) : "", (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": "n21g21-bottom-right-social",
+    })) : "", // showFacebookIcon ? ml("a", { "class": "n21g21-bottom-right-social", "target": "_blank", "rel": "noopener noreferrer", "href": consts.FACEBOOK_URL[options.lang] },
+    //   ml("img", { "src": facebookIconUrl })) : "",
+    (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-lrl n9g-lrl--tw",
       "target": "_blank",
       "rel": "noopener noreferrer",
       "href": _consts__WEBPACK_IMPORTED_MODULE_0__["default"].TWITTER_URL[options.lang]
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
+      "class": "n9g-lri",
       "src": twitterIconUrl
     })), options.lang == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_RU ? (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": "n21g21-bottom-right-social",
+      "class": "n9g-lrl n9g-lrl--od",
       "target": "_blank",
       "rel": "noopener noreferrer",
       "href": _consts__WEBPACK_IMPORTED_MODULE_0__["default"].ODNOKLASSNIKI_URL[options.lang]
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
+      "class": "n9g-lri",
       "src": odnoklassnikiIconUrl
     })) : "", options.lang == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_RU ? (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": "n21g21-bottom-right-social",
+      "class": "n9g-lrl n9g-lrl--yt",
       "target": "_blank",
       "rel": "noopener noreferrer",
       "href": _consts__WEBPACK_IMPORTED_MODULE_0__["default"].YOUTUBE_URL[options.lang]
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
+      "class": "n9g-lri",
       "src": youtubeIconUrl
-    })) : "", options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_MONEY ? (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": "n21g21-bottom-right-social",
-      "target": "_blank",
-      "rel": "noopener noreferrer",
-      "href": _consts__WEBPACK_IMPORTED_MODULE_0__["default"].INSTAGRAM_URL[options.lang]
-    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      "src": instagramIconUrl
-    })) : "", options.lang == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_RU ? (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": "n21g21-bottom-right-social",
+    })) : "", // options.domainType == consts.DOMAIN_TYPE_MONEY ? ml("a", { "class": "n21g21-bottom-right-social", "target": "_blank", "rel": "noopener noreferrer", "href": consts.INSTAGRAM_URL[options.lang] },
+    //   ml("img", { "src": instagramIconUrl })) : "",
+    options.lang == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_RU ? (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-lrl n9g-lrl--tg",
       "target": "_blank",
       "rel": "noopener noreferrer",
       "href": _consts__WEBPACK_IMPORTED_MODULE_0__["default"].TELEGRAM_URL[options.lang]
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
+      "class": "n9g-lri",
       "src": telegramIconUrl
     })) : ""]);
   },
@@ -10675,138 +10666,6 @@ module.exports = __webpack_require__.p + "451690effde6d45427fc.png";
 
 /***/ }),
 
-/***/ "./src/webMoneyFooter/images/old/socials/gray-odnoklassniki.png":
-/*!**********************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/gray-odnoklassniki.png ***!
-  \**********************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "0aec9f78d4bafa1314ea.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/socials/gray-telegram.png":
-/*!*****************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/gray-telegram.png ***!
-  \*****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "4dfcb5724d6f0fab9de6.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/socials/gray-twitter.png":
-/*!****************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/gray-twitter.png ***!
-  \****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "4013c1616c61597d48f7.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/socials/gray-vk.png":
-/*!***********************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/gray-vk.png ***!
-  \***********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "f8cfde4dff2ed49dd838.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/socials/gray-youtube.png":
-/*!****************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/gray-youtube.png ***!
-  \****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "cdb051add72b14173d42.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/socials/white-facebook.png":
-/*!******************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/white-facebook.png ***!
-  \******************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "450f0a4962f1367373ee.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/socials/white-instagram.png":
-/*!*******************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/white-instagram.png ***!
-  \*******************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "0fa9f5605559f3a993d5.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/socials/white-odnoklassniki.png":
-/*!***********************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/white-odnoklassniki.png ***!
-  \***********************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "93da0ef8b0ee8637b4ca.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/socials/white-telegram.png":
-/*!******************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/white-telegram.png ***!
-  \******************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "5726fd7532164dd57d5e.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/socials/white-twitter.png":
-/*!*****************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/white-twitter.png ***!
-  \*****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "ee8df88a85987ae1743a.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/socials/white-vk.png":
-/*!************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/white-vk.png ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "db6303e2532e6857a9c1.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/socials/white-youtube.png":
-/*!*****************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/socials/white-youtube.png ***!
-  \*****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "d7666f83c03f4d320fb0.png";
-
-/***/ }),
-
 /***/ "./src/webMoneyFooter/images/old/windows-phone-new.png":
 /*!*************************************************************!*\
   !*** ./src/webMoneyFooter/images/old/windows-phone-new.png ***!
@@ -10826,6 +10685,61 @@ module.exports = __webpack_require__.p + "205fffd1848bd54d761c.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "79491899e8e23a465ed0.png";
+
+/***/ }),
+
+/***/ "./src/webMoneyFooter/images/socials/od.svg":
+/*!**************************************************!*\
+  !*** ./src/webMoneyFooter/images/socials/od.svg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "b1438de59e003caa039c.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyFooter/images/socials/tg.svg":
+/*!**************************************************!*\
+  !*** ./src/webMoneyFooter/images/socials/tg.svg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "ce95aab2966f7e9b6325.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyFooter/images/socials/tw.svg":
+/*!**************************************************!*\
+  !*** ./src/webMoneyFooter/images/socials/tw.svg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "30df8923c0d29f15b0e8.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyFooter/images/socials/vk.svg":
+/*!**************************************************!*\
+  !*** ./src/webMoneyFooter/images/socials/vk.svg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "11ecf5435c4366d5693f.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyFooter/images/socials/yt.svg":
+/*!**************************************************!*\
+  !*** ./src/webMoneyFooter/images/socials/yt.svg ***!
+  \**************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "be782360e9be361b6cc2.svg";
 
 /***/ })
 
@@ -10914,7 +10828,7 @@ module.exports = __webpack_require__.p + "79491899e8e23a465ed0.png";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "b64832a562dd392214a4"; }
+/******/ 		__webpack_require__.h = function() { return "7ca066a6ddf2f3e9fdfc"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
