@@ -8840,42 +8840,6 @@ __webpack_require__.r(__webpack_exports__);
     return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
       class: "n9g"
     }, [this.generateIlliciumBlock(options), this.generateTopPartFooter(options), this.generateMiddlePartFooter(options), this.generateBottomPartFooter(options)]);
-    /*
-    if (view == consts.VIEW_MOBILE) {
-        return ml("div", { "class": "n21g21 n21g21-mobile" },
-        ml("div", { "class": "n21g21-wrapper" }, [
-          this.generateMobileBlockEvents(options),
-          this.generateMobileBlockNews(options),
-          ml("div", { "class": "n21g21-footer-menu" }),
-          this.generateBottomRightSocials(options),
-          this.generateMobileLinksAndApp(options),
-          this.generateMobileCopyright(options)
-        ])
-      );
-    } else {
-        return ml("div", { "class": "n21g21" },
-        ml("div", { "class": "n21g21-wrapper" }, [
-          
-          options.illiciumPlaceId != null && options.illiciumView == consts.ILLICIUM_VIEW_TOP
-          ? ml("div", { "id": "place" + options.illiciumPlaceId, "data-role": "illicium", "data-placeid": options.illiciumPlaceId, "class": "illiciumItem n21g21-bottom-illicium-top" })
-          : "",
-          
-          options.fastMenu == consts.FASTMENU_VISIBLE ? this.generateTopMenu(options) : "",
-          ml("div", { "class": "n21g21-bottom" }, [
-            this.generateBottomLeftText(options),
-            ml("div", { "class": "n21g21-bottom-right" }, [
-              this.generateBottomRightLinks(options),
-              this.generateBottomRightSocials(options),
-              this.generateBottomRightApps(options)
-            ])
-          ]),
-          
-          options.illiciumPlaceId != null && options.illiciumView == consts.ILLICIUM_VIEW_BOTTOM
-          ? ml("div", { "id": "place" + options.illiciumPlaceId, "data-role": "illicium", "data-placeid": options.illiciumPlaceId, "class": "illiciumItem n21g21-bottom-illicium-bottom" })
-          : ""
-          ])
-      );
-    } */
   },
   generateIlliciumBlock: function generateIlliciumBlock(options) {
     if (options.illiciumPlaceId != null && options.illiciumView == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].ILLICIUM_VIEW_TOP) {
@@ -8909,28 +8873,16 @@ __webpack_require__.r(__webpack_exports__);
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
       "class": "n9g-lll",
       "href": eventsUrl
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("i", {
-      "class": "n21g21-top-menu-icon"
-    }), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {}, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterBusinessNetwork"))]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterBusinessNetwork")), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
       "class": "n9g-lll",
       "href": developersUrl
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("i", {
-      "class": "n21g21-top-menu-icon"
-    }), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {}, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterDevelopers"))]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterDevelopers")), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
       "class": "n9g-lll",
       "href": newsUrl
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("i", {
-      "class": "n21g21-top-menu-icon"
-    }), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {}, "Wiki")]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+    }, "Wiki"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
       "class": "n9g-lll",
       "href": newsUrl
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("i", {
-      "class": "n21g21-top-menu-icon"
-    }), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {}, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterNews")), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      "class": "n21g21-top-menu-news-counter"
-    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      "src": __webpack_require__(/*! ../images/old/news-count-many.png */ "./src/webMoneyFooter/images/old/news-count-many.png")
-    }))])]);
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterNews"))]);
   },
   generateTopPartSocials: function generateTopPartSocials(options) {
     var view = options.view;
@@ -9005,8 +8957,18 @@ __webpack_require__.r(__webpack_exports__);
   },
   generateMiddlePartFooter: function generateMiddlePartFooter(options) {
     return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      class: "n9g-ln"
-    });
+      class: "n9g-mdl"
+    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-ctr"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-rw"
+    }, ""), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-rw"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-cln"
+    }, ""), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-cln"
+    }, ""), this.generateMiddlePartApps(options)])]));
   },
   generateBottomPartFooter: function generateBottomPartFooter(options) {
     var supportedLangs = options.supportedLangs;
@@ -9077,54 +9039,69 @@ __webpack_require__.r(__webpack_exports__);
       "href": supportUrl
     }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterSupport"))]);
   },
-  generateBottomRightApps: function generateBottomRightApps(options) {
+  generateMiddlePartApps: function generateMiddlePartApps(options) {
     var appUrl = this.getAppUrl(options);
     return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-bottom-right-apps"
+      "class": "n9g-cln n9g-cln--x2"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-mtl"
+    }, "Приложения для смартфонов"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-aps"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": "n21g21-bottom-right-apps-title",
-      "href": appUrl
-    }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterOurApps") + ":"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "href": "https://winpro.web.money/",
-      "target": "_blank",
-      "class": "n21g21-bottom-right-apps-link",
-      "title": "MS Windows",
-      "rel": "noopener noreferrer"
+      class: "n9g-ait",
+      href: "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-aim"
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      "src": __webpack_require__(/*! ../images/old/windows.png */ "./src/webMoneyFooter/images/old/windows.png")
-    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "href": "https://play.google.com/store/apps/details?id=com.webmoney.my",
-      "target": "_blank",
-      "title": "Google Android",
-      "class": "n21g21-bottom-right-apps-link",
-      "rel": "noopener noreferrer"
+      class: "n9g-aig",
+      src: __webpack_require__(/*! ../images/apps/app-store.svg */ "./src/webMoneyFooter/images/apps/app-store.svg")
+    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-atx"
+    }, "App Store")]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      class: "n9g-ait",
+      href: "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-aim"
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      "src": __webpack_require__(/*! ../images/old/android.png */ "./src/webMoneyFooter/images/old/android.png")
-    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "href": "https://itunes.apple.com/us/app/my-webmoney/id524382727",
-      "target": "_blank",
-      "title": "Apple iOS",
-      "class": "n21g21-bottom-right-apps-link",
-      "rel": "noopener noreferrer"
+      class: "n9g-aig",
+      src: __webpack_require__(/*! ../images/apps/google-play.svg */ "./src/webMoneyFooter/images/apps/google-play.svg")
+    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-atx"
+    }, "Google Play")]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      class: "n9g-ait",
+      href: "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-aim"
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      "src": __webpack_require__(/*! ../images/old/apple-ios.png */ "./src/webMoneyFooter/images/old/apple-ios.png")
-    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "href": "https://itunes.apple.com/ru/app/my-webmoney/id807337125?l=ru&amp;ls=1&amp;mt=12",
-      "target": "_blank",
-      "title": "Apple MacOS X",
-      "class": "n21g21-bottom-right-apps-link",
-      "rel": "noopener noreferrer"
+      class: "n9g-aig",
+      src: __webpack_require__(/*! ../images/apps/windows-store.svg */ "./src/webMoneyFooter/images/apps/windows-store.svg")
+    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-atx"
+    }, "Microsoft Store")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-mtl"
+    }, "Приложения для ПК"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-aps"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      class: "n9g-ait",
+      href: "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-aim"
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      "src": __webpack_require__(/*! ../images/old/max-os-x-new.png */ "./src/webMoneyFooter/images/old/max-os-x-new.png")
-    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "href": "https://www.microsoft.com/store/apps/9NQ5N286PQC0",
-      "target": "_blank",
-      "class": "n21g21-bottom-right-apps-link",
-      "title": "Windows Phone",
-      "rel": "noopener noreferrer"
+      class: "n9g-aig",
+      src: __webpack_require__(/*! ../images/apps/windows.svg */ "./src/webMoneyFooter/images/apps/windows.svg")
+    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-atx"
+    }, "Windows")]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      class: "n9g-ait",
+      href: "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-aim"
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      "src": __webpack_require__(/*! ../images/old/windows-phone-new.png */ "./src/webMoneyFooter/images/old/windows-phone-new.png")
-    }))]);
+      class: "n9g-aig",
+      src: __webpack_require__(/*! ../images/apps/os-x.svg */ "./src/webMoneyFooter/images/apps/os-x.svg")
+    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-atx"
+    }, "Mac OS")])])]);
   },
   generateMobileBlockEvents: function generateMobileBlockEvents(options) {
     var eventsUrl = this.getEventsUrl(options);
@@ -10564,6 +10541,61 @@ module.exports = __webpack_require__.p + "45721b3429a1fa90f750.woff2";
 
 /***/ }),
 
+/***/ "./src/webMoneyFooter/images/apps/app-store.svg":
+/*!******************************************************!*\
+  !*** ./src/webMoneyFooter/images/apps/app-store.svg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "e00d9fabc49dc32edce8.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyFooter/images/apps/google-play.svg":
+/*!********************************************************!*\
+  !*** ./src/webMoneyFooter/images/apps/google-play.svg ***!
+  \********************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "81afd1f6c7bf04561db0.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyFooter/images/apps/os-x.svg":
+/*!*************************************************!*\
+  !*** ./src/webMoneyFooter/images/apps/os-x.svg ***!
+  \*************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "8fcb237aacf3732cf9b2.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyFooter/images/apps/windows-store.svg":
+/*!**********************************************************!*\
+  !*** ./src/webMoneyFooter/images/apps/windows-store.svg ***!
+  \**********************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "7615cdb91ac9662e2cdd.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyFooter/images/apps/windows.svg":
+/*!****************************************************!*\
+  !*** ./src/webMoneyFooter/images/apps/windows.svg ***!
+  \****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "a7742a8e414550662f63.svg";
+
+/***/ }),
+
 /***/ "./src/webMoneyFooter/images/arrow-down.svg":
 /*!**************************************************!*\
   !*** ./src/webMoneyFooter/images/arrow-down.svg ***!
@@ -10597,50 +10629,6 @@ module.exports = __webpack_require__.p + "dc873ed6601bcb256b44.svg";
 
 /***/ }),
 
-/***/ "./src/webMoneyFooter/images/old/android.png":
-/*!***************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/android.png ***!
-  \***************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "94060f01fa4c4b0418aa.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/apple-ios.png":
-/*!*****************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/apple-ios.png ***!
-  \*****************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "30b5fb9f3d2a824f985b.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/max-os-x-new.png":
-/*!********************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/max-os-x-new.png ***!
-  \********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "5d9da7f43abbe27710ad.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/news-count-many.png":
-/*!***********************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/news-count-many.png ***!
-  \***********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "220440d72c47530d3d33.png";
-
-/***/ }),
-
 /***/ "./src/webMoneyFooter/images/old/socials/gray-facebook.png":
 /*!*****************************************************************!*\
   !*** ./src/webMoneyFooter/images/old/socials/gray-facebook.png ***!
@@ -10660,28 +10648,6 @@ module.exports = __webpack_require__.p + "657725d0f23127922155.png";
 
 "use strict";
 module.exports = __webpack_require__.p + "451690effde6d45427fc.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/windows-phone-new.png":
-/*!*************************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/windows-phone-new.png ***!
-  \*************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "205fffd1848bd54d761c.png";
-
-/***/ }),
-
-/***/ "./src/webMoneyFooter/images/old/windows.png":
-/*!***************************************************!*\
-  !*** ./src/webMoneyFooter/images/old/windows.png ***!
-  \***************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-module.exports = __webpack_require__.p + "79491899e8e23a465ed0.png";
 
 /***/ }),
 
@@ -10825,7 +10791,7 @@ module.exports = __webpack_require__.p + "be782360e9be361b6cc2.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "112d77622e96a586be0c"; }
+/******/ 		__webpack_require__.h = function() { return "75d22914943e47c9c532"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
