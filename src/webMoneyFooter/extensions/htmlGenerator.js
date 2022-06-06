@@ -87,13 +87,15 @@ export default {
   },
 
   generateBottomPartFooter: function (options) {
+
+    var supportedLangs = options.supportedLangs;
     
     return ml("div", { class: "n9g-btm" }, 
       ml("div", { class: "n9g-ctr" },
         ml("div", { class: "n9g-brw" }, [
           ml("div", { class: "n9g-btp" }, [
             ml("img", { class: "n9g-blg", src: require("../images/logo.svg") }),
-            this.generateLangSelector(options),
+            supportedLangs.length > 1 ? this.generateLangSelector(options) : ""
           ]),
           ml("div", { class: "n9g-bbp" }, [
             ml("div", { class: "n9g-cprt"}, "Copyright WebMoney © 1998 - " + new Date().getFullYear() + "."),
@@ -138,18 +140,6 @@ export default {
             ])
         )
       ]);
-  },
-
-  generateBottomLeftText: function (options) {
-
-    var supportedLangs = options.supportedLangs;
-
-    return ml("div", { "class": "n21g21-bottom-left" }, [
-      ml("div", { "class": "n21g21-bottom-copyright-text" }, local(options, "menuFooterCopyrightText")),
-      ml("div", { "class": "n21g21-bottom-copyright-text" }, "Copyright WebMoney © 1998 - " + new Date().getFullYear() + "."),
-      supportedLangs.length > 1 ? this.generateLangSelector(options) : ""
-    ]);
-
   },
 
   generateLangSelector: function (options) {

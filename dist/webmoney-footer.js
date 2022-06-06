@@ -8902,6 +8902,7 @@ __webpack_require__.r(__webpack_exports__);
     });
   },
   generateBottomPartFooter: function generateBottomPartFooter(options) {
+    var supportedLangs = options.supportedLangs;
     return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
       class: "n9g-btm"
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
@@ -8913,7 +8914,7 @@ __webpack_require__.r(__webpack_exports__);
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
       class: "n9g-blg",
       src: __webpack_require__(/*! ../images/logo.svg */ "./src/webMoneyFooter/images/logo.svg")
-    }), this.generateLangSelector(options)]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+    }), supportedLangs.length > 1 ? this.generateLangSelector(options) : ""]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
       class: "n9g-bbp"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
       class: "n9g-cprt"
@@ -8953,16 +8954,6 @@ __webpack_require__.r(__webpack_exports__);
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("i", {
       "class": "n21g21-top-menu-icon"
     }), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {}, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterDevelopers"))]))]);
-  },
-  generateBottomLeftText: function generateBottomLeftText(options) {
-    var supportedLangs = options.supportedLangs;
-    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-bottom-left"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-bottom-copyright-text"
-    }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterCopyrightText")), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-bottom-copyright-text"
-    }, "Copyright WebMoney © 1998 - " + new Date().getFullYear() + "."), supportedLangs.length > 1 ? this.generateLangSelector(options) : ""]);
   },
   generateLangSelector: function generateLangSelector(options) {
     var supportedLangs = options.supportedLangs;
@@ -10923,7 +10914,7 @@ module.exports = __webpack_require__.p + "79491899e8e23a465ed0.png";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "d97584c119e9dcd60c66"; }
+/******/ 		__webpack_require__.h = function() { return "b64832a562dd392214a4"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
