@@ -95,7 +95,10 @@ export default {
             ml("img", { class: "n9g-blg", src: require("../images/logo.svg") }),
             this.generateLangSelector(options),
           ]),
-          ml("div", { class: "n9g-bbp" })
+          ml("div", { class: "n9g-bbp" }, [
+            ml("div", { class: "n9g-cprt"}, "Copyright WebMoney © 1998 - " + new Date().getFullYear() + "."),
+            ml("div", { class: "n9g-ctx"}, local(options, "menuFooterCopyrightText")),
+          ])
         ])
       )
     );
