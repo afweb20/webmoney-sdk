@@ -5,7 +5,7 @@ export default {
   init: function (options) {
 
     if (options.illiciumPlaceId == null
-      || options.view != consts.VIEW_DESKTOP) {
+      || options.view != consts.VIEW_ADAPTIVE) {
       return;
     }
 

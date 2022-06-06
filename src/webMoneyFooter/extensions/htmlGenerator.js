@@ -73,21 +73,91 @@ export default {
   },
 
   generateTopPartFooter: function (options) {
-
-    return ml("div", { class: "n9g-ln" }
+    
+    return ml("div", { class: "n9g-ln" },
+      ml("div", { class: "n9g-ctr" }, 
+        ml("div", { class: "n9g-lnf" }, [
+          this.generateTopPartLinks(options),
+          this.generateTopPartSocials(options)
+        ])
+      )
     );
 
   },
 
-  generateMiddlePartFooter: function (options) {
+  generateTopPartLinks: function (options) {
+
+    var eventsUrl = this.getEventsUrl(options);
+    var newsUrl = this.getNewsUrl(options);
+    var developersUrl = this.getDevelopersUrl(options);
+
+    return ml("div", { "class": "n9g-ll" },
+      [
+        ml("a", { "class": "n9g-lll", "href": eventsUrl },
+          [
+            ml("i", { "class": "n21g21-top-menu-icon" }),
+            ml("span", {}, local(options, "menuFooterBusinessNetwork"))
+          ]),
+        ml("a", { "class": "n9g-lll", "href": developersUrl },
+          [
+            ml("i", { "class": "n21g21-top-menu-icon" }),
+            ml("span", {}, local(options, "menuFooterDevelopers"))
+          ]),
+        ml("a", { "class": "n9g-lll", "href": newsUrl },
+          [
+            ml("i", { "class": "n21g21-top-menu-icon" }),
+            ml("span", {}, "Wiki")
+          ]),
+        ml("a", { "class": "n9g-lll", "href": newsUrl },
+          [
+            ml("i", { "class": "n21g21-top-menu-icon" }),
+            ml("span", {}, local(options, "menuFooterNews")),
+            ml("span", { "class": "n21g21-top-menu-news-counter" },
+              ml("img", { "src": require("../images/old/news-count-many.png") })
+            ),
+          ])
+      ]);
+  },
+  
+  generateTopPartSocials: function (options) {
+
+    var view = options.view;
     
-    return ml("div", { class: "n9g-mdl" },
-      ml("div", { class: "n9g-ctr" }, 
-        ml("div", { class: "n9g-lnf" }, [
-          ml("div", { class: "n9g-ll" }),
-          this.generateMiddlePartSocials(options)
-        ])
-      )
+    var vkIconUrl = require("../images/socials/vk.svg");
+    var facebookIconUrl = require("../images/old/socials/gray-facebook.png");
+    var twitterIconUrl = require("../images/socials/tw.svg");
+    var odnoklassnikiIconUrl = require("../images/socials/od.svg");
+    var youtubeIconUrl = require("../images/socials/yt.svg");
+    var instagramIconUrl = require("../images/old/socials/gray-instagram.png");
+    var telegramIconUrl = require("../images/socials/tg.svg");
+    var showFacebookIcon = false;
+    
+    if (options.domainType == consts.DOMAIN_TYPE_MONEY || options.lang == consts.LANG_EN) {
+      showFacebookIcon = true;
+    }
+
+    return ml("div", { "class": "n9g-lr" }, [ 
+      options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--vk", "target": "_blank", "rel": "noopener noreferrer", "href": consts.VKONTAKTE_URL[options.lang] },
+        ml("img", { "class": "n9g-lri", "src": vkIconUrl })) : "",
+      // showFacebookIcon ? ml("a", { "class": "n21g21-bottom-right-social", "target": "_blank", "rel": "noopener noreferrer", "href": consts.FACEBOOK_URL[options.lang] },
+      //   ml("img", { "src": facebookIconUrl })) : "",
+      ml("a", { "class": "n9g-lrl n9g-lrl--tw", "target": "_blank", "rel": "noopener noreferrer", "href": consts.TWITTER_URL[options.lang] },
+        ml("img", { "class": "n9g-lri", "src": twitterIconUrl })),
+      options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--od", "target": "_blank", "rel": "noopener noreferrer", "href": consts.ODNOKLASSNIKI_URL[options.lang] },
+        ml("img", { "class": "n9g-lri", "src": odnoklassnikiIconUrl })) : "",
+      options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--yt", "target": "_blank", "rel": "noopener noreferrer", "href": consts.YOUTUBE_URL[options.lang] },
+        ml("img", { "class": "n9g-lri", "src": youtubeIconUrl })) : "",
+      // options.domainType == consts.DOMAIN_TYPE_MONEY ? ml("a", { "class": "n21g21-bottom-right-social", "target": "_blank", "rel": "noopener noreferrer", "href": consts.INSTAGRAM_URL[options.lang] },
+      //   ml("img", { "src": instagramIconUrl })) : "",
+      options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--tg", "target": "_blank", "rel": "noopener noreferrer", "href": consts.TELEGRAM_URL[options.lang] },
+        ml("img", { "class": "n9g-lri", "src": telegramIconUrl })) : ""
+    ])
+
+  },
+
+  generateMiddlePartFooter: function (options) {
+
+    return ml("div", { class: "n9g-ln" }
     );
 
   },
@@ -111,41 +181,6 @@ export default {
       )
     );
 
-  },
-
-  generateTopMenu: function (options) {
-
-    var eventsUrl = this.getEventsUrl(options);
-    var newsUrl = this.getNewsUrl(options);
-    var developersUrl = this.getDevelopersUrl(options);
-
-    return ml("div", { "class": "n21g21-top" },
-      [
-        ml("div", { "class": "n21g21-top-menu n21g21-top-menu-events" },
-          ml("a", { "class": "n21g21-top-menu-link", "href": eventsUrl },
-            [
-              ml("i", { "class": "n21g21-top-menu-icon" }),
-              ml("span", {}, local(options, "menuFooterBusinessNetwork"))
-            ])
-        ),
-        ml("div", { "class": "n21g21-top-menu n21g21-top-menu-news" },
-          ml("a", { "class": "n21g21-top-menu-link", "href": newsUrl },
-            [
-              ml("i", { "class": "n21g21-top-menu-icon" }),
-              ml("span", {}, local(options, "menuFooterNews")),
-              ml("span", { "class": "n21g21-top-menu-news-counter" },
-                ml("img", { "src": require("../images/old/news-count-many.png") })
-              ),
-            ])
-        ),
-        ml("div", { "class": "n21g21-top-menu n21g21-top-menu-developers" },
-          ml("a", { "class": "n21g21-top-menu-link", "href": developersUrl },
-            [
-              ml("i", { "class": "n21g21-top-menu-icon" }),
-              ml("span", {}, local(options, "menuFooterDevelopers"))
-            ])
-        )
-      ]);
   },
 
   generateLangSelector: function (options) {
@@ -188,41 +223,6 @@ export default {
 
   },
 
-  generateMiddlePartSocials: function (options) {
-
-    var view = options.view;
-    
-    var vkIconUrl = require("../images/socials/vk.svg");
-    var facebookIconUrl = require("../images/old/socials/gray-facebook.png");
-    var twitterIconUrl = require("../images/socials/tw.svg");
-    var odnoklassnikiIconUrl = require("../images/socials/od.svg");
-    var youtubeIconUrl = require("../images/socials/yt.svg");
-    var instagramIconUrl = require("../images/old/socials/gray-instagram.png");
-    var telegramIconUrl = require("../images/socials/tg.svg");
-    var showFacebookIcon = false;
-    
-    if (options.domainType == consts.DOMAIN_TYPE_MONEY || options.lang == consts.LANG_EN) {
-      showFacebookIcon = true;
-    }
-
-    return ml("div", { "class": "n9g-lr" }, [ 
-      options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--vk", "target": "_blank", "rel": "noopener noreferrer", "href": consts.VKONTAKTE_URL[options.lang] },
-        ml("img", { "class": "n9g-lri", "src": vkIconUrl })) : "",
-      // showFacebookIcon ? ml("a", { "class": "n21g21-bottom-right-social", "target": "_blank", "rel": "noopener noreferrer", "href": consts.FACEBOOK_URL[options.lang] },
-      //   ml("img", { "src": facebookIconUrl })) : "",
-      ml("a", { "class": "n9g-lrl n9g-lrl--tw", "target": "_blank", "rel": "noopener noreferrer", "href": consts.TWITTER_URL[options.lang] },
-        ml("img", { "class": "n9g-lri", "src": twitterIconUrl })),
-      options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--od", "target": "_blank", "rel": "noopener noreferrer", "href": consts.ODNOKLASSNIKI_URL[options.lang] },
-        ml("img", { "class": "n9g-lri", "src": odnoklassnikiIconUrl })) : "",
-      options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--yt", "target": "_blank", "rel": "noopener noreferrer", "href": consts.YOUTUBE_URL[options.lang] },
-        ml("img", { "class": "n9g-lri", "src": youtubeIconUrl })) : "",
-      // options.domainType == consts.DOMAIN_TYPE_MONEY ? ml("a", { "class": "n21g21-bottom-right-social", "target": "_blank", "rel": "noopener noreferrer", "href": consts.INSTAGRAM_URL[options.lang] },
-      //   ml("img", { "src": instagramIconUrl })) : "",
-      options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--tg", "target": "_blank", "rel": "noopener noreferrer", "href": consts.TELEGRAM_URL[options.lang] },
-        ml("img", { "class": "n9g-lri", "src": telegramIconUrl })) : ""
-    ])
-
-  },
 
   generateBottomRightApps: function (options) {
 
