@@ -10009,7 +10009,7 @@ if (typeof WebMoneyNavbar != "undefined") {
     view: view,
     primaryColor: "#e59733",
     design: "default",
-    desktopIconUrl: "https://passport.web.money/img/services/logo-passport.png",
+    desktopIconUrl: "https://passport.web.money/img/key_w.png",
     mobileIconUrl: "https://passport.web.money/img/key_w.png",
     firstLevel: [{
       title: "Паспорт",
@@ -10141,15 +10141,16 @@ if (typeof WebMoneyNavbar != "undefined") {
     rootElement: document.getElementById("webMoneyNavbar5"),
     view: view,
     primaryColor: "#637eea",
+    desktopIconUrl: "https://wmf.wmtransfer.com/img/Ethereum.png?v=1",
     design: "default",
     firstLevel: [{
       title: "WMF",
       url: "#",
-      active: true,
       desktopIconUrl: "https://wmf.wmtransfer.com/img/Ethereum.png?v=1",
       mobileIconUrl: "https://wmf.wmtransfer.com/img/EthCW1.png?v=1"
     }, {
       title: "WMX (Bitcoin)",
+      active: true,
       url: "#",
       desktopIconUrl: "https://wmx.wmtransfer.com/assets/themes/wmx/wm2/img/wmx/wallet.png",
       mobileIconUrl: "https://wmx.wmtransfer.com/assets/themes/wmx/wm2/img/wmx/wallet.png"
@@ -10289,7 +10290,7 @@ if (typeof WebMoneyFooter != "undefined") {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "2349046e94d68dee3f51"; }
+/******/ 		__webpack_require__.h = function() { return "a850de1e00e0efc06f13"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
