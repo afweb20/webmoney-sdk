@@ -72,30 +72,33 @@ export default {
     
     var view = options.view;
     var primaryColor = options.primaryColor;
-    var viewPrefix = ".n30g30:not(.n30g30-mobile)";
-    if (view == consts.VIEW_MOBILE) {
-      viewPrefix = ".n30g30.n30g30-mobile";
-    }
-    var dynamicPrefix = viewPrefix + "[data-dynamic-class='n30g30-" + options.dynamicUniqueKey + "']";
+    // var viewPrefix = ".n8g";
+    // if (view == consts.VIEW_MOBILE) {
+    //   viewPrefix = ".n30g30.n30g30-mobile";
+    // }
+    var dynamicPrefix = ".n8g[data-dynamic-class='n8g-" + options.dynamicUniqueKey + "']";
 
     var styleContent = "";
+
+    styleContent += dynamicPrefix + " .n8g-mcn {background-color: " + primaryColor + "}";
+    styleContent += dynamicPrefix + " .n8g-mnl.is-activated {background-color: " + primaryColor + "}";
     
-    if (view == consts.VIEW_MOBILE) {
+    // if (view == consts.VIEW_MOBILE) {
 
-      styleContent += dynamicPrefix + " .n30g30-first-level-button {background-color: " + primaryColor + "}";
-      styleContent += dynamicPrefix + " .n30g30-second-level-item.is-activated {color: " + primaryColor + "; border-color: " + primaryColor + "}";
-      styleContent += dynamicPrefix + " .n30g30-second-level-item.is-activated:hover {color: " + primaryColor + "; border-color: " + primaryColor + "}";
-    } else {
+    //   styleContent += dynamicPrefix + " .n30g30-first-level-button {background-color: " + primaryColor + "}";
+    //   styleContent += dynamicPrefix + " .n30g30-second-level-item.is-activated {color: " + primaryColor + "; border-color: " + primaryColor + "}";
+    //   styleContent += dynamicPrefix + " .n30g30-second-level-item.is-activated:hover {color: " + primaryColor + "; border-color: " + primaryColor + "}";
+    // } else {
 
-      styleContent += dynamicPrefix + " .n30g30-first-level-item:hover {color: " + primaryColor + "}";
-      styleContent += dynamicPrefix + " .n30g30-first-level-item:not(.is-first-element).is-activated {color: " + primaryColor + "}";
-      styleContent += dynamicPrefix + " .n30g30-second-level-item:not(.is-activated):hover {color: " + primaryColor + "}";
-      styleContent += dynamicPrefix + " .n30g30-second-level-item.is-activated {background-color: " + primaryColor + "}";
+    //   styleContent += dynamicPrefix + " .n30g30-first-level-item:hover {color: " + primaryColor + "}";
+    //   styleContent += dynamicPrefix + " .n30g30-first-level-item:not(.is-first-element).is-activated {color: " + primaryColor + "}";
+    //   styleContent += dynamicPrefix + " .n30g30-second-level-item:not(.is-activated):hover {color: " + primaryColor + "}";
+    //   styleContent += dynamicPrefix + " .n30g30-second-level-item.is-activated {background-color: " + primaryColor + "}";
      
-      if (options.design == consts.DESIGN_WM_MAIN) {
-        styleContent += dynamicPrefix + " .n30g30-first-level-item-image-wrapper {background-color: " + primaryColor + "}";
-      }
-    }
+    //   if (options.design == consts.DESIGN_WM_MAIN) {
+    //     styleContent += dynamicPrefix + " .n30g30-first-level-item-image-wrapper {background-color: " + primaryColor + "}";
+    //   }
+    // }
 
     var styleElement = document.createElement("style");
     styleElement.innerHTML = styleContent;

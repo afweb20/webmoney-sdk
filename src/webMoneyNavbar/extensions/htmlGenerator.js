@@ -5,6 +5,14 @@ export default {
 
   generate: function (options) {
 
+    var dynCls = "n8g-" + options.dynamicUniqueKey;
+
+    return ml("div", { "class": "n8g", "data-dynamic-class": dynCls }, [
+      this.generateFirstLevelMenuButton(options),
+      this.generateFirstLevelMenu(options),
+      this.generateSecondLevelMenu(options)
+    ]);
+
     var view = options.view;
     var designClass = "n30g30-design--" + options.design;
     var dynamicClass = "n30g30-" + options.dynamicUniqueKey;
@@ -38,6 +46,34 @@ export default {
     }
   },
 
+  generateFirstLevelMenuButton: function (options) {
+
+
+  },
+
+  generateFirstLevelMenu: function (options) {
+
+    var desktopIconUrl = options.desktopIconUrl;
+
+    return ml("div", { "class": "n8g-ftl" }, 
+      ml("div", { "class": "n8g-ctr" }, 
+        ml("div", { "class": "n8g-mfbx" }, [
+          ml("div", { "class": "n8g-mcn" }, 
+            desktopIconUrl != null
+            ? ml("img", { "class": "n8g-icn", "src": desktopIconUrl })
+            : "",
+          ),
+          ml("div", { "class": "n8g-mnu" }, this.generateFirstLevel(options))
+        ]) 
+      )
+    );
+
+  },
+
+  generateSecondLevelMenu: function (options) {
+
+  },
+
   generateFirstLevelButton: function (options) {
 
     var firstLevel = options.firstLevel;
@@ -59,7 +95,6 @@ export default {
   generateFirstLevel: function (options) {
 
     var view = options.view;
-    var desktopIconUrl = options.desktopIconUrl;
     var firstLevel = options.firstLevel;
 
     var firstLevelMenuArray = [];
@@ -72,9 +107,10 @@ export default {
 
       var title = firstLevel[i].title;
       var url = firstLevel[i].url;
+      var desktopIconUrl = firstLevel[i].desktopIconUrl;
       var active = firstLevel[i].active;
 
-      var dynamicClass = "n30g30-first-level-item";
+      var dynamicClass = "n8g-mnl";
       if (active) {
         dynamicClass += " is-activated";
       }
@@ -83,14 +119,14 @@ export default {
       }
 
       firstLevelMenuArray.push(ml("a", { "href": url, "class": dynamicClass },
-        i == 0 && desktopIconUrl != null
-        ? [
-          ml("span", { "class": "n30g30-first-level-item-image-wrapper" },
-            ml("img", { "class": "n30g30-first-level-item-image", "src": desktopIconUrl })
-          ),
-          ml("span", { "class": "n30g30-first-level-item-text" }, title)
+        [
+          desktopIconUrl != null
+          ? ml("span", { "class": "n8g-miw" }, ml("img", { "class": "n8g-mim", "src": desktopIconUrl }))
+          : "",
+          ml("span", { "class": "n8g-mnt" }, title)
         ]
-        : ml("span", { "class": "n30g30-first-level-item-text" }, title)));
+      ));
+
     }
 
     return firstLevelMenuArray;

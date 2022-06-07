@@ -25,9 +25,10 @@ export default function WebMoneyNavbar() {
     var view = this.tryParseView(options);
     var design = this.tryParseDesign(options);
     var primaryColor = this.tryParsePrimaryColor(options);
+    // todo: убрать поддержку легаси входных параметров
     var desktopIconUrl = options.desktopIconUrl == "" || options.desktopIconUrl == null ? null : options.desktopIconUrl;
     var mobileIconUrl = options.mobileIconUrl == "" || options.mobileIconUrl == null ? null : options.mobileIconUrl;
-    var firstLevel = this.tryParseFirstLevel(options);
+    var firstLevel = this.tryParseFirstLevel(options, desktopIconUrl, mobileIconUrl);
     var secondLevel = this.tryParseSecondLevel(options);
     var dynamicUniqueKey = randomString(12);
 
@@ -135,7 +136,7 @@ export default function WebMoneyNavbar() {
     return primaryColor;
   }
 
-  this.tryParseFirstLevel = function (options, lang) {
+  this.tryParseFirstLevel = function (options, desktopIconUrl, mobileIconUrl) {
 
     var firstLevel = [];
 
@@ -146,8 +147,18 @@ export default function WebMoneyNavbar() {
         firstLevel.push({
           title: options.firstLevel[i].title != null ? options.firstLevel[i].title : "",
           url: options.firstLevel[i].url != null ? options.firstLevel[i].url : "",
+          desktopIconUrl: options.firstLevel[i].desktopIconUrl != null ? options.firstLevel[i].desktopIconUrl : null,
+          mobileIconUrl: options.firstLevel[i].mobileIconUrl != null ? options.firstLevel[i].mobileIconUrl : null,
           active: options.firstLevel[i].active === true
         });
+
+        // if (i == 0 && desktopIconUrl != null) {
+        //   firstLevel[firstLevel.length - 1].desktopIconUrl = desktopIconUrl;
+        // }
+
+        // if (i == 0 && mobileIconUrl != null) {
+        //   firstLevel[firstLevel.length - 1].mobileIconUrl = mobileIconUrl;
+        // }
       }
     }
 
