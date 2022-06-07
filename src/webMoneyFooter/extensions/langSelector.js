@@ -10,7 +10,7 @@ export default {
 
     if (view == consts.VIEW_DESKTOP && supportedLangs.length > 1) {
 
-      var n21g21LanguageSelect = rootElement.getElementsByClassName("n21g21-bottom-language-select-toggle")[0];
+      var n21g21LanguageSelect = rootElement.getElementsByClassName("n9g-lgsl")[0];
 
       n21g21LanguageSelect.onclick = function () {
 
@@ -19,9 +19,9 @@ export default {
 
       document.onclick = function (e) {
 
-        if (e.target.className.indexOf("n21g21-bottom-language-select-toggle") == -1) {
+        if (e.target.className.indexOf("n9g-lgsl") == -1) {
 
-          if (!e.target.closest(".n21g21-bottom-language-select-toggle")) {
+          if (!e.target.closest(".n9g-lgsl")) {
 
             if (n21g21LanguageSelect.className.indexOf("is-activated") > -1) {
 
@@ -32,7 +32,7 @@ export default {
 
       };
 
-      var selectLangs = rootElement.getElementsByClassName("n21g21-bottom-language-select-a");
+      var selectLangs = rootElement.getElementsByClassName("n9g-lgi");
 
       for (var i = 0; i < selectLangs.length; i++) {
 
@@ -48,7 +48,7 @@ export default {
       }
     } else if (view == consts.VIEW_MOBILE && supportedLangs.length > 1) {
 
-      var selectLangs = rootElement.getElementsByClassName("n21g21-bottom-language-select-a");
+      var selectLangs = rootElement.getElementsByClassName("n9g-lgi");
 
       for (var i = 0; i < selectLangs.length; i++) {
 

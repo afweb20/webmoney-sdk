@@ -8865,23 +8865,20 @@ __webpack_require__.r(__webpack_exports__);
     }, [this.generateTopPartLinks(options), this.generateTopPartSocials(options)])));
   },
   generateTopPartLinks: function generateTopPartLinks(options) {
-    var eventsUrl = this.getEventsUrl(options);
-    var newsUrl = this.getNewsUrl(options);
-    var developersUrl = this.getDevelopersUrl(options);
     return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
       "class": "n9g-ll"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
       "class": "n9g-lll",
-      "href": eventsUrl
+      "href": "#"
     }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterBusinessNetwork")), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
       "class": "n9g-lll",
-      "href": developersUrl
+      "href": "#"
     }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterDevelopers")), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
       "class": "n9g-lll",
-      "href": newsUrl
+      "href": "#"
     }, "Wiki"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
       "class": "n9g-lll",
-      "href": newsUrl
+      "href": "#"
     }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterNews"))]);
   },
   generateTopPartSocials: function generateTopPartSocials(options) {
@@ -8962,13 +8959,222 @@ __webpack_require__.r(__webpack_exports__);
       class: "n9g-ctr"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
       class: "n9g-rw"
-    }, ""), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+    }, [this.generateMiddlePartAboutSystem(options), this.generateMiddlePartWmOperations(options), this.generateMiddlePartForWork(options), this.generateMiddlePartHelp(options)]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
       class: "n9g-rw"
+    }, [this.generateMiddlePartSecurity(options), this.generateMiddlePartWmTerritory(options), this.generateMiddlePartApps(options)])]));
+  },
+  generateMiddlePartAboutSystem: function generateMiddlePartAboutSystem(options) {
+    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-cln"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      class: "n9g-cln"
-    }, ""), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      class: "n9g-cln"
-    }, ""), this.generateMiddlePartApps(options)])]));
+      "class": "n9g-mtl"
+    }, "О системе"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Краткое описание"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Управление кошельками"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Тарифы системы"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Статистика"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Юридическая информация"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Субъекты системы"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Регистраторы")]);
+  },
+  generateMiddlePartWmOperations: function generateMiddlePartWmOperations(options) {
+    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-cln"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-mtl"
+    }, "Операции с WebMoney"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Exchanger: обменный пункт"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "WM.Check: оплата без регистрации"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Переводы с протекцией (платежи в два шага)")]);
+  },
+  generateMiddlePartForWork: function generateMiddlePartForWork(options) {
+    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-cln"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-mtl"
+    }, "Для работы"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Видеозвонки и онлайн-трансляции"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Управление закладками"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Верстка и публикация заметок"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Сервис аналитики"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Лента новостей: рассылка")]);
+  },
+  generateMiddlePartHelp: function generateMiddlePartHelp(options) {
+    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-cln"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-mtl"
+    }, "Помощь"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Регистрация"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Получение аттестата"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Создание PhotoID"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Обучающие видео"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Задать вопрос"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Финансовая поддержка"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Техническая поддержка"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Сотрудничество"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Форум")]);
+  },
+  generateMiddlePartSecurity: function generateMiddlePartSecurity(options) {
+    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-cln"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-mtl"
+    }, "Безопасность"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Безопасность и конфиденциальность"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Escrow: защищенные сделки"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "E-Num: безопасная авторизация"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Оповещения об операциях"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Ограничение доступа к кошельку"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Настройка расходных лимитов"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Восстановление доступа"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Advisor: отзывы о сайтах")]);
+  },
+  generateMiddlePartWmTerritory: function generateMiddlePartWmTerritory(options) {
+    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-cln"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-mtl"
+    }, "Территория WebMoney"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Деловая сеть"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Новости системы"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Интерактивная карта"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      "class": "n9g-mlk",
+      "href": "#"
+    }, "Wiki")]);
+  },
+  generateMiddlePartApps: function generateMiddlePartApps(options) {
+    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      "class": "n9g-cln n9g-cln--x2"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-mtl"
+    }, "Приложения для смартфонов"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-aps"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      class: "n9g-ait",
+      href: "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-aim"
+    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
+      class: "n9g-aig",
+      src: __webpack_require__(/*! ../images/apps/app-store.svg */ "./src/webMoneyFooter/images/apps/app-store.svg")
+    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-atx"
+    }, "App Store")]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      class: "n9g-ait",
+      href: "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-aim"
+    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
+      class: "n9g-aig",
+      src: __webpack_require__(/*! ../images/apps/google-play.svg */ "./src/webMoneyFooter/images/apps/google-play.svg")
+    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-atx"
+    }, "Google Play")]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      class: "n9g-ait",
+      href: "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-aim"
+    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
+      class: "n9g-aig",
+      src: __webpack_require__(/*! ../images/apps/windows-store.svg */ "./src/webMoneyFooter/images/apps/windows-store.svg")
+    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-atx"
+    }, "Microsoft Store")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-mtl"
+    }, "Приложения для ПК"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
+      class: "n9g-aps"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      class: "n9g-ait",
+      href: "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-aim"
+    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
+      class: "n9g-aig",
+      src: __webpack_require__(/*! ../images/apps/windows.svg */ "./src/webMoneyFooter/images/apps/windows.svg")
+    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-atx"
+    }, "Windows")]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
+      class: "n9g-ait",
+      href: "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-aim"
+    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
+      class: "n9g-aig",
+      src: __webpack_require__(/*! ../images/apps/os-x.svg */ "./src/webMoneyFooter/images/apps/os-x.svg")
+    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
+      class: "n9g-atx"
+    }, "Mac OS")])])]);
   },
   generateBottomPartFooter: function generateBottomPartFooter(options) {
     var supportedLangs = options.supportedLangs;
@@ -9038,332 +9244,6 @@ __webpack_require__.r(__webpack_exports__);
       "class": "n21g21-bottom-right-link",
       "href": supportUrl
     }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterSupport"))]);
-  },
-  generateMiddlePartApps: function generateMiddlePartApps(options) {
-    var appUrl = this.getAppUrl(options);
-    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n9g-cln n9g-cln--x2"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      class: "n9g-mtl"
-    }, "Приложения для смартфонов"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      class: "n9g-aps"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      class: "n9g-ait",
-      href: "#"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      class: "n9g-aim"
-    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      class: "n9g-aig",
-      src: __webpack_require__(/*! ../images/apps/app-store.svg */ "./src/webMoneyFooter/images/apps/app-store.svg")
-    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      class: "n9g-atx"
-    }, "App Store")]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      class: "n9g-ait",
-      href: "#"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      class: "n9g-aim"
-    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      class: "n9g-aig",
-      src: __webpack_require__(/*! ../images/apps/google-play.svg */ "./src/webMoneyFooter/images/apps/google-play.svg")
-    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      class: "n9g-atx"
-    }, "Google Play")]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      class: "n9g-ait",
-      href: "#"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      class: "n9g-aim"
-    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      class: "n9g-aig",
-      src: __webpack_require__(/*! ../images/apps/windows-store.svg */ "./src/webMoneyFooter/images/apps/windows-store.svg")
-    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      class: "n9g-atx"
-    }, "Microsoft Store")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      class: "n9g-mtl"
-    }, "Приложения для ПК"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      class: "n9g-aps"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      class: "n9g-ait",
-      href: "#"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      class: "n9g-aim"
-    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      class: "n9g-aig",
-      src: __webpack_require__(/*! ../images/apps/windows.svg */ "./src/webMoneyFooter/images/apps/windows.svg")
-    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      class: "n9g-atx"
-    }, "Windows")]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      class: "n9g-ait",
-      href: "#"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      class: "n9g-aim"
-    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("img", {
-      class: "n9g-aig",
-      src: __webpack_require__(/*! ../images/apps/os-x.svg */ "./src/webMoneyFooter/images/apps/os-x.svg")
-    })), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      class: "n9g-atx"
-    }, "Mac OS")])])]);
-  },
-  generateMobileBlockEvents: function generateMobileBlockEvents(options) {
-    var eventsUrl = this.getEventsUrl(options);
-    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-top-menu n21g21-top-menu-events"
-    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": "n21g21-top-menu-link",
-      "href": eventsUrl
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("i", {
-      "class": "n21g21-top-menu-icon"
-    }), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      "class": "n21g21-top-menu-title"
-    }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterBusinessNetwork")), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-block-events-description"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {}, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterBusinessNetwork")), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      "class": "n21g21-block-events-description-link"
-    }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "textFooterEventsLink"))])]));
-  },
-  generateMobileBlockNews: function generateMobileBlockNews(options) {
-    var newsUrl = this.getNewsUrl(options);
-    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-top-menu n21g21-top-menu-news"
-    }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-top-menu-link"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("i", {
-      "class": "n21g21-top-menu-icon"
-    }), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("span", {
-      "class": "n21g21-top-menu-title"
-    }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "menuFooterNews")), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-news-list"
-    }), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": "n21g21-all-news-link",
-      "href": newsUrl
-    }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "allNewsLinkText"))]));
-  },
-  generateMobileLinksAndApp: function generateMobileLinksAndApp(options) {
-    var deviceIconLink = null;
-    var deviceIconClass = null;
-
-    if (_device__WEBPACK_IMPORTED_MODULE_1__["default"].isWindowsDevice()) {
-      deviceIconLink = _consts__WEBPACK_IMPORTED_MODULE_0__["default"].WINDOWS_DEVICE_URL;
-      deviceIconClass = "wph_store_footer_" + options.lang;
-    } else if (_device__WEBPACK_IMPORTED_MODULE_1__["default"].isAppleDevice()) {
-      deviceIconLink = _consts__WEBPACK_IMPORTED_MODULE_0__["default"].APPLE_DEVICE_URL;
-      deviceIconClass = "app_store_footer_" + options.lang;
-    } else if (_device__WEBPACK_IMPORTED_MODULE_1__["default"].isAndroidDevice()) {
-      deviceIconLink = _consts__WEBPACK_IMPORTED_MODULE_0__["default"].ANDROID_DEVICE_URL;
-      deviceIconClass = "google_play_footer_" + options.lang;
-    } else if (_device__WEBPACK_IMPORTED_MODULE_1__["default"].isAnyDevice()) {
-      deviceIconLink = _consts__WEBPACK_IMPORTED_MODULE_0__["default"].ANDROID_DEVICE_URL;
-      deviceIconClass = "google_play_footer_" + options.lang;
-    }
-
-    var supportedLangs = options.supportedLangs;
-    var htmlSelectLangs = [];
-
-    for (var i = 0; i < supportedLangs.length; i++) {
-      if (supportedLangs[i] == options.lang) {
-        continue;
-      }
-
-      htmlSelectLangs.push((0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-        "class": "n21g21-bottom-language-select-li"
-      }, (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-        "class": "n21g21-bottom-language-select-a n21g21-bottom-lang-" + supportedLangs[i],
-        "href": "#",
-        "data-lang": supportedLangs[i]
-      }, (0,_local__WEBPACK_IMPORTED_MODULE_2__["default"])(options, "langTitle_" + supportedLangs[i]))));
-    }
-
-    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-bottom-links-app"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-bottom-links-app-wrapper"
-    }, [this.generateBottomRightLinks(options), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": deviceIconClass,
-      "href": deviceIconLink
-    })]), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-bottom-links-app-langs"
-    }, htmlSelectLangs)]);
-  },
-  generateMobileCopyright: function generateMobileCopyright(options) {
-    return (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-bottom-copyright"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("div", {
-      "class": "n21g21-bottom-copyright-text"
-    }, "© 1998-" + new Date().getFullYear() + ", WebMoney"), (0,_ml__WEBPACK_IMPORTED_MODULE_3__["default"])("a", {
-      "class": "n21g21-bottom-copyright-logo",
-      "href": "/"
-    })]);
-  },
-  getEventsUrl: function getEventsUrl(options) {
-    var url = null;
-    options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://events.wmtransfer.com" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://events.webmoney.ru" : url = "https://events.web.money";
-    return url;
-  },
-  getNewsUrl: function getNewsUrl(options) {
-    var url = null;
-    options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://news.wmtransfer.com" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://news.webmoney.ru" : url = "https://news.web.money";
-    return url;
-  },
-  getDevelopersUrl: function getDevelopersUrl(options) {
-    var url = null;
-
-    switch (options.lang) {
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_RU:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/rus/developers/api.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/rus/developers/api.shtml" : url = "https://www.web.money/rus/developers/api.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_EN:
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_VN:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/eng/developers/api.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/eng/developers/api.shtml" : url = "https://www.web.money/eng/developers/api.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_ES:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/es/developers/api.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/es/developers/api.shtml" : url = "https://www.web.money/es/developers/api.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_PT:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com.br/br/developers/api.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/br/developers/api.shtml" : url = "https://www.web.money/br/developers/api.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_TR:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/tr/developers/api.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/tr/developers/api.shtml" : url = "https://www.web.money/tr/developers/api.shtml";
-        break;
-    }
-
-    return url;
-  },
-  getCooperationUrl: function getCooperationUrl(options) {
-    var url = null;
-
-    switch (options.lang) {
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_RU:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/rus/cooperation/merchants.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/rus/cooperation/merchants.shtml" : url = "https://www.web.money/rus/cooperation/merchants.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_EN:
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_VN:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/eng/cooperation/index.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/eng/cooperation/index.shtml" : url = "https://www.web.money/eng/cooperation/index.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_ES:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/es/cooperation/index.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/es/cooperation/index.shtml" : url = "https://www.web.money/es/cooperation/index.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_PT:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com.br/br/cooperation/index.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/br/cooperation/index.shtml" : url = "https://www.web.money/br/cooperation/index.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_TR:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/tr/cooperation/index.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/tr/cooperation/index.shtml" : url = "https://www.web.money/tr/cooperation/index.shtml";
-        break;
-    }
-
-    return url;
-  },
-  getPressServiceUrl: function getPressServiceUrl(options) {
-    var url = null;
-
-    switch (options.lang) {
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_RU:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/rus/support/press-service.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/rus/support/press-service.shtml" : url = "https://www.web.money/rus/support/press-service.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_EN:
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_VN:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/eng/support/press-service.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/eng/support/press-service.shtml" : url = "https://www.web.money/eng/support/press-service.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_ES:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/es/support/press-service.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/es/support/press-service.shtml" : url = "https://www.web.money/es/support/press-service.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_PT:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com.br/br/support/press-servicer.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/br/support/press-servicer.shtml" : url = "https://www.web.money/br/support/press-servicer.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_TR:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/tr/support/press-service.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/tr/support/press-service.shtml" : url = "https://www.web.money/tr/support/press-service.shtml";
-        break;
-    }
-
-    return url;
-  },
-  getContactsUrl: function getContactsUrl(options) {
-    var url = null;
-
-    switch (options.lang) {
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_RU:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/rus/support/financial.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/rus/support/financial.shtml" : url = "https://www.web.money/rus/support/financial.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_EN:
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_VN:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/eng/support/tech.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/eng/support/tech.shtml" : url = "https://www.web.money/eng/support/tech.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_ES:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/es/support/tech.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/es/support/tech.shtml" : url = "https://www.web.money/es/support/tech.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_PT:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com.br/br/support/tech.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/br/support/tech.shtml" : url = "https://www.web.money/br/support/tech.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_TR:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/tr/support/tech.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/tr/support/tech.shtml" : url = "https://www.web.money/tr/support/tech.shtml";
-        break;
-    }
-
-    return url;
-  },
-  getSupportUrl: function getSupportUrl(options) {
-    var url = null;
-
-    switch (options.lang) {
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_RU:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://support.wmtransfer.com/asp/index.asp" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://support.webmoney.ru/asp/index.asp" : url = "https://support.web.money/asp/index.asp";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_EN:
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_PT:
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_TR:
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_VN:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://support.wmtransfer.com/asp/index.asp?lang=eng" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://support.webmoney.ru/asp/index.asp?lang=eng" : url = "https://support.web.money/asp/index.asp?lang=eng";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_ES:
-        url = "mailto:soporte@webmoney.com.mx";
-        break;
-    }
-
-    return url;
-  },
-  getAppUrl: function getAppUrl(options) {
-    var url = null;
-
-    switch (options.lang) {
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_RU:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/rus/information/manage/index.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/rus/information/manage/index.shtml" : url = "https://www.web.money/rus/information/manage/index.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_EN:
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_VN:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/eng/information/manage/index.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/eng/information/manage/index.shtml" : url = "https://www.web.money/eng/information/manage/index.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_ES:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/es/information/manage/index.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/es/information/manage/index.shtml" : url = "https://www.web.money/es/information/manage/index.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_PT:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com.br/br/information/manage/index.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/br/information/manage/index.shtml" : url = "https://www.web.money/br/information/manage/index.shtml";
-        break;
-
-      case _consts__WEBPACK_IMPORTED_MODULE_0__["default"].LANG_TR:
-        options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_WMTRANSFER ? url = "https://www.wmtransfer.com/tr/information/manage/index.shtml" : options.domainType == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].DOMAIN_TYPE_RU ? url = "https://www.webmoney.ru/tr/information/manage/index.shtml" : url = "https://www.web.money/tr/information/manage/index.shtml";
-        break;
-    }
-
-    return url;
   }
 });
 
@@ -9422,15 +9302,15 @@ __webpack_require__.r(__webpack_exports__);
     var supportedLangs = options.supportedLangs;
 
     if (view == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].VIEW_DESKTOP && supportedLangs.length > 1) {
-      var n21g21LanguageSelect = rootElement.getElementsByClassName("n21g21-bottom-language-select-toggle")[0];
+      var n21g21LanguageSelect = rootElement.getElementsByClassName("n9g-lgsl")[0];
 
       n21g21LanguageSelect.onclick = function () {
         this.classList.toggle("is-activated");
       };
 
       document.onclick = function (e) {
-        if (e.target.className.indexOf("n21g21-bottom-language-select-toggle") == -1) {
-          if (!e.target.closest(".n21g21-bottom-language-select-toggle")) {
+        if (e.target.className.indexOf("n9g-lgsl") == -1) {
+          if (!e.target.closest(".n9g-lgsl")) {
             if (n21g21LanguageSelect.className.indexOf("is-activated") > -1) {
               n21g21LanguageSelect.classList.remove("is-activated");
             }
@@ -9438,7 +9318,7 @@ __webpack_require__.r(__webpack_exports__);
         }
       };
 
-      var selectLangs = rootElement.getElementsByClassName("n21g21-bottom-language-select-a");
+      var selectLangs = rootElement.getElementsByClassName("n9g-lgi");
 
       for (var i = 0; i < selectLangs.length; i++) {
         selectLangs[i].addEventListener("click", function (e) {
@@ -9450,7 +9330,7 @@ __webpack_require__.r(__webpack_exports__);
         });
       }
     } else if (view == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].VIEW_MOBILE && supportedLangs.length > 1) {
-      var selectLangs = rootElement.getElementsByClassName("n21g21-bottom-language-select-a");
+      var selectLangs = rootElement.getElementsByClassName("n9g-lgi");
 
       for (var i = 0; i < selectLangs.length; i++) {
         selectLangs[i].addEventListener("click", function (e) {
@@ -10046,7 +9926,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_5___ = _node_modules_css_loader_dist_runtime_g
 var ___CSS_LOADER_URL_REPLACEMENT_6___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_6___);
 var ___CSS_LOADER_URL_REPLACEMENT_7___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_7___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"woff\");\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") format(\"woff\");\n  font-weight: 500;\n  font-style: normal;\n  font-display: swap; }\n\n.n9g {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  vertical-align: baseline;\n  box-sizing: border-box; }\n  .n9g * {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    vertical-align: baseline;\n    box-sizing: border-box;\n    background-color: transparent;\n    text-decoration: none; }\n    .n9g *:hover, .n9g *:active {\n      outline: none; }\n  .n9g a {\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .n9g img {\n    border-style: none; }\n  .n9g-ctr {\n    min-width: 320px;\n    max-width: 960px;\n    padding: 0 16px;\n    margin: 0 auto; }\n    @media (min-width: 992px) {\n      .n9g-ctr {\n        padding: 0; } }\n  .n9g-bnr {\n    margin-bottom: 24px; }\n    .n9g-bnr img {\n      display: block;\n      max-width: 100%;\n      border-radius: 8px; }\n  .n9g-ln {\n    box-shadow: 0px 0px 0px 1px #eee;\n    padding: 16px 0 8px; }\n    @media (min-width: 768px) {\n      .n9g-ln {\n        padding: 0; } }\n    .n9g-lnf {\n      flex-wrap: wrap;\n      display: flex;\n      align-items: center;\n      justify-content: space-between; }\n  .n9g-ll {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center; }\n    @media (min-width: 360px) {\n      .n9g-ll {\n        justify-content: space-between;\n        width: 100%; } }\n    @media (min-width: 576px) {\n      .n9g-ll {\n        width: auto;\n        justify-content: flex-start; } }\n    .n9g-lll {\n      color: #101828;\n      font-family: \"Manrope\", sans-serif;\n      font-weight: 600;\n      font-size: 14px;\n      line-height: 32px;\n      cursor: pointer;\n      transition: all 0.2s;\n      display: block;\n      margin-right: 8px; }\n      @media (min-width: 360px) {\n        .n9g-lll {\n          margin-right: 0; } }\n      @media (min-width: 576px) {\n        .n9g-lll {\n          margin-right: 16px; } }\n      @media (min-width: 768px) {\n        .n9g-lll {\n          padding: 16px 0;\n          margin-right: 32px; } }\n      .n9g-lll:hover {\n        color: #006cb4; }\n  .n9g-lr {\n    display: flex;\n    padding: 16px 0;\n    flex: 1;\n    justify-content: center; }\n    @media (min-width: 576px) {\n      .n9g-lr {\n        flex: auto;\n        justify-content: flex-end; } }\n    .n9g-lrl {\n      display: block;\n      width: 32px;\n      height: 32px;\n      background-color: #9fb1bd;\n      border-radius: 4px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      cursor: pointer;\n      transition: all 0.2s;\n      margin-right: 16px; }\n      @media (min-width: 576px) {\n        .n9g-lrl {\n          width: 20px;\n          height: 20px; } }\n      .n9g-lrl:last-child {\n        margin-right: 0; }\n      .n9g-lrl--tw:hover {\n        background-color: #1d9bf0; }\n      .n9g-lrl--vk:hover {\n        background-color: #2787f5; }\n      .n9g-lrl--od:hover {\n        background-color: #ee8208; }\n      .n9g-lrl--yt:hover {\n        background-color: #ff0000; }\n      .n9g-lrl--tg:hover {\n        background-color: #3390ec; }\n  .n9g-lri {\n    width: 32px;\n    height: 32px; }\n    @media (min-width: 576px) {\n      .n9g-lri {\n        width: 20px;\n        height: 20px; } }\n  .n9g-mdl {\n    padding: 24px 0 0; }\n  .n9g-rw {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 0 -16px; }\n  .n9g-cln {\n    width: 100%;\n    margin-bottom: 16px;\n    padding: 0 16px; }\n    @media (min-width: 576px) {\n      .n9g-cln {\n        width: 50%;\n        margin-bottom: 24px; } }\n    @media (min-width: 768px) {\n      .n9g-cln {\n        width: 25%;\n        margin-bottom: 40px; } }\n    .n9g-cln--x2 {\n      width: 100%; }\n      @media (min-width: 768px) {\n        .n9g-cln--x2 {\n          width: 50%; } }\n  .n9g-mtl {\n    color: #101828;\n    font-family: \"Manrope\", sans-serif;\n    font-size: 14px;\n    line-height: 24px;\n    padding: 4px 0;\n    font-weight: 600;\n    cursor: default;\n    margin-bottom: 4px; }\n    @media (min-width: 768px) {\n      .n9g-mtl {\n        margin-bottom: 12px; } }\n  .n9g-mlk {\n    color: #838a8e;\n    font-family: \"Manrope\", sans-serif;\n    font-size: 12px;\n    line-height: 16px;\n    padding: 4px 8px 4px 0;\n    font-weight: 500;\n    cursor: pointer;\n    transition: all 0.2s;\n    display: inline-flex; }\n    @media (min-width: 768px) {\n      .n9g-mlk {\n        display: block;\n        padding: 4px 0; } }\n    .n9g-mlk:hover {\n      color: #006cb4; }\n  .n9g-aps {\n    display: flex;\n    flex-wrap: wrap; }\n    @media (min-width: 768px) {\n      .n9g-aps {\n        margin-bottom: 16px; } }\n  .n9g-ait {\n    width: 50%;\n    display: flex;\n    align-items: center;\n    margin-bottom: 16px;\n    flex-wrap: wrap; }\n    @media (min-width: 496px) {\n      .n9g-ait {\n        width: 33.333333%;\n        flex-wrap: nowrap; } }\n  .n9g-aim {\n    border: 1px solid #eeeeee;\n    border-radius: 24px;\n    width: 48px;\n    height: 48px;\n    align-items: center;\n    justify-content: center;\n    display: flex;\n    margin-right: 12px; }\n  .n9g-aig {\n    display: block;\n    max-width: 100%; }\n  .n9g-atx {\n    font-family: \"Manrope\", sans-serif;\n    font-size: 12px;\n    font-weight: 400;\n    line-height: 16px;\n    color: #101828;\n    margin-right: 8px;\n    width: calc(100% - 68px); }\n  .n9g-brw {\n    border-top: 1px solid #d9d9d9;\n    padding: 24px 0 48px; }\n  .n9g-btp {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 32px; }\n    @media (min-width: 768px) {\n      .n9g-btp {\n        margin-bottom: 24px; } }\n  .n9g-bbp {\n    display: flex;\n    justify-content: space-between;\n    flex-direction: column-reverse; }\n    @media (min-width: 768px) {\n      .n9g-bbp {\n        flex-direction: row; } }\n  .n9g-cprt {\n    font-family: \"Manrope\", sans-serif;\n    font-size: 11px;\n    font-weight: 500;\n    line-height: 16px;\n    color: #babcbf;\n    max-width: 124px; }\n  .n9g-lngs {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center; }\n  .n9g-ctx {\n    font-family: \"Manrope\", sans-serif;\n    font-size: 11px;\n    font-weight: 500;\n    line-height: 16px;\n    color: #babcbf;\n    max-width: 476px;\n    margin-bottom: 32px; }\n    @media (min-width: 768px) {\n      .n9g-ctx {\n        text-align: right;\n        margin-bottom: 0; } }\n  .n9g-lgc {\n    font-family: \"Manrope\", sans-serif;\n    font-size: 11px;\n    font-weight: 500;\n    line-height: 16px;\n    color: #babcbf;\n    padding: 8px 16px 8px 32px;\n    cursor: pointer;\n    position: relative;\n    text-indent: -9999px; }\n    @media (min-width: 576px) {\n      .n9g-lgc {\n        text-indent: 0;\n        padding: 8px 24px 8px 32px; } }\n    .n9g-lgc:after {\n      content: \"\";\n      display: block;\n      width: 16px;\n      height: 16px;\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") center center no-repeat;\n      position: absolute;\n      right: 0;\n      top: 50%;\n      margin-top: -8px;\n      opacity: 0.3;\n      background-size: 16px; }\n    .n9g-lgc.is-activated:after {\n      transform: rotate(-180deg); }\n  .n9g-lgl {\n    display: none; }\n    .n9g-lgl.is-activated {\n      position: absolute;\n      display: block;\n      bottom: 100%;\n      background-color: #fff;\n      border: 1px solid #d9d9d9;\n      border-radius: 4px;\n      right: 0;\n      box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);\n      width: 104px;\n      padding: 8px 0; }\n      .n9g-lgl.is-activated:after, .n9g-lgl.is-activated:before {\n        top: 100%;\n        left: 66px;\n        border: solid transparent;\n        content: \"\";\n        height: 0;\n        width: 0;\n        position: absolute;\n        pointer-events: none; }\n        @media (min-width: 576px) {\n          .n9g-lgl.is-activated:after, .n9g-lgl.is-activated:before {\n            left: 16px; } }\n      .n9g-lgl.is-activated:after {\n        border-color: rgba(255, 255, 255, 0);\n        border-top-color: #fff;\n        border-width: 6px;\n        margin-left: -6px; }\n      .n9g-lgl.is-activated:before {\n        border-color: rgba(217, 217, 217, 0);\n        border-top-color: #d9d9d9;\n        border-width: 7px;\n        margin-left: -7px; }\n  .n9g-lgsl {\n    position: relative; }\n  .n9g-fru {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") left center no-repeat;\n    background-size: 24px; }\n  .n9g-fen {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") left center no-repeat;\n    background-size: 24px; }\n  .n9g-fes {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") left center no-repeat;\n    background-size: 24px; }\n  .n9g-fpt {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") left center no-repeat;\n    background-size: 24px; }\n  .n9g-ftr {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") left center no-repeat;\n    background-size: 24px; }\n  .n9g-lgi {\n    padding: 0 8px 0 40px;\n    font-family: \"Manrope\", sans-serif;\n    font-size: 11px;\n    font-weight: 500;\n    line-height: 24px;\n    color: #838a8e;\n    cursor: pointer;\n    background-position-x: 8px; }\n    .n9g-lgi:hover {\n      color: #006cb4; }\n", "",{"version":3,"sources":["webpack://./src/webMoneyFooter/webMoneyFooter.scss"],"names":[],"mappings":"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","sourcesContent":["@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-SemiBold.woff2\") format(\"woff2\"),\r\n    url(\"fonts/Manrope-SemiBold.woff\") format(\"woff\");\r\n  font-weight: 600;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Regular.woff2\") format(\"woff2\"),\r\n    url(\"fonts/Manrope-Regular.woff\") format(\"woff\");\r\n  font-weight: 400;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Medium.woff2\") format(\"woff2\"),\r\n    url(\"fonts/Manrope-Medium.woff\") format(\"woff\");\r\n  font-weight: 500;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@mixin noSelection {\r\n  -webkit-touch-callout: none;\r\n  -webkit-user-select: none;\r\n  -khtml-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n}\r\n\r\n@mixin resetDiv {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  vertical-align: baseline;\r\n  box-sizing: border-box;\r\n}\r\n\r\n@mixin resetA {\r\n  background-color: transparent;\r\n  text-decoration: none;\r\n  &:hover,\r\n  &:active {\r\n    outline: none;\r\n  }\r\n}\r\n\r\n@mixin resetImg {\r\n  border-style: none;\r\n}\r\n\r\n.n9g {\r\n  @include resetDiv;\r\n  * {\r\n    @include resetDiv;\r\n    @include resetA;\r\n  }\r\n  a {\r\n    @include noSelection;\r\n  }\r\n  img {\r\n    @include resetImg;\r\n  }\r\n  &-ctr {\r\n    min-width: 320px;\r\n    max-width: 960px;\r\n    padding: 0 16px;\r\n    margin: 0 auto;\r\n    @media (min-width: 992px) {\r\n      padding: 0;\r\n    }\r\n  }\r\n  &-bnr {\r\n    margin-bottom: 24px;\r\n    img {\r\n      display: block;\r\n      max-width: 100%;\r\n      border-radius: 8px;\r\n    }\r\n  }\r\n  &-ln {\r\n    box-shadow: 0px 0px 0px 1px #eee;\r\n    padding: 16px 0 8px;\r\n    @media (min-width: 768px) {\r\n      padding: 0;\r\n    }\r\n    &f {\r\n      flex-wrap: wrap;\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: space-between;\r\n    }\r\n  }\r\n  &-ll {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n    @media (min-width: 360px) {\r\n      justify-content: space-between;\r\n      width: 100%;\r\n    }\r\n    @media (min-width: 576px) {\r\n      width: auto;\r\n      justify-content: flex-start;\r\n    }\r\n    &l {\r\n      color: #101828;\r\n      font-family: \"Manrope\", sans-serif;\r\n      font-weight: 600;\r\n      font-size: 14px;\r\n      line-height: 32px;\r\n      cursor: pointer;\r\n      transition: all 0.2s;\r\n      display: block;\r\n      margin-right: 8px;\r\n      @media (min-width: 360px) {\r\n        margin-right: 0;\r\n      }\r\n      @media (min-width: 576px) {\r\n        margin-right: 16px;\r\n      }\r\n      @media (min-width: 768px) {\r\n        padding: 16px 0;\r\n        margin-right: 32px;\r\n      }\r\n      &:hover {\r\n        color: #006cb4;\r\n      }\r\n    }\r\n  }\r\n  &-lr {\r\n    display: flex;\r\n    padding: 16px 0;\r\n    flex: 1;\r\n    justify-content: center;\r\n    @media (min-width: 576px) {\r\n      flex: auto;\r\n      justify-content: flex-end;\r\n    }\r\n    &l {\r\n      display: block;\r\n      width: 32px;\r\n      height: 32px;\r\n      background-color: #9fb1bd;\r\n      border-radius: 4px;\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      cursor: pointer;\r\n      transition: all 0.2s;\r\n      margin-right: 16px;\r\n      @media (min-width: 576px) {\r\n        width: 20px;\r\n        height: 20px;\r\n      }\r\n      &:last-child {\r\n        margin-right: 0;\r\n      }\r\n      &--tw {\r\n        &:hover {\r\n          background-color: #1d9bf0;\r\n        }\r\n      }\r\n      &--vk {\r\n        &:hover {\r\n          background-color: #2787f5;\r\n        }\r\n      }\r\n      &--od {\r\n        &:hover {\r\n          background-color: #ee8208;\r\n        }\r\n      }\r\n      &--yt {\r\n        &:hover {\r\n          background-color: #ff0000;\r\n        }\r\n      }\r\n      &--tg {\r\n        &:hover {\r\n          background-color: #3390ec;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &-lri {\r\n    width: 32px;\r\n    height: 32px;\r\n    @media (min-width: 576px) {\r\n      width: 20px;\r\n      height: 20px;\r\n    }\r\n  }\r\n  &-mdl {\r\n    padding: 24px 0 0;\r\n  }\r\n  &-rw {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    margin: 0 -16px;\r\n  }\r\n  &-cln {\r\n    width: 100%;\r\n    margin-bottom: 16px;\r\n    padding: 0 16px;\r\n    @media (min-width: 576px) {\r\n      width: 50%;\r\n      margin-bottom: 24px;\r\n    }\r\n    @media (min-width: 768px) {\r\n      width: 25%;\r\n      margin-bottom: 40px;\r\n    }\r\n    &--x2 {\r\n      width: 100%;\r\n      @media (min-width: 768px) {\r\n        width: 50%;\r\n      }\r\n    }\r\n  }\r\n  &-mtl {\r\n    color: #101828;\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    padding: 4px 0;\r\n    font-weight: 600;\r\n    cursor: default;\r\n    margin-bottom: 4px;\r\n    @media (min-width: 768px) {\r\n      margin-bottom: 12px;\r\n    }\r\n  }\r\n  &-mlk {\r\n    color: #838a8e;\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 12px;\r\n    line-height: 16px;\r\n    padding: 4px 8px 4px 0;\r\n    font-weight: 500;\r\n    cursor: pointer;\r\n    transition: all 0.2s;\r\n    display: inline-flex;\r\n    @media (min-width: 768px) {\r\n      display: block;\r\n      padding: 4px 0;\r\n    }\r\n    &:hover {\r\n      color: #006cb4;\r\n    }\r\n  }\r\n  &-aps {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    @media (min-width: 768px) {\r\n      margin-bottom: 16px;\r\n    }\r\n  }\r\n  &-ait {\r\n    width: 50%;\r\n    display: flex;\r\n    align-items: center;\r\n    margin-bottom: 16px;\r\n    flex-wrap: wrap;\r\n    @media (min-width: 496px) {\r\n      width: 33.333333%;\r\n      flex-wrap: nowrap;\r\n    }\r\n  }\r\n  &-aim {\r\n    border: 1px solid #eeeeee;\r\n    border-radius: 24px;\r\n    width: 48px;\r\n    height: 48px;\r\n    align-items: center;\r\n    justify-content: center;\r\n    display: flex;\r\n    margin-right: 12px;\r\n  }\r\n  &-aig {\r\n    display: block;\r\n    max-width: 100%;\r\n  }\r\n  &-atx {\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 12px;\r\n    font-weight: 400;\r\n    line-height: 16px;\r\n    color: #101828;\r\n    margin-right: 8px;\r\n    width: calc(100% - 68px);\r\n  }\r\n  &-brw {\r\n    border-top: 1px solid #d9d9d9;\r\n    padding: 24px 0 48px;\r\n  }\r\n  &-btp {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    margin-bottom: 32px;\r\n    @media (min-width: 768px) {\r\n      margin-bottom: 24px;\r\n    }\r\n  }\r\n  &-bbp {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    flex-direction: column-reverse;\r\n    @media (min-width: 768px) {\r\n      flex-direction: row;\r\n    }\r\n  }\r\n  &-cprt {\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 11px;\r\n    font-weight: 500;\r\n    line-height: 16px;\r\n    color: #babcbf;\r\n    max-width: 124px;\r\n  }\r\n  &-lngs {\r\n    display: flex;\r\n    justify-content: flex-end;\r\n    align-items: center;\r\n  }\r\n  &-ctx {\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 11px;\r\n    font-weight: 500;\r\n    line-height: 16px;\r\n    color: #babcbf;\r\n    max-width: 476px;\r\n    margin-bottom: 32px;\r\n    @media (min-width: 768px) {\r\n      text-align: right;\r\n      margin-bottom: 0;\r\n    }\r\n  }\r\n  &-lgc {\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 11px;\r\n    font-weight: 500;\r\n    line-height: 16px;\r\n    color: #babcbf;\r\n    padding: 8px 16px 8px 32px;\r\n    cursor: pointer;\r\n    position: relative;\r\n    text-indent: -9999px;\r\n    @media (min-width: 576px) {\r\n      text-indent: 0;\r\n      padding: 8px 24px 8px 32px;\r\n    }\r\n    &:after {\r\n      content: \"\";\r\n      display: block;\r\n      width: 16px;\r\n      height: 16px;\r\n      background: transparent url(\"images/arrow-down.svg\") center center\r\n        no-repeat;\r\n      position: absolute;\r\n      right: 0;\r\n      top: 50%;\r\n      margin-top: -8px;\r\n      opacity: 0.3;\r\n      background-size: 16px;\r\n    }\r\n    &.is-activated {\r\n      &:after {\r\n        transform: rotate(-180deg);\r\n      }\r\n    }\r\n  }\r\n  &-lgl {\r\n    display: none;\r\n    &.is-activated {\r\n      position: absolute;\r\n      display: block;\r\n      bottom: 100%;\r\n      background-color: #fff;\r\n      border: 1px solid #d9d9d9;\r\n      border-radius: 4px;\r\n      right: 0;\r\n      box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);\r\n      width: 104px;\r\n      padding: 8px 0;\r\n      &:after,\r\n      &:before {\r\n        top: 100%;\r\n        left: 66px;\r\n        border: solid transparent;\r\n        content: \"\";\r\n        height: 0;\r\n        width: 0;\r\n        position: absolute;\r\n        pointer-events: none;\r\n        @media (min-width: 576px) {\r\n          left: 16px;\r\n        }\r\n      }\r\n\r\n      &:after {\r\n        border-color: rgba(255, 255, 255, 0);\r\n        border-top-color: #fff;\r\n        border-width: 6px;\r\n        margin-left: -6px;\r\n      }\r\n      &:before {\r\n        border-color: rgba(217, 217, 217, 0);\r\n        border-top-color: #d9d9d9;\r\n        border-width: 7px;\r\n        margin-left: -7px;\r\n      }\r\n    }\r\n  }\r\n  &-lgsl {\r\n    position: relative;\r\n  }\r\n  &-fru {\r\n    background: transparent url(\"images/flags/ru.svg\") left center no-repeat;\r\n    background-size: 24px;\r\n  }\r\n  &-fen {\r\n    background: transparent url(\"images/flags/ru.svg\") left center no-repeat;\r\n    background-size: 24px;\r\n  }\r\n  &-fes {\r\n    background: transparent url(\"images/flags/ru.svg\") left center no-repeat;\r\n    background-size: 24px;\r\n  }\r\n  &-fpt {\r\n    background: transparent url(\"images/flags/ru.svg\") left center no-repeat;\r\n    background-size: 24px;\r\n  }\r\n  &-ftr {\r\n    background: transparent url(\"images/flags/ru.svg\") left center no-repeat;\r\n    background-size: 24px;\r\n  }\r\n  &-lgi {\r\n    padding: 0 8px 0 40px;\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 11px;\r\n    font-weight: 500;\r\n    line-height: 24px;\r\n    color: #838a8e;\r\n    cursor: pointer;\r\n    background-position-x: 8px;\r\n    &:hover {\r\n      color: #006cb4;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"woff\");\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") format(\"woff\");\n  font-weight: 500;\n  font-style: normal;\n  font-display: swap; }\n\n.n9g {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  vertical-align: baseline;\n  box-sizing: border-box; }\n  .n9g * {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    vertical-align: baseline;\n    box-sizing: border-box;\n    background-color: transparent;\n    text-decoration: none; }\n    .n9g *:hover, .n9g *:active {\n      outline: none; }\n  .n9g a {\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .n9g img {\n    border-style: none; }\n  .n9g-ctr {\n    min-width: 320px;\n    max-width: 960px;\n    padding: 0 16px;\n    margin: 0 auto; }\n    @media (min-width: 992px) {\n      .n9g-ctr {\n        padding: 0; } }\n  .n9g-bnr {\n    margin-bottom: 24px; }\n    .n9g-bnr img {\n      display: block;\n      max-width: 100%;\n      border-radius: 8px; }\n  .n9g-ln {\n    box-shadow: 0px 0px 0px 1px #eee;\n    padding: 16px 0 8px; }\n    @media (min-width: 768px) {\n      .n9g-ln {\n        padding: 0; } }\n    .n9g-lnf {\n      flex-wrap: wrap;\n      display: flex;\n      align-items: center;\n      justify-content: space-between; }\n  .n9g-ll {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: center; }\n    @media (min-width: 360px) {\n      .n9g-ll {\n        justify-content: space-between;\n        width: 100%; } }\n    @media (min-width: 576px) {\n      .n9g-ll {\n        width: auto;\n        justify-content: flex-start; } }\n    .n9g-lll {\n      color: #101828;\n      font-family: \"Manrope\", sans-serif;\n      font-weight: 600;\n      font-size: 14px;\n      line-height: 32px;\n      cursor: pointer;\n      transition: all 0.2s;\n      display: block;\n      margin-right: 8px; }\n      @media (min-width: 360px) {\n        .n9g-lll {\n          margin-right: 0; } }\n      @media (min-width: 576px) {\n        .n9g-lll {\n          margin-right: 16px; } }\n      @media (min-width: 768px) {\n        .n9g-lll {\n          padding: 16px 0;\n          margin-right: 32px; } }\n      .n9g-lll:hover {\n        color: #006cb4; }\n  .n9g-lr {\n    display: flex;\n    padding: 16px 0;\n    flex: 1;\n    justify-content: center; }\n    @media (min-width: 576px) {\n      .n9g-lr {\n        flex: auto;\n        justify-content: flex-end; } }\n    .n9g-lrl {\n      display: block;\n      width: 32px;\n      height: 32px;\n      background-color: #9fb1bd;\n      border-radius: 4px;\n      display: flex;\n      align-items: center;\n      justify-content: center;\n      cursor: pointer;\n      transition: all 0.2s;\n      margin-right: 16px; }\n      @media (min-width: 576px) {\n        .n9g-lrl {\n          width: 20px;\n          height: 20px; } }\n      .n9g-lrl:last-child {\n        margin-right: 0; }\n      .n9g-lrl--tw:hover {\n        background-color: #1d9bf0; }\n      .n9g-lrl--vk:hover {\n        background-color: #2787f5; }\n      .n9g-lrl--od:hover {\n        background-color: #ee8208; }\n      .n9g-lrl--yt:hover {\n        background-color: #ff0000; }\n      .n9g-lrl--tg:hover {\n        background-color: #3390ec; }\n  .n9g-lri {\n    width: 32px;\n    height: 32px; }\n    @media (min-width: 576px) {\n      .n9g-lri {\n        width: 20px;\n        height: 20px; } }\n  .n9g-mdl {\n    padding: 24px 0 0; }\n  .n9g-rw {\n    display: flex;\n    flex-wrap: wrap;\n    margin: 0 -16px; }\n  .n9g-cln {\n    width: 100%;\n    margin-bottom: 16px;\n    padding: 0 16px; }\n    @media (min-width: 576px) {\n      .n9g-cln {\n        width: 50%;\n        margin-bottom: 24px; } }\n    @media (min-width: 768px) {\n      .n9g-cln {\n        width: 25%;\n        margin-bottom: 40px; } }\n    .n9g-cln--x2 {\n      width: 100%; }\n      @media (min-width: 768px) {\n        .n9g-cln--x2 {\n          width: 50%; } }\n  .n9g-mtl {\n    color: #101828;\n    font-family: \"Manrope\", sans-serif;\n    font-size: 14px;\n    line-height: 24px;\n    padding: 4px 0;\n    font-weight: 600;\n    cursor: default;\n    margin-bottom: 4px; }\n    @media (min-width: 768px) {\n      .n9g-mtl {\n        margin-bottom: 12px; } }\n  .n9g-mlk {\n    color: #838a8e;\n    font-family: \"Manrope\", sans-serif;\n    font-size: 12px;\n    line-height: 16px;\n    padding: 4px 8px 4px 0;\n    font-weight: 500;\n    cursor: pointer;\n    transition: all 0.2s;\n    display: inline-flex; }\n    @media (min-width: 768px) {\n      .n9g-mlk {\n        display: block;\n        padding: 4px 0; } }\n    .n9g-mlk:hover {\n      color: #006cb4; }\n  .n9g-aps {\n    display: flex;\n    flex-wrap: wrap; }\n    @media (min-width: 768px) {\n      .n9g-aps {\n        margin-bottom: 16px; } }\n  .n9g-ait {\n    width: 50%;\n    display: flex;\n    align-items: center;\n    margin-bottom: 16px;\n    flex-wrap: wrap; }\n    @media (min-width: 496px) {\n      .n9g-ait {\n        width: 33.333333%;\n        flex-wrap: nowrap; } }\n  .n9g-aim {\n    border: 1px solid #eeeeee;\n    border-radius: 24px;\n    width: 48px;\n    height: 48px;\n    align-items: center;\n    justify-content: center;\n    display: flex;\n    margin-right: 12px; }\n  .n9g-aig {\n    display: block;\n    max-width: 100%; }\n  .n9g-atx {\n    font-family: \"Manrope\", sans-serif;\n    font-size: 12px;\n    font-weight: 400;\n    line-height: 16px;\n    color: #101828;\n    margin-right: 8px;\n    width: calc(100% - 68px); }\n  .n9g-brw {\n    border-top: 1px solid #d9d9d9;\n    padding: 24px 0 48px; }\n  .n9g-btp {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 32px; }\n    @media (min-width: 768px) {\n      .n9g-btp {\n        margin-bottom: 24px; } }\n  .n9g-bbp {\n    display: flex;\n    justify-content: space-between;\n    flex-direction: column-reverse; }\n    @media (min-width: 768px) {\n      .n9g-bbp {\n        flex-direction: row; } }\n  .n9g-cprt {\n    font-family: \"Manrope\", sans-serif;\n    font-size: 11px;\n    font-weight: 500;\n    line-height: 16px;\n    color: #babcbf;\n    max-width: 124px; }\n  .n9g-lngs {\n    display: flex;\n    justify-content: flex-end;\n    align-items: center; }\n  .n9g-ctx {\n    font-family: \"Manrope\", sans-serif;\n    font-size: 11px;\n    font-weight: 500;\n    line-height: 16px;\n    color: #babcbf;\n    max-width: 476px;\n    margin-bottom: 32px; }\n    @media (min-width: 768px) {\n      .n9g-ctx {\n        text-align: right;\n        margin-bottom: 0; } }\n  .n9g-lgc {\n    font-family: \"Manrope\", sans-serif;\n    font-size: 11px;\n    font-weight: 500;\n    line-height: 16px;\n    color: #babcbf;\n    padding: 8px 16px 8px 32px;\n    cursor: pointer;\n    position: relative;\n    text-indent: -9999px; }\n    @media (min-width: 576px) {\n      .n9g-lgc {\n        text-indent: 0;\n        padding: 8px 24px 8px 32px; } }\n    .n9g-lgc:after {\n      content: \"\";\n      display: block;\n      width: 16px;\n      height: 16px;\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") center center no-repeat;\n      position: absolute;\n      right: 0;\n      top: 50%;\n      margin-top: -8px;\n      opacity: 0.3;\n      background-size: 16px; }\n  .n9g-lgl {\n    display: none; }\n  .n9g-lgsl {\n    position: relative; }\n    .n9g-lgsl.is-activated .n9g-lgc:after {\n      transform: rotate(-180deg); }\n    .n9g-lgsl.is-activated .n9g-lgl {\n      position: absolute;\n      display: block;\n      bottom: 100%;\n      background-color: #fff;\n      border: 1px solid #d9d9d9;\n      border-radius: 4px;\n      right: 0;\n      box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);\n      width: 104px;\n      padding: 8px 0;\n      margin-bottom: 6px; }\n      .n9g-lgsl.is-activated .n9g-lgl:after, .n9g-lgsl.is-activated .n9g-lgl:before {\n        top: 100%;\n        left: 66px;\n        border: solid transparent;\n        content: \"\";\n        height: 0;\n        width: 0;\n        position: absolute;\n        pointer-events: none; }\n        @media (min-width: 576px) {\n          .n9g-lgsl.is-activated .n9g-lgl:after, .n9g-lgsl.is-activated .n9g-lgl:before {\n            left: 16px; } }\n      .n9g-lgsl.is-activated .n9g-lgl:after {\n        border-color: rgba(255, 255, 255, 0);\n        border-top-color: #fff;\n        border-width: 6px;\n        margin-left: -6px; }\n      .n9g-lgsl.is-activated .n9g-lgl:before {\n        border-color: rgba(217, 217, 217, 0);\n        border-top-color: #d9d9d9;\n        border-width: 7px;\n        margin-left: -7px; }\n  .n9g-fru {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") left center no-repeat;\n    background-size: 24px; }\n  .n9g-fen {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") left center no-repeat;\n    background-size: 24px; }\n  .n9g-fes {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") left center no-repeat;\n    background-size: 24px; }\n  .n9g-fpt {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") left center no-repeat;\n    background-size: 24px; }\n  .n9g-ftr {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") left center no-repeat;\n    background-size: 24px; }\n  .n9g-fvn {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") left center no-repeat;\n    background-size: 24px; }\n  .n9g-lgi {\n    padding: 0 8px 0 40px;\n    font-family: \"Manrope\", sans-serif;\n    font-size: 11px;\n    font-weight: 500;\n    line-height: 24px;\n    color: #838a8e;\n    cursor: pointer;\n    background-position-x: 8px;\n    display: block; }\n    .n9g-lgi:hover {\n      color: #006cb4; }\n", "",{"version":3,"sources":["webpack://./src/webMoneyFooter/webMoneyFooter.scss"],"names":[],"mappings":"AAAA;EACE,sBAAsB;EACtB,oHACmD;EACnD,gBAAgB;EAChB,kBAAkB;EAClB,kBAAkB,EAAA;;AAGpB;EACE,sBAAsB;EACtB,oHACkD;EAClD,gBAAgB;EAChB,kBAAkB;EAClB,kBAAkB,EAAA;;AAGpB;EACE,sBAAsB;EACtB,oHACiD;EACjD,gBAAgB;EAChB,kBAAkB;EAClB,kBAAkB,EAAA;;AAiCpB;EApBE,SAAS;EACT,UAAU;EACV,SAAS;EACT,wBAAwB;EACxB,sBAAsB,EAAA;EAgBxB;IApBE,SAAS;IACT,UAAU;IACV,SAAS;IACT,wBAAwB;IACxB,sBAAsB;IAItB,6BAA6B;IAC7B,qBAAqB,EAAA;IACrB;MAEE,aAAa,EAAA;EAQjB;IA7BE,2BAA2B;IAC3B,yBAAyB;IACzB,wBAAwB;IACxB,sBAAsB;IACtB,qBAAqB;IACrB,iBAAiB,EAAA;EAwBnB;IAHE,kBAAkB,EAAA;EAelB;IACE,gBAAgB;IAChB,gBAAgB;IAChB,eAAe;IACf,cAAc,EAAA;IACd;MALF;QAMI,UAAU,EAAA,EAEb;EACD;IACE,mBAAmB,EAAA;IADpB;MAGG,cAAc;MACd,eAAe;MACf,kBAAkB,EAAA;EAGtB;IACE,gCAAgC;IAChC,mBAAmB,EAAA;IACnB;MAHF;QAII,UAAU,EAAA,EAQb;IANC;MACE,eAAe;MACf,aAAa;MACb,mBAAmB;MACnB,8BAA8B,EAAA;EAGlC;IACE,aAAa;IACb,eAAe;IACf,uBAAuB,EAAA;IACvB;MAJF;QAKI,8BAA8B;QAC9B,WAAW,EAAA,EA8Bd;IA5BC;MARF;QASI,WAAW;QACX,2BAA2B,EAAA,EA0B9B;IAxBC;MACE,cAAc;MACd,kCAAkC;MAClC,gBAAgB;MAChB,eAAe;MACf,iBAAiB;MACjB,eAAe;MACf,oBAAoB;MACpB,cAAc;MACd,iBAAiB,EAAA;MACjB;QAVF;UAWI,eAAe,EAAA,EAYlB;MAVC;QAbF;UAcI,kBAAkB,EAAA,EASrB;MAPC;QAhBF;UAiBI,eAAe;UACf,kBAAkB,EAAA,EAKrB;MAvBA;QAqBG,cAAc,EAAA;EAIpB;IACE,aAAa;IACb,eAAe;IACf,OAAO;IACP,uBAAuB,EAAA;IACvB;MALF;QAMI,UAAU;QACV,yBAAyB,EAAA,EA+C5B;IA7CC;MACE,cAAc;MACd,WAAW;MACX,YAAY;MACZ,yBAAyB;MACzB,kBAAkB;MAClB,aAAa;MACb,mBAAmB;MACnB,uBAAuB;MACvB,eAAe;MACf,oBAAoB;MACpB,kBAAkB,EAAA;MAClB;QAZF;UAaI,WAAW;UACX,YAAY,EAAA,EA8Bf;MA5CA;QAiBG,eAAe,EAAA;MAEhB;QAEG,yBAAyB,EAAA;MAG5B;QAEG,yBAAyB,EAAA;MAG5B;QAEG,yBAAyB,EAAA;MAG5B;QAEG,yBAAyB,EAAA;MAG5B;QAEG,yBAAyB,EAAA;EAKjC;IACE,WAAW;IACX,YAAY,EAAA;IACZ;MAHF;QAII,WAAW;QACX,YAAY,EAAA,EAEf;EACD;IACE,iBAAiB,EAAA;EAEnB;IACE,aAAa;IACb,eAAe;IACf,eAAe,EAAA;EAEjB;IACE,WAAW;IACX,mBAAmB;IACnB,eAAe,EAAA;IACf;MAJF;QAKI,UAAU;QACV,mBAAmB,EAAA,EAYtB;IAVC;MARF;QASI,UAAU;QACV,mBAAmB,EAAA,EAQtB;IANC;MACE,WAAW,EAAA;MACX;QAFF;UAGI,UAAU,EAAA,EAEb;EAEH;IACE,cAAc;IACd,kCAAkC;IAClC,eAAe;IACf,iBAAiB;IACjB,cAAc;IACd,gBAAgB;IAChB,eAAe;IACf,kBAAkB,EAAA;IAClB;MATF;QAUI,mBAAmB,EAAA,EAEtB;EACD;IACE,cAAc;IACd,kCAAkC;IAClC,eAAe;IACf,iBAAiB;IACjB,sBAAsB;IACtB,gBAAgB;IAChB,eAAe;IACf,oBAAoB;IACpB,oBAAoB,EAAA;IACpB;MAVF;QAWI,cAAc;QACd,cAAc,EAAA,EAKjB;IAjBA;MAeG,cAAc,EAAA;EAGlB;IACE,aAAa;IACb,eAAe,EAAA;IACf;MAHF;QAII,mBAAmB,EAAA,EAEtB;EACD;IACE,UAAU;IACV,aAAa;IACb,mBAAmB;IACnB,mBAAmB;IACnB,eAAe,EAAA;IACf;MANF;QAOI,iBAAiB;QACjB,iBAAiB,EAAA,EAEpB;EACD;IACE,yBAAyB;IACzB,mBAAmB;IACnB,WAAW;IACX,YAAY;IACZ,mBAAmB;IACnB,uBAAuB;IACvB,aAAa;IACb,kBAAkB,EAAA;EAEpB;IACE,cAAc;IACd,eAAe,EAAA;EAEjB;IACE,kCAAkC;IAClC,eAAe;IACf,gBAAgB;IAChB,iBAAiB;IACjB,cAAc;IACd,iBAAiB;IACjB,wBAAwB,EAAA;EAE1B;IACE,6BAA6B;IAC7B,oBAAoB,EAAA;EAEtB;IACE,aAAa;IACb,8BAA8B;IAC9B,mBAAmB,EAAA;IACnB;MAJF;QAKI,mBAAmB,EAAA,EAEtB;EACD;IACE,aAAa;IACb,8BAA8B;IAC9B,8BAA8B,EAAA;IAC9B;MAJF;QAKI,mBAAmB,EAAA,EAEtB;EACD;IACE,kCAAkC;IAClC,eAAe;IACf,gBAAgB;IAChB,iBAAiB;IACjB,cAAc;IACd,gBAAgB,EAAA;EAElB;IACE,aAAa;IACb,yBAAyB;IACzB,mBAAmB,EAAA;EAErB;IACE,kCAAkC;IAClC,eAAe;IACf,gBAAgB;IAChB,iBAAiB;IACjB,cAAc;IACd,gBAAgB;IAChB,mBAAmB,EAAA;IACnB;MARF;QASI,iBAAiB;QACjB,gBAAgB,EAAA,EAEnB;EACD;IACE,kCAAkC;IAClC,eAAe;IACf,gBAAgB;IAChB,iBAAiB;IACjB,cAAc;IACd,0BAA0B;IAC1B,eAAe;IACf,kBAAkB;IAClB,oBAAoB,EAAA;IACpB;MAVF;QAWI,cAAc;QACd,0BAA0B,EAAA,EAgB7B;IA5BA;MAeG,WAAW;MACX,cAAc;MACd,WAAW;MACX,YAAY;MACZ,uFACW;MACX,kBAAkB;MAClB,QAAQ;MACR,QAAQ;MACR,gBAAgB;MAChB,YAAY;MACZ,qBAAqB,EAAA;EAGzB;IACE,aAAa,EAAA;EAEf;IACE,kBAAkB,EAAA;IADnB;MAKO,0BAA0B,EAAA;IALjC;MASK,kBAAkB;MAClB,cAAc;MACd,YAAY;MACZ,sBAAsB;MACtB,yBAAyB;MACzB,kBAAkB;MAClB,QAAQ;MACR,wCAAwC;MACxC,YAAY;MACZ,cAAc;MACd,kBAAkB,EAAA;MAnBvB;QAsBO,SAAS;QACT,UAAU;QACV,yBAAyB;QACzB,WAAW;QACX,SAAS;QACT,QAAQ;QACR,kBAAkB;QAClB,oBAAoB,EAAA;QACpB;UA9BP;YA+BS,UAAU,EAAA,EAEb;MAjCN;QAoCO,oCAAoC;QACpC,sBAAsB;QACtB,iBAAiB;QACjB,iBAAiB,EAAA;MAvCxB;QA0CO,oCAAoC;QACpC,yBAAyB;QACzB,iBAAiB;QACjB,iBAAiB,EAAA;EAKzB;IACE,qFAAwE;IACxE,qBAAqB,EAAA;EAEvB;IACE,qFAAwE;IACxE,qBAAqB,EAAA;EAEvB;IACE,qFAAwE;IACxE,qBAAqB,EAAA;EAEvB;IACE,qFAAwE;IACxE,qBAAqB,EAAA;EAEvB;IACE,qFAAwE;IACxE,qBAAqB,EAAA;EAEvB;IACE,qFAAwE;IACxE,qBAAqB,EAAA;EAEvB;IACE,qBAAqB;IACrB,kCAAkC;IAClC,eAAe;IACf,gBAAgB;IAChB,iBAAiB;IACjB,cAAc;IACd,eAAe;IACf,0BAA0B;IAC1B,cAAc,EAAA;IATf;MAWG,cAAc,EAAA","sourcesContent":["@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-SemiBold.woff2\") format(\"woff2\"),\r\n    url(\"fonts/Manrope-SemiBold.woff\") format(\"woff\");\r\n  font-weight: 600;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Regular.woff2\") format(\"woff2\"),\r\n    url(\"fonts/Manrope-Regular.woff\") format(\"woff\");\r\n  font-weight: 400;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Medium.woff2\") format(\"woff2\"),\r\n    url(\"fonts/Manrope-Medium.woff\") format(\"woff\");\r\n  font-weight: 500;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@mixin noSelection {\r\n  -webkit-touch-callout: none;\r\n  -webkit-user-select: none;\r\n  -khtml-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n}\r\n\r\n@mixin resetDiv {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  vertical-align: baseline;\r\n  box-sizing: border-box;\r\n}\r\n\r\n@mixin resetA {\r\n  background-color: transparent;\r\n  text-decoration: none;\r\n  &:hover,\r\n  &:active {\r\n    outline: none;\r\n  }\r\n}\r\n\r\n@mixin resetImg {\r\n  border-style: none;\r\n}\r\n\r\n.n9g {\r\n  @include resetDiv;\r\n  * {\r\n    @include resetDiv;\r\n    @include resetA;\r\n  }\r\n  a {\r\n    @include noSelection;\r\n  }\r\n  img {\r\n    @include resetImg;\r\n  }\r\n  &-ctr {\r\n    min-width: 320px;\r\n    max-width: 960px;\r\n    padding: 0 16px;\r\n    margin: 0 auto;\r\n    @media (min-width: 992px) {\r\n      padding: 0;\r\n    }\r\n  }\r\n  &-bnr {\r\n    margin-bottom: 24px;\r\n    img {\r\n      display: block;\r\n      max-width: 100%;\r\n      border-radius: 8px;\r\n    }\r\n  }\r\n  &-ln {\r\n    box-shadow: 0px 0px 0px 1px #eee;\r\n    padding: 16px 0 8px;\r\n    @media (min-width: 768px) {\r\n      padding: 0;\r\n    }\r\n    &f {\r\n      flex-wrap: wrap;\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: space-between;\r\n    }\r\n  }\r\n  &-ll {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    justify-content: center;\r\n    @media (min-width: 360px) {\r\n      justify-content: space-between;\r\n      width: 100%;\r\n    }\r\n    @media (min-width: 576px) {\r\n      width: auto;\r\n      justify-content: flex-start;\r\n    }\r\n    &l {\r\n      color: #101828;\r\n      font-family: \"Manrope\", sans-serif;\r\n      font-weight: 600;\r\n      font-size: 14px;\r\n      line-height: 32px;\r\n      cursor: pointer;\r\n      transition: all 0.2s;\r\n      display: block;\r\n      margin-right: 8px;\r\n      @media (min-width: 360px) {\r\n        margin-right: 0;\r\n      }\r\n      @media (min-width: 576px) {\r\n        margin-right: 16px;\r\n      }\r\n      @media (min-width: 768px) {\r\n        padding: 16px 0;\r\n        margin-right: 32px;\r\n      }\r\n      &:hover {\r\n        color: #006cb4;\r\n      }\r\n    }\r\n  }\r\n  &-lr {\r\n    display: flex;\r\n    padding: 16px 0;\r\n    flex: 1;\r\n    justify-content: center;\r\n    @media (min-width: 576px) {\r\n      flex: auto;\r\n      justify-content: flex-end;\r\n    }\r\n    &l {\r\n      display: block;\r\n      width: 32px;\r\n      height: 32px;\r\n      background-color: #9fb1bd;\r\n      border-radius: 4px;\r\n      display: flex;\r\n      align-items: center;\r\n      justify-content: center;\r\n      cursor: pointer;\r\n      transition: all 0.2s;\r\n      margin-right: 16px;\r\n      @media (min-width: 576px) {\r\n        width: 20px;\r\n        height: 20px;\r\n      }\r\n      &:last-child {\r\n        margin-right: 0;\r\n      }\r\n      &--tw {\r\n        &:hover {\r\n          background-color: #1d9bf0;\r\n        }\r\n      }\r\n      &--vk {\r\n        &:hover {\r\n          background-color: #2787f5;\r\n        }\r\n      }\r\n      &--od {\r\n        &:hover {\r\n          background-color: #ee8208;\r\n        }\r\n      }\r\n      &--yt {\r\n        &:hover {\r\n          background-color: #ff0000;\r\n        }\r\n      }\r\n      &--tg {\r\n        &:hover {\r\n          background-color: #3390ec;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &-lri {\r\n    width: 32px;\r\n    height: 32px;\r\n    @media (min-width: 576px) {\r\n      width: 20px;\r\n      height: 20px;\r\n    }\r\n  }\r\n  &-mdl {\r\n    padding: 24px 0 0;\r\n  }\r\n  &-rw {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    margin: 0 -16px;\r\n  }\r\n  &-cln {\r\n    width: 100%;\r\n    margin-bottom: 16px;\r\n    padding: 0 16px;\r\n    @media (min-width: 576px) {\r\n      width: 50%;\r\n      margin-bottom: 24px;\r\n    }\r\n    @media (min-width: 768px) {\r\n      width: 25%;\r\n      margin-bottom: 40px;\r\n    }\r\n    &--x2 {\r\n      width: 100%;\r\n      @media (min-width: 768px) {\r\n        width: 50%;\r\n      }\r\n    }\r\n  }\r\n  &-mtl {\r\n    color: #101828;\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    padding: 4px 0;\r\n    font-weight: 600;\r\n    cursor: default;\r\n    margin-bottom: 4px;\r\n    @media (min-width: 768px) {\r\n      margin-bottom: 12px;\r\n    }\r\n  }\r\n  &-mlk {\r\n    color: #838a8e;\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 12px;\r\n    line-height: 16px;\r\n    padding: 4px 8px 4px 0;\r\n    font-weight: 500;\r\n    cursor: pointer;\r\n    transition: all 0.2s;\r\n    display: inline-flex;\r\n    @media (min-width: 768px) {\r\n      display: block;\r\n      padding: 4px 0;\r\n    }\r\n    &:hover {\r\n      color: #006cb4;\r\n    }\r\n  }\r\n  &-aps {\r\n    display: flex;\r\n    flex-wrap: wrap;\r\n    @media (min-width: 768px) {\r\n      margin-bottom: 16px;\r\n    }\r\n  }\r\n  &-ait {\r\n    width: 50%;\r\n    display: flex;\r\n    align-items: center;\r\n    margin-bottom: 16px;\r\n    flex-wrap: wrap;\r\n    @media (min-width: 496px) {\r\n      width: 33.333333%;\r\n      flex-wrap: nowrap;\r\n    }\r\n  }\r\n  &-aim {\r\n    border: 1px solid #eeeeee;\r\n    border-radius: 24px;\r\n    width: 48px;\r\n    height: 48px;\r\n    align-items: center;\r\n    justify-content: center;\r\n    display: flex;\r\n    margin-right: 12px;\r\n  }\r\n  &-aig {\r\n    display: block;\r\n    max-width: 100%;\r\n  }\r\n  &-atx {\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 12px;\r\n    font-weight: 400;\r\n    line-height: 16px;\r\n    color: #101828;\r\n    margin-right: 8px;\r\n    width: calc(100% - 68px);\r\n  }\r\n  &-brw {\r\n    border-top: 1px solid #d9d9d9;\r\n    padding: 24px 0 48px;\r\n  }\r\n  &-btp {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    margin-bottom: 32px;\r\n    @media (min-width: 768px) {\r\n      margin-bottom: 24px;\r\n    }\r\n  }\r\n  &-bbp {\r\n    display: flex;\r\n    justify-content: space-between;\r\n    flex-direction: column-reverse;\r\n    @media (min-width: 768px) {\r\n      flex-direction: row;\r\n    }\r\n  }\r\n  &-cprt {\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 11px;\r\n    font-weight: 500;\r\n    line-height: 16px;\r\n    color: #babcbf;\r\n    max-width: 124px;\r\n  }\r\n  &-lngs {\r\n    display: flex;\r\n    justify-content: flex-end;\r\n    align-items: center;\r\n  }\r\n  &-ctx {\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 11px;\r\n    font-weight: 500;\r\n    line-height: 16px;\r\n    color: #babcbf;\r\n    max-width: 476px;\r\n    margin-bottom: 32px;\r\n    @media (min-width: 768px) {\r\n      text-align: right;\r\n      margin-bottom: 0;\r\n    }\r\n  }\r\n  &-lgc {\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 11px;\r\n    font-weight: 500;\r\n    line-height: 16px;\r\n    color: #babcbf;\r\n    padding: 8px 16px 8px 32px;\r\n    cursor: pointer;\r\n    position: relative;\r\n    text-indent: -9999px;\r\n    @media (min-width: 576px) {\r\n      text-indent: 0;\r\n      padding: 8px 24px 8px 32px;\r\n    }\r\n    &:after {\r\n      content: \"\";\r\n      display: block;\r\n      width: 16px;\r\n      height: 16px;\r\n      background: transparent url(\"images/arrow-down.svg\") center center\r\n        no-repeat;\r\n      position: absolute;\r\n      right: 0;\r\n      top: 50%;\r\n      margin-top: -8px;\r\n      opacity: 0.3;\r\n      background-size: 16px;\r\n    }\r\n  }\r\n  &-lgl {\r\n    display: none;\r\n  }\r\n  &-lgsl {\r\n    position: relative;\r\n    &.is-activated{\r\n      .n9g-lgc{\r\n        &:after {\r\n          transform: rotate(-180deg);\r\n        }\r\n      }\r\n      .n9g-lgl {\r\n        position: absolute;\r\n        display: block;\r\n        bottom: 100%;\r\n        background-color: #fff;\r\n        border: 1px solid #d9d9d9;\r\n        border-radius: 4px;\r\n        right: 0;\r\n        box-shadow: 0 0px 8px rgba(0, 0, 0, 0.1);\r\n        width: 104px;\r\n        padding: 8px 0;\r\n        margin-bottom: 6px;\r\n        &:after,\r\n        &:before {\r\n          top: 100%;\r\n          left: 66px;\r\n          border: solid transparent;\r\n          content: \"\";\r\n          height: 0;\r\n          width: 0;\r\n          position: absolute;\r\n          pointer-events: none;\r\n          @media (min-width: 576px) {\r\n            left: 16px;\r\n          }\r\n        }\r\n  \r\n        &:after {\r\n          border-color: rgba(255, 255, 255, 0);\r\n          border-top-color: #fff;\r\n          border-width: 6px;\r\n          margin-left: -6px;\r\n        }\r\n        &:before {\r\n          border-color: rgba(217, 217, 217, 0);\r\n          border-top-color: #d9d9d9;\r\n          border-width: 7px;\r\n          margin-left: -7px;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &-fru {\r\n    background: transparent url(\"images/flags/ru.svg\") left center no-repeat;\r\n    background-size: 24px;\r\n  }\r\n  &-fen {\r\n    background: transparent url(\"images/flags/ru.svg\") left center no-repeat;\r\n    background-size: 24px;\r\n  }\r\n  &-fes {\r\n    background: transparent url(\"images/flags/ru.svg\") left center no-repeat;\r\n    background-size: 24px;\r\n  }\r\n  &-fpt {\r\n    background: transparent url(\"images/flags/ru.svg\") left center no-repeat;\r\n    background-size: 24px;\r\n  }\r\n  &-ftr {\r\n    background: transparent url(\"images/flags/ru.svg\") left center no-repeat;\r\n    background-size: 24px;\r\n  }\r\n  &-fvn {\r\n    background: transparent url(\"images/flags/ru.svg\") left center no-repeat;\r\n    background-size: 24px;\r\n  }\r\n  &-lgi {\r\n    padding: 0 8px 0 40px;\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-size: 11px;\r\n    font-weight: 500;\r\n    line-height: 24px;\r\n    color: #838a8e;\r\n    cursor: pointer;\r\n    background-position-x: 8px;\r\n    display: block;\r\n    &:hover {\r\n      color: #006cb4;\r\n    }\r\n  }\r\n}\r\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -10791,7 +10671,7 @@ module.exports = __webpack_require__.p + "be782360e9be361b6cc2.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "75d22914943e47c9c532"; }
+/******/ 		__webpack_require__.h = function() { return "5d7071f9dd95835db68f"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
