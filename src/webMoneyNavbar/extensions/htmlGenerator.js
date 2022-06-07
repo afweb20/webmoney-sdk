@@ -9,8 +9,8 @@ export default {
 
     return ml("div", { "class": "n8g", "data-dynamic-class": dynCls }, [
       this.generateFirstLevelMenuButton(options),
-      this.generateFirstLevelMenu(options),
-      this.generateSecondLevelMenu(options)
+      this.generateFirstLevel(options),
+      this.generateSecondLevel(options)
     ]);
 
     var view = options.view;
@@ -48,10 +48,24 @@ export default {
 
   generateFirstLevelMenuButton: function (options) {
 
+    // var firstLevel = options.firstLevel;
+
+    // if (firstLevel.length <= 1) {
+    //   return "";
+    // }
+    
+    // var title = firstLevel[0].title;
+
+    // return ml("div", { "class": "n30g30-first-level-button " + (firstLevel.length > 1 ? "" : "is-empty") }, [
+    //   options.mobileIconUrl != null ? ml("span", { "class": "n30g30-first-level-item-image-wrapper" },
+    //     ml("img", { "class": "n30g30-first-level-item-image", "src": options.mobileIconUrl })
+    //   ) : "",
+    //   ml("span", { "class": "n30g30-first-level-item-text" }, title)
+    // ]);
 
   },
 
-  generateFirstLevelMenu: function (options) {
+  generateFirstLevel: function (options) {
 
     var desktopIconUrl = options.desktopIconUrl;
 
@@ -63,36 +77,14 @@ export default {
             ? ml("img", { "class": "n8g-icn", "src": desktopIconUrl })
             : "",
           ),
-          ml("div", { "class": "n8g-mnu" }, this.generateFirstLevel(options))
+          ml("div", { "class": "n8g-mnu" }, this.generateFirstLevelMenu(options))
         ]) 
       )
     );
 
   },
 
-  generateSecondLevelMenu: function (options) {
-
-  },
-
-  generateFirstLevelButton: function (options) {
-
-    var firstLevel = options.firstLevel;
-
-    if (firstLevel.length <= 1) {
-      return "";
-    }
-    
-    var title = firstLevel[0].title;
-
-    return ml("div", { "class": "n30g30-first-level-button " + (firstLevel.length > 1 ? "" : "is-empty") }, [
-      options.mobileIconUrl != null ? ml("span", { "class": "n30g30-first-level-item-image-wrapper" },
-        ml("img", { "class": "n30g30-first-level-item-image", "src": options.mobileIconUrl })
-      ) : "",
-      ml("span", { "class": "n30g30-first-level-item-text" }, title)
-    ]);
-  },
-
-  generateFirstLevel: function (options) {
+  generateFirstLevelMenu: function (options) {
 
     var view = options.view;
     var firstLevel = options.firstLevel;
@@ -132,7 +124,20 @@ export default {
     return firstLevelMenuArray;
   },
 
+
   generateSecondLevel: function (options) {
+
+    return ml("div", { "class": "n8g-sdl" }, 
+      ml("div", { "class": "n8g-ctr" }, 
+        ml("div", { "class": "n8g-slm" }, 
+          this.generateSecondLevelMenu(options)
+        )
+      )
+    );
+
+  },
+
+  generateSecondLevelMenu: function (options) {
 
     var view = options.view;
     var secondLevel = options.secondLevel;
@@ -145,7 +150,7 @@ export default {
       var url = secondLevel[i].url;
       var active = secondLevel[i].active;
 
-      secondLevelMenuArray.push(ml("a", { "href": url, "class": (active ? "n30g30-second-level-item is-activated"  : "n30g30-second-level-item") + (view == consts.VIEW_MOBILE ? " swiper-slide" : "") }, title));
+      secondLevelMenuArray.push(ml("a", { "href": url, "class": active ? "n8g-sll is-activated"  : "n8g-sll" }, title));
     }
 
     return secondLevelMenuArray;

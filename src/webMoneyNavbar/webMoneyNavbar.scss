@@ -453,4 +453,41 @@
     max-width: 24px;
     margin-right: 8px;
   }
+  &-sdl{
+    // margin-top: 8px;
+  }
+  &-slm{
+    display: flex;
+  }
+  &-sll{
+    color: #758793;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: 13px;
+    line-height: 14px;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    transition: all 0.2s;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    position: relative;
+    &:after{
+      content: "";
+      position: absolute;
+      background-color: #b0b8bf;
+      top: 14px;
+      bottom: 12px;
+      width: 1px;
+      right: 0;
+    }
+    &:last-child:after{
+      display: none;
+    }
+    &:hover,
+    &.is-activated {
+      color: #101828;
+    }
+  }
 }
