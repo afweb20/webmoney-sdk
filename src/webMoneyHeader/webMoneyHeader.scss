@@ -1093,3 +1093,130 @@ b:first-child {
     display: block;
   }
 }
+
+@font-face {
+  font-family: "Manrope";
+  src: url("fonts/Manrope-SemiBold.woff2") format("woff2"), url("fonts/Manrope-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("fonts/Manrope-Regular.woff2") format("woff2"), url("fonts/Manrope-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("fonts/Manrope-Medium.woff2") format("woff2"), url("fonts/Manrope-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@mixin noSelection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin resetDiv {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+@mixin resetA {
+  background-color: transparent;
+  text-decoration: none;
+  &:hover,
+  &:active {
+    outline: none;
+  }
+}
+
+@mixin resetImg {
+  border-style: none;
+}
+
+.n7g {
+  @include resetDiv;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 1px #eeeeee;
+  * {
+    @include resetDiv;
+    @include resetA;
+  }
+  a {
+    @include noSelection;
+  }
+  img {
+    @include resetImg;
+  }
+  &-ctr {
+    width: 100%;
+    min-width: 320px;
+    max-width: 960px;
+    padding: 0 16px;
+    margin: 0 auto;
+    @media (min-width: 992px) {
+      padding: 0;
+    }
+  }
+  &-flv{
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  &-row{
+    display: flex;
+    justify-content: space-between;
+  }
+  &-lft{
+    display: flex;
+    align-items: center;
+  }
+  &-lgo{
+    padding: 16px 0;
+    margin-right: 32px;
+    display: block;
+  }
+  &-lgi{ 
+    display: block;
+  }
+  &-mdl{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &-dtr{
+    width: 2px;
+    background-color: #eeeeee;
+    height: calc(100% - 32px);
+    margin-right: 32px;
+  }
+  &-svs{
+    background: transparent url("./images/svs.svg") center center no-repeat;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-right: 32px;
+    &.is-a{
+      background: transparent url("./images/svs-a.svg") center center no-repeat;
+    }
+  }
+  &-rgt{
+
+  }
+}

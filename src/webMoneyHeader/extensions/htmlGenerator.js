@@ -5,16 +5,36 @@ import ml from "./ml";
 export default {
   generate: function (options) {
 
-    return ml("div", { "class": options.view == consts.VIEW_MOBILE ? "n20g20 n20g20-mobile" : "n20g20" },
-      ml("div", { "class": "n20g20-wrapper" }, [
-        options.view == consts.VIEW_MOBILE ? ml("div", { "class": "n20g20-toggle-button" }) : "",
-        this.generateLogo(options),
-        options.view == consts.VIEW_MOBILE ? "" : this.generateMenu(options),
-        this.generateLoginBlock(options),
-        this.generateSearchBlock(options),
-        options.view == consts.VIEW_MOBILE ? this.generateMenu(options) : ""
-      ])
-    );
+    return ml("div", { "class": "n7g" }, [
+      ml("div", { "class": "n7g-flv" }, 
+        ml("div", { "class": "n7g-ctr" }, 
+          ml("div", { "class": "n7g-row" }, [
+            ml("div", { "class": "n7g-lft" }, 
+              this.generateLogo(options)
+            ),
+            ml("div", { "class": "n7g-mdl" }, [
+              ml("div", { "class": "n7g-dtr" }),
+              ml("div", { "class": "n7g-svs" }),
+              ml("div", { "class": "n7g-lks" })
+            ]),
+            ml("div", { "class": "n7g-rgt" }, 
+              "3"
+            )
+          ])
+        )
+      )
+    ]);
+
+    // return ml("div", { "class": options.view == consts.VIEW_MOBILE ? "n20g20 n20g20-mobile" : "n20g20" },
+    //   ml("div", { "class": "n20g20-wrapper" }, [
+    //     options.view == consts.VIEW_MOBILE ? ml("div", { "class": "n20g20-toggle-button" }) : "",
+    //     this.generateLogo(options),
+    //     options.view == consts.VIEW_MOBILE ? "" : this.generateMenu(options),
+    //     this.generateLoginBlock(options),
+    //     this.generateSearchBlock(options),
+    //     options.view == consts.VIEW_MOBILE ? this.generateMenu(options) : ""
+    //   ])
+    // );
   },
 
   generateLogo: function (options) {
@@ -26,9 +46,8 @@ export default {
     ? logoUrl = "https://www.webmoney.ru"
     : logoUrl = "https://www.web.money/");
 
-    return ml("a", { "href": logoUrl, "class": "n20g20-logo-webmoney" },
-      ml("object", { "type": "image/svg+xml", "data": require("../images/wm-logo.svg") },
-        ml("img", { "src": require("../images/wm-logo-small.png") })));
+    return ml("a", { "href": logoUrl, "class": "n7g-lgo" },
+      ml("img", { "class": "n7g-lgi", "src": require("../images/wm-logo.svg") }));
   },
 
   generateMenu: function (options) {
