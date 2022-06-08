@@ -164,27 +164,37 @@
       }
       &--tw {
         &:hover {
-          background-color: #1d9bf0;
+          background-color: #2DAAE1;
         }
       }
       &--vk {
         &:hover {
-          background-color: #2787f5;
+          background-color: #0077FF;
         }
       }
       &--od {
         &:hover {
-          background-color: #ee8208;
+          background-color: #F7931E;
         }
       }
       &--yt {
         &:hover {
-          background-color: #ff0000;
+          background-color: #FF0000;
         }
       }
       &--tg {
         &:hover {
-          background-color: #3390ec;
+          background-color: #2AABEE;
+        }
+      }
+      &--fb {
+        &:hover {
+          background-color: #1877F2;
+        }
+      }
+      &--im {
+        &:hover {
+          background-color: #e9378a; 
         }
       }
     }
@@ -429,19 +439,19 @@
     background-size: 24px;
   }
   &-fen {
-    background: transparent url("images/flags/ru.svg") left center no-repeat;
+    background: transparent url("images/flags/en.svg") left center no-repeat;
     background-size: 24px;
   }
   &-fes {
-    background: transparent url("images/flags/ru.svg") left center no-repeat;
+    background: transparent url("images/flags/es.svg") left center no-repeat;
     background-size: 24px;
   }
   &-fpt {
-    background: transparent url("images/flags/ru.svg") left center no-repeat;
+    background: transparent url("images/flags/pt.svg") left center no-repeat;
     background-size: 24px;
   }
   &-ftr {
-    background: transparent url("images/flags/ru.svg") left center no-repeat;
+    background: transparent url("images/flags/tr.svg") left center no-repeat;
     background-size: 24px;
   }
   &-fvn {

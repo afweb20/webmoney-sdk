@@ -62,11 +62,11 @@ export default {
     var view = options.view;
     
     var vkIconUrl = require("../images/socials/vk.svg");
-    var facebookIconUrl = require("../images/old/socials/gray-facebook.png");
+    var facebookIconUrl = require("../images/socials/fb.svg");
     var twitterIconUrl = require("../images/socials/tw.svg");
     var odnoklassnikiIconUrl = require("../images/socials/od.svg");
     var youtubeIconUrl = require("../images/socials/yt.svg");
-    var instagramIconUrl = require("../images/old/socials/gray-instagram.png");
+    var instagramIconUrl = require("../images/socials/im.svg");
     var telegramIconUrl = require("../images/socials/tg.svg");
     var showFacebookIcon = false;
     
@@ -77,16 +77,16 @@ export default {
     return ml("div", { "class": "n9g-lr" }, [ 
       options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--vk", "target": "_blank", "rel": "noopener noreferrer", "href": consts.VKONTAKTE_URL[options.lang] },
         ml("img", { "class": "n9g-lri", "src": vkIconUrl })) : "",
-      // showFacebookIcon ? ml("a", { "class": "n21g21-bottom-right-social", "target": "_blank", "rel": "noopener noreferrer", "href": consts.FACEBOOK_URL[options.lang] },
-      //   ml("img", { "src": facebookIconUrl })) : "",
+      showFacebookIcon ? ml("a", { "class": "n9g-lrl n9g-lrl--fb", "target": "_blank", "rel": "noopener noreferrer", "href": consts.FACEBOOK_URL[options.lang] },
+        ml("img", { "src": facebookIconUrl })) : "",
       ml("a", { "class": "n9g-lrl n9g-lrl--tw", "target": "_blank", "rel": "noopener noreferrer", "href": consts.TWITTER_URL[options.lang] },
         ml("img", { "class": "n9g-lri", "src": twitterIconUrl })),
       options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--od", "target": "_blank", "rel": "noopener noreferrer", "href": consts.ODNOKLASSNIKI_URL[options.lang] },
         ml("img", { "class": "n9g-lri", "src": odnoklassnikiIconUrl })) : "",
       options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--yt", "target": "_blank", "rel": "noopener noreferrer", "href": consts.YOUTUBE_URL[options.lang] },
         ml("img", { "class": "n9g-lri", "src": youtubeIconUrl })) : "",
-      // options.domainType == consts.DOMAIN_TYPE_MONEY ? ml("a", { "class": "n21g21-bottom-right-social", "target": "_blank", "rel": "noopener noreferrer", "href": consts.INSTAGRAM_URL[options.lang] },
-      //   ml("img", { "src": instagramIconUrl })) : "",
+      options.domainType == consts.DOMAIN_TYPE_MONEY ? ml("a", { "class": "n9g-lrl n9g-lrl--im", "target": "_blank", "rel": "noopener noreferrer", "href": consts.INSTAGRAM_URL[options.lang] },
+        ml("img", { "src": instagramIconUrl })) : "",
       options.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--tg", "target": "_blank", "rel": "noopener noreferrer", "href": consts.TELEGRAM_URL[options.lang] },
         ml("img", { "class": "n9g-lri", "src": telegramIconUrl })) : ""
     ])
