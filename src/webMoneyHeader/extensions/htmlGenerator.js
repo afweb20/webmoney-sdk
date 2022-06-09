@@ -9,13 +9,16 @@ export default {
       ml("div", { "class": "n7g-flv" }, 
         ml("div", { "class": "n7g-ctr" }, 
           ml("div", { "class": "n7g-row" }, [
-            ml("div", { "class": "n7g-lft" }, 
-              this.generateLogo(options)
-            ),
-            ml("div", { "class": "n7g-mdl" }, [
-              ml("div", { "class": "n7g-dtr" }),
-              ml("div", { "class": "n7g-svs" }),
-              ml("div", { "class": "n7g-lks" })
+            ml("div", { "class": "n7g-lft" }, [
+              ml("div", { "class": "n7g-llg" }, 
+                this.generateLogo(options)
+              ),
+              ml("div", { "class": "n7g-mdl" }, [
+                ml("div", { "class": "n7g-dtr" }),
+                ml("div", { "class": "n7g-svs" }),
+                this.generateFirstLevelMenu(options),
+                this.generateSearchBlock(options)
+              ])
             ]),
             ml("div", { "class": "n7g-rgt" }, 
               "3"
@@ -50,6 +53,23 @@ export default {
       ml("img", { "class": "n7g-lgi", "src": require("../images/wm-logo.svg") }));
   },
 
+  generateFirstLevelMenu: function (options) {
+
+    return ml("div", { "class": "n7g-lks" }, [
+      ml("div", { "class": "n7g-lki", "data-name": "n7g-ind" }, "Частным лицам"),
+      ml("div", { "class": "n7g-lki", "data-name": "n7g-biz" }, "Для бизнеса")
+    ]);
+
+  },
+
+  generateSearchBlock: function (options) {
+
+    return ml("div", { "class": "n7g-srh" },
+      ml("div", { "class": "n7g-sbtn" }, )
+    );
+
+  },
+
   generateMenu: function (options) {
 
     return ml("div", { "class": "n20g20-ext-menu" },
@@ -66,7 +86,7 @@ export default {
         ]));
   },
 
-  generateSearchBlock: function (options) {
+  generateSearchBlock2: function (options) {
 
     return ml("div", { "class": "n22g22-header-user-search" },
       [options.view == consts.VIEW_MOBILE ? ml("div", { "class": "n22g22-toggle-search-button" }) : "",

@@ -88,6 +88,9 @@
   }
   &-lft{
     display: flex;
+  }
+  &-llg{
+    display: flex;
     align-items: center;
   }
   &-lgo{
@@ -104,6 +107,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    padding-right: 64px;
   }
   &-dtr{
     width: 2px;
@@ -120,6 +124,60 @@
     &.is-a{
       background: transparent url("./images/svs-a.svg") center center no-repeat;
     }
+  }
+  &-lks{
+    display: flex;
+  }
+  &-lki{
+    display: block;
+    padding: 6px 40px 6px 8px;
+    margin-right: 16px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #101828;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+    text-decoration: none;
+    font-family: "Manrope";
+    transition: all 0.2s;
+    &:after{
+      content: "";
+      display: block;
+      background: transparent url("./images/arrow-down.svg") center center no-repeat;
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      right: 8px;
+      top: 50%;
+      margin-top: -16px;
+    }
+    &.is-a {
+      color: #006cb4;
+      background-color: #f0f8ff;
+      &:after {
+        background: transparent url("./images/arrow-up.svg") center center no-repeat;
+      }
+    }
+  }
+  &-srh{
+    position: absolute;
+    right: 32px;
+    width: 32px;
+    background-color: #fff;
+    border-radius: 4px;
+    &.is-a{
+      left: 32px;
+      z-index: 1;
+      width: 100%;
+    }
+  }
+  &-sbtn{
+    background: transparent url("./images/search.svg") center center no-repeat;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
   }
   &-rgt{
 
