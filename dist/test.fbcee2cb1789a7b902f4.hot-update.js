@@ -3,9 +3,9 @@ self["webpackHotUpdatewebmoney_layout"]("test",{},
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ /* webpack/runtime/getFullHash */
 /******/ !function() {
-/******/ 	__webpack_require__.h = function() { return "012fe40667584033651a"; }
+/******/ 	__webpack_require__.h = function() { return "3ccfde5693b5cb4a3d44"; }
 /******/ }();
 /******/ 
 /******/ }
 );
-//# sourceMappingURL=test.67af16ebcfb63e49cad5.hot-update.js.map
+//# sourceMappingURL=test.fbcee2cb1789a7b902f4.hot-update.js.map
