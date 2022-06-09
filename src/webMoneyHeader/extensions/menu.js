@@ -8,58 +8,50 @@ export default {
     var rootElement = options.rootElement;
     var url = options.view == consts.VIEW_MOBILE ? consts.MENU_URL_MOBILE[options.lang] : consts.MENU_URL[options.lang];
 
-    ajax("GET", url, function (response) {
+    var servicesMenu = rootElement.getElementsByClassName("n7g-svs")[0];
+    var servicesMenuDd = rootElement.getElementsByClassName("n7g-svs-dd")[0];
 
-      var data = JSON.parse(response).data
-        .replace(/header-menu/g, "n24g24-header-menu")
-        .replace(/sidebar-submenu/g, "n25g25-sidebar-submenu")
-        .replace(/rel="toggle-menu"/g, "");
+    var individiualsMenu = rootElement.getElementsByClassName("n7g-ind")[0];
+    var individiualsMenuDd = rootElement.getElementsByClassName("n7g-ind-dd")[0];
 
-      rootElement.getElementsByClassName("n20g20-ext-menu")[0].innerHTML = data;
+    var businessMenu = rootElement.getElementsByClassName("n7g-biz")[0];
+    var businessMenuDd = rootElement.getElementsByClassName("n7g-biz-dd")[0];
 
-      var toggleButton = rootElement.getElementsByClassName("n20g20-toggle-button")[0];
-      var toggleMenu = rootElement.getElementsByClassName("n20g20-ext-menu")[0];
+    servicesMenu.addEventListener("click", function (e) {
 
-      if (options.view == consts.VIEW_MOBILE) {
+      individiualsMenu.classList.remove("is-a");
+      individiualsMenuDd.classList.remove("is-a");
+      businessMenu.classList.remove("is-a");
+      businessMenuDd.classList.remove("is-a");
 
-        var subMenuList = toggleMenu.querySelectorAll("span");
-      } else {
-        
-        var subMenuList = rootElement.getElementsByClassName("n24g24-header-menu-with-submenu");
-      }
+      this.classList.toggle("is-a");
+      servicesMenuDd.classList.toggle("is-a");
 
-      for (var i = 0; i < subMenuList.length; i++) {
-
-        subMenuList[i].addEventListener("click", function (e) {
-          e.stopPropagation();
-
-          !this.classList.contains("n24g24-submenu-opened") ? this.classList.add("n24g24-submenu-opened") : this.classList.remove("n24g24-submenu-opened");
-
-          for (var j = 0; j < subMenuList.length; j++) {
-
-            if (subMenuList[j] != this) {
-              subMenuList[j].classList.remove("n24g24-submenu-opened");
-            }
-          }
-        });
-      }
-
-      document.addEventListener("click", function (e) {
-
-        for (var i = 0; i < subMenuList.length; i++) {
-          subMenuList[i].classList.remove("n24g24-submenu-opened");
-        }
-      });
-
-      if (options.view == consts.VIEW_MOBILE) {
-
-        toggleButton.addEventListener("click", function (e) {
-          e.stopPropagation();
-  
-          !this.classList.contains("is-activated") ? this.classList.add("is-activated") : this.classList.remove("is-activated");
-          !toggleMenu.classList.contains("is-activated") ? toggleMenu.classList.add("is-activated") : toggleMenu.classList.remove("is-activated");
-        });
-      }
     });
+
+    individiualsMenu.addEventListener("click", function (e) {
+
+      servicesMenu.classList.remove("is-a");
+      servicesMenuDd.classList.remove("is-a");
+      businessMenu.classList.remove("is-a");
+      businessMenuDd.classList.remove("is-a");
+      
+      this.classList.toggle("is-a");
+      individiualsMenuDd.classList.toggle("is-a");
+
+    });
+
+    businessMenu.addEventListener("click", function (e) {
+
+      individiualsMenu.classList.remove("is-a");
+      individiualsMenuDd.classList.remove("is-a");
+      servicesMenu.classList.remove("is-a");
+      servicesMenuDd.classList.remove("is-a");
+      
+      this.classList.toggle("is-a");
+      businessMenuDd.classList.toggle("is-a");
+
+    });
+
   }
 }

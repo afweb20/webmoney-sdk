@@ -68,7 +68,7 @@ export default function WebMoneyHeader() {
     options.rootElement.innerHTML = "";
     options.rootElement.appendChild(generatedElement);
 
-    // menu.init(options);
+    menu.init(options);
     // searchBlock.init(options);
     // loginBlock.init(options);
   }
