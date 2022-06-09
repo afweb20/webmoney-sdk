@@ -21,7 +21,7 @@ export default {
               ])
             ]),
             ml("div", { "class": "n7g-rgt" }, 
-              "3"
+              this.generateLoginBlock(options)
             )
           ])
         )
@@ -70,6 +70,17 @@ export default {
 
   },
 
+  generateLoginBlock: function (options) {
+
+    return ml("div", { "class": "n7g-lgb" },
+      ml("div", { "class": "n7g-lbs" }, [
+        ml("a", {"class": "n7g-lbi n7g-lbi--reg", "href": "#"}, local(options, "buttonSignUp")),
+        ml("a", {"class": "n7g-lbi n7g-lbi--log", "href": "#"}, local(options, "buttonLogIn"))
+      ])
+    );
+
+  },
+
   generateMenu: function (options) {
 
     return ml("div", { "class": "n20g20-ext-menu" },
@@ -111,7 +122,7 @@ export default {
     );
   },
 
-  generateLoginBlock: function (options) {
+  generateLoginBlock2: function (options) {
 
     // todo: Локализация.
     

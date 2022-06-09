@@ -180,6 +180,30 @@
     cursor: pointer;
   }
   &-rgt{
-
+    display: flex;
+    align-items: center;
+  }
+  &-lbs{
+    display: flex;
+  }
+  &-lbi{
+    font-family: "Manrope";
+    font-weight: 500;
+    font-style: 17px;
+    line-height: 24px;
+    padding: 8px 16px;
+    display: block;
+    margin-left: 16px;
+    border: 1px solid;
+    border-radius: 8px;
+    &--log{
+      background-color: #006cb4;
+      border-color: #006cb4;
+      color: #fff;
+    }
+    &--reg{
+      border-color: #006cb4;
+      color: #006cb4;
+    }
   }
 }
