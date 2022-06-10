@@ -129,16 +129,6 @@
         &::after{
           transform: rotate(-180deg);
         }
-        // &::before{
-        //   content: '';
-        //   height: 16px;
-        //   display: block;
-        //   background-color: #f2f4f6;
-        //   position: absolute;
-        //   bottom: -12px;
-        //   right: 0;
-        //   left: 0;
-        // }
         & + .n8g-mnu{
           display: block;
         }
@@ -178,6 +168,9 @@
       &:hover .n8g-mnt,
       .n8g-mnt{
         color: #fff;
+      }
+      @media (max-width: 575px) {
+        display: none;
       }
     }
     &:hover {
