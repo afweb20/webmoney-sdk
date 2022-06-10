@@ -7,8 +7,9 @@ export default {
 
     return ml("div", { "class": "n7g" }, [
       ml("div", { "class": "n7g-flv" }, 
-        ml("div", { "class": "n7g-ctr" }, 
+        ml("div", { "class": "n7g-ctr" }, [
           ml("div", { "class": "n7g-row n7g-spb" }, [
+            ml("div", { "class": "n7g-bgr" }, ""),
             ml("div", { "class": "n7g-lft" }, [
               ml("div", { "class": "n7g-llg" }, 
                 this.generateLogo(options)
@@ -23,8 +24,9 @@ export default {
             ml("div", { "class": "n7g-rgt" }, 
               this.generateLoginBlock(options)
             )
-          ])
-        )
+          ]),
+          ml("div", { "class": "n7g-bgr-dd" })
+        ])
       ),
       this.generateServicesDropDown(options),
       this.generateIndividualsDropDown(options),

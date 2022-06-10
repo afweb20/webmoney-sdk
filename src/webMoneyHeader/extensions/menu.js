@@ -17,6 +17,23 @@ export default {
     var businessMenu = rootElement.getElementsByClassName("n7g-biz")[0];
     var businessMenuDd = rootElement.getElementsByClassName("n7g-biz-dd")[0];
 
+    var burger = rootElement.getElementsByClassName("n7g-bgr")[0];
+    var burgerDd = rootElement.getElementsByClassName("n7g-bgr-dd")[0];
+
+    burger.addEventListener("click", function (e) {
+
+      individiualsMenu.classList.remove("is-a");
+      individiualsMenuDd.classList.remove("is-a");
+      businessMenu.classList.remove("is-a");
+      businessMenuDd.classList.remove("is-a");
+
+      this.classList.toggle("is-a");
+      burgerDd.classList.toggle("is-a");
+      servicesMenu.classList.toggle("is-a");
+      servicesMenuDd.classList.toggle("is-a");
+
+    });
+
     servicesMenu.addEventListener("click", function (e) {
 
       individiualsMenu.classList.remove("is-a");

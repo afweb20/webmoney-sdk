@@ -88,6 +88,34 @@
   &-spb{
     justify-content: space-between;
   }
+  &-bgr{
+    width: 48px;
+    height: 48px;
+    background: transparent url("./images/bgr.svg") center center no-repeat;
+    margin-left: -16px;
+    background-size: 32px;
+    cursor: pointer;
+    &.is-a{
+      background: transparent url("./images/bgr-a.svg") center center no-repeat;
+      background-size: 32px;
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+    &-dd{
+      display: none;
+      &.is-a{
+        height: 48px;
+        display: block;
+      }
+      @media (min-width: 768px) {
+        display: none;
+        &.is-a{
+          display: none;
+        }
+      }
+    }
+  }
   &-lft{
     display: flex;
   }
@@ -96,9 +124,12 @@
     align-items: center;
   }
   &-lgo{
-    padding: 16px 0;
-    margin-right: 32px;
+    padding: 8px 0;
     display: block;
+    @media (min-width: 768px) {
+      padding: 16px 0;
+      margin-right: 32px;
+    }
   }
   &-lgi{ 
     display: block;
@@ -108,14 +139,24 @@
     flex: 1;
     display: flex;
     align-items: center;
-    position: relative;
-    padding-right: 64px;
+    position: absolute;
+    display: none;
+    @media (min-width: 768px) {
+      position: relative;
+      padding-right: 64px;
+      display: flex;
+
+    }
   }
   &-dtr{
     width: 2px;
     background-color: #eeeeee;
     height: calc(100% - 32px);
     margin-right: 32px;
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
   }
   &-svs{
     background: transparent url("./images/svs.svg") center center no-repeat;
@@ -194,23 +235,41 @@
     line-height: 24px;
     padding: 7px 16px;
     display: block;
-    margin-left: 16px;
     border: 1px solid;
     border-radius: 8px;
+    margin-right: -16px; 
+    @media (min-width: 768px) {
+      margin-left: 16px;
+      margin-right: 0; 
+    }
     &--log{
-      background-color: #006cb4;
-      border-color: #006cb4;
-      color: #fff;
+      @media (max-width: 767px) {
+        background: transparent url("./images/login.svg") center center no-repeat;
+        border: none;
+        width: 48px;
+        height: 48px;
+        border-radius: 0;
+        text-indent: -9999px;
+        background-size: 32px;
+      }
+      @media (min-width: 768px) {
+        background-color: #006cb4;
+        border-color: #006cb4;
+        color: #fff;
+      }
     }
     &--reg{
       border-color: #006cb4;
       color: #006cb4;
+      display: none;
+      @media (min-width: 768px) {
+        display: block;
+      }
     }
   }
   &-slv{
     opacity: 0;
     visibility: hidden;
-    position: absolute;
     max-height: 0;
     top: 64px;
     left: 0;
@@ -221,10 +280,19 @@
     z-index: 2;
     background-color: #fff;
     border-top: 1px solid #eeeeee;
+    position: absolute;
+    display: none;
     &.is-a{
       max-height: 1000px;
       opacity: 1;
       visibility: visible;
+      position: static;
+      @media (min-width: 768px) {
+        position: absolute;
+      }
+    }
+    @media (min-width: 768px) {
+      display: block;
     }
   }
   &-col{
