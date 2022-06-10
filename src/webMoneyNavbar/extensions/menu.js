@@ -12,7 +12,7 @@ export default {
     var view = options.view;
     var firstLevel = options.firstLevel;
     var rootElement = options.rootElement;
-    
+
     var menuBtn = rootElement.getElementsByClassName("n8g-mbn")[0];
 
     menuBtn.addEventListener("click", function (e) {
@@ -103,6 +103,7 @@ export default {
     styleContent += dynamicPrefix + " .n8g-mcn {background: " + gradientBg + "}";
 
     styleContent += dynamicPrefix + " .n8g-mnl.is-activated {background-color: " + primaryColor + "}";
+    styleContent += dynamicPrefix + " .n8g-mbn {background-color: " + primaryColor + "}";
     
     // if (view == consts.VIEW_MOBILE) {
 

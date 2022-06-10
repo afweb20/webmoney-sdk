@@ -109,8 +109,9 @@
     font-weight: 600;
     cursor: pointer;
     position: relative;
+    color: #fff;
     &::after{
-      background: transparent url("./images/arrow-down.svg") center center no-repeat;
+      background: transparent url("./images/arrow-down-white.svg") center center no-repeat;
       content: '';
       display: block;
       position: absolute;
@@ -169,7 +170,7 @@
     display: flex;
     align-items: center;
     border-radius: 4px;
-    padding: 9px 16px;
+    padding: 13px 16px;
     @media (min-width: 576px) {
       padding: 0 16px;
     }
