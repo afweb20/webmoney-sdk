@@ -137,12 +137,14 @@
   }
   &-lr {
     display: flex;
-    padding: 16px 0;
+    padding: 16px 0 0;
     flex: 1;
     justify-content: center;
+    flex-wrap: wrap;
     @media (min-width: 576px) {
       flex: auto;
       justify-content: flex-end;
+      padding: 16px 0;
     }
     &l {
       display: block;
@@ -156,9 +158,11 @@
       cursor: pointer;
       transition: all 0.2s;
       margin-right: 16px;
+      margin-bottom: 16px;
       @media (min-width: 576px) {
         width: 20px;
         height: 20px;
+        margin-bottom: 0px;
       }
       &:last-child {
         margin-right: 0;

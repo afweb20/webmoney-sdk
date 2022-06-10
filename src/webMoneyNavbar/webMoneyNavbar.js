@@ -92,6 +92,7 @@ export default function WebMoneyNavbar() {
         context.initNotAdaptive(options);
       }
     });
+    
   }
 
   this.tryParseView = function (options) {

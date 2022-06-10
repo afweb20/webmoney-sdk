@@ -6,7 +6,7 @@ var lang = params["lang"] != null ? params["lang"] : "ru";
 var wmid = params["wmid"] != null ? params["wmid"] : "123681594869";
 var isAppleDevice = ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhone", "iPod"].includes(navigator.platform) || navigator.userAgent.includes("Mac") && "ontouchend" in document;
 var view = isAppleDevice ? "mobile" : "desktop";
-view = "adaptive";
+view = "desktop";
 var loginUrl = "?wmid=123681594869&lang=" + lang;
 var logoutUrl = "?wmid=&lang=" + lang;
 

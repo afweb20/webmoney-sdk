@@ -12,6 +12,7 @@ export default {
     var view = options.view;
     var firstLevel = options.firstLevel;
 
+    /*
     if (view == consts.VIEW_MOBILE) {
     
       var rootElement = options.rootElement;
@@ -67,6 +68,7 @@ export default {
         }
       });
     }
+    */
   },
 
   appendDynamicStyles: function (options) {
