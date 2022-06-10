@@ -11,6 +11,15 @@ export default {
 
     var view = options.view;
     var firstLevel = options.firstLevel;
+    var rootElement = options.rootElement;
+    
+    var menuBtn = rootElement.getElementsByClassName("n8g-mbn")[0];
+
+    menuBtn.addEventListener("click", function (e) {
+
+      this.classList.toggle("is-a");
+
+    });
 
     /*
     if (view == consts.VIEW_MOBILE) {

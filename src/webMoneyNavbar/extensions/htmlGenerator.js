@@ -68,6 +68,7 @@ export default {
   generateFirstLevel: function (options) {
 
     var desktopIconUrl = options.desktopIconUrl;
+    var title = options.firstLevel[0].title;
 
     return ml("div", { "class": "n8g-ftl" }, 
       ml("div", { "class": "n8g-ctr" }, 
@@ -77,6 +78,7 @@ export default {
             ? ml("img", { "class": "n8g-icn", "src": desktopIconUrl })
             : "",
           ),
+          ml("div", { "class": "n8g-mbn" }, title),
           ml("div", { "class": "n8g-mnu" }, this.generateFirstLevelMenu(options))
         ]) 
       )
