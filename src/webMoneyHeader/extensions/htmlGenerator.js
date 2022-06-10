@@ -98,6 +98,27 @@ export default {
               ml("img", { "class": "n7g-simg", "src": require("../images/services/video.png") })
             ),
             ml("span", { "class": "n7g-stl" }, "Видеозвонки и онлайн-трансляции")
+          ]),
+
+          ml("a", { "class": "n7g-svi", "href": "#" }, [
+            ml("span", { "class": "n7g-sim", "style": this.generateBgGradient("#d6879f") }, 
+              ml("img", { "class": "n7g-simg", "src": require("../images/services/debtmart.png") })
+            ),
+            ml("span", { "class": "n7g-stl" }, "DebtMart: Биржа долгов")
+          ]),
+
+          ml("a", { "class": "n7g-svi", "href": "#" }, [
+            ml("span", { "class": "n7g-sim", "style": this.generateBgGradient("#b77368") }, 
+              ml("img", { "class": "n7g-simg", "src": require("../images/services/funding.png") })
+            ),
+            ml("span", { "class": "n7g-stl" }, "Благотворительность")
+          ]),
+
+          ml("a", { "class": "n7g-svi", "href": "#" }, [
+            ml("span", { "class": "n7g-sim", "style": this.generateBgGradient("#e59733") }, 
+              ml("img", { "class": "n7g-simg", "src": require("../images/services/escrow.png") })
+            ),
+            ml("span", { "class": "n7g-stl" }, "Escrow: защищенные сделки")
           ])
 
         ])
