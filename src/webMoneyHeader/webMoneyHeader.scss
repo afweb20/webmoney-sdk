@@ -156,10 +156,9 @@
       margin-top: -16px;
     }
     &.is-a {
-      color: #006cb4;
-      background-color: #f0f8ff;
       &:after {
-        background: transparent url("./images/arrow-up.svg") center center no-repeat;
+        transform: rotate(-180deg);
+        margin-top: -15px;
       }
     }
   }
