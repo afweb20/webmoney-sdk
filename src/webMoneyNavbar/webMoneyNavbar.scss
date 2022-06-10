@@ -79,7 +79,7 @@
   }
   &-mfbx {
     display: flex;
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
       flex-wrap: wrap;
     }
   }
@@ -120,10 +120,10 @@
       top: 0px;
       background-size: 24px;
     }
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       display: none;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 575px) {
       &.is-a{
         &::after{
           transform: rotate(-180deg);
@@ -157,7 +157,7 @@
     &::-webkit-scrollbar{
       display: none;
     }
-    @media (max-width: 767px) {
+    @media (max-width: 575px) {
       flex: auto;
       width: 100%;
       margin-top: 8px;
@@ -170,7 +170,7 @@
     align-items: center;
     border-radius: 4px;
     padding: 9px 16px;
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       padding: 0 16px;
     }
     &.is-activated {
