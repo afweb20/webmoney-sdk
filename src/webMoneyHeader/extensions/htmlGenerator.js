@@ -1,6 +1,7 @@
 import consts from "./consts";
 import local from "./local";
 import ml from "./ml";
+var tinycolor = require("tinycolor2");
 
 export default {
   generate: function (options) {
@@ -91,6 +92,13 @@ export default {
     return ml("div", { "class": "n7g-slv n7g-svs-dd" }, 
       ml("div", { "class": "n7g-ctr" }, 
         ml("div", { "class": "n7g-row" }, [
+
+          ml("a", { "class": "n7g-svi", "href": "#" }, [
+            ml("span", { "class": "n7g-sim", "style": this.generateBgGradient("#6200ea") }, 
+              ml("img", { "class": "n7g-simg", "src": require("../images/services/video.png") })
+            ),
+            ml("span", { "class": "n7g-stl" }, "Видеозвонки и онлайн-трансляции")
+          ])
 
         ])
       )
@@ -250,6 +258,18 @@ export default {
           ml("li", { "class": "n24g24-header-menu-with-submenu" },
             ml("a", {}, local(options, "menuHelp")))
         ]));
+  },
+
+  generateBgGradient: function (color) {
+
+    var primaryColor = color;
+    var primaryColorLighten = tinycolor(primaryColor).saturate(20).lighten(15).toString();
+    var primaryColorDarken = tinycolor(primaryColor).darken(15).toString();
+
+    var gradientBg = "background: linear-gradient(45deg, " + primaryColorDarken + " 0%, " + primaryColor + " 50%, " + primaryColorLighten + " 100%)";
+
+    return gradientBg;
+
   },
 
   generateSearchBlock2: function (options) {

@@ -168,6 +168,33 @@
       background: transparent url("./images/svs-a.svg") center center no-repeat;
     }
   }
+  &-svi{
+    max-width: 148px;
+    margin-bottom: 24px;
+  }
+  &-sim{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  &-simg{
+    width: 24px;
+    display: block;
+    height: auto;
+  }
+  &-stl{
+    font-family: "Manrope";
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+    color: #707070;
+    cursor: pointer;
+  }
   &-lks{
     display: flex;
   }
