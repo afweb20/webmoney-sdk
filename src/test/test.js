@@ -58,10 +58,10 @@ if (typeof WebMoneyNavbar != "undefined") {
   webMoneyNavbar.init({
     rootElement: document.getElementById("webMoneyNavbar2"),
     view: view,
-    primaryColor: "#e59733",
+    primaryColor: "#b77368",
     design: "default",
-    desktopIconUrl: "https://passport.web.money/img/key_w.png",
-    mobileIconUrl: "https://passport.web.money/img/key_w.png",
+    desktopIconUrl: "https://merchant.webmoney.ru/conf/img/merchant-small-terracota_w.png",
+    mobileIconUrl: "https://merchant.webmoney.ru/conf/img/merchant-small-terracota_w.png",
     firstLevel: [
       { title: "Паспорт", url : "#" },
       { title: "Получение аттестата", url : "#", active: true },
@@ -103,6 +103,7 @@ if (typeof WebMoneyNavbar != "undefined") {
   webMoneyNavbar.init({
     rootElement: document.getElementById("webMoneyNavbar4"),
     view: view,
+    primaryColor: "#a5ae43",
     design: "wm-main",
     desktopIconUrl: "https://www.webmoney.ru/img/new/services/logo-info.png",
     mobileIconUrl: "https://www.webmoney.ru/img/new/services/logo-info.png",

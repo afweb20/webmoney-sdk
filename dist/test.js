@@ -10007,10 +10007,10 @@ if (typeof WebMoneyNavbar != "undefined") {
   webMoneyNavbar.init({
     rootElement: document.getElementById("webMoneyNavbar2"),
     view: view,
-    primaryColor: "#e59733",
+    primaryColor: "#b77368",
     design: "default",
-    desktopIconUrl: "https://passport.web.money/img/key_w.png",
-    mobileIconUrl: "https://passport.web.money/img/key_w.png",
+    desktopIconUrl: "https://merchant.webmoney.ru/conf/img/merchant-small-terracota_w.png",
+    mobileIconUrl: "https://merchant.webmoney.ru/conf/img/merchant-small-terracota_w.png",
     firstLevel: [{
       title: "Паспорт",
       url: "#"
@@ -10090,6 +10090,7 @@ if (typeof WebMoneyNavbar != "undefined") {
   webMoneyNavbar.init({
     rootElement: document.getElementById("webMoneyNavbar4"),
     view: view,
+    primaryColor: "#a5ae43",
     design: "wm-main",
     desktopIconUrl: "https://www.webmoney.ru/img/new/services/logo-info.png",
     mobileIconUrl: "https://www.webmoney.ru/img/new/services/logo-info.png",
@@ -10290,7 +10291,7 @@ if (typeof WebMoneyFooter != "undefined") {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "b3343103d90ace6d711d"; }
+/******/ 		__webpack_require__.h = function() { return "279aef7be14335d88a80"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

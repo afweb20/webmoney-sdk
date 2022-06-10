@@ -1,6 +1,7 @@
 import consts from "./consts";
 import Swiper from "swiper";
 import "swiper/css";
+var tinycolor = require("tinycolor2");
 
 export default {
 
@@ -72,6 +73,12 @@ export default {
     
     var view = options.view;
     var primaryColor = options.primaryColor;
+    var primaryColorLighten = tinycolor(primaryColor).saturate(20).lighten(5).toString();
+    var primaryColorDarken = tinycolor(primaryColor).darken(5).toString();
+
+    // var gradientBg = "linear-gradient(45deg, " + primaryColor + " 0%, " + primaryColorLighten + " 100%)";
+    var gradientBg = "linear-gradient(45deg, " + primaryColorDarken + " 0%, " + primaryColor + " 50%, " + primaryColorLighten + " 100%)";
+
     // var viewPrefix = ".n8g";
     // if (view == consts.VIEW_MOBILE) {
     //   viewPrefix = ".n30g30.n30g30-mobile";
@@ -80,7 +87,10 @@ export default {
 
     var styleContent = "";
 
-    styleContent += dynamicPrefix + " .n8g-mcn {background-color: " + primaryColor + "}";
+    // styleContent += dynamicPrefix + " .n8g-mcn {background-color: " + primaryColor + "}";
+
+    styleContent += dynamicPrefix + " .n8g-mcn {background: " + gradientBg + "}";
+
     styleContent += dynamicPrefix + " .n8g-mnl.is-activated {background-color: " + primaryColor + "}";
     
     // if (view == consts.VIEW_MOBILE) {

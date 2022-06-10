@@ -124,7 +124,6 @@ export default {
     return firstLevelMenuArray;
   },
 
-
   generateSecondLevel: function (options) {
 
     return ml("div", { "class": "n8g-sdl" }, 
