@@ -84,8 +84,8 @@ export default {
     
     var view = options.view;
     var primaryColor = options.primaryColor;
-    var primaryColorLighten = tinycolor(primaryColor).saturate(20).lighten(5).toString();
-    var primaryColorDarken = tinycolor(primaryColor).darken(5).toString();
+    var primaryColorLighten = tinycolor(primaryColor).saturate(20).lighten(15).toString();
+    var primaryColorDarken = tinycolor(primaryColor).darken(15).toString();
 
     // var gradientBg = "linear-gradient(45deg, " + primaryColor + " 0%, " + primaryColorLighten + " 100%)";
     var gradientBg = "linear-gradient(45deg, " + primaryColorDarken + " 0%, " + primaryColor + " 50%, " + primaryColorLighten + " 100%)";
