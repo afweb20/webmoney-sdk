@@ -126,7 +126,8 @@ var localization = {
     "pt": "Voltar",
     "tr": "Geri",
     "vn": "Trở lại"
-  }
+  },
+  
 };
 
 export default function (options, key) {

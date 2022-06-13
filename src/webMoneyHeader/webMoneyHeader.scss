@@ -342,25 +342,24 @@
   }
   &-clm{
     & + .n7g-clm {
-      margin-top: 40px;
+      margin-top: 24px;
     }
   }
   &-ttl{
     font-family: "Manrope";
     font-weight: 600;
     font-size: 13px;
-    line-height: 16px;
+    line-height: 32px;
     text-transform: uppercase;
     border-bottom: 1px solid #e1e1e1;
-    padding-bottom: 16px;
     margin-bottom: 16px;
   }
   &-lnk{
     display: block;
     text-decoration: none;
     font-family: "Manrope";
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 13px;
+    line-height: 16px;
     margin-bottom: 16px;
     color: #707070;
     cursor: pointer;

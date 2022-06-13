@@ -11,6 +11,1023 @@
 return /******/ (function() { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./linkStorage.js":
+/*!************************!*\
+  !*** ./linkStorage.js ***!
+  \************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* export default binding */ __WEBPACK_DEFAULT_EXPORT__; }
+/* harmony export */ });
+var consts = {
+  DOMAIN_TYPE_WMTRANSFER: "0",
+  DOMAIN_TYPE_MONEY: "1",
+  DOMAIN_TYPE_RU: "2",
+  LANG_RU: "ru",
+  LANG_EN: "en",
+  LANG_ES: "es",
+  LANG_PT: "pt",
+  LANG_TR: "tr",
+  LANG_VN: "vn"
+};
+var constAllDomainTypes = [consts.DOMAIN_TYPE_WMTRANSFER, consts.DOMAIN_TYPE_MONEY, consts.DOMAIN_TYPE_RU];
+var constLangs = ["rus", "eng"];
+var constUrlInformation = "/information";
+var constUrlInformationManage = constUrlInformation + "/manage";
+var constUrlInformationStatistic = constUrlInformation + "/statistic";
+var constUrlInout = "/inout";
+var constUrlInoutTopup = constUrlInout + "/topup.shtml";
+var constUrlInoutWithdraw = constUrlInout + "/withdraw.shtml";
+var constUrlHelp = "/help";
+var constUrlHelpStart = constUrlHelp + "/start";
+var constUrlHelpTechnical = constUrlHelp + "/technical";
+var constUrlHelpGeneral = constUrlHelp + "/general";
+var constUrlHelpFinancial = constUrlHelp + "/financial";
+var constUrlBusinessAcceptPaymentsOnlineShop = "/business/accept-payments/online-shop";
+var constUrlIndividualsCredit = "/individuals/credit";
+var constUrlDevelopers = "/developers";
+var constUrlLegal = "/legal";
+var constUrlSubjects = "/subjects";
+var constUrlSupport = "/support";
+var linkStorage = {
+  // =========================
+  // О системе (1)
+  // =========================
+  briefDescription: {
+    t: ["Краткое описание", "Brief description"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformation, "/short/index.shtml"]
+  },
+  purseTypes: {
+    t: ["Типы кошельков", "Purse types"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformation, "/wmwallets/index.shtml"]
+  },
+  purseManagement: {
+    t: ["Управление кошельками", "Purse management"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/index.shtml"]
+  },
+  keeperStandardMini: {
+    t: "Keeper Standard (Mini)",
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/standard.shtml"]
+  },
+  keeperWinProClassic: {
+    t: "Keeper WinPro (Classic)",
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/winpro.shtml"]
+  },
+  keeperWebProLight: {
+    t: "Keeper WebPro (Light)",
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/webpro.shtml"]
+  },
+  keeperMobile: {
+    t: "Keeper Mobile",
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/mobile.shtml"]
+  },
+  keeperForSocialNetworks: {
+    t: ["Keeper для социальных сетей", "Keeper for social networks"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/social.shtml"]
+  },
+  systemFees: {
+    t: ["Тарифы системы", "System fees"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformation, "/rates/index.shtml"]
+  },
+  statistics: {
+    t: ["Статистика", "Statistics"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationStatistic, "/index.shtml"]
+  },
+  securityAndPrivacy: {
+    t: ["Безопасность и конфиденциальность", "Security and privacy"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationStatistic, "/security.shtml"]
+  },
+  news: {
+    t: ["Новости", "News"],
+    u: ["news.wmtransfer.com", ["", "/en"]]
+  },
+  // =========================
+  // О системе (2)
+  // =========================
+  legalInformation: {
+    t: ["Юридическая информация", "Legal information"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlLegal, "/index.shtml"]
+  },
+  webMoneyTransferCode: {
+    t: ["Кодекс системы WebMoney Transfer", "WebMoney Transfer Code"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlLegal, "/codex.shtml"]
+  },
+  propertyRightsTransferAgreement: {
+    t: ["Соглашение о трансфере имущественных прав", "Property rights transfer agreement"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlLegal, "/transfert.shtml"]
+  },
+  amlAgreement: {
+    t: ["Соглашение о борьбе с незаконной торговлей", "AML Agreement"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlLegal, "/illegaltrade.shtml"]
+  },
+  creditServiceAgreement: {
+    t: ["Соглашение об использовании кредитного сервиса", "Credit service agreement"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlLegal, "/credit_service.shtml"]
+  },
+  wmPursesAgreement: {
+    t: ["Соглашения по WM-кошелькам", "WM purses agreement"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlLegal, "/garants/index.shtml"]
+  },
+  warning: {
+    t: ["Предупреждение"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlLegal, "/warning.shtml"]
+  },
+  // =========================
+  // О системе (3)
+  // =========================
+  systemSubjects: {
+    t: ["Субъекты системы", "System subjects"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlSubjects, "/index.shtml"]
+  },
+  ownerAndAdministrator: {
+    t: ["Владелец и администратор", "Owner and administrator"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlSubjects, "/administrator.shtml"]
+  },
+  wmPurseGuarantors: {
+    t: ["Гаранты по WM-кошелькам", "WM purse guarantors"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlSubjects, "/guarantors/index.shtml"]
+  },
+  contactsForLegalRequests: {
+    t: ["Контакты для запросов от судебных органов", "Contacts for legal requests"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlSupport, "/official.shtml"]
+  },
+  // =========================
+  // О системе (4)
+  // =========================
+  registrars: {
+    t: ["Регистраторы", "Registrars"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlSubjects, "/registrators.shtml"]
+  },
+  financialSupport: {
+    t: ["Финансовая поддержка", "Financial support"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlSupport, "/financial.shtml"]
+  },
+  technicalSupport: {
+    t: ["Техническая поддержка", "Technical support"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlSupport, "/tech.shtml"]
+  },
+  cooperation: {
+    t: ["Сотрудничество", "Cooperation"],
+    d: constAllDomainTypes,
+    u: [constLangs, "/cooperation/merchants.shtml"]
+  },
+  forum: {
+    t: ["Форум", "Forum"],
+    u: "forum.web.money/index.php"
+  },
+  facebook: {
+    t: "Facebook",
+    u: "www.facebook.com/webmoneyofficial"
+  },
+  twitter: {
+    t: "Twitter",
+    u: ["twitter.com/webmoney_ru", "twitter.com/WebMoneySystem"]
+  },
+  vk: {
+    t: "Вконтакте",
+    u: "vk.com/webmoney.transfer"
+  },
+  youTube: {
+    t: "YouTube",
+    u: "youtube.com/c/webmoney"
+  },
+  telegram: {
+    t: "Telegram",
+    u: "telegram.me/webmoney"
+  },
+  downloadSoftware: {
+    t: ["Скачать приложения", "Download software"],
+    u: [["wiki.web.money/projects/webmoney/wiki/gde_skachat_prilozheniya_webmoney", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software"]]
+  },
+  // =========================
+  // Частным лицам (1)
+  // =========================
+  topUpCash: {
+    t: ["Наличными", "Cash"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInoutTopup, "#cash"]
+  },
+  topUpBankAccount: {
+    t: ["С банковского счета", "Bank account"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInoutTopup, "#bank"]
+  },
+  topUpEMoney: {
+    t: ["Электронными деньгами", "E-money"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInoutTopup, "#emoney"]
+  },
+  topUpPaymentTerminat: {
+    t: ["Через терминал", "Payment terminal"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInoutTopup, "#terminal"]
+  },
+  topUpMoneyTransfer: {
+    t: ["Денежным переводом", "Money transfer"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInoutTopup, "#perevod"]
+  },
+  consultations: {
+    t: ["Платные видеоконсультации", "Paid video consultations"],
+    u: "events.web.money/consultations"
+  },
+  softactivation: {
+    t: ["Продажа цифровых товаров", "Sale of digital goods"],
+    u: "softactivation.webmoney.ru"
+  },
+  indx: {
+    t: ["INDX: фондовая биржа", "INDX: Stock exchange"],
+    u: "indx.money/about"
+  },
+  publicant: {
+    t: ["Publicant: опубликовать книгу", "Publicant: Publish a book"],
+    u: "publicant.webmoney.ru"
+  },
+  mestkom: {
+    t: ["Mestcom: продажа рекламы", "Mestcom: Sell Ads"],
+    u: "www.mestkom.ru/sell.aspx"
+  },
+  cashbox: {
+    t: ["CashBox: оплата за действия", "CashBox: Complete activities on a website"],
+    u: "cashbox.ru"
+  },
+  shareholder: {
+    t: ["Shareholder: дивиденды и торговля долями", "Shareholder: Dividends and share trading"],
+    u: ["www.shareholder.ru/About.aspx", ["?lang=ru", "?lang=en"]]
+  },
+  debtmart: {
+    t: ["DebtMart: Биржа долгов", "Debt market"],
+    u: ["debtmart.wmtransfer.com", ["", "?lang=en"]]
+  },
+  video: {
+    t: ["Видеозвонки и онлайн-трансляции", "Video calls and online broadcasts"],
+    u: "video.webmoney.ru"
+  },
+  memo: {
+    t: ["Управление закладками", "Bookmark management"],
+    u: "memo.web.money"
+  },
+  notes: {
+    t: ["Верстка и публикация заметок", "Layout and publication of notes"],
+    u: "wmid.com/notes"
+  },
+  analytics: {
+    t: ["Сервис аналитики", "Analytics"],
+    u: "analytics.webmoney.ru"
+  },
+  mail: {
+    t: ["Защищенная почта", "Mail"],
+    u: "wmid.com"
+  },
+  files: {
+    t: ["Файловое хранилище", "File storage"],
+    u: ["files.webmoney.ru", ["", "?locale=en"]]
+  },
+  mentor: {
+    t: ["Mentor: контроль исполнения задач", "Mentor: Task management service"],
+    u: ["mentor.wmtransfer.com", ["?lang=ru", "?lang=en"]]
+  },
+  // =========================
+  // Частным лицам (2)
+  // =========================
+  withdrawCash: {
+    t: ["Наличными", "Cash"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInoutWithdraw, "#cash"]
+  },
+  withdrawToBankCard: {
+    t: ["На банковскую карту", "To bank card"],
+    u: ["telepay.web.money", ["/ru", "/en"], "/cards"]
+  },
+  withdrawBankAccount: {
+    t: ["На банковский счет", "Bank account"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInoutWithdraw, "#bank"]
+  },
+  withdrawEmoney: {
+    t: ["Электронными деньгами", "E-money"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInoutWithdraw, "#emoney"]
+  },
+  withdrawTransfer: {
+    t: ["Денежным переводом", "Money transfer"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInoutWithdraw, "#perevod"]
+  },
+  exchanger: {
+    t: ["Exchanger: обменный пункт", "Exchanger: Exchange service"],
+    u: "exchanger.web.money"
+  },
+  wmCheck: {
+    t: ["WM.Check: оплата без регистрации", "WM.Check: Payment without registration"],
+    u: [["check.webmoney.ru", "check.wmtransfer.com/w/"], ["?lang=ru", "?lang=en"]]
+  },
+  protectedTransactions: {
+    t: ["Переводы с протекцией (платежи в два шага)", "Protected transactions"],
+    u: [["wiki.web.money/projects/webmoney/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4_%D1%81_%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D0%BA%D1%86%D0%B8%D0%B5%D0%B9", "wiki.wmtransfer.com/projects/webmoney/wiki/Protected_payment"]]
+  },
+  security: {
+    t: ["Безопасность", "Security"],
+    u: "security.web.money/asp/default.asp"
+  },
+  escrow: {
+    t: ["Escrow: защищенные сделки", "Escrow: Secure transactions"],
+    u: "escrow.webmoney.ru"
+  },
+  enum: {
+    t: ["E-Num: безопасная авторизация", "E-Num: Secure authorisation"],
+    u: ["enum.ru", ["", "?lang=en"]]
+  },
+  operationNotification: {
+    t: ["Оповещения об операциях", "Operation notification"],
+    u: ["notify.webmoney.ru", ["", "?lang=eng"]]
+  },
+  purseAccessLimiting: {
+    t: ["Ограничение доступа к кошельку", "Purse access limiting"],
+    u: "security.web.money/asp/setallyip.asp"
+  },
+  expenseLimitsSetting: {
+    t: ["Настройка расходных лимитов", "Expense limits setting"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpTechnical, "/security_limits.shtml"]
+  },
+  restoringControl: {
+    t: ["Восстановление доступа", "Restoring control"],
+    u: ["key.wmtransfer.com", ["", "/10/NewApp.aspx?lang=en"]]
+  },
+  advisor: {
+    t: ["Advisor: отзывы о сайтах", "Advisor: Website reviews"],
+    u: "advisor.wmtransfer.com"
+  },
+  // =========================
+  // Частным лицам (3)
+  // =========================
+  mobileCommunications: {
+    t: ["Мобильная связь", "Mobile communications"],
+    u: ["telepay.web.money", ["/ru", "/en"], "/mobile"]
+  },
+  internetAccess: {
+    t: ["Доступ в Интернет", "Internet access"],
+    u: ["telepay.web.money", ["/ru", "/en"], "/isp"]
+  },
+  commercialTv: {
+    t: ["Коммерческое телевидение", "Commercial TV"],
+    u: ["telepay.web.money", ["/ru", "/en"], "/tv"]
+  },
+  publicUtilities: {
+    t: ["Коммунальные услуги", "Utilities"],
+    u: ["telepay.web.money", ["/ru", "/en"], "/public-utilities"]
+  },
+  publicServices: {
+    t: ["Государственные услуги, штрафы, налоги", "Public services, fines, taxes"],
+    u: "payments.webmoney.ru"
+  },
+  bankAccountPayments: {
+    t: ["Платежи по банковским реквизитам", "Bank account payments"],
+    u: "payments.webmoney.ru/freepay/Step1/4"
+  },
+  megastock: {
+    t: ["Megastock: каталог продавцов", "Megastock: Merchant directory"],
+    u: [["megastock.ru", "megastock.com"]]
+  },
+  digisellerCatalogOfdigitalGoods: {
+    t: ["Digiseller: цифровые товары", "Digiseller: Catalog of digital goods"],
+    u: "digiseller.ru/outside/buygoods.asp"
+  },
+  antivirus: {
+    t: ["Антивирус: программы по подписке", "Antivirus: software subscription"],
+    u: [["antivirus.webmoney.ru", "antivirus.wmtransfer.com"]]
+  },
+  rebills: {
+    t: ["Rebills: автоплатежи", "Rebills and recurring payments"],
+    u: "rebills.webmoney.ru"
+  },
+  creditService: {
+    t: ["Кредитный сервис", "Credit service"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlIndividualsCredit, "/credit_service/about.shtml"]
+  },
+  debtService: {
+    t: ["Долговой cервис", "Loan service"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlIndividualsCredit, "/debt_service/get_loan.shtml"]
+  },
+  passport: {
+    t: ["Аттестация", "Verification"],
+    u: "passport.web.money"
+  },
+  receivePassport: {
+    t: ["Получить аттестат", "Receive WebMoney passport"],
+    u: "passport.web.money"
+  },
+  verificationPoints: {
+    t: ["Пункты аттестации", "Verification points"],
+    u: "passport.web.money/asp/Reglist.asp?rettid=130"
+  },
+  arbitrage: {
+    t: ["Арбитраж", "Arbitrage"],
+    u: "arbitrage.web.money"
+  },
+  submitComplaint: {
+    t: ["Подать иск", "Submit a complaint"],
+    u: "arbitrage.web.money/asp/inewprocess.asp"
+  },
+  submitClaim: {
+    t: ["Подать претензию", "Submit a claim"],
+    u: "arbitrage.web.money/asp/newclaims.asp?authtype=1"
+  },
+  registerContract: {
+    t: ["Зарегистрировать контракт", "Register contract"],
+    u: "arbitrage.web.money/asp/bnewcontract.asp"
+  },
+  // =========================
+  // Частным лицам (4)
+  // =========================
+  charity: {
+    t: ["Благотворительность", "Charity"],
+    u: "funding.web.money/donations"
+  },
+  crowdfunding: {
+    t: ["Краудфандинг", "Crowdfunding"],
+    u: "funding.web.money/crowd"
+  },
+  groupBuying: {
+    t: ["Коллективные покупки", "Group buying"],
+    u: "funding.web.money/group"
+  },
+  eventOrganization: {
+    t: ["Организация мероприятий", "Event organization"],
+    u: "funding.web.money/tickets"
+  },
+  virtualCards: {
+    t: ["Виртуальные карты Visa и MasterCard", "Virtual cards Visa and MasterCard"],
+    u: "cards.web.money"
+  },
+  plasticCards: {
+    t: ["Пластиковые карты Visa и MasterCard", "Plastic cards Visa and MasterCard"],
+    u: "cards.web.money"
+  },
+  moneySend: {
+    t: ["Перевод с карты на карту", "MoneySend"],
+    u: "moneysend.web.money"
+  },
+  events: {
+    t: ["Деловая сеть", "Business network"],
+    u: "events.web.money"
+  },
+  blog: {
+    t: ["Новости системы", "System news"],
+    u: "blog.wmtransfer.com"
+  },
+  geo: {
+    t: ["Интерактивная карта", "Interactive map"],
+    u: "geo.web.money"
+  },
+  wiki: {
+    t: "Wiki",
+    u: "wiki.web.money"
+  },
+  purseManagement2: {
+    q: "",
+    t: ["Управление кошельками", "Purse management"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/index.shtml"]
+  },
+  keeperStandardMini2: {
+    t: "Keeper Standard (Mini)",
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/standard.shtml"]
+  },
+  keeperWinProClassic2: {
+    t: "Keeper WinPro (Classic)",
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/winpro.shtml"]
+  },
+  keeperWebProLight2: {
+    t: "Keeper WebPro (Light)",
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/webpro.shtml"]
+  },
+  keeperMobile2: {
+    t: "Keeper Mobile",
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/mobile.shtml"]
+  },
+  keeperForSocialNetworks2: {
+    q: "",
+    t: ["Keeper для социальных сетей", "Keeper for social networks"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/social.shtml"]
+  },
+  enum2: {
+    t: "E-NUM",
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlInformationManage, "/e-num.shtml"]
+  },
+  downloadSoftware2: {
+    q: "",
+    t: ["Скачать приложения", "Download software"],
+    u: ["wiki.web.money/projects/webmoney/wiki/gde_skachat_prilozheniya_webmoney", "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software"]
+  },
+  // =========================
+  // Для бизнеса (1)
+  // =========================
+  merchant: {
+    q: "",
+    t: ["Merchant: создать магазин", "Web Merchant Interface"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/merchant.shtml"]
+  },
+  paymentsToBankAccounts: {
+    q: "",
+    t: ["Прием платежей на банковский счет", "Payments to bank accounts"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/bank.shtml"]
+  },
+  megastock2: {
+    q: "",
+    t: ["Megastock: каталог магазинов", "MegaStock: Directory of sites"],
+    u: "megastock.ru"
+  },
+  digiseller2: {
+    q: "",
+    t: ["Digiseller: цифровые товары", "Digiseller: Catalog of digital goods"],
+    u: "digiseller.ru/outside/sellgoods.asp"
+  },
+  funding: {
+    q: "",
+    t: ["Сбор средств", "Fundraising"],
+    u: "funding.web.money"
+  },
+  mestcom2: {
+    q: "",
+    t: ["Mestcom: продажа рекламы", "Mestcom: Selling Ads"],
+    u: "www.mestkom.ru/sell.aspx"
+  },
+  cashbox2: {
+    q: "",
+    t: ["Cashbox: покупка действий на сайте", "Cashbox: Purchase website activities"],
+    u: "cashbox.ru"
+  },
+  digiseller3: {
+    q: "",
+    t: ["Digiseller: виджет агентского магазина", "Digiseller: Agent shop widget"],
+    u: "www.digiseller.ru/outside/agentshop.asp"
+  },
+  login: {
+    q: "",
+    t: ["Login: авторизация по WMID", "Login: WMID authorisation"],
+    u: "login.wmtransfer.com"
+  },
+  // =========================
+  // Для бизнеса (2)
+  // =========================
+  masspayment: {
+    q: "",
+    t: ["Masspayment: массовые выплаты", "Mass Payments"],
+    u: "masspayment.web.money"
+  },
+  exchanger2: {
+    q: "",
+    t: ["Exchanger: обменный пункт", "Exchanger: Exchange service"],
+    u: "exchanger.web.money"
+  },
+  contracts: {
+    q: "",
+    t: ["Контракты: регистрация текстов Соглашений", "Contracts: Agreement text registration"],
+    u: "arbitrage.web.money/asp/bContract.asp"
+  },
+  arbitrage2: {
+    q: "",
+    t: ["Арбитраж: разрешение споров", "Arbitrage: Dispute resolution"],
+    u: "arbitrage.web.money"
+  },
+  escrow2: {
+    q: "",
+    t: ["Escrow: защищенные сделки", "Escrow: Secure transactions"],
+    u: "escrow.webmoney.ru"
+  },
+  creditMarket: {
+    q: "",
+    t: ["Кредитная биржа", "Credit market"],
+    u: ["credit.web.money", ["", "?lang=en"]]
+  },
+  reporting: {
+    q: "",
+    t: ["Отчетность", "Reporting"],
+    u: "report.webmoney.ru"
+  },
+  financialSupport2: {
+    q: "",
+    t: ["Служба финансовой поддержки", "Financial support"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlSupport, "/financial.shtml"]
+  },
+  biz: {
+    q: "",
+    t: ["Выплаты участникам системы", "Payments to system participants"],
+    u: "biz.web.money"
+  },
+  biz2: {
+    q: "",
+    t: ["Прием платежей", "Accepting payments"],
+    u: "biz.web.money"
+  },
+  // =========================
+  // Для бизнеса (3)
+  // =========================
+  shareholder2: {
+    q: "",
+    t: ["Shareholder: вложение средств", "Shareholder: Investments"],
+    u: ["www.shareholder.ru/About.aspx", ["?lang=ru", "?lang=en"]]
+  },
+  indx2: {
+    q: "",
+    t: ["INDX: фондовая биржа", "INDX: Stock exchange"],
+    u: "indx.money/about/eth/#"
+  },
+  debtMarket: {
+    q: "",
+    t: ["Продажа долгов", "Debt market"],
+    u: ["debtmart.wmtransfer.com", ["?lang=ru", "?lang=en"]]
+  },
+  capitaller: {
+    q: "",
+    t: ["Capitaller: управление средствами", "Capitaller: Funds management"],
+    u: ["www.capitaller.ru/About.aspx", ["?lang=ru", "?lang=en"]]
+  },
+  mentor2: {
+    q: "",
+    t: ["Mentor: контроль исполнения задач", "Mentor: Task management service"],
+    u: "mentor.wmtransfer.com"
+  },
+  secureMail: {
+    q: "",
+    t: ["Защищенная почта", "Secure mail"],
+    u: "mail.wmid.com"
+  },
+  files2: {
+    q: "",
+    t: ["Файловое хранилище", "File storage"],
+    u: "files.web.money"
+  },
+  letterPostingService: {
+    q: "",
+    t: ["Отправка бумажных писем", "Letter posting service"],
+    u: "letters.wmtransfer.com"
+  },
+  newsline: {
+    q: "",
+    t: ["Лента новостей: рассылка", "Newsline: Subscription"],
+    u: "subscribe.web.money/subscribe"
+  },
+  programInterfaces: {
+    q: "",
+    t: ["API: программные интерфейсы", "API: Program interfaces"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlDevelopers, "/api.shtml"]
+  },
+  stylesAndDesign: {
+    q: "",
+    t: ["Дизайн и стили", "Styles and design"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlDevelopers, "/logos.shtml"]
+  },
+  technicalSupport2: {
+    q: "",
+    t: ["Техническая поддержка", "Technical support"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlSupport, "/tech.shtml"]
+  },
+  // =========================
+  // Помощь (1)
+  // =========================
+  registration: {
+    q: "",
+    t: ["Регистрация", "Registration"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpStart, "/registration.shtml"]
+  },
+  inoutOptions: {
+    q: "",
+    t: ["Выбор способа ввода/вывода", "Choosing a method for input/output"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpStart, "/inout_options.shtml"]
+  },
+  acceptPayments: {
+    q: "",
+    t: ["Выбор способа приема платежей", "Choosing a method for accepting payments"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpTechnical, "/accept_payments.shtml"]
+  },
+  repayment: {
+    q: "",
+    t: ["Возврат займа на Debt", "Repayment"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpFinancial, "/repayment.shtml"]
+  },
+  repaymentCPurse: {
+    q: "",
+    t: ["Возврат кредита с С кошелька", "Repayment c purse"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpFinancial, "/repayment_c.shtml"]
+  },
+  controlRecovery: {
+    q: "",
+    t: ["Восстановление контроля", "Control recovery"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpGeneral, "/recovery.shtml"]
+  },
+  keepers: {
+    q: "",
+    t: ["Выбор способа управления", "Choosing an account management method"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpTechnical, "/keepers.shtml"]
+  },
+  poluchenieAttestata: {
+    q: "",
+    t: ["Получение аттестата", "Receiving WebMoney passport"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpStart, "/poluchenie_attestata.shtml"]
+  },
+  operationLimits: {
+    q: "",
+    t: ["Лимиты на операции", "Operation limits"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpStart, "/operation_limits.shtml"]
+  },
+  changeData: {
+    q: "",
+    t: ["Изменение регистрационных данных", "Change data"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpGeneral, "/change_data.shtml"]
+  },
+  pretenzIIski: {
+    q: "",
+    t: ["Подача претензий и исков", "Submitting claims and complaints"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpStart, "/pretenzi-iski.shtml"]
+  },
+  annullation: {
+    q: "",
+    t: ["Отказ в обслуживании", "Annullation"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpGeneral, "/annullation.shtml"]
+  },
+  deleteWmid: {
+    q: "",
+    t: ["Порядок удаления WMID", "Delete WMID"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpGeneral, "/delete_wmid.shtml"]
+  },
+  // =========================
+  // Помощь (2)
+  // =========================
+  changeBl: {
+    q: "",
+    t: ["Изменение BL", "Changing BL"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpGeneral, "/change_bl.shtml"]
+  },
+  actionBlock: {
+    q: "",
+    t: ["Действия при блокировке кошелька", "Action block"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpGeneral, "/action_block.shtml"]
+  },
+  photoId: {
+    q: "",
+    t: ["Создание PhotoID", "Create PhotoID"],
+    u: "wiki.web.money/projects/webmoney/wiki/PhotoID"
+  },
+  nevozvratDebt: {
+    q: "",
+    t: ["Невозвраты займов на Debt", "Loan defaults"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpFinancial, "/nevozvrat_debt.shtml"]
+  },
+  transactionHistory: {
+    q: "",
+    t: ["Получение выписки операций", "Getting transacion history"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpFinancial, "/transaction_history.shtml"]
+  },
+  crowdfunding2: {
+    q: "",
+    t: ["Сбор средств", "Crowdfunding"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpStart, "/croudfunding.shtml"]
+  },
+  exchange: {
+    q: "",
+    t: ["Обменные операции", "Exchange operations"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpFinancial, "/exchange.shtml"]
+  },
+  securityLimits: {
+    q: "",
+    t: ["Расходные лимиты", "Spending limits"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpTechnical, "/security_limits.shtml"]
+  },
+  tabu: {
+    q: "",
+    t: ["Запрещенные виды деятельности", "Restricted activities"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpGeneral, "/tabu.shtml"]
+  },
+  bankCards: {
+    q: "",
+    t: ["Банковские карты", "Bank cards"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpTechnical, "/cards.shtml"]
+  },
+  checkCorr: {
+    q: "",
+    t: ["Проверка корреспондентов", "Correspondent check"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpGeneral, "/check_corr.shtml"]
+  },
+  automats: {
+    q: "",
+    t: ["Бюджетные и расчетные автоматы", "Budget and transact automation tools"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpTechnical, "/automats.shtml"]
+  },
+  // =========================
+  // Помощь (3)
+  // =========================
+  downloadSoftware3: {
+    q: "",
+    t: ["Где скачать приложения", "Download software"],
+    u: ["wiki.web.money/projects/webmoney/wiki/gde_skachat_prilozheniya_webmoney", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software"]
+  },
+  AskQuestion: {
+    q: "",
+    t: ["Задать вопрос", "Ask a question"],
+    u: ["support.wmtransfer.com", ["", "lang=eng"]]
+  },
+  legalEntityWmid: {
+    q: "",
+    t: ["Использование WMID юридическими лицами", "Usage of WMID by legal entities"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpFinancial, "/legal_entity_wmid.shtml"]
+  },
+  videoTutorials: {
+    q: "",
+    t: ["Обучающие видео", "Video tutorials"],
+    u: ["www.youtube.com/playlist?list=PLxnBovRWjSvuQF841-x7onqshYgCzkxkU", "www.youtube.com/playlist?list=PLxnBovRWjSvvLcfubSk3cNFrvPxk8Y8GL"]
+  },
+  financialSupport3: {
+    q: "",
+    t: ["Финансовая поддержка", "Financial support"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlSupport, "/financial.shtml"]
+  },
+  technicalSupport3: {
+    q: "",
+    t: ["Техническая поддержка", "Technical support"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlSupport, "/tech.shtml"]
+  },
+  searchPayment: {
+    q: "",
+    t: ["Розыск платежей", "Search payment"],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpFinancial, "/search_pay.shtml"]
+  },
+  interactiveMap: {
+    q: "",
+    t: ["Интерактивная карта", "Interactive map"],
+    u: "geo.web.money"
+  },
+  wiki2: {
+    t: "Wiki",
+    u: ["wiki.web.money", "wiki.wmtransfer.com/projects/webmoney/wiki/WebMoney_Wiki"]
+  },
+  forum2: {
+    q: "",
+    t: ["Форум", "Forum"],
+    u: "forum.web.money/index.php"
+  }
+};
+
+var containDomainType = function containDomainType(items, domainType) {
+  for (var i = 0; i < items.length; i++) {
+    if (items[i] == domainType) {
+      return true;
+    }
+  }
+
+  return false;
+};
+
+var getLangValue = function getLangValue(items, lang) {
+  if (typeof items == "string") {
+    return items;
+  }
+
+  if (lang == consts.LANG_RU && items.length > 0) {
+    return items[0];
+  } else if (lang == consts.LANG_EN && items.length > 1) {
+    return items[1];
+  } else if (lang == consts.LANG_ES && items.length > 2) {
+    return items[2];
+  } else if (lang == consts.LANG_PT && items.length > 3) {
+    return items[3];
+  } else if (lang == consts.LANG_TR && items.length > 4) {
+    return items[4];
+  } else if (lang == consts.LANG_VN && items.length > 5) {
+    return items[5];
+  } else if (items.length > 1) {
+    return items[1];
+  } else if (items.length > 0) {
+    return items[0];
+  }
+
+  return "";
+};
+
+/* harmony default export */ function __WEBPACK_DEFAULT_EXPORT__(options, key) {
+  var link = {
+    title: "title_" + key + "_" + options.lang,
+    url: "url_" + key + "_" + options.lang
+  };
+  var linkStorageItem = linkStorage[key];
+
+  if (linkStorageItem != null) {
+    var title = getLangValue(linkStorageItem.t, options.lang);
+    var url = "";
+
+    if (linkStorageItem.d != null) {
+      var domainType = null;
+
+      if (containDomainType(linkStorageItem.d, options.domainType)) {
+        domainType = options.domainType;
+      } else if (containDomainType(linkStorageItem.d, consts.DOMAIN_TYPE_WMTRANSFER)) {
+        domainType = consts.DOMAIN_TYPE_WMTRANSFER;
+      } else if (containDomainType(linkStorageItem.d, consts.DOMAIN_TYPE_MONEY)) {
+        domainType = consts.DOMAIN_TYPE_MONEY;
+      } else if (containDomainType(linkStorageItem.d, consts.DOMAIN_TYPE_RU)) {
+        domainType = consts.DOMAIN_TYPE_RU;
+      }
+
+      if (domainType == consts.DOMAIN_TYPE_WMTRANSFER) {
+        url += "wmtransfer.com/";
+      } else if (domainType == consts.DOMAIN_TYPE_MONEY) {
+        url += "web.money/";
+      } else if (domainType == consts.DOMAIN_TYPE_RU) {
+        url += "webmoney.ru/";
+      }
+    }
+
+    if (linkStorageItem.u != null && typeof linkStorageItem.u == "string") {
+      url += linkStorageItem.u;
+    } else if (linkStorageItem.u != null) {
+      for (var i = 0; i < linkStorageItem.u.length; i++) {
+        url += getLangValue(linkStorageItem.u[i], options.lang);
+      }
+    }
+
+    url = "https://" + url;
+    link.title = title;
+    link.url = url;
+    link.q = linkStorageItem.q;
+  }
+
+  return link;
+}
+
+/***/ }),
+
 /***/ "./node_modules/ansi-html-community/index.js":
 /*!***************************************************!*\
   !*** ./node_modules/ansi-html-community/index.js ***!
@@ -10082,6 +11099,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _consts__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./consts */ "./src/webMoneyHeader/extensions/consts.js");
 /* harmony import */ var _local__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./local */ "./src/webMoneyHeader/extensions/local.js");
 /* harmony import */ var _ml__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./ml */ "./src/webMoneyHeader/extensions/ml.js");
+/* harmony import */ var _linkStorage__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../linkStorage */ "./linkStorage.js");
+
 
 
 
@@ -10206,6 +11225,8 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-stl"
     }, "Верстка и публикация заметок")])])));
   },
+  // getLink(options, "indx").title
+  // getLink(options, "indx").url
   generateIndividualsDropDown: function generateIndividualsDropDown(options) {
     return (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-slv n7g-ind-dd"
@@ -10219,31 +11240,75 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
+    }, "Пополнить"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpCash").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpCash").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpBankAccount").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpBankAccount").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpEMoney").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpEMoney").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpPaymentTerminat").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpPaymentTerminat").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpMoneyTransfer").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpMoneyTransfer").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-clm"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-ttl"
     }, "Заработать"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Платные видеоконсультации"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "consultations").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "consultations").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Продажа цифровых товаров"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "softactivation").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "softactivation").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "INDX: фондовая биржа"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "indx").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "indx").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Publicant: опубликовать книгу"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "publicant").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "publicant").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Mestcom: продажа рекламы"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mestkom").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mestkom").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "CashBox: оплата за действия"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "cashbox").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "cashbox").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Shareholder: дивиденды и торговля долями"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "shareholder").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "shareholder").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "DebtMart: Биржа долгов")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "debtmart").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "debtmart").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-clm"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-ttl"
+    }, "Для работы"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "video").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "video").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "memo").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "memo").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "notes").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "notes").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "analytics").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "analytics").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mail").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mail").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "files").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "files").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mentor").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mentor").title)])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-col"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-clm"
@@ -10251,67 +11316,59 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-ttl"
     }, "Вывести"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Наличными"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawCash").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawCash").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "На банковскую карту"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawToBankCard").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawToBankCard").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "На банковский счет"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawBankAccount").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawBankAccount").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Электронными деньгами"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawEmoney").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawEmoney").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Денежным переводом")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawTransfer").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawTransfer").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Одолжить"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, "Операции с WebMoney"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Кредитный сервис"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "exchanger").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "exchanger").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Долговой сервис")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n7g-col"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "wmCheck").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "wmCheck").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "protectedTransactions").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "protectedTransactions").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-clm"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n7g-ttl"
-    }, "Пополнить"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-ttl",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "security").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "security").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Наличными"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "escrow").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "escrow").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "С банковского счета"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "enum").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "enum").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Электронными деньгами"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "operationNotification").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "operationNotification").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Через терминал"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "purseAccessLimiting").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "purseAccessLimiting").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Денежным переводом")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n7g-clm"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n7g-ttl"
-    }, "Сбор средств"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "expenseLimitsSetting").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "expenseLimitsSetting").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Благотворительность"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "restoringControl").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "restoringControl").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Краудфандинг"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
-      "class": "n7g-lnk",
-      "href": "#"
-    }, "Коллективные покупки"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
-      "class": "n7g-lnk",
-      "href": "#"
-    }, "Организация мероприятий")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "advisor").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "advisor").title)])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-col"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-clm"
@@ -10319,32 +11376,145 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-ttl"
     }, "Оплатить"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Мобильная связь"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mobileCommunications").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mobileCommunications").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Доступ в Интернет"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "internetAccess").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "internetAccess").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Коммерческое телевидение"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "commercialTv").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "commercialTv").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Коммунальные услуги"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "publicUtilities").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "publicUtilities").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Государственные услуги, штрафы, налоги"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "publicServices").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "publicServices").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Платежи по банковским реквизитам"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "bankAccountPayments").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "bankAccountPayments").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Digiseller: цифровые товары"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "megastock").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "megastock").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Антивирус: программы по подписке"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "digisellerCatalogOfdigitalGoods").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "digisellerCatalogOfdigitalGoods").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Rebills: автоплатежи")])])])));
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "antivirus").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "antivirus").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "rebills").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "rebills").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-clm"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-ttl"
+    }, "Одолжить"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "creditService").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "creditService").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "debtService").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "debtService").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-clm"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-ttl",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "passport").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "passport").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "receivePassport").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "receivePassport").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "verificationPoints").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "verificationPoints").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-clm"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-ttl",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "arbitrage").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "arbitrage").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "submitComplaint").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "submitComplaint").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "submitClaim").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "submitClaim").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "registerContract").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "registerContract").title)])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-col"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-clm"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-ttl"
+    }, "Сбор средств"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "charity").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "charity").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "crowdfunding").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "crowdfunding").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "groupBuying").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "groupBuying").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "eventOrganization").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "eventOrganization").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-clm"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-ttl"
+    }, "Банковские карты"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "virtualCards").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "virtualCards").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "plasticCards").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "plasticCards").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "moneySend").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "moneySend").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-clm"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-ttl"
+    }, "Территория WebMoney"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "events").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "events").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "blog").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "blog").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "geo").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "geo").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "wiki").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "wiki").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-clm"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-ttl",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "purseManagement2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "purseManagement2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "keeperStandardMini2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "keeperStandardMini2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "keeperWinProClassic2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "keeperWinProClassic2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "keeperWebProLight2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "keeperWebProLight2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "keeperMobile2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "keeperMobile2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "keeperForSocialNetworks2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "keeperForSocialNetworks2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "enum2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "enum2").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-clm"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-ttl",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "downloadSoftware2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "downloadSoftware2").title)])])])));
   },
   generateBusinessDropDown: function generateBusinessDropDown(options) {
     return (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
@@ -11570,7 +12740,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_10___ = _node_modules_css_loader_dist_runtime_
 var ___CSS_LOADER_URL_REPLACEMENT_11___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_11___);
 var ___CSS_LOADER_URL_REPLACEMENT_12___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_12___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"woff\");\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") format(\"woff\");\n  font-weight: 500;\n  font-style: normal;\n  font-display: swap; }\n\n.n7g {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  vertical-align: baseline;\n  box-sizing: border-box;\n  width: 100%;\n  overflow: hidden;\n  box-shadow: 0 1px #eeeeee; }\n  .n7g * {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    vertical-align: baseline;\n    box-sizing: border-box;\n    background-color: transparent;\n    text-decoration: none; }\n    .n7g *:hover, .n7g *:active {\n      outline: none; }\n  .n7g a {\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .n7g img {\n    border-style: none; }\n  .n7g-ctr {\n    width: 100%;\n    min-width: 320px;\n    max-width: 960px;\n    padding: 0 16px;\n    margin: 0 auto; }\n    @media (min-width: 992px) {\n      .n7g-ctr {\n        padding: 0; } }\n  .n7g-flv {\n    padding: 0;\n    display: flex;\n    align-items: center; }\n  .n7g-row {\n    display: flex; }\n  .n7g-spb {\n    justify-content: space-between; }\n  .n7g-bgr {\n    width: 48px;\n    height: 48px;\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") center center no-repeat;\n    margin-left: -16px;\n    background-size: 32px;\n    cursor: pointer; }\n    .n7g-bgr.is-a {\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") center center no-repeat;\n      background-size: 32px; }\n    @media (min-width: 768px) {\n      .n7g-bgr {\n        display: none; } }\n    .n7g-bgr-dd {\n      display: none; }\n      .n7g-bgr-dd.is-a {\n        height: 48px;\n        display: block; }\n      @media (min-width: 768px) {\n        .n7g-bgr-dd {\n          display: none; }\n          .n7g-bgr-dd.is-a {\n            display: none; } }\n  .n7g-lft {\n    display: flex; }\n  .n7g-llg {\n    display: flex;\n    align-items: center; }\n  .n7g-lgo {\n    padding: 8px 0;\n    display: block; }\n    @media (min-width: 768px) {\n      .n7g-lgo {\n        padding: 16px 0;\n        margin-right: 32px; } }\n  .n7g-lgi {\n    display: block;\n    height: 32px; }\n  .n7g-mdl {\n    flex: 1;\n    display: flex;\n    align-items: center;\n    position: absolute;\n    display: none; }\n    @media (min-width: 768px) {\n      .n7g-mdl {\n        position: relative;\n        padding-right: 64px;\n        display: flex; } }\n  .n7g-dtr {\n    width: 2px;\n    background-color: #eeeeee;\n    height: calc(100% - 32px);\n    margin-right: 32px;\n    display: none; }\n    @media (min-width: 768px) {\n      .n7g-dtr {\n        display: block; } }\n  .n7g-svs {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_8___ + ") center center no-repeat;\n    width: 32px;\n    height: 32px;\n    cursor: pointer;\n    margin-right: 32px; }\n    .n7g-svs.is-a {\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_9___ + ") center center no-repeat; }\n  .n7g-svi {\n    display: flex;\n    align-items: center;\n    flex: 1;\n    padding-right: 8px; }\n  .n7g-sic {\n    width: 40px;\n    height: 40px;\n    margin-right: 8px; }\n  .n7g-sim {\n    width: 40px;\n    height: 40px;\n    display: flex;\n    border-radius: 8px;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 16px; }\n  .n7g-simg {\n    width: 24px;\n    display: block;\n    height: auto; }\n  .n7g-stl {\n    color: #101828;\n    font-family: \"Manrope\", sans-serif;\n    font-weight: 600;\n    font-size: 13px;\n    line-height: 16px;\n    cursor: pointer;\n    transition: all 0.2s;\n    display: block; }\n    .n7g-stl:hover {\n      color: #000; }\n  .n7g-lks {\n    display: flex; }\n  .n7g-lki {\n    display: block;\n    padding: 6px 40px 6px 8px;\n    margin-right: 16px;\n    font-size: 14px;\n    line-height: 20px;\n    color: #101828;\n    font-weight: 600;\n    cursor: pointer;\n    border-radius: 4px;\n    position: relative;\n    text-decoration: none;\n    font-family: \"Manrope\";\n    transition: all 0.2s; }\n    .n7g-lki:after {\n      content: \"\";\n      display: block;\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_10___ + ") center center no-repeat;\n      width: 32px;\n      height: 32px;\n      position: absolute;\n      right: 8px;\n      top: 50%;\n      margin-top: -16px; }\n    .n7g-lki.is-a:after {\n      transform: rotate(-180deg);\n      margin-top: -15px; }\n  .n7g-srh {\n    position: absolute;\n    right: 32px;\n    width: 32px;\n    background-color: #fff;\n    border-radius: 4px; }\n    .n7g-srh.is-a {\n      left: 32px;\n      z-index: 1;\n      width: 100%; }\n  .n7g-sbtn {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_11___ + ") center center no-repeat;\n    width: 32px;\n    height: 32px;\n    cursor: pointer; }\n  .n7g-rgt {\n    display: flex;\n    align-items: center; }\n  .n7g-lbs {\n    display: flex; }\n  .n7g-lbi {\n    font-family: \"Manrope\";\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 24px;\n    padding: 7px 16px;\n    display: block;\n    border: 1px solid;\n    border-radius: 8px;\n    margin-right: -16px; }\n    @media (min-width: 768px) {\n      .n7g-lbi {\n        margin-left: 16px;\n        margin-right: 0; } }\n    @media (max-width: 767px) {\n      .n7g-lbi--log {\n        background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_12___ + ") center center no-repeat;\n        border: none;\n        width: 48px;\n        height: 48px;\n        border-radius: 0;\n        text-indent: -9999px;\n        background-size: 32px; } }\n    @media (min-width: 768px) {\n      .n7g-lbi--log {\n        background-color: #006cb4;\n        border-color: #006cb4;\n        color: #fff; } }\n    .n7g-lbi--reg {\n      border-color: #006cb4;\n      color: #006cb4;\n      display: none; }\n      @media (min-width: 768px) {\n        .n7g-lbi--reg {\n          display: block; } }\n  .n7g-slv {\n    opacity: 0;\n    visibility: hidden;\n    max-height: 0;\n    top: 64px;\n    left: 0;\n    right: 0;\n    padding: 24px 0;\n    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);\n    transition: all 0.3s;\n    z-index: 2;\n    background-color: #fff;\n    border-top: 1px solid #eeeeee;\n    position: absolute;\n    display: none; }\n    .n7g-slv.is-a {\n      max-height: 1000px;\n      opacity: 1;\n      visibility: visible;\n      position: static; }\n      @media (min-width: 768px) {\n        .n7g-slv.is-a {\n          position: absolute; } }\n    @media (min-width: 768px) {\n      .n7g-slv {\n        display: block; } }\n  .n7g-col {\n    flex: 1;\n    padding: 0 16px; }\n  .n7g-clm + .n7g-clm {\n    margin-top: 40px; }\n  .n7g-ttl {\n    font-family: \"Manrope\";\n    font-weight: 600;\n    font-size: 13px;\n    line-height: 16px;\n    text-transform: uppercase;\n    border-bottom: 1px solid #e1e1e1;\n    padding-bottom: 16px;\n    margin-bottom: 16px; }\n  .n7g-lnk {\n    display: block;\n    text-decoration: none;\n    font-family: \"Manrope\";\n    font-size: 14px;\n    line-height: 24px;\n    margin-bottom: 16px;\n    color: #707070;\n    cursor: pointer;\n    transition: all 0.3s linear; }\n    .n7g-lnk:hover {\n      color: #006cb4; }\n", "",{"version":3,"sources":["webpack://./src/webMoneyHeader/webMoneyHeader.scss"],"names":[],"mappings":"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","sourcesContent":["@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-SemiBold.woff2\") format(\"woff2\"), url(\"fonts/Manrope-SemiBold.woff\") format(\"woff\");\r\n  font-weight: 600;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Regular.woff2\") format(\"woff2\"), url(\"fonts/Manrope-Regular.woff\") format(\"woff\");\r\n  font-weight: 400;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Medium.woff2\") format(\"woff2\"), url(\"fonts/Manrope-Medium.woff\") format(\"woff\");\r\n  font-weight: 500;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@mixin noSelection {\r\n  -webkit-touch-callout: none;\r\n  -webkit-user-select: none;\r\n  -khtml-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n}\r\n\r\n@mixin resetDiv {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  vertical-align: baseline;\r\n  box-sizing: border-box;\r\n}\r\n\r\n@mixin resetA {\r\n  background-color: transparent;\r\n  text-decoration: none;\r\n  &:hover,\r\n  &:active {\r\n    outline: none;\r\n  }\r\n}\r\n\r\n@mixin resetImg {\r\n  border-style: none;\r\n}\r\n\r\n.n7g {\r\n  @include resetDiv;\r\n  width: 100%;\r\n  overflow: hidden;\r\n  box-shadow: 0 1px #eeeeee;\r\n  * {\r\n    @include resetDiv;\r\n    @include resetA;\r\n  }\r\n  a {\r\n    @include noSelection;\r\n  }\r\n  img {\r\n    @include resetImg;\r\n  }\r\n  &-ctr {\r\n    width: 100%;\r\n    min-width: 320px;\r\n    max-width: 960px;\r\n    padding: 0 16px;\r\n    margin: 0 auto;\r\n    @media (min-width: 992px) {\r\n      padding: 0;\r\n    }\r\n  }\r\n  &-flv{\r\n    padding: 0;\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-row{\r\n    display: flex;\r\n  }\r\n  &-spb{\r\n    justify-content: space-between;\r\n  }\r\n  &-bgr{\r\n    width: 48px;\r\n    height: 48px;\r\n    background: transparent url(\"./images/bgr.svg\") center center no-repeat;\r\n    margin-left: -16px;\r\n    background-size: 32px;\r\n    cursor: pointer;\r\n    &.is-a{\r\n      background: transparent url(\"./images/bgr-a.svg\") center center no-repeat;\r\n      background-size: 32px;\r\n    }\r\n    @media (min-width: 768px) {\r\n      display: none;\r\n    }\r\n    &-dd{\r\n      display: none;\r\n      &.is-a{\r\n        height: 48px;\r\n        display: block;\r\n      }\r\n      @media (min-width: 768px) {\r\n        display: none;\r\n        &.is-a{\r\n          display: none;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &-lft{\r\n    display: flex;\r\n  }\r\n  &-llg{\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-lgo{\r\n    padding: 8px 0;\r\n    display: block;\r\n    @media (min-width: 768px) {\r\n      padding: 16px 0;\r\n      margin-right: 32px;\r\n    }\r\n  }\r\n  &-lgi{ \r\n    display: block;\r\n    height: 32px;\r\n  }\r\n  &-mdl{\r\n    flex: 1;\r\n    display: flex;\r\n    align-items: center;\r\n    position: absolute;\r\n    display: none;\r\n    @media (min-width: 768px) {\r\n      position: relative;\r\n      padding-right: 64px;\r\n      display: flex;\r\n\r\n    }\r\n  }\r\n  &-dtr{\r\n    width: 2px;\r\n    background-color: #eeeeee;\r\n    height: calc(100% - 32px);\r\n    margin-right: 32px;\r\n    display: none;\r\n    @media (min-width: 768px) {\r\n      display: block;\r\n    }\r\n  }\r\n  &-svs{\r\n    background: transparent url(\"./images/svs.svg\") center center no-repeat;\r\n    width: 32px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n    margin-right: 32px;\r\n    &.is-a{\r\n      background: transparent url(\"./images/svs-a.svg\") center center no-repeat;\r\n    }\r\n  }\r\n  &-svi{\r\n    // max-width: 180px;\r\n    // padding: 0 16px;\r\n    // margin-bottom: 24px;\r\n    display: flex;\r\n    align-items: center;\r\n    flex: 1;\r\n    padding-right: 8px;\r\n  }\r\n  &-sic{\r\n    width: 40px;\r\n    height: 40px;\r\n    margin-right: 8px;\r\n  }\r\n  &-sim{\r\n    width: 40px;\r\n    height: 40px;\r\n    display: flex;\r\n    border-radius: 8px;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 16px;\r\n  }\r\n  &-simg{\r\n    width: 24px;\r\n    display: block;\r\n    height: auto;\r\n  }\r\n  &-stl{\r\n    color: #101828;\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-weight: 600;\r\n    font-size: 13px;\r\n    line-height: 16px;\r\n    cursor: pointer;\r\n    transition: all 0.2s;\r\n    display: block;\r\n    &:hover{\r\n      color: #000;\r\n    }\r\n  }\r\n  &-lks{\r\n    display: flex;\r\n  }\r\n  &-lki{\r\n    display: block;\r\n    padding: 6px 40px 6px 8px;\r\n    margin-right: 16px;\r\n    font-size: 14px;\r\n    line-height: 20px;\r\n    color: #101828;\r\n    font-weight: 600;\r\n    cursor: pointer;\r\n    border-radius: 4px;\r\n    position: relative;\r\n    text-decoration: none;\r\n    font-family: \"Manrope\";\r\n    transition: all 0.2s;\r\n    &:after{\r\n      content: \"\";\r\n      display: block;\r\n      background: transparent url(\"./images/arrow-down.svg\") center center no-repeat;\r\n      width: 32px;\r\n      height: 32px;\r\n      position: absolute;\r\n      right: 8px;\r\n      top: 50%;\r\n      margin-top: -16px;\r\n    }\r\n    &.is-a {\r\n      &:after {\r\n        transform: rotate(-180deg);\r\n        margin-top: -15px;\r\n      }\r\n    }\r\n  }\r\n  &-srh{\r\n    position: absolute;\r\n    right: 32px;\r\n    width: 32px;\r\n    background-color: #fff;\r\n    border-radius: 4px;\r\n    &.is-a{\r\n      left: 32px;\r\n      z-index: 1;\r\n      width: 100%;\r\n    }\r\n  }\r\n  &-sbtn{\r\n    background: transparent url(\"./images/search.svg\") center center no-repeat;\r\n    width: 32px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n  }\r\n  &-rgt{\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-lbs{\r\n    display: flex;\r\n  }\r\n  &-lbi{\r\n    font-family: \"Manrope\";\r\n    font-weight: 500;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    padding: 7px 16px;\r\n    display: block;\r\n    border: 1px solid;\r\n    border-radius: 8px;\r\n    margin-right: -16px; \r\n    @media (min-width: 768px) {\r\n      margin-left: 16px;\r\n      margin-right: 0; \r\n    }\r\n    &--log{\r\n      @media (max-width: 767px) {\r\n        background: transparent url(\"./images/login.svg\") center center no-repeat;\r\n        border: none;\r\n        width: 48px;\r\n        height: 48px;\r\n        border-radius: 0;\r\n        text-indent: -9999px;\r\n        background-size: 32px;\r\n      }\r\n      @media (min-width: 768px) {\r\n        background-color: #006cb4;\r\n        border-color: #006cb4;\r\n        color: #fff;\r\n      }\r\n    }\r\n    &--reg{\r\n      border-color: #006cb4;\r\n      color: #006cb4;\r\n      display: none;\r\n      @media (min-width: 768px) {\r\n        display: block;\r\n      }\r\n    }\r\n  }\r\n  &-slv{\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    max-height: 0;\r\n    top: 64px;\r\n    left: 0;\r\n    right: 0;\r\n    padding: 24px 0;\r\n    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);\r\n    transition: all 0.3s;\r\n    z-index: 2;\r\n    background-color: #fff;\r\n    border-top: 1px solid #eeeeee;\r\n    position: absolute;\r\n    display: none;\r\n    &.is-a{\r\n      max-height: 1000px;\r\n      opacity: 1;\r\n      visibility: visible;\r\n      position: static;\r\n      @media (min-width: 768px) {\r\n        position: absolute;\r\n      }\r\n    }\r\n    @media (min-width: 768px) {\r\n      display: block;\r\n    }\r\n  }\r\n  &-col{\r\n    flex: 1;\r\n    padding: 0 16px;\r\n  }\r\n  &-clm{\r\n    & + .n7g-clm {\r\n      margin-top: 40px;\r\n    }\r\n  }\r\n  &-ttl{\r\n    font-family: \"Manrope\";\r\n    font-weight: 600;\r\n    font-size: 13px;\r\n    line-height: 16px;\r\n    text-transform: uppercase;\r\n    border-bottom: 1px solid #e1e1e1;\r\n    padding-bottom: 16px;\r\n    margin-bottom: 16px;\r\n  }\r\n  &-lnk{\r\n    display: block;\r\n    text-decoration: none;\r\n    font-family: \"Manrope\";\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    margin-bottom: 16px;\r\n    color: #707070;\r\n    cursor: pointer;\r\n    transition: all 0.3s linear;\r\n    &:hover{\r\n      color: #006cb4;\r\n    }\r\n  }\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"woff\");\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") format(\"woff\");\n  font-weight: 500;\n  font-style: normal;\n  font-display: swap; }\n\n.n7g {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  vertical-align: baseline;\n  box-sizing: border-box;\n  width: 100%;\n  overflow: hidden;\n  box-shadow: 0 1px #eeeeee; }\n  .n7g * {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    vertical-align: baseline;\n    box-sizing: border-box;\n    background-color: transparent;\n    text-decoration: none; }\n    .n7g *:hover, .n7g *:active {\n      outline: none; }\n  .n7g a {\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .n7g img {\n    border-style: none; }\n  .n7g-ctr {\n    width: 100%;\n    min-width: 320px;\n    max-width: 960px;\n    padding: 0 16px;\n    margin: 0 auto; }\n    @media (min-width: 992px) {\n      .n7g-ctr {\n        padding: 0; } }\n  .n7g-flv {\n    padding: 0;\n    display: flex;\n    align-items: center; }\n  .n7g-row {\n    display: flex; }\n  .n7g-spb {\n    justify-content: space-between; }\n  .n7g-bgr {\n    width: 48px;\n    height: 48px;\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") center center no-repeat;\n    margin-left: -16px;\n    background-size: 32px;\n    cursor: pointer; }\n    .n7g-bgr.is-a {\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") center center no-repeat;\n      background-size: 32px; }\n    @media (min-width: 768px) {\n      .n7g-bgr {\n        display: none; } }\n    .n7g-bgr-dd {\n      display: none; }\n      .n7g-bgr-dd.is-a {\n        height: 48px;\n        display: block; }\n      @media (min-width: 768px) {\n        .n7g-bgr-dd {\n          display: none; }\n          .n7g-bgr-dd.is-a {\n            display: none; } }\n  .n7g-lft {\n    display: flex; }\n  .n7g-llg {\n    display: flex;\n    align-items: center; }\n  .n7g-lgo {\n    padding: 8px 0;\n    display: block; }\n    @media (min-width: 768px) {\n      .n7g-lgo {\n        padding: 16px 0;\n        margin-right: 32px; } }\n  .n7g-lgi {\n    display: block;\n    height: 32px; }\n  .n7g-mdl {\n    flex: 1;\n    display: flex;\n    align-items: center;\n    position: absolute;\n    display: none; }\n    @media (min-width: 768px) {\n      .n7g-mdl {\n        position: relative;\n        padding-right: 64px;\n        display: flex; } }\n  .n7g-dtr {\n    width: 2px;\n    background-color: #eeeeee;\n    height: calc(100% - 32px);\n    margin-right: 32px;\n    display: none; }\n    @media (min-width: 768px) {\n      .n7g-dtr {\n        display: block; } }\n  .n7g-svs {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_8___ + ") center center no-repeat;\n    width: 32px;\n    height: 32px;\n    cursor: pointer;\n    margin-right: 32px; }\n    .n7g-svs.is-a {\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_9___ + ") center center no-repeat; }\n  .n7g-svi {\n    display: flex;\n    align-items: center;\n    flex: 1;\n    padding-right: 8px; }\n  .n7g-sic {\n    width: 40px;\n    height: 40px;\n    margin-right: 8px; }\n  .n7g-sim {\n    width: 40px;\n    height: 40px;\n    display: flex;\n    border-radius: 8px;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 16px; }\n  .n7g-simg {\n    width: 24px;\n    display: block;\n    height: auto; }\n  .n7g-stl {\n    color: #101828;\n    font-family: \"Manrope\", sans-serif;\n    font-weight: 600;\n    font-size: 13px;\n    line-height: 16px;\n    cursor: pointer;\n    transition: all 0.2s;\n    display: block; }\n    .n7g-stl:hover {\n      color: #000; }\n  .n7g-lks {\n    display: flex; }\n  .n7g-lki {\n    display: block;\n    padding: 6px 40px 6px 8px;\n    margin-right: 16px;\n    font-size: 14px;\n    line-height: 20px;\n    color: #101828;\n    font-weight: 600;\n    cursor: pointer;\n    border-radius: 4px;\n    position: relative;\n    text-decoration: none;\n    font-family: \"Manrope\";\n    transition: all 0.2s; }\n    .n7g-lki:after {\n      content: \"\";\n      display: block;\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_10___ + ") center center no-repeat;\n      width: 32px;\n      height: 32px;\n      position: absolute;\n      right: 8px;\n      top: 50%;\n      margin-top: -16px; }\n    .n7g-lki.is-a:after {\n      transform: rotate(-180deg);\n      margin-top: -15px; }\n  .n7g-srh {\n    position: absolute;\n    right: 32px;\n    width: 32px;\n    background-color: #fff;\n    border-radius: 4px; }\n    .n7g-srh.is-a {\n      left: 32px;\n      z-index: 1;\n      width: 100%; }\n  .n7g-sbtn {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_11___ + ") center center no-repeat;\n    width: 32px;\n    height: 32px;\n    cursor: pointer; }\n  .n7g-rgt {\n    display: flex;\n    align-items: center; }\n  .n7g-lbs {\n    display: flex; }\n  .n7g-lbi {\n    font-family: \"Manrope\";\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 24px;\n    padding: 7px 16px;\n    display: block;\n    border: 1px solid;\n    border-radius: 8px;\n    margin-right: -16px; }\n    @media (min-width: 768px) {\n      .n7g-lbi {\n        margin-left: 16px;\n        margin-right: 0; } }\n    @media (max-width: 767px) {\n      .n7g-lbi--log {\n        background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_12___ + ") center center no-repeat;\n        border: none;\n        width: 48px;\n        height: 48px;\n        border-radius: 0;\n        text-indent: -9999px;\n        background-size: 32px; } }\n    @media (min-width: 768px) {\n      .n7g-lbi--log {\n        background-color: #006cb4;\n        border-color: #006cb4;\n        color: #fff; } }\n    .n7g-lbi--reg {\n      border-color: #006cb4;\n      color: #006cb4;\n      display: none; }\n      @media (min-width: 768px) {\n        .n7g-lbi--reg {\n          display: block; } }\n  .n7g-slv {\n    opacity: 0;\n    visibility: hidden;\n    max-height: 0;\n    top: 64px;\n    left: 0;\n    right: 0;\n    padding: 24px 0;\n    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);\n    transition: all 0.3s;\n    z-index: 2;\n    background-color: #fff;\n    border-top: 1px solid #eeeeee;\n    position: absolute;\n    display: none; }\n    .n7g-slv.is-a {\n      max-height: 1000px;\n      opacity: 1;\n      visibility: visible;\n      position: static; }\n      @media (min-width: 768px) {\n        .n7g-slv.is-a {\n          position: absolute; } }\n    @media (min-width: 768px) {\n      .n7g-slv {\n        display: block; } }\n  .n7g-col {\n    flex: 1;\n    padding: 0 16px; }\n  .n7g-clm + .n7g-clm {\n    margin-top: 24px; }\n  .n7g-ttl {\n    font-family: \"Manrope\";\n    font-weight: 600;\n    font-size: 13px;\n    line-height: 32px;\n    text-transform: uppercase;\n    border-bottom: 1px solid #e1e1e1;\n    margin-bottom: 16px; }\n  .n7g-lnk {\n    display: block;\n    text-decoration: none;\n    font-family: \"Manrope\";\n    font-size: 13px;\n    line-height: 16px;\n    margin-bottom: 16px;\n    color: #707070;\n    cursor: pointer;\n    transition: all 0.3s linear; }\n    .n7g-lnk:hover {\n      color: #006cb4; }\n", "",{"version":3,"sources":["webpack://./src/webMoneyHeader/webMoneyHeader.scss"],"names":[],"mappings":"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","sourcesContent":["@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-SemiBold.woff2\") format(\"woff2\"), url(\"fonts/Manrope-SemiBold.woff\") format(\"woff\");\r\n  font-weight: 600;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Regular.woff2\") format(\"woff2\"), url(\"fonts/Manrope-Regular.woff\") format(\"woff\");\r\n  font-weight: 400;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Medium.woff2\") format(\"woff2\"), url(\"fonts/Manrope-Medium.woff\") format(\"woff\");\r\n  font-weight: 500;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@mixin noSelection {\r\n  -webkit-touch-callout: none;\r\n  -webkit-user-select: none;\r\n  -khtml-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n}\r\n\r\n@mixin resetDiv {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  vertical-align: baseline;\r\n  box-sizing: border-box;\r\n}\r\n\r\n@mixin resetA {\r\n  background-color: transparent;\r\n  text-decoration: none;\r\n  &:hover,\r\n  &:active {\r\n    outline: none;\r\n  }\r\n}\r\n\r\n@mixin resetImg {\r\n  border-style: none;\r\n}\r\n\r\n.n7g {\r\n  @include resetDiv;\r\n  width: 100%;\r\n  overflow: hidden;\r\n  box-shadow: 0 1px #eeeeee;\r\n  * {\r\n    @include resetDiv;\r\n    @include resetA;\r\n  }\r\n  a {\r\n    @include noSelection;\r\n  }\r\n  img {\r\n    @include resetImg;\r\n  }\r\n  &-ctr {\r\n    width: 100%;\r\n    min-width: 320px;\r\n    max-width: 960px;\r\n    padding: 0 16px;\r\n    margin: 0 auto;\r\n    @media (min-width: 992px) {\r\n      padding: 0;\r\n    }\r\n  }\r\n  &-flv{\r\n    padding: 0;\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-row{\r\n    display: flex;\r\n  }\r\n  &-spb{\r\n    justify-content: space-between;\r\n  }\r\n  &-bgr{\r\n    width: 48px;\r\n    height: 48px;\r\n    background: transparent url(\"./images/bgr.svg\") center center no-repeat;\r\n    margin-left: -16px;\r\n    background-size: 32px;\r\n    cursor: pointer;\r\n    &.is-a{\r\n      background: transparent url(\"./images/bgr-a.svg\") center center no-repeat;\r\n      background-size: 32px;\r\n    }\r\n    @media (min-width: 768px) {\r\n      display: none;\r\n    }\r\n    &-dd{\r\n      display: none;\r\n      &.is-a{\r\n        height: 48px;\r\n        display: block;\r\n      }\r\n      @media (min-width: 768px) {\r\n        display: none;\r\n        &.is-a{\r\n          display: none;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &-lft{\r\n    display: flex;\r\n  }\r\n  &-llg{\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-lgo{\r\n    padding: 8px 0;\r\n    display: block;\r\n    @media (min-width: 768px) {\r\n      padding: 16px 0;\r\n      margin-right: 32px;\r\n    }\r\n  }\r\n  &-lgi{ \r\n    display: block;\r\n    height: 32px;\r\n  }\r\n  &-mdl{\r\n    flex: 1;\r\n    display: flex;\r\n    align-items: center;\r\n    position: absolute;\r\n    display: none;\r\n    @media (min-width: 768px) {\r\n      position: relative;\r\n      padding-right: 64px;\r\n      display: flex;\r\n\r\n    }\r\n  }\r\n  &-dtr{\r\n    width: 2px;\r\n    background-color: #eeeeee;\r\n    height: calc(100% - 32px);\r\n    margin-right: 32px;\r\n    display: none;\r\n    @media (min-width: 768px) {\r\n      display: block;\r\n    }\r\n  }\r\n  &-svs{\r\n    background: transparent url(\"./images/svs.svg\") center center no-repeat;\r\n    width: 32px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n    margin-right: 32px;\r\n    &.is-a{\r\n      background: transparent url(\"./images/svs-a.svg\") center center no-repeat;\r\n    }\r\n  }\r\n  &-svi{\r\n    // max-width: 180px;\r\n    // padding: 0 16px;\r\n    // margin-bottom: 24px;\r\n    display: flex;\r\n    align-items: center;\r\n    flex: 1;\r\n    padding-right: 8px;\r\n  }\r\n  &-sic{\r\n    width: 40px;\r\n    height: 40px;\r\n    margin-right: 8px;\r\n  }\r\n  &-sim{\r\n    width: 40px;\r\n    height: 40px;\r\n    display: flex;\r\n    border-radius: 8px;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 16px;\r\n  }\r\n  &-simg{\r\n    width: 24px;\r\n    display: block;\r\n    height: auto;\r\n  }\r\n  &-stl{\r\n    color: #101828;\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-weight: 600;\r\n    font-size: 13px;\r\n    line-height: 16px;\r\n    cursor: pointer;\r\n    transition: all 0.2s;\r\n    display: block;\r\n    &:hover{\r\n      color: #000;\r\n    }\r\n  }\r\n  &-lks{\r\n    display: flex;\r\n  }\r\n  &-lki{\r\n    display: block;\r\n    padding: 6px 40px 6px 8px;\r\n    margin-right: 16px;\r\n    font-size: 14px;\r\n    line-height: 20px;\r\n    color: #101828;\r\n    font-weight: 600;\r\n    cursor: pointer;\r\n    border-radius: 4px;\r\n    position: relative;\r\n    text-decoration: none;\r\n    font-family: \"Manrope\";\r\n    transition: all 0.2s;\r\n    &:after{\r\n      content: \"\";\r\n      display: block;\r\n      background: transparent url(\"./images/arrow-down.svg\") center center no-repeat;\r\n      width: 32px;\r\n      height: 32px;\r\n      position: absolute;\r\n      right: 8px;\r\n      top: 50%;\r\n      margin-top: -16px;\r\n    }\r\n    &.is-a {\r\n      &:after {\r\n        transform: rotate(-180deg);\r\n        margin-top: -15px;\r\n      }\r\n    }\r\n  }\r\n  &-srh{\r\n    position: absolute;\r\n    right: 32px;\r\n    width: 32px;\r\n    background-color: #fff;\r\n    border-radius: 4px;\r\n    &.is-a{\r\n      left: 32px;\r\n      z-index: 1;\r\n      width: 100%;\r\n    }\r\n  }\r\n  &-sbtn{\r\n    background: transparent url(\"./images/search.svg\") center center no-repeat;\r\n    width: 32px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n  }\r\n  &-rgt{\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-lbs{\r\n    display: flex;\r\n  }\r\n  &-lbi{\r\n    font-family: \"Manrope\";\r\n    font-weight: 500;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    padding: 7px 16px;\r\n    display: block;\r\n    border: 1px solid;\r\n    border-radius: 8px;\r\n    margin-right: -16px; \r\n    @media (min-width: 768px) {\r\n      margin-left: 16px;\r\n      margin-right: 0; \r\n    }\r\n    &--log{\r\n      @media (max-width: 767px) {\r\n        background: transparent url(\"./images/login.svg\") center center no-repeat;\r\n        border: none;\r\n        width: 48px;\r\n        height: 48px;\r\n        border-radius: 0;\r\n        text-indent: -9999px;\r\n        background-size: 32px;\r\n      }\r\n      @media (min-width: 768px) {\r\n        background-color: #006cb4;\r\n        border-color: #006cb4;\r\n        color: #fff;\r\n      }\r\n    }\r\n    &--reg{\r\n      border-color: #006cb4;\r\n      color: #006cb4;\r\n      display: none;\r\n      @media (min-width: 768px) {\r\n        display: block;\r\n      }\r\n    }\r\n  }\r\n  &-slv{\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    max-height: 0;\r\n    top: 64px;\r\n    left: 0;\r\n    right: 0;\r\n    padding: 24px 0;\r\n    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);\r\n    transition: all 0.3s;\r\n    z-index: 2;\r\n    background-color: #fff;\r\n    border-top: 1px solid #eeeeee;\r\n    position: absolute;\r\n    display: none;\r\n    &.is-a{\r\n      max-height: 1000px;\r\n      opacity: 1;\r\n      visibility: visible;\r\n      position: static;\r\n      @media (min-width: 768px) {\r\n        position: absolute;\r\n      }\r\n    }\r\n    @media (min-width: 768px) {\r\n      display: block;\r\n    }\r\n  }\r\n  &-col{\r\n    flex: 1;\r\n    padding: 0 16px;\r\n  }\r\n  &-clm{\r\n    & + .n7g-clm {\r\n      margin-top: 24px;\r\n    }\r\n  }\r\n  &-ttl{\r\n    font-family: \"Manrope\";\r\n    font-weight: 600;\r\n    font-size: 13px;\r\n    line-height: 32px;\r\n    text-transform: uppercase;\r\n    border-bottom: 1px solid #e1e1e1;\r\n    margin-bottom: 16px;\r\n  }\r\n  &-lnk{\r\n    display: block;\r\n    text-decoration: none;\r\n    font-family: \"Manrope\";\r\n    font-size: 13px;\r\n    line-height: 16px;\r\n    margin-bottom: 16px;\r\n    color: #707070;\r\n    cursor: pointer;\r\n    transition: all 0.3s linear;\r\n    &:hover{\r\n      color: #006cb4;\r\n    }\r\n  }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -12293,7 +13463,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "6c0bb6b617bd3a740394"; }
+/******/ 		__webpack_require__.h = function() { return "0c6b2d8c3680343e56ff"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

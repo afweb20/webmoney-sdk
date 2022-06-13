@@ -1,6 +1,7 @@
 import consts from "./consts";
 import local from "./local";
 import ml from "./ml";
+import getLink from "/linkStorage";
 var tinycolor = require("tinycolor2");
 
 export default {
@@ -119,6 +120,9 @@ export default {
 
   },
 
+  // getLink(options, "indx").title
+  // getLink(options, "indx").url
+
   generateIndividualsDropDown : function (options) {
 
     return ml("div", { "class": "n7g-slv n7g-ind-dd" }, 
@@ -126,61 +130,124 @@ export default {
         ml("div", { "class": "n7g-row" }, [
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
+              ml("div", { "class": "n7g-ttl" }, "Пополнить"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "topUpCash").url }, getLink(options, "topUpCash").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "topUpBankAccount").url }, getLink(options, "topUpBankAccount").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "topUpEMoney").url }, getLink(options, "topUpEMoney").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "topUpPaymentTerminat").url }, getLink(options, "topUpPaymentTerminat").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "topUpMoneyTransfer").url }, getLink(options, "topUpMoneyTransfer").title),
+            ]),
+            ml("div", { "class": "n7g-clm" }, [
               ml("div", { "class": "n7g-ttl" }, "Заработать"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Платные видеоконсультации"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Продажа цифровых товаров"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "INDX: фондовая биржа"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Publicant: опубликовать книгу"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Mestcom: продажа рекламы"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "CashBox: оплата за действия"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Shareholder: дивиденды и торговля долями"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "DebtMart: Биржа долгов"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "consultations").url }, getLink(options, "consultations").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "softactivation").url }, getLink(options, "softactivation").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "indx").url }, getLink(options, "indx").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "publicant").url }, getLink(options, "publicant").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "mestkom").url }, getLink(options, "mestkom").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "cashbox").url }, getLink(options, "cashbox").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "shareholder").url }, getLink(options, "shareholder").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "debtmart").url }, getLink(options, "debtmart").title),
+            ]),
+            ml("div", { "class": "n7g-clm" }, [
+              ml("div", { "class": "n7g-ttl" }, "Для работы"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "video").url }, getLink(options, "video").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "memo").url }, getLink(options, "memo").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "notes").url }, getLink(options, "notes").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "analytics").url }, getLink(options, "analytics").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "mail").url }, getLink(options, "mail").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "files").url }, getLink(options, "files").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "mentor").url }, getLink(options, "mentor").title),
             ])
           ]),
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
               ml("div", { "class": "n7g-ttl" }, "Вывести"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Наличными"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "На банковскую карту"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "На банковский счет"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Электронными деньгами"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Денежным переводом"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "withdrawCash").url }, getLink(options, "withdrawCash").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "withdrawToBankCard").url }, getLink(options, "withdrawToBankCard").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "withdrawBankAccount").url }, getLink(options, "withdrawBankAccount").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "withdrawEmoney").url }, getLink(options, "withdrawEmoney").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "withdrawTransfer").url }, getLink(options, "withdrawTransfer").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Одолжить"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Кредитный сервис"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Долговой сервис"),
-            ])
-          ]),
-          ml("div", { "class": "n7g-col" }, [
-            ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Пополнить"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Наличными"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "С банковского счета"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Электронными деньгами"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Через терминал"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Денежным переводом"),
+              ml("div", { "class": "n7g-ttl" }, "Операции с WebMoney"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "exchanger").url }, getLink(options, "exchanger").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "wmCheck").url }, getLink(options, "wmCheck").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "protectedTransactions").url }, getLink(options, "protectedTransactions").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Сбор средств"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Благотворительность"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Краудфандинг"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Коллективные покупки"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Организация мероприятий"),
+              ml("a", { "class": "n7g-ttl", "href": getLink(options, "security").url }, getLink(options, "security").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "escrow").url }, getLink(options, "escrow").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "enum").url }, getLink(options, "enum").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "operationNotification").url }, getLink(options, "operationNotification").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "purseAccessLimiting").url }, getLink(options, "purseAccessLimiting").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "expenseLimitsSetting").url }, getLink(options, "expenseLimitsSetting").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "restoringControl").url }, getLink(options, "restoringControl").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "advisor").url }, getLink(options, "advisor").title),
             ])
           ]),
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
               ml("div", { "class": "n7g-ttl" }, "Оплатить"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Мобильная связь"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Доступ в Интернет"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Коммерческое телевидение"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Коммунальные услуги"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Государственные услуги, штрафы, налоги"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Платежи по банковским реквизитам"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Digiseller: цифровые товары"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Антивирус: программы по подписке"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Rebills: автоплатежи"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "mobileCommunications").url }, getLink(options, "mobileCommunications").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "internetAccess").url }, getLink(options, "internetAccess").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "commercialTv").url }, getLink(options, "commercialTv").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "publicUtilities").url }, getLink(options, "publicUtilities").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "publicServices").url }, getLink(options, "publicServices").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "bankAccountPayments").url }, getLink(options, "bankAccountPayments").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "megastock").url }, getLink(options, "megastock").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "digisellerCatalogOfdigitalGoods").url }, getLink(options, "digisellerCatalogOfdigitalGoods").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "antivirus").url }, getLink(options, "antivirus").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "rebills").url }, getLink(options, "rebills").title),
+            ]),
+            ml("div", { "class": "n7g-clm" }, [
+              ml("div", { "class": "n7g-ttl" }, "Одолжить"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "creditService").url }, getLink(options, "creditService").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "debtService").url }, getLink(options, "debtService").title),
+            ]),
+            ml("div", { "class": "n7g-clm" }, [
+              ml("a", { "class": "n7g-ttl", "href": getLink(options, "passport").url }, getLink(options, "passport").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "receivePassport").url }, getLink(options, "receivePassport").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "verificationPoints").url }, getLink(options, "verificationPoints").title),
+            ]),
+            ml("div", { "class": "n7g-clm" }, [
+              ml("a", { "class": "n7g-ttl", "href": getLink(options, "arbitrage").url }, getLink(options, "arbitrage").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "submitComplaint").url }, getLink(options, "submitComplaint").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "submitClaim").url }, getLink(options, "submitClaim").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "registerContract").url }, getLink(options, "registerContract").title),
+            ])
+          ]),
+          ml("div", { "class": "n7g-col" }, [
+            ml("div", { "class": "n7g-clm" }, [
+              ml("div", { "class": "n7g-ttl" }, "Сбор средств"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "charity").url }, getLink(options, "charity").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "crowdfunding").url }, getLink(options, "crowdfunding").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "groupBuying").url }, getLink(options, "groupBuying").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "eventOrganization").url }, getLink(options, "eventOrganization").title),
+            ]),
+            ml("div", { "class": "n7g-clm" }, [
+              ml("div", { "class": "n7g-ttl" }, "Банковские карты"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "virtualCards").url }, getLink(options, "virtualCards").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "plasticCards").url }, getLink(options, "plasticCards").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "moneySend").url }, getLink(options, "moneySend").title),
+            ]),
+            ml("div", { "class": "n7g-clm" }, [
+              ml("div", { "class": "n7g-ttl" }, "Территория WebMoney"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "events").url }, getLink(options, "events").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "blog").url }, getLink(options, "blog").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "geo").url }, getLink(options, "geo").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "wiki").url }, getLink(options, "wiki").title),
+            ]),
+            ml("div", { "class": "n7g-clm" }, [
+              ml("a", { "class": "n7g-ttl", "href": getLink(options, "purseManagement2").url }, getLink(options, "purseManagement2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "keeperStandardMini2").url }, getLink(options, "keeperStandardMini2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "keeperWinProClassic2").url }, getLink(options, "keeperWinProClassic2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "keeperWebProLight2").url }, getLink(options, "keeperWebProLight2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "keeperMobile2").url }, getLink(options, "keeperMobile2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "keeperForSocialNetworks2").url }, getLink(options, "keeperForSocialNetworks2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "enum2").url }, getLink(options, "enum2").title),
+            ]),
+            ml("div", { "class": "n7g-clm" }, [
+              ml("a", { "class": "n7g-ttl", "href": getLink(options, "downloadSoftware2").url }, getLink(options, "downloadSoftware2").title),
             ])
           ])
         ])
