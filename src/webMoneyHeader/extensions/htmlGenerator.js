@@ -264,60 +264,60 @@ export default {
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
               ml("div", { "class": "n7g-ttl" }, "Магазинам"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Merchant: создать магазин"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Прием платежей на банковский счет"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Megastock: каталог магазинов"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Digiseller: цифровые товары"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "merchant").url }, getLink(options, "merchant").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "paymentsToBankAccounts").url }, getLink(options, "paymentsToBankAccounts").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "megastock2").url }, getLink(options, "megastock2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "digiseller2").url }, getLink(options, "digiseller2").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
               ml("div", { "class": "n7g-ttl" }, "Сайтам"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Mestcom: продажа рекламы"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Cashbox: покупка действий на сайте"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Login: авторизация по WMID"),
-            ])
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "funding").url }, getLink(options, "funding").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "mestcom2").url }, getLink(options, "mestcom2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "cashbox2").url }, getLink(options, "cashbox2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "digiseller3").url }, getLink(options, "digiseller3").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "login").url }, getLink(options, "login").title),
+            ]),
           ]),
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
               ml("div", { "class": "n7g-ttl" }, "Общие"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Masspayment: массовые выплаты"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Exchanger: обменный пункт"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Контракты: регистрация текстов Соглашений"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Арбитраж: разрешение споров"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Escrow: защищенные сделки"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Кредитная биржа"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Отчетность"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Служба финансовой поддержки"),
-            ])
-          ]),
-          ml("div", { "class": "n7g-col" }, [
-            ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Возможности WebMoney"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Mentor: контроль исполнения задач"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Защищенная почта"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Файловое хранилище"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Отправка «бумажных» писем"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Лента новостей: рассылка"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "masspayment").url }, getLink(options, "masspayment").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "exchanger2").url }, getLink(options, "exchanger2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "contracts").url }, getLink(options, "contracts").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "arbitrage2").url }, getLink(options, "arbitrage2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "escrow2").url }, getLink(options, "escrow2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "creditMarket").url }, getLink(options, "creditMarket").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "reporting").url }, getLink(options, "reporting").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "financialSupport2").url }, getLink(options, "financialSupport2").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
               ml("div", { "class": "n7g-ttl" }, "Юридическим лицам"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Выплаты участникам системы"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Прием платежей"),
-            ])
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "biz").url }, getLink(options, "biz").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "biz2").url }, getLink(options, "biz2").title),
+            ]),
           ]),
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
               ml("div", { "class": "n7g-ttl" }, "Капитал"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Shareholder: вложение средств"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "INDX: фондовая биржа"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Продажа долгов"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Capitaller: управление средствами"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "shareholder2").url }, getLink(options, "shareholder2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "indx2").url }, getLink(options, "indx2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "debtMarket").url }, getLink(options, "debtMarket").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "capitaller").url }, getLink(options, "capitaller").title),
+            ]),
+            ml("div", { "class": "n7g-clm" }, [
+              ml("div", { "class": "n7g-ttl" }, "Возможности WebMoney"),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "mentor2").url }, getLink(options, "mentor2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "secureMail").url }, getLink(options, "secureMail").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "files2").url }, getLink(options, "files2").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "letterPostingService").url }, getLink(options, "letterPostingService").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "newsline").url }, getLink(options, "newsline").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
               ml("div", { "class": "n7g-ttl" }, "Разработчикам"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "API: программные интерфейсы"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Дизайн и стили"),
-              ml("a", { "class": "n7g-lnk", "href": "#" }, "Техническая поддержка"),
-            ])
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "programInterfaces").url }, getLink(options, "programInterfaces").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "stylesAndDesign").url }, getLink(options, "stylesAndDesign").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(options, "technicalSupport2").url }, getLink(options, "technicalSupport2").title),
+            ]),
           ])
         ])
       )

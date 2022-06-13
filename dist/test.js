@@ -10291,7 +10291,7 @@ if (typeof WebMoneyFooter != "undefined") {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "0c6b2d8c3680343e56ff"; }
+/******/ 		__webpack_require__.h = function() { return "e3b1de1a4a80e85be3ca"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

@@ -11531,30 +11531,36 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-ttl"
     }, "Магазинам"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Merchant: создать магазин"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "merchant").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "merchant").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Прием платежей на банковский счет"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "paymentsToBankAccounts").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "paymentsToBankAccounts").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Megastock: каталог магазинов"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "megastock2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "megastock2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Digiseller: цифровые товары")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "digiseller2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "digiseller2").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
     }, "Сайтам"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Mestcom: продажа рекламы"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "funding").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "funding").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Cashbox: покупка действий на сайте"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mestcom2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mestcom2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Login: авторизация по WMID")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "cashbox2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "cashbox2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "digiseller3").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "digiseller3").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "login").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "login").title)])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-col"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-clm"
@@ -11562,60 +11568,39 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-ttl"
     }, "Общие"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Masspayment: массовые выплаты"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "masspayment").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "masspayment").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Exchanger: обменный пункт"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "exchanger2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "exchanger2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Контракты: регистрация текстов Соглашений"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "contracts").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "contracts").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Арбитраж: разрешение споров"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "arbitrage2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "arbitrage2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Escrow: защищенные сделки"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "escrow2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "escrow2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Кредитная биржа"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "creditMarket").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "creditMarket").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Отчетность"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "reporting").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "reporting").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Служба финансовой поддержки")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n7g-col"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n7g-clm"
-    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n7g-ttl"
-    }, "Возможности WebMoney"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
-      "class": "n7g-lnk",
-      "href": "#"
-    }, "Mentor: контроль исполнения задач"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
-      "class": "n7g-lnk",
-      "href": "#"
-    }, "Защищенная почта"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
-      "class": "n7g-lnk",
-      "href": "#"
-    }, "Файловое хранилище"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
-      "class": "n7g-lnk",
-      "href": "#"
-    }, "Отправка «бумажных» писем"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
-      "class": "n7g-lnk",
-      "href": "#"
-    }, "Лента новостей: рассылка")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "financialSupport2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "financialSupport2").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
     }, "Юридическим лицам"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Выплаты участникам системы"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "biz").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "biz").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Прием платежей")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "biz2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "biz2").title)])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-col"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-clm"
@@ -11623,30 +11608,49 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-ttl"
     }, "Капитал"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Shareholder: вложение средств"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "shareholder2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "shareholder2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "INDX: фондовая биржа"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "indx2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "indx2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Продажа долгов"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "debtMarket").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "debtMarket").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Capitaller: управление средствами")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "capitaller").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "capitaller").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-clm"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-ttl"
+    }, "Возможности WebMoney"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mentor2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mentor2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "secureMail").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "secureMail").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "files2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "files2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "letterPostingService").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "letterPostingService").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-lnk",
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "newsline").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "newsline").title)]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
     }, "Разработчикам"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "API: программные интерфейсы"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "programInterfaces").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "programInterfaces").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Дизайн и стили"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "stylesAndDesign").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "stylesAndDesign").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
-      "href": "#"
-    }, "Техническая поддержка")])])])));
+      "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "technicalSupport2").url
+    }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "technicalSupport2").title)])])])));
   },
   generateMenu: function generateMenu(options) {
     return (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
@@ -13463,7 +13467,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "0c6b2d8c3680343e56ff"; }
+/******/ 		__webpack_require__.h = function() { return "e3b1de1a4a80e85be3ca"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
