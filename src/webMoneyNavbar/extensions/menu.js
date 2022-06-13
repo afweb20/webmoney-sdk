@@ -100,7 +100,7 @@ export default {
 
     // styleContent += dynamicPrefix + " .n8g-mcn {background-color: " + primaryColor + "}";
 
-    styleContent += dynamicPrefix + " .n8g-mcn {background: " + gradientBg + "}";
+    styleContent += dynamicPrefix + " .n8g-mcn {background: " + primaryColor + "}";
 
     styleContent += dynamicPrefix + " .n8g-mnl.is-activated {background-color: " + primaryColor + "}";
     styleContent += dynamicPrefix + " .n8g-mbn {background-color: " + primaryColor + "}";

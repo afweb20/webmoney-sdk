@@ -94,31 +94,23 @@ export default {
         ml("div", { "class": "n7g-row" }, [
 
           ml("a", { "class": "n7g-svi", "href": "#" }, [
-            ml("span", { "class": "n7g-sim", "style": this.generateBgGradient("#6200ea") }, 
-              ml("img", { "class": "n7g-simg", "src": require("../images/services/video.png") })
-            ),
+            ml("img", { "class": "n7g-sic", "src": require("../images/services/video.svg") }),
             ml("span", { "class": "n7g-stl" }, "Видеозвонки и онлайн-трансляции")
           ]),
 
           ml("a", { "class": "n7g-svi", "href": "#" }, [
-            ml("span", { "class": "n7g-sim", "style": this.generateBgGradient("#d6879f") }, 
-              ml("img", { "class": "n7g-simg", "src": require("../images/services/debtmart.png") })
-            ),
-            ml("span", { "class": "n7g-stl" }, "DebtMart: Биржа долгов")
+            ml("img", { "class": "n7g-sic", "src": require("../images/services/memo.svg") }),
+            ml("span", { "class": "n7g-stl" }, "Управление закладками")
           ]),
 
           ml("a", { "class": "n7g-svi", "href": "#" }, [
-            ml("span", { "class": "n7g-sim", "style": this.generateBgGradient("#b77368") }, 
-              ml("img", { "class": "n7g-simg", "src": require("../images/services/funding.png") })
-            ),
-            ml("span", { "class": "n7g-stl" }, "Благотворительность")
+            ml("img", { "class": "n7g-sic", "src": require("../images/services/files.svg") }),
+            ml("span", { "class": "n7g-stl" }, "Файловое хранилище")
           ]),
 
           ml("a", { "class": "n7g-svi", "href": "#" }, [
-            ml("span", { "class": "n7g-sim", "style": this.generateBgGradient("#e59733") }, 
-              ml("img", { "class": "n7g-simg", "src": require("../images/services/escrow.png") })
-            ),
-            ml("span", { "class": "n7g-stl" }, "Escrow: защищенные сделки")
+            ml("img", { "class": "n7g-sic", "src": require("../images/services/notes.svg") }),
+            ml("span", { "class": "n7g-stl" }, "Верстка и публикация заметок")
           ])
 
         ])

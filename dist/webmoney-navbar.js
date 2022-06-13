@@ -10205,7 +10205,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
     var dynamicPrefix = ".n8g[data-dynamic-class='n8g-" + options.dynamicUniqueKey + "']";
     var styleContent = ""; // styleContent += dynamicPrefix + " .n8g-mcn {background-color: " + primaryColor + "}";
 
-    styleContent += dynamicPrefix + " .n8g-mcn {background: " + gradientBg + "}";
+    styleContent += dynamicPrefix + " .n8g-mcn {background: " + primaryColor + "}";
     styleContent += dynamicPrefix + " .n8g-mnl.is-activated {background-color: " + primaryColor + "}";
     styleContent += dynamicPrefix + " .n8g-mbn {background-color: " + primaryColor + "}"; // if (view == consts.VIEW_MOBILE) {
     //   styleContent += dynamicPrefix + " .n30g30-first-level-button {background-color: " + primaryColor + "}";
@@ -24112,7 +24112,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "49a23f29dbc86f549b79"; }
+/******/ 		__webpack_require__.h = function() { return "6c0bb6b617bd3a740394"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
