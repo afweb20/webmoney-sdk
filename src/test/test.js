@@ -157,7 +157,7 @@ if (typeof WebMoneyFooter != "undefined") {
     testMode: true,
     view: view,
     lang: lang,
-    supportedLangs: ["ru", "en", "es", "pt", "tr", "vn"],
+    supportedLangs: ["ru", "en", "es", "pt", "tr"],
     illiciumPlaceId: "59",
     illiciumView: "top",
     fastMenu: "visible",
