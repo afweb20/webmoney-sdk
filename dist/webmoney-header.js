@@ -11253,7 +11253,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "href": "#"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("img", {
       "class": "n7g-sic",
-      "src": __webpack_require__(/*! ../images/services/memo.svg */ "./src/webMoneyHeader/images/services/memo.svg")
+      "src": __webpack_require__(/*! ../images/services/steam.svg */ "./src/webMoneyHeader/images/services/steam.svg")
     }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
       "class": "n7g-stl"
     }, "Steam")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
@@ -13470,6 +13470,17 @@ module.exports = __webpack_require__.p + "b15e9ba14b7f68abd190.svg";
 
 /***/ }),
 
+/***/ "./src/webMoneyHeader/images/services/steam.svg":
+/*!******************************************************!*\
+  !*** ./src/webMoneyHeader/images/services/steam.svg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "38ec13605c9a247eb43a.svg";
+
+/***/ }),
+
 /***/ "./src/webMoneyHeader/images/services/video.svg":
 /*!******************************************************!*\
   !*** ./src/webMoneyHeader/images/services/video.svg ***!
@@ -13599,7 +13610,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "2663d1ae8139b85977a5"; }
+/******/ 		__webpack_require__.h = function() { return "f363e490b35d627e1dc9"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

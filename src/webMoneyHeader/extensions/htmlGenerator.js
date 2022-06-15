@@ -134,7 +134,7 @@ export default {
               ]),
 
               ml("a", { "class": "n7g-svi", "href": "#" }, [
-                ml("img", { "class": "n7g-sic", "src": require("../images/services/memo.svg") }),
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/steam.svg") }),
                 ml("span", { "class": "n7g-stl" }, "Steam")
               ])
               
