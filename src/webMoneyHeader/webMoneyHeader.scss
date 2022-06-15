@@ -168,19 +168,61 @@
       background: transparent url("./images/svs-a.svg") center center no-repeat;
     }
   }
+  &-mnu{
+    // width: 180px;
+    // padding-right: 16px;
+    display: flex;
+  }
+  &-cnt{
+    // width: calc(100% - 180px);
+    // padding: 8px 0;
+    display: flex;
+  }
+  &-mni{
+    color: #758793;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 8px 0;
+    flex: 1;
+    margin-bottom: 16px;
+    // &.is-a{
+    //   color: #006cb4;
+    //   cursor: default;
+    // }
+  }
+  &-cti{
+    flex: 1;
+    // opacity: 0;
+    // visibility: hidden;
+    // position: absolute;
+    // display: flex;
+    // &.is-a{
+    //   opacity: 1;
+    //   visibility: visible;
+    //   position: static;
+    // }
+  }
   &-svi{
     // max-width: 180px;
     // padding: 0 16px;
-    // margin-bottom: 24px;
-    display: flex;
+    margin-bottom: 24px;
+    // display: flex;
     align-items: center;
-    flex: 1;
-    padding-right: 8px;
+    // flex: 1;
+    padding-right: 16px;
+    display: flex
   }
   &-sic{
-    width: 40px;
-    height: 40px;
-    margin-right: 8px;
+    // width: 40px;
+    // height: 40px;
+    // margin-right: 8px;
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
   }
   &-sim{
     width: 40px;

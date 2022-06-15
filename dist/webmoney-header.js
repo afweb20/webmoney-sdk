@@ -57,17 +57,17 @@ var linkStorage = {
   // О системе (1)
   // =========================
   briefDescription: {
-    t: ["Краткое описание", "Brief description", "Descripción corta", "Descrição curta"],
+    t: ["Краткое описание", "Brief description", "Descripción corta", "Descrição curta", "Kısaca tanımlama"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInformation, "/short/index.shtml"]
   },
   purseTypes: {
-    t: ["Типы кошельков", "Purse types", "Tipos de monederos", "Tipos de bolsas"],
+    t: ["Типы кошельков", "Purse types", "Tipos de monederos", "Tipos de bolsas", "Cüzdan tipleri"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInformation, "/wmwallets/index.shtml"]
   },
   purseManagement: {
-    t: ["Управление кошельками", "Purse management", "Metodos para manejar las cuentas", "Métodos para gerir contas"],
+    t: ["Управление кошельками", "Purse management", "Metodos para manejar las cuentas", "Métodos para gerir contas", "Yönetim yöntemleri"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInformationManage, "/index.shtml"]
   },
@@ -92,7 +92,7 @@ var linkStorage = {
     u: [constLangs, constUrlInformationManage, "/mobile.shtml"]
   },
   keeperForSocialNetworks: {
-    t: ["Keeper для социальных сетей", "Keeper for social networks", "Keeper para las redes sociales", "Keeper para as redes sociais"],
+    t: ["Keeper для социальных сетей", "Keeper for social networks", "Keeper para las redes sociales", "Keeper para as redes sociais", "Sosyal ağlar için Keeper"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInformationManage, "/social.shtml"]
   },
@@ -102,54 +102,54 @@ var linkStorage = {
     u: [constLangs, constUrlInformation, "/rates/index.shtml"]
   },
   statistics: {
-    t: ["Статистика", "Statistics", "Estadísticas", "Estatística"],
+    t: ["Статистика", "Statistics", "Estadísticas", "Estatística", "İstatistik"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInformationStatistic, "/index.shtml"]
   },
   securityAndPrivacy: {
-    t: ["Безопасность и конфиденциальность", "Security and privacy", "Seguridad", "Segurança e Privacidade"],
+    t: ["Безопасность и конфиденциальность", "Security and privacy", "Seguridad", "Segurança e Privacidade", "Güvenlik ve gizlilik"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInformationStatistic, "/security.shtml"]
   },
   news: {
-    t: ["Новости", "News", "Noticias", "Notícias"],
+    t: ["Новости", "News", "Noticias", "Notícias", "Haberler"],
     u: ["news.wmtransfer.com", ["", "/en"]]
   },
   // =========================
   // О системе (2)
   // =========================
   legalInformation: {
-    t: ["Юридическая информация", "Legal information", "Información legal", "Informação jurídica"],
+    t: ["Юридическая информация", "Legal information", "Información legal", "Informação jurídica", "Hukuki bilgiler"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlLegal, "/index.shtml"]
   },
   webMoneyTransferCode: {
-    t: ["Кодекс системы WebMoney Transfer", "WebMoney Transfer Code", "Código del sistema WebMoney Transfer", "O Código do sistema WebMoney Transfer"],
+    t: ["Кодекс системы WebMoney Transfer", "WebMoney Transfer Code", "Código del sistema WebMoney Transfer", "O Código do sistema WebMoney Transfer", "WebMoney Transfer sisteminin Kanunu"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlLegal, "/codex.shtml"]
   },
   propertyRightsTransferAgreement: {
-    t: ["Соглашение о трансфере имущественных прав", "Property rights transfer agreement", "Acuerdo de transferencia de los derechos de bienes", "Acordo transerencia dos direitos de propriedade"],
+    t: ["Соглашение о трансфере имущественных прав", "Property rights transfer agreement", "Acuerdo de transferencia de los derechos de bienes", "Acordo transerencia dos direitos de propriedade", "Mülkiyet haklarının transferi hakkında anlaşma"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlLegal, "/transfert.shtml"]
   },
   amlAgreement: {
-    t: ["Соглашение о борьбе с незаконной торговлей", "AML Agreement", "Acuerdo de la lucha contra la venta ilegal", "Acordo sobre a luta contra a venda ilegal"],
+    t: ["Соглашение о борьбе с незаконной торговлей", "AML Agreement", "Acuerdo de la lucha contra la venta ilegal", "Acordo sobre a luta contra a venda ilegal", "Yasadışı ticarete karşı mücadele hakkında anlaşma"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlLegal, "/illegaltrade.shtml"]
   },
   creditServiceAgreement: {
-    t: ["Соглашение об использовании кредитного сервиса", "Credit service agreement", "Acuerdo del uso del servicio de crédito", "Acordo sobre o uso do serviço de crédito"],
+    t: ["Соглашение об использовании кредитного сервиса", "Credit service agreement", "Acuerdo del uso del servicio de crédito", "Acordo sobre o uso do serviço de crédito", "Kredi servisinin kullanılması hakkında anlaşma"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlLegal, "/credit_service.shtml"]
   },
   wmPursesAgreement: {
-    t: ["Соглашения по WM-кошелькам", "WM purses agreement", "Acuerdo de los monederos WM", "Acordo sobre WM carteiras"],
+    t: ["Соглашения по WM-кошелькам", "WM purses agreement", "Acuerdo de los monederos WM", "Acordo sobre WM carteiras", "WM-cüzdanlar ile ilgili anlaşmalar"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlLegal, "/garants/index.shtml"]
   },
   warning: {
-    t: ["Предупреждение", "Warning", "Atención", "Atenção"],
+    t: ["Предупреждение", "Warning", "Atención", "Atenção", "Uyarı"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlLegal, "/warning.shtml"]
   },
@@ -157,22 +157,22 @@ var linkStorage = {
   // О системе (3)
   // =========================
   systemSubjects: {
-    t: ["Субъекты системы", "System subjects", "Sujetos del sistema", "Sujeitos do sistema"],
+    t: ["Субъекты системы", "System subjects", "Sujetos del sistema", "Sujeitos do sistema", "Sistemin konuları"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlSubjects, "/index.shtml"]
   },
   ownerAndAdministrator: {
-    t: ["Владелец и администратор", "Owner and administrator", "Administrador", "Administrador"],
+    t: ["Владелец и администратор", "Owner and administrator", "Administrador", "Administrador", "Sahibi ve yönetici"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlSubjects, "/administrator.shtml"]
   },
   wmPurseGuarantors: {
-    t: ["Гаранты по WM-кошелькам", "WM purse guarantors", "Garantes de los monederos", "Garantes das bolsas"],
+    t: ["Гаранты по WM-кошелькам", "WM purse guarantors", "Garantes de los monederos", "Garantes das bolsas", "WM-cüzdanların kefilleri"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlSubjects, "/guarantors/index.shtml"]
   },
   contactsForLegalRequests: {
-    t: ["Контакты для запросов от судебных органов", "Contacts for legal requests", "Contactos para demandas jurídicas", "Contatos para ações judiciais"],
+    t: ["Контакты для запросов от судебных органов", "Contacts for legal requests", "Contactos para demandas jurídicas", "Contatos para ações judiciais", "Yargı organlarından talep için iletişimler"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlSupport, "/official.shtml"]
   },
@@ -180,27 +180,27 @@ var linkStorage = {
   // О системе (4)
   // =========================
   registrars: {
-    t: ["Регистраторы", "Registrars", "Registradores", "Registradores"],
+    t: ["Регистраторы", "Registrars", "Registradores", "Registradores", "Kaydediciler"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlSubjects, "/registrators.shtml"]
   },
   financialSupport: {
-    t: ["Финансовая поддержка", "Financial support", "Soporte financiero", "Apoio Financeiro"],
+    t: ["Финансовая поддержка", "Financial support", "Soporte financiero", "Apoio Financeiro", "Mali destek"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlSupport, "/financial.shtml"]
   },
   technicalSupport: {
-    t: ["Техническая поддержка", "Technical support", "Soporte técnico", "Suporte técnico"],
+    t: ["Техническая поддержка", "Technical support", "Soporte técnico", "Suporte técnico", "Teknik destek"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlSupport, "/tech.shtml"]
   },
   cooperation: {
-    t: ["Сотрудничество", "Cooperation", "Colaboración", "Colaboração"],
+    t: ["Сотрудничество", "Cooperation", "Colaboración", "Colaboração", "Kullanım koşulları"],
     d: constAllDomainTypes,
     u: [constLangs, "/cooperation/merchants.shtml"]
   },
   forum: {
-    t: ["Форум", "Forum", "Foro", "Fórum"],
+    t: ["Форум", "Forum", "Foro", "Fórum", "Forum"],
     u: "forum.web.money/index.php"
   },
   facebook: {
@@ -224,136 +224,136 @@ var linkStorage = {
     u: "telegram.me/webmoney"
   },
   downloadSoftware: {
-    t: ["Скачать приложения", "Download software", "Descargar software", "Download de software"],
-    u: [["wiki.web.money/projects/webmoney/wiki/gde_skachat_prilozheniya_webmoney", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software"]]
+    t: ["Скачать приложения", "Download software", "Descargar software", "Download de software", "Yazılım"],
+    u: [["wiki.web.money/projects/webmoney/wiki/gde_skachat_prilozheniya_webmoney", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software"]]
   },
   // =========================
   // Частным лицам (1)
   // =========================
   topUpCash: {
-    t: ["Наличными", "Cash", "Recargar"],
+    t: ["Наличными", "Cash", "Recargar", "-", "Nakit olarak"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInoutTopup, "#cash"] // TODO - проверить эту ссылку, отличается на es
 
   },
   topUpBankAccount: {
-    t: ["С банковского счета", "Bank account", "-", "-"],
+    t: ["С банковского счета", "Bank account", "-", "-", "Banka hesabından"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInoutTopup, "#bank"]
   },
   topUpEMoney: {
-    t: ["Электронными деньгами", "E-money", "-", "-"],
+    t: ["Электронными деньгами", "E-money", "-", "-", "Elektronik paralar ile"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInoutTopup, "#emoney"]
   },
   topUpPaymentTerminat: {
-    t: ["Через терминал", "Payment terminal", "-", "-"],
+    t: ["Через терминал", "Payment terminal", "-", "-", "Terminalden"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInoutTopup, "#terminal"]
   },
   topUpMoneyTransfer: {
-    t: ["Денежным переводом", "Money transfer", "-", "-"],
+    t: ["Денежным переводом", "Money transfer", "-", "-", "Para transferi ile"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInoutTopup, "#perevod"]
   },
   consultations: {
-    t: ["Платные видеоконсультации", "Paid video consultations", "-", "-"],
+    t: ["Платные видеоконсультации", "Paid video consultations", "-", "-", "-"],
     u: "events.web.money/consultations"
   },
   softactivation: {
-    t: ["Продажа цифровых товаров", "Sale of digital goods", "-", "-"],
+    t: ["Продажа цифровых товаров", "Sale of digital goods", "-", "-", "-"],
     u: "softactivation.webmoney.ru"
   },
   indx: {
-    t: ["INDX: фондовая биржа", "INDX: Stock exchange", "INDX: bolsa de fondos", "INDX: bolsa de fundos"],
+    t: ["INDX: фондовая биржа", "INDX: Stock exchange", "INDX: bolsa de fondos", "INDX: bolsa de fundos", "INDX: borsa"],
     u: "indx.money/about"
   },
   publicant: {
-    t: ["Publicant: опубликовать книгу", "Publicant: Publish a book", "Publicant: publicar el libro", "Publicant: publicar o livro"],
+    t: ["Publicant: опубликовать книгу", "Publicant: Publish a book", "Publicant: publicar el libro", "Publicant: publicar o livro", "Publicant: kitabı yayınlamak"],
     u: "publicant.webmoney.ru"
   },
   mestkom: {
-    t: ["Mestcom: продажа рекламы", "Mestcom: Sell Ads", "Mestcom: vender los anuncios", "Mestcom: venda de publicidade"],
+    t: ["Mestcom: продажа рекламы", "Mestcom: Sell Ads", "Mestcom: vender los anuncios", "Mestcom: venda de publicidade", "Mestcom: reklam satışı"],
     u: "www.mestkom.ru/sell.aspx"
   },
   cashbox: {
-    t: ["CashBox: оплата за действия", "CashBox: Complete activities on a website", "CashBox: pagar por las acciones en el sitio web", "Cashbox: comprar as ações no site"],
+    t: ["CashBox: оплата за действия", "CashBox: Complete activities on a website", "CashBox: pagar por las acciones en el sitio web", "Cashbox: comprar as ações no site", "CashBox: işlem için ödeme"],
     u: "cashbox.ru"
   },
   shareholder: {
-    t: ["Shareholder: дивиденды и торговля долями", "Shareholder: Dividends and share trading", "Shareholder: dividendos", "Shareholder: utilização de fundos"],
-    u: ["www.shareholder.ru/About.aspx", ["?lang=ru", "?lang=en", "?lang=en", "?lang=en"]]
+    t: ["Shareholder: дивиденды и торговля долями", "Shareholder: Dividends and share trading", "Shareholder: dividendos", "Shareholder: utilização de fundos", "Shareholder: kar payları ve hisse satışı"],
+    u: ["www.shareholder.ru/About.aspx", ["?lang=ru", "?lang=en", "?lang=en", "?lang=en", "?lang=en"]]
   },
   debtmart: {
-    t: ["DebtMart: Биржа долгов", "Debt market", "Bolsa de deudas", "Vender a dívida"],
-    u: ["debtmart.wmtransfer.com", ["", "?lang=en", "?lang=en", "?lang=en"]]
+    t: ["DebtMart: Биржа долгов", "Debt market", "Bolsa de deudas", "Vender a dívida", "DebtMart: Borç borsası"],
+    u: ["debtmart.wmtransfer.com", ["", "?lang=en", "?lang=en", "?lang=en", "?lang=en"]]
   },
   video: {
-    t: ["Видеозвонки и онлайн-трансляции", "Video calls and online broadcasts", "-", "-"],
+    t: ["Видеозвонки и онлайн-трансляции", "Video calls and online broadcasts", "-", "-", "-"],
     u: "video.webmoney.ru"
   },
   memo: {
-    t: ["Управление закладками", "Bookmark management", "-", "-"],
+    t: ["Управление закладками", "Bookmark management", "-", "-", "-"],
     u: "memo.web.money"
   },
   notes: {
-    t: ["Верстка и публикация заметок", "Layout and publication of notes", "-", "-"],
+    t: ["Верстка и публикация заметок", "Layout and publication of notes", "-", "-", "-"],
     u: "wmid.com/notes"
   },
   analytics: {
-    t: ["Сервис аналитики", "Analytics", "-", "-"],
+    t: ["Сервис аналитики", "Analytics", "-", "-", "-"],
     u: "analytics.webmoney.ru"
   },
   mail: {
-    t: ["Защищенная почта", "Mail", "Correspondencia protegida", "Mail protegido"],
+    t: ["Защищенная почта", "Mail", "Correspondencia protegida", "Mail protegido", "Korunmuş posta"],
     u: "wmid.com"
   },
   files: {
-    t: ["Файловое хранилище", "File storage", "Archivo", "Seus arquivos"],
+    t: ["Файловое хранилище", "File storage", "Archivo", "Seus arquivos", "Dosya deposu"],
     u: ["files.webmoney.ru", ["", "?locale=en", "?locale=en", "?lang=en"]]
   },
   mentor: {
-    t: ["Mentor: контроль исполнения задач", "Mentor: Task management service", "Mentor: control de ejecución de las tareas", "Mentor: controlar a execução das tarefas"],
-    u: ["mentor.wmtransfer.com", ["?lang=ru", "?lang=en", "?lang=en", "?lang=en"]]
+    t: ["Mentor: контроль исполнения задач", "Mentor: Task management service", "Mentor: control de ejecución de las tareas", "Mentor: controlar a execução das tarefas", "Mentor: görevleri yürütmesinin kontrolü "],
+    u: ["mentor.wmtransfer.com", ["?lang=ru", "?lang=en", "?lang=en", "?lang=en", "?lang=en"]]
   },
   // =========================
   // Частным лицам (2)
   // =========================
   withdrawCash: {
-    t: ["Наличными", "Cash", "-", "-"],
+    t: ["Наличными", "Cash", "-", "-", "Nakit olarak"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInoutWithdraw, "#cash"]
   },
   withdrawToBankCard: {
-    t: ["На банковскую карту", "To bank card", "A una tarjeta bancaria", "Ao cartão bancário"],
-    u: ["telepay.web.money", ["/ru", "/en", "/en"], "/cards"]
+    t: ["На банковскую карту", "To bank card", "A una tarjeta bancaria", "Ao cartão bancário", "-"],
+    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en", "/en"], "/cards"]
   },
   withdrawBankAccount: {
-    t: ["На банковский счет", "Bank account", "-", "-"],
+    t: ["На банковский счет", "Bank account", "-", "-", "Banka hesabına"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInoutWithdraw, "#bank"]
   },
   withdrawEmoney: {
-    t: ["Электронными деньгами", "E-money", "-", "-"],
+    t: ["Электронными деньгами", "E-money", "-", "-", "Elektronik paralar ile"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInoutWithdraw, "#emoney"]
   },
   withdrawTransfer: {
-    t: ["Денежным переводом", "Money transfer", "-", "-"],
+    t: ["Денежным переводом", "Money transfer", "-", "-", "Para transferi ile"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInoutWithdraw, "#perevod"]
   },
   exchanger: {
-    t: ["Exchanger: обменный пункт", "Exchanger: Exchange service", "Exchanger: locales de cambio", "Exchanger: lojas de câmbio"],
+    t: ["Exchanger: обменный пункт", "Exchanger: Exchange service", "Exchanger: locales de cambio", "Exchanger: lojas de câmbio", "Exchanger: döviz bürosu"],
     u: "exchanger.web.money"
   },
   wmCheck: {
-    t: ["WM.Check: оплата без регистрации", "WM.Check: Payment without registration", "WM.Check: pagar sin registrarse", "WM.Check: pagar sem cadastrar-se"],
-    u: [["check.webmoney.ru", "check.wmtransfer.com/w/"], ["?lang=ru", "?lang=en", "?lang=en", "?lang=en"]]
+    t: ["WM.Check: оплата без регистрации", "WM.Check: Payment without registration", "WM.Check: pagar sin registrarse", "WM.Check: pagar sem cadastrar-se", "WM.Check: kayıtsız ödeme"],
+    u: [["check.webmoney.ru", "check.wmtransfer.com/w/"], ["?lang=ru", "?lang=en", "?lang=en", "?lang=en", "?lang=en"]]
   },
   protectedTransactions: {
-    t: ["Переводы с протекцией (платежи в два шага)", "Protected transactions", "Transacciones con protección", "Proteção das Transações"],
-    u: [["wiki.web.money/projects/webmoney/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4_%D1%81_%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D0%BA%D1%86%D0%B8%D0%B5%D0%B9", "wiki.wmtransfer.com/projects/webmoney/wiki/Protected_payment", "http://wiki.webmoney.ru/projects/webmoney/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4_%D1%81_%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D0%BA%D1%86%D0%B8%D0%B5%D0%B9"]]
+    t: ["Переводы с протекцией (платежи в два шага)", "Protected transactions", "Transacciones con protección", "Proteção das Transações", "Korumalı transferler (iki adımda ödemeler)"],
+    u: [["wiki.web.money/projects/webmoney/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4_%D1%81_%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D0%BA%D1%86%D0%B8%D0%B5%D0%B9", "wiki.wmtransfer.com/projects/webmoney/wiki/Protected_payment", "http://wiki.webmoney.ru/projects/webmoney/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4_%D1%81_%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D0%BA%D1%86%D0%B8%D0%B5%D0%B9", "http://wiki.webmoney.ru/projects/webmoney/wiki/%D0%9F%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4_%D1%81_%D0%BF%D1%80%D0%BE%D1%82%D0%B5%D0%BA%D1%86%D0%B8%D0%B5%D0%B9"]]
   },
   security: {
     t: ["Безопасность", "Security", "Seguiridad"],
@@ -361,114 +361,114 @@ var linkStorage = {
     u: "security.web.money/asp/default.asp"
   },
   escrow: {
-    t: ["Escrow: защищенные сделки", "Escrow: Secure transactions", "Escrow: acciones protegídas", "Escrow: ações protegidas"],
+    t: ["Escrow: защищенные сделки", "Escrow: Secure transactions", "Escrow: acciones protegídas", "Escrow: ações protegidas", "Escrow: korumalı anlaşmalar"],
     u: "escrow.webmoney.ru"
   },
   enum: {
-    t: ["E-Num: безопасная авторизация", "E-Num: Secure authorisation", "E-Num: autorización protegída", "E-Num: autorização protegida"],
+    t: ["E-Num: безопасная авторизация", "E-Num: Secure authorisation", "E-Num: autorización protegída", "E-Num: autorização protegida", "E-Num: güvenli giriş yapma"],
     u: ["enum.ru", ["", "?lang=en", "?lang=en", "?lang=en"]]
   },
   operationNotification: {
-    t: ["Оповещения об операциях", "Operation notification", "Notificación de las acciones", "Ações de notificação"],
+    t: ["Оповещения об операциях", "Operation notification", "Notificación de las acciones", "Ações de notificação", "İşlemler hakkında bildiriler"],
     u: ["notify.webmoney.ru", ["", "?lang=eng", "?lang=eng", "?lang=eng"]]
   },
   purseAccessLimiting: {
-    t: ["Ограничение доступа к кошельку", "Purse access limiting", "Restringir el acceso al monedero", "Restringir o acesso à carteira"],
+    t: ["Ограничение доступа к кошельку", "Purse access limiting", "Restringir el acceso al monedero", "Restringir o acesso à carteira", "Cüzdana erişim sınırlaması"],
     u: "security.web.money/asp/setallyip.asp"
   },
   expenseLimitsSetting: {
-    t: ["Настройка расходных лимитов", "Expense limits setting", "Configuración de limites", "Ajuste dos limites"],
+    t: ["Настройка расходных лимитов", "Expense limits setting", "Configuración de limites", "Ajuste dos limites", "Harcama limitlerinin ayarlanması"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpTechnical, "/security_limits.shtml"]
   },
   restoringControl: {
-    t: ["Восстановление доступа", "Restoring control", "Recuperar el acceso", "Recuperar o acesso"],
+    t: ["Восстановление доступа", "Restoring control", "Recuperar el acceso", "Recuperar o acesso", "Erişimin onarılması"],
     u: ["key.wmtransfer.com", ["", "/10/NewApp.aspx?lang=en", "", ""]]
   },
   advisor: {
-    t: ["Advisor: отзывы о сайтах", "Advisor: Website reviews", "Advisor: recomendación de los sitios web", "Advisor:recomendação do Websites"],
+    t: ["Advisor: отзывы о сайтах", "Advisor: Website reviews", "Advisor: recomendación de los sitios web", "Advisor:recomendação do Websites", "Advisor: siteler hakkında yorumlar"],
     u: "advisor.wmtransfer.com"
   },
   // =========================
   // Частным лицам (3)
   // =========================
   mobileCommunications: {
-    t: ["Мобильная связь", "Mobile communications", "Telefonía movil", "Telefonia móvel"],
-    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en"], "/mobile"]
+    t: ["Мобильная связь", "Mobile communications", "Telefonía movil", "Telefonia móvel", "Mobil telefon bağlantısı"],
+    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en", "/en"], "/mobile"]
   },
   internetAccess: {
-    t: ["Доступ в Интернет", "Internet access", "Acceso a internet", "Acesso à internet"],
-    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en"], "/isp"]
+    t: ["Доступ в Интернет", "Internet access", "Acceso a internet", "Acesso à internet", "İnternete erişim"],
+    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en", "/en"], "/isp"]
   },
   commercialTv: {
-    t: ["Коммерческое телевидение", "Commercial TV", "Televisión comercial", "televisão comercial"],
-    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en"], "/tv"]
+    t: ["Коммерческое телевидение", "Commercial TV", "Televisión comercial", "televisão comercial", "Ticari televizyonculuk"],
+    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en", "/en"], "/tv"]
   },
   publicUtilities: {
-    t: ["Коммунальные услуги", "Utilities", "Servicios públicos", "Os serviços públicos"],
-    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en"], "/public-utilities"]
+    t: ["Коммунальные услуги", "Utilities", "Servicios públicos", "Os serviços públicos", "Kamu hizmetleri"],
+    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en", "/en"], "/public-utilities"]
   },
   publicServices: {
-    t: ["Государственные услуги, штрафы, налоги", "Public services, fines, taxes", "Servicios estatales, impuestos, multas", "Serviços governamentais, impostos, multas"],
+    t: ["Государственные услуги, штрафы, налоги", "Public services, fines, taxes", "Servicios estatales, impuestos, multas", "Serviços governamentais, impostos, multas", "Devlet hizmetleri, cezalar, vergiler"],
     u: "payments.webmoney.ru"
   },
   bankAccountPayments: {
-    t: ["Платежи по банковским реквизитам", "Bank account payments", "Pagar por requisito bancarios", "Pagar por exigência bancária"],
+    t: ["Платежи по банковским реквизитам", "Bank account payments", "Pagar por requisito bancarios", "Pagar por exigência bancária", "Banka bilgilerine göre ödemeler"],
     u: "payments.webmoney.ru/freepay/Step1/4"
   },
   megastock: {
-    t: ["Megastock: каталог продавцов", "Megastock: Merchant directory", "Megastock: catálogo de los vendedores", "Megastock: catálogo de vendedores"],
+    t: ["Megastock: каталог продавцов", "Megastock: Merchant directory", "Megastock: catálogo de los vendedores", "Megastock: catálogo de vendedores", "Megastock: satıcı katalogları"],
     u: [["megastock.ru", "megastock.com"]]
   },
   digisellerCatalogOfdigitalGoods: {
-    t: ["Digiseller: цифровые товары", "Digiseller: Catalog of digital goods", "Digiseller: catálogo de los servicios digitales", "Digiseller: catálogo dos serviços digitais"],
+    t: ["Digiseller: цифровые товары", "Digiseller: Catalog of digital goods", "Digiseller: catálogo de los servicios digitales", "Digiseller: catálogo dos serviços digitais", "Digiseller: dijital ürünler"],
     u: "digiseller.ru/outside/buygoods.asp"
   },
   antivirus: {
-    t: ["Антивирус: программы по подписке", "Antivirus: software subscription", "-", "-"],
+    t: ["Антивирус: программы по подписке", "Antivirus: software subscription", "-", "-", "-"],
     u: [["antivirus.webmoney.ru", "antivirus.wmtransfer.com"]]
   },
   rebills: {
-    t: ["Rebills: автоплатежи", "Rebills and recurring payments", "Configuración de los pagos periódicos", "Configuração de pagamentos diários"],
+    t: ["Rebills: автоплатежи", "Rebills and recurring payments", "Configuración de los pagos periódicos", "Configuração de pagamentos diários", "Peryodik ödemelerin ayarları"],
     u: "rebills.webmoney.ru"
   },
   creditService: {
-    t: ["Кредитный сервис", "Credit service", "Servicio de crédito", "Acordo sobre o uso do serviço de crédito"],
+    t: ["Кредитный сервис", "Credit service", "Servicio de crédito", "Acordo sobre o uso do serviço de crédito", "Kredi servisi"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlIndividualsCredit, "/credit_service/about.shtml"]
   },
   debtService: {
-    t: ["Долговой cервис", "Loan service", "Sobre el Servicio", "Empréstimo", ""],
+    t: ["Долговой cервис", "Loan service", "Sobre el Servicio", "Empréstimo", "-", "Borç Servisi"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlIndividualsCredit, "/debt_service/get_loan.shtml"]
   },
   passport: {
-    t: ["Аттестация", "Verification", "Atestados", "Atestados"],
+    t: ["Аттестация", "Verification", "Atestados", "Atestados", "Belgelendirme"],
     // TODO в испанкской версиии не ссылка
     u: "passport.web.money"
   },
   receivePassport: {
-    t: ["Получить аттестат", "Receive WebMoney passport", "Recibir el atestado", "Receber certificado"],
+    t: ["Получить аттестат", "Receive WebMoney passport", "Recibir el atestado", "Receber certificado", "Belge alma"],
     u: "passport.web.money"
   },
   verificationPoints: {
-    t: ["Пункты аттестации", "Verification points", "Locales de certificación", "Lojas de certificação"],
+    t: ["Пункты аттестации", "Verification points", "Locales de certificación", "Lojas de certificação", "Belgelendirme noktaları"],
     u: "passport.web.money/asp/Reglist.asp?rettid=130"
   },
   arbitrage: {
-    t: ["Арбитраж", "Arbitrage", "Arbitraje", "Arbitrágem"],
+    t: ["Арбитраж", "Arbitrage", "Arbitraje", "Arbitrágem", "Arbitraj"],
     u: "arbitrage.web.money"
   },
   submitComplaint: {
-    t: ["Подать иск", "Submit a complaint", "Entablar demanda", "Começar demanda"],
+    t: ["Подать иск", "Submit a complaint", "Entablar demanda", "Começar demanda", "Dava açma"],
     u: "arbitrage.web.money/asp/inewprocess.asp"
   },
   submitClaim: {
-    t: ["Подать претензию", "Submit a claim", "Entablar la petición", "Apresentar uma petição"],
+    t: ["Подать претензию", "Submit a claim", "Entablar la petición", "Apresentar uma petição", "İtirazda bulunmak"],
     u: "arbitrage.web.money/asp/newclaims.asp?authtype=1"
   },
   registerContract: {
-    t: ["Зарегистрировать контракт", "Register contract", "Registrar el contrato", "Insira o contrato"],
+    t: ["Зарегистрировать контракт", "Register contract", "Registrar el contrato", "Insira o contrato", "Kontratı kaydetmek"],
     u: "arbitrage.web.money/asp/bnewcontract.asp"
   },
   // =========================
@@ -479,40 +479,40 @@ var linkStorage = {
     u: "funding.web.money/donations"
   },
   crowdfunding: {
-    t: ["Краудфандинг", "Crowdfunding", "-", "-"],
+    t: ["Краудфандинг", "Crowdfunding", "-", "-", "Kraudfanding"],
     u: "funding.web.money/crowd"
   },
   groupBuying: {
-    t: ["Коллективные покупки", "Group buying", "-", "-"],
+    t: ["Коллективные покупки", "Group buying", "-", "-", "Grup satın almalar"],
     u: "funding.web.money/group"
   },
   eventOrganization: {
-    t: ["Организация мероприятий", "Event organization", "-", "-"],
+    t: ["Организация мероприятий", "Event organization", "-", "-", "Etkinliklerin organizasyon"],
     u: "funding.web.money/tickets"
   },
   virtualCards: {
-    t: ["Виртуальные карты Visa и MasterCard", "Virtual cards Visa and MasterCard", "Tarjetas virtuales Visa y MasterCard", "Cartões virtuais Visa e MasterCard"],
+    t: ["Виртуальные карты Visa и MasterCard", "Virtual cards Visa and MasterCard", "Tarjetas virtuales Visa y MasterCard", "Cartões virtuais Visa e MasterCard", "Sanal Visa ve MasterCard kartları"],
     u: "cards.web.money"
   },
   plasticCards: {
-    t: ["Пластиковые карты Visa и MasterCard", "Plastic cards Visa and MasterCard", "Tarjetas bancarias Visa y MasterCard", "Visa e MasterCard cartões bancários"],
+    t: ["Пластиковые карты Visa и MasterCard", "Plastic cards Visa and MasterCard", "Tarjetas bancarias Visa y MasterCard", "Visa e MasterCard cartões bancários", "Visa ve MasterCard kredi kartları"],
     u: "cards.web.money"
   },
   moneySend: {
-    t: ["Перевод с карты на карту", "MoneySend", "-", "-"],
+    t: ["Перевод с карты на карту", "MoneySend", "-", "-", "-"],
     // TODO в испанской версии закомментирован
     u: "moneysend.web.money"
   },
   events: {
-    t: ["Деловая сеть", "Business network", "Red de negocio", "Rede de Negócios"],
+    t: ["Деловая сеть", "Business network", "Red de negocio", "Rede de Negócios", "İş şebekesi"],
     u: "events.web.money"
   },
   blog: {
-    t: ["Новости системы", "System news", "Noticias del sistema", "Notícias do sistema"],
+    t: ["Новости системы", "System news", "Noticias del sistema", "Notícias do sistema", "Sistem haberleri"],
     u: "blog.wmtransfer.com"
   },
   geo: {
-    t: ["Интерактивная карта", "Interactive map", "Mapa interactivo", "Mapa interativo"],
+    t: ["Интерактивная карта", "Interactive map", "Mapa interactivo", "Mapa interativo", "İnteraktif harita"],
     u: "geo.web.money"
   },
   wiki: {
@@ -521,7 +521,7 @@ var linkStorage = {
   },
   purseManagement2: {
     q: "",
-    t: ["Управление кошельками", "Purse management", "Manejar los monederos", "Métodos para gerir contas"],
+    t: ["Управление кошельками", "Purse management", "Manejar los monederos", "Métodos para gerir contas", "Cüzdanların yönetimi"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInformationManage, "/index.shtml"]
   },
@@ -558,57 +558,57 @@ var linkStorage = {
   },
   downloadSoftware2: {
     q: "",
-    t: ["Скачать приложения", "Download software", "Descargar software", "Download de software"],
-    u: ["wiki.web.money/projects/webmoney/wiki/gde_skachat_prilozheniya_webmoney", "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software"]
+    t: ["Скачать приложения", "Download software", "Descargar software", "Download de software", "Yazılım"],
+    u: ["wiki.web.money/projects/webmoney/wiki/gde_skachat_prilozheniya_webmoney", "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software"]
   },
   // =========================
   // Для бизнеса (1)
   // =========================
   merchant: {
     q: "",
-    t: ["Merchant: создать магазин", "Web Merchant Interface", "Merchant: hacer una tienda", "Merchant: criar uma loja"],
+    t: ["Merchant: создать магазин", "Web Merchant Interface", "Merchant: hacer una tienda", "Merchant: criar uma loja", "Merchant: dükkan oluşturmak"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/merchant.shtml"]
   },
   paymentsToBankAccounts: {
     q: "",
-    t: ["Прием платежей на банковский счет", "Payments to bank accounts", "-", "Aceitar pagamentos para a conta bancária"],
+    t: ["Прием платежей на банковский счет", "Payments to bank accounts", "-", "Aceitar pagamentos para a conta bancária", "-"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/bank.shtml"]
   },
   megastock2: {
     q: "",
-    t: ["Megastock: каталог магазинов", "MegaStock: Directory of sites", "Megastock: catálogo de tiendas", "Megastock: catálogo de lojas"],
+    t: ["Megastock: каталог магазинов", "MegaStock: Directory of sites", "Megastock: catálogo de tiendas", "Megastock: catálogo de lojas", "Megastock: dükkanların kataloğu"],
     u: "megastock.ru"
   },
   digiseller2: {
     q: "",
-    t: ["Digiseller: цифровые товары", "Digiseller: Catalog of digital goods", "Digiseller: catálogo de productos", "Digiseller: catálogo de produtos"],
+    t: ["Digiseller: цифровые товары", "Digiseller: Catalog of digital goods", "Digiseller: catálogo de productos", "Digiseller: catálogo de produtos", "Digiseller: dijital ürünler"],
     u: "digiseller.ru/outside/sellgoods.asp"
   },
   funding: {
     q: "",
-    t: ["Сбор средств", "Fundraising", "Colecta de los fondos", "-", "-"],
+    t: ["Сбор средств", "Fundraising", "Colecta de los fondos", "-", "-", "Kaynak toplanması"],
     u: "funding.web.money"
   },
   mestcom2: {
     q: "",
-    t: ["Mestcom: продажа рекламы", "Mestcom: Selling Ads", "Mestcom: comprar las publicidades", "Mestcom: venda de publicidade"],
+    t: ["Mestcom: продажа рекламы", "Mestcom: Selling Ads", "Mestcom: comprar las publicidades", "Mestcom: venda de publicidade", "Mestcom: reklam satışı"],
     u: "www.mestkom.ru/sell.aspx"
   },
   cashbox2: {
     q: "",
-    t: ["Cashbox: покупка действий на сайте", "Cashbox: Purchase website activities", "Cashbox: comprar las acciones en el sitio web", "Cashbox: comprar as ações no site"],
+    t: ["Cashbox: покупка действий на сайте", "Cashbox: Purchase website activities", "Cashbox: comprar las acciones en el sitio web", "Cashbox: comprar as ações no site", "Cashbox: sitede hareketlerin satın alınması"],
     u: "cashbox.ru"
   },
   digiseller3: {
     q: "",
-    t: ["Digiseller: виджет агентского магазина", "Digiseller: Agent shop widget", "Digiseller: vidget de la tienda de agencia", "Digiseller: widget da loja de agência"],
+    t: ["Digiseller: виджет агентского магазина", "Digiseller: Agent shop widget", "Digiseller: vidget de la tienda de agencia", "Digiseller: widget da loja de agência", "Digiseller: ajente dükkanı widjeti"],
     u: "www.digiseller.ru/outside/agentshop.asp"
   },
   login: {
     q: "",
-    t: ["Login: авторизация по WMID", "Login: WMID authorisation", "Login: autorización por WMID", "Login: permissão pelo WMID"],
+    t: ["Login: авторизация по WMID", "Login: WMID authorisation", "Login: autorización por WMID", "Login: permissão pelo WMID", "Login: WMID’ye göre giriş yapma"],
     u: "login.wmtransfer.com"
   },
   // =========================
@@ -616,53 +616,53 @@ var linkStorage = {
   // =========================
   masspayment: {
     q: "",
-    t: ["Masspayment: массовые выплаты", "Mass Payments", "Masspayment: Pagos masivos", "Masspayment: pagamentos em massa"],
+    t: ["Masspayment: массовые выплаты", "Mass Payments", "Masspayment: Pagos masivos", "Masspayment: pagamentos em massa", "Masspayment: toplu ödemeler"],
     u: "masspayment.web.money"
   },
   exchanger2: {
     q: "",
-    t: ["Exchanger: обменный пункт", "Exchanger: Exchange service", "Exchanger: Cambio", "Exchanger: troca"],
+    t: ["Exchanger: обменный пункт", "Exchanger: Exchange service", "Exchanger: Cambio", "Exchanger: troca", "Exchanger: döviz bürosu"],
     u: "exchanger.web.money"
   },
   contracts: {
     q: "",
-    t: ["Контракты: регистрация текстов Соглашений", "Contracts: Agreement text registration", "Contractos: Registración de los textos de los convencios", "Contratos: Registro dos textos dos acordos"],
+    t: ["Контракты: регистрация текстов Соглашений", "Contracts: Agreement text registration", "Contractos: Registración de los textos de los convencios", "Contratos: Registro dos textos dos acordos", "Kontratlar: Sözleşmelerin metinlerinin kaydı"],
     u: "arbitrage.web.money/asp/bContract.asp"
   },
   arbitrage2: {
     q: "",
-    t: ["Арбитраж: разрешение споров", "Arbitrage: Dispute resolution", "Arbitraje: solución de los debates", "Arbitragem: solução das discussões"],
+    t: ["Арбитраж: разрешение споров", "Arbitrage: Dispute resolution", "Arbitraje: solución de los debates", "Arbitragem: solução das discussões", "Arbitraj: anlaşmazlıkların giderilmesi"],
     u: "arbitrage.web.money"
   },
   escrow2: {
     q: "",
-    t: ["Escrow: защищенные сделки", "Escrow: Secure transactions", "Escrow: transacciones protegidas", "Escrow: transações protegidas"],
+    t: ["Escrow: защищенные сделки", "Escrow: Secure transactions", "Escrow: transacciones protegidas", "Escrow: transações protegidas", "Escrow: korumalı anlaşmalar"],
     u: "escrow.webmoney.ru"
   },
   creditMarket: {
     q: "",
-    t: ["Кредитная биржа", "Credit market", "Bolsas de crédito", "Mercado do crédito"],
-    u: ["credit.web.money", ["", "?lang=en", "?lang=en", "?lang=en"]]
+    t: ["Кредитная биржа", "Credit market", "Bolsas de crédito", "Mercado do crédito", "Kredi borsası"],
+    u: ["credit.web.money", ["", "?lang=en", "?lang=en", "?lang=en", "?lang=en"]]
   },
   reporting: {
     q: "",
-    t: ["Отчетность", "Reporting", "Presentación de informes", "Relatórios"],
+    t: ["Отчетность", "Reporting", "Presentación de informes", "Relatórios", "Raporlama"],
     u: "report.webmoney.ru"
   },
   financialSupport2: {
     q: "",
-    t: ["Служба финансовой поддержки", "Financial support", "Servicio del soporte financiero", "Suporte para serviço financeiro"],
+    t: ["Служба финансовой поддержки", "Financial support", "Servicio del soporte financiero", "Suporte para serviço financeiro", "Mali destek hizmeti"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlSupport, "/financial.shtml"]
   },
   biz: {
     q: "",
-    t: ["Выплаты участникам системы", "Payments to system participants", "-", "-"],
+    t: ["Выплаты участникам системы", "Payments to system participants", "-", "-", "-"],
     u: "biz.web.money"
   },
   biz2: {
     q: "",
-    t: ["Прием платежей", "Accepting payments", "-", "-"],
+    t: ["Прием платежей", "Accepting payments", "-", "-", "-"],
     u: "biz.web.money"
   },
   // =========================
@@ -670,64 +670,64 @@ var linkStorage = {
   // =========================
   shareholder2: {
     q: "",
-    t: ["Shareholder: вложение средств", "Shareholder: Investments", "Shareholder: usar fondos", "Shareholder: utilização de fundos"],
-    u: ["www.shareholder.ru/About.aspx", ["?lang=ru", "?lang=en", "?lang=en", "?lang=en"]]
+    t: ["Shareholder: вложение средств", "Shareholder: Investments", "Shareholder: usar fondos", "Shareholder: utilização de fundos", "Shareholder: sermaye yatırma"],
+    u: ["www.shareholder.ru/About.aspx", ["?lang=ru", "?lang=en", "?lang=en", "?lang=en", "?lang=en"]]
   },
   indx2: {
     q: "",
-    t: ["INDX: фондовая биржа", "INDX: Stock exchange", "INDX: bolsa de fondos", "INDX: bolsa de fundos"],
+    t: ["INDX: фондовая биржа", "INDX: Stock exchange", "INDX: bolsa de fondos", "INDX: bolsa de fundos", "INDX: Borsa"],
     u: "indx.money/about/eth/#"
   },
   debtMarket: {
     q: "",
-    t: ["Продажа долгов", "Debt market", "Vender las deudas", "Vender a dívida"],
-    u: ["debtmart.wmtransfer.com", ["?lang=ru", "?lang=en", "?lang=en", "?lang=en"]]
+    t: ["Продажа долгов", "Debt market", "Vender las deudas", "Vender a dívida", "Borçların satışı"],
+    u: ["debtmart.wmtransfer.com", ["?lang=ru", "?lang=en", "?lang=en", "?lang=en", "?lang=en"]]
   },
   capitaller: {
     q: "",
-    t: ["Capitaller: управление средствами", "Capitaller: Funds management", "Capitaller: manejar los fondos", "Capitaller: gerir fundos"],
-    u: ["www.capitaller.ru/About.aspx", ["?lang=ru", "?lang=en", "?lang=en", "?lang=en"]]
+    t: ["Capitaller: управление средствами", "Capitaller: Funds management", "Capitaller: manejar los fondos", "Capitaller: gerir fundos", "Capitaller: kaynakların yönetimi"],
+    u: ["www.capitaller.ru/About.aspx", ["?lang=ru", "?lang=en", "?lang=en", "?lang=en", "?lang=en"]]
   },
   mentor2: {
     q: "",
-    t: ["Mentor: контроль исполнения задач", "Mentor: Task management service", "Mentor: control de las tareas", "Mentor: controlar a execução das tarefas"],
+    t: ["Mentor: контроль исполнения задач", "Mentor: Task management service", "Mentor: control de las tareas", "Mentor: controlar a execução das tarefas", "Mentor: görevlerin yürütmesinin kontrolü"],
     u: "mentor.wmtransfer.com"
   },
   secureMail: {
     q: "",
-    t: ["Защищенная почта", "Secure mail", "Correspondencia protegída", "Mail protegido"],
+    t: ["Защищенная почта", "Secure mail", "Correspondencia protegída", "Mail protegido", "Korumalı posta"],
     u: "mail.wmid.com"
   },
   files2: {
     q: "",
-    t: ["Файловое хранилище", "File storage", "Tus archivos", "Seus arquivos"],
+    t: ["Файловое хранилище", "File storage", "Tus archivos", "Seus arquivos", "Dosya deposu"],
     u: "files.web.money"
   },
   letterPostingService: {
     q: "",
-    t: ["Отправка бумажных писем", "Letter posting service", "Mandar «las» cartas de papel", "Envio de Cartas «em» papel"],
+    t: ["Отправка бумажных писем", "Letter posting service", "Mandar «las» cartas de papel", "Envio de Cartas «em» papel", "Hard «copy mektupların» gönderilmesi"],
     u: "letters.wmtransfer.com"
   },
   newsline: {
     q: "",
-    t: ["Лента новостей: рассылка", "Newsline: Subscription", "Noticias: boletín", "Notícias: newsletter"],
+    t: ["Лента новостей: рассылка", "Newsline: Subscription", "Noticias: boletín", "Notícias: newsletter", "Haber dizisi: gönderim"],
     u: "subscribe.web.money/subscribe"
   },
   programInterfaces: {
     q: "",
-    t: ["API: программные интерфейсы", "API: Program interfaces", "API: aplicaciónes", "API: aplicações"],
+    t: ["API: программные интерфейсы", "API: Program interfaces", "API: aplicaciónes", "API: aplicações", "API: program arayüzleri"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlDevelopers, "/api.shtml"]
   },
   stylesAndDesign: {
     q: "",
-    t: ["Дизайн и стили", "Styles and design", "Diseño y estilos", "Desenho e estilos"],
+    t: ["Дизайн и стили", "Styles and design", "Diseño y estilos", "Desenho e estilos", "Dizayn ve stiller"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlDevelopers, "/logos.shtml"]
   },
   technicalSupport2: {
     q: "",
-    t: ["Техническая поддержка", "Technical support", "Soporte técnico", "Suporte técnico"],
+    t: ["Техническая поддержка", "Technical support", "Soporte técnico", "Suporte técnico", "Teknik destek"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlSupport, "/tech.shtml"]
   },
@@ -736,78 +736,78 @@ var linkStorage = {
   // =========================
   registration: {
     q: "",
-    t: ["Регистрация", "Registration", "Registración", "Inscrição"],
+    t: ["Регистрация", "Registration", "Registración", "Inscrição", "Kayıt"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpStart, "/registration.shtml"]
   },
   inoutOptions: {
     q: "",
-    t: ["Выбор способа ввода/вывода", "Choosing a method for input/output", "Seleccionar el metodo de recarga/retiro", "Selecione o método de recarga / retirada"],
+    t: ["Выбор способа ввода/вывода", "Choosing a method for input/output", "Seleccionar el metodo de recarga/retiro", "Selecione o método de recarga / retirada", "Para yatırma/çekme yönteminin seçimi"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpStart, "/inout_options.shtml"]
   },
   acceptPayments: {
     q: "",
-    t: ["Выбор способа приема платежей", "Choosing a method for accepting payments", "Buscar los métodos de recarga", "Pesquisa métodos de recarga"],
+    t: ["Выбор способа приема платежей", "Choosing a method for accepting payments", "Buscar los métodos de recarga", "Pesquisa métodos de recarga", "Ödeme kabul etme yönteminin seçimi"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpTechnical, "/accept_payments.shtml"]
   },
   repayment: {
     q: "",
-    t: ["Возврат займа на Debt", "Repayment", "-", "-"],
+    t: ["Возврат займа на Debt", "Repayment", "-", "-", "-"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpFinancial, "/repayment.shtml"]
   },
   repaymentCPurse: {
     q: "",
-    t: ["Возврат кредита с С кошелька", "Repayment c purse", "-", "-"],
+    t: ["Возврат кредита с С кошелька", "Repayment c purse", "-", "-", "-"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpFinancial, "/repayment_c.shtml"]
   },
   controlRecovery: {
     q: "",
-    t: ["Восстановление контроля", "Control recovery", "Recuperar el control", "Recuperar o controle"],
+    t: ["Восстановление контроля", "Control recovery", "Recuperar el control", "Recuperar o controle", "Parolanın onarılması"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpGeneral, "/recovery.shtml"]
   },
   keepers: {
     q: "",
-    t: ["Выбор способа управления", "Choosing an account management method", "Seleccionar el metodo para manejar las cuentas", "Selecione o método para lidar com as contas"],
+    t: ["Выбор способа управления", "Choosing an account management method", "Seleccionar el metodo para manejar las cuentas", "Selecione o método para lidar com as contas", "Yönetim şeklinin seçimi"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpTechnical, "/keepers.shtml"]
   },
   poluchenieAttestata: {
     q: "",
-    t: ["Получение аттестата", "Receiving WebMoney passport", "Recibir el atestado", "Receber certificado"],
+    t: ["Получение аттестата", "Receiving WebMoney passport", "Recibir el atestado", "Receber certificado", "Belge alma"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpStart, "/poluchenie_attestata.shtml"]
   },
   operationLimits: {
     q: "",
-    t: ["Лимиты на операции", "Operation limits", "Límites de la operación", "Limites da operação"],
+    t: ["Лимиты на операции", "Operation limits", "Límites de la operación", "Limites da operação", "İşlem limitleri"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpStart, "/operation_limits.shtml"]
   },
   changeData: {
     q: "",
-    t: ["Изменение регистрационных данных", "Change data", "-", "-"],
+    t: ["Изменение регистрационных данных", "Change data", "-", "-", "-"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpGeneral, "/change_data.shtml"]
   },
   pretenzIIski: {
     q: "",
-    t: ["Подача претензий и исков", "Submitting claims and complaints", "Hacer una pretensión", "Apresentação de queixas e reclamações"],
+    t: ["Подача претензий и исков", "Submitting claims and complaints", "Hacer una pretensión", "Apresentação de queixas e reclamações", "Şikayetler ve talepler"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpStart, "/pretenzi-iski.shtml"]
   },
   annullation: {
     q: "",
-    t: ["Отказ в обслуживании", "Annullation", "Denegación del servicio", "Negação de serviço"],
+    t: ["Отказ в обслуживании", "Annullation", "Denegación del servicio", "Negação de serviço", "Servis reddi"],
     u: [constLangs, constUrlHelpGeneral, "/annullation.shtml"]
   },
   deleteWmid: {
     q: "",
-    t: ["Порядок удаления WMID", "Delete WMID", "Remover su WMID", "Remover o seu WMID"],
+    t: ["Порядок удаления WMID", "Delete WMID", "Remover su WMID", "Remover o seu WMID", "-"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpGeneral, "/delete_wmid.shtml"]
   },
@@ -816,72 +816,72 @@ var linkStorage = {
   // =========================
   changeBl: {
     q: "",
-    t: ["Изменение BL", "Changing BL", "Cambio de BL", "Troca de BL"],
+    t: ["Изменение BL", "Changing BL", "Cambio de BL", "Troca de BL", "BL değişikliği"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpGeneral, "/change_bl.shtml"]
   },
   actionBlock: {
     q: "",
-    t: ["Действия при блокировке кошелька", "Action block", "-", "-"],
+    t: ["Действия при блокировке кошелька", "Action block", "-", "-", "-"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpGeneral, "/action_block.shtml"]
   },
   photoId: {
     q: "",
-    t: ["Создание PhotoID", "Create PhotoID", "-", "-"],
+    t: ["Создание PhotoID", "Create PhotoID", "-", "-", "-"],
     u: "wiki.web.money/projects/webmoney/wiki/PhotoID"
   },
   nevozvratDebt: {
     q: "",
-    t: ["Невозвраты займов на Debt", "Loan defaults", "No hay reembolso de prestamos (se dice asi y también existe desembolso) en Debt", "Não reembolso de empréstimos da dívida"],
+    t: ["Невозвраты займов на Debt", "Loan defaults", "No hay reembolso de prestamos (se dice asi y también existe desembolso) en Debt", "Não reembolso de empréstimos da dívida", "Debt’deki borçların iade edilmemesi"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpFinancial, "/nevozvrat_debt.shtml"]
   },
   transactionHistory: {
     q: "",
-    t: ["Получение выписки операций", "Getting transacion history", "Historal de Transacciones", "Histórico de Transações"],
+    t: ["Получение выписки операций", "Getting transacion history", "Historal de Transacciones", "Histórico de Transações", "İşlem ekstrelerinin alınması"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpFinancial, "/transaction_history.shtml"]
   },
   crowdfunding2: {
     q: "",
-    t: ["Сбор средств", "Crowdfunding", "Cobro de fondos", "Recolha de fundos"],
+    t: ["Сбор средств", "Crowdfunding", "Cobro de fondos", "Recolha de fundos", "Kaynak toplanması"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpStart, "/croudfunding.shtml"]
   },
   exchange: {
     q: "",
-    t: ["Обменные операции", "Exchange operations", "Operaciones de cambio", "Operações de câmbio"],
+    t: ["Обменные операции", "Exchange operations", "Operaciones de cambio", "Operações de câmbio", "Döviz işlemleri"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpFinancial, "/exchange.shtml"]
   },
   securityLimits: {
     q: "",
-    t: ["Расходные лимиты", "Spending limits", "Límites de egresos", "A limitação das despesas"],
+    t: ["Расходные лимиты", "Spending limits", "Límites de egresos", "A limitação das despesas", "Harcama limitleri"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpTechnical, "/security_limits.shtml"]
   },
   tabu: {
     q: "",
-    t: ["Запрещенные виды деятельности", "Restricted activities", "tipos de actividades prohibidas", "Tipos de atividades proibidas"],
+    t: ["Запрещенные виды деятельности", "Restricted activities", "tipos de actividades prohibidas", "Tipos de atividades proibidas", "Yasaklanan faaliyetler"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpGeneral, "/tabu.shtml"]
   },
   bankCards: {
     q: "",
-    t: ["Банковские карты", "Bank cards", "Tarjetas bancarias", "Cartões bancários"],
+    t: ["Банковские карты", "Bank cards", "Tarjetas bancarias", "Cartões bancários", "-"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpTechnical, "/cards.shtml"]
   },
   checkCorr: {
     q: "",
-    t: ["Проверка корреспондентов", "Correspondent check", "comprobar los contactos", "Verificação de interlocutores"],
+    t: ["Проверка корреспондентов", "Correspondent check", "comprobar los contactos", "Verificação de interlocutores", "Yazışmaların kontrolü"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpGeneral, "/check_corr.shtml"]
   },
   automats: {
     q: "",
-    t: ["Бюджетные и расчетные автоматы", "Budget and transact automation tools", "Budget Automation Tool", "Maquinas de orçamento e liquidação"],
+    t: ["Бюджетные и расчетные автоматы", "Budget and transact automation tools", "Budget Automation Tool", "Maquinas de orçamento e liquidação", "Bütçe ve hesaplama makinaları"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpTechnical, "/automats.shtml"]
   },
@@ -890,46 +890,46 @@ var linkStorage = {
   // =========================
   downloadSoftware3: {
     q: "",
-    t: ["Где скачать приложения", "Download software", "Descargar software", "Download de software"],
-    u: ["wiki.web.money/projects/webmoney/wiki/gde_skachat_prilozheniya_webmoney", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software"]
+    t: ["Где скачать приложения", "Download software", "Descargar software", "Download de software", "Yazılım"],
+    u: ["wiki.web.money/projects/webmoney/wiki/gde_skachat_prilozheniya_webmoney", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software"]
   },
   AskQuestion: {
     q: "",
-    t: ["Задать вопрос", "Ask a question", "Hacer una pregunta", "Faça uma pergunta"],
-    u: ["support.wmtransfer.com", ["", "lang=eng", "lang=eng", "lang=eng"]]
+    t: ["Задать вопрос", "Ask a question", "Hacer una pregunta", "Faça uma pergunta", "Soru sormak"],
+    u: ["support.wmtransfer.com", ["", "lang=eng", "lang=eng", "lang=eng", "lang=eng"]]
   },
   legalEntityWmid: {
     q: "",
-    t: ["Использование WMID юридическими лицами", "Usage of WMID by legal entities", "Uso del WMID por personas juridicas", "Uso de WMID por entidades jurídicas"],
+    t: ["Использование WMID юридическими лицами", "Usage of WMID by legal entities", "Uso del WMID por personas juridicas", "Uso de WMID por entidades jurídicas", "WMID’nin tüzel kişiler tarafından kullanılması"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpFinancial, "/legal_entity_wmid.shtml"]
   },
   videoTutorials: {
     q: "",
-    t: ["Обучающие видео", "Video tutorials", "Video Tutorial", "Tutorial em vídeo"],
-    u: ["www.youtube.com/playlist?list=PLxnBovRWjSvuQF841-x7onqshYgCzkxkU", "www.youtube.com/playlist?list=PLxnBovRWjSvvLcfubSk3cNFrvPxk8Y8GL", "www.youtube.com/playlist?list=PLxnBovRWjSvvLcfubSk3cNFrvPxk8Y8GL", "www.youtube.com/playlist?list=PLxnBovRWjSvvLcfubSk3cNFrvPxk8Y8GL"]
+    t: ["Обучающие видео", "Video tutorials", "Video Tutorial", "Tutorial em vídeo", "Videolu eğitim"],
+    u: ["www.youtube.com/playlist?list=PLxnBovRWjSvuQF841-x7onqshYgCzkxkU", "www.youtube.com/playlist?list=PLxnBovRWjSvvLcfubSk3cNFrvPxk8Y8GL", "www.youtube.com/playlist?list=PLxnBovRWjSvvLcfubSk3cNFrvPxk8Y8GL", "www.youtube.com/playlist?list=PLxnBovRWjSvvLcfubSk3cNFrvPxk8Y8GL", "www.youtube.com/playlist?list=PLxnBovRWjSvvLcfubSk3cNFrvPxk8Y8GL"]
   },
   financialSupport3: {
     q: "",
-    t: ["Финансовая поддержка", "Financial support", "-", "Suporte Financeiro"],
+    t: ["Финансовая поддержка", "Financial support", "-", "Suporte Financeiro", "Mali destek"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlSupport, "/financial.shtml"]
   },
   technicalSupport3: {
     q: "",
-    t: ["Техническая поддержка", "Technical support", "Soporte técnico", "Suporte técnico"],
+    t: ["Техническая поддержка", "Technical support", "Soporte técnico", "Suporte técnico", "Teknik destek"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlSupport, "/tech.shtml"]
   },
   searchPayment: {
     q: "",
-    t: ["Розыск платежей", "Search payment", "Buscar pagos", "Pesquisar pagamentos"],
+    t: ["Розыск платежей", "Search payment", "Buscar pagos", "Pesquisar pagamentos", "Ödeme arama"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpFinancial, "/search_pay.shtml"]
   },
   interactiveMap: {
     q: "",
-    t: ["Интерактивная карта", "Interactive map", "Mapa interactivo", "Mapa interativo"],
+    t: ["Интерактивная карта", "Interactive map", "Mapa interactivo", "Mapa interativo", "İnteraktif harita"],
     u: "geo.web.money"
   },
   wiki2: {
@@ -938,7 +938,7 @@ var linkStorage = {
   },
   forum2: {
     q: "",
-    t: ["Форум", "Forum", "Foro", "Fórum"],
+    t: ["Форум", "Forum", "Foro", "Fórum", "Forum"],
     u: "forum.web.money/index.php"
   }
 };
@@ -11193,7 +11193,71 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ctr"
     }, (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n7g-row"
+      "class": "n7g-rw"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-mnu"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-mni is-a"
+    }, "Криптовалюты"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-mni"
+    }, "Оплатить"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-mni"
+    }, "Для работы")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-cnt"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-cti is-a"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-svi",
+      "href": "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("img", {
+      "class": "n7g-sic",
+      "src": __webpack_require__(/*! ../images/services/bitcoin.svg */ "./src/webMoneyHeader/images/services/bitcoin.svg")
+    }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
+      "class": "n7g-stl"
+    }, "WMX (Bitcoin)")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-svi",
+      "href": "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("img", {
+      "class": "n7g-sic",
+      "src": __webpack_require__(/*! ../images/services/bitcoin-cash.svg */ "./src/webMoneyHeader/images/services/bitcoin-cash.svg")
+    }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
+      "class": "n7g-stl"
+    }, "WMH (Bitcoin Cash)")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-svi",
+      "href": "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("img", {
+      "class": "n7g-sic",
+      "src": __webpack_require__(/*! ../images/services/litecoin.svg */ "./src/webMoneyHeader/images/services/litecoin.svg")
+    }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
+      "class": "n7g-stl"
+    }, "WML (Litecoin)")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-svi",
+      "href": "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("img", {
+      "class": "n7g-sic",
+      "src": __webpack_require__(/*! ../images/services/ethereum.svg */ "./src/webMoneyHeader/images/services/ethereum.svg")
+    }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
+      "class": "n7g-stl"
+    }, "WMF (Ethereum)")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-cti"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-svi",
+      "href": "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("img", {
+      "class": "n7g-sic",
+      "src": __webpack_require__(/*! ../images/services/apple.svg */ "./src/webMoneyHeader/images/services/apple.svg")
+    }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
+      "class": "n7g-stl"
+    }, "Подарочная карта Apple")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-svi",
+      "href": "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("img", {
+      "class": "n7g-sic",
+      "src": __webpack_require__(/*! ../images/services/memo.svg */ "./src/webMoneyHeader/images/services/memo.svg")
+    }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
+      "class": "n7g-stl"
+    }, "Steam")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-cti"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-svi",
       "href": "#"
@@ -11226,7 +11290,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "src": __webpack_require__(/*! ../images/services/notes.svg */ "./src/webMoneyHeader/images/services/notes.svg")
     }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
       "class": "n7g-stl"
-    }, "Верстка и публикация заметок")])])));
+    }, "Верстка и публикация заметок")])])])])));
   },
   // getLink(options, "indx").title
   // getLink(options, "indx").url
@@ -12266,6 +12330,8 @@ __webpack_require__.r(__webpack_exports__);
     var businessMenuDd = rootElement.getElementsByClassName("n7g-biz-dd")[0];
     var burger = rootElement.getElementsByClassName("n7g-bgr")[0];
     var burgerDd = rootElement.getElementsByClassName("n7g-bgr-dd")[0];
+    var servicesMenuItems = rootElement.getElementsByClassName("n7g-mni");
+    var servicesMenuItemsDd = rootElement.getElementsByClassName("n7g-cti");
     burger.addEventListener("click", function (e) {
       individiualsMenu.classList.remove("is-a");
       individiualsMenuDd.classList.remove("is-a");
@@ -12275,6 +12341,14 @@ __webpack_require__.r(__webpack_exports__);
       burgerDd.classList.toggle("is-a");
       servicesMenu.classList.toggle("is-a");
       servicesMenuDd.classList.toggle("is-a");
+    });
+    Array.prototype.forEach.call(servicesMenuItems, function (element, index) {
+      element.addEventListener('click', function () {
+        rootElement.querySelector(".n7g-mni.is-a").classList.remove("is-a");
+        rootElement.querySelector(".n7g-cti.is-a").classList.remove("is-a");
+        this.classList.add("is-a");
+        servicesMenuItemsDd[index].classList.add("is-a");
+      });
     });
     servicesMenu.addEventListener("click", function (e) {
       individiualsMenu.classList.remove("is-a");
@@ -12747,7 +12821,7 @@ var ___CSS_LOADER_URL_REPLACEMENT_10___ = _node_modules_css_loader_dist_runtime_
 var ___CSS_LOADER_URL_REPLACEMENT_11___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_11___);
 var ___CSS_LOADER_URL_REPLACEMENT_12___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_12___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"woff\");\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") format(\"woff\");\n  font-weight: 500;\n  font-style: normal;\n  font-display: swap; }\n\n.n7g {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  vertical-align: baseline;\n  box-sizing: border-box;\n  width: 100%;\n  overflow: hidden;\n  box-shadow: 0 1px #eeeeee; }\n  .n7g * {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    vertical-align: baseline;\n    box-sizing: border-box;\n    background-color: transparent;\n    text-decoration: none; }\n    .n7g *:hover, .n7g *:active {\n      outline: none; }\n  .n7g a {\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .n7g img {\n    border-style: none; }\n  .n7g-ctr {\n    width: 100%;\n    min-width: 320px;\n    max-width: 960px;\n    padding: 0 16px;\n    margin: 0 auto; }\n    @media (min-width: 992px) {\n      .n7g-ctr {\n        padding: 0; } }\n  .n7g-flv {\n    padding: 0;\n    display: flex;\n    align-items: center; }\n  .n7g-row {\n    display: flex; }\n  .n7g-spb {\n    justify-content: space-between; }\n  .n7g-bgr {\n    width: 48px;\n    height: 48px;\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") center center no-repeat;\n    margin-left: -16px;\n    background-size: 32px;\n    cursor: pointer; }\n    .n7g-bgr.is-a {\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") center center no-repeat;\n      background-size: 32px; }\n    @media (min-width: 768px) {\n      .n7g-bgr {\n        display: none; } }\n    .n7g-bgr-dd {\n      display: none; }\n      .n7g-bgr-dd.is-a {\n        height: 48px;\n        display: block; }\n      @media (min-width: 768px) {\n        .n7g-bgr-dd {\n          display: none; }\n          .n7g-bgr-dd.is-a {\n            display: none; } }\n  .n7g-lft {\n    display: flex; }\n  .n7g-llg {\n    display: flex;\n    align-items: center; }\n  .n7g-lgo {\n    padding: 8px 0;\n    display: block; }\n    @media (min-width: 768px) {\n      .n7g-lgo {\n        padding: 16px 0;\n        margin-right: 32px; } }\n  .n7g-lgi {\n    display: block;\n    height: 32px; }\n  .n7g-mdl {\n    flex: 1;\n    display: flex;\n    align-items: center;\n    position: absolute;\n    display: none; }\n    @media (min-width: 768px) {\n      .n7g-mdl {\n        position: relative;\n        padding-right: 64px;\n        display: flex; } }\n  .n7g-dtr {\n    width: 2px;\n    background-color: #eeeeee;\n    height: calc(100% - 32px);\n    margin-right: 32px;\n    display: none; }\n    @media (min-width: 768px) {\n      .n7g-dtr {\n        display: block; } }\n  .n7g-svs {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_8___ + ") center center no-repeat;\n    width: 32px;\n    height: 32px;\n    cursor: pointer;\n    margin-right: 32px; }\n    .n7g-svs.is-a {\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_9___ + ") center center no-repeat; }\n  .n7g-svi {\n    display: flex;\n    align-items: center;\n    flex: 1;\n    padding-right: 8px; }\n  .n7g-sic {\n    width: 40px;\n    height: 40px;\n    margin-right: 8px; }\n  .n7g-sim {\n    width: 40px;\n    height: 40px;\n    display: flex;\n    border-radius: 8px;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 16px; }\n  .n7g-simg {\n    width: 24px;\n    display: block;\n    height: auto; }\n  .n7g-stl {\n    color: #101828;\n    font-family: \"Manrope\", sans-serif;\n    font-weight: 600;\n    font-size: 13px;\n    line-height: 16px;\n    cursor: pointer;\n    transition: all 0.2s;\n    display: block; }\n    .n7g-stl:hover {\n      color: #000; }\n  .n7g-lks {\n    display: flex; }\n  .n7g-lki {\n    display: block;\n    padding: 6px 40px 6px 8px;\n    margin-right: 16px;\n    font-size: 14px;\n    line-height: 20px;\n    color: #101828;\n    font-weight: 600;\n    cursor: pointer;\n    border-radius: 4px;\n    position: relative;\n    text-decoration: none;\n    font-family: \"Manrope\";\n    transition: all 0.2s; }\n    .n7g-lki:after {\n      content: \"\";\n      display: block;\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_10___ + ") center center no-repeat;\n      width: 32px;\n      height: 32px;\n      position: absolute;\n      right: 8px;\n      top: 50%;\n      margin-top: -16px; }\n    .n7g-lki.is-a:after {\n      transform: rotate(-180deg);\n      margin-top: -15px; }\n  .n7g-srh {\n    position: absolute;\n    right: 32px;\n    width: 32px;\n    background-color: #fff;\n    border-radius: 4px; }\n    .n7g-srh.is-a {\n      left: 32px;\n      z-index: 1;\n      width: 100%; }\n  .n7g-sbtn {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_11___ + ") center center no-repeat;\n    width: 32px;\n    height: 32px;\n    cursor: pointer; }\n  .n7g-rgt {\n    display: flex;\n    align-items: center; }\n  .n7g-lbs {\n    display: flex; }\n  .n7g-lbi {\n    font-family: \"Manrope\";\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 24px;\n    padding: 7px 16px;\n    display: block;\n    border: 1px solid;\n    border-radius: 8px;\n    margin-right: -16px; }\n    @media (min-width: 768px) {\n      .n7g-lbi {\n        margin-left: 16px;\n        margin-right: 0; } }\n    @media (max-width: 767px) {\n      .n7g-lbi--log {\n        background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_12___ + ") center center no-repeat;\n        border: none;\n        width: 48px;\n        height: 48px;\n        border-radius: 0;\n        text-indent: -9999px;\n        background-size: 32px; } }\n    @media (min-width: 768px) {\n      .n7g-lbi--log {\n        background-color: #006cb4;\n        border-color: #006cb4;\n        color: #fff; } }\n    .n7g-lbi--reg {\n      border-color: #006cb4;\n      color: #006cb4;\n      display: none; }\n      @media (min-width: 768px) {\n        .n7g-lbi--reg {\n          display: block; } }\n  .n7g-slv {\n    opacity: 0;\n    visibility: hidden;\n    max-height: 0;\n    top: 64px;\n    left: 0;\n    right: 0;\n    padding: 24px 0;\n    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);\n    transition: all 0.3s;\n    z-index: 2;\n    background-color: #fff;\n    border-top: 1px solid #eeeeee;\n    position: absolute;\n    display: none; }\n    .n7g-slv.is-a {\n      max-height: 1000px;\n      opacity: 1;\n      visibility: visible;\n      position: static; }\n      @media (min-width: 768px) {\n        .n7g-slv.is-a {\n          position: absolute; } }\n    @media (min-width: 768px) {\n      .n7g-slv {\n        display: block; } }\n  .n7g-col {\n    flex: 1;\n    padding: 0 16px; }\n  .n7g-clm + .n7g-clm {\n    margin-top: 24px; }\n  .n7g-ttl {\n    font-family: \"Manrope\";\n    font-weight: 600;\n    font-size: 13px;\n    line-height: 32px;\n    text-transform: uppercase;\n    border-bottom: 1px solid #e1e1e1;\n    margin-bottom: 16px; }\n  .n7g-lnk {\n    display: block;\n    text-decoration: none;\n    font-family: \"Manrope\";\n    font-size: 13px;\n    line-height: 16px;\n    margin-bottom: 16px;\n    color: #707070;\n    cursor: pointer;\n    transition: all 0.3s linear; }\n    .n7g-lnk:hover {\n      color: #006cb4; }\n", "",{"version":3,"sources":["webpack://./src/webMoneyHeader/webMoneyHeader.scss"],"names":[],"mappings":"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","sourcesContent":["@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-SemiBold.woff2\") format(\"woff2\"), url(\"fonts/Manrope-SemiBold.woff\") format(\"woff\");\r\n  font-weight: 600;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Regular.woff2\") format(\"woff2\"), url(\"fonts/Manrope-Regular.woff\") format(\"woff\");\r\n  font-weight: 400;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Medium.woff2\") format(\"woff2\"), url(\"fonts/Manrope-Medium.woff\") format(\"woff\");\r\n  font-weight: 500;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@mixin noSelection {\r\n  -webkit-touch-callout: none;\r\n  -webkit-user-select: none;\r\n  -khtml-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n}\r\n\r\n@mixin resetDiv {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  vertical-align: baseline;\r\n  box-sizing: border-box;\r\n}\r\n\r\n@mixin resetA {\r\n  background-color: transparent;\r\n  text-decoration: none;\r\n  &:hover,\r\n  &:active {\r\n    outline: none;\r\n  }\r\n}\r\n\r\n@mixin resetImg {\r\n  border-style: none;\r\n}\r\n\r\n.n7g {\r\n  @include resetDiv;\r\n  width: 100%;\r\n  overflow: hidden;\r\n  box-shadow: 0 1px #eeeeee;\r\n  * {\r\n    @include resetDiv;\r\n    @include resetA;\r\n  }\r\n  a {\r\n    @include noSelection;\r\n  }\r\n  img {\r\n    @include resetImg;\r\n  }\r\n  &-ctr {\r\n    width: 100%;\r\n    min-width: 320px;\r\n    max-width: 960px;\r\n    padding: 0 16px;\r\n    margin: 0 auto;\r\n    @media (min-width: 992px) {\r\n      padding: 0;\r\n    }\r\n  }\r\n  &-flv{\r\n    padding: 0;\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-row{\r\n    display: flex;\r\n  }\r\n  &-spb{\r\n    justify-content: space-between;\r\n  }\r\n  &-bgr{\r\n    width: 48px;\r\n    height: 48px;\r\n    background: transparent url(\"./images/bgr.svg\") center center no-repeat;\r\n    margin-left: -16px;\r\n    background-size: 32px;\r\n    cursor: pointer;\r\n    &.is-a{\r\n      background: transparent url(\"./images/bgr-a.svg\") center center no-repeat;\r\n      background-size: 32px;\r\n    }\r\n    @media (min-width: 768px) {\r\n      display: none;\r\n    }\r\n    &-dd{\r\n      display: none;\r\n      &.is-a{\r\n        height: 48px;\r\n        display: block;\r\n      }\r\n      @media (min-width: 768px) {\r\n        display: none;\r\n        &.is-a{\r\n          display: none;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &-lft{\r\n    display: flex;\r\n  }\r\n  &-llg{\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-lgo{\r\n    padding: 8px 0;\r\n    display: block;\r\n    @media (min-width: 768px) {\r\n      padding: 16px 0;\r\n      margin-right: 32px;\r\n    }\r\n  }\r\n  &-lgi{ \r\n    display: block;\r\n    height: 32px;\r\n  }\r\n  &-mdl{\r\n    flex: 1;\r\n    display: flex;\r\n    align-items: center;\r\n    position: absolute;\r\n    display: none;\r\n    @media (min-width: 768px) {\r\n      position: relative;\r\n      padding-right: 64px;\r\n      display: flex;\r\n\r\n    }\r\n  }\r\n  &-dtr{\r\n    width: 2px;\r\n    background-color: #eeeeee;\r\n    height: calc(100% - 32px);\r\n    margin-right: 32px;\r\n    display: none;\r\n    @media (min-width: 768px) {\r\n      display: block;\r\n    }\r\n  }\r\n  &-svs{\r\n    background: transparent url(\"./images/svs.svg\") center center no-repeat;\r\n    width: 32px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n    margin-right: 32px;\r\n    &.is-a{\r\n      background: transparent url(\"./images/svs-a.svg\") center center no-repeat;\r\n    }\r\n  }\r\n  &-svi{\r\n    // max-width: 180px;\r\n    // padding: 0 16px;\r\n    // margin-bottom: 24px;\r\n    display: flex;\r\n    align-items: center;\r\n    flex: 1;\r\n    padding-right: 8px;\r\n  }\r\n  &-sic{\r\n    width: 40px;\r\n    height: 40px;\r\n    margin-right: 8px;\r\n  }\r\n  &-sim{\r\n    width: 40px;\r\n    height: 40px;\r\n    display: flex;\r\n    border-radius: 8px;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 16px;\r\n  }\r\n  &-simg{\r\n    width: 24px;\r\n    display: block;\r\n    height: auto;\r\n  }\r\n  &-stl{\r\n    color: #101828;\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-weight: 600;\r\n    font-size: 13px;\r\n    line-height: 16px;\r\n    cursor: pointer;\r\n    transition: all 0.2s;\r\n    display: block;\r\n    &:hover{\r\n      color: #000;\r\n    }\r\n  }\r\n  &-lks{\r\n    display: flex;\r\n  }\r\n  &-lki{\r\n    display: block;\r\n    padding: 6px 40px 6px 8px;\r\n    margin-right: 16px;\r\n    font-size: 14px;\r\n    line-height: 20px;\r\n    color: #101828;\r\n    font-weight: 600;\r\n    cursor: pointer;\r\n    border-radius: 4px;\r\n    position: relative;\r\n    text-decoration: none;\r\n    font-family: \"Manrope\";\r\n    transition: all 0.2s;\r\n    &:after{\r\n      content: \"\";\r\n      display: block;\r\n      background: transparent url(\"./images/arrow-down.svg\") center center no-repeat;\r\n      width: 32px;\r\n      height: 32px;\r\n      position: absolute;\r\n      right: 8px;\r\n      top: 50%;\r\n      margin-top: -16px;\r\n    }\r\n    &.is-a {\r\n      &:after {\r\n        transform: rotate(-180deg);\r\n        margin-top: -15px;\r\n      }\r\n    }\r\n  }\r\n  &-srh{\r\n    position: absolute;\r\n    right: 32px;\r\n    width: 32px;\r\n    background-color: #fff;\r\n    border-radius: 4px;\r\n    &.is-a{\r\n      left: 32px;\r\n      z-index: 1;\r\n      width: 100%;\r\n    }\r\n  }\r\n  &-sbtn{\r\n    background: transparent url(\"./images/search.svg\") center center no-repeat;\r\n    width: 32px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n  }\r\n  &-rgt{\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-lbs{\r\n    display: flex;\r\n  }\r\n  &-lbi{\r\n    font-family: \"Manrope\";\r\n    font-weight: 500;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    padding: 7px 16px;\r\n    display: block;\r\n    border: 1px solid;\r\n    border-radius: 8px;\r\n    margin-right: -16px; \r\n    @media (min-width: 768px) {\r\n      margin-left: 16px;\r\n      margin-right: 0; \r\n    }\r\n    &--log{\r\n      @media (max-width: 767px) {\r\n        background: transparent url(\"./images/login.svg\") center center no-repeat;\r\n        border: none;\r\n        width: 48px;\r\n        height: 48px;\r\n        border-radius: 0;\r\n        text-indent: -9999px;\r\n        background-size: 32px;\r\n      }\r\n      @media (min-width: 768px) {\r\n        background-color: #006cb4;\r\n        border-color: #006cb4;\r\n        color: #fff;\r\n      }\r\n    }\r\n    &--reg{\r\n      border-color: #006cb4;\r\n      color: #006cb4;\r\n      display: none;\r\n      @media (min-width: 768px) {\r\n        display: block;\r\n      }\r\n    }\r\n  }\r\n  &-slv{\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    max-height: 0;\r\n    top: 64px;\r\n    left: 0;\r\n    right: 0;\r\n    padding: 24px 0;\r\n    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);\r\n    transition: all 0.3s;\r\n    z-index: 2;\r\n    background-color: #fff;\r\n    border-top: 1px solid #eeeeee;\r\n    position: absolute;\r\n    display: none;\r\n    &.is-a{\r\n      max-height: 1000px;\r\n      opacity: 1;\r\n      visibility: visible;\r\n      position: static;\r\n      @media (min-width: 768px) {\r\n        position: absolute;\r\n      }\r\n    }\r\n    @media (min-width: 768px) {\r\n      display: block;\r\n    }\r\n  }\r\n  &-col{\r\n    flex: 1;\r\n    padding: 0 16px;\r\n  }\r\n  &-clm{\r\n    & + .n7g-clm {\r\n      margin-top: 24px;\r\n    }\r\n  }\r\n  &-ttl{\r\n    font-family: \"Manrope\";\r\n    font-weight: 600;\r\n    font-size: 13px;\r\n    line-height: 32px;\r\n    text-transform: uppercase;\r\n    border-bottom: 1px solid #e1e1e1;\r\n    margin-bottom: 16px;\r\n  }\r\n  &-lnk{\r\n    display: block;\r\n    text-decoration: none;\r\n    font-family: \"Manrope\";\r\n    font-size: 13px;\r\n    line-height: 16px;\r\n    margin-bottom: 16px;\r\n    color: #707070;\r\n    cursor: pointer;\r\n    transition: all 0.3s linear;\r\n    &:hover{\r\n      color: #006cb4;\r\n    }\r\n  }\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_1___ + ") format(\"woff\");\n  font-weight: 600;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_2___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_3___ + ") format(\"woff\");\n  font-weight: 400;\n  font-style: normal;\n  font-display: swap; }\n\n@font-face {\n  font-family: \"Manrope\";\n  src: url(" + ___CSS_LOADER_URL_REPLACEMENT_4___ + ") format(\"woff2\"), url(" + ___CSS_LOADER_URL_REPLACEMENT_5___ + ") format(\"woff\");\n  font-weight: 500;\n  font-style: normal;\n  font-display: swap; }\n\n.n7g {\n  margin: 0;\n  padding: 0;\n  border: 0;\n  vertical-align: baseline;\n  box-sizing: border-box;\n  width: 100%;\n  overflow: hidden;\n  box-shadow: 0 1px #eeeeee; }\n  .n7g * {\n    margin: 0;\n    padding: 0;\n    border: 0;\n    vertical-align: baseline;\n    box-sizing: border-box;\n    background-color: transparent;\n    text-decoration: none; }\n    .n7g *:hover, .n7g *:active {\n      outline: none; }\n  .n7g a {\n    -webkit-touch-callout: none;\n    -webkit-user-select: none;\n    -khtml-user-select: none;\n    -moz-user-select: none;\n    -ms-user-select: none;\n    user-select: none; }\n  .n7g img {\n    border-style: none; }\n  .n7g-ctr {\n    width: 100%;\n    min-width: 320px;\n    max-width: 960px;\n    padding: 0 16px;\n    margin: 0 auto; }\n    @media (min-width: 992px) {\n      .n7g-ctr {\n        padding: 0; } }\n  .n7g-flv {\n    padding: 0;\n    display: flex;\n    align-items: center; }\n  .n7g-row {\n    display: flex; }\n  .n7g-spb {\n    justify-content: space-between; }\n  .n7g-bgr {\n    width: 48px;\n    height: 48px;\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_6___ + ") center center no-repeat;\n    margin-left: -16px;\n    background-size: 32px;\n    cursor: pointer; }\n    .n7g-bgr.is-a {\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_7___ + ") center center no-repeat;\n      background-size: 32px; }\n    @media (min-width: 768px) {\n      .n7g-bgr {\n        display: none; } }\n    .n7g-bgr-dd {\n      display: none; }\n      .n7g-bgr-dd.is-a {\n        height: 48px;\n        display: block; }\n      @media (min-width: 768px) {\n        .n7g-bgr-dd {\n          display: none; }\n          .n7g-bgr-dd.is-a {\n            display: none; } }\n  .n7g-lft {\n    display: flex; }\n  .n7g-llg {\n    display: flex;\n    align-items: center; }\n  .n7g-lgo {\n    padding: 8px 0;\n    display: block; }\n    @media (min-width: 768px) {\n      .n7g-lgo {\n        padding: 16px 0;\n        margin-right: 32px; } }\n  .n7g-lgi {\n    display: block;\n    height: 32px; }\n  .n7g-mdl {\n    flex: 1;\n    display: flex;\n    align-items: center;\n    position: absolute;\n    display: none; }\n    @media (min-width: 768px) {\n      .n7g-mdl {\n        position: relative;\n        padding-right: 64px;\n        display: flex; } }\n  .n7g-dtr {\n    width: 2px;\n    background-color: #eeeeee;\n    height: calc(100% - 32px);\n    margin-right: 32px;\n    display: none; }\n    @media (min-width: 768px) {\n      .n7g-dtr {\n        display: block; } }\n  .n7g-svs {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_8___ + ") center center no-repeat;\n    width: 32px;\n    height: 32px;\n    cursor: pointer;\n    margin-right: 32px; }\n    .n7g-svs.is-a {\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_9___ + ") center center no-repeat; }\n  .n7g-mnu {\n    display: flex; }\n  .n7g-cnt {\n    display: flex; }\n  .n7g-mni {\n    color: #758793;\n    font-family: \"Manrope\", sans-serif;\n    font-weight: 600;\n    font-size: 13px;\n    line-height: 16px;\n    cursor: pointer;\n    text-transform: uppercase;\n    padding: 8px 0;\n    flex: 1;\n    margin-bottom: 16px; }\n  .n7g-cti {\n    flex: 1; }\n  .n7g-svi {\n    margin-bottom: 24px;\n    align-items: center;\n    padding-right: 16px;\n    display: flex; }\n  .n7g-sic {\n    width: 48px;\n    height: 48px;\n    margin-right: 16px; }\n  .n7g-sim {\n    width: 40px;\n    height: 40px;\n    display: flex;\n    border-radius: 8px;\n    align-items: center;\n    justify-content: center;\n    margin-bottom: 16px; }\n  .n7g-simg {\n    width: 24px;\n    display: block;\n    height: auto; }\n  .n7g-stl {\n    color: #101828;\n    font-family: \"Manrope\", sans-serif;\n    font-weight: 600;\n    font-size: 13px;\n    line-height: 16px;\n    cursor: pointer;\n    transition: all 0.2s;\n    display: block; }\n    .n7g-stl:hover {\n      color: #000; }\n  .n7g-lks {\n    display: flex; }\n  .n7g-lki {\n    display: block;\n    padding: 6px 40px 6px 8px;\n    margin-right: 16px;\n    font-size: 14px;\n    line-height: 20px;\n    color: #101828;\n    font-weight: 600;\n    cursor: pointer;\n    border-radius: 4px;\n    position: relative;\n    text-decoration: none;\n    font-family: \"Manrope\";\n    transition: all 0.2s; }\n    .n7g-lki:after {\n      content: \"\";\n      display: block;\n      background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_10___ + ") center center no-repeat;\n      width: 32px;\n      height: 32px;\n      position: absolute;\n      right: 8px;\n      top: 50%;\n      margin-top: -16px; }\n    .n7g-lki.is-a:after {\n      transform: rotate(-180deg);\n      margin-top: -15px; }\n  .n7g-srh {\n    position: absolute;\n    right: 32px;\n    width: 32px;\n    background-color: #fff;\n    border-radius: 4px; }\n    .n7g-srh.is-a {\n      left: 32px;\n      z-index: 1;\n      width: 100%; }\n  .n7g-sbtn {\n    background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_11___ + ") center center no-repeat;\n    width: 32px;\n    height: 32px;\n    cursor: pointer; }\n  .n7g-rgt {\n    display: flex;\n    align-items: center; }\n  .n7g-lbs {\n    display: flex; }\n  .n7g-lbi {\n    font-family: \"Manrope\";\n    font-weight: 500;\n    font-size: 14px;\n    line-height: 24px;\n    padding: 7px 16px;\n    display: block;\n    border: 1px solid;\n    border-radius: 8px;\n    margin-right: -16px; }\n    @media (min-width: 768px) {\n      .n7g-lbi {\n        margin-left: 16px;\n        margin-right: 0; } }\n    @media (max-width: 767px) {\n      .n7g-lbi--log {\n        background: transparent url(" + ___CSS_LOADER_URL_REPLACEMENT_12___ + ") center center no-repeat;\n        border: none;\n        width: 48px;\n        height: 48px;\n        border-radius: 0;\n        text-indent: -9999px;\n        background-size: 32px; } }\n    @media (min-width: 768px) {\n      .n7g-lbi--log {\n        background-color: #006cb4;\n        border-color: #006cb4;\n        color: #fff; } }\n    .n7g-lbi--reg {\n      border-color: #006cb4;\n      color: #006cb4;\n      display: none; }\n      @media (min-width: 768px) {\n        .n7g-lbi--reg {\n          display: block; } }\n  .n7g-slv {\n    opacity: 0;\n    visibility: hidden;\n    max-height: 0;\n    top: 64px;\n    left: 0;\n    right: 0;\n    padding: 24px 0;\n    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);\n    transition: all 0.3s;\n    z-index: 2;\n    background-color: #fff;\n    border-top: 1px solid #eeeeee;\n    position: absolute;\n    display: none; }\n    .n7g-slv.is-a {\n      max-height: 1000px;\n      opacity: 1;\n      visibility: visible;\n      position: static; }\n      @media (min-width: 768px) {\n        .n7g-slv.is-a {\n          position: absolute; } }\n    @media (min-width: 768px) {\n      .n7g-slv {\n        display: block; } }\n  .n7g-col {\n    flex: 1;\n    padding: 0 16px; }\n  .n7g-clm + .n7g-clm {\n    margin-top: 24px; }\n  .n7g-ttl {\n    font-family: \"Manrope\";\n    font-weight: 600;\n    font-size: 13px;\n    line-height: 32px;\n    text-transform: uppercase;\n    border-bottom: 1px solid #e1e1e1;\n    margin-bottom: 16px; }\n  .n7g-lnk {\n    display: block;\n    text-decoration: none;\n    font-family: \"Manrope\";\n    font-size: 13px;\n    line-height: 16px;\n    margin-bottom: 16px;\n    color: #707070;\n    cursor: pointer;\n    transition: all 0.3s linear; }\n    .n7g-lnk:hover {\n      color: #006cb4; }\n", "",{"version":3,"sources":["webpack://./src/webMoneyHeader/webMoneyHeader.scss"],"names":[],"mappings":"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","sourcesContent":["@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-SemiBold.woff2\") format(\"woff2\"), url(\"fonts/Manrope-SemiBold.woff\") format(\"woff\");\r\n  font-weight: 600;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Regular.woff2\") format(\"woff2\"), url(\"fonts/Manrope-Regular.woff\") format(\"woff\");\r\n  font-weight: 400;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@font-face {\r\n  font-family: \"Manrope\";\r\n  src: url(\"fonts/Manrope-Medium.woff2\") format(\"woff2\"), url(\"fonts/Manrope-Medium.woff\") format(\"woff\");\r\n  font-weight: 500;\r\n  font-style: normal;\r\n  font-display: swap;\r\n}\r\n\r\n@mixin noSelection {\r\n  -webkit-touch-callout: none;\r\n  -webkit-user-select: none;\r\n  -khtml-user-select: none;\r\n  -moz-user-select: none;\r\n  -ms-user-select: none;\r\n  user-select: none;\r\n}\r\n\r\n@mixin resetDiv {\r\n  margin: 0;\r\n  padding: 0;\r\n  border: 0;\r\n  vertical-align: baseline;\r\n  box-sizing: border-box;\r\n}\r\n\r\n@mixin resetA {\r\n  background-color: transparent;\r\n  text-decoration: none;\r\n  &:hover,\r\n  &:active {\r\n    outline: none;\r\n  }\r\n}\r\n\r\n@mixin resetImg {\r\n  border-style: none;\r\n}\r\n\r\n.n7g {\r\n  @include resetDiv;\r\n  width: 100%;\r\n  overflow: hidden;\r\n  box-shadow: 0 1px #eeeeee;\r\n  * {\r\n    @include resetDiv;\r\n    @include resetA;\r\n  }\r\n  a {\r\n    @include noSelection;\r\n  }\r\n  img {\r\n    @include resetImg;\r\n  }\r\n  &-ctr {\r\n    width: 100%;\r\n    min-width: 320px;\r\n    max-width: 960px;\r\n    padding: 0 16px;\r\n    margin: 0 auto;\r\n    @media (min-width: 992px) {\r\n      padding: 0;\r\n    }\r\n  }\r\n  &-flv{\r\n    padding: 0;\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-row{\r\n    display: flex;\r\n  }\r\n  &-spb{\r\n    justify-content: space-between;\r\n  }\r\n  &-bgr{\r\n    width: 48px;\r\n    height: 48px;\r\n    background: transparent url(\"./images/bgr.svg\") center center no-repeat;\r\n    margin-left: -16px;\r\n    background-size: 32px;\r\n    cursor: pointer;\r\n    &.is-a{\r\n      background: transparent url(\"./images/bgr-a.svg\") center center no-repeat;\r\n      background-size: 32px;\r\n    }\r\n    @media (min-width: 768px) {\r\n      display: none;\r\n    }\r\n    &-dd{\r\n      display: none;\r\n      &.is-a{\r\n        height: 48px;\r\n        display: block;\r\n      }\r\n      @media (min-width: 768px) {\r\n        display: none;\r\n        &.is-a{\r\n          display: none;\r\n        }\r\n      }\r\n    }\r\n  }\r\n  &-lft{\r\n    display: flex;\r\n  }\r\n  &-llg{\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-lgo{\r\n    padding: 8px 0;\r\n    display: block;\r\n    @media (min-width: 768px) {\r\n      padding: 16px 0;\r\n      margin-right: 32px;\r\n    }\r\n  }\r\n  &-lgi{ \r\n    display: block;\r\n    height: 32px;\r\n  }\r\n  &-mdl{\r\n    flex: 1;\r\n    display: flex;\r\n    align-items: center;\r\n    position: absolute;\r\n    display: none;\r\n    @media (min-width: 768px) {\r\n      position: relative;\r\n      padding-right: 64px;\r\n      display: flex;\r\n\r\n    }\r\n  }\r\n  &-dtr{\r\n    width: 2px;\r\n    background-color: #eeeeee;\r\n    height: calc(100% - 32px);\r\n    margin-right: 32px;\r\n    display: none;\r\n    @media (min-width: 768px) {\r\n      display: block;\r\n    }\r\n  }\r\n  &-svs{\r\n    background: transparent url(\"./images/svs.svg\") center center no-repeat;\r\n    width: 32px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n    margin-right: 32px;\r\n    &.is-a{\r\n      background: transparent url(\"./images/svs-a.svg\") center center no-repeat;\r\n    }\r\n  }\r\n  &-mnu{\r\n    // width: 180px;\r\n    // padding-right: 16px;\r\n    display: flex;\r\n  }\r\n  &-cnt{\r\n    // width: calc(100% - 180px);\r\n    // padding: 8px 0;\r\n    display: flex;\r\n  }\r\n  &-mni{\r\n    color: #758793;\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-weight: 600;\r\n    font-size: 13px;\r\n    line-height: 16px;\r\n    cursor: pointer;\r\n    text-transform: uppercase;\r\n    padding: 8px 0;\r\n    flex: 1;\r\n    margin-bottom: 16px;\r\n    // &.is-a{\r\n    //   color: #006cb4;\r\n    //   cursor: default;\r\n    // }\r\n  }\r\n  &-cti{\r\n    flex: 1;\r\n    // opacity: 0;\r\n    // visibility: hidden;\r\n    // position: absolute;\r\n    // display: flex;\r\n    // &.is-a{\r\n    //   opacity: 1;\r\n    //   visibility: visible;\r\n    //   position: static;\r\n    // }\r\n  }\r\n  &-svi{\r\n    // max-width: 180px;\r\n    // padding: 0 16px;\r\n    margin-bottom: 24px;\r\n    // display: flex;\r\n    align-items: center;\r\n    // flex: 1;\r\n    padding-right: 16px;\r\n    display: flex\r\n  }\r\n  &-sic{\r\n    // width: 40px;\r\n    // height: 40px;\r\n    // margin-right: 8px;\r\n    width: 48px;\r\n    height: 48px;\r\n    margin-right: 16px;\r\n  }\r\n  &-sim{\r\n    width: 40px;\r\n    height: 40px;\r\n    display: flex;\r\n    border-radius: 8px;\r\n    align-items: center;\r\n    justify-content: center;\r\n    margin-bottom: 16px;\r\n  }\r\n  &-simg{\r\n    width: 24px;\r\n    display: block;\r\n    height: auto;\r\n  }\r\n  &-stl{\r\n    color: #101828;\r\n    font-family: \"Manrope\", sans-serif;\r\n    font-weight: 600;\r\n    font-size: 13px;\r\n    line-height: 16px;\r\n    cursor: pointer;\r\n    transition: all 0.2s;\r\n    display: block;\r\n    &:hover{\r\n      color: #000;\r\n    }\r\n  }\r\n  &-lks{\r\n    display: flex;\r\n  }\r\n  &-lki{\r\n    display: block;\r\n    padding: 6px 40px 6px 8px;\r\n    margin-right: 16px;\r\n    font-size: 14px;\r\n    line-height: 20px;\r\n    color: #101828;\r\n    font-weight: 600;\r\n    cursor: pointer;\r\n    border-radius: 4px;\r\n    position: relative;\r\n    text-decoration: none;\r\n    font-family: \"Manrope\";\r\n    transition: all 0.2s;\r\n    &:after{\r\n      content: \"\";\r\n      display: block;\r\n      background: transparent url(\"./images/arrow-down.svg\") center center no-repeat;\r\n      width: 32px;\r\n      height: 32px;\r\n      position: absolute;\r\n      right: 8px;\r\n      top: 50%;\r\n      margin-top: -16px;\r\n    }\r\n    &.is-a {\r\n      &:after {\r\n        transform: rotate(-180deg);\r\n        margin-top: -15px;\r\n      }\r\n    }\r\n  }\r\n  &-srh{\r\n    position: absolute;\r\n    right: 32px;\r\n    width: 32px;\r\n    background-color: #fff;\r\n    border-radius: 4px;\r\n    &.is-a{\r\n      left: 32px;\r\n      z-index: 1;\r\n      width: 100%;\r\n    }\r\n  }\r\n  &-sbtn{\r\n    background: transparent url(\"./images/search.svg\") center center no-repeat;\r\n    width: 32px;\r\n    height: 32px;\r\n    cursor: pointer;\r\n  }\r\n  &-rgt{\r\n    display: flex;\r\n    align-items: center;\r\n  }\r\n  &-lbs{\r\n    display: flex;\r\n  }\r\n  &-lbi{\r\n    font-family: \"Manrope\";\r\n    font-weight: 500;\r\n    font-size: 14px;\r\n    line-height: 24px;\r\n    padding: 7px 16px;\r\n    display: block;\r\n    border: 1px solid;\r\n    border-radius: 8px;\r\n    margin-right: -16px; \r\n    @media (min-width: 768px) {\r\n      margin-left: 16px;\r\n      margin-right: 0; \r\n    }\r\n    &--log{\r\n      @media (max-width: 767px) {\r\n        background: transparent url(\"./images/login.svg\") center center no-repeat;\r\n        border: none;\r\n        width: 48px;\r\n        height: 48px;\r\n        border-radius: 0;\r\n        text-indent: -9999px;\r\n        background-size: 32px;\r\n      }\r\n      @media (min-width: 768px) {\r\n        background-color: #006cb4;\r\n        border-color: #006cb4;\r\n        color: #fff;\r\n      }\r\n    }\r\n    &--reg{\r\n      border-color: #006cb4;\r\n      color: #006cb4;\r\n      display: none;\r\n      @media (min-width: 768px) {\r\n        display: block;\r\n      }\r\n    }\r\n  }\r\n  &-slv{\r\n    opacity: 0;\r\n    visibility: hidden;\r\n    max-height: 0;\r\n    top: 64px;\r\n    left: 0;\r\n    right: 0;\r\n    padding: 24px 0;\r\n    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);\r\n    transition: all 0.3s;\r\n    z-index: 2;\r\n    background-color: #fff;\r\n    border-top: 1px solid #eeeeee;\r\n    position: absolute;\r\n    display: none;\r\n    &.is-a{\r\n      max-height: 1000px;\r\n      opacity: 1;\r\n      visibility: visible;\r\n      position: static;\r\n      @media (min-width: 768px) {\r\n        position: absolute;\r\n      }\r\n    }\r\n    @media (min-width: 768px) {\r\n      display: block;\r\n    }\r\n  }\r\n  &-col{\r\n    flex: 1;\r\n    padding: 0 16px;\r\n  }\r\n  &-clm{\r\n    & + .n7g-clm {\r\n      margin-top: 24px;\r\n    }\r\n  }\r\n  &-ttl{\r\n    font-family: \"Manrope\";\r\n    font-weight: 600;\r\n    font-size: 13px;\r\n    line-height: 32px;\r\n    text-transform: uppercase;\r\n    border-bottom: 1px solid #e1e1e1;\r\n    margin-bottom: 16px;\r\n  }\r\n  &-lnk{\r\n    display: block;\r\n    text-decoration: none;\r\n    font-family: \"Manrope\";\r\n    font-size: 13px;\r\n    line-height: 16px;\r\n    margin-bottom: 16px;\r\n    color: #707070;\r\n    cursor: pointer;\r\n    transition: all 0.3s linear;\r\n    &:hover{\r\n      color: #006cb4;\r\n    }\r\n  }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -13308,6 +13382,50 @@ module.exports = __webpack_require__.p + "2265db788626cfd6a06c.svg";
 
 /***/ }),
 
+/***/ "./src/webMoneyHeader/images/services/apple.svg":
+/*!******************************************************!*\
+  !*** ./src/webMoneyHeader/images/services/apple.svg ***!
+  \******************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "d0323e848f44ce5f5646.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyHeader/images/services/bitcoin-cash.svg":
+/*!*************************************************************!*\
+  !*** ./src/webMoneyHeader/images/services/bitcoin-cash.svg ***!
+  \*************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "2b3b303879fb8d2f6199.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyHeader/images/services/bitcoin.svg":
+/*!********************************************************!*\
+  !*** ./src/webMoneyHeader/images/services/bitcoin.svg ***!
+  \********************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "913e8f058974bb2a146e.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyHeader/images/services/ethereum.svg":
+/*!*********************************************************!*\
+  !*** ./src/webMoneyHeader/images/services/ethereum.svg ***!
+  \*********************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "5412d71a859486566a83.svg";
+
+/***/ }),
+
 /***/ "./src/webMoneyHeader/images/services/files.svg":
 /*!******************************************************!*\
   !*** ./src/webMoneyHeader/images/services/files.svg ***!
@@ -13316,6 +13434,17 @@ module.exports = __webpack_require__.p + "2265db788626cfd6a06c.svg";
 
 "use strict";
 module.exports = __webpack_require__.p + "75e88a61f7647705dda7.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyHeader/images/services/litecoin.svg":
+/*!*********************************************************!*\
+  !*** ./src/webMoneyHeader/images/services/litecoin.svg ***!
+  \*********************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "2f590da4552b73b30955.svg";
 
 /***/ }),
 
@@ -13470,7 +13599,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "8684845e99915d65a182"; }
+/******/ 		__webpack_require__.h = function() { return "2663d1ae8139b85977a5"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

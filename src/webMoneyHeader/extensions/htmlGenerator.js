@@ -92,26 +92,78 @@ export default {
 
     return ml("div", { "class": "n7g-slv n7g-svs-dd" }, 
       ml("div", { "class": "n7g-ctr" }, 
-        ml("div", { "class": "n7g-row" }, [
+        ml("div", { "class": "n7g-rw" }, [
 
-          ml("a", { "class": "n7g-svi", "href": "#" }, [
-            ml("img", { "class": "n7g-sic", "src": require("../images/services/video.svg") }),
-            ml("span", { "class": "n7g-stl" }, "Видеозвонки и онлайн-трансляции")
+          ml("div", { "class": "n7g-mnu" }, [
+            ml("div", { "class": "n7g-mni is-a" }, "Криптовалюты"),
+            ml("div", { "class": "n7g-mni" }, "Оплатить"),
+            ml("div", { "class": "n7g-mni" }, "Для работы"),
           ]),
 
-          ml("a", { "class": "n7g-svi", "href": "#" }, [
-            ml("img", { "class": "n7g-sic", "src": require("../images/services/memo.svg") }),
-            ml("span", { "class": "n7g-stl" }, "Управление закладками")
-          ]),
+          ml("div", { "class": "n7g-cnt" }, [
 
-          ml("a", { "class": "n7g-svi", "href": "#" }, [
-            ml("img", { "class": "n7g-sic", "src": require("../images/services/files.svg") }),
-            ml("span", { "class": "n7g-stl" }, "Файловое хранилище")
-          ]),
+            ml("div", { "class": "n7g-cti is-a" }, [
 
-          ml("a", { "class": "n7g-svi", "href": "#" }, [
-            ml("img", { "class": "n7g-sic", "src": require("../images/services/notes.svg") }),
-            ml("span", { "class": "n7g-stl" }, "Верстка и публикация заметок")
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/bitcoin.svg") }),
+                ml("span", { "class": "n7g-stl" }, "WMX (Bitcoin)")
+              ]),
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/bitcoin-cash.svg") }),
+                ml("span", { "class": "n7g-stl" }, "WMH (Bitcoin Cash)")
+              ]),
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/litecoin.svg") }),
+                ml("span", { "class": "n7g-stl" }, "WML (Litecoin)")
+              ]),
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/ethereum.svg") }),
+                ml("span", { "class": "n7g-stl" }, "WMF (Ethereum)")
+              ])
+
+            ]),
+
+            ml("div", { "class": "n7g-cti" }, [
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/apple.svg") }),
+                ml("span", { "class": "n7g-stl" }, "Подарочная карта Apple")
+              ]),
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/memo.svg") }),
+                ml("span", { "class": "n7g-stl" }, "Steam")
+              ])
+              
+            ]),
+
+            ml("div", { "class": "n7g-cti" }, [
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/video.svg") }),
+                ml("span", { "class": "n7g-stl" }, "Видеозвонки и онлайн-трансляции")
+              ]),
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/memo.svg") }),
+                ml("span", { "class": "n7g-stl" }, "Управление закладками")
+              ]),
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/files.svg") }),
+                ml("span", { "class": "n7g-stl" }, "Файловое хранилище")
+              ]),
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/notes.svg") }),
+                ml("span", { "class": "n7g-stl" }, "Верстка и публикация заметок")
+              ])
+              
+            ])
+
           ])
 
         ])

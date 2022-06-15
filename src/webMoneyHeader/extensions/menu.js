@@ -20,6 +20,9 @@ export default {
     var burger = rootElement.getElementsByClassName("n7g-bgr")[0];
     var burgerDd = rootElement.getElementsByClassName("n7g-bgr-dd")[0];
 
+    var servicesMenuItems = rootElement.getElementsByClassName("n7g-mni");
+    var servicesMenuItemsDd = rootElement.getElementsByClassName("n7g-cti");
+
     burger.addEventListener("click", function (e) {
 
       individiualsMenu.classList.remove("is-a");
@@ -33,6 +36,22 @@ export default {
       servicesMenuDd.classList.toggle("is-a");
 
     });
+
+
+    Array.prototype.forEach.call(servicesMenuItems, function (element, index) {
+
+      element.addEventListener('click', function () {
+
+        rootElement.querySelector(".n7g-mni.is-a").classList.remove("is-a");
+        rootElement.querySelector(".n7g-cti.is-a").classList.remove("is-a");
+
+        this.classList.add("is-a");
+        servicesMenuItemsDd[index].classList.add("is-a");
+
+      });
+
+    });
+
 
     servicesMenu.addEventListener("click", function (e) {
 
