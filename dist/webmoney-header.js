@@ -12553,29 +12553,28 @@ __webpack_require__.r(__webpack_exports__);
       }
 
       searchMore.style.display = "none";
-    });
-    iconButton.addEventListener("click", function (event) {
-      var value = searchBoxInput.value;
+    }); // iconButton.addEventListener("click", function (event) {
+    //   var value = searchBoxInput.value;
+    //   if (value.length > 0) {
+    //     if (value != placeholder) {
+    //       context.search(options, where, value);
+    //     } else {
+    //       searchBoxInput.focus();
+    //     }
+    //   }
+    // });
 
-      if (value.length > 0) {
-        if (value != placeholder) {
-          context.search(options, where, value);
-        } else {
-          searchBoxInput.focus();
-        }
-      }
-    });
     searchMore.addEventListener("mouseleave", function (event) {
       searchMore.style.display = "none";
     });
     searchMore.addEventListener("click", function (event) {
       searchMore.style.display = "none";
       searchBoxInput.focus();
-    });
-    toggleSearch.addEventListener("click", function (event) {
-      var visible = searchMore.style.display == "block";
-      searchMore.style.display = !visible ? "block" : "none";
-    });
+    }); // toggleSearch.addEventListener("click", function (event) {
+    //   var visible = searchMore.style.display == "block";
+    //   searchMore.style.display = (!visible ? "block" : "none");
+    // });
+
     var context = this;
 
     for (var i = 0; i < searchMoreList.length; i++) {
@@ -12752,7 +12751,8 @@ function WebMoneyHeader() {
     options.rootElement.innerHTML = "";
     options.rootElement.appendChild(generatedElement);
     _extensions_menu__WEBPACK_IMPORTED_MODULE_4__["default"].init(options);
-    _extensions_searchBlock__WEBPACK_IMPORTED_MODULE_5__["default"].init(options); // loginBlock.init(options);
+    _extensions_searchBlock__WEBPACK_IMPORTED_MODULE_5__["default"].init(options);
+    _extensions_loginBlock__WEBPACK_IMPORTED_MODULE_3__["default"].init(options);
   };
 
   this.initAdaptive = function (options) {
@@ -13722,7 +13722,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "a188d220a4228d224d43"; }
+/******/ 		__webpack_require__.h = function() { return "dc2768017ac7e8b57507"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

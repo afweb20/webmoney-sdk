@@ -70,7 +70,7 @@ export default function WebMoneyHeader() {
 
     menu.init(options);
     searchBlock.init(options);
-    // loginBlock.init(options);
+    loginBlock.init(options);
   }
 
   this.initAdaptive = function (options) {

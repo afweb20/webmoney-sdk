@@ -67,22 +67,22 @@ export default {
       searchMore.style.display = "none";
     });
 
-    iconButton.addEventListener("click", function (event) {
+    // iconButton.addEventListener("click", function (event) {
 
-      var value = searchBoxInput.value;
+    //   var value = searchBoxInput.value;
 
-      if (value.length > 0) {
+    //   if (value.length > 0) {
 
-        if (value != placeholder) {
+    //     if (value != placeholder) {
 
-          context.search(options, where, value);
+    //       context.search(options, where, value);
 
-        } else {
+    //     } else {
 
-          searchBoxInput.focus();
-        }
-      }
-    });
+    //       searchBoxInput.focus();
+    //     }
+    //   }
+    // });
 
     searchMore.addEventListener("mouseleave", function (event) {
 
@@ -95,12 +95,12 @@ export default {
       searchBoxInput.focus();
     });
 
-    toggleSearch.addEventListener("click", function (event) {
+    // toggleSearch.addEventListener("click", function (event) {
 
-      var visible = searchMore.style.display == "block";
+    //   var visible = searchMore.style.display == "block";
 
-      searchMore.style.display = (!visible ? "block" : "none");
-    });
+    //   searchMore.style.display = (!visible ? "block" : "none");
+    // });
 
     var context = this;
 
