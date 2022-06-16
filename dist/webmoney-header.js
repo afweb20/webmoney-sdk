@@ -11200,6 +11200,8 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-mni is-a"
     }, "Криптовалюты"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-mni"
+    }, "Заработать"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-mni"
     }, "Оплатить"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-mni"
     }, "Для работы")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
@@ -11239,6 +11241,40 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
     }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
       "class": "n7g-stl"
     }, "WMF (Ethereum)")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+      "class": "n7g-cti"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-svi",
+      "href": "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("img", {
+      "class": "n7g-sic",
+      "src": __webpack_require__(/*! ../images/services/video-c.svg */ "./src/webMoneyHeader/images/services/video-c.svg")
+    }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
+      "class": "n7g-stl"
+    }, "Платные видеоконсультации")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-svi",
+      "href": "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("img", {
+      "class": "n7g-sic",
+      "src": __webpack_require__(/*! ../images/services/indx.svg */ "./src/webMoneyHeader/images/services/indx.svg")
+    }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
+      "class": "n7g-stl"
+    }, "INDX: фондовая биржа")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-svi",
+      "href": "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("img", {
+      "class": "n7g-sic",
+      "src": __webpack_require__(/*! ../images/services/softactivation.svg */ "./src/webMoneyHeader/images/services/softactivation.svg")
+    }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
+      "class": "n7g-stl"
+    }, "Продажа цифровых товаров")]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-svi",
+      "href": "#"
+    }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("img", {
+      "class": "n7g-sic",
+      "src": __webpack_require__(/*! ../images/services/publicant.svg */ "./src/webMoneyHeader/images/services/publicant.svg")
+    }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("span", {
+      "class": "n7g-stl"
+    }, "Publicant: опубликовать книгу")])]), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-cti"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-svi",
@@ -13437,6 +13473,17 @@ module.exports = __webpack_require__.p + "75e88a61f7647705dda7.svg";
 
 /***/ }),
 
+/***/ "./src/webMoneyHeader/images/services/indx.svg":
+/*!*****************************************************!*\
+  !*** ./src/webMoneyHeader/images/services/indx.svg ***!
+  \*****************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "6fbbe10acffd1b7752b7.svg";
+
+/***/ }),
+
 /***/ "./src/webMoneyHeader/images/services/litecoin.svg":
 /*!*********************************************************!*\
   !*** ./src/webMoneyHeader/images/services/litecoin.svg ***!
@@ -13470,6 +13517,28 @@ module.exports = __webpack_require__.p + "b15e9ba14b7f68abd190.svg";
 
 /***/ }),
 
+/***/ "./src/webMoneyHeader/images/services/publicant.svg":
+/*!**********************************************************!*\
+  !*** ./src/webMoneyHeader/images/services/publicant.svg ***!
+  \**********************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "0b6a14f88f16239c98b6.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyHeader/images/services/softactivation.svg":
+/*!***************************************************************!*\
+  !*** ./src/webMoneyHeader/images/services/softactivation.svg ***!
+  \***************************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "edf7c33af11f1b64fe48.svg";
+
+/***/ }),
+
 /***/ "./src/webMoneyHeader/images/services/steam.svg":
 /*!******************************************************!*\
   !*** ./src/webMoneyHeader/images/services/steam.svg ***!
@@ -13478,6 +13547,17 @@ module.exports = __webpack_require__.p + "b15e9ba14b7f68abd190.svg";
 
 "use strict";
 module.exports = __webpack_require__.p + "38ec13605c9a247eb43a.svg";
+
+/***/ }),
+
+/***/ "./src/webMoneyHeader/images/services/video-c.svg":
+/*!********************************************************!*\
+  !*** ./src/webMoneyHeader/images/services/video-c.svg ***!
+  \********************************************************/
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+
+"use strict";
+module.exports = __webpack_require__.p + "6ce4c2c00488eb1cfd2d.svg";
 
 /***/ }),
 
@@ -13610,7 +13690,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "13059a1acf37843efa3b"; }
+/******/ 		__webpack_require__.h = function() { return "b58a11a651ae565f2d77"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

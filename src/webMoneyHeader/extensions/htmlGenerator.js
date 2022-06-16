@@ -96,6 +96,7 @@ export default {
 
           ml("div", { "class": "n7g-mnu" }, [
             ml("div", { "class": "n7g-mni is-a" }, "Криптовалюты"),
+            ml("div", { "class": "n7g-mni" }, "Заработать"),
             ml("div", { "class": "n7g-mni" }, "Оплатить"),
             ml("div", { "class": "n7g-mni" }, "Для работы"),
           ]),
@@ -124,6 +125,30 @@ export default {
                 ml("span", { "class": "n7g-stl" }, "WMF (Ethereum)")
               ])
 
+            ]),
+
+            ml("div", { "class": "n7g-cti" }, [
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/video-c.svg") }),
+                ml("span", { "class": "n7g-stl" }, "Платные видеоконсультации")
+              ]),
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/indx.svg") }),
+                ml("span", { "class": "n7g-stl" }, "INDX: фондовая биржа")
+              ]),
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/softactivation.svg") }),
+                ml("span", { "class": "n7g-stl" }, "Продажа цифровых товаров")
+              ]),
+
+              ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("img", { "class": "n7g-sic", "src": require("../images/services/publicant.svg") }),
+                ml("span", { "class": "n7g-stl" }, "Publicant: опубликовать книгу")
+              ])
+              
             ]),
 
             ml("div", { "class": "n7g-cti" }, [
