@@ -21,10 +21,10 @@ export default {
 
     var placeholder = local(options, "menuFindTitle_" + where);
 
-    var searchBoxInput = rootElement.getElementsByClassName("n22g22-search-box-input")[0];
+    var searchBoxInput = rootElement.getElementsByClassName("n7g-sbxi")[0];
     var toggleSearch = rootElement.getElementsByClassName("n22g22-toggle-search")[0];
     var iconButton = rootElement.getElementsByClassName("n22g22-icon-search")[0];
-    var searchMore = rootElement.getElementsByClassName("n22g22-search-more")[0];
+    var searchMore = rootElement.getElementsByClassName("n7g-smr")[0];
     var searchMoreList = searchMore.getElementsByTagName("a");
     var toggleSearchButton = rootElement.getElementsByClassName("n22g22-toggle-search-button")[0];
     var closeSearchButton = rootElement.getElementsByClassName("n20g20-close-search-button")[0];

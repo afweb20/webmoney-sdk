@@ -23,6 +23,21 @@ export default {
     var servicesMenuItems = rootElement.getElementsByClassName("n7g-mni");
     var servicesMenuItemsDd = rootElement.getElementsByClassName("n7g-cti");
 
+    var searchButton = rootElement.getElementsByClassName("n7g-sbtn")[0];
+
+    searchButton.addEventListener("click", function (e) {
+
+      individiualsMenu.classList.remove("is-a");
+      individiualsMenuDd.classList.remove("is-a");
+      businessMenu.classList.remove("is-a");
+      businessMenuDd.classList.remove("is-a");
+      servicesMenu.classList.remove("is-a");
+      servicesMenuDd.classList.remove("is-a");
+
+      this.parentNode.classList.toggle("is-a");
+
+    });
+
     burger.addEventListener("click", function (e) {
 
       individiualsMenu.classList.remove("is-a");

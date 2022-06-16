@@ -71,9 +71,24 @@ export default {
 
   generateSearchBlock: function (options) {
 
-    return ml("div", { "class": "n7g-srh" },
-      ml("div", { "class": "n7g-sbtn" }, )
-    );
+    return ml("div", { "class": "n7g-srh" }, [
+      ml("div", { "class": "n7g-sbtn" }),
+      ml("div", { "class": "n7g-sctr" }, [
+        ml("input", { "class": "n7g-sbxi", "type": "search" }),
+        ml("ul", { "class": "n7g-smr" }, [
+          ml("li", {},
+            ml("a", { "href": "#", "where": consts.SEARCH_WHERE_INFO }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_INFO))),
+          ml("li", {},
+            ml("a", { "href": "#", "where": consts.SEARCH_WHERE_GOODS }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_GOODS))),
+          ml("li", {},
+            ml("a", { "href": "#", "where": consts.SEARCH_WHERE_INOUT }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_INOUT))),
+          ml("li", {},
+            ml("a", { "href": "#", "where": consts.SEARCH_WHERE_WIKI }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_WIKI))),
+          ml("li", {},
+            ml("a", { "href": "#", "where": consts.SEARCH_WHERE_ANT }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_ANT)))
+        ])
+      ])
+    ]);
 
   },
 
