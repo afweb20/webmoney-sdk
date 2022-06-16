@@ -55,7 +55,7 @@
 .n7g {
   @include resetDiv;
   width: 100%;
-  overflow: hidden;
+  // overflow: hidden;
   box-shadow: 0 1px #eeeeee;
   * {
     @include resetDiv;
@@ -313,8 +313,58 @@
     display: flex;
     align-items: center;
   }
+  &-lgb{
+    &.is-logged-in{
+      .n7g-lbs{
+        display: none;
+      }
+    }
+    &.is-not-logged-in{
+      .n7g-lgw{
+        display: none;
+      }
+    }
+  }
   &-lbs{
     display: flex;
+  }
+  &-lgw{
+    position: relative;
+    display: flex;
+    height: 100%;
+    &.is-opened{
+      .n7g-wdw{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  &-uln{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  &-unm{
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding-right: 8px;
+  }
+  &-uim{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+  }
+  &-wdw{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    top: 100%;
   }
   &-lbi{
     font-family: "Manrope";

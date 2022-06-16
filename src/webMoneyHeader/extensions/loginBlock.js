@@ -8,7 +8,7 @@ export default {
 
     var rootElement = options.rootElement;
     
-    var loginBlockLine = rootElement.getElementsByClassName("n23g23-login-block-wrapper")[0];
+    var loginBlockLine = rootElement.getElementsByClassName("n7g-lgw")[0];
     var loginBlockOverlay = rootElement.getElementsByClassName("n23g23-login-block-overlay")[0];
 
     loginBlockLine.addEventListener("click", function (event) {
@@ -21,7 +21,7 @@ export default {
 
     window.addEventListener("click", function(e) { 
 
-      if (!document.querySelector(".n23g23-login-block-wrapper").contains(e.target)) {
+      if (!document.querySelector(".n7g-lgw").contains(e.target)) {
 
         if (loginBlockLine.classList.contains("is-opened")) {
           
@@ -96,10 +96,10 @@ export default {
     if (!loginBlockData.loggedOn) {
 
       var rootElement = options.rootElement;
-      var loginBlockElement = rootElement.getElementsByClassName("n23g23-login-block")[0];
-      var loginBlockButtonsElement = rootElement.getElementsByClassName("n23g23-login-block-buttons")[0];
-      var loginBlockButtonRegistrationElement = loginBlockButtonsElement.getElementsByClassName("n23g23-login-block-button--registration")[0];
-      var loginBlockButtonLoginElement = loginBlockButtonsElement.getElementsByClassName("n23g23-login-block-button--login")[0];
+      var loginBlockElement = rootElement.getElementsByClassName("n7g-lgb")[0];
+      var loginBlockButtonsElement = rootElement.getElementsByClassName("n7g-lbs")[0];
+      var loginBlockButtonRegistrationElement = loginBlockButtonsElement.getElementsByClassName("n7g-lbi--reg")[0];
+      var loginBlockButtonLoginElement = loginBlockButtonsElement.getElementsByClassName("n7g-lbi--log")[0];
 
       loginBlockButtonRegistrationElement.href = loginBlockData.registrationUrl;
       loginBlockButtonLoginElement.href = loginBlockData.loginUrl;
@@ -109,10 +109,10 @@ export default {
     } else {
 
       var rootElement = options.rootElement;
-      var loginBlockElement = rootElement.getElementsByClassName("n23g23-login-block")[0];
-      var loginBlockWrapperElement = rootElement.getElementsByClassName("n23g23-login-block-wrapper")[0];
-      var loginBlockUserLineImageElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-user-line-image")[0];
-      var loginBlockUserLineNameElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-user-line-name")[0];
+      var loginBlockElement = rootElement.getElementsByClassName("n7g-lgb")[0];
+      var loginBlockWrapperElement = rootElement.getElementsByClassName("n7g-lgw")[0];
+      var loginBlockUserLineImageElement = loginBlockWrapperElement.getElementsByClassName("n7g-uim")[0];
+      var loginBlockUserLineNameElement = loginBlockWrapperElement.getElementsByClassName("n7g-unm")[0];
       var loginBlockWindowUserImageLinkElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-user-image-link")[0];
       var loginBlockWindowUserImageElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-user-image")[0];
       var loginBlockWindowUserInfoNameElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-user-info-name")[0];
@@ -123,7 +123,7 @@ export default {
       var loginBlockWindowLoginButtonElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-login-button")[0];
       var loginBlockWindowSettingsElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-settings")[0];
 
-      loginBlockUserLineImageElement.src = loginBlockData.tinyAvatarUrl;
+      loginBlockUserLineImageElement.src = loginBlockData.smallAvatarUrl;
       loginBlockUserLineNameElement.innerText = loginBlockData.preview;
       loginBlockWindowUserImageLinkElement.href = loginBlockData.eventsUrl;
       loginBlockWindowUserImageElement.src = loginBlockData.smallAvatarUrl;

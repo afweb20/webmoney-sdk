@@ -94,12 +94,46 @@ export default {
 
   generateLoginBlock: function (options) {
 
-    return ml("div", { "class": "n7g-lgb" },
+    return ml("div", { "class": "n7g-lgb" }, [
+
       ml("div", { "class": "n7g-lbs" }, [
         ml("a", {"class": "n7g-lbi n7g-lbi--reg", "href": "#"}, local(options, "buttonSignUp")),
         ml("a", {"class": "n7g-lbi n7g-lbi--log", "href": "#"}, local(options, "buttonLogIn"))
+      ]),
+
+      ml("div", {"class": "n7g-lgw" }, [
+        ml("div", {"class": "n7g-uln"}, [
+          ml("div", {"class": "n7g-unm"}, ""),
+          ml("img", {"class": "n7g-uim"})
+        ]),
+        ml("div", {"class": "n23g23-login-block-overlay"}),
+        ml("div", {"class": "n7g-wdw"}, [
+          ml("div", {"class": "n23g23-login-block-window-user"}, 
+            ml("div", {"class": "n23g23-login-block-window-user-wrapper"},[
+              ml("a", {"class": "n23g23-login-block-window-user-image-link", "href": "#"}, 
+                ml("img", {"class": "n23g23-login-block-window-user-image"})
+              ),
+              ml("div", {"class": "n23g23-login-block-window-user-info"}, [
+                ml("a", {"class": "n23g23-login-block-window-user-info-name", "href": "#"}, 
+                  ml("span", {"class": "n23g23-login-block-window-user-info-name-text"}, "")
+                ),
+                ml("div", {"class": "n23g23-login-block-window-user-info-wrapper"}, [
+                  ml("a", {"class": "n23g23-login-block-window-user-info-purse", "href": "#"}, 
+                    ml("span", {"class": "n23g23-login-block-window-user-info-purse-text"}, local(options, "buttonMyPurse"))
+                  ),
+                  ml("a", {"class": "n23g23-login-block-window-user-info-logout", "href": "#"}, local(options, "buttonLogOut")),
+                ])
+              ])
+            ]) 
+          ),
+          ml("div", {"class": "n23g23-login-block-window-additional-wmids-list"}),
+          ml("a", {"class": "n23g23-login-block-window-login-button", "href": "#"}, local(options, "buttonLogInAnotherWmid")),
+          ml("a", {"class": "n23g23-login-block-window-settings", "href": "#"}, local(options, "buttonLogInSettings")),
+          options.view == consts.VIEW_MOBILE ? ml("div", {"class": "n23g23-login-block-window-close"}, local(options, "buttonBack")) : ""
+        ])
       ])
-    );
+
+    ]);
 
   },
 
