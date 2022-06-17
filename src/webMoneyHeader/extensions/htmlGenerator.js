@@ -126,9 +126,9 @@ export default {
               ])
             ]) 
           ),
-          ml("div", {"class": "n7g-itm n7g-itm--purse"}, local(options, "buttonMyPurse")),
-          ml("div", {"class": "n7g-itm n7g-itm--settings"}, local(options, "buttonLogInSettings")),
-          ml("div", {"class": "n7g-itm n7g-itm--logout"}, local(options, "buttonLogOut")),
+          ml("a", {"class": "n7g-itm n7g-itm--purse", "href": "#"}, local(options, "buttonMyPurse")),
+          ml("a", {"class": "n7g-itm n7g-itm--settings", "href": "#"}, local(options, "buttonLogInSettings")),
+          ml("a", {"class": "n7g-itm n7g-itm--logout", "href": "#"}, local(options, "buttonLogOut")),
     
           ml("div", {"class": "n7g-owd"}, "Другие WMID"),
 

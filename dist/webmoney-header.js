@@ -11241,12 +11241,15 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
     //   ),
     //   ml("a", {"class": "n23g23-login-block-window-user-info-logout", "href": "#"}, local(options, "buttonLogOut")),
     // ])
-    ])])), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n7g-itm n7g-itm--purse"
-    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "buttonMyPurse")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n7g-itm n7g-itm--settings"
-    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "buttonLogInSettings")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n7g-itm n7g-itm--logout"
+    ])])), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-itm n7g-itm--purse",
+      "href": "#"
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "buttonMyPurse")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-itm n7g-itm--settings",
+      "href": "#"
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "buttonLogInSettings")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+      "class": "n7g-itm n7g-itm--logout",
+      "href": "#"
     }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "buttonLogOut")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-owd"
     }, "Другие WMID"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
@@ -13825,7 +13828,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "fe698ff076757172310b"; }
+/******/ 		__webpack_require__.h = function() { return "134715804c3dd45b853d"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
