@@ -108,27 +108,33 @@ export default {
         ]),
         ml("div", {"class": "n23g23-login-block-overlay"}),
         ml("div", {"class": "n7g-wdw"}, [
-          ml("div", {"class": "n23g23-login-block-window-user"}, 
-            ml("div", {"class": "n23g23-login-block-window-user-wrapper"},[
-              ml("a", {"class": "n23g23-login-block-window-user-image-link", "href": "#"}, 
-                ml("img", {"class": "n23g23-login-block-window-user-image"})
+          ml("div", {"class": "n7g-usr"}, 
+            ml("div", {"class": "n7g-uwr"},[
+              ml("a", {"class": "n7g-uil", "href": "#"}, 
+                ml("img", {"class": "n7g-uifm"})
               ),
-              ml("div", {"class": "n23g23-login-block-window-user-info"}, [
-                ml("a", {"class": "n23g23-login-block-window-user-info-name", "href": "#"}, 
-                  ml("span", {"class": "n23g23-login-block-window-user-info-name-text"}, "")
+              ml("div", {"class": "n7g-uif"}, [
+                ml("a", {"class": "n7g-ufnm", "href": "#"}, 
+                  ml("span", {"class": "n7g-unt"}, "")
                 ),
-                ml("div", {"class": "n23g23-login-block-window-user-info-wrapper"}, [
-                  ml("a", {"class": "n23g23-login-block-window-user-info-purse", "href": "#"}, 
-                    ml("span", {"class": "n23g23-login-block-window-user-info-purse-text"}, local(options, "buttonMyPurse"))
-                  ),
-                  ml("a", {"class": "n23g23-login-block-window-user-info-logout", "href": "#"}, local(options, "buttonLogOut")),
-                ])
+                // ml("div", {"class": "n23g23-login-block-window-user-info-wrapper"}, [
+                //   ml("a", {"class": "n23g23-login-block-window-user-info-purse", "href": "#"}, 
+                //     ml("span", {"class": "n23g23-login-block-window-user-info-purse-text"}, local(options, "buttonMyPurse"))
+                //   ),
+                //   ml("a", {"class": "n23g23-login-block-window-user-info-logout", "href": "#"}, local(options, "buttonLogOut")),
+                // ])
               ])
             ]) 
           ),
-          ml("div", {"class": "n23g23-login-block-window-additional-wmids-list"}),
-          ml("a", {"class": "n23g23-login-block-window-login-button", "href": "#"}, local(options, "buttonLogInAnotherWmid")),
-          ml("a", {"class": "n23g23-login-block-window-settings", "href": "#"}, local(options, "buttonLogInSettings")),
+          ml("div", {"class": "n7g-itm n7g-itm--purse"}, local(options, "buttonMyPurse")),
+          ml("div", {"class": "n7g-itm n7g-itm--settings"}, local(options, "buttonLogInSettings")),
+          ml("div", {"class": "n7g-itm n7g-itm--logout"}, local(options, "buttonLogOut")),
+    
+          ml("div", {"class": "n7g-owd"}, "Другие WMID"),
+
+          ml("div", {"class": "n7g-awl"}),
+          ml("a", {"class": "n7g-itm n7g-itm--login", "href": "#"}, local(options, "buttonLogInAnotherWmid")),
+          // ml("a", {"class": "n23g23-login-block-window-settings", "href": "#"}, local(options, "buttonLogInSettings")),
           options.view == consts.VIEW_MOBILE ? ml("div", {"class": "n23g23-login-block-window-close"}, local(options, "buttonBack")) : ""
         ])
       ])
@@ -553,12 +559,12 @@ export default {
 
   getnerateLoginBlockWmidItem: function (options, wmid, displayName, avatarUrl, loginUrl) {
 
-    return ml("a", {"class": "n23g23-login-block-window-additional-wmids-item", "href": loginUrl}, 
-      ml("span", {"class": "n23g23-login-block-window-additional-wmids-item-wrapper"}, [
-        ml("img", {"class": "n23g23-login-block-window-additional-wmids-item-image", "src": avatarUrl}),
-        ml("span", {"class": "n23g23-login-block-window-additional-wmids-item-info"}, [
-          ml("span", {"class": "n23g23-login-block-window-additional-wmids-item-name"}, displayName),
-          ml("span", {"class": "n23g23-login-block-window-additional-wmids-item-wmid"}, wmid)
+    return ml("a", {"class": "n7g-awli", "href": loginUrl}, 
+      ml("span", {"class": "n7g-aww"}, [
+        ml("img", {"class": "n7g-awi", "src": avatarUrl}),
+        ml("span", {"class": "n7g-awif"}, [
+          ml("span", {"class": "n7g-awn"}, displayName),
+          ml("span", {"class": "n7g-aww"}, wmid)
         ])
       ])
     );

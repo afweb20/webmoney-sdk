@@ -365,6 +365,123 @@
     border: 1px solid #eeeeee;
     background-color: #fff;
     top: 100%;
+    z-index: 99;
+    width: 240px;
+    right: 0;
+    padding-bottom: 8px;
+  }
+  &-usr{
+    background-color: #f2f4f6;
+    padding: 8px;
+    margin-bottom: 8px;
+  }
+  &-uwr{
+    display: flex;
+    align-items: center;
+  }
+  &-uil{
+    display: block;
+    margin-right: 8px;
+  } 
+  &-uifm{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+  }
+  &-uif{
+    width: calc(100% - 48px);
+  }
+  &-ufnm{
+    color: #000;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+  }
+  &-unt{
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  &-itm{
+    color: #758793;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    padding: 12px 8px 12px 40px;
+    display: block;
+    cursor: pointer;
+    transition: color .2s ease;
+    &:hover{
+      color: #101828;
+    }
+    &--purse{
+      background: transparent url("./images/login/wallet.svg") 16px center no-repeat;
+      background-size: 16px;
+    }
+    &--settings{
+      background: transparent url("./images/login/setting.svg") 15px center no-repeat;
+      background-size: 18px;
+    }
+    &--logout{
+      background: transparent url("./images/login/logout.svg") 16px center no-repeat;
+      background-size: 16px;
+    }
+    &--login{
+      background: transparent url("./images/login/plus.svg") 16px center no-repeat;
+      background-size: 13px;
+      font-size: 13px;
+    }
+  }
+  &-owd{
+    border-top: 1px solid #eeeeee;
+    margin-top: 8px;
+    color: #101828;
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 12px 16px;
+    display: block;
+  }
+  &-awl{
+
+  }
+  &-awli{
+    display: block;
+    padding: 8px 16px;
+  }
+  &-aww{
+    display: flex;
+    align-items: center;
+  }
+  &-awi{
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    border-radius: 24px;
+  }
+  &-awif{
+    width: calc(100% - 40px);
+  }
+  &-awn{
+    font-family: "Manrope";
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #101828;
+  }
+  &-aww{
+    font-family: "Manrope";
+    font-weight: 500;
+    line-height: 16px;
+    font-size: 11px;
+    color: #758793;
   }
   &-lbi{
     font-family: "Manrope";

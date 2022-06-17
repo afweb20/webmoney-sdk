@@ -113,15 +113,15 @@ export default {
       var loginBlockWrapperElement = rootElement.getElementsByClassName("n7g-lgw")[0];
       var loginBlockUserLineImageElement = loginBlockWrapperElement.getElementsByClassName("n7g-uim")[0];
       var loginBlockUserLineNameElement = loginBlockWrapperElement.getElementsByClassName("n7g-unm")[0];
-      var loginBlockWindowUserImageLinkElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-user-image-link")[0];
-      var loginBlockWindowUserImageElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-user-image")[0];
-      var loginBlockWindowUserInfoNameElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-user-info-name")[0];
-      var loginBlockWindowUserInfoNameTextElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-user-info-name-text")[0];
-      var loginBlockWindowUserInfoPurseElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-user-info-purse")[0];
-      var loginBlockWindowUserInfoLogoutElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-user-info-logout")[0];
-      var loginBlockWindowAdditionalWmidsList = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-additional-wmids-list")[0];
-      var loginBlockWindowLoginButtonElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-login-button")[0];
-      var loginBlockWindowSettingsElement = loginBlockWrapperElement.getElementsByClassName("n23g23-login-block-window-settings")[0];
+      var loginBlockWindowUserImageLinkElement = loginBlockWrapperElement.getElementsByClassName("n7g-uil")[0];
+      var loginBlockWindowUserImageElement = loginBlockWrapperElement.getElementsByClassName("n7g-uifm")[0];
+      var loginBlockWindowUserInfoNameElement = loginBlockWrapperElement.getElementsByClassName("n7g-ufnm")[0];
+      var loginBlockWindowUserInfoNameTextElement = loginBlockWrapperElement.getElementsByClassName("n7g-unt")[0];
+      var loginBlockWindowUserInfoPurseElement = loginBlockWrapperElement.getElementsByClassName("n7g-itm--purse")[0];
+      var loginBlockWindowUserInfoLogoutElement = loginBlockWrapperElement.getElementsByClassName("n7g-itm--logout")[0];
+      var loginBlockWindowAdditionalWmidsList = loginBlockWrapperElement.getElementsByClassName("n7g-awl")[0];
+      var loginBlockWindowLoginButtonElement = loginBlockWrapperElement.getElementsByClassName("n7g-itm--login")[0];
+      var loginBlockWindowSettingsElement = loginBlockWrapperElement.getElementsByClassName("n7g-itm--settings")[0];
 
       loginBlockUserLineImageElement.src = loginBlockData.smallAvatarUrl;
       loginBlockUserLineNameElement.innerText = loginBlockData.preview;

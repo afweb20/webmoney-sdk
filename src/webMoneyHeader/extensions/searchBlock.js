@@ -123,9 +123,11 @@ export default {
 
     window.addEventListener("click", function(e) { 
 
-      if (!document.querySelector(".n22g22-header-user-search").contains(e.target)) {
-        searchMore.style.display = "none";
+      if (!document.querySelector(".n7g-srh").contains(e.target)) {
+        // searchMore.style.display = "none"; 
+        document.querySelector(".n7g-srh").classList.remove("is-a");
       } 
+
     });
 
     if (options.view == consts.VIEW_MOBILE) {
