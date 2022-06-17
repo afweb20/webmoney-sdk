@@ -2,6 +2,7 @@ import consts from "./consts";
 import device from "./device";
 import local from "./local";
 import ml from "./ml";
+import getLink from "/linkStorage";
 
 export default {
 
@@ -99,13 +100,13 @@ export default {
       ml("div", { class: "n9g-ctr"}, [
         ml("div", { class: "n9g-rw"}, [
           this.generateMiddlePartAboutSystem(options),
-          this.generateMiddlePartWmOperations(options),
-          this.generateMiddlePartForWork(options),
-          this.generateMiddlePartHelp(options),
+          this.generateMiddlePartPurseManagement(options),
+          this.generateMiddlePartWmTerritory(options),
+          this.generateMiddlePartContacts(options),
         ]),
         ml("div", { class: "n9g-rw"}, [
-          this.generateMiddlePartSecurity(options),
-          this.generateMiddlePartWmTerritory(options),
+          this.generateMiddlePartLegalInformation(options),
+          this.generateMiddlePartHelp(options),
           this.generateMiddlePartApps(options)
         ])
       ])
@@ -117,37 +118,39 @@ export default {
 
     return ml("div", { "class": "n9g-cln" }, [
       ml("div", { "class" : "n9g-mtl" }, "О системе"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Краткое описание"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Управление кошельками"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Тарифы системы"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Статистика"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Юридическая информация"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Субъекты системы"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Регистраторы"),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "briefDescription").url }, getLink(options, "briefDescription").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "purseTypes").url }, getLink(options, "purseTypes").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "purseManagement").url }, getLink(options, "purseManagement").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "systemFees").url }, getLink(options, "systemFees").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "statistics").url }, getLink(options, "statistics").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "securityAndPrivacy").url }, getLink(options, "securityAndPrivacy").title),
     ]);
 
   },
 
-  generateMiddlePartWmOperations: function (options) {
+  generateMiddlePartPurseManagement: function (options) {
 
     return ml("div", { "class": "n9g-cln" }, [
-      ml("div", { "class" : "n9g-mtl" }, "Операции с WebMoney"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Exchanger: обменный пункт"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "WM.Check: оплата без регистрации"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Переводы с протекцией (платежи в два шага)"),
+      ml("div", { "class" : "n9g-mtl" }, getLink(options, "purseManagement").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "keeperStandardMini").url }, getLink(options, "keeperStandardMini").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "keeperWinProClassic").url }, getLink(options, "keeperWinProClassic").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "keeperWebProLight").url }, getLink(options, "keeperWebProLight").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "keeperMobile").url }, getLink(options, "keeperMobile").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "keeperForSocialNetworks").url }, getLink(options, "keeperForSocialNetworks").title),
     ]);
 
   },
 
-  generateMiddlePartForWork: function (options) {
+  generateMiddlePartLegalInformation: function (options) {
 
     return ml("div", { "class": "n9g-cln" }, [
-      ml("div", { "class" : "n9g-mtl" }, "Для работы"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Видеозвонки и онлайн-трансляции"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Управление закладками"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Верстка и публикация заметок"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Сервис аналитики"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Лента новостей: рассылка"),
+      ml("div", { "class" : "n9g-mtl" }, getLink(options, "legalInformation").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "webMoneyTransferCode").url }, getLink(options, "webMoneyTransferCode").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "propertyRightsTransferAgreement").url }, getLink(options, "propertyRightsTransferAgreement").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "amlAgreement").url }, getLink(options, "amlAgreement").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "creditServiceAgreement").url }, getLink(options, "creditServiceAgreement").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "wmPursesAgreement").url }, getLink(options, "wmPursesAgreement").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "warning").url }, getLink(options, "warning").title),
     ]);
 
   },
@@ -169,18 +172,16 @@ export default {
 
   },
 
-  generateMiddlePartSecurity: function (options) {
+  generateMiddlePartContacts: function (options) {
 
     return ml("div", { "class": "n9g-cln" }, [
-      ml("div", { "class" : "n9g-mtl" }, "Безопасность"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Безопасность и конфиденциальность"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Escrow: защищенные сделки"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "E-Num: безопасная авторизация"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Оповещения об операциях"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Ограничение доступа к кошельку"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Настройка расходных лимитов"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Восстановление доступа"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Advisor: отзывы о сайтах"),
+      ml("div", { "class" : "n9g-mtl" }, "Контактная информация"),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "ownerAndAdministrator").url }, getLink(options, "ownerAndAdministrator").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "wmPurseGuarantors").url }, getLink(options, "wmPurseGuarantors").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "contactsForLegalRequests").url }, getLink(options, "contactsForLegalRequests").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "registrars").url }, getLink(options, "registrars").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "wmPursesAgreement").url }, getLink(options, "wmPursesAgreement").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "warning").url }, getLink(options, "warning").title),
     ]);
 
   },
