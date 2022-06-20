@@ -64,7 +64,7 @@ export default {
         this.value = placeholder;
       }
 
-      searchMore.style.display = "none";
+      // searchMore.style.display = "none";
     });
 
     // iconButton.addEventListener("click", function (event) {
@@ -86,12 +86,12 @@ export default {
 
     searchMore.addEventListener("mouseleave", function (event) {
 
-      searchMore.style.display = "none";
+      // searchMore.style.display = "none";
     });
 
     searchMore.addEventListener("click", function (event) {
 
-      searchMore.style.display = "none";
+      // searchMore.style.display = "none";
       searchBoxInput.focus();
     });
 
@@ -113,7 +113,7 @@ export default {
 
         searchBoxInput.value = placeholder;
         searchBoxInput.focus();
-        searchMore.style.display = "none";
+        // searchMore.style.display = "none";
         context.refreshSearchMore(options, searchMoreList, where);
         cookie.set(consts.SEARCH_COOKIE_NAME, where, consts.SEARCH_COOKIE_EX_DAYS);
 
@@ -123,9 +123,10 @@ export default {
 
     window.addEventListener("click", function(e) { 
 
-      if (!document.querySelector(".n7g-srh").contains(e.target)) {
+      if (!document.querySelector(".n7g-srh").contains(e.target) && !document.querySelector(".n7g-srch-dd").contains(e.target)) {
         // searchMore.style.display = "none"; 
         document.querySelector(".n7g-srh").classList.remove("is-a");
+        document.querySelector(".n7g-srch-dd").classList.remove("is-a");
       } 
 
     });
@@ -152,10 +153,10 @@ export default {
 
         if (searchMoreList[i].attributes["where"].value == where) {
 
-          searchMoreList[i].classList.add("n22g22-search-current");
+          searchMoreList[i].classList.add("n7g-sml-a");
         } else {
 
-          searchMoreList[i].classList.remove("n22g22-search-current");
+          searchMoreList[i].classList.remove("n7g-sml-a");
         }
       }
     }

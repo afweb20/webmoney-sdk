@@ -33,6 +33,7 @@ export default {
       this.generateServicesDropDown(options),
       this.generateIndividualsDropDown(options),
       this.generateBusinessDropDown(options),
+      this.generateSearchDropDown(options)
     ]);
 
     // return ml("div", { "class": options.view == consts.VIEW_MOBILE ? "n20g20 n20g20-mobile" : "n20g20" },
@@ -73,21 +74,6 @@ export default {
 
     return ml("div", { "class": "n7g-srh" }, [
       ml("div", { "class": "n7g-sbtn" }),
-      ml("div", { "class": "n7g-sctr" }, [
-        ml("input", { "class": "n7g-sbxi", "type": "search" }),
-        ml("ul", { "class": "n7g-smr" }, [
-          ml("li", {},
-            ml("a", { "href": "#", "where": consts.SEARCH_WHERE_INFO }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_INFO))),
-          ml("li", {},
-            ml("a", { "href": "#", "where": consts.SEARCH_WHERE_GOODS }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_GOODS))),
-          ml("li", {},
-            ml("a", { "href": "#", "where": consts.SEARCH_WHERE_INOUT }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_INOUT))),
-          ml("li", {},
-            ml("a", { "href": "#", "where": consts.SEARCH_WHERE_WIKI }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_WIKI))),
-          ml("li", {},
-            ml("a", { "href": "#", "where": consts.SEARCH_WHERE_ANT }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_ANT)))
-        ])
-      ])
     ]);
 
   },
@@ -451,6 +437,30 @@ export default {
         ])
       )
     );
+  },
+
+  generateSearchDropDown : function (options) {
+
+    return ml("div", { "class": "n7g-slv n7g-srch-dd" }, 
+      ml("div", { "class": "n7g-ctr" }, 
+        ml("div", { "class": "n7g-row" }, 
+          ml("div", { "class": "n7g-col" }, [
+            ml("div", { "class": "n7g-sctr" }, [
+              ml("input", { "class": "n7g-sbxi", "type": "text" }),
+              ml("div", { "class": "n7g-sbxb" }, "Найти"),
+            ]),
+            ml("div", { "class": "n7g-chps" }, 
+              ml("div", { "class": "n7g-smr" }, [
+                ml("a", { "class": "n7g-sml", "href": "#", "where": consts.SEARCH_WHERE_INFO }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_INFO)),
+                ml("a", { "class": "n7g-sml", "href": "#", "where": consts.SEARCH_WHERE_GOODS }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_GOODS)),
+                ml("a", { "class": "n7g-sml", "href": "#", "where": consts.SEARCH_WHERE_INOUT }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_INOUT)),
+                ml("a", { "class": "n7g-sml", "href": "#", "where": consts.SEARCH_WHERE_WIKI }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_WIKI)),
+                ml("a", { "class": "n7g-sml", "href": "#", "where": consts.SEARCH_WHERE_ANT }, local(options, "menuFindTitle_" + consts.SEARCH_WHERE_ANT))
+              ])
+            )
+          ])
+        )
+      ))
   },
 
   generateMenu: function (options) {

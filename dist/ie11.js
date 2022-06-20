@@ -7320,14 +7320,14 @@ var WebSocketClient = /*#__PURE__*/function () {
 
 /***/ }),
 
-/***/ "./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&reconnect=10":
+/***/ "./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3002&pathname=%2Fws&logging=info&reconnect=10":
 /*!********************************************************************************************************************************************!*\
-  !*** ./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&reconnect=10 ***!
+  !*** ./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3002&pathname=%2Fws&logging=info&reconnect=10 ***!
   \********************************************************************************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-var __resourceQuery = "?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&reconnect=10";
+var __resourceQuery = "?protocol=ws%3A&hostname=0.0.0.0&port=3002&pathname=%2Fws&logging=info&reconnect=10";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! webpack/hot/log.js */ "./node_modules/webpack/hot/log.js");
 /* harmony import */ var webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(webpack_hot_log_js__WEBPACK_IMPORTED_MODULE_0__);
@@ -9882,7 +9882,7 @@ document.onclick = function (e) {
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "9e3afc647669e2139cc4"; }
+/******/ 		__webpack_require__.h = function() { return "d96a2450f90a40820093"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -10861,7 +10861,7 @@ document.onclick = function (e) {
 /******/ 	// module cache are used so entry inlining is disabled
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
-/******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3001&pathname=%2Fws&logging=info&reconnect=10");
+/******/ 	__webpack_require__("./node_modules/webpack-dev-server/client/index.js?protocol=ws%3A&hostname=0.0.0.0&port=3002&pathname=%2Fws&logging=info&reconnect=10");
 /******/ 	__webpack_require__("./node_modules/webpack/hot/dev-server.js");
 /******/ 	var __webpack_exports__ = __webpack_require__("./src/test/ie11.js");
 /******/ 	

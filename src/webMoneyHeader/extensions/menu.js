@@ -24,6 +24,8 @@ export default {
     var servicesMenuItemsDd = rootElement.getElementsByClassName("n7g-cti");
 
     var searchButton = rootElement.getElementsByClassName("n7g-sbtn")[0];
+    var searchDd = rootElement.getElementsByClassName("n7g-srch-dd")[0];
+
 
     searchButton.addEventListener("click", function (e) {
 
@@ -35,6 +37,7 @@ export default {
       servicesMenuDd.classList.remove("is-a");
 
       this.parentNode.classList.toggle("is-a");
+      searchDd.classList.toggle("is-a");
 
     });
 
