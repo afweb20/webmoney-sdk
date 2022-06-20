@@ -307,7 +307,7 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "protectedTransactions").url }, getLink(options, "protectedTransactions").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("a", { "class": "n7g-ttl", "href": getLink(options, "security").url }, getLink(options, "security").title),
+              ml("div", { "class": "n7g-ttl" }, getLink(options, "security").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "escrow").url }, getLink(options, "escrow").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "enum").url }, getLink(options, "enum").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "operationNotification").url }, getLink(options, "operationNotification").title),
@@ -337,12 +337,12 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "debtService").url }, getLink(options, "debtService").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("a", { "class": "n7g-ttl", "href": getLink(options, "passport").url }, getLink(options, "passport").title),
+              ml("div", { "class": "n7g-ttl" }, getLink(options, "passport").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "receivePassport").url }, getLink(options, "receivePassport").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "verificationPoints").url }, getLink(options, "verificationPoints").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("a", { "class": "n7g-ttl", "href": getLink(options, "arbitrage").url }, getLink(options, "arbitrage").title),
+              ml("div", { "class": "n7g-ttl" }, getLink(options, "arbitrage").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "submitComplaint").url }, getLink(options, "submitComplaint").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "submitClaim").url }, getLink(options, "submitClaim").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "registerContract").url }, getLink(options, "registerContract").title),
@@ -370,16 +370,13 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "wiki").url }, getLink(options, "wiki").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("a", { "class": "n7g-ttl", "href": getLink(options, "purseManagement2").url }, getLink(options, "purseManagement2").title),
+              ml("div", { "class": "n7g-ttl" }, getLink(options, "purseManagement2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "keeperStandardMini2").url }, getLink(options, "keeperStandardMini2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "keeperWinProClassic2").url }, getLink(options, "keeperWinProClassic2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "keeperWebProLight2").url }, getLink(options, "keeperWebProLight2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "keeperMobile2").url }, getLink(options, "keeperMobile2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "keeperForSocialNetworks2").url }, getLink(options, "keeperForSocialNetworks2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "enum2").url }, getLink(options, "enum2").title),
-            ]),
-            ml("div", { "class": "n7g-clm" }, [
-              ml("a", { "class": "n7g-ttl", "href": getLink(options, "downloadSoftware2").url }, getLink(options, "downloadSoftware2").title),
             ])
           ])
         ])

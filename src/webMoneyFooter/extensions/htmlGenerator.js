@@ -101,11 +101,11 @@ export default {
         ml("div", { class: "n9g-rw"}, [
           this.generateMiddlePartAboutSystem(options),
           this.generateMiddlePartPurseManagement(options),
-          this.generateMiddlePartWmTerritory(options),
+          this.generateMiddlePartLegalInformation(options),
           this.generateMiddlePartContacts(options),
         ]),
         ml("div", { class: "n9g-rw"}, [
-          this.generateMiddlePartLegalInformation(options),
+          this.generateMiddlePartInstructions(options),
           this.generateMiddlePartHelp(options),
           this.generateMiddlePartApps(options)
         ])
@@ -122,8 +122,11 @@ export default {
       ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "purseTypes").url }, getLink(options, "purseTypes").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "purseManagement").url }, getLink(options, "purseManagement").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "systemFees").url }, getLink(options, "systemFees").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "operationLimits").url }, getLink(options, "operationLimits").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "statistics").url }, getLink(options, "statistics").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "securityAndPrivacy").url }, getLink(options, "securityAndPrivacy").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "tabu").url }, getLink(options, "tabu").title),
+
     ]);
 
   },
@@ -137,6 +140,8 @@ export default {
       ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "keeperWebProLight").url }, getLink(options, "keeperWebProLight").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "keeperMobile").url }, getLink(options, "keeperMobile").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "keeperForSocialNetworks").url }, getLink(options, "keeperForSocialNetworks").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "actionBlock").url }, getLink(options, "actionBlock").title),
+
     ]);
 
   },
@@ -159,15 +164,19 @@ export default {
 
     return ml("div", { "class": "n9g-cln" }, [
       ml("div", { "class" : "n9g-mtl" }, "Помощь"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Регистрация"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Получение аттестата"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Создание PhotoID"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Обучающие видео"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Задать вопрос"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Финансовая поддержка"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Техническая поддержка"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Сотрудничество"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Форум"),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "technicalSupport").url }, getLink(options, "technicalSupport").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "financialSupport").url }, getLink(options, "financialSupport").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "forum").url }, getLink(options, "forum").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "AskQuestion").url }, getLink(options, "AskQuestion").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "videoTutorials").url }, getLink(options, "videoTutorials").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "searchPayment").url }, getLink(options, "searchPayment").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "interactiveMap").url }, getLink(options, "interactiveMap").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "changeData").url }, getLink(options, "changeData").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "legalEntityWmid").url }, getLink(options, "legalEntityWmid").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "pretenzIIski").url }, getLink(options, "pretenzIIski").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "repaymentCPurse").url }, getLink(options, "repaymentCPurse").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "controlRecovery").url }, getLink(options, "controlRecovery").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "annullation").url }, getLink(options, "annullation").title),
     ]);
 
   },
@@ -180,20 +189,33 @@ export default {
       ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "wmPurseGuarantors").url }, getLink(options, "wmPurseGuarantors").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "contactsForLegalRequests").url }, getLink(options, "contactsForLegalRequests").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "registrars").url }, getLink(options, "registrars").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "wmPursesAgreement").url }, getLink(options, "wmPursesAgreement").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "warning").url }, getLink(options, "warning").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "cooperation").url }, getLink(options, "cooperation").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "downloadSoftware3").url }, getLink(options, "downloadSoftware3").title)
     ]);
 
   },
 
-  generateMiddlePartWmTerritory: function (options) {
+  generateMiddlePartInstructions: function (options) {
 
     return ml("div", { "class": "n9g-cln" }, [
-      ml("div", { "class" : "n9g-mtl" }, "Территория WebMoney"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Деловая сеть"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Новости системы"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Интерактивная карта"),
-      ml("a", { "class" : "n9g-mlk", "href" : "#" }, "Wiki"),
+      ml("div", { "class" : "n9g-mtl" }, "Инструкции"),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "registration").url }, getLink(options, "registration").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "poluchenieAttestata").url }, getLink(options, "poluchenieAttestata").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "photoId").url }, getLink(options, "photoId").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "changeBl").url }, getLink(options, "changeBl").title),
+
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "inoutOptions").url }, getLink(options, "inoutOptions").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "acceptPayments").url }, getLink(options, "acceptPayments").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "repayment").url }, getLink(options, "repayment").title),
+      
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "deleteWmid").url }, getLink(options, "deleteWmid").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "nevozvratDebt").url }, getLink(options, "nevozvratDebt").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "transactionHistory").url }, getLink(options, "transactionHistory").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "exchange").url }, getLink(options, "exchange").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "securityLimits").url }, getLink(options, "securityLimits").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "bankCards").url }, getLink(options, "bankCards").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "checkCorr").url }, getLink(options, "checkCorr").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(options, "automats").url }, getLink(options, "automats").title),
     ]);
 
   },

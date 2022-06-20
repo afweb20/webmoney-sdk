@@ -175,16 +175,15 @@
     display: flex;
   }
   &-mni{
-    color: #838a8e;
-    font-family: "Manrope", sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    line-height: 16px;
-    text-transform: uppercase;
-    padding: 8px 0;
     cursor: default;
     flex: 1;
+    font-family: "Manrope";
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 4px 0;
     margin-bottom: 16px;
+    display: block;
   }
   &-cti{
     flex: 1;
@@ -215,16 +214,16 @@
     height: auto;
   }
   &-stl{
-    color: #101828;
+    color: #707070;
     font-family: "Manrope", sans-serif;
-    font-weight: 400;
-    font-size: 13px;
+    font-weight: 500;
+    font-size: 12px;
     line-height: 16px;
     cursor: pointer;
     transition: all 0.2s;
     display: block;
     &:hover{
-      color: #000;
+      color: #006cb4;
     }
   }
   &-lks{
@@ -350,11 +349,19 @@
     font-size: 14px;
     line-height: 16px;
     padding-right: 8px;
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+    }
   }
   &-uim{
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     border-radius: 40px;
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+    }
   }
   &-wdw{
     opacity: 0;
@@ -550,6 +557,9 @@
     @media (min-width: 768px) {
       display: block;
     }
+    .n7g-row{
+      margin: 0 -16px;
+    }
   }
   &-col{
     flex: 1;
@@ -563,17 +573,18 @@
   &-ttl{
     font-family: "Manrope";
     font-weight: 600;
-    font-size: 13px;
-    line-height: 32px;
-    text-transform: uppercase;
-    // border-bottom: 1px solid #e1e1e1;
-    // margin-bottom: 16px;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 4px 0;
+    margin-bottom: 4px;
+    display: block;
   }
   &-lnk{
     display: block;
     text-decoration: none;
     font-family: "Manrope";
-    font-size: 13px;
+    font-size: 12px;
+    font-weight: 500;
     line-height: 16px;
     padding: 4px 0;
     color: #707070;
