@@ -381,6 +381,9 @@
   }
   &-smr{
     display: flex;
+    @media (max-width: 767px) {
+      flex-wrap: wrap;
+    }
   }
   &-sml{
     font-family: "Manrope";
@@ -393,6 +396,9 @@
     border: 1px solid #eeeeee;
     border-radius: 4px;
     transition: all .2s ease;
+    @media (max-width: 767px) {
+      margin-bottom: 8px;
+    }
     &:hover{
       border-color: #758793;
     }
@@ -645,28 +651,40 @@
     left: 0;
     right: 0;
     padding: 0;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     z-index: 2;
     background-color: #fff;
     border-top: 1px solid #eeeeee;
     position: absolute;
     &.is-a{
-      max-height: 1000px;
+      max-height: 10000px;
       opacity: 1;
       visibility: visible;
       position: static;
-      padding: 8px 0 16px;
+      padding: 16px 0;
       @media (min-width: 576px) {
-        padding: 32px 0 48px;
+        padding: 16px 0 24px;
       }
       @media (min-width: 768px) {
+        transition: all 0.3s;
+        padding: 32px 0 48px;
         position: absolute;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
       }
     }
     .n7g-row{
       margin: 0 -16px;
+      @media (max-width: 767px) {
+        display: block;
+      }
     }
+    // .n7g-col{
+    //   @media (max-width: 767px) {
+    //     @media (min-width: 576px) {
+    //       display: flex;
+    //     }
+    //   }
+    // }
     @media (max-width: 575px) {
       top: 96px;
     }
@@ -677,7 +695,26 @@
   }
   &-clm{
     & + .n7g-clm {
-      margin-top: 24px;
+      @media (min-width: 768px) {
+        margin-top: 24px;
+      } 
+    }
+    @media (max-width: 767px) {
+      .n7g-lnk{
+        display: none;
+      }
+      &.is-a{
+        padding-bottom: 8px;
+        .n7g-ttl{
+          &:after {
+            transform: rotate(-180deg);
+            margin-top: -15px;
+          }
+        }
+        .n7g-lnk{
+          display: block;
+        }
+      }
     }
   }
   &-ttl{
@@ -686,8 +723,24 @@
     font-size: 14px;
     line-height: 24px;
     padding: 4px 0;
-    margin-bottom: 4px;
     display: block;
+    @media (max-width: 767px) {
+      position: relative;
+      &:after{
+        content: "";
+        display: block;
+        background: transparent url("./images/arrow-down.svg") center center no-repeat;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        margin-top: -16px;
+      }
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 4px;
+    }
   }
   &-lnk{
     display: block;

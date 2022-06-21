@@ -26,6 +26,7 @@ export default {
     var searchButton = rootElement.getElementsByClassName("n7g-sbtn")[0];
     var searchDd = rootElement.getElementsByClassName("n7g-srch-dd")[0];
 
+    var pagesMenuItems = rootElement.getElementsByClassName("n7g-clm");
 
     searchButton.addEventListener("click", function (e) {
 
@@ -55,6 +56,13 @@ export default {
 
     });
 
+    Array.prototype.forEach.call(pagesMenuItems, function (element, index) {
+
+      element.addEventListener('click', function () {
+        this.classList.toggle("is-a");
+      });
+
+    });
 
     Array.prototype.forEach.call(servicesMenuItems, function (element, index) {
 
