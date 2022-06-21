@@ -98,8 +98,23 @@
     &.is-a{
       background: transparent url("./images/bgr-a.svg") center center no-repeat;
       background-size: 32px;
+      @media (max-width: 767px) {
+        & + .n7g-lft {
+          .n7g-mdl {
+            left: 0;
+            top: 48px;
+            right: 0;
+            align-items: center;
+            height: 48px;
+            @media (max-width: 575px) {
+              display: flex;
+              justify-content: center;
+            }
+          }
+        }
+      }
     }
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       display: none;
     }
     &-dd{
@@ -108,7 +123,7 @@
         height: 48px;
         display: block;
       }
-      @media (min-width: 768px) {
+      @media (min-width: 576px) {
         display: none;
         &.is-a{
           display: none;
@@ -118,6 +133,7 @@
   }
   &-lft{
     display: flex;
+    flex: 1;
   }
   &-llg{
     display: flex;
@@ -141,11 +157,15 @@
     align-items: center;
     position: absolute;
     display: none;
-    @media (min-width: 768px) {
+    @media (min-width: 576px) {
       position: relative;
+      display: flex;
+      padding-left: 16px;
+    }
+    @media (min-width: 768px) {
+      padding-left: 0;
       padding-right: 64px;
       display: flex;
-
     }
   }
   &-dtr{
@@ -163,9 +183,17 @@
     width: 32px;
     height: 32px;
     cursor: pointer;
-    margin-right: 32px;
+    @media (max-width: 767px) {
+      background-size: 28px;
+    }
+    @media (min-width: 768px) {
+      margin-right: 32px;
+    }
     &.is-a{
       background: transparent url("./images/svs-a.svg") center center no-repeat;
+      @media (max-width: 767px) {
+        background-size: 28px;
+      }
     }
   }
   &-mnu{
@@ -231,8 +259,7 @@
   }
   &-lki{
     display: block;
-    padding: 6px 40px 6px 8px;
-    margin-right: 16px;
+    padding: 0 8px;
     font-size: 14px;
     line-height: 20px;
     color: #101828;
@@ -243,30 +270,42 @@
     text-decoration: none;
     font-family: "Manrope";
     transition: all 0.2s;
-    &:after{
-      content: "";
-      display: block;
-      background: transparent url("./images/arrow-down.svg") center center no-repeat;
-      width: 32px;
-      height: 32px;
-      position: absolute;
-      right: 8px;
-      top: 50%;
-      margin-top: -16px;
-    }
     &.is-a {
-      &:after {
-        transform: rotate(-180deg);
-        margin-top: -15px;
+      color: #006cb4;
+    }
+    @media (min-width: 768px) {
+      padding: 6px 40px 6px 8px;
+      margin-right: 16px;
+      &:after{
+        content: "";
+        display: block;
+        background: transparent url("./images/arrow-down.svg") center center no-repeat;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        margin-top: -16px;
+      }
+      &.is-a {
+        color: #101828;
+        &:after {
+          transform: rotate(-180deg);
+          margin-top: -15px;
+        }
       }
     }
   }
   &-srh{
-    position: absolute;
-    right: 32px;
-    width: 32px;
     background-color: #fff;
     border-radius: 4px;
+    @media (min-width: 768px) {
+      right: 40px;
+      width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
     &.is-a{
       .n7g-sbtn{
         background: transparent url("./images/search-a.svg") center center no-repeat;
@@ -395,7 +434,7 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
-    padding-right: 8px;
+    padding-right: 16px;
     display: none;
     @media (min-width: 992px) {
       display: block;
