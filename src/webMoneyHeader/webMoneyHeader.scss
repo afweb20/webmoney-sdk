@@ -157,8 +157,9 @@
     align-items: center;
     position: absolute;
     display: none;
+    min-width: 320px;
     @media (min-width: 576px) {
-      position: relative;
+      position: static;
       display: flex;
       padding-left: 16px;
     }
@@ -196,11 +197,13 @@
       }
     }
   }
-  &-mnu{
-    display: flex;
-  }
+  // &-mnu{
+  //   display: flex;
+  // }
   &-cnt{
-    display: flex;
+    @media (min-width: 768px) {
+      display: flex;
+    }
   }
   &-mni{
     cursor: default;
@@ -210,22 +213,37 @@
     font-size: 14px;
     line-height: 24px;
     padding: 4px 0;
-    margin-bottom: 16px;
+    margin-bottom: 8px;
     display: block;
+    @media (min-width: 768px) {
+      margin-bottom: 16px;
+    }
   }
   &-cti{
     flex: 1;
+    @media (max-width: 767px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
   &-svi{
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     align-items: center;
     padding-right: 16px;
-    display: flex
+    display: flex;
+    @media (min-width: 768px) {
+      margin-bottom: 24px;
+    }
   }
   &-sic{
-    width: 40px;
-    height: 40px;
-    margin-right: 16px;
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 40px;
+      margin-right: 16px;
+    }
   }
   &-sim{
     width: 40px;
@@ -633,22 +651,24 @@
     background-color: #fff;
     border-top: 1px solid #eeeeee;
     position: absolute;
-    display: none;
     &.is-a{
       max-height: 1000px;
       opacity: 1;
       visibility: visible;
       position: static;
-      padding: 32px 0 48px;
+      padding: 8px 0 16px;
+      @media (min-width: 576px) {
+        padding: 32px 0 48px;
+      }
       @media (min-width: 768px) {
         position: absolute;
       }
     }
-    @media (min-width: 768px) {
-      display: block;
-    }
     .n7g-row{
       margin: 0 -16px;
+    }
+    @media (max-width: 575px) {
+      top: 96px;
     }
   }
   &-col{
