@@ -3,9 +3,9 @@ self["webpackHotUpdatewebmoney_layout"]("webmoney-footer",{},
 /******/ function(__webpack_require__) { // webpackRuntimeModules
 /******/ /* webpack/runtime/getFullHash */
 /******/ !function() {
-/******/ 	__webpack_require__.h = function() { return "22a3ef098a8e64507023"; }
+/******/ 	__webpack_require__.h = function() { return "885cd384afa2f5adfa06"; }
 /******/ }();
 /******/ 
 /******/ }
 );
-//# sourceMappingURL=webmoney-footer.927ddf8d0aed977f1cf5.hot-update.js.map
+//# sourceMappingURL=webmoney-footer.462059b680c24d58da31.hot-update.js.map

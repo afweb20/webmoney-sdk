@@ -422,7 +422,7 @@
     z-index: 99;
     width: 240px;
     right: 0;
-    padding-bottom: 8px;
+    padding: 0 0 8px;
   }
   &-usr{
     background-color: #f2f4f6;
@@ -472,6 +472,10 @@
     transition: color .2s ease;
     &:hover{
       color: #101828;
+    }
+    &--profile{
+      background: transparent url("./images/login/events.svg") 15px center no-repeat;
+      background-size: 19px;
     }
     &--purse{
       background: transparent url("./images/login/wallet.svg") 16px center no-repeat;
@@ -596,7 +600,7 @@
       opacity: 1;
       visibility: visible;
       position: static;
-      padding: 24px 0;
+      padding: 32px 0 48px;
       @media (min-width: 768px) {
         position: absolute;
       }

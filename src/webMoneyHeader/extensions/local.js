@@ -88,8 +88,8 @@ var localization = {
     "vn": "Đăng nhập"
   },
   buttonMyPurse: {
-    "ru": "Мой Кошелек",
-    "en": "My Purse",
+    "ru": "Мой кошелек",
+    "en": "My purse",
     "es": "Mi billetera",
     "pt": "Minha carteira",
     "tr": "Cüzdanim",

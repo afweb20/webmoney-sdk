@@ -94,6 +94,7 @@ export default {
         ]),
         ml("div", {"class": "n23g23-login-block-overlay"}),
         ml("div", {"class": "n7g-wdw"}, [
+
           ml("div", {"class": "n7g-usr"}, 
             ml("div", {"class": "n7g-uwr"},[
               ml("a", {"class": "n7g-uil", "href": "#"}, 
@@ -102,17 +103,13 @@ export default {
               ml("div", {"class": "n7g-uif"}, [
                 ml("a", {"class": "n7g-ufnm", "href": "#"}, 
                   ml("span", {"class": "n7g-unt"}, "")
-                ),
-                // ml("div", {"class": "n23g23-login-block-window-user-info-wrapper"}, [
-                //   ml("a", {"class": "n23g23-login-block-window-user-info-purse", "href": "#"}, 
-                //     ml("span", {"class": "n23g23-login-block-window-user-info-purse-text"}, local(options, "buttonMyPurse"))
-                //   ),
-                //   ml("a", {"class": "n23g23-login-block-window-user-info-logout", "href": "#"}, local(options, "buttonLogOut")),
-                // ])
+                )
               ])
             ]) 
           ),
+
           ml("a", {"class": "n7g-itm n7g-itm--purse", "href": "#"}, local(options, "buttonMyPurse")),
+          ml("a", {"class": "n7g-itm n7g-itm--profile", "href": "#"}, "Деловая сеть"),
           ml("a", {"class": "n7g-itm n7g-itm--settings", "href": "#"}, local(options, "buttonLogInSettings")),
           ml("a", {"class": "n7g-itm n7g-itm--logout", "href": "#"}, local(options, "buttonLogOut")),
     

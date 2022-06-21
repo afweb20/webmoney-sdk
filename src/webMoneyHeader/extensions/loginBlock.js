@@ -125,6 +125,8 @@ export default {
 
       loginBlockUserLineImageElement.src = loginBlockData.smallAvatarUrl;
       loginBlockUserLineNameElement.innerText = loginBlockData.preview;
+      
+      loginBlockWrapperElement.getElementsByClassName("n7g-itm--profile")[0].href = loginBlockData.eventsUrl;
       loginBlockWindowUserImageLinkElement.href = loginBlockData.eventsUrl;
       loginBlockWindowUserImageElement.src = loginBlockData.smallAvatarUrl;
       loginBlockWindowUserInfoNameElement.href = loginBlockData.eventsUrl;
