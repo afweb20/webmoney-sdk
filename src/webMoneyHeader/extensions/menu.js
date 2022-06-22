@@ -48,11 +48,16 @@ export default {
       individiualsMenuDd.classList.remove("is-a");
       businessMenu.classList.remove("is-a");
       businessMenuDd.classList.remove("is-a");
+      servicesMenu.classList.remove("is-a");
+      servicesMenuDd.classList.remove("is-a");
 
       this.classList.toggle("is-a");
       burgerDd.classList.toggle("is-a");
-      servicesMenu.classList.toggle("is-a");
-      servicesMenuDd.classList.toggle("is-a");
+
+      if (this.classList.contains("is-a")) {
+        servicesMenu.classList.add("is-a");
+        servicesMenuDd.classList.add("is-a");
+      }
 
     });
 

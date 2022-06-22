@@ -52,6 +52,15 @@
   border-style: none;
 }
 
+@mixin noselection {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none;
+}
+
 .n7g {
   @include resetDiv;
   width: 100%;
@@ -288,6 +297,7 @@
     text-decoration: none;
     font-family: "Manrope";
     transition: all 0.2s;
+    @include noselection;
     &.is-a {
       color: #006cb4;
     }
@@ -750,7 +760,6 @@
     }
   }
   a.n7g-lnk{
-    display: block;
     text-decoration: none;
     font-family: "Manrope";
     font-size: 12px;
@@ -760,6 +769,9 @@
     color: #707070;
     cursor: pointer;
     transition: all 0.3s linear;
+    @media (min-width: 768px) {
+      display: block;
+    }
     &:hover{
       color: #006cb4;
     }
