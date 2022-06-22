@@ -2,7 +2,6 @@ import consts from "./consts";
 import local from "./local";
 import ml from "./ml";
 import getLink from "/linkStorage";
-var tinycolor = require("tinycolor2");
 
 export default {
   generate: function (options) {
@@ -479,18 +478,6 @@ export default {
           ml("li", { "class": "n24g24-header-menu-with-submenu" },
             ml("a", {}, local(options, "menuHelp")))
         ]));
-  },
-
-  generateBgGradient: function (color) {
-
-    var primaryColor = color;
-    var primaryColorLighten = tinycolor(primaryColor).saturate(20).lighten(15).toString();
-    var primaryColorDarken = tinycolor(primaryColor).darken(15).toString();
-
-    var gradientBg = "background: linear-gradient(45deg, " + primaryColorDarken + " 0%, " + primaryColor + " 50%, " + primaryColorLighten + " 100%)";
-
-    return gradientBg;
-
   },
 
   generateSearchBlock2: function (options) {
