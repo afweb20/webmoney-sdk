@@ -11163,9 +11163,9 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-lks"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-lki n7g-ind"
-    }, "Частным лицам"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuPersonal")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-lki n7g-biz"
-    }, "Для бизнеса")]);
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuBusiness"))]);
   },
   generateSearchBlock: function generateSearchBlock(options) {
     return (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
@@ -12014,6 +12014,142 @@ var localization = {
     "pt": "Indivíduos",
     "tr": "Bireysel",
     "vn": "Personal"
+  },
+  menuTopUp: {
+    "ru": "Пополнить",
+    "en": "Top-up",
+    "es": "Recargar",
+    "pt": "Depositar",
+    "tr": "Para yatırmak",
+    "vn": "Top-up"
+  },
+  menuRaiseFunds: {
+    "ru": "Заработать",
+    "en": "Raise funds",
+    "es": "Ganar",
+    "pt": "Ganhar",
+    "tr": "Kazanmak",
+    "vn": "Raise funds"
+  },
+  menuForWork: {
+    "ru": "Для работы",
+    "en": "For work",
+    "es": "Para trabajo",
+    "pt": "Para o trabalho",
+    "tr": "Çalışma için",
+    "vn": "For work"
+  },
+  menuWithdraw: {
+    "ru": "Вывести",
+    "en": "Withdraw",
+    "es": "Retirar",
+    "pt": "Levantar",
+    "tr": "Para çekme",
+    "vn": "Withdraw"
+  },
+  menuWebMoneyOperations: {
+    "ru": "Операции с WebMoney",
+    "en": "WebMoney operations",
+    "es": "Operaciones con WebMoney",
+    "pt": "Operações com WebMoney",
+    "tr": "WebMoney ile işlem",
+    "vn": "WebMoney operations"
+  },
+  menuPayments: {
+    "ru": "Оплатить",
+    "en": "Payments",
+    "es": "Pagar",
+    "pt": "Pagar",
+    "tr": "Ödemek",
+    "vn": "Payments"
+  },
+  menuLoan: {
+    "ru": "Одолжить",
+    "en": "Loan",
+    "es": "Prestar",
+    "pt": "Prestar",
+    "tr": "Borç almak",
+    "vn": "Loan"
+  },
+  menuFundraising: {
+    "ru": "Сбор средств",
+    "en": "Fundraising",
+    "es": "Recaudación de los fondos",
+    "pt": "Coleção de fundos",
+    "tr": "Kaynak toplanması",
+    "vn": "Fundraising"
+  },
+  menuBankCards: {
+    "ru": "Банковские карты",
+    "en": "Bank cards",
+    "es": "Tarjetas bancarias",
+    "pt": "Cartões de crédito",
+    "tr": "Banka kartları",
+    "vn": "Bank cards"
+  },
+  menuWebMoneyTerritory: {
+    "ru": "Территория WebMoney",
+    "en": "WebMoney territory",
+    "es": "Territorio de WebMoney",
+    "pt": "WebMoney Território",
+    "tr": "WebMoney bölgesi",
+    "vn": "WebMoney territory"
+  },
+  menuForMerchantsRetailers: {
+    "ru": "Магазинам",
+    "en": "For Merchants and Retailers",
+    "es": "Para las tiendas",
+    "pt": "Para as lojas",
+    "tr": "Dükkanlara",
+    "vn": "For Merchants and Retailers"
+  },
+  menuForWebsites: {
+    "ru": "Сайтам",
+    "en": "For websites",
+    "es": "Para los sitios web",
+    "pt": "Para websites",
+    "tr": "Sitelere",
+    "vn": "For websites"
+  },
+  menuGeneral: {
+    "ru": "Общие",
+    "en": "General",
+    "es": "Común",
+    "pt": "Comum",
+    "tr": "Genel",
+    "vn": "General"
+  },
+  menuForDealersPaymentSystems: {
+    "ru": "Юридическим лицам",
+    "en": "For dealers and payment systems",
+    "es": "Para distribuidores y sistemas de pago",
+    "pt": "Para revendedores e sistemas de pagamento",
+    "tr": "Bayiler ve ödeme sistemleri için",
+    "vn": "For dealers and payment systems"
+  },
+  menuCapital: {
+    "ru": "Капитал",
+    "en": "Capital",
+    "es": "Capital",
+    "pt": "Capital",
+    "tr": "Sermaye",
+    "vn": "Capital"
+  },
+  menuWebMoneyFeatures: {
+    "ru": "Возможности WebMoney",
+    "en": "WebMoney features",
+    "es": "Oportunidades de WebMoney",
+    "pt": "Oportunidades WebMoney",
+    "tr": "",
+    "vn": "WebMoney features"
+  },
+  menuForDevelopers: {
+    "ru": "Разработчикам",
+    "en": "For developers",
+    "es": "Para desorolladores",
+    "pt": "Para programadores",
+    "tr": "WebMoney olanakları",
+    "vn": "For developers"
   },
   menuBusiness: {
     "ru": "Для бизнеса",
@@ -13876,7 +14012,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "0c53375354aa7b49001f"; }
+/******/ 		__webpack_require__.h = function() { return "06fcf71bfe50e1f6e7df"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

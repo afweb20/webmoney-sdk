@@ -64,8 +64,8 @@ export default {
   generateFirstLevelMenu: function (options) {
 
     return ml("div", { "class": "n7g-lks" }, [
-      ml("div", { "class": "n7g-lki n7g-ind" }, "Частным лицам"),
-      ml("div", { "class": "n7g-lki n7g-biz" }, "Для бизнеса")
+      ml("div", { "class": "n7g-lki n7g-ind" }, local(options, "menuPersonal")),
+      ml("div", { "class": "n7g-lki n7g-biz" }, local(options, "menuBusiness"))
     ]);
 
   },
