@@ -545,7 +545,7 @@
     font-size: inherit;
     line-height: inherit;
   }
-  &-itm{
+  a.n7g-itm{
     color: #758793;
     font-family: "Manrope";
     font-weight: 500;
@@ -555,6 +555,11 @@
     display: block;
     cursor: pointer;
     transition: color .2s ease;
+    &:visited,
+    &:active,
+    &:focus{
+      color: #758793;
+    }
     &:hover{
       color: #101828;
     }
