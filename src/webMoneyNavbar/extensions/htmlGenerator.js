@@ -12,38 +12,6 @@ export default {
       this.generateFirstLevel(options),
       this.generateSecondLevel(options)
     ]);
-
-    var view = options.view;
-    var designClass = "n30g30-design--" + options.design;
-    var dynamicClass = "n30g30-" + options.dynamicUniqueKey;
-    var firstLevel = options.firstLevel;
-    var secondLevel = options.secondLevel;
-
-    if (firstLevel.length == 0 || secondLevel.length == 0) {
-
-      return ml("div", { "class": "n30g30 n30g30-is-empty" });
-    } else if (view == consts.VIEW_MOBILE) {
-
-      return ml("div", { "class": "n30g30 n30g30-mobile " + designClass, "data-dynamic-class": dynamicClass },
-        ml("div", { "class": "n30g30-wrapper" }, [
-          this.generateFirstLevelButton(options),
-          ml("div", { "class": "n30g30-first-level" }, this.generateFirstLevel(options)),
-          ml("div", { "class": "n30g30-second-level swiper" }, [
-            ml("div", { "class": "n30g30-second-level-arrow-left is-hidden" }),
-            ml("div", { "class": "n30g30-second-level-line swiper-wrapper" }, this.generateSecondLevel(options)),
-            ml("div", { "class": "n30g30-second-level-arrow-right is-hidden" })
-          ])
-        ])
-      );
-    } else {
-
-      return ml("div", { "class": "n30g30 " + designClass, "data-dynamic-class": dynamicClass },
-        ml("div", { "class": "n30g30-wrapper" }, [
-          ml("div", { "class": "n30g30-first-level" }, this.generateFirstLevel(options)),
-          ml("div", { "class": "n30g30-second-level" }, this.generateSecondLevel(options))
-        ])
-      );
-    }
   },
 
   generateFirstLevelMenuButton: function (options) {

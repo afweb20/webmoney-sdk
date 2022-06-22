@@ -1,7 +1,4 @@
 import consts from "./consts";
-import Swiper from "swiper";
-import "swiper/css";
-var tinycolor = require("tinycolor2");
 
 export default {
 
@@ -20,75 +17,12 @@ export default {
       this.classList.toggle("is-a");
 
     });
-
-    /*
-    if (view == consts.VIEW_MOBILE) {
-    
-      var rootElement = options.rootElement;
-
-      if (firstLevel.length > 1) {
-
-        var firstLevelButton = rootElement.getElementsByClassName("n30g30-first-level-button")[0];
-
-        firstLevelButton.addEventListener("click", function (event) {
-          this.classList.toggle("is-activated");
-        });
-      }
-
-      var secondLevel = rootElement.getElementsByClassName("n30g30-second-level")[0];
-      var secondLevelArrowLeft = rootElement.getElementsByClassName("n30g30-second-level-arrow-left")[0];
-      var secondLevelArrowRight = rootElement.getElementsByClassName("n30g30-second-level-arrow-right")[0];
-
-      new Swiper(secondLevel, {
-        slidesPerView: "auto",
-        on: {
-          init: function (swiper) {
-            if (swiper.isBeginning && swiper.isEnd){
-              secondLevelArrowLeft.classList.add("is-hidden");
-              secondLevelArrowRight.classList.add("is-hidden");
-            }
-            if (!swiper.isBeginning){
-              secondLevelArrowLeft.classList.remove("is-hidden");
-            }
-            if (!swiper.isEnd){
-              secondLevelArrowRight.classList.remove("is-hidden");
-            }
-          },
-          progress: function (swiper, progress) {
-
-            if (!swiper.isBeginning && !swiper.isEnd){
-
-              secondLevelArrowLeft.classList.remove("is-hidden");
-              secondLevelArrowRight.classList.remove("is-hidden");
-            }
-
-            if (swiper.isBeginning){
-
-              secondLevelArrowLeft.classList.add("is-hidden");
-              secondLevelArrowRight.classList.remove("is-hidden");
-            }
-
-            if (swiper.isEnd){
-
-              secondLevelArrowRight.classList.add("is-hidden");
-              secondLevelArrowLeft.classList.remove("is-hidden");
-            }
-          }
-        }
-      });
-    }
-    */
   },
 
   appendDynamicStyles: function (options) {
     
     var view = options.view;
     var primaryColor = options.primaryColor;
-    var primaryColorLighten = tinycolor(primaryColor).saturate(20).lighten(15).toString();
-    var primaryColorDarken = tinycolor(primaryColor).darken(15).toString();
-
-    // var gradientBg = "linear-gradient(45deg, " + primaryColor + " 0%, " + primaryColorLighten + " 100%)";
-    var gradientBg = "linear-gradient(45deg, " + primaryColorDarken + " 0%, " + primaryColor + " 50%, " + primaryColorLighten + " 100%)";
 
     // var viewPrefix = ".n8g";
     // if (view == consts.VIEW_MOBILE) {

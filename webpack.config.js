@@ -70,12 +70,6 @@ module.exports = (env, argv) => {
         }
       ],
     },
-    resolve: {
-      alias: {
-          "common": path.resolve(__dirname, "./src/common")
-      },
-      extensions: ["*"]
-    },
     plugins: [
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, "./src/test/index.html"),
@@ -99,11 +93,11 @@ module.exports = (env, argv) => {
       open: true,
       compress: true,
       hot: true,
-      port: 3002
+      port: 3001
     };
   } else {
 
-    config.output.publicPath = "https://cdn.web.money/layout/stage/";
+    config.output.publicPath = "https://cdn.web.money/layout/";
   }
 
   return config;
