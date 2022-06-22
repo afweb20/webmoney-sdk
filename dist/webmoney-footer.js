@@ -10659,24 +10659,21 @@ __webpack_require__.r(__webpack_exports__);
     }
 
     var rootElement = options.rootElement;
-    var url = _consts__WEBPACK_IMPORTED_MODULE_1__["default"].MENU_URL_MOBILE[options.lang];
-    (0,_ajax__WEBPACK_IMPORTED_MODULE_0__["default"])("GET", url, function (response) {
-      var menuBlock = rootElement.getElementsByClassName("n21g21-footer-menu")[0];
-      var data = JSON.parse(response).data.replace(/sidebar-submenu/g, "n26g26-sidebar-submenu");
-      menuBlock.innerHTML = data;
-      var menuTitles = menuBlock.querySelectorAll("span");
-
-      for (var i = 0; i < menuTitles.length; i++) {
-        menuTitles[i].addEventListener("click", function () {
-          this.classList.toggle("is-opened");
-          var siblings = (0,_nextUntil__WEBPACK_IMPORTED_MODULE_2__["default"])(this, "span", ".n26g26-sidebar-submenu");
-
-          for (var k = 0; k < siblings.length; k++) {
-            siblings[k].classList.toggle("is-shown");
-          }
-        });
-      }
-    });
+    var url = _consts__WEBPACK_IMPORTED_MODULE_1__["default"].MENU_URL_MOBILE[options.lang]; // ajax("GET", url, function (response) {
+    //   var menuBlock = rootElement.getElementsByClassName("n21g21-footer-menu")[0];
+    //   var data = JSON.parse(response).data.replace(/sidebar-submenu/g, "n26g26-sidebar-submenu");
+    //   menuBlock.innerHTML = data;
+    //   var menuTitles = menuBlock.querySelectorAll("span");
+    //   for (var i = 0; i < menuTitles.length; i++) {
+    //     menuTitles[i].addEventListener("click", function() { 
+    //       this.classList.toggle("is-opened");
+    //       var siblings = nextUntil(this, "span", ".n26g26-sidebar-submenu");
+    //       for (var k = 0; k < siblings.length; k++) {
+    //         siblings[k].classList.toggle("is-shown");
+    //       }
+    //     });
+    //   }
+    // });
   }
 });
 
@@ -11808,7 +11805,7 @@ module.exports = __webpack_require__.p + "be782360e9be361b6cc2.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "8333afe23bfca2901d13"; }
+/******/ 		__webpack_require__.h = function() { return "0b1a7ca5959cafacc114"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
