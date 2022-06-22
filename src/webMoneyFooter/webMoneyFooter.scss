@@ -130,6 +130,11 @@
         padding: 16px 0;
         margin-right: 32px;
       }
+      &:visited,
+      &:active,
+      &:focus{
+        color: #101828;
+      }
       &:hover {
         color: #006cb4;
       }
@@ -265,6 +270,11 @@
     @media (min-width: 768px) {
       display: block;
       padding: 4px 0;
+    }
+    &:visited,
+    &:active,
+    &:focus{
+      color: #707070;
     }
     &:hover {
       color: #006cb4;

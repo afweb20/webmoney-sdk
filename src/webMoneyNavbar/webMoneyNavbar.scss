@@ -246,6 +246,11 @@
     @media (min-width: 768px) {
       padding: 0 12px;
     }
+    &:visited,
+    &:active,
+    &:focus{
+      color: #758793;
+    }
     &:hover,
     &.is-activated {
       color: #101828;

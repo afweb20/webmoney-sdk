@@ -412,6 +412,11 @@
     @media (max-width: 767px) {
       margin-bottom: 8px;
     }
+    &:visited,
+    &:active,
+    &:focus{
+      color: #758793;
+    }
     &:hover{
       border-color: #758793;
     }
@@ -769,6 +774,11 @@
     color: #707070;
     cursor: pointer;
     transition: all 0.3s linear;
+    &:visited,
+    &:active,
+    &:focus{
+      color: #707070;
+    }
     @media (min-width: 768px) {
       display: block;
     }
