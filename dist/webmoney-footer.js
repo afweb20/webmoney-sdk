@@ -10702,23 +10702,18 @@ __webpack_require__.r(__webpack_exports__);
     }
 
     var rootElement = options.rootElement;
-    var url = _consts__WEBPACK_IMPORTED_MODULE_1__["default"].RSS_URL[options.lang];
-    (0,_ajax__WEBPACK_IMPORTED_MODULE_0__["default"])("GET", url, function (response) {
-      var parser = new DOMParser();
-      var xmlDoc = parser.parseFromString(response, "text/xml");
-      var newsItems = xmlDoc.querySelectorAll("item");
-      var newsList = rootElement.getElementsByClassName("n21g21-news-list")[0];
-
-      for (var i = 0; i < 2; i++) {
-        var newsItemTitle = newsItems[i].querySelector("title");
-        var newsItemLink = newsItems[i].querySelector("link");
-        var newsItem = (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
-          "class": "n21g21-news-list-item",
-          "href": newsItemLink.textContent
-        }, newsItemTitle.textContent);
-        newsList.append(newsItem);
-      }
-    });
+    var url = _consts__WEBPACK_IMPORTED_MODULE_1__["default"].RSS_URL[options.lang]; // ajax("GET", url, function (response) {
+    //   var parser = new DOMParser();
+    //   var xmlDoc = parser.parseFromString(response,"text/xml");
+    //   var newsItems = xmlDoc.querySelectorAll("item");
+    //   var newsList = rootElement.getElementsByClassName("n21g21-news-list")[0];
+    //   for (var i = 0; i < 2; i++) {
+    //     var newsItemTitle = newsItems[i].querySelector("title");
+    //     var newsItemLink = newsItems[i].querySelector("link");
+    //     var newsItem = ml("a", { "class": "n21g21-news-list-item", "href": newsItemLink.textContent }, newsItemTitle.textContent);
+    //     newsList.append(newsItem);
+    //   }
+    // });
   }
 });
 
@@ -11805,7 +11800,7 @@ module.exports = __webpack_require__.p + "be782360e9be361b6cc2.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "0b1a7ca5959cafacc114"; }
+/******/ 		__webpack_require__.h = function() { return "339508414b8374054964"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
