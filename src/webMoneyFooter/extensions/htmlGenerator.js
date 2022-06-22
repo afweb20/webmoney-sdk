@@ -301,7 +301,7 @@ export default {
     }
 
     return ml("div", { "class": "n9g-lngs js-lang-selector" },
-      ml("div", { "class": "n9g-lgsl", "rel": "toggle-actions" }, [
+      ml("div", { "class": "n9g-lgsl" }, [
         ml("span", { "class": "n9g-lgc n9g-f" + options.lang }, local(options, "langTitle_" + options.lang)),
         ml("div", { "class": "n9g-lgl" }, htmlSelectLangs)
       ])

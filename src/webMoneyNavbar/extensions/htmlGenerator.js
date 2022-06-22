@@ -128,13 +128,19 @@ export default {
 
   generateSecondLevel: function (options) {
 
-    return ml("div", { "class": "n8g-sdl" }, 
-      ml("div", { "class": "n8g-ctr" }, 
-        ml("div", { "class": "n8g-slm" }, 
-          this.generateSecondLevelMenu(options)
+    var secondLevel = options.secondLevel;
+
+    if (secondLevel.length > 0) {
+
+      return ml("div", { "class": "n8g-sdl" }, 
+        ml("div", { "class": "n8g-ctr" }, 
+          ml("div", { "class": "n8g-slm" }, 
+            this.generateSecondLevelMenu(options)
+          )
         )
-      )
-    );
+      );
+
+    }
 
   },
 
