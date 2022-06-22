@@ -70,6 +70,12 @@ module.exports = (env, argv) => {
         }
       ],
     },
+    resolve: {
+      alias: {
+          "common": path.resolve(__dirname, "./src/common")
+      },
+      extensions: ["*"]
+    },
     plugins: [
       new HtmlWebpackPlugin({
         template: path.resolve(__dirname, "./src/test/index.html"),
