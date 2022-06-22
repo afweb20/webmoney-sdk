@@ -63,8 +63,8 @@ export default {
   generateFirstLevelMenu: function (options) {
 
     return ml("div", { "class": "n7g-lks" }, [
-      ml("div", { "class": "n7g-lki n7g-ind" }, "Частным лицам"),
-      ml("div", { "class": "n7g-lki n7g-biz" }, "Для бизнеса")
+      ml("div", { "class": "n7g-lki n7g-ind" }, local(options, "menuPersonal")),
+      ml("div", { "class": "n7g-lki n7g-biz" }, local(options, "menuBusiness"))
     ]);
 
   },
@@ -249,7 +249,7 @@ export default {
         ml("div", { "class": "n7g-row" }, [
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Пополнить"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuTopUp")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "topUpCash").url }, getLink(options, "topUpCash").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "topUpBankAccount").url }, getLink(options, "topUpBankAccount").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "topUpEMoney").url }, getLink(options, "topUpEMoney").title),
@@ -257,7 +257,7 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "topUpMoneyTransfer").url }, getLink(options, "topUpMoneyTransfer").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Заработать"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuRaiseFunds")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "consultations").url }, getLink(options, "consultations").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "softactivation").url }, getLink(options, "softactivation").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "indx").url }, getLink(options, "indx").title),
@@ -268,7 +268,7 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "debtmart").url }, getLink(options, "debtmart").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Для работы"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuForWork")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "video").url }, getLink(options, "video").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "memo").url }, getLink(options, "memo").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "notes").url }, getLink(options, "notes").title),
@@ -280,7 +280,7 @@ export default {
           ]),
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Вывести"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuWithdraw")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "withdrawCash").url }, getLink(options, "withdrawCash").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "withdrawToBankCard").url }, getLink(options, "withdrawToBankCard").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "withdrawBankAccount").url }, getLink(options, "withdrawBankAccount").title),
@@ -288,7 +288,7 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "withdrawTransfer").url }, getLink(options, "withdrawTransfer").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Операции с WebMoney"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuWebMoneyOperations")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "exchanger").url }, getLink(options, "exchanger").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "wmCheck").url }, getLink(options, "wmCheck").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "protectedTransactions").url }, getLink(options, "protectedTransactions").title),
@@ -306,7 +306,7 @@ export default {
           ]),
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Оплатить"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuPayments")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "mobileCommunications").url }, getLink(options, "mobileCommunications").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "internetAccess").url }, getLink(options, "internetAccess").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "commercialTv").url }, getLink(options, "commercialTv").title),
@@ -319,7 +319,7 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "rebills").url }, getLink(options, "rebills").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Одолжить"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuLoan")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "creditService").url }, getLink(options, "creditService").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "debtService").url }, getLink(options, "debtService").title),
             ]),
@@ -337,20 +337,20 @@ export default {
           ]),
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Сбор средств"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuFundraising")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "charity").url }, getLink(options, "charity").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "crowdfunding").url }, getLink(options, "crowdfunding").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "groupBuying").url }, getLink(options, "groupBuying").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "eventOrganization").url }, getLink(options, "eventOrganization").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Банковские карты"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuBankCards")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "virtualCards").url }, getLink(options, "virtualCards").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "plasticCards").url }, getLink(options, "plasticCards").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "moneySend").url }, getLink(options, "moneySend").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Территория WebMoney"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuWebMoneyTerritory")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "events").url }, getLink(options, "events").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "blog").url }, getLink(options, "blog").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "geo").url }, getLink(options, "geo").title),
@@ -379,14 +379,14 @@ export default {
         ml("div", { "class": "n7g-row" }, [
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Магазинам"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuForMerchantsRetailers")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "merchant").url }, getLink(options, "merchant").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "paymentsToBankAccounts").url }, getLink(options, "paymentsToBankAccounts").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "megastock2").url }, getLink(options, "megastock2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "digiseller2").url }, getLink(options, "digiseller2").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Сайтам"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuForWebsites")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "funding").url }, getLink(options, "funding").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "mestcom2").url }, getLink(options, "mestcom2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "cashbox2").url }, getLink(options, "cashbox2").title),
@@ -396,7 +396,7 @@ export default {
           ]),
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Общие"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuGeneral")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "masspayment").url }, getLink(options, "masspayment").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "exchanger2").url }, getLink(options, "exchanger2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "contracts").url }, getLink(options, "contracts").title),
@@ -407,21 +407,21 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "financialSupport2").url }, getLink(options, "financialSupport2").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Юридическим лицам"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuForDealersPaymentSystems")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "biz").url }, getLink(options, "biz").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "biz2").url }, getLink(options, "biz2").title),
             ]),
           ]),
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Капитал"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuCapital")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "shareholder2").url }, getLink(options, "shareholder2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "indx2").url }, getLink(options, "indx2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "debtMarket").url }, getLink(options, "debtMarket").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "capitaller").url }, getLink(options, "capitaller").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Возможности WebMoney"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuWebMoneyFeatures")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "mentor2").url }, getLink(options, "mentor2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "secureMail").url }, getLink(options, "secureMail").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "files2").url }, getLink(options, "files2").title),
@@ -429,7 +429,7 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "newsline").url }, getLink(options, "newsline").title),
             ]),
             ml("div", { "class": "n7g-clm" }, [
-              ml("div", { "class": "n7g-ttl" }, "Разработчикам"),
+              ml("div", { "class": "n7g-ttl" }, local(options, "menuForDevelopers")),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "programInterfaces").url }, getLink(options, "programInterfaces").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "stylesAndDesign").url }, getLink(options, "stylesAndDesign").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(options, "technicalSupport2").url }, getLink(options, "technicalSupport2").title),
