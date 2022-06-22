@@ -12165,14 +12165,12 @@ __webpack_require__.r(__webpack_exports__);
           loginBlockLine.classList.remove("is-opened");
         }
       }
-    });
-
-    if (options.view == _consts__WEBPACK_IMPORTED_MODULE_1__["default"].VIEW_MOBILE) {
-      var loginBlockClose = rootElement.getElementsByClassName("n23g23-login-block-window-close")[0];
-      loginBlockClose.addEventListener("click", function (event) {
-        this.classList.remove("is-opened");
-      });
-    }
+    }); // if (options.view == consts.VIEW_MOBILE) {
+    //   var loginBlockClose = rootElement.getElementsByClassName("n23g23-login-block-window-close")[0];
+    //   loginBlockClose.addEventListener("click", function (event) {
+    //     this.classList.remove("is-opened");
+    //   });
+    // }
 
     var context = this;
     this.singleSignOn(options, function (singleSignOnResponse) {
@@ -13878,7 +13876,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "d84bb188e84b1558e017"; }
+/******/ 		__webpack_require__.h = function() { return "8333afe23bfca2901d13"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */

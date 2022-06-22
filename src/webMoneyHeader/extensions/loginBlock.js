@@ -30,14 +30,14 @@ export default {
       } 
     });
 
-    if (options.view == consts.VIEW_MOBILE) {
+    // if (options.view == consts.VIEW_MOBILE) {
 
-      var loginBlockClose = rootElement.getElementsByClassName("n23g23-login-block-window-close")[0];
+    //   var loginBlockClose = rootElement.getElementsByClassName("n23g23-login-block-window-close")[0];
 
-      loginBlockClose.addEventListener("click", function (event) {
-        this.classList.remove("is-opened");
-      });
-    }
+    //   loginBlockClose.addEventListener("click", function (event) {
+    //     this.classList.remove("is-opened");
+    //   });
+    // }
 
     var context = this;
 
