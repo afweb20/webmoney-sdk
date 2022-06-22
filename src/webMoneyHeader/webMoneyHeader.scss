@@ -531,13 +531,18 @@
   &-uif{
     width: calc(100% - 48px);
   }
-  &-ufnm{
+  a.n7g-ufnm{
     color: #000;
     font-family: "Manrope";
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     display: block;
+    &:visited,
+    &:active,
+    &:focus{
+      color: #000;
+    }
   }
   &-unt{
     font-family: inherit;
