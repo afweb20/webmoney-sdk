@@ -424,23 +424,31 @@
   }
   &-lgb{
     height: 100%;
+    display: flex;
+    align-items: center;
     &.is-logged-in{
       .n7g-lbs{
         display: none;
+      }
+      .n7g-lgw{
+        display: flex;
       }
     }
     &.is-not-logged-in{
       .n7g-lgw{
         display: none;
       }
+      .n7g-lbs{
+        display: flex;
+      }
     }
   }
   &-lbs{
-    display: flex;
+    display: none;
   }
   &-lgw{
     position: relative;
-    display: flex;
+    display: none;
     height: 100%;
     &.is-opened{
       .n7g-wdw{
