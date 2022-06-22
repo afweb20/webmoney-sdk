@@ -348,7 +348,8 @@
     position: relative;
     z-index: 1;
   }
-  &-sbxi{
+  input.n7g-sbxi{
+    height: auto;
     border: 1px solid #cfd1d4;
     background-color: #fff;
     border-radius: 4px;
@@ -385,7 +386,7 @@
       flex-wrap: wrap;
     }
   }
-  &-sml{
+  a.n7g-sml{
     font-family: "Manrope";
     font-weight: 500;
     font-size: 12px;
@@ -403,7 +404,6 @@
       border-color: #758793;
     }
     &.n7g-sml-a{
-      // background-color: #006cb4;
       border-color: #006cb4;
       color: #006cb4;
     }
@@ -423,6 +423,7 @@
     align-items: center;
   }
   &-lgb{
+    height: 100%;
     &.is-logged-in{
       .n7g-lbs{
         display: none;
@@ -467,11 +468,7 @@
   &-uim{
     width: 32px;
     height: 32px;
-    border-radius: 40px;
-    @media (min-width: 768px) {
-      width: 40px;
-      height: 40px;
-    }
+    border-radius: 32px;
   }
   &-wdw{
     opacity: 0;
@@ -502,9 +499,9 @@
   } 
   &-uifm{
     display: block;
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
   }
   &-uif{
     width: calc(100% - 48px);
@@ -652,7 +649,7 @@
     right: 0;
     padding: 0;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    z-index: 2;
+    z-index: 99;
     background-color: #fff;
     border-top: 1px solid #eeeeee;
     position: absolute;
@@ -742,7 +739,7 @@
       margin-bottom: 4px;
     }
   }
-  &-lnk{
+  a.n7g-lnk{
     display: block;
     text-decoration: none;
     font-family: "Manrope";
