@@ -118,7 +118,7 @@ export default {
           ml("div", {"class": "n7g-awl"}),
           ml("a", {"class": "n7g-itm n7g-itm--login", "href": "#"}, local(options, "buttonLogInAnotherWmid")),
           // ml("a", {"class": "n23g23-login-block-window-settings", "href": "#"}, local(options, "buttonLogInSettings")),
-          options.view == consts.VIEW_MOBILE ? ml("div", {"class": "n23g23-login-block-window-close"}, local(options, "buttonBack")) : ""
+          // options.view == consts.VIEW_MOBILE ? ml("div", {"class": "n23g23-login-block-window-close"}, local(options, "buttonBack")) : ""
         ])
       ])
 

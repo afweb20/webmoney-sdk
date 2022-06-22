@@ -11232,10 +11232,9 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
     }), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-itm n7g-itm--login",
       "href": "#"
-    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "buttonLogInAnotherWmid")), // ml("a", {"class": "n23g23-login-block-window-settings", "href": "#"}, local(options, "buttonLogInSettings")),
-    options.view == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].VIEW_MOBILE ? (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
-      "class": "n23g23-login-block-window-close"
-    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "buttonBack")) : ""])])]);
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "buttonLogInAnotherWmid")) // ml("a", {"class": "n23g23-login-block-window-settings", "href": "#"}, local(options, "buttonLogInSettings")),
+    // options.view == consts.VIEW_MOBILE ? ml("div", {"class": "n23g23-login-block-window-close"}, local(options, "buttonBack")) : ""
+    ])])]);
   },
   generateServicesDropDown: function generateServicesDropDown(options) {
     return (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
@@ -13879,7 +13878,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "41a70ee3884652cdbc2e"; }
+/******/ 		__webpack_require__.h = function() { return "d84bb188e84b1558e017"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
