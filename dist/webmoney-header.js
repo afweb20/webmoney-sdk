@@ -11398,7 +11398,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Пополнить"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuTopUp")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpCash").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "topUpCash").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11417,7 +11417,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Заработать"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuRaiseFunds")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "consultations").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "consultations").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11445,7 +11445,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Для работы"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuForWork")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "video").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "video").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11472,7 +11472,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Вывести"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuWithdraw")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawCash").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "withdrawCash").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11491,7 +11491,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Операции с WebMoney"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuWebMoneyOperations")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "exchanger").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "exchanger").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11531,7 +11531,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Оплатить"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuPayments")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mobileCommunications").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mobileCommunications").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11565,7 +11565,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Одолжить"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuLoan")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "creditService").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "creditService").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11600,7 +11600,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Сбор средств"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuFundraising")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "charity").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "charity").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11616,7 +11616,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Банковские карты"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuBankCards")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "virtualCards").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "virtualCards").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11629,7 +11629,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Территория WebMoney"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuWebMoneyTerritory")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "events").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "events").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11678,7 +11678,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Магазинам"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuForMerchantsRetailers")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "merchant").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "merchant").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11694,7 +11694,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Сайтам"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuForWebsites")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "funding").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "funding").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11715,7 +11715,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Общие"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuGeneral")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "masspayment").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "masspayment").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11743,7 +11743,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Юридическим лицам"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuForDealersPaymentSystems")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "biz").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "biz").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11755,7 +11755,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Капитал"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuCapital")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "shareholder2").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "shareholder2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11771,7 +11771,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Возможности WebMoney"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuWebMoneyFeatures")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mentor2").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "mentor2").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -11790,7 +11790,7 @@ var tinycolor = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2
       "class": "n7g-clm"
     }, [(0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("div", {
       "class": "n7g-ttl"
-    }, "Разработчикам"), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
+    }, (0,_local__WEBPACK_IMPORTED_MODULE_1__["default"])(options, "menuForDevelopers")), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
       "class": "n7g-lnk",
       "href": (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "programInterfaces").url
     }, (0,_linkStorage__WEBPACK_IMPORTED_MODULE_3__["default"])(options, "programInterfaces").title), (0,_ml__WEBPACK_IMPORTED_MODULE_2__["default"])("a", {
@@ -14012,7 +14012,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "06fcf71bfe50e1f6e7df"; }
+/******/ 		__webpack_require__.h = function() { return "43f0fdbfe979592fd45e"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
