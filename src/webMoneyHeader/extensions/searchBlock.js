@@ -131,18 +131,18 @@ export default {
 
     });
 
-    if (options.view == consts.VIEW_MOBILE) {
+    // if (options.view == consts.VIEW_MOBILE) {
 
-      toggleSearchButton.addEventListener("click", function (e) {
-        e.stopPropagation();
-        !this.classList.contains("is-activated") ? this.classList.add("is-activated") : this.classList.remove("is-activated");
-      });
+    //   toggleSearchButton.addEventListener("click", function (e) {
+    //     e.stopPropagation();
+    //     !this.classList.contains("is-activated") ? this.classList.add("is-activated") : this.classList.remove("is-activated");
+    //   });
 
-      closeSearchButton.addEventListener("click", function (e) {
-        e.stopPropagation();
-        toggleSearchButton.classList.remove("is-activated");
-      });
-    }
+    //   closeSearchButton.addEventListener("click", function (e) {
+    //     e.stopPropagation();
+    //     toggleSearchButton.classList.remove("is-activated");
+    //   });
+    // }
   },
 
   refreshSearchMore: function (options, searchMoreList, where) {

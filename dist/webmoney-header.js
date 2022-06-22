@@ -12670,18 +12670,16 @@ __webpack_require__.r(__webpack_exports__);
         document.querySelector(".n7g-srh").classList.remove("is-a");
         document.querySelector(".n7g-srch-dd").classList.remove("is-a");
       }
-    });
-
-    if (options.view == _consts__WEBPACK_IMPORTED_MODULE_0__["default"].VIEW_MOBILE) {
-      toggleSearchButton.addEventListener("click", function (e) {
-        e.stopPropagation();
-        !this.classList.contains("is-activated") ? this.classList.add("is-activated") : this.classList.remove("is-activated");
-      });
-      closeSearchButton.addEventListener("click", function (e) {
-        e.stopPropagation();
-        toggleSearchButton.classList.remove("is-activated");
-      });
-    }
+    }); // if (options.view == consts.VIEW_MOBILE) {
+    //   toggleSearchButton.addEventListener("click", function (e) {
+    //     e.stopPropagation();
+    //     !this.classList.contains("is-activated") ? this.classList.add("is-activated") : this.classList.remove("is-activated");
+    //   });
+    //   closeSearchButton.addEventListener("click", function (e) {
+    //     e.stopPropagation();
+    //     toggleSearchButton.classList.remove("is-activated");
+    //   });
+    // }
   },
   refreshSearchMore: function refreshSearchMore(options, searchMoreList, where) {
     for (var i = 0; i < searchMoreList.length; i++) {
@@ -13876,7 +13874,7 @@ module.exports = __webpack_require__.p + "f00ea7780171df717238.svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	!function() {
-/******/ 		__webpack_require__.h = function() { return "d57b992eb9ac11b95543"; }
+/******/ 		__webpack_require__.h = function() { return "d990cda044fbfb47fddc"; }
 /******/ 	}();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
