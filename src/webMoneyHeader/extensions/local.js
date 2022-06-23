@@ -263,7 +263,14 @@ var localization = {
     "tr": "Geri",
     "vn": "Trở lại"
   },
-  
+  otherWmid: {
+    "ru": "Другие WMID",
+    "en": "Other WMID",
+    "es": "Otros WMID",
+    "pt": "Outros WMID",
+    "tr": "Diğer WMID",
+    "vn": "WMID khác"
+  }
 };
 
 export default function (context, key) {

@@ -130,10 +130,8 @@ export default {
 
       if (loginBlockData.additionalUsers.length > 0) {
 
-        debugger;
-
         var otherWmidTextElement = rootElement.querySelector("[data-n7g-other-wmid-text]");
-        otherWmidTextElement.classList.add("is-visible");
+        otherWmidTextElement.classList.add("n7g-is-visible");
 
         var otherWmidWrapperElement = rootElement.querySelector("[data-n7g-other-wmid-wrapper]");
 
