@@ -29,7 +29,7 @@ export default function WebMoneyFooter() {
       illiciumAsync.init(context);
     } catch (error) {
       
-      console.log(error);
+      console.error(error);
     }
   }
 }

@@ -25,7 +25,7 @@ export default function WebMoneyNavbar() {
       menu.init(context);
     } catch (error) {
       
-      console.log(error);
+      console.error(error);
     }
   }
 }

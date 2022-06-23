@@ -26,7 +26,7 @@ export default function WebMoneyHeader() {
       loginBlock.init(context);
     } catch (error) {
       
-      console.log(error);
+      console.error(error);
     }
   }
 }
