@@ -1,5 +1,4 @@
 import consts from "./consts";
-import local from "./local";
 
 export default {
 

@@ -4,11 +4,13 @@ export default {
 
     var rootElement = context.rootElement;
 
-    var servicesMenu = rootElement.getElementsByClassName("n7g-svs")[0];
-    var servicesMenuDd = rootElement.getElementsByClassName("n7g-svs-dd")[0];
+    var loginBlockToggleMenuElement = rootElement.querySelector("[data-n7g-login-block-toggle-menu]");
 
-    var individiualsMenu = rootElement.getElementsByClassName("n7g-ind")[0];
-    var individiualsMenuDd = rootElement.getElementsByClassName("n7g-ind-dd")[0];
+    var servicesToggleMenuElement = rootElement.querySelector("[data-n7g-services-toggle-menu]");
+    var servicesDropDownMenuElement = rootElement.querySelector("[data-n7g-services-drop-down-menu]");
+
+    var individiualsToggleMenuElement = rootElement.querySelector("[data-n7g-individiuals-toggle-menu]");
+    var individiualsDropDownMenuElement = rootElement.querySelector("[data-n7g-individiuals-drop-down-menu]");
 
     var businessMenu = rootElement.getElementsByClassName("n7g-biz")[0];
     var businessMenuDd = rootElement.getElementsByClassName("n7g-biz-dd")[0];
@@ -26,12 +28,15 @@ export default {
 
     searchButton.addEventListener("click", function (e) {
 
-      individiualsMenu.classList.remove("is-a");
-      individiualsMenuDd.classList.remove("is-a");
+      servicesToggleMenuElement.classList.remove("is-a");
+      servicesDropDownMenuElement.classList.remove("is-a");
+
+      individiualsToggleMenuElement.classList.remove("is-a");
+      individiualsDropDownMenuElement.classList.remove("is-a");
+      
       businessMenu.classList.remove("is-a");
       businessMenuDd.classList.remove("is-a");
-      servicesMenu.classList.remove("is-a");
-      servicesMenuDd.classList.remove("is-a");
+     
 
       this.parentNode.classList.toggle("is-a");
       searchDd.classList.toggle("is-a");
@@ -40,30 +45,29 @@ export default {
 
     burger.addEventListener("click", function (e) {
 
-      individiualsMenu.classList.remove("is-a");
-      individiualsMenuDd.classList.remove("is-a");
+      individiualsToggleMenuElement.classList.remove("is-a");
+      individiualsDropDownMenuElement.classList.remove("is-a");
       businessMenu.classList.remove("is-a");
       businessMenuDd.classList.remove("is-a");
-      servicesMenu.classList.remove("is-a");
-      servicesMenuDd.classList.remove("is-a");
+      servicesToggleMenuElement.classList.remove("is-a");
+      servicesDropDownMenuElement.classList.remove("is-a");
 
       this.classList.toggle("is-a");
       burgerDd.classList.toggle("is-a");
 
       if (this.classList.contains("is-a")) {
-        servicesMenu.classList.add("is-a");
-        servicesMenuDd.classList.add("is-a");
+        servicesToggleMenuElement.classList.add("is-a");
+        servicesDropDownMenuElement.classList.add("is-a");
       }
 
     });
 
-    Array.prototype.forEach.call(pagesMenuItems, function (element, index) {
+    for (var i = 0; i < pagesMenuItems.length; i++) {
 
-      element.addEventListener('click', function () {
+      pagesMenuItems[i].addEventListener('click', function () {
         this.classList.toggle("is-a");
       });
-
-    });
+    }
 
     Array.prototype.forEach.call(servicesMenuItems, function (element, index) {
 
@@ -79,40 +83,57 @@ export default {
 
     });
 
-    servicesMenu.addEventListener("click", function (e) {
+    servicesToggleMenuElement.addEventListener("click", function (e) {
 
-      individiualsMenu.classList.remove("is-a");
-      individiualsMenuDd.classList.remove("is-a");
+      individiualsToggleMenuElement.classList.remove("is-a");
+      individiualsDropDownMenuElement.classList.remove("is-a");
       businessMenu.classList.remove("is-a");
       businessMenuDd.classList.remove("is-a");
 
       this.classList.toggle("is-a");
-      servicesMenuDd.classList.toggle("is-a");
+      servicesDropDownMenuElement.classList.toggle("is-a");
 
     });
 
-    individiualsMenu.addEventListener("click", function (e) {
+    individiualsToggleMenuElement.addEventListener("click", function (e) {
 
-      servicesMenu.classList.remove("is-a");
-      servicesMenuDd.classList.remove("is-a");
+      servicesToggleMenuElement.classList.remove("is-a");
+      servicesDropDownMenuElement.classList.remove("is-a");
+      
       businessMenu.classList.remove("is-a");
       businessMenuDd.classList.remove("is-a");
       
       this.classList.toggle("is-a");
-      individiualsMenuDd.classList.toggle("is-a");
+      individiualsDropDownMenuElement.classList.toggle("is-a");
 
     });
 
     businessMenu.addEventListener("click", function (e) {
 
-      individiualsMenu.classList.remove("is-a");
-      individiualsMenuDd.classList.remove("is-a");
-      servicesMenu.classList.remove("is-a");
-      servicesMenuDd.classList.remove("is-a");
+      individiualsToggleMenuElement.classList.remove("is-a");
+      individiualsDropDownMenuElement.classList.remove("is-a");
+      
+      servicesToggleMenuElement.classList.remove("is-a");
+      servicesDropDownMenuElement.classList.remove("is-a");
       
       this.classList.toggle("is-a");
       businessMenuDd.classList.toggle("is-a");
 
     });
+
+    loginBlockToggleMenuElement.addEventListener("click", function (event) {
+      this.classList.toggle("is-opened");
+    });
+
+    window.addEventListener("click", function(event) { 
+
+      if (!loginBlockToggleMenuElement.contains(event.target)) {
+        loginBlockToggleMenuElement.classList.remove("is-opened");
+      } 
+    });
+  },
+
+  refresh: function (context) {
+
   }
 }

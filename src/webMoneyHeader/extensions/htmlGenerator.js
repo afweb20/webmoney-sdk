@@ -17,7 +17,7 @@ export default {
               ),
               ml("div", { "class": "n7g-mdl" }, [
                 ml("div", { "class": "n7g-dtr" }),
-                ml("div", { "class": "n7g-svs" }),
+                ml("div", { "class": "n7g-svs", "data-n7g-services-toggle-menu": "" }),
                 this.generateFirstLevelMenu(context),
                 this.generateSearchBlock(context)
               ])
@@ -52,7 +52,7 @@ export default {
   generateFirstLevelMenu: function (context) {
 
     return ml("div", { "class": "n7g-lks" }, [
-      ml("div", { "class": "n7g-lki n7g-ind" }, local(context, "menuPersonal")),
+      ml("div", { "class": "n7g-lki n7g-ind", "data-n7g-individiuals-toggle-menu": "" }, local(context, "menuPersonal")),
       ml("div", { "class": "n7g-lki n7g-biz" }, local(context, "menuBusiness"))
     ]);
   },
@@ -109,7 +109,7 @@ export default {
 
   generateServicesDropDown : function (context) {
 
-    return ml("div", { "class": "n7g-slv n7g-svs-dd" }, 
+    return ml("div", { "class": "n7g-slv n7g-svs-dd", "data-n7g-services-drop-down-menu": "" }, 
       ml("div", { "class": "n7g-ctr" }, 
         ml("div", { "class": "n7g-rw" }, [
 
@@ -223,7 +223,7 @@ export default {
 
   generateIndividualsDropDown : function (context) {
 
-    return ml("div", { "class": "n7g-slv n7g-ind-dd" }, 
+    return ml("div", { "class": "n7g-slv n7g-ind-dd", "data-n7g-individiuals-drop-down-menu": "" }, 
       ml("div", { "class": "n7g-ctr" }, 
         ml("div", { "class": "n7g-row" }, [
           ml("div", { "class": "n7g-col" }, [

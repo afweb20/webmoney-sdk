@@ -6,21 +6,6 @@ export default {
 
   init: function (context) {
 
-    var rootElement = context.rootElement;
-    
-    var loginBlockToggleMenuElement = rootElement.querySelector("[data-n7g-login-block-toggle-menu]");
-
-    loginBlockToggleMenuElement.addEventListener("click", function (event) {
-      this.classList.toggle("is-opened");
-    });
-
-    window.addEventListener("click", function(event) { 
-
-      if (!loginBlockToggleMenuElement.contains(event.target)) {
-        loginBlockToggleMenuElement.classList.remove("is-opened");
-      } 
-    });
-
     var loginBlockContext = this;
 
     this.singleSignOn(
