@@ -1,168 +1,74 @@
 import consts from "./consts";
-import cookie from "./cookie";
-import local from "./local";
 
 export default {
 
-  init: function (options) {
+  init: function (context) {
 
-    var rootElement = options.rootElement;
+    var rootElement = context.rootElement;
 
-    var where = cookie.get(consts.SEARCH_COOKIE_NAME);
+    var searchWhere = consts.SEARCH_WHERE_INFO;
 
-    if (where != consts.SEARCH_WHERE_INFO
-      && where != consts.SEARCH_WHERE_GOODS
-      && where != consts.SEARCH_WHERE_INOUT
-      && where != consts.SEARCH_WHERE_WIKI
-      && where != consts.SEARCH_WHERE_ANT) {
+    var searchInputElement = rootElement.querySelector("[data-n7g-search-input]");
+    var searchButtonElement = rootElement.querySelector("[data-n7g-search-button]");
+    var searchWhereElements = rootElement.querySelectorAll("[data-n7g-search-where]");
 
-      where = consts.SEARCH_WHERE_INFO;
-    }
+    this.refreshAllSearchWhere(context, searchWhereElements, searchWhere);
 
-    var placeholder = local(options, "menuFindTitle_" + where);
+    var searchBlockContext = this;
 
-    var searchBoxInput = rootElement.getElementsByClassName("n7g-sbxi")[0];
-    var toggleSearch = rootElement.getElementsByClassName("n22g22-toggle-search")[0];
-    var iconButton = rootElement.getElementsByClassName("n22g22-icon-search")[0];
-    var searchMore = rootElement.getElementsByClassName("n7g-smr")[0];
-    var searchMoreList = searchMore.getElementsByTagName("a");
-    var toggleSearchButton = rootElement.getElementsByClassName("n22g22-toggle-search-button")[0];
-    var closeSearchButton = rootElement.getElementsByClassName("n20g20-close-search-button")[0];
-    
-    searchBoxInput.value = placeholder;
-    searchBoxInput.classList.add("n22g22-watermark");
+    for (var i = 0; i < searchWhereElements.length; i++) {
 
-    this.refreshSearchMore(options, searchMoreList, where);
+      searchWhereElements[i].addEventListener("click", function (event) {
 
-    searchBoxInput.addEventListener("keypress", function (event) {
-
-      if (event.which == 13) {
-
-        event.preventDefault();
-        searchBoxInput.blur();
-        iconButton.click();
-        return false;
-      }
-    });
-
-    searchBoxInput.addEventListener("focus", function (event) {
-
-      if (this.value == placeholder) {
-
-        this.classList.remove("n22g22-watermark");
-        this.value = "";
-      }
-    });
-
-    searchBoxInput.addEventListener("blur", function (event) {
-
-      this.value = this.value.trim();
-
-      if (this.value == "") {
-
-        this.classList.add("n22g22-watermark");
-        this.value = placeholder;
-      }
-
-      // searchMore.style.display = "none";
-    });
-
-    // iconButton.addEventListener("click", function (event) {
-
-    //   var value = searchBoxInput.value;
-
-    //   if (value.length > 0) {
-
-    //     if (value != placeholder) {
-
-    //       context.search(options, where, value);
-
-    //     } else {
-
-    //       searchBoxInput.focus();
-    //     }
-    //   }
-    // });
-
-    searchMore.addEventListener("mouseleave", function (event) {
-
-      // searchMore.style.display = "none";
-    });
-
-    searchMore.addEventListener("click", function (event) {
-
-      // searchMore.style.display = "none";
-      searchBoxInput.focus();
-    });
-
-    // toggleSearch.addEventListener("click", function (event) {
-
-    //   var visible = searchMore.style.display == "block";
-
-    //   searchMore.style.display = (!visible ? "block" : "none");
-    // });
-
-    var context = this;
-
-    for (var i = 0; i < searchMoreList.length; i++) {
-
-      searchMoreList[i].addEventListener("click", function (event) {
-
-        where = this.attributes["where"].value;
-        placeholder = local(options, "menuFindTitle_" + where);
-
-        searchBoxInput.value = placeholder;
-        searchBoxInput.focus();
-        // searchMore.style.display = "none";
-        context.refreshSearchMore(options, searchMoreList, where);
-        cookie.set(consts.SEARCH_COOKIE_NAME, where, consts.SEARCH_COOKIE_EX_DAYS);
+        searchWhere = this.attributes["data-n7g-search-where"].value;
+        searchBlockContext.refreshAllSearchWhere(context, searchWhereElements, searchWhere);
+        searchInputElement.focus();
 
         return false;
       });
     }
 
-    window.addEventListener("click", function(e) { 
+    searchButtonElement.addEventListener("click", function (event) {
 
-      if (!document.querySelector(".n7g-srh").contains(e.target) && !document.querySelector(".n7g-srch-dd").contains(e.target)) {
-        // searchMore.style.display = "none"; 
-        document.querySelector(".n7g-srh").classList.remove("is-a");
-        document.querySelector(".n7g-srch-dd").classList.remove("is-a");
-      } 
+      var value = searchInputElement.value;
 
+      if (value == null || value == "") {
+        searchInputElement.focus();
+        return;
+      }
+
+      searchBlockContext.search(context, searchWhere, value)
     });
 
-    // if (options.view == consts.VIEW_MOBILE) {
+    searchInputElement.addEventListener("keypress", function (event) {
 
-    //   toggleSearchButton.addEventListener("click", function (e) {
-    //     e.stopPropagation();
-    //     !this.classList.contains("is-activated") ? this.classList.add("is-activated") : this.classList.remove("is-activated");
-    //   });
-
-    //   closeSearchButton.addEventListener("click", function (e) {
-    //     e.stopPropagation();
-    //     toggleSearchButton.classList.remove("is-activated");
-    //   });
-    // }
+      if (event.which == 13) {
+        
+        event.preventDefault();
+        searchButtonElement.click();
+        return false;
+      }
+    });
   },
 
-  refreshSearchMore: function (options, searchMoreList, where) {
+  refreshAllSearchWhere: function (context, searchWhereElements, searchWhere) {
 
-    for (var i = 0; i < searchMoreList.length; i++) {
+    for (var i = 0; i < searchWhereElements.length; i++) {
 
-      if (searchMoreList[i].attributes["where"] != null) {
+      if (searchWhereElements[i].attributes["data-n7g-search-where"] != null) {
 
-        if (searchMoreList[i].attributes["where"].value == where) {
+        if (searchWhereElements[i].attributes["data-n7g-search-where"].value == searchWhere) {
 
-          searchMoreList[i].classList.add("n7g-sml-a");
+          searchWhereElements[i].classList.add("n7g-sml-a");
         } else {
 
-          searchMoreList[i].classList.remove("n7g-sml-a");
+          searchWhereElements[i].classList.remove("n7g-sml-a");
         }
       }
     }
   },
 
-  search: function (options, where, value) {
+  search: function (context, where, value) {
   
     value = window.encodeURIComponent(value);
 
@@ -170,15 +76,15 @@ export default {
     var searchInfoUrl = null;
     var searchUrl = null;
 
-    options.domainType == consts.DOMAIN_TYPE_WMTRANSFER
+    context.domainType == consts.DOMAIN_TYPE_WMTRANSFER
     ? searchInfoUrl = "https://passport.wmtransfer.com/asp/CertView.asp"
-    : (options.domainType == consts.DOMAIN_TYPE_RU
+    : (context.domainType == consts.DOMAIN_TYPE_RU
     ? searchInfoUrl = "https://passport.webmoney.ru/asp/CertView.asp"
     : searchInfoUrl = "https://passport.web.money/asp/CertView.asp");
 
-    options.domainType == consts.DOMAIN_TYPE_WMTRANSFER
+    context.domainType == consts.DOMAIN_TYPE_WMTRANSFER
     ? searchUrl = "https://search.wmtransfer.com"
-    : (options.domainType == consts.DOMAIN_TYPE_RU
+    : (context.domainType == consts.DOMAIN_TYPE_RU
     ? searchUrl = "https://search.webmoney.ru"
     : searchUrl = "https://search.web.money");
 
@@ -198,32 +104,32 @@ export default {
 
           url = searchUrl +
             "?q=" + value +
-            "&locale=" + options.lang;
+            "&locale=" + context.lang;
         }
 
         break;
 
       case consts.SEARCH_WHERE_GOODS:
 
-        url = consts.MEGASTOCK_URL +
+        url = "https://megastock.ru/searchres.aspx" +
           "?search=" + value +
-          "&lang=" + options.lang;
+          "&lang=" + context.lang;
         break;
 
       case consts.SEARCH_WHERE_INOUT:
 
         var geoUrl = null;
 
-        options.domainType == consts.DOMAIN_TYPE_WMTRANSFER
+        context.domainType == consts.DOMAIN_TYPE_WMTRANSFER
         ? geoUrl = "https://geo.wmtransfer.com/find/geosearchpage.aspx"
-        : (options.domainType == consts.DOMAIN_TYPE_RU
+        : (context.domainType == consts.DOMAIN_TYPE_RU
         ? geoUrl = "https://geo.webmoney.ru/find/geosearchpage.aspx"
         : geoUrl = "https://geo.web.money/find/geosearchpage.aspx");
 
         url = geoUrl +
           "?name=" + value +
           "&userID=" + "0045DF2D-7BD9-44FB-B5A8-9F1E5C08DC4A" +
-          "&lang=" + options.lang;
+          "&lang=" + context.lang;
         break;
 
       case consts.SEARCH_WHERE_WIKI:
@@ -237,15 +143,15 @@ export default {
 
         var supportUrl = null;
 
-        options.domainType == consts.DOMAIN_TYPE_WMTRANSFER
+        context.domainType == consts.DOMAIN_TYPE_WMTRANSFER
         ? supportUrl = "https://support.wmtransfer.com/asp/index.asp"
-        : (options.domainType == consts.DOMAIN_TYPE_RU
+        : (context.domainType == consts.DOMAIN_TYPE_RU
         ? supportUrl = "https://support.webmoney.ru/asp/index.asp"
         : supportUrl = "https://support.web.money/asp/index.asp");
 
         var url = supportUrl +
           "?ant_question=" + value +
-          "&lang=" + (options.lang == consts.LANG_RU ? "rus" : "eng");
+          "&lang=" + (context.lang == consts.LANG_RU ? "rus" : "eng");
         break;
     }
 

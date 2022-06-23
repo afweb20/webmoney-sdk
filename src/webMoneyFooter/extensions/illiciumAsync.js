@@ -2,24 +2,21 @@
 
 export default {
 
-  init: function (options) {
+  init: function (context) {
 
-    if (options.illiciumPlaceId == null
-      || options.view != consts.VIEW_ADAPTIVE) {
+    if (context.illiciumPlaceId == null) {
       return;
     }
 
     var url = null;
 
-    options.domainType == consts.DOMAIN_TYPE_WMTRANSFER
+    context.domainType == consts.DOMAIN_TYPE_WMTRANSFER
     ? url = "https://illicium.wmtransfer.com"
     : url = "https://illicium.web.money";
 
     url += "/scripts/public/illicium_0_3.js";
 
-    this.loadJs(url, function () {
-
-    });
+    this.loadJs(url, function () {});
   },
 
   loadJs: function (src, onload) {

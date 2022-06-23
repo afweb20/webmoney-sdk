@@ -31,62 +31,6 @@ var localization = {
     "tr": "Site sahiplerince WEBMONEY ve WEBMONEY TRANSFER'in logolarının kullanım hakkı marka sahipleri tarafından yetkilendirilmiştir.",
     "vn": "Việc sử dụng tên thương hiệu WEBMONEY và WEBMONEY TRANSFER trên trang web này đã được sự chấp thuận từ chủ sở hữu."
   },
-  menuFooterCooperation: {
-    "ru": "Сотрудничество",
-    "en": "Cooperation",
-    "es": "Colaboración",
-    "pt": "Colaboração",
-    "tr": "Kullanım koşulları",
-    "vn": "Hợp tác"
-  },
-  menuFooterPressCentre: {
-    "ru": "Пресс-центр",
-    "en": "Press-centre",
-    "es": "Centro de prensa",
-    "pt": "Centro de imprensa",
-    "tr": "Basın merkezi",
-    "vn": "Trung tâm tin tức"
-  },
-  menuFooterContacts: {
-    "ru": "Контакты",
-    "en": "Contacts",
-    "es": "Contáctenos",
-    "pt": "Contatos",
-    "tr": "Kontaklar",
-    "vn": "Liên hệ"
-  },
-  menuFooterSupport: {
-    "ru": "Поддержка",
-    "en": "Support",
-    "es": "Soporte",
-    "pt": "Suporte",
-    "tr": "Destek",
-    "vn": "Hỗ trợ"
-  },
-  menuFooterOurApps: {
-    "ru": "Наши приложения",
-    "en": "Our apps",
-    "es": "Nuestras aplicaciones",
-    "pt": "Nosso aplicativos",
-    "tr": "bizim uygulamamız",
-    "vn": "Ứng dụng của chúng tôi"
-  },
-  textFooterEventsLink: {
-    "ru": "events.webmoney.ru",
-    "en": "events.wmtransfer.com",
-    "es": "events.wmtransfer.com",
-    "pt": "events.wmtransfer.com",
-    "tr": "events.wmtransfer.com",
-    "vn": "events.wmtransfer.com"
-  },
-  allNewsLinkText: {
-    "ru": "Все новости",
-    "en": "All news",
-    "es": "Todas las noticias",
-    "pt": "Todas as notícias",
-    "tr": "Bütün haberler",
-    "vn": "Tất cả tin tức"
-  },
   langTitle_ru: {
     "ru": "Русский",
     "en": "Русский",
@@ -137,7 +81,7 @@ var localization = {
   }
 };
 
-export default function (options, key) {
+export default function (context, key) {
 
-  return localization[key][options.lang];
+  return localization[key][context.lang];
 }

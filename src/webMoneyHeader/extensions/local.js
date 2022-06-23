@@ -1,12 +1,4 @@
 var localization = {
-  menuAboutWebMoney: {
-    "ru": "О системе",
-    "en": "About WebMoney",
-    "es": "Acerca del sistema",
-    "pt": "Sobre o sistema",
-    "tr": "Sistem hakkında",
-    "vn": "About WebMoney"
-  },
   menuPersonal: {
     "ru": "Частным лицам",
     "en": "Personal",
@@ -159,13 +151,13 @@ var localization = {
     "tr": "Kurumsal",
     "vn": "Business"
   },
-  menuHelp: {
-    "ru": "Помощь",
-    "en": "Help",
-    "es": "Ayuda",
-    "pt": "Ajuda",
-    "tr": "Yardım",
-    "vn": "Help"
+  findPlaceholder: {
+    "ru": "Строка для поиска",
+    "en": "Search string",
+    "es": "Cadena de búsqueda",
+    "pt": "Seqüência de pesquisa",
+    "tr": "Arama dizisi",
+    "vn": "Chuỗi tìm kiếm"
   },
   menuFindTitle_info: {
     "ru": "Найти информацию",
@@ -255,18 +247,17 @@ var localization = {
     "tr": "Giriş ayarları",
     "vn": "Thiết lập đăng nhập"
   },
-  buttonBack: {
-    "ru": "Назад",
-    "en": "Back",
-    "es": "Atrás",
-    "pt": "Voltar",
-    "tr": "Geri",
-    "vn": "Trở lại"
-  },
-  
+  otherWmid: {
+    "ru": "Другие WMID",
+    "en": "Other WMID",
+    "es": "Otros WMID",
+    "pt": "Outros WMID",
+    "tr": "Diğer WMID",
+    "vn": "WMID khác"
+  }
 };
 
-export default function (options, key) {
+export default function (context, key) {
 
-  return localization[key][options.lang];
+  return localization[key][context.lang];
 }

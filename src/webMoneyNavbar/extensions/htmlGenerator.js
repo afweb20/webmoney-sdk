@@ -1,123 +1,98 @@
-import consts from "./consts";
-import ml from "./ml";
+import ml from "common/extensions/ml";
 
 export default {
+  generate: function (context) {
 
-  generate: function (options) {
+    var dynCls = "n8g-" + context.dynamicUniqueKey;
 
-    var dynCls = "n8g-" + options.dynamicUniqueKey;
-
-    return ml("div", { "class": "n8g", "data-dynamic-class": dynCls }, [
-      this.generateFirstLevelMenuButton(options),
-      this.generateFirstLevel(options),
-      this.generateSecondLevel(options)
+    return ml("div", { "class": "n8g", "data-n8g-dynamic-class": dynCls }, [
+      this.generateFirstLevel(context),
+      this.generateSecondLevel(context)
     ]);
   },
 
-  generateFirstLevelMenuButton: function (options) {
+  generateFirstLevel: function (context) {
 
-    // var firstLevel = options.firstLevel;
-
-    // if (firstLevel.length <= 1) {
-    //   return "";
-    // }
-    
-    // var title = firstLevel[0].title;
-
-    // return ml("div", { "class": "n30g30-first-level-button " + (firstLevel.length > 1 ? "" : "is-empty") }, [
-    //   options.mobileIconUrl != null ? ml("span", { "class": "n30g30-first-level-item-image-wrapper" },
-    //     ml("img", { "class": "n30g30-first-level-item-image", "src": options.mobileIconUrl })
-    //   ) : "",
-    //   ml("span", { "class": "n30g30-first-level-item-text" }, title)
-    // ]);
-
-  },
-
-  generateFirstLevel: function (options) {
-
-    var desktopIconUrl = options.desktopIconUrl;
-    var title = options.firstLevel[0].title;
+    var iconUrl = context.iconUrl;
+    var title = context.firstLevel.length > 0 ? context.firstLevel[0].title : null;
 
     return ml("div", { "class": "n8g-ftl" }, 
       ml("div", { "class": "n8g-ctr" }, 
         ml("div", { "class": "n8g-mfbx" }, [
-          ml("div", { "class": "n8g-mcn" }, 
-            desktopIconUrl != null
-            ? ml("img", { "class": "n8g-icn", "src": desktopIconUrl })
-            : "",
-          ),
-          ml("div", { "class": "n8g-mbn" }, title),
-          ml("div", { "class": "n8g-mnu" }, this.generateFirstLevelMenu(options))
+          ml("div", { "class": "n8g-mcn" }, iconUrl != null ? ml("img", { "class": "n8g-icn", "src": iconUrl }) : ""),
+          ml("div", { "class": "n8g-mbn", "data-n8g-toggle-menu": "" }, title),
+          ml("div", { "class": "n8g-mnu" }, this.generateFirstLevelMenu(context))
         ]) 
       )
     );
 
   },
 
-  generateFirstLevelMenu: function (options) {
+  generateFirstLevelMenu: function (context) {
 
-    var view = options.view;
-    var firstLevel = options.firstLevel;
+    var firstLevel = context.firstLevel;
 
     var firstLevelMenuArray = [];
 
-    for (var i = 0; i < firstLevel.length; i++) {
+    if (firstLevel == null || firstLevel.length == 0) {
+      return null;
+    }
 
-      if (view == consts.VIEW_MOBILE && i == 0) {
-        continue;
-      }
+    for (var i = 0; i < firstLevel.length; i++) {
 
       var title = firstLevel[i].title;
       var url = firstLevel[i].url;
-      var desktopIconUrl = firstLevel[i].desktopIconUrl;
+      var iconUrl = firstLevel[i].iconUrl;
       var active = firstLevel[i].active;
 
       var dynamicClass = "n8g-mnl";
+
       if (active) {
+
         dynamicClass += " is-activated";
       }
+
       if (i == 0) {
+
         dynamicClass += " is-first-element";
       }
 
       firstLevelMenuArray.push(ml("a", { "href": url, "class": dynamicClass },
         [
-          desktopIconUrl != null
-          ? ml("span", { "class": "n8g-miw" }, ml("img", { "class": "n8g-mim", "src": desktopIconUrl }))
+          iconUrl != null
+          ? ml("span", { "class": "n8g-miw" }, ml("img", { "class": "n8g-mim", "src": iconUrl }))
           : "",
           ml("span", { "class": "n8g-mnt" }, title)
         ]
       ));
-
     }
 
     return firstLevelMenuArray;
   },
 
-  generateSecondLevel: function (options) {
+  generateSecondLevel: function (context) {
 
-    var secondLevel = options.secondLevel;
+    var secondLevel = context.secondLevel;
 
     if (secondLevel.length > 0) {
 
       return ml("div", { "class": "n8g-sdl" }, 
-        ml("div", { "class": "n8g-ctr" }, 
-          ml("div", { "class": "n8g-slm" }, 
-            this.generateSecondLevelMenu(options)
-          )
+        ml("div", { "class": "n8g-ctr" },
+          ml("div", { "class": "n8g-slm" }, this.generateSecondLevelMenu(context))
         )
       );
-
     }
-
   },
 
-  generateSecondLevelMenu: function (options) {
-
-    var view = options.view;
-    var secondLevel = options.secondLevel;
+  generateSecondLevelMenu: function (context) {
+    
+    var secondLevel = context.secondLevel;
 
     var secondLevelMenuArray = [];
+
+    if (secondLevel == null || secondLevel.length == 0) {
+      return secondLevelMenuArray;
+    }
 
     for (var i = 0; i < secondLevel.length; i++) {
 

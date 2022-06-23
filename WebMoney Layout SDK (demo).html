@@ -14,8 +14,10 @@
   <div id="webMoneyFooter"></div>
 
   <script>
+    // Пример подключения компонента header.
     typeof WebMoneyHeader != "undefined" ? new WebMoneyHeader().init({
       rootElement: document.getElementById("webMoneyHeader"), // Контейнер для отображения (обязательный).
+      testMode: false, // Режим тестирования на localhost (необязательный).
       view: "adaptive", // Режим отображения. Возможные значения - "desktop", "mobile", "adaptive" (необязательный).
       lang: "ru", // Язык отображения. Возможные значения - "ru", "en", "es", "pt", "tr", "vn" (обязательный).
       wmid: "123681594869", // WMID пользователя (необязательный). Если пользователь не авторизован, то можно передать пустую строку "" или null.
@@ -24,22 +26,36 @@
       rid: "AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA" // RID сервиса (обязательный).
     }) : console.error("WebMoneyHeader undefined");
 
+    // Пример подключения компонента navbar.
     typeof WebMoneyNavbar != "undefined" ? new WebMoneyNavbar().init({
       rootElement: document.getElementById("webMoneyNavbar"), // Контейнер для отображения (обязательный).
       view: "adaptive", // Режим отображения. Возможные значения - "desktop", "mobile", "adaptive" (необязательный).
-      primaryColor: "#e59733", // Брендовый цвет (необязательный).
-      desktopIconUrl: "https://passport.web.money/img/services/logo-passport.png", // Ссылка на логотип сервиса (необязательный).
-      mobileIconUrl: "https://passport.web.money/img/key_w.png", // Ссылка на мобильный логотип (необязательный).
+      primaryColor: "#637eea", // Брендовый цвет (необязательный).
       firstLevel: [ // Пункты меню первого уровня (обязательный).
-        { title: "Паспорт", url : "#", active: true },
-        { title: "Получение аттестата", url : "#" }
+        {
+          title: "WMF",
+          url : "#",
+          desktopIconUrl: "https://wmf.wmtransfer.com/img/Ethereum.png?v=1", // Ссылка на логотип сервиса (необязательный).
+          mobileIconUrl: "https://wmf.wmtransfer.com/img/Ethereum.png?v=1", // Ссылка на мобильный логотип (необязательный).
+          active: true
+        },
+        {
+          title: "WMX (Bitcoin)",
+          desktopIconUrl: "https://wmf.wmtransfer.com/img/wmx.png", // Ссылка на логотип пункта меню (необязательный).
+          mobileIconUrl: "https://wmf.wmtransfer.com/img/wmx.png", // Ссылка на мобильный логотип пункта меню (необязательный).
+          url : "#"
+        }
       ],
       secondLevel: [ // Пункты меню второго уровня (обязательный).
-        { title: "О сервисе", url : "#", active: true },
-        { title: "Аттестаты", url : "#"}
+        { title: "Главная", url : "#", active: true },
+        { title: "Описание", url : "#"},
+        { title: "Ввод", url : "#"},
+        { title: "Вывод", url : "#"},
+        { title: "История", url : "#"}
       ]
     }) : console.error("WebMoneyNavbar undefined");
 
+    // Пример подключения компонента footer.
     typeof WebMoneyFooter != "undefined" ? new WebMoneyFooter().init({
       rootElement: document.getElementById("webMoneyFooter"), // Контейнер для отображения (обязательный).
       view: "adaptive", // Режим отображения. Возможные значения - "desktop", "mobile", "adaptive" (необязательный).
