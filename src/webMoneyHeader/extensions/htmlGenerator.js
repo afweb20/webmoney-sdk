@@ -66,43 +66,42 @@ export default {
 
   generateLoginBlock: function (context) {
 
-    return ml("div", { "class": "n7g-lgb" }, [
+    return ml("div", { "class": "n7g-lgb", "data-n7g-login-block-wrapper": "" }, [
 
       ml("div", { "class": "n7g-lbs" }, [
-        ml("a", {"class": "n7g-lbi n7g-lbi--reg", "href": "#"}, local(context, "buttonSignUp")),
-        ml("a", {"class": "n7g-lbi n7g-lbi--log", "href": "#"}, local(context, "buttonLogIn"))
+        ml("a", {"class": "n7g-lbi n7g-lbi--reg", "data-n7g-registration-url": "", "href": "#"}, local(context, "buttonSignUp")),
+        ml("a", {"class": "n7g-lbi n7g-lbi--log", "data-n7g-log-in-url": "", "href": "#"}, local(context, "buttonLogIn"))
       ]),
 
-      ml("div", {"class": "n7g-lgw" }, [
+      ml("div", {"class": "n7g-lgw", "data-n7g-login-block-toggle-menu": "" }, [
         ml("div", {"class": "n7g-uln"}, [
-          ml("div", {"class": "n7g-unm"}, ""),
-          ml("img", {"class": "n7g-uim"})
+          ml("div", {"class": "n7g-unm", "data-n7g-preview": ""}, ""),
+          ml("img", {"class": "n7g-uim", "data-n7g-avatar": ""})
         ]),
-        ml("div", {"class": "n23g23-login-block-overlay"}),
         ml("div", {"class": "n7g-wdw"}, [
 
           ml("div", {"class": "n7g-usr"}, 
             ml("div", {"class": "n7g-uwr"},[
-              ml("a", {"class": "n7g-uil", "href": "#"}, 
-                ml("img", {"class": "n7g-uifm"})
+              ml("a", {"class": "n7g-uil", "data-n7g-events-url": "", "href": "#"}, 
+                ml("img", {"class": "n7g-uifm", "data-n7g-avatar": ""})
               ),
               ml("div", {"class": "n7g-uif"}, [
-                ml("a", {"class": "n7g-ufnm", "href": "#"}, 
-                  ml("span", {"class": "n7g-unt"}, "")
+                ml("a", {"class": "n7g-ufnm", "data-n7g-events-url": "", "href": "#"}, 
+                  ml("span", {"class": "n7g-unt", "data-n7g-display-name": ""}, "")
                 )
               ])
             ]) 
           ),
 
-          ml("a", {"class": "n7g-itm n7g-itm--purse", "href": "#"}, local(context, "buttonMyPurse")),
-          ml("a", {"class": "n7g-itm n7g-itm--profile", "href": "#"}, "Деловая сеть"),
-          ml("a", {"class": "n7g-itm n7g-itm--settings", "href": "#"}, local(context, "buttonLogInSettings")),
-          ml("a", {"class": "n7g-itm n7g-itm--logout", "href": "#"}, local(context, "buttonLogOut")),
+          ml("a", {"class": "n7g-itm n7g-itm--purse", "data-n7g-keeper-url": "", "href": "#"}, local(context, "buttonMyPurse")),
+          ml("a", {"class": "n7g-itm n7g-itm--profile", "data-n7g-events-url": "", "href": "#"}, "Деловая сеть"),
+          ml("a", {"class": "n7g-itm n7g-itm--settings", "data-n7g-settings-url": "", "href": "#"}, local(context, "buttonLogInSettings")),
+          ml("a", {"class": "n7g-itm n7g-itm--logout", "data-n7g-log-out-url": "", "href": "#"}, local(context, "buttonLogOut")),
     
-          ml("div", {"class": "n7g-owd"}, "Другие WMID"),
+          ml("div", {"class": "n7g-owd", "data-n7g-other-wmid-text": ""}, "Другие WMID"),
 
-          ml("div", {"class": "n7g-awl"}),
-          ml("a", {"class": "n7g-itm n7g-itm--login", "href": "#"}, local(context, "buttonLogInAnotherWmid"))
+          ml("div", {"class": "n7g-awl", "data-n7g-other-wmid-wrapper": ""}),
+          ml("a", {"class": "n7g-itm n7g-itm--login", "data-n7g-re-login-url": "", "href": "#"}, local(context, "buttonLogInAnotherWmid"))
         ])
       ])
     ]);
@@ -442,5 +441,9 @@ export default {
           ])
         )
       ))
+  },
+
+  getnerateLoginBlockWmidItem: function () {
+    return null;
   }
 }

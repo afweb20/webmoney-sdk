@@ -8,25 +8,16 @@ export default {
 
     var rootElement = context.rootElement;
     
-    var loginBlockLine = rootElement.getElementsByClassName("n7g-lgw")[0];
-    var loginBlockOverlay = rootElement.getElementsByClassName("n23g23-login-block-overlay")[0];
+    var loginBlockToggleMenuElement = rootElement.querySelector("[data-n7g-login-block-toggle-menu]");
 
-    loginBlockLine.addEventListener("click", function (event) {
+    loginBlockToggleMenuElement.addEventListener("click", function (event) {
       this.classList.toggle("is-opened");
     });
 
-    loginBlockOverlay.addEventListener("click", function (event) {
-      this.classList.remove("is-opened");
-    });
+    window.addEventListener("click", function(event) { 
 
-    window.addEventListener("click", function(e) { 
-
-      if (!document.querySelector(".n7g-lgw").contains(e.target)) {
-
-        if (loginBlockLine.classList.contains("is-opened")) {
-          
-          loginBlockLine.classList.remove("is-opened");
-        }
+      if (!loginBlockToggleMenuElement.contains(event.target)) {
+        loginBlockToggleMenuElement.classList.remove("is-opened");
       } 
     });
 
@@ -87,63 +78,79 @@ export default {
     if (!loginBlockData.loggedOn) {
 
       var rootElement = context.rootElement;
-      var loginBlockElement = rootElement.getElementsByClassName("n7g-lgb")[0];
-      var loginBlockButtonsElement = rootElement.getElementsByClassName("n7g-lbs")[0];
-      var loginBlockButtonRegistrationElement = loginBlockButtonsElement.getElementsByClassName("n7g-lbi--reg")[0];
-      var loginBlockButtonLoginElement = loginBlockButtonsElement.getElementsByClassName("n7g-lbi--log")[0];
 
-      loginBlockButtonRegistrationElement.href = loginBlockData.registrationUrl;
-      loginBlockButtonLoginElement.href = loginBlockData.loginUrl;
+      var loginBlockWrapperElement = rootElement.querySelector("[data-n7g-login-block-wrapper]");
+      loginBlockWrapperElement.classList.remove("is-logged-in");
+      loginBlockWrapperElement.classList.add("is-not-logged-in");
 
-      loginBlockElement.classList.remove("is-logged-in");
-      loginBlockElement.classList.add("is-not-logged-in");
+      var registrationUrlElement = rootElement.querySelector("[data-n7g-registration-url]");
+      var loginUrlElement = rootElement.querySelector("[data-n7g-log-in-url]");
+
+      registrationUrlElement.href = loginBlockData.registrationUrl;
+      loginUrlElement.href = loginBlockData.loginUrl;
     } else {
 
       var rootElement = context.rootElement;
-      var loginBlockElement = rootElement.getElementsByClassName("n7g-lgb")[0];
-      var loginBlockWrapperElement = rootElement.getElementsByClassName("n7g-lgw")[0];
-      var loginBlockUserLineImageElement = loginBlockWrapperElement.getElementsByClassName("n7g-uim")[0];
-      var loginBlockUserLineNameElement = loginBlockWrapperElement.getElementsByClassName("n7g-unm")[0];
-      var loginBlockWindowUserImageLinkElement = loginBlockWrapperElement.getElementsByClassName("n7g-uil")[0];
-      var loginBlockWindowUserImageElement = loginBlockWrapperElement.getElementsByClassName("n7g-uifm")[0];
-      var loginBlockWindowUserInfoNameElement = loginBlockWrapperElement.getElementsByClassName("n7g-ufnm")[0];
-      var loginBlockWindowUserInfoNameTextElement = loginBlockWrapperElement.getElementsByClassName("n7g-unt")[0];
-      var loginBlockWindowUserInfoPurseElement = loginBlockWrapperElement.getElementsByClassName("n7g-itm--purse")[0];
-      var loginBlockWindowUserInfoLogoutElement = loginBlockWrapperElement.getElementsByClassName("n7g-itm--logout")[0];
-      var loginBlockWindowAdditionalWmidsList = loginBlockWrapperElement.getElementsByClassName("n7g-awl")[0];
-      var loginBlockWindowLoginButtonElement = loginBlockWrapperElement.getElementsByClassName("n7g-itm--login")[0];
-      var loginBlockWindowSettingsElement = loginBlockWrapperElement.getElementsByClassName("n7g-itm--settings")[0];
 
-      loginBlockUserLineImageElement.src = loginBlockData.smallAvatarUrl;
-      loginBlockUserLineNameElement.innerText = loginBlockData.preview;
+      var loginBlockWrapperElement = rootElement.querySelector("[data-n7g-login-block-wrapper]");
+      loginBlockWrapperElement.classList.remove("is-not-logged-in");
+      loginBlockWrapperElement.classList.add("is-logged-in");
+
+      var previewElement = rootElement.querySelector("[data-n7g-preview]");
+      previewElement.innerText = loginBlockData.preview;
       
-      loginBlockWrapperElement.getElementsByClassName("n7g-itm--profile")[0].href = loginBlockData.eventsUrl;
-      loginBlockWindowUserImageLinkElement.href = loginBlockData.eventsUrl;
-      loginBlockWindowUserImageElement.src = loginBlockData.smallAvatarUrl;
-      loginBlockWindowUserInfoNameElement.href = loginBlockData.eventsUrl;
-      loginBlockWindowUserInfoNameTextElement.innerText = loginBlockData.displayName;
-      loginBlockWindowUserInfoPurseElement.href = loginBlockData.keeperUrl;
-      loginBlockWindowUserInfoLogoutElement.href = loginBlockData.logoutUrl;
-      
-      for (var i = 0; i < loginBlockData.additionalUsers.length; i++) {
+      var avatarElements = rootElement.querySelectorAll("[data-n7g-avatar]");
 
-        var additionalUser = loginBlockData.additionalUsers[i];
+      for (var i = 0; i < avatarElements.length; i++) {
 
-        var getneratedLoginBlockWmidItemElement = htmlGenerator.getnerateLoginBlockWmidItem(
-          context,
-          additionalUser.wmid,
-          additionalUser.displayName,
-          additionalUser.avatarUrl,
-          additionalUser.loginUrl);
-        
-        loginBlockWindowAdditionalWmidsList.appendChild(getneratedLoginBlockWmidItemElement);
+        avatarElements[i].src = loginBlockData.smallAvatarUrl;
       }
-      
-      loginBlockWindowLoginButtonElement.href = loginBlockData.reloginUrl;
-      loginBlockWindowSettingsElement.href = loginBlockData.settingsUrl;
 
-      loginBlockElement.classList.remove("is-not-logged-in");
-      loginBlockElement.classList.add("is-logged-in");
+      var eventsUrlElements = rootElement.querySelectorAll("[data-n7g-events-url]");
+
+      for (var i = 0; i < eventsUrlElements.length; i++) {
+
+        eventsUrlElements[i].href = loginBlockData.eventsUrl;
+      }
+
+      var displayNameElement = rootElement.querySelector("[data-n7g-display-name]");
+      displayNameElement.innerText = loginBlockData.displayName;
+
+      var keeperUrlElement = rootElement.querySelector("[data-n7g-keeper-url]");
+      keeperUrlElement.href = loginBlockData.keeperUrl;
+
+      var settingsUrlElement = rootElement.querySelector("[data-n7g-settings-url]");
+      settingsUrlElement.href = loginBlockData.settingsUrl;
+
+      var logoutUrlElement = rootElement.querySelector("[data-n7g-log-out-url]");
+      logoutUrlElement.href = loginBlockData.logoutUrl;
+      
+      var reloginUrlElement = rootElement.querySelector("[data-n7g-re-login-url]");
+      reloginUrlElement.href = loginBlockData.reloginUrl;
+
+      if (loginBlockData.additionalUsers.length > 0) {
+
+        debugger;
+
+        var otherWmidTextElement = rootElement.querySelector("[data-n7g-other-wmid-text]");
+        otherWmidTextElement.classList.add("is-visible");
+
+        var otherWmidWrapperElement = rootElement.querySelector("[data-n7g-other-wmid-wrapper]");
+
+        for (var i = 0; i < loginBlockData.additionalUsers.length; i++) {
+
+          var additionalUser = loginBlockData.additionalUsers[i];
+
+          var getneratedLoginBlockWmidItemElement = htmlGenerator.getnerateLoginBlockWmidItem(
+            context,
+            additionalUser.wmid,
+            additionalUser.displayName,
+            additionalUser.avatarUrl,
+            additionalUser.loginUrl);
+          
+            otherWmidWrapperElement.appendChild(getneratedLoginBlockWmidItemElement);
+        }
+      }
     }
 
     context.onLoginBlockRendered({

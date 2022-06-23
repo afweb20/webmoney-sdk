@@ -1,10 +1,12 @@
-﻿// TODO: "Другие WMID" выводить, если > 1 wmid найдено.
+﻿// TODO: "Другие WMID" выводить, если > 1 wmid найдено, локализировать
 // TODO: Для descktop добавить max-width = 960px.
 // TODO: Почистить лишние стили, если есть.
 // TODO: ссылку у логотипа тянуть из linkStorage
 // TODO: ссылки и локализацию для сервисов из linkStorage
 // TODO: шрифты по-умолчанию без засечек
-// TODO : Класс is-a с превиксом.
+// TODO: Класс is-a, is-logged-in, is-not-logged-in, is-.... с превиксом.
+// TODO: кнопки вход / регистрация проскакивают до получения wmid, сделать поменьшей высоты до 32px
+// TODO: "Деловая сеть" локализация
 
 import "url-polyfill"; // IE 11 не поддерживает конструктор URL, который использует webpack 5.
 import contextParser from "./extensions/contextParser";
