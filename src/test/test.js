@@ -163,7 +163,6 @@ if (typeof WebMoneyFooter != "undefined") {
     supportedLangs: ["ru", "en", "es", "pt", "tr", "vn"],
     illiciumPlaceId: "59",
     illiciumView: "top",
-    fastMenu: "visible",
     domainType: "1",
     onChangeLang: function (lang) {
 

@@ -17,9 +17,6 @@ export default {
   ILLICIUM_VIEW_TOP: "top",
   ILLICIUM_VIEW_BOTTOM: "bottom",
 
-  FASTMENU_VISIBLE: "visible",
-  FASTMENU_HIDDEN: "hidden",
-
   VKONTAKTE_URL: {
     "ru": "https://vk.com/webmoney.transfer",
     "en": "https://vk.com/webmoney.transfer",
