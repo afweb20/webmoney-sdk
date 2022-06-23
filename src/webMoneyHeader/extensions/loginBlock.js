@@ -1,4 +1,4 @@
-import antiCache from "./antiCache";
+import antiCache from "common/extensions/antiCache";
 import consts from "./consts";
 import htmlGenerator from "./htmlGenerator";
 

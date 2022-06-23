@@ -1,5 +1,5 @@
 import consts from "./consts";
-import cookie from "./cookie";
+import cookie from "common/extensions/cookie";
 import local from "./local";
 
 export default {

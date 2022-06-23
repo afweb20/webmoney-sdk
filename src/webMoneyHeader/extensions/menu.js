@@ -1,5 +1,4 @@
 import consts from "./consts";
-import ajax from "./ajax";
 
 export default {
 

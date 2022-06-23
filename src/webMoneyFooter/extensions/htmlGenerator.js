@@ -1,7 +1,6 @@
 import consts from "./consts";
-import device from "./device";
 import local from "./local";
-import ml from "./ml";
+import ml from "common/extensions/ml";
 import getLink from "/linkStorage";
 
 export default {

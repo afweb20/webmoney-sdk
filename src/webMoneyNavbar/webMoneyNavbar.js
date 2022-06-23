@@ -2,7 +2,7 @@ import "url-polyfill"; // IE 11 не поддерживает конструкт
 import consts from "./extensions/consts";
 import htmlGenerator from "./extensions/htmlGenerator";
 import menu from "./extensions/menu";
-import randomString from "./extensions/randomString";
+import randomString from "common/extensions/randomString";
 
 require("./webMoneyNavbar.scss");
 
