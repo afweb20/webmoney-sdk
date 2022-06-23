@@ -10,7 +10,7 @@ export default {
       ml("div", { "class": "n7g-flv" }, 
         ml("div", { "class": "n7g-ctr" }, [
           ml("div", { "class": "n7g-row n7g-spb" }, [
-            ml("div", { "class": "n7g-bgr" }, ""),
+            ml("div", { "class": "n7g-bgr", "data-n7g-burger-toggle-menu": "" }, ""),
             ml("div", { "class": "n7g-lft" }, [
               ml("div", { "class": "n7g-llg" }, 
                 this.generateLogo(context)
@@ -26,7 +26,7 @@ export default {
               this.generateLoginBlock(context)
             )
           ]),
-          ml("div", { "class": "n7g-bgr-dd" })
+          ml("div", { "class": "n7g-bgr-dd", "data-n7g-burger-drop-down-menu": "" })
         ])
       ),
       this.generateServicesDropDown(context),
@@ -53,13 +53,13 @@ export default {
 
     return ml("div", { "class": "n7g-lks" }, [
       ml("div", { "class": "n7g-lki n7g-ind", "data-n7g-individiuals-toggle-menu": "" }, local(context, "menuPersonal")),
-      ml("div", { "class": "n7g-lki n7g-biz" }, local(context, "menuBusiness"))
+      ml("div", { "class": "n7g-lki n7g-biz", "data-n7g-business-toggle-menu": "" }, local(context, "menuBusiness"))
     ]);
   },
 
   generateSearchBlock: function (context) {
 
-    return ml("div", { "class": "n7g-srh" }, [
+    return ml("div", { "class": "n7g-srh", "data-n7g-search-toggle-menu": "" }, [
       ml("div", { "class": "n7g-sbtn" }),
     ]);
   },
@@ -353,7 +353,7 @@ export default {
   
   generateBusinessDropDown : function (context) {
 
-    return ml("div", { "class": "n7g-slv n7g-biz-dd" }, 
+    return ml("div", { "class": "n7g-slv n7g-biz-dd", "data-n7g-business-drop-down-menu": "" }, 
       ml("div", { "class": "n7g-ctr" }, 
         ml("div", { "class": "n7g-row" }, [
           ml("div", { "class": "n7g-col" }, [
@@ -421,7 +421,7 @@ export default {
 
   generateSearchDropDown : function (context) {
 
-    return ml("div", { "class": "n7g-slv n7g-srch-dd" }, 
+    return ml("div", { "class": "n7g-slv n7g-srch-dd", "data-n7g-search-drop-down-menu": "" }, 
       ml("div", { "class": "n7g-ctr" }, 
         ml("div", { "class": "n7g-row" }, 
           ml("div", { "class": "n7g-col" }, [
