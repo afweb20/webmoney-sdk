@@ -81,7 +81,7 @@ var localization = {
   }
 };
 
-export default function (options, key) {
+export default function (context, key) {
 
-  return localization[key][options.lang];
+  return localization[key][context.lang];
 }

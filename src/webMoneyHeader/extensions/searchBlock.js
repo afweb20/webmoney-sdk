@@ -4,9 +4,9 @@ import local from "./local";
 
 export default {
 
-  init: function (options) {
+  init: function (context) {
 
-    var rootElement = options.rootElement;
+    var rootElement = context.rootElement;
 
     var where = cookie.get(consts.SEARCH_COOKIE_NAME);
 
@@ -19,7 +19,7 @@ export default {
       where = consts.SEARCH_WHERE_INFO;
     }
 
-    var placeholder = local(options, "menuFindTitle_" + where);
+    var placeholder = local(context, "menuFindTitle_" + where);
 
     var searchBoxInput = rootElement.getElementsByClassName("n7g-sbxi")[0];
     var toggleSearch = rootElement.getElementsByClassName("n22g22-toggle-search")[0];
@@ -32,7 +32,7 @@ export default {
     searchBoxInput.value = placeholder;
     searchBoxInput.classList.add("n22g22-watermark");
 
-    this.refreshSearchMore(options, searchMoreList, where);
+    this.refreshSearchMore(context, searchMoreList, where);
 
     searchBoxInput.addEventListener("keypress", function (event) {
 
@@ -75,7 +75,7 @@ export default {
 
     //     if (value != placeholder) {
 
-    //       context.search(options, where, value);
+    //       context.search(context, where, value);
 
     //     } else {
 
@@ -109,12 +109,12 @@ export default {
       searchMoreList[i].addEventListener("click", function (event) {
 
         where = this.attributes["where"].value;
-        placeholder = local(options, "menuFindTitle_" + where);
+        placeholder = local(context, "menuFindTitle_" + where);
 
         searchBoxInput.value = placeholder;
         searchBoxInput.focus();
         // searchMore.style.display = "none";
-        context.refreshSearchMore(options, searchMoreList, where);
+        context.refreshSearchMore(context, searchMoreList, where);
         cookie.set(consts.SEARCH_COOKIE_NAME, where, consts.SEARCH_COOKIE_EX_DAYS);
 
         return false;
@@ -131,7 +131,7 @@ export default {
 
     });
 
-    // if (options.view == consts.VIEW_MOBILE) {
+    // if (context.view == consts.VIEW_MOBILE) {
 
     //   toggleSearchButton.addEventListener("click", function (e) {
     //     e.stopPropagation();
@@ -145,7 +145,7 @@ export default {
     // }
   },
 
-  refreshSearchMore: function (options, searchMoreList, where) {
+  refreshSearchMore: function (context, searchMoreList, where) {
 
     for (var i = 0; i < searchMoreList.length; i++) {
 
@@ -162,7 +162,7 @@ export default {
     }
   },
 
-  search: function (options, where, value) {
+  search: function (context, where, value) {
   
     value = window.encodeURIComponent(value);
 
@@ -170,15 +170,15 @@ export default {
     var searchInfoUrl = null;
     var searchUrl = null;
 
-    options.domainType == consts.DOMAIN_TYPE_WMTRANSFER
+    context.domainType == consts.DOMAIN_TYPE_WMTRANSFER
     ? searchInfoUrl = "https://passport.wmtransfer.com/asp/CertView.asp"
-    : (options.domainType == consts.DOMAIN_TYPE_RU
+    : (context.domainType == consts.DOMAIN_TYPE_RU
     ? searchInfoUrl = "https://passport.webmoney.ru/asp/CertView.asp"
     : searchInfoUrl = "https://passport.web.money/asp/CertView.asp");
 
-    options.domainType == consts.DOMAIN_TYPE_WMTRANSFER
+    context.domainType == consts.DOMAIN_TYPE_WMTRANSFER
     ? searchUrl = "https://search.wmtransfer.com"
-    : (options.domainType == consts.DOMAIN_TYPE_RU
+    : (context.domainType == consts.DOMAIN_TYPE_RU
     ? searchUrl = "https://search.webmoney.ru"
     : searchUrl = "https://search.web.money");
 
@@ -198,7 +198,7 @@ export default {
 
           url = searchUrl +
             "?q=" + value +
-            "&locale=" + options.lang;
+            "&locale=" + context.lang;
         }
 
         break;
@@ -207,23 +207,23 @@ export default {
 
         url = consts.MEGASTOCK_URL +
           "?search=" + value +
-          "&lang=" + options.lang;
+          "&lang=" + context.lang;
         break;
 
       case consts.SEARCH_WHERE_INOUT:
 
         var geoUrl = null;
 
-        options.domainType == consts.DOMAIN_TYPE_WMTRANSFER
+        context.domainType == consts.DOMAIN_TYPE_WMTRANSFER
         ? geoUrl = "https://geo.wmtransfer.com/find/geosearchpage.aspx"
-        : (options.domainType == consts.DOMAIN_TYPE_RU
+        : (context.domainType == consts.DOMAIN_TYPE_RU
         ? geoUrl = "https://geo.webmoney.ru/find/geosearchpage.aspx"
         : geoUrl = "https://geo.web.money/find/geosearchpage.aspx");
 
         url = geoUrl +
           "?name=" + value +
           "&userID=" + "0045DF2D-7BD9-44FB-B5A8-9F1E5C08DC4A" +
-          "&lang=" + options.lang;
+          "&lang=" + context.lang;
         break;
 
       case consts.SEARCH_WHERE_WIKI:
@@ -237,15 +237,15 @@ export default {
 
         var supportUrl = null;
 
-        options.domainType == consts.DOMAIN_TYPE_WMTRANSFER
+        context.domainType == consts.DOMAIN_TYPE_WMTRANSFER
         ? supportUrl = "https://support.wmtransfer.com/asp/index.asp"
-        : (options.domainType == consts.DOMAIN_TYPE_RU
+        : (context.domainType == consts.DOMAIN_TYPE_RU
         ? supportUrl = "https://support.webmoney.ru/asp/index.asp"
         : supportUrl = "https://support.web.money/asp/index.asp");
 
         var url = supportUrl +
           "?ant_question=" + value +
-          "&lang=" + (options.lang == consts.LANG_RU ? "rus" : "eng");
+          "&lang=" + (context.lang == consts.LANG_RU ? "rus" : "eng");
         break;
     }
 

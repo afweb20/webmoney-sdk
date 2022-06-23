@@ -1,8 +1,8 @@
 export default {
 
-  init: function (options) {
+  init: function (context) {
 
-    var rootElement = options.rootElement;
+    var rootElement = context.rootElement;
 
     var servicesMenu = rootElement.getElementsByClassName("n7g-svs")[0];
     var servicesMenuDd = rootElement.getElementsByClassName("n7g-svs-dd")[0];
@@ -79,7 +79,6 @@ export default {
 
     });
 
-
     servicesMenu.addEventListener("click", function (e) {
 
       individiualsMenu.classList.remove("is-a");
@@ -115,6 +114,5 @@ export default {
       businessMenuDd.classList.toggle("is-a");
 
     });
-
   }
 }
