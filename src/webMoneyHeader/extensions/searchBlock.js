@@ -22,12 +22,9 @@ export default {
     var placeholder = local(context, "menuFindTitle_" + where);
 
     var searchBoxInput = rootElement.getElementsByClassName("n7g-sbxi")[0];
-    var toggleSearch = rootElement.getElementsByClassName("n22g22-toggle-search")[0];
     var iconButton = rootElement.getElementsByClassName("n22g22-icon-search")[0];
     var searchMore = rootElement.getElementsByClassName("n7g-smr")[0];
     var searchMoreList = searchMore.getElementsByTagName("a");
-    var toggleSearchButton = rootElement.getElementsByClassName("n22g22-toggle-search-button")[0];
-    var closeSearchButton = rootElement.getElementsByClassName("n20g20-close-search-button")[0];
     
     searchBoxInput.value = placeholder;
     searchBoxInput.classList.add("n22g22-watermark");
@@ -63,44 +60,11 @@ export default {
         this.classList.add("n22g22-watermark");
         this.value = placeholder;
       }
-
-      // searchMore.style.display = "none";
-    });
-
-    // iconButton.addEventListener("click", function (event) {
-
-    //   var value = searchBoxInput.value;
-
-    //   if (value.length > 0) {
-
-    //     if (value != placeholder) {
-
-    //       context.search(context, where, value);
-
-    //     } else {
-
-    //       searchBoxInput.focus();
-    //     }
-    //   }
-    // });
-
-    searchMore.addEventListener("mouseleave", function (event) {
-
-      // searchMore.style.display = "none";
     });
 
     searchMore.addEventListener("click", function (event) {
-
-      // searchMore.style.display = "none";
       searchBoxInput.focus();
     });
-
-    // toggleSearch.addEventListener("click", function (event) {
-
-    //   var visible = searchMore.style.display == "block";
-
-    //   searchMore.style.display = (!visible ? "block" : "none");
-    // });
 
     var context = this;
 
@@ -113,7 +77,6 @@ export default {
 
         searchBoxInput.value = placeholder;
         searchBoxInput.focus();
-        // searchMore.style.display = "none";
         context.refreshSearchMore(context, searchMoreList, where);
         cookie.set(consts.SEARCH_COOKIE_NAME, where, consts.SEARCH_COOKIE_EX_DAYS);
 
@@ -124,25 +87,11 @@ export default {
     window.addEventListener("click", function(e) { 
 
       if (!document.querySelector(".n7g-srh").contains(e.target) && !document.querySelector(".n7g-srch-dd").contains(e.target)) {
-        // searchMore.style.display = "none"; 
         document.querySelector(".n7g-srh").classList.remove("is-a");
         document.querySelector(".n7g-srch-dd").classList.remove("is-a");
       } 
 
     });
-
-    // if (context.view == consts.VIEW_MOBILE) {
-
-    //   toggleSearchButton.addEventListener("click", function (e) {
-    //     e.stopPropagation();
-    //     !this.classList.contains("is-activated") ? this.classList.add("is-activated") : this.classList.remove("is-activated");
-    //   });
-
-    //   closeSearchButton.addEventListener("click", function (e) {
-    //     e.stopPropagation();
-    //     toggleSearchButton.classList.remove("is-activated");
-    //   });
-    // }
   },
 
   refreshSearchMore: function (context, searchMoreList, where) {

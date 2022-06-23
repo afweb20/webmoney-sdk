@@ -73,9 +73,7 @@ export default {
 
     var view = options.view;
 
-    if (view != consts.VIEW_DESKTOP
-      && view != consts.VIEW_MOBILE
-      && view != consts.VIEW_ADAPTIVE) {
+    if (view != consts.VIEW_DESKTOP) {
 
       view = consts.VIEW_ADAPTIVE;
     }

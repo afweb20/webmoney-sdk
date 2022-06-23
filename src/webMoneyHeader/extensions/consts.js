@@ -4,7 +4,6 @@ export default {
   DOMAIN_TYPE_RU: "2",
 
   VIEW_DESKTOP: "desktop",
-  VIEW_MOBILE: "mobile",
   VIEW_ADAPTIVE: "adaptive",
 
   LANG_RU: "ru",
