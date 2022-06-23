@@ -1462,18 +1462,18 @@ var getLangValue = function (items, lang) {
   return "";
 };
 
-export default function (options, key) {
+export default function (context, key) {
 
   var link = {
-    title: "title_" + key + "_" + options.lang,
-    url: "url_" + key + "_" + options.lang
+    title: "title_" + key + "_" + context.lang,
+    url: "url_" + key + "_" + context.lang
   };
 
   var linkStorageItem = linkStorage[key];
 
   if (linkStorageItem != null) {
 
-    var title = getLangValue(linkStorageItem.t, options.lang);
+    var title = getLangValue(linkStorageItem.t, context.lang);
 
     var url = "";
 
@@ -1481,9 +1481,9 @@ export default function (options, key) {
 
       var domainType = null;
 
-      if (containDomainType(linkStorageItem.d, options.domainType)) {
+      if (containDomainType(linkStorageItem.d, context.domainType)) {
 
-        domainType = options.domainType;
+        domainType = context.domainType;
       } else if (containDomainType(linkStorageItem.d, consts.DOMAIN_TYPE_WMTRANSFER)) {
 
         domainType = consts.DOMAIN_TYPE_WMTRANSFER;
@@ -1513,7 +1513,7 @@ export default function (options, key) {
     } else if (linkStorageItem.u != null) {
 
       for (var i = 0; i < linkStorageItem.u.length; i++) {
-        url += getLangValue(linkStorageItem.u[i], options.lang);
+        url += getLangValue(linkStorageItem.u[i], context.lang);
       }
     }
 

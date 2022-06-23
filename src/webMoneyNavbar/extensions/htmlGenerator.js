@@ -1,4 +1,3 @@
-import consts from "./consts";
 import ml from "common/extensions/ml";
 
 export default {

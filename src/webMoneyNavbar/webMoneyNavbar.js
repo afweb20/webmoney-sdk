@@ -1,8 +1,8 @@
 // TODO: класс is-a с префиксом.
 // TODO: боковые стрелочки всегда видны.
-// TODO: getElementsByClassName убрать
 // TODO: все атрибуты начинаются с [data-n8g-...], чтобы не было пересечений.
 // TODO: Для descktop добавить max-width = 960px.
+// TODO: Ссылка на сервисы навесить.
 
 import "url-polyfill"; // IE 11 не поддерживает конструктор URL, который использует webpack 5.
 import contextParser from "./extensions/contextParser";

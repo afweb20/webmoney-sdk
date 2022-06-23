@@ -1,64 +1,37 @@
-import consts from "./consts";
-
 export default {
 
-  init: function (options) {
+  init: function (context) {
 
-    var rootElement = options.rootElement;
-    var view = options.view;
-    var supportedLangs = options.supportedLangs;
+    var rootElement = context.rootElement;
+    var supportedLangs = context.supportedLangs;
 
-    if (view == consts.VIEW_DESKTOP && supportedLangs.length > 1) {
+    if (supportedLangs.length > 1) {
 
-      var n21g21LanguageSelect = rootElement.getElementsByClassName("n9g-lgsl")[0];
+      var langSelectorElement = rootElement.querySelector("[data-n9g-lang-selector]");
 
-      n21g21LanguageSelect.onclick = function () {
+      langSelectorElement.onclick = function () {
 
         this.classList.toggle("is-activated");
       };
 
-      document.onclick = function (e) {
+      window.addEventListener("click", function(event) {
 
-        if (e.target.className.indexOf("n9g-lgsl") == -1) {
-
-          if (!e.target.closest(".n9g-lgsl")) {
-
-            if (n21g21LanguageSelect.className.indexOf("is-activated") > -1) {
-
-              n21g21LanguageSelect.classList.remove("is-activated");
-            }
-          }
+        if (!langSelectorElement.contains(event.target)) {
+          langSelectorElement.classList.remove("is-activated");
         }
+      });
 
-      };
+      var selectLangElements = rootElement.querySelectorAll("[data-n9g-select-lang]");
 
-      var selectLangs = rootElement.getElementsByClassName("n9g-lgi");
+      for (var i = 0; i < selectLangElements.length; i++) {
 
-      for (var i = 0; i < selectLangs.length; i++) {
+        selectLangElements[i].addEventListener("click", function (event) {
+          event.preventDefault();
 
-        selectLangs[i].addEventListener("click", function (e) {
+          var lang = event.target.attributes["data-n9g-select-lang"].value;
 
-          var lang = e.target.attributes["data-lang"].value;
-
-          if (options.lang != lang) {
-
-            options.onChangeLang(lang);
-          }
-        });
-      }
-    } else if (view == consts.VIEW_MOBILE && supportedLangs.length > 1) {
-
-      var selectLangs = rootElement.getElementsByClassName("n9g-lgi");
-
-      for (var i = 0; i < selectLangs.length; i++) {
-
-        selectLangs[i].addEventListener("click", function (e) {
-
-          var lang = e.target.attributes["data-lang"].value;
-
-          if (options.lang != lang) {
-
-            options.onChangeLang(lang);
+          if (context.lang != lang) {
+            context.onChangeLang(lang);
           }
         });
       }

@@ -1,11 +1,8 @@
-import consts from "./consts";
-
 export default {
 
   init: function (options) {
 
     var rootElement = options.rootElement;
-    var url = options.view == consts.VIEW_MOBILE ? consts.MENU_URL_MOBILE[options.lang] : consts.MENU_URL[options.lang];
 
     var servicesMenu = rootElement.getElementsByClassName("n7g-svs")[0];
     var servicesMenuDd = rootElement.getElementsByClassName("n7g-svs-dd")[0];

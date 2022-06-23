@@ -29,9 +29,9 @@ export default {
     
     var rootElement = context.rootElement;
 
-    var toggleMenu = rootElement.querySelector("[data-n8g-toggle-menu]");
+    var toggleMenuElement = rootElement.querySelector("[data-n8g-toggle-menu]");
 
-    toggleMenu.addEventListener("click", function (e) {
+    toggleMenuElement.addEventListener("click", function (e) {
 
       this.classList.toggle("is-a");
     });
