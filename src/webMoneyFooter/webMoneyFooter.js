@@ -1,4 +1,6 @@
-﻿import "url-polyfill"; // IE 11 не поддерживает конструктор URL, который использует webpack 5.
+﻿// TODO : Сжимать и убирать блок рекламы.
+
+import "url-polyfill"; // IE 11 не поддерживает конструктор URL, который использует webpack 5.
 import "element-closest-polyfill"; // IE 11 не поддерживает closest.
 import contextParser from "./extensions/contextParser";
 import htmlGenerator from "./extensions/htmlGenerator";

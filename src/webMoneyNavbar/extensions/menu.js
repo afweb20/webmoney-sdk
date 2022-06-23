@@ -2,28 +2,17 @@ import consts from "./consts";
 
 export default {
 
-  init: function (options) {
+  init: function (context) {
 
-    this.appendDynamicStyles(options);
-
-    var view = options.view;
-    var firstLevel = options.firstLevel;
-    var rootElement = options.rootElement;
-
-    var menuBtn = rootElement.getElementsByClassName("n8g-mbn")[0];
-
-    menuBtn.addEventListener("click", function (e) {
-
-      this.classList.toggle("is-a");
-    });
+    this.appendDynamicStyles(context);
+    this.initToggleMenu(context);
   },
 
-  appendDynamicStyles: function (options) {
+  appendDynamicStyles: function (context) {
     
-    var view = options.view;
-    var primaryColor = options.primaryColor;
+    var primaryColor = context.primaryColor;
 
-    var dynamicPrefix = ".n8g[data-dynamic-class='n8g-" + options.dynamicUniqueKey + "']";
+    var dynamicPrefix = ".n8g[data-n8g-dynamic-class='n8g-" + context.dynamicUniqueKey + "']";
 
     var styleContent = "";
 
@@ -34,5 +23,17 @@ export default {
     var styleElement = document.createElement("style");
     styleElement.innerHTML = styleContent;
     document.head.appendChild(styleElement);
+  },
+
+  initToggleMenu: function (context) {
+    
+    var rootElement = context.rootElement;
+
+    var toggleMenu = rootElement.querySelector("[data-n8g-toggle-menu]");
+
+    toggleMenu.addEventListener("click", function (e) {
+
+      this.classList.toggle("is-a");
+    });
   }
 }

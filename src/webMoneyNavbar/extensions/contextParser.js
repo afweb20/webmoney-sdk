@@ -16,22 +16,17 @@ export default {
     }
 
     var view = this.tryParseView(options);
-    var design = this.tryParseDesign(options);
     var primaryColor = this.tryParsePrimaryColor(options);
-    // todo: убрать поддержку легаси входных параметров
-    var desktopIconUrl = options.desktopIconUrl == "" || options.desktopIconUrl == null ? null : options.desktopIconUrl;
-    var mobileIconUrl = options.mobileIconUrl == "" || options.mobileIconUrl == null ? null : options.mobileIconUrl;
-    var firstLevel = this.tryParseFirstLevel(options, desktopIconUrl, mobileIconUrl);
+    var iconUrl = this.tryParseIconUrl(options);
+    var firstLevel = this.tryParseFirstLevel(options);
     var secondLevel = this.tryParseSecondLevel(options);
     var dynamicUniqueKey = randomString(12);
 
     var context = {
       rootElement: rootElement,
       view: view,
-      design: design,
       primaryColor: primaryColor,
-      desktopIconUrl: desktopIconUrl,
-      mobileIconUrl: mobileIconUrl,
+      iconUrl: iconUrl,
       firstLevel: firstLevel,
       secondLevel: secondLevel,
       dynamicUniqueKey: dynamicUniqueKey
@@ -54,17 +49,21 @@ export default {
     return view;
   },
 
-  tryParseDesign: function (options) {
+  tryParseIconUrl: function (options) {
 
-    var design = options.design;
+    var iconUrl = options.iconUrl == "" || options.iconUrl == null ? null : options.iconUrl;
+    var desktopIconUrl = options.desktopIconUrl == "" || options.desktopIconUrl == null ? null : options.desktopIconUrl;
+    var mobileIconUrl = options.mobileIconUrl == "" || options.mobileIconUrl == null ? null : options.mobileIconUrl;
 
-    if (design != consts.DESIGN_DEFAULT
-      && design != consts.DESIGN_WM_MAIN) {
+    if (iconUrl == null && mobileIconUrl != null) {
 
-      design = consts.DESIGN_DEFAULT;
+      iconUrl = mobileIconUrl;
+    } if (iconUrl == null && desktopIconUrl != null) {
+
+      iconUrl = desktopIconUrl;
     }
 
-    return design;
+    return iconUrl;
   },
 
   tryParsePrimaryColor: function (options) {
@@ -82,7 +81,7 @@ export default {
     return primaryColor;
   },
 
-  tryParseFirstLevel: function (options, desktopIconUrl, mobileIconUrl) {
+  tryParseFirstLevel: function (options) {
 
     var firstLevel = [];
 
@@ -90,21 +89,24 @@ export default {
 
       for (var i = 0; i < options.firstLevel.length; i++) {
 
+        var iconUrl = options.firstLevel[i].iconUrl == "" || options.firstLevel[i].iconUrl == null ? null : options.firstLevel[i].iconUrl;
+        var desktopIconUrl = options.firstLevel[i].desktopIconUrl == "" || options.firstLevel[i].desktopIconUrl == null ? null : options.firstLevel[i].desktopIconUrl;
+        var mobileIconUrl = options.firstLevel[i].mobileIconUrl == "" || options.firstLevel[i].mobileIconUrl == null ? null : options.firstLevel[i].mobileIconUrl;
+
+        if (iconUrl == null && mobileIconUrl != null) {
+
+          iconUrl = mobileIconUrl;
+        } if (iconUrl == null && desktopIconUrl != null) {
+    
+          iconUrl = desktopIconUrl;
+        }
+
         firstLevel.push({
           title: options.firstLevel[i].title != null ? options.firstLevel[i].title : "",
           url: options.firstLevel[i].url != null ? options.firstLevel[i].url : "",
-          desktopIconUrl: options.firstLevel[i].desktopIconUrl != null ? options.firstLevel[i].desktopIconUrl : null,
-          mobileIconUrl: options.firstLevel[i].mobileIconUrl != null ? options.firstLevel[i].mobileIconUrl : null,
+          iconUrl: iconUrl,
           active: options.firstLevel[i].active === true
         });
-
-        // if (i == 0 && desktopIconUrl != null) {
-        //   firstLevel[firstLevel.length - 1].desktopIconUrl = desktopIconUrl;
-        // }
-
-        // if (i == 0 && mobileIconUrl != null) {
-        //   firstLevel[firstLevel.length - 1].mobileIconUrl = mobileIconUrl;
-        // }
       }
     }
 

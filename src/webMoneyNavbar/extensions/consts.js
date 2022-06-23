@@ -3,8 +3,5 @@ export default {
   VIEW_MOBILE: "mobile",
   VIEW_ADAPTIVE: "adaptive",
 
-  PRIMARY_COLOR_DEFAULT: "#006cb4",
-
-  DESIGN_DEFAULT: "default",
-  DESIGN_WM_MAIN: "wm-main"
+  PRIMARY_COLOR_DEFAULT: "#006cb4"
 }

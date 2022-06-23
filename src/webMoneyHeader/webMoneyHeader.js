@@ -1,4 +1,6 @@
-﻿import "url-polyfill"; // IE 11 не поддерживает конструктор URL, который использует webpack 5.
+﻿// TODO: "Другие WMID" выводить, если > 1 wmid найдено.
+
+import "url-polyfill"; // IE 11 не поддерживает конструктор URL, который использует webpack 5.
 import contextParser from "./extensions/contextParser";
 import htmlGenerator from "./extensions/htmlGenerator";
 import loginBlock from "./extensions/loginBlock";
