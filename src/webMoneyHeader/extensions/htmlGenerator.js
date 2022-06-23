@@ -426,16 +426,16 @@ export default {
         ml("div", { "class": "n7g-row" }, 
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-sctr" }, [
-              ml("input", { "class": "n7g-sbxi", "type": "text" }),
-              ml("div", { "class": "n7g-sbxb" }, "Найти"),
+              ml("input", { "class": "n7g-sbxi", "type": "text", "placeholder": local(context, "findPlaceholder"), "data-n7g-search-input": "" }),
+              ml("div", { "class": "n7g-sbxb", "data-n7g-search-button": ""}, "Найти"),
             ]),
             ml("div", { "class": "n7g-chps" }, 
               ml("div", { "class": "n7g-smr" }, [
-                ml("a", { "class": "n7g-sml", "href": "#", "where": consts.SEARCH_WHERE_INFO }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_INFO)),
-                ml("a", { "class": "n7g-sml", "href": "#", "where": consts.SEARCH_WHERE_GOODS }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_GOODS)),
-                ml("a", { "class": "n7g-sml", "href": "#", "where": consts.SEARCH_WHERE_INOUT }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_INOUT)),
-                ml("a", { "class": "n7g-sml", "href": "#", "where": consts.SEARCH_WHERE_WIKI }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_WIKI)),
-                ml("a", { "class": "n7g-sml", "href": "#", "where": consts.SEARCH_WHERE_ANT }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_ANT))
+                ml("a", { "class": "n7g-sml", "href": "#", "data-n7g-search-where": consts.SEARCH_WHERE_INFO }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_INFO)),
+                ml("a", { "class": "n7g-sml", "href": "#", "data-n7g-search-where": consts.SEARCH_WHERE_GOODS }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_GOODS)),
+                ml("a", { "class": "n7g-sml", "href": "#", "data-n7g-search-where": consts.SEARCH_WHERE_INOUT }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_INOUT)),
+                ml("a", { "class": "n7g-sml", "href": "#", "data-n7g-search-where": consts.SEARCH_WHERE_WIKI }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_WIKI)),
+                ml("a", { "class": "n7g-sml", "href": "#", "data-n7g-search-where": consts.SEARCH_WHERE_ANT }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_ANT))
               ])
             )
           ])

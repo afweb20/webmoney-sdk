@@ -17,9 +17,5 @@ export default {
   SEARCH_WHERE_GOODS: "goods",
   SEARCH_WHERE_INOUT: "inout",
   SEARCH_WHERE_WIKI: "wiki",
-  SEARCH_WHERE_ANT: "ant",
-  
-  SEARCH_COOKIE_NAME: "searchOption",
-  SEARCH_COOKIE_EX_DAYS: 365,
-  MEGASTOCK_URL: "https://megastock.ru/searchres.aspx"
+  SEARCH_WHERE_ANT: "ant"
 }

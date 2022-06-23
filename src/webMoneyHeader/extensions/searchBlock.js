@@ -1,5 +1,4 @@
 import consts from "./consts";
-import cookie from "common/extensions/cookie";
 import local from "./local";
 
 export default {
@@ -8,104 +7,63 @@ export default {
 
     var rootElement = context.rootElement;
 
-    var where = cookie.get(consts.SEARCH_COOKIE_NAME);
+    var searchWhere = consts.SEARCH_WHERE_INFO;
 
-    if (where != consts.SEARCH_WHERE_INFO
-      && where != consts.SEARCH_WHERE_GOODS
-      && where != consts.SEARCH_WHERE_INOUT
-      && where != consts.SEARCH_WHERE_WIKI
-      && where != consts.SEARCH_WHERE_ANT) {
+    var searchInputElement = rootElement.querySelector("[data-n7g-search-input]");
+    var searchButtonElement = rootElement.querySelector("[data-n7g-search-button]");
+    var searchWhereElements = rootElement.querySelectorAll("[data-n7g-search-where]");
 
-      where = consts.SEARCH_WHERE_INFO;
-    }
+    this.refreshAllSearchWhere(context, searchWhereElements, searchWhere);
 
-    var placeholder = local(context, "menuFindTitle_" + where);
+    var searchBlockContext = this;
 
-    var searchBoxInput = rootElement.getElementsByClassName("n7g-sbxi")[0];
-    var iconButton = rootElement.getElementsByClassName("n22g22-icon-search")[0];
-    var searchMore = rootElement.getElementsByClassName("n7g-smr")[0];
-    var searchMoreList = searchMore.getElementsByTagName("a");
-    
-    searchBoxInput.value = placeholder;
-    searchBoxInput.classList.add("n22g22-watermark");
+    for (var i = 0; i < searchWhereElements.length; i++) {
 
-    this.refreshSearchMore(context, searchMoreList, where);
+      searchWhereElements[i].addEventListener("click", function (event) {
 
-    searchBoxInput.addEventListener("keypress", function (event) {
-
-      if (event.which == 13) {
-
-        event.preventDefault();
-        searchBoxInput.blur();
-        iconButton.click();
-        return false;
-      }
-    });
-
-    searchBoxInput.addEventListener("focus", function (event) {
-
-      if (this.value == placeholder) {
-
-        this.classList.remove("n22g22-watermark");
-        this.value = "";
-      }
-    });
-
-    searchBoxInput.addEventListener("blur", function (event) {
-
-      this.value = this.value.trim();
-
-      if (this.value == "") {
-
-        this.classList.add("n22g22-watermark");
-        this.value = placeholder;
-      }
-    });
-
-    searchMore.addEventListener("click", function (event) {
-      searchBoxInput.focus();
-    });
-
-    var context = this;
-
-    for (var i = 0; i < searchMoreList.length; i++) {
-
-      searchMoreList[i].addEventListener("click", function (event) {
-
-        where = this.attributes["where"].value;
-        placeholder = local(context, "menuFindTitle_" + where);
-
-        searchBoxInput.value = placeholder;
-        searchBoxInput.focus();
-        context.refreshSearchMore(context, searchMoreList, where);
-        cookie.set(consts.SEARCH_COOKIE_NAME, where, consts.SEARCH_COOKIE_EX_DAYS);
+        searchWhere = this.attributes["data-n7g-search-where"].value;
+        searchBlockContext.refreshAllSearchWhere(context, searchWhereElements, searchWhere);
+        searchInputElement.focus();
 
         return false;
       });
     }
 
-    window.addEventListener("click", function(e) { 
+    searchButtonElement.addEventListener("click", function (event) {
 
-      if (!document.querySelector(".n7g-srh").contains(e.target) && !document.querySelector(".n7g-srch-dd").contains(e.target)) {
-        document.querySelector(".n7g-srh").classList.remove("is-a");
-        document.querySelector(".n7g-srch-dd").classList.remove("is-a");
-      } 
+      var value = searchInputElement.value;
 
+      if (value == null || value == "") {
+        searchInputElement.focus();
+        return;
+      }
+
+      searchBlockContext.search(context, searchWhere, value)
+    });
+
+    searchInputElement.addEventListener("keypress", function (event) {
+
+      if (event.which == 13) {
+        
+        event.preventDefault();
+        searchButtonElement.click();
+        return false;
+      }
     });
   },
 
-  refreshSearchMore: function (context, searchMoreList, where) {
+  refreshAllSearchWhere: function (context, searchWhereElements, searchWhere) {
 
-    for (var i = 0; i < searchMoreList.length; i++) {
+    for (var i = 0; i < searchWhereElements.length; i++) {
 
-      if (searchMoreList[i].attributes["where"] != null) {
+      if (searchWhereElements[i].attributes["data-n7g-search-where"] != null) {
 
-        if (searchMoreList[i].attributes["where"].value == where) {
+        if (searchWhereElements[i].attributes["data-n7g-search-where"].value == searchWhere) {
 
-          searchMoreList[i].classList.add("n7g-sml-a");
+          searchWhereElements[i].classList.add("n7g-sml-a");
         } else {
 
-          searchMoreList[i].classList.remove("n7g-sml-a");
+          searchWhereElements[i].classList.remove("n7g-sml-a");
         }
       }
     }
@@ -154,7 +112,7 @@ export default {
 
       case consts.SEARCH_WHERE_GOODS:
 
-        url = consts.MEGASTOCK_URL +
+        url = "https://megastock.ru/searchres.aspx" +
           "?search=" + value +
           "&lang=" + context.lang;
         break;

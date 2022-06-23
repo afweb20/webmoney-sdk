@@ -151,6 +151,14 @@ var localization = {
     "tr": "Kurumsal",
     "vn": "Business"
   },
+  findPlaceholder: {
+    "ru": "Строка для поиска",
+    "en": "Search string",
+    "es": "Cadena de búsqueda",
+    "pt": "Seqüência de pesquisa",
+    "tr": "Arama dizisi",
+    "vn": "Chuỗi tìm kiếm"
+  },
   menuFindTitle_info: {
     "ru": "Найти информацию",
     "en": "Find information",
