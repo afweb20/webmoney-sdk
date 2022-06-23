@@ -1,7 +1,7 @@
 import consts from "./consts";
 import local from "./local";
 import ml from "common/extensions/ml";
-import getLink from "/linkStorage";
+import getLink from "common/extensions/linkStorage";
 
 export default {
   generate: function (options) {
