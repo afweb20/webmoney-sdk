@@ -1,12 +1,4 @@
 var localization = {
-  menuAboutWebMoney: {
-    "ru": "О системе",
-    "en": "About WebMoney",
-    "es": "Acerca del sistema",
-    "pt": "Sobre o sistema",
-    "tr": "Sistem hakkında",
-    "vn": "About WebMoney"
-  },
   menuPersonal: {
     "ru": "Частным лицам",
     "en": "Personal",
@@ -159,14 +151,6 @@ var localization = {
     "tr": "Kurumsal",
     "vn": "Business"
   },
-  menuHelp: {
-    "ru": "Помощь",
-    "en": "Help",
-    "es": "Ayuda",
-    "pt": "Ajuda",
-    "tr": "Yardım",
-    "vn": "Help"
-  },
   menuFindTitle_info: {
     "ru": "Найти информацию",
     "en": "Find information",
@@ -254,14 +238,6 @@ var localization = {
     "pt": "Configurações de sessão",
     "tr": "Giriş ayarları",
     "vn": "Thiết lập đăng nhập"
-  },
-  buttonBack: {
-    "ru": "Назад",
-    "en": "Back",
-    "es": "Atrás",
-    "pt": "Voltar",
-    "tr": "Geri",
-    "vn": "Trở lại"
   },
   otherWmid: {
     "ru": "Другие WMID",

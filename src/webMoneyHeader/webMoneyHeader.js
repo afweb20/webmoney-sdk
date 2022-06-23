@@ -7,6 +7,7 @@
 // TODO: Класс is-a, is-logged-in, is-not-logged-in, is-.... с превиксом.
 // TODO: кнопки вход / регистрация проскакивают до получения wmid, сделать поменьшей высоты до 32px
 // TODO: "Деловая сеть" локализация
+// TODO: placeholder для поля ввода "Введите текст..." серый
 
 import "url-polyfill"; // IE 11 не поддерживает конструктор URL, который использует webpack 5.
 import contextParser from "./extensions/contextParser";
