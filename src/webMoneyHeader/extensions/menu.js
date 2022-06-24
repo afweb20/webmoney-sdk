@@ -23,6 +23,8 @@ export default {
 
     var loginBlockToggleMenuElement = rootElement.querySelector("[data-n7g-login-block-toggle-menu]");
 
+    var toggleItemElements = rootElement.querySelectorAll("[data-n7g-toggle-item]");
+
     burgerToggleMenuElement.addEventListener("click", function (event) {
 
       burgerToggleMenuElement.classList.toggle(activeClassName);
@@ -129,30 +131,11 @@ export default {
       }
     });
 
-    // var pagesMenuItems = rootElement.getElementsByClassName("n7g-clm");
+    for (var i = 0; i < toggleItemElements.length; i++) {
 
-    // for (var i = 0; i < pagesMenuItems.length; i++) {
-
-    //   pagesMenuItems[i].addEventListener('click', function () {
-    //     this.classList.toggle(activeClassName);
-    //   });
-    // }
-
-    // var servicesMenuItems = rootElement.getElementsByClassName("n7g-mni");
-    // var servicesMenuItemsDd = rootElement.getElementsByClassName("n7g-cti");
-
-    // Array.prototype.forEach.call(servicesMenuItems, function (element, index) {
-
-    //   element.addEventListener('click', function () {
-
-    //     rootElement.querySelector(".n7g-mni.is-a").classList.remove(activeClassName);
-    //     rootElement.querySelector(".n7g-cti.is-a").classList.remove(activeClassName);
-
-    //     this.classList.add(activeClassName);
-    //     servicesMenuItemsDd[index].classList.add(activeClassName);
-
-    //   });
-
-    // });
+      toggleItemElements[i].addEventListener("click", function () {
+        this.classList.toggle(activeClassName);
+      });
+    }
   }
 }
