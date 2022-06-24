@@ -2,7 +2,7 @@
 // TODO : Нет иконки вьетнамского языка.
 // TODO : Класс is-activated с превиксом.
 // TODO : Приложения фильтровать в зависимости от устройства.
-// TODO : Ссылки на соцсети брать из linkStorage (старые удалить из const).
+// TODO : Ссылки на соцсети брать из linkStorage.
 
 import "url-polyfill"; // IE 11 не поддерживает конструктор URL, который использует webpack 5.
 import "element-closest-polyfill"; // IE 11 не поддерживает closest.
