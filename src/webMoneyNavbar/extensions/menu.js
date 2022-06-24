@@ -6,6 +6,7 @@ export default {
 
     this.appendDynamicStyles(context);
     this.initToggleMenu(context);
+    this.initSecondLevel(context);
   },
 
   appendDynamicStyles: function (context) {
@@ -35,5 +36,53 @@ export default {
 
       this.classList.toggle("is-a");
     });
+  },
+
+  initSecondLevel: function (context) {
+
+    var rootElement = context.rootElement;
+
+    var secondLevelElement = rootElement.querySelector("[data-n8g-second-level]");
+
+    //var secondLevelItemElements = rootElement.querySelectorAll("[data-n8g-second-level-item]");
+    var secondLevelItemCloneElements = rootElement.querySelectorAll("[data-n8g-second-level-item-clone]");
+    
+    var cachedClientWidths = [];
+
+    for (var i = 0; i < secondLevelItemCloneElements.length; i++) {
+
+      cachedClientWidths.push(secondLevelItemCloneElements[i].clientWidth);
+    }
+
+    function refreshArrows () {
+
+      var clientWidth = document.documentElement.clientWidth;
+
+      var tempWidth = 32;
+      var isVisibleArrows = false;
+
+      for (var i = 0; i < cachedClientWidths.length; i++) {
+
+        tempWidth += cachedClientWidths[i];
+
+        if (tempWidth > clientWidth) {
+          isVisibleArrows = true;
+        }
+      }
+
+      if (isVisibleArrows && !secondLevelElement.classList.contains("n8g-arrows")) {
+
+        secondLevelElement.classList.add("n8g-arrows");
+      } else if (!isVisibleArrows && secondLevelElement.classList.contains("n8g-arrows")) {
+
+        secondLevelElement.classList.remove("n8g-arrows");
+      }
+    };
+
+    window.addEventListener("resize", function () {
+      refreshArrows();
+    });
+
+    refreshArrows();
   }
 }

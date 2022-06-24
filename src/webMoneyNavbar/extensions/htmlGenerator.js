@@ -76,15 +76,16 @@ export default {
 
     if (secondLevel.length > 0) {
 
-      return ml("div", { "class": "n8g-sdl" }, 
-        ml("div", { "class": "n8g-ctr" },
-          ml("div", { "class": "n8g-slm" }, this.generateSecondLevelMenu(context))
-        )
+      return ml("div", { "class": "n8g-sdl", "data-n8g-second-level": "" }, 
+        ml("div", { "class": "n8g-ctr" }, [
+          ml("div", { "class": "n8g-slm" }, this.generateSecondLevelMenu(context, "data-n8g-second-level-item")),
+          ml("div", { "class": "n8g-slm n8g-clone" }, this.generateSecondLevelMenu(context, "data-n8g-second-level-item-clone")),
+        ])
       );
     }
   },
 
-  generateSecondLevelMenu: function (context) {
+  generateSecondLevelMenu: function (context, attributeName) {
     
     var secondLevel = context.secondLevel;
 
@@ -100,7 +101,10 @@ export default {
       var url = secondLevel[i].url;
       var active = secondLevel[i].active;
 
-      secondLevelMenuArray.push(ml("a", { "href": url, "class": active ? "n8g-sll is-activated"  : "n8g-sll" }, title));
+      var elementAttributes = { "href": url, "class": active ? "n8g-sll is-activated"  : "n8g-sll" };
+      elementAttributes[attributeName] = "" + i;
+
+      secondLevelMenuArray.push(ml("a", elementAttributes, title));
     }
 
     return secondLevelMenuArray;
