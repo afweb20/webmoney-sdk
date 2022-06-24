@@ -164,6 +164,31 @@ export default {
                 ml("a", { "class": "n7g-svi", "href": "#" }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/publicant.svg") }),
                   ml("span", { "class": "n7g-stl" }, "Publicant: опубликовать книгу")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/mestcom.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Mestcom: продажа рекламы")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/cashbox.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Cashbox: оплата за действия")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/debtmart.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "DebtMart: биржа долгов")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/shareholder.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Shareholder: дивиденды, торговля долями")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/loans.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Займы")
                 ])
                 
               ]),
@@ -174,13 +199,43 @@ export default {
               ml("div", { "class": "n7g-cti" }, [
 
                 ml("a", { "class": "n7g-svi", "href": "#" }, [
-                  ml("img", { "class": "n7g-sic", "src": require("../images/services/apple.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Подарочная карта Apple")
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/megastock.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Megastock: каталог продавцов")
                 ]),
 
                 ml("a", { "class": "n7g-svi", "href": "#" }, [
-                  ml("img", { "class": "n7g-sic", "src": require("../images/services/steam.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Steam")
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/tocard.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Перевод на карту")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/bank.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Банковский перевод")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/mobile.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Мобильная связь")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/games.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Онлайн-игры")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/home.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Коммунальные услуги")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/tv.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Коммерческое телевидение")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/apple.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Подарочная карта Apple")
                 ])
                 
               ]),
@@ -208,6 +263,16 @@ export default {
                 ml("a", { "class": "n7g-svi", "href": "#" }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/notes.svg") }),
                   ml("span", { "class": "n7g-stl" }, "Верстка и публикация заметок")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/mail.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Защищенная почта")
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/events.svg") }),
+                  ml("span", { "class": "n7g-stl" }, "Деловая сеть")
                 ])
                 
               ])

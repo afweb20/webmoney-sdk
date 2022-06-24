@@ -1,44 +1,44 @@
 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="80" height="80" rx="24" fill="url(#paint0_linear_860_1238)"/>
-<circle cx="40" cy="40" r="23.6594" fill="url(#paint1_linear_860_1238)" fill-opacity="0.9"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M59.0494 61.0853C53.9868 65.6918 47.2587 68.4999 39.8747 68.4999C38.9719 68.4999 38.079 68.4579 37.1976 68.3758L59.0494 61.0853ZM65.4296 52.6315L27.0238 65.445C17.7395 60.7468 11.3747 51.1167 11.3747 39.9999C11.3747 37.8842 11.6053 35.8222 12.0426 33.8379L12.6342 35.6112L58.5855 20.2802L57.7616 17.8106C64.2345 23.035 68.3747 31.034 68.3747 39.9999C68.3747 44.536 67.315 48.8245 65.4296 52.6315ZM39.8747 11.4999C28.0461 11.4999 17.9005 18.706 13.5886 28.9676L54.2673 15.3957C50.0433 12.9195 45.1248 11.4999 39.8747 11.4999ZM61.424 27.2764L14.5651 42.9102L16.4641 48.6018L63.3229 32.968L61.424 27.2764ZM18.6137 55.1571L65.54 39.5008L67.4389 45.1924L20.5126 60.8487L18.6137 55.1571Z" fill="url(#paint2_linear_860_1238)"/>
-<g filter="url(#filter0_d_860_1238)">
+<rect width="80" height="80" rx="24" fill="url(#paint0_linear_492_2339)"/>
+<circle cx="40.0002" cy="40" r="23.6594" fill="url(#paint1_linear_492_2339)" fill-opacity="0.9"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M59.0494 61.0853C53.9868 65.6918 47.2587 68.4999 39.8747 68.4999C38.9719 68.4999 38.079 68.4579 37.1976 68.3758L59.0494 61.0853ZM65.4296 52.6315L27.0238 65.445C17.7395 60.7468 11.3747 51.1167 11.3747 39.9999C11.3747 37.8842 11.6053 35.8222 12.0426 33.8379L12.6342 35.6112L58.5855 20.2802L57.7616 17.8106C64.2345 23.035 68.3747 31.034 68.3747 39.9999C68.3747 44.536 67.315 48.8245 65.4296 52.6315ZM39.8747 11.4999C28.0461 11.4999 17.9005 18.706 13.5886 28.9676L54.2673 15.3957C50.0433 12.9195 45.1248 11.4999 39.8747 11.4999ZM61.424 27.2764L14.5651 42.9102L16.4641 48.6018L63.3229 32.968L61.424 27.2764ZM18.6137 55.1571L65.54 39.5008L67.4389 45.1924L20.5126 60.8487L18.6137 55.1571Z" fill="url(#paint2_linear_492_2339)"/>
+<g filter="url(#filter0_d_492_2339)">
 <path d="M40.3984 11.1298C24.4443 10.8411 11.2936 23.5346 11.0048 39.4766C10.7161 55.4187 23.4096 68.5814 39.3516 68.8702C55.2937 69.1589 68.4564 56.4654 68.7452 40.5114C69.0339 24.5693 56.3404 11.4066 40.3984 11.1298ZM39.4479 63.4559C26.5138 63.2153 16.1785 52.507 16.4191 39.5729C16.6477 26.6388 27.356 16.3035 40.2901 16.5321C53.2363 16.7727 63.5595 27.481 63.3309 40.4151C63.1023 53.3492 52.382 63.6845 39.4479 63.4559Z" fill="white"/>
 </g>
-<g filter="url(#filter1_d_860_1238)">
+<g filter="url(#filter1_d_492_2339)">
 <path d="M42.207 25.6406H34.5625L32.5312 36.8047L29.4023 37.4609V39.6875L32.125 39.1094L29.7812 52.1016H48.9258L50.3516 47.2461H38.2864L40.0625 37.4219L43.1406 36.7969V34.5781L40.4688 35.1484L42.207 25.6406Z" fill="white"/>
 <path d="M42.207 25.6406H34.5625L32.5312 36.8047L29.4023 37.4609V39.6875L32.125 39.1094L29.7812 52.1016H48.9258L50.3516 47.2461H38.2864L40.0625 37.4219L43.1406 36.7969V34.5781L40.4688 35.1484L42.207 25.6406Z" stroke="black"/>
 </g>
 <defs>
-<filter id="filter0_d_860_1238" x="2" y="4.125" width="75.75" height="75.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter0_d_492_2339" x="2" y="4.125" width="75.75" height="75.75" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="4.5"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_860_1238"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_860_1238" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_492_2339"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_492_2339" result="shape"/>
 </filter>
-<filter id="filter1_d_860_1238" x="20.4023" y="18.6406" width="38.9492" height="44.4609" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<filter id="filter1_d_492_2339" x="20.4023" y="18.6406" width="38.9492" height="44.4609" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
 <feOffset dy="2"/>
 <feGaussianBlur stdDeviation="4.5"/>
 <feComposite in2="hardAlpha" operator="out"/>
 <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_860_1238"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_860_1238" result="shape"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_492_2339"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_492_2339" result="shape"/>
 </filter>
-<linearGradient id="paint0_linear_860_1238" x1="81.25" y1="-3.5" x2="-5.25" y2="81.5" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_492_2339" x1="81.25" y1="-3.5" x2="-5.25" y2="81.5" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1E88E5"/>
 <stop offset="1" stop-color="#1A237E"/>
 </linearGradient>
-<linearGradient id="paint1_linear_860_1238" x1="63.6594" y1="16.3406" x2="16.3406" y2="63.6594" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint1_linear_492_2339" x1="63.6597" y1="16.3406" x2="16.3408" y2="63.6594" gradientUnits="userSpaceOnUse">
 <stop stop-color="#1B338E"/>
 <stop offset="1" stop-color="#1D7AD7"/>
 </linearGradient>
-<linearGradient id="paint2_linear_860_1238" x1="74.6131" y1="20.4269" x2="5.67201" y2="47.8101" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint2_linear_492_2339" x1="74.6131" y1="20.4269" x2="5.67201" y2="47.8101" gradientUnits="userSpaceOnUse">
 <stop stop-color="white" stop-opacity="0.65"/>
 <stop offset="0.0001" stop-color="white" stop-opacity="0.5"/>
 <stop offset="0.505208" stop-color="white" stop-opacity="0"/>
