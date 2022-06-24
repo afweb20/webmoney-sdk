@@ -93,7 +93,10 @@ export default {
         loginBlockToggleMenuElement.classList.remove(activeClassName);
       }
 
-      if (burgerToggleMenuElement.classList.contains(activeClassName)
+      var isBurgerVisible = burgerToggleMenuElement.offsetWidth > 0 || burgerToggleMenuElement.offsetHeight > 0;
+
+      if (isBurgerVisible
+      && burgerToggleMenuElement.classList.contains(activeClassName)
       && !servicesToggleMenuElement.classList.contains(activeClassName)
       && !individiualsToggleMenuElement.classList.contains(activeClassName)
       && !businessToggleMenuElement.classList.contains(activeClassName)
@@ -101,6 +104,28 @@ export default {
 
         servicesToggleMenuElement.classList.add(activeClassName);
         servicesDropDownMenuElement.classList.add(activeClassName);
+      }
+
+      if (!burgerToggleMenuElement.classList.contains(activeClassName)) {
+
+        if (servicesToggleMenuElement.classList.contains(activeClassName)
+        || individiualsToggleMenuElement.classList.contains(activeClassName)
+        || businessToggleMenuElement.classList.contains(activeClassName)
+        || searchToggleMenuElement.classList.contains(activeClassName)) {
+        
+          burgerToggleMenuElement.classList.add(activeClassName);
+          burgerDropDownMenuElement.classList.add(activeClassName);
+        }
+      } else if (burgerToggleMenuElement.classList.contains(activeClassName)) {
+
+        if (!servicesToggleMenuElement.classList.contains(activeClassName)
+        && !individiualsToggleMenuElement.classList.contains(activeClassName)
+        && !businessToggleMenuElement.classList.contains(activeClassName)
+        && !searchToggleMenuElement.classList.contains(activeClassName)) {
+        
+          burgerToggleMenuElement.classList.remove(activeClassName);
+          burgerDropDownMenuElement.classList.remove(activeClassName);
+        }
       }
     });
 
