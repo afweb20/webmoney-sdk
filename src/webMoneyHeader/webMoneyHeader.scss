@@ -370,11 +370,36 @@
     font-size: 14px;
     box-shadow: none;
     outline: none;
+    color: #000;
     &:focus{
       border-color: #bac1c8;
       outline: none;
       border-color: #cfd1d4;
       outline: none;
+    }
+    &::-webkit-input-placeholder {
+      font-family: "Manrope";
+      font-size: 14px;
+      line-height: 16px;
+      padding: 0;
+      margin: 0;
+      color: #b4b4b4;
+    }
+    &:-ms-input-placeholder {
+      font-family: "Manrope";
+      font-size: 14px;
+      line-height: 16px;
+      padding: 0;
+      margin: 0;
+      color: #b4b4b4;
+    }
+    &::placeholder {
+      font-family: "Manrope";
+      font-size: 14px;
+      line-height: 16px;
+      padding: 0;
+      margin: 0;
+      color: #b4b4b4;
     }
   }
   &-sbxb{
