@@ -6,7 +6,7 @@ import getLink from "common/extensions/linkStorage";
 export default {
   generate: function (context) {
 
-    return ml("div", { "class": "n7g" }, [
+    return ml("div", { "class": "n7g n7g-" + context.view }, [
       ml("div", { "class": "n7g-flv" }, 
         ml("div", { "class": "n7g-ctr" }, [
           ml("div", { "class": "n7g-row n7g-spb" }, [

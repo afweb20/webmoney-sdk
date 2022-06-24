@@ -4,7 +4,7 @@ export default {
 
     var rootElement = context.rootElement;
 
-    var activeClassName = "is-a";
+    var activeClassName = "n7g-is-a";
 
     var burgerToggleMenuElement = rootElement.querySelector("[data-n7g-burger-toggle-menu]");
     var burgerDropDownMenuElement = rootElement.querySelector("[data-n7g-burger-drop-down-menu]");
