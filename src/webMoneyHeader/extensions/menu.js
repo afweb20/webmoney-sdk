@@ -4,7 +4,8 @@ export default {
 
     var rootElement = context.rootElement;
 
-    var loginBlockToggleMenuElement = rootElement.querySelector("[data-n7g-login-block-toggle-menu]");
+    var burgerToggleMenuElement = rootElement.querySelector("[data-n7g-burger-toggle-menu]");
+    var burgerDropDownMenuElement = rootElement.querySelector("[data-n7g-burger-drop-down-menu]");
 
     var servicesToggleMenuElement = rootElement.querySelector("[data-n7g-services-toggle-menu]");
     var servicesDropDownMenuElement = rootElement.querySelector("[data-n7g-services-drop-down-menu]");
@@ -12,128 +13,97 @@ export default {
     var individiualsToggleMenuElement = rootElement.querySelector("[data-n7g-individiuals-toggle-menu]");
     var individiualsDropDownMenuElement = rootElement.querySelector("[data-n7g-individiuals-drop-down-menu]");
 
-    var businessMenu = rootElement.getElementsByClassName("n7g-biz")[0];
-    var businessMenuDd = rootElement.getElementsByClassName("n7g-biz-dd")[0];
+    var businessToggleMenuElement = rootElement.querySelector("[data-n7g-business-toggle-menu]");
+    var businessDropDownMenuElement = rootElement.querySelector("[data-n7g-business-drop-down-menu]");
 
-    var burger = rootElement.getElementsByClassName("n7g-bgr")[0];
-    var burgerDd = rootElement.getElementsByClassName("n7g-bgr-dd")[0];
+    var searchToggleMenuElement = rootElement.querySelector("[data-n7g-search-toggle-menu]");
+    var searchDropDownMenuElement = rootElement.querySelector("[data-n7g-search-drop-down-menu]");
 
-    var servicesMenuItems = rootElement.getElementsByClassName("n7g-mni");
-    var servicesMenuItemsDd = rootElement.getElementsByClassName("n7g-cti");
+    var loginBlockToggleMenuElement = rootElement.querySelector("[data-n7g-login-block-toggle-menu]");
 
-    var searchButton = rootElement.getElementsByClassName("n7g-sbtn")[0];
-    var searchDd = rootElement.getElementsByClassName("n7g-srch-dd")[0];
+    var menuElements = [
+      [burgerToggleMenuElement, burgerDropDownMenuElement],
+      [servicesToggleMenuElement, servicesDropDownMenuElement],
+      [individiualsToggleMenuElement, individiualsDropDownMenuElement],
+      [businessToggleMenuElement, businessDropDownMenuElement],
+      [searchToggleMenuElement, searchDropDownMenuElement],
+      [loginBlockToggleMenuElement]
+    ];
 
-    var pagesMenuItems = rootElement.getElementsByClassName("n7g-clm");
+    var commonClickHandler = function (index) {
 
-    searchButton.addEventListener("click", function (e) {
+      for (var i = 0; i < menuElements.length; i++) {
 
-      servicesToggleMenuElement.classList.remove("is-a");
-      servicesDropDownMenuElement.classList.remove("is-a");
+        var methodName = i == index ? "toggle" : "remove";
 
-      individiualsToggleMenuElement.classList.remove("is-a");
-      individiualsDropDownMenuElement.classList.remove("is-a");
-      
-      businessMenu.classList.remove("is-a");
-      businessMenuDd.classList.remove("is-a");
-     
+        for (var j = 0; j < menuElements[i].length; j++) {
 
-      this.parentNode.classList.toggle("is-a");
-      searchDd.classList.toggle("is-a");
+          menuElements[i][j].classList[methodName]("is-a");
+        }
+      }
+    };
 
-    });
+    burgerToggleMenuElement.addEventListener("click", function (event) {
+      commonClickHandler(0);
 
-    burger.addEventListener("click", function (e) {
+      if (burgerToggleMenuElement.classList.contains("is-a")) {
 
-      individiualsToggleMenuElement.classList.remove("is-a");
-      individiualsDropDownMenuElement.classList.remove("is-a");
-      businessMenu.classList.remove("is-a");
-      businessMenuDd.classList.remove("is-a");
-      servicesToggleMenuElement.classList.remove("is-a");
-      servicesDropDownMenuElement.classList.remove("is-a");
-
-      this.classList.toggle("is-a");
-      burgerDd.classList.toggle("is-a");
-
-      if (this.classList.contains("is-a")) {
         servicesToggleMenuElement.classList.add("is-a");
         servicesDropDownMenuElement.classList.add("is-a");
       }
-
     });
 
-    for (var i = 0; i < pagesMenuItems.length; i++) {
-
-      pagesMenuItems[i].addEventListener('click', function () {
-        this.classList.toggle("is-a");
-      });
-    }
-
-    Array.prototype.forEach.call(servicesMenuItems, function (element, index) {
-
-      element.addEventListener('click', function () {
-
-        rootElement.querySelector(".n7g-mni.is-a").classList.remove("is-a");
-        rootElement.querySelector(".n7g-cti.is-a").classList.remove("is-a");
-
-        this.classList.add("is-a");
-        servicesMenuItemsDd[index].classList.add("is-a");
-
-      });
-
+    servicesToggleMenuElement.addEventListener("click", function (event) {
+      commonClickHandler(1);
     });
 
-    servicesToggleMenuElement.addEventListener("click", function (e) {
-
-      individiualsToggleMenuElement.classList.remove("is-a");
-      individiualsDropDownMenuElement.classList.remove("is-a");
-      businessMenu.classList.remove("is-a");
-      businessMenuDd.classList.remove("is-a");
-
-      this.classList.toggle("is-a");
-      servicesDropDownMenuElement.classList.toggle("is-a");
-
+    individiualsToggleMenuElement.addEventListener("click", function (event) {
+      commonClickHandler(2);
     });
 
-    individiualsToggleMenuElement.addEventListener("click", function (e) {
-
-      servicesToggleMenuElement.classList.remove("is-a");
-      servicesDropDownMenuElement.classList.remove("is-a");
-      
-      businessMenu.classList.remove("is-a");
-      businessMenuDd.classList.remove("is-a");
-      
-      this.classList.toggle("is-a");
-      individiualsDropDownMenuElement.classList.toggle("is-a");
-
+    businessToggleMenuElement.addEventListener("click", function (event) {
+      commonClickHandler(3);
     });
 
-    businessMenu.addEventListener("click", function (e) {
-
-      individiualsToggleMenuElement.classList.remove("is-a");
-      individiualsDropDownMenuElement.classList.remove("is-a");
-      
-      servicesToggleMenuElement.classList.remove("is-a");
-      servicesDropDownMenuElement.classList.remove("is-a");
-      
-      this.classList.toggle("is-a");
-      businessMenuDd.classList.toggle("is-a");
-
+    searchToggleMenuElement.addEventListener("click", function (event) {
+      commonClickHandler(4);
     });
 
     loginBlockToggleMenuElement.addEventListener("click", function (event) {
-      this.classList.toggle("is-opened");
+      commonClickHandler(5);
     });
 
-    window.addEventListener("click", function(event) { 
+    // window.addEventListener("click", function(event) { 
 
-      if (!loginBlockToggleMenuElement.contains(event.target)) {
-        loginBlockToggleMenuElement.classList.remove("is-opened");
-      } 
-    });
-  },
+    //   if (!loginBlockToggleMenuElement.contains(event.target)) {
+    //     loginBlockToggleMenuElement.classList.remove("is-a");
+    //   } 
+    // });
 
-  refresh: function (context) {
+    // var pagesMenuItems = rootElement.getElementsByClassName("n7g-clm");
 
+    // for (var i = 0; i < pagesMenuItems.length; i++) {
+
+    //   pagesMenuItems[i].addEventListener('click', function () {
+    //     this.classList.toggle("is-a");
+    //   });
+    // }
+
+    // var servicesMenuItems = rootElement.getElementsByClassName("n7g-mni");
+    // var servicesMenuItemsDd = rootElement.getElementsByClassName("n7g-cti");
+
+    // Array.prototype.forEach.call(servicesMenuItems, function (element, index) {
+
+    //   element.addEventListener('click', function () {
+
+    //     rootElement.querySelector(".n7g-mni.is-a").classList.remove("is-a");
+    //     rootElement.querySelector(".n7g-cti.is-a").classList.remove("is-a");
+
+    //     this.classList.add("is-a");
+    //     servicesMenuItemsDd[index].classList.add("is-a");
+
+    //   });
+
+    // });
   }
 }
