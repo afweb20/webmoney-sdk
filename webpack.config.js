@@ -103,7 +103,7 @@ module.exports = (env, argv) => {
     };
   } else {
 
-    config.output.publicPath = "https://cdn.web.money/layout/";
+    config.output.publicPath = "https://cdn.web.money/layout/stage/";
   }
 
   return config;

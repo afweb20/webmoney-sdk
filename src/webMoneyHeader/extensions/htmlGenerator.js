@@ -184,11 +184,6 @@ export default {
                 ml("a", { "class": "n7g-svi", "href": "#" }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/shareholder.svg") }),
                   ml("span", { "class": "n7g-stl" }, "Shareholder: дивиденды, торговля долями")
-                ]),
-
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
-                  ml("img", { "class": "n7g-sic", "src": require("../images/services/loans.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Займы")
                 ])
                 
               ]),
