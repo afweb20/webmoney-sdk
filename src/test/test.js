@@ -12,9 +12,7 @@ var logoutUrl = "?wmid=&lang=" + lang;
 
 if (typeof WebMoneyHeader != "undefined") {
 
-  var webMoneyHeader = new WebMoneyHeader();
-
-  webMoneyHeader.init({
+  new WebMoneyHeader().init({
     rootElement: document.getElementById("webMoneyHeader"),
     testMode: true,
     view: view,
@@ -33,10 +31,19 @@ if (typeof WebMoneyHeader != "undefined") {
 
 if (typeof WebMoneyNavbar != "undefined") {
 
-  var webMoneyNavbar = new WebMoneyNavbar();
+  new WebMoneyNavbar().init({
+    rootElement: document.getElementById("webMoneyNavbar0"),
+    view: view,
+    iconUrl: "https://telepay.xoney.com/img/mobile/webmoney_oplata_w.svg",
+    firstLevel: [
+      { title: "Каталог услуг", url : "#", active: true },
+      { title: "Мои платежи", url : "#" },
+      { title: "Мои шаблоны", url : "#" }
+    ]
+  });
 
-  webMoneyNavbar.init({
-    rootElement: document.getElementById("webMoneyNavbar"),
+  new WebMoneyNavbar().init({
+    rootElement: document.getElementById("webMoneyNavbar1"),
     view: view,
     primaryColor: "#e59733",
     iconUrl: "https://passport.web.money/img/key_w.png",
@@ -53,7 +60,7 @@ if (typeof WebMoneyNavbar != "undefined") {
     ]
   });
 
-  webMoneyNavbar.init({
+  new WebMoneyNavbar().init({
     rootElement: document.getElementById("webMoneyNavbar2"),
     view: view,
     primaryColor: "#e59733",
@@ -71,7 +78,7 @@ if (typeof WebMoneyNavbar != "undefined") {
     ]
   });
   
-  webMoneyNavbar.init({
+  new WebMoneyNavbar().init({
     rootElement: document.getElementById("webMoneyNavbar3"),
     view: view,
     primaryColor: "#637eea",
@@ -91,7 +98,7 @@ if (typeof WebMoneyNavbar != "undefined") {
     ]
   });
 
-  webMoneyNavbar.init({
+  new WebMoneyNavbar().init({
     rootElement: document.getElementById("webMoneyNavbar4"),
     view: view,
     iconUrl: "https://www.webmoney.ru/img/new/services/logo-info.png",
@@ -114,7 +121,7 @@ if (typeof WebMoneyNavbar != "undefined") {
     ]
   });
 
-  webMoneyNavbar.init({
+  new WebMoneyNavbar().init({
     rootElement: document.getElementById("webMoneyNavbar5"),
     view: view,
     iconUrl: "https://www.webmoney.ru/img/new/services/logo-info.png",
@@ -140,9 +147,7 @@ if (typeof WebMoneyNavbar != "undefined") {
 
 if (typeof WebMoneyFooter != "undefined") {
 
-  var webMoneyFooter = new WebMoneyFooter();
-
-  webMoneyFooter.init({
+  new WebMoneyFooter().init({
     rootElement: document.getElementById("webMoneyFooter"),
     testMode: true,
     view: view,

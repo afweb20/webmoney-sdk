@@ -4,6 +4,8 @@ export default {
 
     var rootElement = context.rootElement;
 
+    var activeClassName = "is-a";
+
     var burgerToggleMenuElement = rootElement.querySelector("[data-n7g-burger-toggle-menu]");
     var burgerDropDownMenuElement = rootElement.querySelector("[data-n7g-burger-drop-down-menu]");
 
@@ -21,89 +23,119 @@ export default {
 
     var loginBlockToggleMenuElement = rootElement.querySelector("[data-n7g-login-block-toggle-menu]");
 
-    var menuElements = [
-      [burgerToggleMenuElement, burgerDropDownMenuElement],
-      [servicesToggleMenuElement, servicesDropDownMenuElement],
-      [individiualsToggleMenuElement, individiualsDropDownMenuElement],
-      [businessToggleMenuElement, businessDropDownMenuElement],
-      [searchToggleMenuElement, searchDropDownMenuElement],
-      [loginBlockToggleMenuElement]
-    ];
-
-    var commonClickHandler = function (index) {
-
-      for (var i = 0; i < menuElements.length; i++) {
-
-        var methodName = i == index ? "toggle" : "remove";
-
-        for (var j = 0; j < menuElements[i].length; j++) {
-
-          menuElements[i][j].classList[methodName]("is-a");
-        }
-      }
-    };
+    var toggleItemElements = rootElement.querySelectorAll("[data-n7g-toggle-item]");
 
     burgerToggleMenuElement.addEventListener("click", function (event) {
-      commonClickHandler(0);
 
-      if (burgerToggleMenuElement.classList.contains("is-a")) {
-
-        servicesToggleMenuElement.classList.add("is-a");
-        servicesDropDownMenuElement.classList.add("is-a");
-      }
+      burgerToggleMenuElement.classList.toggle(activeClassName);
+      burgerDropDownMenuElement.classList.toggle(activeClassName);
     });
 
     servicesToggleMenuElement.addEventListener("click", function (event) {
-      commonClickHandler(1);
+      
+      servicesToggleMenuElement.classList.toggle(activeClassName);
+      servicesDropDownMenuElement.classList.toggle(activeClassName);
     });
 
     individiualsToggleMenuElement.addEventListener("click", function (event) {
-      commonClickHandler(2);
+      
+      individiualsToggleMenuElement.classList.toggle(activeClassName);
+      individiualsDropDownMenuElement.classList.toggle(activeClassName);
     });
 
     businessToggleMenuElement.addEventListener("click", function (event) {
-      commonClickHandler(3);
+      
+      businessToggleMenuElement.classList.toggle(activeClassName);
+      businessDropDownMenuElement.classList.toggle(activeClassName);
     });
 
     searchToggleMenuElement.addEventListener("click", function (event) {
-      commonClickHandler(4);
+      
+      searchToggleMenuElement.classList.toggle(activeClassName);
+      searchDropDownMenuElement.classList.toggle(activeClassName);
     });
 
     loginBlockToggleMenuElement.addEventListener("click", function (event) {
-      commonClickHandler(5);
+      
+      loginBlockToggleMenuElement.classList.toggle(activeClassName);
     });
 
-    // window.addEventListener("click", function(event) { 
+    window.addEventListener("click", function(event) {
 
-    //   if (!loginBlockToggleMenuElement.contains(event.target)) {
-    //     loginBlockToggleMenuElement.classList.remove("is-a");
-    //   } 
-    // });
+      if (!servicesToggleMenuElement.contains(event.target)
+      && !servicesDropDownMenuElement.contains(event.target)) {
+          
+        servicesToggleMenuElement.classList.remove(activeClassName);
+        servicesDropDownMenuElement.classList.remove(activeClassName);
+      }
 
-    // var pagesMenuItems = rootElement.getElementsByClassName("n7g-clm");
+      if (!individiualsToggleMenuElement.contains(event.target)
+      && !individiualsDropDownMenuElement.contains(event.target)) {
 
-    // for (var i = 0; i < pagesMenuItems.length; i++) {
+        individiualsToggleMenuElement.classList.remove(activeClassName);
+        individiualsDropDownMenuElement.classList.remove(activeClassName);
+      }
 
-    //   pagesMenuItems[i].addEventListener('click', function () {
-    //     this.classList.toggle("is-a");
-    //   });
-    // }
+      if (!businessToggleMenuElement.contains(event.target)
+      && !businessDropDownMenuElement.contains(event.target)) {
 
-    // var servicesMenuItems = rootElement.getElementsByClassName("n7g-mni");
-    // var servicesMenuItemsDd = rootElement.getElementsByClassName("n7g-cti");
+        businessToggleMenuElement.classList.remove(activeClassName);
+        businessDropDownMenuElement.classList.remove(activeClassName);
+      }
 
-    // Array.prototype.forEach.call(servicesMenuItems, function (element, index) {
+      if (!searchToggleMenuElement.contains(event.target)
+      && !searchDropDownMenuElement.contains(event.target)) {
 
-    //   element.addEventListener('click', function () {
+        searchToggleMenuElement.classList.remove(activeClassName);
+        searchDropDownMenuElement.classList.remove(activeClassName);
+      }
 
-    //     rootElement.querySelector(".n7g-mni.is-a").classList.remove("is-a");
-    //     rootElement.querySelector(".n7g-cti.is-a").classList.remove("is-a");
+      if (!loginBlockToggleMenuElement.contains(event.target)) {
 
-    //     this.classList.add("is-a");
-    //     servicesMenuItemsDd[index].classList.add("is-a");
+        loginBlockToggleMenuElement.classList.remove(activeClassName);
+      }
 
-    //   });
+      var isBurgerVisible = burgerToggleMenuElement.offsetWidth > 0 || burgerToggleMenuElement.offsetHeight > 0;
 
-    // });
+      if (isBurgerVisible
+      && burgerToggleMenuElement.classList.contains(activeClassName)
+      && !servicesToggleMenuElement.classList.contains(activeClassName)
+      && !individiualsToggleMenuElement.classList.contains(activeClassName)
+      && !businessToggleMenuElement.classList.contains(activeClassName)
+      && !searchToggleMenuElement.classList.contains(activeClassName)) {
+
+        servicesToggleMenuElement.classList.add(activeClassName);
+        servicesDropDownMenuElement.classList.add(activeClassName);
+      }
+
+      if (!burgerToggleMenuElement.classList.contains(activeClassName)) {
+
+        if (servicesToggleMenuElement.classList.contains(activeClassName)
+        || individiualsToggleMenuElement.classList.contains(activeClassName)
+        || businessToggleMenuElement.classList.contains(activeClassName)
+        || searchToggleMenuElement.classList.contains(activeClassName)) {
+        
+          burgerToggleMenuElement.classList.add(activeClassName);
+          burgerDropDownMenuElement.classList.add(activeClassName);
+        }
+      } else if (burgerToggleMenuElement.classList.contains(activeClassName)) {
+
+        if (!servicesToggleMenuElement.classList.contains(activeClassName)
+        && !individiualsToggleMenuElement.classList.contains(activeClassName)
+        && !businessToggleMenuElement.classList.contains(activeClassName)
+        && !searchToggleMenuElement.classList.contains(activeClassName)) {
+        
+          burgerToggleMenuElement.classList.remove(activeClassName);
+          burgerDropDownMenuElement.classList.remove(activeClassName);
+        }
+      }
+    });
+
+    for (var i = 0; i < toggleItemElements.length; i++) {
+
+      toggleItemElements[i].addEventListener("click", function () {
+        this.classList.toggle(activeClassName);
+      });
+    }
   }
 }
