@@ -195,7 +195,7 @@
     margin-right: 8px;
   }
   &-sdl{
-    @media (max-width: 991px) {
+    &.n8g-arrows {
       position: relative;
       &::before,
       &::after{
@@ -227,6 +227,10 @@
     -ms-overflow-style: -ms-autohiding-scrollbar;
     &::-webkit-scrollbar{
       display: none;
+    }
+    &.n8g-clone {
+      visibility: hidden;
+      height: 0;
     }
   }
   a.n8g-sll{
