@@ -37,15 +37,8 @@ export default {
   },
 
   generateLogo: function (context) {
-    var logoUrl = null;
 
-    context.domainType == consts.DOMAIN_TYPE_WMTRANSFER
-    ? logoUrl = "https://www.wmtransfer.com"
-    : (context.domainType == consts.DOMAIN_TYPE_RU
-    ? logoUrl = "https://www.webmoney.ru"
-    : logoUrl = "https://www.web.money");
-
-    return ml("a", { "href": logoUrl, "class": "n7g-lgo" },
+    return ml("a", { "href": getLink(context, "logoLink").url, "class": "n7g-lgo" },
       ml("img", { "class": "n7g-lgi", "src": require("../images/wm-logo.svg") }));
   },
 
