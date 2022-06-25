@@ -12,7 +12,7 @@ var consts = {
 }
 
 var constAllDomainTypes = [consts.DOMAIN_TYPE_WMTRANSFER, consts.DOMAIN_TYPE_MONEY, consts.DOMAIN_TYPE_RU];
-var constLangs = ["rus", "eng", "es"];
+var constLangs = ["rus", "eng", "es", "br", "tr"];
 
 var constUrlInformation = "/information";
 var constUrlInformationManage = constUrlInformation + "/manage";
@@ -72,7 +72,7 @@ var linkStorage = {
       "Transferência bancária",
       "Banka transferi"
     ],
-    u: "withdraw.web.money"
+    u: "withdraw.web.money/Home/Index"
   },
   servGames: {
     t: ["Онлайн-игры", "Online games", "Juegos en línea", 
@@ -84,6 +84,29 @@ var linkStorage = {
   servApple: {
     t: ["Подарочная карта Apple", "Apple gift card"],
     u: "plati.market/games/podarochnaja-karta-app-store-itunes/90/"
+  },
+  // =========================
+  // Приложения
+  // =========================
+  appAppStore: {
+    t: ["App Store"],
+    u: "itunes.apple.com/us/app/my-webmoney/id524382727"
+  },
+  appGooglePlay: {
+    t: ["Google Play"],
+    u: "play.google.com/store/apps/details?id=com.webmoney.my"
+  },
+  appMicrosoftStore: {
+    t: ["Microsoft Store"],
+    u: "www.microsoft.com/store/apps/9NQ5N286PQC0"
+  },
+  appWindows: {
+    t: ["Windows"],
+    u: "winpro.web.money/"
+  },
+  appMacOS: {
+    t: ["Mac OS"],
+    u: "itunes.apple.com/ru/app/my-webmoney/id807337125?l=ru&amp;ls=1&amp;mt=12"
   },
   // =========================
   // О системе (1)
@@ -347,57 +370,50 @@ var linkStorage = {
   // =========================
   // Частным лицам (1)
   // =========================
-  topUpCash: {
-    t: ["Наличными", "Cash", "Recargar", 
-      "-", 
-      "Nakit olarak"
+  topUpBankCard: {
+    t: ["С банковской карты", "Bank card", "Tarjeta bancaria", 
+      "Cartão do banco",
+      "Banka kartı"
     ],
     d: constAllDomainTypes,
-    u: [constLangs, constUrlInoutTopup, "#cash"] // TODO - проверить эту ссылку, отличается на es
-  },
-  topUpBankAccount: {
-    t: ["С банковского счета", "Bank account", "-", 
-      "-",
-      "Banka hesabından"
-    ],
-    d: constAllDomainTypes,
-    u: [constLangs, constUrlInoutTopup, "#bank"]
+    u: [constLangs, constUrlInoutTopup, "?method=bank-card_method"]
   },
   topUpEMoney: {
-    t: ["Электронными деньгами", "E-money", "-", 
-      "-",
+    t: ["Электронными деньгами", "E-money", "Dinero electrónico", 
+      "Dinheiro eletrônico",
       "Elektronik paralar ile"
     ],
     d: constAllDomainTypes,
-    u: [constLangs, constUrlInoutTopup, "#emoney"]
+    u: [constLangs, constUrlInoutTopup, "?method=e-money_method"]
   },
-  topUpPaymentTerminat: {
-    t: ["Через терминал", "Payment terminal", "-", 
-      "-",
-      "Terminalden"
+  
+  topUpBankAccount: {
+    t: ["С банковского счета", "Bank account", "Cuenta bancaria", 
+      "Conta bancária",
+      "Banka hesabından"
     ],
     d: constAllDomainTypes,
-    u: [constLangs, constUrlInoutTopup, "#terminal"]
+    u: [constLangs, constUrlInoutTopup, "?method=bank-account_method"]
   },
-  topUpMoneyTransfer: {
-    t: ["Денежным переводом", "Money transfer", "-", 
-      "-",
-      "Para transferi ile"
+  topUpCash: {
+    t: ["Наличными", "Cash", "Recargar", 
+      "Dinheiro", 
+      "Nakit olarak"
     ],
     d: constAllDomainTypes,
-    u: [constLangs, constUrlInoutTopup, "#perevod"]
+    u: [constLangs, constUrlInoutTopup, "?method=cash_method"]
   },
   consultations: {
-    t: ["Платные видеоконсультации", "Paid video consultations", "-", 
-      "-",
-      "-"
+    t: ["Платные видеоконсультации", "Paid video consultations", "Videoconsultas pagadas", 
+      "Videoconsultas pagas",
+      "Ücretli görüntülü konsültasyonlar"
     ],
     u: "events.web.money/consultations"
   },
   softactivation: {
-    t: ["Продажа цифровых товаров", "Sale of digital goods", "-", 
-      "-",
-      "-"
+    t: ["Продажа цифровых товаров", "Sale of digital goods", "Venta de bienes digitales", 
+      "Venda de produtos digitais",
+      "Dijital ürünlerin satışı"
     ],
     u: "softactivation.webmoney.ru"
   },
@@ -450,30 +466,30 @@ var linkStorage = {
     ]]
   },
   video: {
-    t: ["Видеозвонки и онлайн-трансляции", "Video calls and online broadcasts", "-", 
-      "-",
-      "-"
+    t: ["Видеозвонки и онлайн-трансляции", "Video calls and online broadcasts", "Videollamadas y transmisiones en línea", 
+      "Videochamadas e transmissões online",
+      "Görüntülü aramalar ve çevrimiçi yayınlar"
     ],
     u: "video.webmoney.ru"
   },
   memo: {
-    t: ["Управление закладками", "Bookmark management", "-", 
-      "-",
-      "-"
+    t: ["Управление закладками", "Bookmark management", "Gestión de marcadores", 
+      "Gerenciamento de favoritos",
+      "Yer imi yönetimi"
     ],
     u: "memo.web.money"
   },
   notes: {
-    t: ["Верстка и публикация заметок", "Layout and publication of notes", "-", 
-      "-",
-      "-"
+    t: ["Верстка и публикация заметок", "Layout and publication of notes", "Maquetación y publicación de notas.", 
+      "Layout e publicação de notas",
+      "Notların düzeni ve yayınlanması"
     ],
     u: "wmid.com/notes"
   },
   analytics: {
-    t: ["Сервис аналитики", "Analytics", "-", 
-      "-",
-      "-"
+    t: ["Сервис аналитики", "Analytics", "Analítica", 
+      "Análise",
+      "Analitik"
     ],
     u: "analytics.webmoney.ru"
   },
@@ -505,43 +521,35 @@ var linkStorage = {
   // Частным лицам (2)
   // =========================
   withdrawCash: {
-    t: ["Наличными", "Cash", "-", 
-      "-",
+    t: ["Наличными", "Cash", "Dinero", 
+      "Dinheiro",
       "Nakit olarak"
     ],
     d: constAllDomainTypes,
-    u: [constLangs, constUrlInoutWithdraw, "#cash"]
+    u: [constLangs, constUrlInoutWithdraw, "?method=cash_method"]
   },
   withdrawToBankCard: {
     t: ["На банковскую карту", "To bank card", "A una tarjeta bancaria", 
       "Ao cartão bancário",
-      "-"
+      "Banka kartına"
     ],
     u: ["telepay.web.money", ["/ru", "/en", "/en", "/en", "/en"], "/cards"]
   },
   withdrawBankAccount: {
-    t: ["На банковский счет", "Bank account", "-", 
-      "-",
+    t: ["На банковский счет", "Bank account", "Cuenta bancaria", 
+      "Conta bancária",
       "Banka hesabına"
     ],
     d: constAllDomainTypes,
-    u: [constLangs, constUrlInoutWithdraw, "#bank"]
+    u: [constLangs, constUrlInoutWithdraw, "?method=bank-account_method"]
   },
   withdrawEmoney: {
-    t: ["Электронными деньгами", "E-money", "-", 
-      "-",
+    t: ["Электронными деньгами", "E-money", "Dinero electrónico", 
+      "Dinheiro eletrônico",
       "Elektronik paralar ile"
     ],
     d: constAllDomainTypes,
-    u: [constLangs, constUrlInoutWithdraw, "#emoney"]
-  },
-  withdrawTransfer: {
-    t: ["Денежным переводом", "Money transfer", "-", 
-      "-",
-      "Para transferi ile"
-    ],
-    d: constAllDomainTypes,
-    u: [constLangs, constUrlInoutWithdraw, "#perevod"]
+    u: [constLangs, constUrlInoutWithdraw, "?method=e-money_method"]
   },
   exchanger: {
     t: ["Exchanger: обменный пункт", "Exchanger: Exchange service", "Exchanger: locales de cambio", 
@@ -624,7 +632,7 @@ var linkStorage = {
       "Advisor:recomendação do Websites",
       "Advisor: siteler hakkında yorumlar"
     ],
-    u: "advisor.wmtransfer.com"
+    u: "advisor.web.money"
   },
   // =========================
   // Частным лицам (3)
@@ -686,9 +694,9 @@ var linkStorage = {
     u: "digiseller.ru/outside/buygoods.asp"
   },
   antivirus: {
-    t: ["Антивирус: программы по подписке", "Antivirus: software subscription", "-", 
-      "-",
-      "-"
+    t: ["Антивирус: программы по подписке", "Antivirus: software subscription", "Antivirus: suscripción de software", 
+      "Antivírus: assinatura de software",
+      "Antivirüs: yazılım aboneliği"
     ],
     u: [["antivirus.webmoney.ru", "antivirus.wmtransfer.com"]]
   },
@@ -709,7 +717,7 @@ var linkStorage = {
   },
   debtService: {
     t: ["Долговой cервис", "Loan service", "Sobre el Servicio", "Empréstimo", 
-      "-",
+      "Kredi hizmeti",
       "Borç Servisi"
     ],
     d: constAllDomainTypes,
@@ -719,7 +727,7 @@ var linkStorage = {
     t: ["Аттестация", "Verification", "Atestados", 
       "Atestados",
       "Belgelendirme"
-    ], // TODO в испанкской версиии не ссылка
+    ],
     u: "passport.web.money"
   },
   receivePassport: {
@@ -768,28 +776,29 @@ var linkStorage = {
   // Частным лицам (4)
   // =========================
   charity: {
-    t: ["Благотворительность", "Charity", "-", 
-      "-"
+    t: ["Благотворительность", "Charity", "Caridad", 
+      "Caridade",
+      "Hayır kurumu"
     ],
     u: "funding.web.money/donations"
   },
   crowdfunding: {
-    t: ["Краудфандинг", "Crowdfunding", "-", 
-      "-",
+    t: ["Краудфандинг", "Crowdfunding", "Recaudación de fondos", 
+      "Financiamento colaborativo",
       "Kraudfanding"
     ],
     u: "funding.web.money/crowd"
   },
   groupBuying: {
-    t: ["Коллективные покупки", "Group buying", "-", 
-      "-",
+    t: ["Коллективные покупки", "Group buying", "Compra en grupo", 
+      "Compra em grupo",
       "Grup satın almalar"
     ],  
     u: "funding.web.money/group"
   },
   eventOrganization: {
-    t: ["Организация мероприятий", "Event organization", "-", 
-      "-",
+    t: ["Организация мероприятий", "Event organization", "Organización del evento", 
+      "Organização do evento",
       "Etkinliklerin organizasyon"
     ],
     u: "funding.web.money/tickets"
@@ -809,10 +818,10 @@ var linkStorage = {
     u: "cards.web.money"
   },
   moneySend: {
-    t: ["Перевод с карты на карту", "MoneySend", "-", 
-      "-",
-      "-"
-    ], // TODO в испанской версии закомментирован
+    t: ["Перевод с карты на карту", "Transfer from card to card", "Transferencia de tarjeta a tarjeta", 
+      "Transferência de cartão para cartão",
+      "Karttan karta transfer"
+    ],
     u: "moneysend.web.money"
   },
   events: {
@@ -849,7 +858,7 @@ var linkStorage = {
     u: [constLangs, constUrlDevelopers, "/api.shtml"]
   },
   purseManagement2: {
-    q: "",
+    
     t: ["Управление кошельками", "Purse management", "Manejar los monederos", 
       "Métodos para gerir contas",
       "Cüzdanların yönetimi"
@@ -878,7 +887,7 @@ var linkStorage = {
     u: [constLangs, constUrlInformationManage, "/mobile.shtml"]
   },
   keeperForSocialNetworks2: {
-    q: "",
+    
     t: ["Keeper для социальных сетей", "Keeper for social networks"],
     d: constAllDomainTypes,
     u: [constLangs, constUrlInformationManage, "/social.shtml"]
@@ -889,7 +898,7 @@ var linkStorage = {
     u: [constLangs, constUrlInformationManage, "/e-num.shtml"]
   },
   downloadSoftware2: {
-    q: "",
+    
     t: ["Скачать приложения", "Download software", "Descargar software", 
       "Download de software",
       "Yazılım"
@@ -903,7 +912,7 @@ var linkStorage = {
   // Для бизнеса (1)
   // =========================
   merchant: {
-    q: "",
+    
     t: ["Merchant: создать магазин", "Web Merchant Interface", "Merchant: hacer una tienda", 
       "Merchant: criar uma loja",
       "Merchant: dükkan oluşturmak"
@@ -912,16 +921,16 @@ var linkStorage = {
     u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/merchant.shtml"]
   },
   paymentsToBankAccounts: {
-    q: "",
-    t: ["Прием платежей на банковский счет", "Payments to bank accounts", "-", 
+    
+    t: ["Прием платежей на банковский счет", "Payments to bank accounts", "Pagos a cuentas bancarias", 
       "Aceitar pagamentos para a conta bancária",
-      "-"
+      "Banka hesaplarına yapılan ödemeler"
     ],
     d: constAllDomainTypes,
     u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/bank.shtml"]
   },
   megastock2: {
-    q: "",
+    
     t: ["Megastock: каталог магазинов", "MegaStock: Directory of sites", "Megastock: catálogo de tiendas", 
       "Megastock: catálogo de lojas",
       "Megastock: dükkanların kataloğu"
@@ -929,7 +938,7 @@ var linkStorage = {
     u: "megastock.ru"
   },
   digiseller2: {
-    q: "",
+    
     t: ["Digiseller: цифровые товары", "Digiseller: Catalog of digital goods", "Digiseller: catálogo de productos", 
       "Digiseller: catálogo de produtos",
       "Digiseller: dijital ürünler"
@@ -937,15 +946,14 @@ var linkStorage = {
     u: "digiseller.ru/outside/sellgoods.asp"
   },
   funding: {
-    q: "",
-    t: ["Сбор средств", "Fundraising", "Colecta de los fondos", "-", 
-      "-",
+    
+    t: ["Сбор средств", "Fundraising", "Colecta de los fondos", "Angariação de fundos",
       "Kaynak toplanması"
     ],
     u: "funding.web.money"
   },
   mestcom2: {
-    q: "",
+    
     t: ["Mestcom: продажа рекламы", "Mestcom: Selling Ads", "Mestcom: comprar las publicidades", 
       "Mestcom: venda de publicidade",
       "Mestcom: reklam satışı"
@@ -953,7 +961,7 @@ var linkStorage = {
     u: "www.mestkom.ru/sell.aspx"
   },
   cashbox2: {
-    q: "",
+    
     t: ["Cashbox: покупка действий на сайте", "Cashbox: Purchase website activities", "Cashbox: comprar las acciones en el sitio web", 
       "Cashbox: comprar as ações no site",
       "Cashbox: sitede hareketlerin satın alınması"
@@ -961,7 +969,7 @@ var linkStorage = {
     u: "cashbox.ru"
   },
   digiseller3: {
-    q: "",
+    
     t: ["Digiseller: виджет агентского магазина", "Digiseller: Agent shop widget", "Digiseller: vidget de la tienda de agencia", 
       "Digiseller: widget da loja de agência",
       "Digiseller: ajente dükkanı widjeti"
@@ -969,7 +977,7 @@ var linkStorage = {
     u: "www.digiseller.ru/outside/agentshop.asp"
   },
   login: {
-    q: "",
+    
     t: ["Login: авторизация по WMID", "Login: WMID authorisation", "Login: autorización por WMID", 
       "Login: permissão pelo WMID",
       "Login: WMID’ye göre giriş yapma"
@@ -980,7 +988,7 @@ var linkStorage = {
   // Для бизнеса (2)
   // =========================
   masspayment: {
-    q: "",
+    
     t: ["Masspayment: массовые выплаты", "Mass Payments", "Masspayment: Pagos masivos", 
       "Masspayment: pagamentos em massa",
       "Masspayment: toplu ödemeler"
@@ -988,7 +996,7 @@ var linkStorage = {
     u: "masspayment.web.money"
   },
   exchanger2: {
-    q: "",
+    
     t: ["Exchanger: обменный пункт", "Exchanger: Exchange service", "Exchanger: Cambio", 
       "Exchanger: troca",
       "Exchanger: döviz bürosu"
@@ -996,7 +1004,7 @@ var linkStorage = {
     u: "exchanger.web.money"
   },
   contracts: {
-    q: "",
+    
     t: ["Контракты: регистрация текстов Соглашений", "Contracts: Agreement text registration", "Contractos: Registración de los textos de los convencios", 
       "Contratos: Registro dos textos dos acordos",
       "Kontratlar: Sözleşmelerin metinlerinin kaydı"
@@ -1004,7 +1012,7 @@ var linkStorage = {
     u: "arbitrage.web.money/asp/bContract.asp"
   },
   arbitrage2: {
-    q: "",
+    
     t: ["Арбитраж: разрешение споров", "Arbitrage: Dispute resolution", "Arbitraje: solución de los debates", 
       "Arbitragem: solução das discussões",
       "Arbitraj: anlaşmazlıkların giderilmesi"
@@ -1012,7 +1020,7 @@ var linkStorage = {
     u: "arbitrage.web.money"
   },
   escrow2: {
-    q: "",
+    
     t: ["Escrow: защищенные сделки", "Escrow: Secure transactions", "Escrow: transacciones protegidas", 
       "Escrow: transações protegidas",
       "Escrow: korumalı anlaşmalar"
@@ -1020,7 +1028,7 @@ var linkStorage = {
     u: "escrow.webmoney.ru"
   },
   creditMarket: {
-    q: "",
+    
     t: ["Кредитная биржа", "Credit market", "Bolsas de crédito", 
       "Mercado do crédito",
       "Kredi borsası"
@@ -1031,7 +1039,7 @@ var linkStorage = {
     ]]
   },
   reporting: {
-    q: "",
+    
     t: ["Отчетность", "Reporting", "Presentación de informes", 
       "Relatórios",
       "Raporlama"
@@ -1039,7 +1047,7 @@ var linkStorage = {
     u: "report.webmoney.ru"
   },
   financialSupport2: {
-    q: "",
+    
     t: ["Служба финансовой поддержки", "Financial support", "Servicio del soporte financiero", 
       "Suporte para serviço financeiro",
       "Mali destek hizmeti"
@@ -1048,18 +1056,18 @@ var linkStorage = {
     u: [constLangs, constUrlSupport, "/financial.shtml"]
   },
   biz: {
-    q: "",
-    t: ["Выплаты участникам системы", "Payments to system participants", "-", 
-      "-",
-      "-"
+    
+    t: ["Выплаты участникам системы", "Payments to system participants", "Pagos a los participantes del sistema", 
+      "Pagamentos aos participantes do sistema",
+      "Sistem katılımcılarına yapılan ödemeler"
     ],
     u: "biz.web.money", 
   },
   biz2: {
-    q: "",
-    t: ["Прием платежей", "Accepting payments", "-", 
-      "-",
-      "-"
+    
+    t: ["Прием платежей", "Accepting payments", "Aceptando el pago", 
+      "Aceitando pagamento",
+      "Odeme kabul"
     ],
     u: "biz.web.money"
   },
@@ -1067,7 +1075,7 @@ var linkStorage = {
   // Для бизнеса (3)
   // =========================
   shareholder2: {
-    q: "",
+    
     t: ["Shareholder: вложение средств", "Shareholder: Investments", "Shareholder: usar fondos", 
       "Shareholder: utilização de fundos",
       "Shareholder: sermaye yatırma"
@@ -1078,7 +1086,7 @@ var linkStorage = {
     ]]
   },
   indx2: {
-    q: "",
+    
     t: ["INDX: фондовая биржа", "INDX: Stock exchange", "INDX: bolsa de fondos", 
       "INDX: bolsa de fundos",
       "INDX: Borsa"
@@ -1086,7 +1094,7 @@ var linkStorage = {
     u: "indx.money/about/eth/#"
   },
   debtMarket: {
-    q: "",
+    
     t: ["Продажа долгов", "Debt market", "Vender las deudas", 
       "Vender a dívida",
       "Borçların satışı"
@@ -1097,7 +1105,7 @@ var linkStorage = {
     ]]
   },
   capitaller: {
-    q: "",
+    
     t: ["Capitaller: управление средствами", "Capitaller: Funds management", "Capitaller: manejar los fondos", 
       "Capitaller: gerir fundos",
       "Capitaller: kaynakların yönetimi"
@@ -1108,7 +1116,7 @@ var linkStorage = {
     ]]
   },
   mentor2: {
-    q: "",
+    
     t: ["Mentor: контроль исполнения задач", "Mentor: Task management service", "Mentor: control de las tareas", 
       "Mentor: controlar a execução das tarefas",
       "Mentor: görevlerin yürütmesinin kontrolü"
@@ -1116,7 +1124,7 @@ var linkStorage = {
     u: "mentor.wmtransfer.com"
   },
   secureMail: {
-    q: "",
+    
     t: ["Защищенная почта", "Secure mail", "Correspondencia protegída", 
       "Mail protegido",
       "Korumalı posta"
@@ -1124,7 +1132,7 @@ var linkStorage = {
     u: "mail.wmid.com"
   },
   files2: {
-    q: "",
+    
     t: ["Файловое хранилище", "File storage", "Tus archivos", 
       "Seus arquivos",
       "Dosya deposu"
@@ -1132,7 +1140,7 @@ var linkStorage = {
     u: "files.web.money"
   },
   letterPostingService: {
-    q: "",
+    
     t: ["Отправка бумажных писем", "Letter posting service", "Mandar «las» cartas de papel", 
       "Envio de Cartas «em» papel",
       "Hard «copy mektupların» gönderilmesi"
@@ -1140,7 +1148,7 @@ var linkStorage = {
     u: "letters.wmtransfer.com"
   },
   newsline: {
-    q: "",
+    
     t: ["Лента новостей: рассылка", "Newsline: Subscription", "Noticias: boletín", 
       "Notícias: newsletter",
       "Haber dizisi: gönderim"
@@ -1148,7 +1156,7 @@ var linkStorage = {
     u: "subscribe.web.money/subscribe"
   },
   programInterfaces: {
-    q: "",
+    
     t: ["API: программные интерфейсы", "API: Program interfaces", "API: aplicaciónes", 
       "API: aplicações",
       "API: program arayüzleri"
@@ -1157,7 +1165,7 @@ var linkStorage = {
     u: [constLangs, constUrlDevelopers, "/api.shtml"]
   },
   stylesAndDesign: {
-    q: "",
+    
     t: ["Дизайн и стили", "Styles and design", "Diseño y estilos", 
       "Desenho e estilos",
       "Dizayn ve stiller"
@@ -1166,7 +1174,7 @@ var linkStorage = {
     u: [constLangs, constUrlDevelopers, "/logos.shtml"]
   },
   technicalSupport2: {
-    q: "",
+    
     t: ["Техническая поддержка", "Technical support", "Soporte técnico", 
       "Suporte técnico",
       "Teknik destek"
@@ -1178,7 +1186,7 @@ var linkStorage = {
   // Помощь (1)
   // =========================
   registration: {
-    q: "",
+    
     t: ["Регистрация", "Registration", "Registración", 
       "Inscrição",
       "Kayıt"
@@ -1187,7 +1195,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpStart, "/registration.shtml"]
   },
   inoutOptions: {
-    q: "",
+    
     t: ["Выбор способа ввода/вывода", "Choosing a method for input/output", "Seleccionar el metodo de recarga/retiro", 
       "Selecione o método de recarga / retirada",
       "Para yatırma/çekme yönteminin seçimi"
@@ -1196,7 +1204,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpStart, "/inout_options.shtml"]
   },
   acceptPayments: {
-    q: "",
+    
     t: ["Выбор способа приема платежей", "Choosing a method for accepting payments", "Buscar los métodos de recarga", 
       "Pesquisa métodos de recarga",
       "Ödeme kabul etme yönteminin seçimi"
@@ -1205,25 +1213,25 @@ var linkStorage = {
     u: [constLangs, constUrlHelpTechnical, "/accept_payments.shtml"]
   },
   repayment: {
-    q: "",
-    t: ["Возврат займа на Debt", "Repayment", "-", 
-      "-",
-      "-"
+    
+    t: ["Возврат займа на Debt", "Repayment", "Reembolso", 
+      "Reembolso",
+      "Geri ödeme"
     ],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpFinancial, "/repayment.shtml"]
   },
   repaymentCPurse: {
-    q: "",
-    t: ["Возврат кредита с С кошелька", "Repayment c purse", "-", 
-      "-",
-      "-"
+    
+    t: ["Возврат кредита с С кошелька", "Repayment c purse", "Reembolso c monedero", 
+      "Reembolso c bolsa",
+      "Geri ödeme cüzdanı"
     ],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpFinancial, "/repayment_c.shtml"]
   },
   controlRecovery: {
-    q: "",
+    
     t: ["Восстановление контроля", "Control recovery", "Recuperar el control", 
       "Recuperar o controle",
       "Parolanın onarılması"
@@ -1232,7 +1240,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpGeneral, "/recovery.shtml"]
   },
   keepers: {
-    q: "",
+    
     t: ["Выбор способа управления", "Choosing an account management method", "Seleccionar el metodo para manejar las cuentas", 
       "Selecione o método para lidar com as contas",
       "Yönetim şeklinin seçimi"
@@ -1241,7 +1249,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpTechnical, "/keepers.shtml"]
   },
   poluchenieAttestata: {
-    q: "",
+    
     t: ["Получение аттестата", "Receiving WebMoney passport", "Recibir el atestado", 
       "Receber certificado",
       "Belge alma"
@@ -1250,7 +1258,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpStart, "/poluchenie_attestata.shtml"]
   },
   operationLimits: {
-    q: "",
+    
     t: ["Лимиты на операции", "Operation limits", "Límites de la operación", 
       "Limites da operação",
       "İşlem limitleri"
@@ -1259,16 +1267,16 @@ var linkStorage = {
     u: [constLangs, constUrlHelpStart, "/operation_limits.shtml"]
   },
   changeData: {
-    q: "",
-    t: ["Изменение регистрационных данных", "Change data", "-", 
-      "-",
-      "-"
+    
+    t: ["Изменение регистрационных данных", "Change data", "Cambiar datos", 
+      "Alterar dados",
+      "Verileri değiştir"
     ],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpGeneral, "/change_data.shtml"]
   },
   pretenzIIski: {
-    q: "",
+    
     t: ["Подача претензий и исков", "Submitting claims and complaints", "Hacer una pretensión", 
       "Apresentação de queixas e reclamações",
       "Şikayetler ve talepler"
@@ -1277,18 +1285,19 @@ var linkStorage = {
     u: [constLangs, constUrlHelpStart, "/pretenzi-iski.shtml"]
   },
   annullation: {
-    q: "",
+    
     t: ["Отказ в обслуживании", "Annullation", "Denegación del servicio", 
       "Negação de serviço",
       "Servis reddi"
     ],
+    d: constAllDomainTypes,
     u: [constLangs, constUrlHelpGeneral, "/annullation.shtml"]
   },
   deleteWmid: {
-    q: "",
+    
     t: ["Порядок удаления WMID", "Delete WMID", "Remover su WMID", 
       "Remover o seu WMID",
-      "-"
+      "Kaldırıcı veya seu WMID"
     ],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpGeneral, "/delete_wmid.shtml"]
@@ -1297,7 +1306,7 @@ var linkStorage = {
   // Помощь (2)
   // =========================
   changeBl: {
-    q: "",
+    
     t: ["Изменение BL", "Changing BL", "Cambio de BL", 
       "Troca de BL",
       "BL değişikliği"
@@ -1306,24 +1315,24 @@ var linkStorage = {
     u: [constLangs, constUrlHelpGeneral, "/change_bl.shtml"]
   },
   actionBlock: {
-    q: "",
-    t: ["Действия при блокировке кошелька", "Action block", "-", 
-      "-",
-      "-"
+    
+    t: ["Действия при блокировке кошелька", "Action block", "Bloque de acción", 
+      "Bloco de ação",
+      "Eylem bloğu"
     ],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpGeneral, "/action_block.shtml"]
   },
   photoId: {
-    q: "",
-    t: ["Создание PhotoID", "Create PhotoID", "-", 
-      "-",
-      "-"
+    
+    t: ["Создание PhotoID", "Create PhotoID", "Crear PhotoID", 
+      "Criar PhotoID",
+      "PhotoID oluştur"
     ],
     u: "wiki.web.money/projects/webmoney/wiki/PhotoID"
   },
   nevozvratDebt: {
-    q: "",
+    
     t: ["Невозвраты займов на Debt", "Loan defaults", "No hay reembolso de prestamos (se dice asi y también existe desembolso) en Debt", 
       "Não reembolso de empréstimos da dívida",
       "Debt’deki borçların iade edilmemesi"
@@ -1332,7 +1341,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpFinancial, "/nevozvrat_debt.shtml"]
   },
   transactionHistory: {
-    q: "",
+    
     t: ["Получение выписки операций", "Getting transacion history", "Historal de Transacciones", 
       "Histórico de Transações",
       "İşlem ekstrelerinin alınması"
@@ -1341,7 +1350,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpFinancial, "/transaction_history.shtml"]
   },
   crowdfunding2: {
-    q: "",
+    
     t: ["Сбор средств", "Crowdfunding", "Cobro de fondos", 
       "Recolha de fundos",
       "Kaynak toplanması"
@@ -1350,7 +1359,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpStart, "/croudfunding.shtml"]
   },
   exchange: {
-    q: "",
+    
     t: ["Обменные операции", "Exchange operations", "Operaciones de cambio", 
       "Operações de câmbio",
       "Döviz işlemleri"
@@ -1359,7 +1368,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpFinancial, "/exchange.shtml"]
   },
   securityLimits: {
-    q: "",
+    
     t: ["Расходные лимиты", "Spending limits", "Límites de egresos", 
       "A limitação das despesas",
       "Harcama limitleri"
@@ -1368,7 +1377,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpTechnical, "/security_limits.shtml"]
   },
   tabu: {
-    q: "",
+    
     t: ["Запрещенные виды деятельности", "Restricted activities", "tipos de actividades prohibidas", 
       "Tipos de atividades proibidas",
       "Yasaklanan faaliyetler"
@@ -1377,16 +1386,16 @@ var linkStorage = {
     u: [constLangs, constUrlHelpGeneral, "/tabu.shtml"]
   },
   bankCards: {
-    q: "",
+    
     t: ["Банковские карты", "Bank cards", "Tarjetas bancarias", 
       "Cartões bancários",
-      "-"
+      "Banka kartları"
     ],
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpTechnical, "/cards.shtml"]
   },
   checkCorr: {
-    q: "",
+    
     t: ["Проверка корреспондентов", "Correspondent check", "comprobar los contactos", 
       "Verificação de interlocutores",
       "Yazışmaların kontrolü"
@@ -1395,7 +1404,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpGeneral, "/check_corr.shtml"]
   },
   automats: {
-    q: "",
+    
     t: ["Бюджетные и расчетные автоматы", "Budget and transact automation tools", "Budget Automation Tool", 
       "Maquinas de orçamento e liquidação",
       "Bütçe ve hesaplama makinaları"
@@ -1407,18 +1416,15 @@ var linkStorage = {
   // Помощь (3)
   // =========================
   downloadSoftware3: {
-    q: "",
+    
     t: ["Где скачать приложения", "Download software", "Descargar software", 
       "Download de software",
       "Yazılım"
     ],
-    u: ["wiki.web.money/projects/webmoney/wiki/gde_skachat_prilozheniya_webmoney", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software", 
-      "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software",
-      "http://wiki.wmtransfer.com/projects/webmoney/wiki/Download_software"
-    ]
+    u: [["wiki.webmoney.ru/projects/webmoney/wiki/gde_skachat_prilozheniya_webmoney", "wiki.wmtransfer.com/projects/webmoney/wiki/Download_software"]]
   },
   AskQuestion: {
-    q: "",
+    
     t: ["Задать вопрос", "Ask a question", "Hacer una pregunta", 
       "Faça uma pergunta",
       "Soru sormak"
@@ -1429,7 +1435,7 @@ var linkStorage = {
     ]]
   },
   legalEntityWmid: {
-    q: "",
+    
     t: ["Использование WMID юридическими лицами", "Usage of WMID by legal entities", "Uso del WMID por personas juridicas", 
       "Uso de WMID por entidades jurídicas",
       "WMID’nin tüzel kişiler tarafından kullanılması"
@@ -1438,7 +1444,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpFinancial, "/legal_entity_wmid.shtml"]
   },
   videoTutorials: {
-    q: "",
+    
     t: ["Обучающие видео", "Video tutorials", "Video Tutorial", 
       "Tutorial em vídeo",
       "Videolu eğitim"
@@ -1449,8 +1455,8 @@ var linkStorage = {
     ]
   },
   financialSupport3: {
-    q: "",
-    t: ["Финансовая поддержка", "Financial support", "-", 
+    
+    t: ["Финансовая поддержка", "Financial support", "Soporte financiero", 
       "Suporte Financeiro",
       "Mali destek"
     ],
@@ -1458,7 +1464,7 @@ var linkStorage = {
     u: [constLangs, constUrlSupport, "/financial.shtml"]
   },
   technicalSupport3: {
-    q: "",
+    
     t: ["Техническая поддержка", "Technical support", "Soporte técnico", 
       "Suporte técnico",
       "Teknik destek"
@@ -1467,7 +1473,7 @@ var linkStorage = {
     u: [constLangs, constUrlSupport, "/tech.shtml"]
   },
   searchPayment: {
-    q: "",
+    
     t: ["Розыск платежей", "Search payment", "Buscar pagos", 
       "Pesquisar pagamentos",
       "Ödeme arama"
@@ -1476,7 +1482,7 @@ var linkStorage = {
     u: [constLangs, constUrlHelpFinancial, "/search_pay.shtml"]
   },
   interactiveMap: {
-    q: "",
+    
     t: ["Интерактивная карта", "Interactive map", "Mapa interactivo", 
       "Mapa interativo",
       "İnteraktif harita"
@@ -1488,7 +1494,7 @@ var linkStorage = {
     u: ["wiki.web.money", "wiki.wmtransfer.com/projects/webmoney/wiki/WebMoney_Wiki"]
   },
   forum2: {
-    q: "",
+    
     t: ["Форум", "Forum", "Foro", 
       "Fórum",
       "Forum"

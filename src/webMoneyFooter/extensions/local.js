@@ -1,27 +1,67 @@
 var localization = {
-  menuFooterBusinessNetwork: {
-    "ru": "Деловая сеть",
-    "en": "Business network",
-    "es": "Red de negocios",
-    "pt": "Rede de Negócios",
-    "tr": "İş şebekesi",
-    "vn": "Mạng xã hội"
+  menuAboutWebMoney: {
+    "ru": "О системе",
+    "en": "About WebMoney",
+    "es": "Acerca de WebMoney",
+    "pt": "Sobre o WebMoney",
+    "tr": "WebMoney Hakkında",
+    "vn": "About WebMoney"
   },
-  menuFooterNews: {
-    "ru": "Новости",
-    "en": "News",
-    "es": "Noticias",
-    "pt": "Notícias",
-    "tr": "Haberler",
-    "vn": "Tin tức"
+  menuPurseManagement: {
+    "ru": "Управление кошельками",
+    "en": "Purse management",
+    "es": "Manejar los monederos",
+    "pt": "Métodos para gerir contas",
+    "tr": "Cüzdanların yönetimi",
+    "vn": "Purse management"
   },
-  menuFooterDevelopers: {
-    "ru": "Разработчикам",
-    "en": "Developers",
-    "es": "Desarolladores",
-    "pt": "Para programadores",
-    "tr": "Geliştiriciler ve webmasterlar için",
-    "vn": "Nhà phát triển"
+  menuLegalInformation: {
+    "ru": "Юридическая информация",
+    "en": "Legal information",
+    "es": "Información legal",
+    "pt": "Informação jurídica",
+    "tr": "Hukuki bilgiler",
+    "vn": "Legal information"
+  },
+  menuContactInformation: {
+    "ru": "Контактная информация",
+    "en": "Contact information",
+    "es": "Información del contacto",
+    "pt": "Informações de contato",
+    "tr": "İletişim bilgileri",
+    "vn": "Contact information"
+  },
+  menuInstrucciones: {
+    "ru": "Инструкции",
+    "en": "Instrucciones",
+    "es": "Instrucciones",
+    "pt": "Instruções",
+    "tr": "Talimatlar",
+    "vn": "Instrucciones"
+  },
+  menuHelp: {
+    "ru": "Помощь",
+    "en": "Help",
+    "es": "Ayuda",
+    "pt": "Ajuda",
+    "tr": "Yardım",
+    "vn": "Help"
+  },
+  menuMobileApps: {
+    "ru": "Приложения для смартфонов",
+    "en": "Mobile applications",
+    "es": "Aplicaciones móviles",
+    "pt": "Aplicações móveis",
+    "tr": "Mobil uygulamalar",
+    "vn": "Ứng dụng di động"
+  },
+  menuPcApps: {
+    "ru": "Приложения для ПК",
+    "en": "PC applications",
+    "es": "PC aplicaciones",
+    "pt": "PC formulários",
+    "tr": "PC uygulamalar",
+    "vn": "Ứng dụng PC"
   },
   menuFooterCopyrightText: {
     "ru": "Воспроизводимые на данном сайте торговые марки WEBMONEY и WEBMONEY TRANSFER используются держателями сайта с разрешения правообладателя.",
