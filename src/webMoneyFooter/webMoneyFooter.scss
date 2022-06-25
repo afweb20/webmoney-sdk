@@ -431,6 +431,12 @@
           padding: 0;
         }
       }
+      &-bnr {
+        display: none;
+        @media (min-width: 768px) {
+          display: block;
+        }
+      }
       &-ln {
         padding: 16px 0 8px;
         @media (min-width: 768px) {
