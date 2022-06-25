@@ -11,13 +11,13 @@ export default {
 
       langSelectorElement.onclick = function () {
 
-        this.classList.toggle("is-activated");
+        this.classList.toggle("n9g-is-a");
       };
 
       window.addEventListener("click", function(event) {
 
         if (!langSelectorElement.contains(event.target)) {
-          langSelectorElement.classList.remove("is-activated");
+          langSelectorElement.classList.remove("n9g-is-a");
         }
       });
 

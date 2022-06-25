@@ -49,12 +49,12 @@ export default {
 
       if (active) {
 
-        dynamicClass += " is-activated";
+        dynamicClass += " n8g-is-a";
       }
 
       if (i == 0) {
 
-        dynamicClass += " is-first-element";
+        dynamicClass += " n8g-is-first-element";
       }
 
       firstLevelMenuArray.push(ml("a", { "href": url, "class": dynamicClass },
@@ -101,7 +101,7 @@ export default {
       var url = secondLevel[i].url;
       var active = secondLevel[i].active;
 
-      var elementAttributes = { "href": url, "class": active ? "n8g-sll is-activated"  : "n8g-sll" };
+      var elementAttributes = { "href": url, "class": active ? "n8g-sll n8g-is-a"  : "n8g-sll" };
       elementAttributes[attributeName] = "" + i;
 
       secondLevelMenuArray.push(ml("a", elementAttributes, title));

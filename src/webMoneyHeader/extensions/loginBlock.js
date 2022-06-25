@@ -65,8 +65,8 @@ export default {
       var rootElement = context.rootElement;
 
       var loginBlockWrapperElement = rootElement.querySelector("[data-n7g-login-block-wrapper]");
-      loginBlockWrapperElement.classList.remove("is-logged-in");
-      loginBlockWrapperElement.classList.add("is-not-logged-in");
+      loginBlockWrapperElement.classList.remove("n7g-is-logged-in");
+      loginBlockWrapperElement.classList.add("n7g-is-not-logged-in");
 
       var registrationUrlElement = rootElement.querySelector("[data-n7g-registration-url]");
       var loginUrlElement = rootElement.querySelector("[data-n7g-log-in-url]");
@@ -78,8 +78,8 @@ export default {
       var rootElement = context.rootElement;
 
       var loginBlockWrapperElement = rootElement.querySelector("[data-n7g-login-block-wrapper]");
-      loginBlockWrapperElement.classList.remove("is-not-logged-in");
-      loginBlockWrapperElement.classList.add("is-logged-in");
+      loginBlockWrapperElement.classList.remove("n7g-is-not-logged-in");
+      loginBlockWrapperElement.classList.add("n7g-is-logged-in");
 
       var previewElement = rootElement.querySelector("[data-n7g-preview]");
       previewElement.innerText = loginBlockData.preview;
