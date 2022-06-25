@@ -70,13 +70,16 @@ export default {
         }
       }
 
-      if (isVisibleArrows && !secondLevelElement.classList.contains("n8g-arrows")) {
+      if (secondLevelElement) {
+        if (isVisibleArrows && !secondLevelElement.classList.contains("n8g-arrows")) {
 
-        secondLevelElement.classList.add("n8g-arrows");
-      } else if (!isVisibleArrows && secondLevelElement.classList.contains("n8g-arrows")) {
+          secondLevelElement.classList.add("n8g-arrows");
+        } else if (!isVisibleArrows && secondLevelElement.classList.contains("n8g-arrows")) {
 
-        secondLevelElement.classList.remove("n8g-arrows");
+          secondLevelElement.classList.remove("n8g-arrows");
+        }
       }
+      
     };
 
     window.addEventListener("resize", function () {
