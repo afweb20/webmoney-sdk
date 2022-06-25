@@ -145,8 +145,12 @@
   &-cnt{
     display: flex;
   }
+  &-rw{
+    margin: 0 -16px;
+  }
   &-ctm{
     flex: 1;
+    padding: 0 16px;
   }
   &-mni{
     cursor: default;

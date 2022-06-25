@@ -135,6 +135,15 @@ export default {
                 ])
 
               ]),
+              ml("div", { "class": "n7g-mni" }, local(context, "menuExchange")),
+              ml("div", { "class": "n7g-cti" }, [
+
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "exchanger").url }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/exchanger.svg") }),
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "exchanger").title)
+                ]),
+              ]),
+
             ]),
 
             ml("div", { "class": "n7g-ctm" }, [

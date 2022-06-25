@@ -15,6 +15,14 @@ var localization = {
     "tr":"Kripto para",
     "vn": "Cryptocurrency"
   },
+  menuExchange: {
+    "ru":"Обмен",
+    "en":"Exchange",
+    "es":"Intercambio",
+    "pt":"Troca",
+    "tr":"Değiş tokuş",
+    "vn": "Exchange"
+  },
   menuPersonal: {
     "ru": "Частным лицам",
     "en": "Personal",
