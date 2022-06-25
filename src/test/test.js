@@ -17,7 +17,7 @@ if (typeof WebMoneyHeader != "undefined") {
     testMode: true,
     view: view,
     lang: lang,
-    wmid: wmid,
+    wmid: null,
     loginUrl: loginUrl,
     logoutUrl: logoutUrl,
     domainType: "1",
