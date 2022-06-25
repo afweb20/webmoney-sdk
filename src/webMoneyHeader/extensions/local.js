@@ -1,4 +1,20 @@
 var localization = {
+  menuServices: {
+    "ru":"Сервисы",
+    "en":"Services",
+    "es":"Servicio",
+    "pt":"Servicio",
+    "tr":"Hizmetler",
+    "vn": "Services"
+  },
+  menuCryptocurrency: {
+    "ru":"Криптовалюта",
+    "en":"Cryptocurrency",
+    "es":"Criptomoneda",
+    "pt":"Criptomoeda",
+    "tr":"Kripto para",
+    "vn": "Cryptocurrency"
+  },
   menuPersonal: {
     "ru": "Частным лицам",
     "en": "Personal",
@@ -87,6 +103,22 @@ var localization = {
     "tr": "WebMoney bölgesi",
     "vn": "WebMoney territory"
   },
+  menuPurseManagement: {
+    "ru": "Управление кошельками",
+    "en": "Purse management",
+    "es": "Manejar los monederos",
+    "pt": "Métodos para gerir contas",
+    "tr": "Cüzdanların yönetimi",
+    "vn": "Purse management"
+  },
+  menuBusiness: {
+    "ru": "Для бизнеса",
+    "en": "Business",
+    "es": "Empresas",
+    "pt": "Para empresas",
+    "tr": "Kurumsal",
+    "vn": "Business"
+  },
   menuForMerchantsRetailers: {
     "ru": "Магазинам",
     "en": "For Merchants and Retailers",
@@ -142,14 +174,6 @@ var localization = {
     "pt": "Para programadores",
     "tr": "WebMoney olanakları",
     "vn": "For developers"
-  },
-  menuBusiness: {
-    "ru": "Для бизнеса",
-    "en": "Business",
-    "es": "Empresas",
-    "pt": "Para empresas",
-    "tr": "Kurumsal",
-    "vn": "Business"
   },
   findPlaceholder: {
     "ru": "Введите текст",
@@ -222,6 +246,14 @@ var localization = {
     "pt": "Minha carteira",
     "tr": "Cüzdanim",
     "vn": "Túi của tôi"
+  },
+  buttonEvents: {
+    "ru": "Деловая сеть",
+    "en": "Business network",
+    "es": "Red de negocio",
+    "pt": "Rede de Negócios",
+    "tr": "İş şebekesi",
+    "vn": "Business network"
   },
   buttonLogOut: {
     "ru": "Выход",
