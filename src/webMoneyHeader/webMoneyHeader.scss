@@ -316,6 +316,7 @@
     color: #fff;
     margin-left: 16px;
     cursor: pointer;
+    @include noselection;
   }
   &-smr{
     display: flex;
@@ -404,6 +405,7 @@
     width: 32px;
     height: 32px;
     border-radius: 32px;
+    @include noselection;
   }
   &-wdw{
     opacity: 0;
