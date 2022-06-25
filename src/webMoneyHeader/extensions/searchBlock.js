@@ -109,6 +109,22 @@ export default {
 
         break;
 
+      case consts.SEARCH_WHERE_TRANSACTION:
+
+        var merchantUrl = null;
+
+        context.domainType == consts.DOMAIN_TYPE_WMTRANSFER
+        ? merchantUrl = "https://merchant.wmtransfer.com/receipts"
+        : (context.domainType == consts.DOMAIN_TYPE_RU
+        ? merchantUrl = "https://merchant.wmtransfer.com/receipts"
+        : merchantUrl = "https://merchant.webmoney.ru/receipts");
+
+        url = merchantUrl +
+          "?tid=" + value +
+          "&lang=" + context.lang;
+
+        break;
+
       case consts.SEARCH_WHERE_GOODS:
 
         url = "https://megastock.ru/searchres.aspx" +

@@ -191,6 +191,14 @@ var localization = {
     "tr": "Bilgi ara",
     "vn": "Tìm kiếm thông tin"
   },
+  menuFindTitle_transaction: {
+    "ru": "Найти трансакцию",
+    "en": "Find a transaction",
+    "es": "Encuentra una transacción",
+    "pt": "Encontrar uma transação",
+    "tr": "İşlem bul",
+    "vn": "Tìm một giao dịch"
+  },
   menuFindTitle_goods: {
     "ru": "Найти товары",
     "en": "Find goods",
