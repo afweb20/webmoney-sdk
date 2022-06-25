@@ -18,7 +18,7 @@ export default {
               ml("div", { "class": "n7g-mdl" }, [
                 ml("div", { "class": "n7g-dtr" }),
                 ml("div", { "class": "n7g-svs", "data-n7g-services-toggle-menu": "" }, 
-                  ml("div", { "class": "n7g-lki" }, getLink(context, "services").title)
+                  ml("div", { "class": "n7g-lki" }, local(context, "menuServices"))
                 ),
                 this.generateFirstLevelMenu(context),
                 this.generateSearchBlock(context)
@@ -89,7 +89,7 @@ export default {
           ),
 
           ml("a", {"class": "n7g-itm n7g-itm--purse", "data-n7g-keeper-url": "", "href": "#"}, local(context, "buttonMyPurse")),
-          ml("a", {"class": "n7g-itm n7g-itm--profile", "data-n7g-events-url": "", "href": "#"}, "Деловая сеть"),
+          ml("a", {"class": "n7g-itm n7g-itm--profile", "data-n7g-events-url": "", "href": "#"}, local(context, "buttonEvents")),
           ml("a", {"class": "n7g-itm n7g-itm--settings", "data-n7g-settings-url": "", "href": "#"}, local(context, "buttonLogInSettings")),
           ml("a", {"class": "n7g-itm n7g-itm--logout", "data-n7g-log-out-url": "", "href": "#"}, local(context, "buttonLogOut")),
     
@@ -111,158 +111,158 @@ export default {
           ml("div", { "class": "n7g-cnt" }, [
 
             ml("div", { "class": "n7g-ctm" }, [
-              ml("div", { "class": "n7g-mni" }, "Криптовалюты"),
+              ml("div", { "class": "n7g-mni" }, local(context, "menuCryptocurrency")),
               ml("div", { "class": "n7g-cti" }, [
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "servWmx").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/bitcoin.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "WMX (Bitcoin)")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "servWmx").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "servWmh").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/bitcoin-cash.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "WMH (Bitcoin Cash)")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "servWmh").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "servWml").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/litecoin.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "WML (Litecoin)")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "servWml").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "servWmf").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/ethereum.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "WMF (Ethereum)")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "servWmf").title)
                 ])
 
               ]),
             ]),
 
             ml("div", { "class": "n7g-ctm" }, [
-              ml("div", { "class": "n7g-mni" }, "Заработать"),
+              ml("div", { "class": "n7g-mni" }, local(context, "menuRaiseFunds")),
               ml("div", { "class": "n7g-cti" }, [
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "consultations").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/video-c.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Платные видеоконсультации")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "consultations").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "indx").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/indx.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "INDX: фондовая биржа")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "indx").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "softactivation").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/softactivation.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Продажа цифровых товаров")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "softactivation").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "publicant").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/publicant.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Publicant: опубликовать книгу")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "publicant").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
-                  ml("img", { "class": "n7g-sic", "src": require("../images/services/mestcom.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Mestcom: продажа рекламы")
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "mestkom").url }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/mestkom.svg") }),
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "mestkom").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "cashbox").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/cashbox.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Cashbox: оплата за действия")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "cashbox").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "debtmart").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/debtmart.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "DebtMart: биржа долгов")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "debtmart").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "shareholder").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/shareholder.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Shareholder: дивиденды, торговля долями")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "shareholder").title)
                 ])
                 
               ]),
             ]),
 
             ml("div", { "class": "n7g-ctm" }, [
-              ml("div", { "class": "n7g-mni" }, "Оплатить"),
+              ml("div", { "class": "n7g-mni" }, local(context, "menuPayments")),
               ml("div", { "class": "n7g-cti" }, [
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "megastock").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/megastock.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Megastock: каталог продавцов")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "megastock").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "servWithdrawToBankCard").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/tocard.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Перевод на карту")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "servWithdrawToBankCard").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "servBankTransfer").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/bank.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Банковский перевод")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "servBankTransfer").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "mobileCommunications").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/mobile.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Мобильная связь")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "mobileCommunications").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "servGames").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/games.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Онлайн-игры")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "servGames").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "publicUtilities").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/home.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Коммунальные услуги")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "publicUtilities").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "commercialTv").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/tv.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Коммерческое телевидение")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "commercialTv").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "servApple").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/apple.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Подарочная карта Apple")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "servApple").title)
                 ])
                 
               ]),
             ]),
 
             ml("div", { "class": "n7g-ctm" }, [
-              ml("div", { "class": "n7g-mni" }, "Для работы"),
+              ml("div", { "class": "n7g-mni" },  local(context, "menuForWork")),
               ml("div", { "class": "n7g-cti" }, [
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "video").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/video.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Видеозвонки и онлайн-трансляции")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "video").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "memo").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/memo.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Управление закладками")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "memo").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "files").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/files.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Файловое хранилище")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "files").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "notes").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/notes.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Верстка и публикация заметок")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "notes").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "mail").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/mail.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Защищенная почта")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "mail").title)
                 ]),
 
-                ml("a", { "class": "n7g-svi", "href": "#" }, [
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "events").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/events.svg") }),
-                  ml("span", { "class": "n7g-stl" }, "Деловая сеть")
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "events").title)
                 ])
                 
               ])
@@ -391,7 +391,7 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "wiki").url }, getLink(context, "wiki").title),
             ]),
             ml("div", { "class": "n7g-clm", "data-n7g-toggle-item": "" }, [
-              ml("div", { "class": "n7g-ttl" }, getLink(context, "purseManagement2").title),
+              ml("div", { "class": "n7g-ttl" }, local(context, "menuPurseManagement")),
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "keeperStandardMini2").url }, getLink(context, "keeperStandardMini2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "keeperWinProClassic2").url }, getLink(context, "keeperWinProClassic2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "keeperWebProLight2").url }, getLink(context, "keeperWebProLight2").title),
@@ -487,6 +487,7 @@ export default {
             ml("div", { "class": "n7g-chps" }, 
               ml("div", { "class": "n7g-smr" }, [
                 ml("a", { "class": "n7g-sml", "href": "#", "data-n7g-search-where": consts.SEARCH_WHERE_INFO }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_INFO)),
+                ml("a", { "class": "n7g-sml", "href": "#", "data-n7g-search-where": consts.SEARCH_WHERE_TRANSACTION }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_TRANSACTION)),
                 ml("a", { "class": "n7g-sml", "href": "#", "data-n7g-search-where": consts.SEARCH_WHERE_GOODS }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_GOODS)),
                 ml("a", { "class": "n7g-sml", "href": "#", "data-n7g-search-where": consts.SEARCH_WHERE_INOUT }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_INOUT)),
                 ml("a", { "class": "n7g-sml", "href": "#", "data-n7g-search-where": consts.SEARCH_WHERE_WIKI }, local(context, "menuFindTitle_" + consts.SEARCH_WHERE_WIKI)),

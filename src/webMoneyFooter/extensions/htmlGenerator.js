@@ -44,10 +44,10 @@ export default {
 
     return ml("div", { "class": "n9g-ll" },
       [
-        ml("a", { "class": "n9g-lll", "href": "#" }, local(context, "menuFooterBusinessNetwork")),
-        ml("a", { "class": "n9g-lll", "href": "#" }, local(context, "menuFooterDevelopers")),
-        ml("a", { "class": "n9g-lll", "href": "#" }, "Wiki"),
-        ml("a", { "class": "n9g-lll", "href": "#" }, local(context, "menuFooterNews"))
+        ml("a", { "class": "n9g-lll", "href": getLink(context, "events").url }, getLink(context, "events").title),
+        ml("a", { "class": "n9g-lll", "href": getLink(context, "developers").url }, getLink(context, "developers").title),
+        ml("a", { "class": "n9g-lll", "href": getLink(context, "wiki").url }, getLink(context, "events").title),
+        ml("a", { "class": "n9g-lll", "href": getLink(context, "news").url }, getLink(context, "news").title)
       ]);
   },
   
@@ -67,19 +67,19 @@ export default {
     }
 
     return ml("div", { "class": "n9g-lr" }, [ 
-      context.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--vk", "target": "_blank", "rel": "noopener noreferrer", "href": "#" },
+      context.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--vk", "target": "_blank", "rel": "noopener noreferrer", "href": getLink(context, "vk").url },
         ml("img", { "class": "n9g-lri", "src": vkIconUrl })) : "",
-      showFacebookIcon ? ml("a", { "class": "n9g-lrl n9g-lrl--fb", "target": "_blank", "rel": "noopener noreferrer", "href": "#" },
+      showFacebookIcon ? ml("a", { "class": "n9g-lrl n9g-lrl--fb", "target": "_blank", "rel": "noopener noreferrer", "href": getLink(context, "facebook").url },
         ml("img", { "src": facebookIconUrl })) : "",
-      ml("a", { "class": "n9g-lrl n9g-lrl--tw", "target": "_blank", "rel": "noopener noreferrer", "href": "#" },
+      ml("a", { "class": "n9g-lrl n9g-lrl--tw", "target": "_blank", "rel": "noopener noreferrer", "href": getLink(context, "twitter").url },
         ml("img", { "class": "n9g-lri", "src": twitterIconUrl })),
-      context.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--od", "target": "_blank", "rel": "noopener noreferrer", "href": "#" },
+      context.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--od", "target": "_blank", "rel": "noopener noreferrer", "href": getLink(context, "odnoklassniki").url },
         ml("img", { "class": "n9g-lri", "src": odnoklassnikiIconUrl })) : "",
-      context.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--yt", "target": "_blank", "rel": "noopener noreferrer", "href": "#" },
+      context.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--yt", "target": "_blank", "rel": "noopener noreferrer", "href": getLink(context, "youTube").url },
         ml("img", { "class": "n9g-lri", "src": youtubeIconUrl })) : "",
-      context.domainType == consts.DOMAIN_TYPE_MONEY ? ml("a", { "class": "n9g-lrl n9g-lrl--im", "target": "_blank", "rel": "noopener noreferrer", "href": "#" },
+      context.domainType == consts.DOMAIN_TYPE_MONEY ? ml("a", { "class": "n9g-lrl n9g-lrl--im", "target": "_blank", "rel": "noopener noreferrer", "href": getLink(context, "instagram").url },
         ml("img", { "src": instagramIconUrl })) : "",
-      context.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--tg", "target": "_blank", "rel": "noopener noreferrer", "href": "#" },
+      context.lang == consts.LANG_RU ? ml("a", { "class": "n9g-lrl n9g-lrl--tg", "target": "_blank", "rel": "noopener noreferrer", "href": getLink(context, "telegram").url },
         ml("img", { "class": "n9g-lri", "src": telegramIconUrl })) : ""
     ]);
   },
@@ -186,7 +186,7 @@ export default {
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "photoId").url }, getLink(context, "photoId").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "changeBl").url }, getLink(context, "changeBl").title),
 
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "inoutcontext").url }, getLink(context, "inoutcontext").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "inoutOptions").url }, getLink(context, "inoutOptions").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "acceptPayments").url }, getLink(context, "acceptPayments").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "repayment").url }, getLink(context, "repayment").title),
       

@@ -41,16 +41,49 @@ var linkStorage = {
     d: constAllDomainTypes,
     u: []
   },
-  services: {
-    t: [
-      "Сервисы",
-      "Services",
-      "Servicio",
-      "Servicio",
-      "Hizmetler"
+  // =========================
+  // Сервисы (1)
+  // =========================
+  servWmx: {
+    t: "WMX (Bitcoin)",
+    u: "wmx.wmtransfer.com"
+  },
+  servWmh: {
+    t: "WMH (Bitcoin Cash)",
+    u: "wmh.wmtransfer.com"
+  },
+  servWml: {
+    t: "WML (Litecoin)",
+    u: "wml.wmtransfer.com"
+  },
+  servWmf: {
+    t: "WMF (Ethereum)",
+    u: "wmf.wmtransfer.com"
+  },
+  servWithdrawToBankCard: {
+    t: ["Вывод на карту", "Withdraw to card", "Retirar a tarjeta", 
+      "Retirar para o cartão",
+      "Karta geri çek"
     ],
-    d: constAllDomainTypes,
-    u: []
+    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en", "/en"], "/cards"]
+  },
+  servBankTransfer: {
+    t: ["Банковский перевод", "Bank transfer", "Transferencia bancaria", 
+      "Transferência bancária",
+      "Banka transferi"
+    ],
+    u: "withdraw.web.money"
+  },
+  servGames: {
+    t: ["Онлайн-игры", "Online games", "Juegos en línea", 
+      "Jogos online",
+      "Cevrimiçi oyunlar"
+    ],
+    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en", "/en"], "/online-games"]
+  },
+  servApple: {
+    t: ["Подарочная карта Apple", "Apple gift card"],
+    u: "plati.market/games/podarochnaja-karta-app-store-itunes/90/"
   },
   // =========================
   // О системе (1)
@@ -285,9 +318,17 @@ var linkStorage = {
     t: "Вконтакте",
     u: "vk.com/webmoney.transfer"
   },
+  odnoklassniki: {
+    t: "Одноклассники",
+    u: "ok.ru/group/53706567844072"
+  },
   youTube: {
     t: "YouTube",
     u: "youtube.com/c/webmoney"
+  },
+  instagram: {
+    t: "Instagram",
+    u: "www.instagram.com/webmoney"
   },
   telegram: {
     t: "Telegram",
@@ -798,6 +839,14 @@ var linkStorage = {
   wiki: {
     t: "Wiki",
     u: "wiki.web.money"
+  },
+  developers: {
+    t: ["Разработчикам", "For developers", "Para desorolladores",
+    "Para programadores",
+    "Geliştiriciler için"
+    ],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlDevelopers, "/api.shtml"]
   },
   purseManagement2: {
     q: "",

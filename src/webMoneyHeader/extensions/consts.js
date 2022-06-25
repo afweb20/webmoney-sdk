@@ -14,6 +14,7 @@ export default {
   LANG_VN: "vn",
 
   SEARCH_WHERE_INFO: "info",
+  SEARCH_WHERE_TRANSACTION: "transaction",
   SEARCH_WHERE_GOODS: "goods",
   SEARCH_WHERE_INOUT: "inout",
   SEARCH_WHERE_WIKI: "wiki",
