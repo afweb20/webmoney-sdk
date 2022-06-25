@@ -303,11 +303,10 @@ export default {
           ml("div", { "class": "n7g-col" }, [
             ml("div", { "class": "n7g-clm", "data-n7g-toggle-item": "" }, [
               ml("div", { "class": "n7g-ttl" }, local(context, "menuTopUp")),
-              ml("a", { "class": "n7g-lnk", "href": getLink(context, "topUpCash").url }, getLink(context, "topUpCash").title),
-              ml("a", { "class": "n7g-lnk", "href": getLink(context, "topUpBankAccount").url }, getLink(context, "topUpBankAccount").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(context, "topUpBankCard").url }, getLink(context, "topUpBankCard").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "topUpEMoney").url }, getLink(context, "topUpEMoney").title),
-              ml("a", { "class": "n7g-lnk", "href": getLink(context, "topUpPaymentTerminat").url }, getLink(context, "topUpPaymentTerminat").title),
-              ml("a", { "class": "n7g-lnk", "href": getLink(context, "topUpMoneyTransfer").url }, getLink(context, "topUpMoneyTransfer").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(context, "topUpBankAccount").url }, getLink(context, "topUpBankAccount").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(context, "topUpCash").url }, getLink(context, "topUpCash").title)
             ]),
             ml("div", { "class": "n7g-clm", "data-n7g-toggle-item": "" }, [
               ml("div", { "class": "n7g-ttl" }, local(context, "menuRaiseFunds")),
@@ -337,8 +336,7 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "withdrawCash").url }, getLink(context, "withdrawCash").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "withdrawToBankCard").url }, getLink(context, "withdrawToBankCard").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "withdrawBankAccount").url }, getLink(context, "withdrawBankAccount").title),
-              ml("a", { "class": "n7g-lnk", "href": getLink(context, "withdrawEmoney").url }, getLink(context, "withdrawEmoney").title),
-              ml("a", { "class": "n7g-lnk", "href": getLink(context, "withdrawTransfer").url }, getLink(context, "withdrawTransfer").title),
+              ml("a", { "class": "n7g-lnk", "href": getLink(context, "withdrawEmoney").url }, getLink(context, "withdrawEmoney").title)
             ]),
             ml("div", { "class": "n7g-clm", "data-n7g-toggle-item": "" }, [
               ml("div", { "class": "n7g-ttl" }, local(context, "menuWebMoneyOperations")),

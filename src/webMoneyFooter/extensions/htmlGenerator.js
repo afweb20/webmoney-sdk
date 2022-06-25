@@ -46,7 +46,7 @@ export default {
       [
         ml("a", { "class": "n9g-lll", "href": getLink(context, "events").url }, getLink(context, "events").title),
         ml("a", { "class": "n9g-lll", "href": getLink(context, "developers").url }, getLink(context, "developers").title),
-        ml("a", { "class": "n9g-lll", "href": getLink(context, "wiki").url }, getLink(context, "events").title),
+        ml("a", { "class": "n9g-lll", "href": getLink(context, "wiki").url }, getLink(context, "wiki").title),
         ml("a", { "class": "n9g-lll", "href": getLink(context, "news").url }, getLink(context, "news").title)
       ]);
   },
@@ -106,7 +106,7 @@ export default {
   generateMiddlePartAboutSystem: function (context) {
 
     return ml("div", { "class": "n9g-cln" }, [
-      ml("div", { "class" : "n9g-mtl" }, "О системе"),
+      ml("div", { "class" : "n9g-mtl" }, local(context, "menuAboutWebMoney")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "briefDescription").url }, getLink(context, "briefDescription").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "purseTypes").url }, getLink(context, "purseTypes").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "purseManagement").url }, getLink(context, "purseManagement").title),
@@ -121,7 +121,7 @@ export default {
   generateMiddlePartPurseManagement: function (context) {
 
     return ml("div", { "class": "n9g-cln" }, [
-      ml("div", { "class" : "n9g-mtl" }, getLink(context, "purseManagement").title),
+      ml("div", { "class" : "n9g-mtl" }, local(context, "menuPurseManagement")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperStandardMini").url }, getLink(context, "keeperStandardMini").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperWinProClassic").url }, getLink(context, "keeperWinProClassic").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperWebProLight").url }, getLink(context, "keeperWebProLight").title),
@@ -134,7 +134,7 @@ export default {
   generateMiddlePartLegalInformation: function (context) {
 
     return ml("div", { "class": "n9g-cln" }, [
-      ml("div", { "class" : "n9g-mtl" }, getLink(context, "legalInformation").title),
+      ml("div", { "class" : "n9g-mtl" }, local(context, "menuLegalInformation")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "webMoneyTransferCode").url }, getLink(context, "webMoneyTransferCode").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "propertyRightsTransferAgreement").url }, getLink(context, "propertyRightsTransferAgreement").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "amlAgreement").url }, getLink(context, "amlAgreement").title),
@@ -147,7 +147,7 @@ export default {
   generateMiddlePartHelp: function (context) {
 
     return ml("div", { "class": "n9g-cln" }, [
-      ml("div", { "class" : "n9g-mtl" }, "Помощь"),
+      ml("div", { "class" : "n9g-mtl" }, local(context, "menuHelp")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "technicalSupport").url }, getLink(context, "technicalSupport").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "financialSupport").url }, getLink(context, "financialSupport").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "forum").url }, getLink(context, "forum").title),
@@ -167,7 +167,7 @@ export default {
   generateMiddlePartContacts: function (context) {
 
     return ml("div", { "class": "n9g-cln" }, [
-      ml("div", { "class" : "n9g-mtl" }, "Контактная информация"),
+      ml("div", { "class" : "n9g-mtl" }, local(context, "menuContactInformation")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "ownerAndAdministrator").url }, getLink(context, "ownerAndAdministrator").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "wmPurseGuarantors").url }, getLink(context, "wmPurseGuarantors").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "contactsForLegalRequests").url }, getLink(context, "contactsForLegalRequests").title),
@@ -180,7 +180,7 @@ export default {
   generateMiddlePartInstructions: function (context) {
 
     return ml("div", { "class": "n9g-cln" }, [
-      ml("div", { "class" : "n9g-mtl" }, "Инструкции"),
+      ml("div", { "class" : "n9g-mtl" }, local(context, "menuInstrucciones")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "registration").url }, getLink(context, "registration").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "poluchenieAttestata").url }, getLink(context, "poluchenieAttestata").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "photoId").url }, getLink(context, "photoId").title),
@@ -204,40 +204,40 @@ export default {
   generateMiddlePartApps: function (context) {
 
     return ml("div", { "class": "n9g-cln n9g-cln--x2" }, [
-      ml("div", { class: "n9g-mtl"}, "Приложения для смартфонов"),
+      ml("div", { class: "n9g-mtl"}, local(context, "menuMobileApps")),
       ml("div", { class: "n9g-aps" }, [
-        ml("a", { class: "n9g-ait", href: "#" }, [
+        ml("a", { class: "n9g-ait", href: getLink(context, "appAppStore").url }, [
           ml("span", { class: "n9g-aim" }, 
             ml("img", { class: "n9g-aig", src: require("../images/apps/app-store.svg") })
           ),
-          ml("span", { class: "n9g-atx" }, "App Store")
+          ml("span", { class: "n9g-atx" }, getLink(context, "appAppStore").title)
         ]),
-        ml("a", { class: "n9g-ait", href: "#" }, [
+        ml("a", { class: "n9g-ait", href: getLink(context, "appGooglePlay").url }, [
           ml("span", { class: "n9g-aim" }, 
             ml("img", { class: "n9g-aig", src: require("../images/apps/google-play.svg") })
           ),
-          ml("span", { class: "n9g-atx" }, "Google Play")
+          ml("span", { class: "n9g-atx" }, getLink(context, "appGooglePlay").title)
         ]),
-        ml("a", { class: "n9g-ait", href: "#" }, [
+        ml("a", { class: "n9g-ait", href: getLink(context, "appMicrosoftStore").url }, [
           ml("span", { class: "n9g-aim" }, 
             ml("img", { class: "n9g-aig", src: require("../images/apps/windows-store.svg") })
           ),
-          ml("span", { class: "n9g-atx" }, "Microsoft Store")
+          ml("span", { class: "n9g-atx" }, getLink(context, "appMicrosoftStore").title)
         ])
       ]),
-      ml("div", { class: "n9g-mtl"}, "Приложения для ПК"),
+      ml("div", { class: "n9g-mtl"}, local(context, "menuPcApps")),
       ml("div", { class: "n9g-aps" }, [
-        ml("a", { class: "n9g-ait", href: "#" }, [
+        ml("a", { class: "n9g-ait", href: getLink(context, "appWindows").url }, [
           ml("span", { class: "n9g-aim" }, 
             ml("img", { class: "n9g-aig", src: require("../images/apps/windows.svg") })
           ),
-          ml("span", { class: "n9g-atx" }, "Windows")
+          ml("span", { class: "n9g-atx" }, getLink(context, "appWindows").title)
         ]),
-        ml("a", { class: "n9g-ait", href: "#" }, [
+        ml("a", { class: "n9g-ait", href: getLink(context, "appMacOS").url }, [
           ml("span", { class: "n9g-aim" }, 
             ml("img", { class: "n9g-aig", src: require("../images/apps/os-x.svg") })
           ),
-          ml("span", { class: "n9g-atx" }, "Mac OS")
+          ml("span", { class: "n9g-atx" }, getLink(context, "appMacOS").title)
         ])
       ])
     ]);
