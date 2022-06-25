@@ -7,7 +7,7 @@ export default {
 
   generate: function (context) {
 
-    return ml("div", { class: "n9g" }, [
+    return ml("div", { class: "n9g n9g-" + context.view }, [
       this.generateIlliciumBlock(context),
       this.generateTopPartFooter(context),
       this.generateMiddlePartFooter(context),

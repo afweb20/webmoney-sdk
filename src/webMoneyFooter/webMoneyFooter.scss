@@ -68,14 +68,10 @@
     @include resetImg;
   }
   &-ctr {
-    width: 100%;
-    min-width: 320px;
-    max-width: 960px;
-    padding: 0 16px;
+    min-width: 960px;
+    width: 960px;
     margin: 0 auto;
-    @media (min-width: 992px) {
-      padding: 0;
-    }
+    padding: 0;
   }
   &-bnr {
     margin-bottom: 24px;
@@ -87,10 +83,7 @@
   }
   &-ln {
     box-shadow: 0px 0px 0px 1px #eee;
-    padding: 16px 0 8px;
-    @media (min-width: 768px) {
-      padding: 0;
-    }
+    padding: 0;
     &f {
       flex-wrap: wrap;
       display: flex;
@@ -101,15 +94,8 @@
   &-ll {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    @media (min-width: 360px) {
-      justify-content: space-between;
-      width: 100%;
-    }
-    @media (min-width: 576px) {
-      width: auto;
-      justify-content: flex-start;
-    }
+    width: auto;
+    justify-content: flex-start;
     a.n9g-lll {
       color: #101828;
       font-family: "Manrope", "Helvetica", sans-serif;
@@ -119,17 +105,8 @@
       cursor: pointer;
       transition: all 0.2s;
       display: block;
-      margin-right: 8px;
-      @media (min-width: 360px) {
-        margin-right: 0;
-      }
-      @media (min-width: 576px) {
-        margin-right: 16px;
-      }
-      @media (min-width: 768px) {
-        padding: 16px 0;
-        margin-right: 32px;
-      }
+      padding: 16px 0;
+      margin-right: 32px;
       &:visited,
       &:active,
       &:focus{
@@ -142,19 +119,12 @@
   }
   &-lr {
     display: flex;
-    padding: 16px 0 0;
-    flex: 1;
-    justify-content: center;
     flex-wrap: wrap;
-    @media (min-width: 576px) {
-      flex: auto;
-      justify-content: flex-end;
-      padding: 16px 0;
-    }
+    flex: auto;
+    justify-content: flex-end;
+    padding: 16px 0;
     &l {
       display: block;
-      width: 32px;
-      height: 32px;
       background-color: #9fb1bd;
       border-radius: 4px;
       display: flex;
@@ -163,12 +133,9 @@
       cursor: pointer;
       transition: all 0.2s;
       margin-right: 16px;
-      margin-bottom: 16px;
-      @media (min-width: 576px) {
-        width: 20px;
-        height: 20px;
-        margin-bottom: 0px;
-      }
+      width: 20px;
+      height: 20px;
+      margin-bottom: 0px;
       &:last-child {
         margin-right: 0;
       }
@@ -210,12 +177,8 @@
     }
   }
   &-lri {
-    width: 32px;
-    height: 32px;
-    @media (min-width: 576px) {
-      width: 20px;
-      height: 20px;
-    }
+    width: 20px;
+    height: 20px;
   }
   &-mdl {
     padding: 24px 0 0;
@@ -226,22 +189,11 @@
     margin: 0 -16px;
   }
   &-cln {
-    width: 100%;
-    margin-bottom: 16px;
     padding: 0 16px;
-    @media (min-width: 576px) {
-      width: 50%;
-      margin-bottom: 24px;
-    }
-    @media (min-width: 768px) {
-      width: 25%;
-      margin-bottom: 40px;
-    }
+    width: 25%;
+    margin-bottom: 40px;
     &--x2 {
-      width: 100%;
-      @media (min-width: 768px) {
-        width: 50%;
-      }
+      width: 50%;
     }
   }
   &-mtl {
@@ -252,25 +204,18 @@
     padding: 4px 0;
     font-weight: 600;
     cursor: default;
-    margin-bottom: 4px;
-    @media (min-width: 768px) {
-      margin-bottom: 12px;
-    }
+    margin-bottom: 12px;
   }
   a.n9g-mlk {
     color: #707070;
     font-family: "Manrope", "Helvetica", sans-serif;
     font-size: 12px;
     line-height: 16px;
-    padding: 4px 8px 4px 0;
     font-weight: 500;
     cursor: pointer;
     transition: all 0.2s;
-    display: inline-flex;
-    @media (min-width: 768px) {
-      display: block;
-      padding: 4px 0;
-    }
+    display: block;
+    padding: 4px 0;
     &:visited,
     &:active,
     &:focus{
@@ -283,23 +228,16 @@
   &-aps {
     display: flex;
     flex-wrap: wrap;
-    @media (min-width: 768px) {
-      margin-bottom: 16px;
-    }
+    margin-bottom: 16px;
   }
   &-ait {
-    width: 50%;
     display: flex;
     align-items: center;
     margin-bottom: 16px;
-    flex-wrap: wrap;
-    @media (min-width: 496px) {
-      width: 33.333333%;
-      flex-wrap: nowrap;
-    }
+    width: 33.333333%;
+    flex-wrap: nowrap;
   }
   &-aim {
-    // border: 1px solid #eeeeee;
     border-radius: 24px;
     width: 48px;
     height: 48px;
@@ -328,18 +266,12 @@
   &-btp {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 32px;
-    @media (min-width: 768px) {
-      margin-bottom: 24px;
-    }
+    margin-bottom: 24px;
   }
   &-bbp {
     display: flex;
     justify-content: space-between;
-    flex-direction: column-reverse;
-    @media (min-width: 768px) {
-      flex-direction: row;
-    }
+    flex-direction: row;
   }
   &-cprt {
     font-family: "Manrope", "Helvetica", sans-serif;
@@ -361,11 +293,8 @@
     line-height: 16px;
     color: #babcbf;
     max-width: 476px;
-    margin-bottom: 32px;
-    @media (min-width: 768px) {
-      text-align: right;
-      margin-bottom: 0;
-    }
+    text-align: right;
+    margin-bottom: 0;
   }
   &-lgc {
     font-family: "Manrope", "Helvetica", sans-serif;
@@ -373,14 +302,10 @@
     font-weight: 500;
     line-height: 16px;
     color: #babcbf;
-    padding: 8px 16px 8px 32px;
     cursor: pointer;
     position: relative;
-    text-indent: -9999px;
-    @media (min-width: 576px) {
-      text-indent: 0;
-      padding: 8px 24px 8px 32px;
-    }
+    text-indent: 0;
+    padding: 8px 24px 8px 32px;
     &:after {
       content: "";
       display: block;
@@ -422,16 +347,13 @@
         &:after,
         &:before {
           top: 100%;
-          left: 66px;
           border: solid transparent;
           content: "";
           height: 0;
           width: 0;
           position: absolute;
           pointer-events: none;
-          @media (min-width: 576px) {
-            left: 16px;
-          }
+          left: 16px;
         }
   
         &:after {
@@ -485,6 +407,169 @@
     display: block;
     &:hover {
       color: #006cb4;
+    }
+  }
+  &.n9g-desktop {
+    min-width: 960px;
+  }
+  &.n9g-adaptive {
+    a.n9g-mlk {
+      padding: 4px 8px 4px 0;
+      display: inline-flex;
+      @media (min-width: 768px) {
+        display: block;
+        padding: 4px 0;
+      }
+    }
+    .n9g{
+      &-ctr {
+        width: 100%;
+        min-width: 320px;
+        max-width: 960px;
+        padding: 0 16px;
+        @media (min-width: 992px) {
+          padding: 0;
+        }
+      }
+      &-ln {
+        padding: 16px 0 8px;
+        @media (min-width: 768px) {
+          padding: 0;
+        }
+      }
+      &-ll {
+        justify-content: center;
+        width: auto;
+        @media (min-width: 360px) {
+          justify-content: space-between;
+          width: 100%;
+        }
+        @media (min-width: 576px) {
+          width: auto;
+          justify-content: flex-start;
+        }
+        a.n9g-lll {
+          padding: 0;
+          margin-right: 8px;
+          @media (min-width: 360px) {
+            margin-right: 0;
+          }
+          @media (min-width: 576px) {
+            margin-right: 16px;
+          }
+          @media (min-width: 768px) {
+            padding: 16px 0;
+            margin-right: 32px;
+          }
+        }
+      }
+      &-lr {
+        padding: 16px 0 0;
+        flex: 1;
+        justify-content: center;
+        @media (min-width: 576px) {
+          flex: auto;
+          justify-content: flex-end;
+          padding: 16px 0;
+        }
+        &l {
+          width: 32px;
+          height: 32px;
+          margin-bottom: 16px;
+          @media (min-width: 576px) {
+            width: 20px;
+            height: 20px;
+            margin-bottom: 0px;
+          }
+        }
+      }
+      &-lri {
+        width: 32px;
+        height: 32px;
+        @media (min-width: 576px) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      &-cln {
+        width: 100%;
+        margin-bottom: 16px;
+        @media (min-width: 576px) {
+          width: 50%;
+          margin-bottom: 24px;
+        }
+        @media (min-width: 768px) {
+          width: 25%;
+          margin-bottom: 40px;
+        }
+        &--x2 {
+          width: 100%;
+          @media (min-width: 768px) {
+            width: 50%;
+          }
+        }
+      }
+      &-mtl {
+        margin-bottom: 4px;
+        @media (min-width: 768px) {
+          margin-bottom: 12px;
+        }
+      }
+      &-aps {
+        margin-bottom: 0;
+        @media (min-width: 768px) {
+          margin-bottom: 16px;
+        }
+      }
+      &-ait {
+        width: 50%;
+        flex-wrap: wrap;
+        @media (min-width: 496px) {
+          width: 33.333333%;
+          flex-wrap: nowrap;
+        }
+      }
+      &-btp {
+        margin-bottom: 32px;
+        @media (min-width: 768px) {
+          margin-bottom: 24px;
+        }
+      }
+      &-bbp {
+        flex-direction: column-reverse;
+        @media (min-width: 768px) {
+          flex-direction: row;
+        }
+      }
+      &-ctx {
+        text-align: left;
+        margin-bottom: 32px;
+        @media (min-width: 768px) {
+          text-align: right;
+          margin-bottom: 0;
+        }
+      }
+      &-lgc {
+        padding: 8px 16px 8px 32px;
+        text-indent: -9999px;
+        @media (min-width: 576px) {
+          text-indent: 0;
+          padding: 8px 24px 8px 32px;
+        }
+      }
+      &-lgsl {
+        &.n9g-is-a{
+          .n9g-lgl {
+            &:after,
+            &:before {
+              left: 66px;
+              @media (min-width: 576px) {
+                left: 16px;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

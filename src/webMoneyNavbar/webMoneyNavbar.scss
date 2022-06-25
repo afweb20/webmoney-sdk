@@ -172,7 +172,16 @@
       color: #101828;
     }
   }
+  &.n8g-desktop {
+    min-width: 960px;
+  }
   &.n8g-adaptive {
+    a.n8g-sll{
+      padding: 0 8px;
+      @media (min-width: 768px) {
+        padding: 0 12px;
+      }
+    }
     .n8g{
       &-ctr {
         width: 100%;
@@ -271,12 +280,6 @@
             right: -12px;
             transform: rotate(-90deg);
           }
-        }
-      }
-      a.n8g-sll{
-        padding: 0 8px;
-        @media (min-width: 768px) {
-          padding: 0 12px;
         }
       }
     }
