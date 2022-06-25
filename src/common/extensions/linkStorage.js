@@ -41,6 +41,17 @@ var linkStorage = {
     d: constAllDomainTypes,
     u: []
   },
+  services: {
+    t: [
+      "Сервисы",
+      "Services",
+      "Servicio",
+      "Servicio",
+      "Hizmetler"
+    ],
+    d: constAllDomainTypes,
+    u: []
+  },
   // =========================
   // О системе (1)
   // =========================

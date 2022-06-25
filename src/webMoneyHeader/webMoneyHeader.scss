@@ -134,6 +134,10 @@
     height: 32px;
     cursor: pointer;
     margin-right: 32px;
+    text-indent: -9999px;
+    & > .n7g-lki:after{
+      display: none;
+    }
     &.n7g-is-a{
       background: transparent url("./images/svs-a.svg") center center no-repeat;
     }
@@ -677,7 +681,7 @@
                 height: 48px;
                 @media (max-width: 575px) {
                   display: flex;
-                  justify-content: center;
+                  padding-left: 8px;
                 }
               }
             }
@@ -732,6 +736,17 @@
       }
       &-svs{
         margin-right: 0;
+        & > .n7g-lki:after{
+          display: none;
+        }
+        @media (max-width: 575px) {
+          width: auto;
+          height: auto;
+          background: transparent;
+          & > .n7g-lki{
+            text-indent: 0;
+          }
+        }
         @media (max-width: 767px) {
           background-size: 28px;
         }
@@ -741,6 +756,9 @@
         &.n7g-is-a{
           @media (max-width: 767px) {
             background-size: 28px;
+            & > .n7g-lki{
+              color: #006cb4;
+            }
           }
         }
       }

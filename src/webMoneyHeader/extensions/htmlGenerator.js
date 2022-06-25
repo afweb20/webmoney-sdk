@@ -17,7 +17,9 @@ export default {
               ),
               ml("div", { "class": "n7g-mdl" }, [
                 ml("div", { "class": "n7g-dtr" }),
-                ml("div", { "class": "n7g-svs", "data-n7g-services-toggle-menu": "" }),
+                ml("div", { "class": "n7g-svs", "data-n7g-services-toggle-menu": "" }, 
+                  ml("div", { "class": "n7g-lki" }, getLink(context, "services").title)
+                ),
                 this.generateFirstLevelMenu(context),
                 this.generateSearchBlock(context)
               ])
