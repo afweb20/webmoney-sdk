@@ -1,6 +1,3 @@
-// TODO: боковые стрелочки всегда видны.
-// TODO: Нельзя кликнуть по первуму пункту при маленьких размерах.
-
 import "url-polyfill"; // IE 11 не поддерживает конструктор URL, который использует webpack 5.
 import contextParser from "./extensions/contextParser";
 import htmlGenerator from "./extensions/htmlGenerator";

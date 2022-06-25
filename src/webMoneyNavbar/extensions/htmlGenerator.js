@@ -14,7 +14,20 @@ export default {
   generateFirstLevel: function (context) {
 
     var iconUrl = context.iconUrl;
-    var title = context.firstLevel.length > 0 ? context.firstLevel[0].title : null;
+    var firstLevel = context.firstLevel;
+    var title = firstLevel.length > 0 ? firstLevel[0].title : null;
+
+    for (var i = 0; i < firstLevel.length; i++) {
+
+      var active = firstLevel[i].active;
+
+      if (active) {
+
+        title = firstLevel[i].title;
+
+      }
+
+    }
 
     return ml("div", { "class": "n8g-ftl" }, 
       ml("div", { "class": "n8g-ctr" }, 
