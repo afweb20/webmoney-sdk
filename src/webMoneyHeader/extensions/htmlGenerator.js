@@ -197,6 +197,11 @@ export default {
               ml("div", { "class": "n7g-mni" }, local(context, "menuPayments")),
               ml("div", { "class": "n7g-cti" }, [
 
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "digisellerCatalogOfdigitalGoods").url }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/digiseller.svg") }),
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "digisellerCatalogOfdigitalGoods").title)
+                ]),
+
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "megastock").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/megastock.svg") }),
                   ml("span", { "class": "n7g-stl" }, getLink(context, "megastock").title)
@@ -225,11 +230,6 @@ export default {
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "publicUtilities").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/home.svg") }),
                   ml("span", { "class": "n7g-stl" }, getLink(context, "publicUtilities").title)
-                ]),
-
-                ml("a", { "class": "n7g-svi", "href": getLink(context, "commercialTv").url }, [
-                  ml("img", { "class": "n7g-sic", "src": require("../images/services/tv.svg") }),
-                  ml("span", { "class": "n7g-stl" }, getLink(context, "commercialTv").title)
                 ]),
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "servApple").url }, [
@@ -272,7 +272,17 @@ export default {
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "events").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/events.svg") }),
                   ml("span", { "class": "n7g-stl" }, getLink(context, "events").title)
-                ])
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "mentor").url }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/mentor.svg") }),
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "mentor").title)
+                ]),
+
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "advisor").url }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/advisor.svg") }),
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "advisor").title)
+                ]),
                 
               ])
             ])

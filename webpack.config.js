@@ -4,6 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = (env, argv) => {
 
+  // let enviroment = "production";
   let enviroment = getEnviroment(env, argv);
 
   let config = {
@@ -104,6 +105,7 @@ module.exports = (env, argv) => {
   } else {
 
     config.output.publicPath = "https://cdn.web.money/layout/";
+    // config.output.publicPath = "https://cdn.web.money/layout/stage/";
   }
 
   return config;
