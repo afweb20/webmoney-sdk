@@ -840,6 +840,14 @@ var linkStorage = {
     t: "Wiki",
     u: "wiki.web.money"
   },
+  developers: {
+    t: ["Разработчикам", "For developers", "Para desorolladores",
+    "Para programadores",
+    "Geliştiriciler için"
+    ],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlDevelopers, "/api.shtml"]
+  },
   purseManagement2: {
     q: "",
     t: ["Управление кошельками", "Purse management", "Manejar los monederos", 

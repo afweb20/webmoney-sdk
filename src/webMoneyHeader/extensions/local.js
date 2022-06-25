@@ -172,7 +172,7 @@ var localization = {
     "en": "For developers",
     "es": "Para desorolladores",
     "pt": "Para programadores",
-    "tr": "WebMoney olanakları",
+    "tr": "Geliştiriciler için",
     "vn": "For developers"
   },
   findPlaceholder: {

@@ -44,10 +44,10 @@ export default {
 
     return ml("div", { "class": "n9g-ll" },
       [
-        ml("a", { "class": "n9g-lll", "href": "#" }, local(context, "menuFooterBusinessNetwork")),
-        ml("a", { "class": "n9g-lll", "href": "#" }, local(context, "menuFooterDevelopers")),
-        ml("a", { "class": "n9g-lll", "href": "#" }, "Wiki"),
-        ml("a", { "class": "n9g-lll", "href": "#" }, local(context, "menuFooterNews"))
+        ml("a", { "class": "n9g-lll", "href": getLink(context, "events").url }, getLink(context, "events").title),
+        ml("a", { "class": "n9g-lll", "href": getLink(context, "developers").url }, getLink(context, "developers").title),
+        ml("a", { "class": "n9g-lll", "href": getLink(context, "wiki").url }, getLink(context, "events").title),
+        ml("a", { "class": "n9g-lll", "href": getLink(context, "news").url }, getLink(context, "news").title)
       ]);
   },
   
@@ -186,7 +186,7 @@ export default {
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "photoId").url }, getLink(context, "photoId").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "changeBl").url }, getLink(context, "changeBl").title),
 
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "inoutcontext").url }, getLink(context, "inoutcontext").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "inoutOptions").url }, getLink(context, "inoutOptions").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "acceptPayments").url }, getLink(context, "acceptPayments").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "repayment").url }, getLink(context, "repayment").title),
       
