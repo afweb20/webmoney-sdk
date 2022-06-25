@@ -5,7 +5,7 @@ export default {
 
     var dynCls = "n8g-" + context.dynamicUniqueKey;
 
-    return ml("div", { "class": "n8g", "data-n8g-dynamic-class": dynCls }, [
+    return ml("div", { "class": "n8g n8g-" + context.view, "data-n8g-dynamic-class": dynCls }, [
       this.generateFirstLevel(context),
       this.generateSecondLevel(context)
     ]);
