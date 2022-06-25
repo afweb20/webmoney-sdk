@@ -18,7 +18,7 @@ export default {
     var styleContent = "";
 
     styleContent += dynamicPrefix + " .n8g-mcn {background: " + primaryColor + "}";
-    styleContent += dynamicPrefix + " .n8g-mnl.is-activated {background-color: " + primaryColor + "}";
+    styleContent += dynamicPrefix + " .n8g-mnl.n8g-is-a {background-color: " + primaryColor + "}";
     styleContent += dynamicPrefix + " .n8g-mbn {background-color: " + primaryColor + "}";
 
     var styleElement = document.createElement("style");
@@ -34,7 +34,7 @@ export default {
 
     toggleMenuElement.addEventListener("click", function (e) {
 
-      this.classList.toggle("is-a");
+      this.classList.toggle("n8g-is-a");
     });
   },
 

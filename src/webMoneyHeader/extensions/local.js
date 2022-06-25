@@ -152,12 +152,12 @@ var localization = {
     "vn": "Business"
   },
   findPlaceholder: {
-    "ru": "Строка для поиска",
-    "en": "Search string",
-    "es": "Cadena de búsqueda",
-    "pt": "Seqüência de pesquisa",
-    "tr": "Arama dizisi",
-    "vn": "Chuỗi tìm kiếm"
+    "ru": "Введите текст",
+    "en": "Enter the text",
+    "es": "Introduzca el texto",
+    "pt": "Digite o texto",
+    "tr": "Metni girin",
+    "vn": "Nhập vào văn bản"
   },
   menuFindTitle_info: {
     "ru": "Найти информацию",

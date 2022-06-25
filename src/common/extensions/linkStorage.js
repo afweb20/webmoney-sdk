@@ -36,6 +36,22 @@ var constUrlSubjects = "/subjects";
 var constUrlSupport = "/support";
 
 var linkStorage = {
+  logoLink: {
+    t: [],
+    d: constAllDomainTypes,
+    u: []
+  },
+  services: {
+    t: [
+      "Сервисы",
+      "Services",
+      "Servicio",
+      "Servicio",
+      "Hizmetler"
+    ],
+    d: constAllDomainTypes,
+    u: []
+  },
   // =========================
   // О системе (1)
   // =========================

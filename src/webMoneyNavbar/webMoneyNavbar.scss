@@ -105,7 +105,7 @@
     position: relative;
     font-size: 14px;
     line-height: 14px;
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope", "Helvetica", sans-serif;
     font-weight: 600;
     cursor: pointer;
     position: relative;
@@ -125,7 +125,7 @@
       display: none;
     }
     @media (max-width: 575px) {
-      &.is-a{
+      &.n8g-is-a{
         &::after{
           transform: rotate(-180deg);
         }
@@ -164,7 +164,7 @@
     @media (min-width: 576px) {
       padding: 0 16px;
     }
-    &.is-activated {
+    &.n8g-is-a {
       &:hover .n8g-mnt,
       .n8g-mnt{
         color: #fff;
@@ -186,7 +186,7 @@
     font-weight: inherit;
     font-size: 14px;
     line-height: 14px;
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope", "Helvetica", sans-serif;
     font-weight: 600;
     transition: all 0.2s;
   }
@@ -239,7 +239,7 @@
     font-weight: inherit;
     font-size: 13px;
     line-height: 14px;
-    font-family: "Manrope", sans-serif;
+    font-family: "Manrope", "Helvetica", sans-serif;
     font-weight: 600;
     transition: all 0.2s;
     height: 40px;
@@ -256,7 +256,7 @@
       color: #758793;
     }
     &:hover,
-    &.is-activated {
+    &.n8g-is-a {
       color: #101828;
     }
   }
