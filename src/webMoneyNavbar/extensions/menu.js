@@ -40,6 +40,12 @@ export default {
 
   initSecondLevel: function (context) {
 
+    var secondLevel = context.secondLevel;
+
+    if (secondLevel.length == 0) {
+      return;
+    }
+
     var rootElement = context.rootElement;
 
     var secondLevelElement = rootElement.querySelector("[data-n8g-second-level]");

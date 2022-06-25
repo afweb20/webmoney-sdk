@@ -318,9 +318,17 @@ var linkStorage = {
     t: "Вконтакте",
     u: "vk.com/webmoney.transfer"
   },
+  odnoklassniki: {
+    t: "Одноклассники",
+    u: "ok.ru/group/53706567844072"
+  },
   youTube: {
     t: "YouTube",
     u: "youtube.com/c/webmoney"
+  },
+  instagram: {
+    t: "Instagram",
+    u: "www.instagram.com/webmoney"
   },
   telegram: {
     t: "Telegram",
