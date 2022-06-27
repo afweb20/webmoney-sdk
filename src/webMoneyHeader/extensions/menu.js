@@ -1,3 +1,5 @@
+import consts from "./consts";
+
 export default {
 
   init: function (context) {
@@ -22,8 +24,6 @@ export default {
     var searchDropDownMenuElement = rootElement.querySelector("[data-n7g-search-drop-down-menu]");
 
     var loginBlockToggleMenuElement = rootElement.querySelector("[data-n7g-login-block-toggle-menu]");
-
-    var toggleItemElements = rootElement.querySelectorAll("[data-n7g-toggle-item]");
 
     burgerToggleMenuElement.addEventListener("click", function (event) {
 
@@ -131,11 +131,53 @@ export default {
       }
     });
 
+    var toggleItemElements = rootElement.querySelectorAll("[data-n7g-toggle-item]");
+
     for (var i = 0; i < toggleItemElements.length; i++) {
 
       toggleItemElements[i].addEventListener("click", function () {
         this.classList.toggle(activeClassName);
       });
     }
+
+    var servicesCategoryForElements = rootElement.querySelectorAll("[data-n7g-services-category-for]");
+    var servicesCategoryNameElements = rootElement.querySelectorAll("[data-n7g-services-category-name]");
+
+    function refreshServicesCategories(name) {
+
+      for (var i = 0; i < servicesCategoryNameElements.length; i++) {
+
+        if (servicesCategoryNameElements[i].attributes["data-n7g-services-category-name"].value == name) {
+
+          servicesCategoryNameElements[i].classList.add(activeClassName);
+        } else {
+
+          servicesCategoryNameElements[i].classList.remove(activeClassName);
+        }
+      }
+
+      for (var i = 0; i < servicesCategoryForElements.length; i++) {
+
+        if (servicesCategoryForElements[i].attributes["data-n7g-services-category-for"].value == name) {
+
+          servicesCategoryForElements[i].classList.add(activeClassName);
+        } else {
+
+          servicesCategoryForElements[i].classList.remove(activeClassName);
+        }
+      }
+    }
+
+    for (var i = 0; i < servicesCategoryForElements.length; i++) {
+
+      servicesCategoryForElements[i].addEventListener("click", function () {
+
+        var name = this.attributes["data-n7g-services-category-for"].value;
+
+        refreshServicesCategories(name);
+      });
+    }
+
+    refreshServicesCategories(consts.SERVICE_CATEGORY_PAYMENTS);
   }
 }

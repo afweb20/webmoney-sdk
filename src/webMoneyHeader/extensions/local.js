@@ -24,7 +24,7 @@ var localization = {
     "vn": "Cryptocurrency"
   },
   menuExchange: {
-    "ru":"Обмен",
+    "ru":"Обменять",
     "en":"Exchange",
     "es":"Intercambio",
     "pt":"Troca",

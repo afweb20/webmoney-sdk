@@ -179,6 +179,7 @@ $wm-blue: #006cb4;
   &-ctt{
     width: calc(100% - 208px);
     padding: 24px 0 24px 24px;
+    position: relative;
   }
   &-mtl{
     font-family: "Manrope", "Helvetica", sans-serif;
@@ -207,9 +208,12 @@ $wm-blue: #006cb4;
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    transition: all 0.3s ease-out;
+    transition: opacity 0.3s;
     display: flex;
     flex-wrap: wrap;
+    top: 24px;
+    left: 24px;
+    right: 0;
     &.n7g-is-a{
       opacity: 1;
       visibility: visible;
