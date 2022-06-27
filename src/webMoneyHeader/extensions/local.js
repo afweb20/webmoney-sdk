@@ -7,6 +7,14 @@ var localization = {
     "tr":"Hizmetler",
     "vn": "Services"
   },
+  menuProductsServices: {
+    "ru":"Продукты и сервисы",
+    "en":"Products and services",
+    "es":"Products and services",
+    "pt":"Products and services",
+    "tr":"Products and services",
+    "vn": "Products and services"
+  },
   menuCryptocurrency: {
     "ru":"Криптовалюта",
     "en":"Cryptocurrency",

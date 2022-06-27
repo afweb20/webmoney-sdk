@@ -157,6 +157,9 @@ $wm-blue: #006cb4;
     &:hover{
       background: transparent url("./images/svs-a.svg") center center no-repeat;
     }
+    &-dd.n7g-slv.n7g-is-a{
+      padding: 0;
+    }
   }
   &-cnt{
     display: flex;
@@ -168,16 +171,50 @@ $wm-blue: #006cb4;
     flex: 1;
     padding: 0 16px;
   }
-  &-mni{
-    cursor: default;
-    flex: 1;
+  &-sbr{
+    width: 25%;
+    border-right: 1px solid $gray100;
+    padding: 24px 0 40px;
+  }
+  &-ctt{
+    width: 75%;
+    padding: 24px 0 24px 24px;
+  }
+  &-mtl{
     font-family: "Manrope", "Helvetica", sans-serif;
     font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: $gray400;
+    margin-bottom: 24px;
+    cursor: default;
+  }
+  &-mni{
+    cursor: pointer;
+    font-family: "Manrope", "Helvetica", sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     padding: 4px 0;
     display: block;
     margin-bottom: 16px;
+    &.n7g-is-a{
+      font-weight: 700;
+      color: $wm-blue;
+    }
+  }
+  &-ctn{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    transition: all 0.3s ease-out;
+    display: flex;
+    flex-wrap: wrap;
+    &.n7g-is-a{
+      opacity: 1;
+      visibility: visible;
+      position: static;
+    }
   }
   &-cti{
     flex: 1;
@@ -190,6 +227,8 @@ $wm-blue: #006cb4;
     background-color: #fff;
     transition: all 0.3s ease-out;
     border-radius: 8px;
+    width: calc(33.333333% - 24px);
+    margin-right: 24px;
     &:hover {
       background-color: #f2f4f6;
       .n7g-stl {

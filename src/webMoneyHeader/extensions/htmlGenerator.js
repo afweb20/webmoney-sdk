@@ -110,9 +110,20 @@ export default {
 
           ml("div", { "class": "n7g-cnt" }, [
 
-            ml("div", { "class": "n7g-ctm" }, [
-              ml("div", { "class": "n7g-mni" }, local(context, "menuCryptocurrency")),
-              ml("div", { "class": "n7g-cti" }, [
+            ml("div", { "class": "n7g-sbr" }, [
+
+              ml("div", { "class": "n7g-mtl" }, local(context, "menuProductsServices")),
+              ml("div", { "class": "n7g-mni", "data-for": "crypto" }, local(context, "menuCryptocurrency")),
+              ml("div", { "class": "n7g-mni", "data-for": "loans" }, local(context, "menuLoans")),
+              ml("div", { "class": "n7g-mni n7g-is-a", "data-for": "funds" }, local(context, "menuRaiseFunds")),
+              ml("div", { "class": "n7g-mni", "data-for": "exchange" }, local(context, "menuExchange")),
+              ml("div", { "class": "n7g-mni", "data-for": "payments" }, local(context, "menuPayments")),
+              ml("div", { "class": "n7g-mni", "data-for": "forwork" },  local(context, "menuForWork")),
+
+            ]),
+            ml("div", { "class": "n7g-ctt" }, [
+
+              ml("div", { "class": "n7g-ctn", "data-name": "crypto" }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "servWmx").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/bitcoin.svg") }),
@@ -136,8 +147,7 @@ export default {
 
               ]),
 
-              ml("div", { "class": "n7g-mni" }, local(context, "menuLoans")),
-              ml("div", { "class": "n7g-cti" }, [
+              ml("div", { "class": "n7g-ctn", "data-name": "loans" }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "debt").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/debt.svg") }),
@@ -155,13 +165,8 @@ export default {
                 ]),
 
               ]),
-              
 
-            ]),
-
-            ml("div", { "class": "n7g-ctm" }, [
-              ml("div", { "class": "n7g-mni" }, local(context, "menuRaiseFunds")),
-              ml("div", { "class": "n7g-cti" }, [
+              ml("div", { "class": "n7g-ctn n7g-is-a", "data-name": "funds" }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "consultations").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/video-c.svg") }),
@@ -198,21 +203,18 @@ export default {
                   ml("span", { "class": "n7g-stl" }, getLink(context, "shareholder").title)
                 ]),
 
-                // ml("div", { "class": "n7g-mni" }, local(context, "menuExchange")),
-                // ml("div", { "class": "n7g-cti" }, [
-
-                //   ml("a", { "class": "n7g-svi", "href": getLink(context, "exchanger").url }, [
-                //     ml("img", { "class": "n7g-sic", "src": require("../images/services/exchanger.svg") }),
-                //     ml("span", { "class": "n7g-stl" }, getLink(context, "exchanger").title)
-                //   ]),
-                // ]),
-                
               ]),
-            ]),
 
-            ml("div", { "class": "n7g-ctm" }, [
-              ml("div", { "class": "n7g-mni" }, local(context, "menuPayments")),
-              ml("div", { "class": "n7g-cti" }, [
+              ml("div", { "class": "n7g-ctn", "data-name": "exchange" }, [
+
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "exchanger").url }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/exchanger.svg") }),
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "exchanger").title)
+                ]),
+
+              ]),
+
+              ml("div", { "class": "n7g-ctn", "data-name": "payments" }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "digisellerCatalogOfdigitalGoods").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/digiseller.svg") }),
@@ -253,13 +255,10 @@ export default {
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/apple.svg") }),
                   ml("span", { "class": "n7g-stl" }, getLink(context, "servApple").title)
                 ])
-                
-              ]),
-            ]),
 
-            ml("div", { "class": "n7g-ctm" }, [
-              ml("div", { "class": "n7g-mni" },  local(context, "menuForWork")),
-              ml("div", { "class": "n7g-cti" }, [
+              ]),
+
+              ml("div", { "class": "n7g-ctn", "data-name": "forwork" }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "video").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/video.svg") }),
@@ -300,9 +299,10 @@ export default {
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/advisor.svg") }),
                   ml("span", { "class": "n7g-stl" }, getLink(context, "advisor").title)
                 ]),
-                
-              ])
-            ])
+
+              ]),
+
+            ]),
 
           ])
 
