@@ -179,6 +179,9 @@ $wm-blue: #006cb4;
   &-ctt{
     width: calc(100% - 208px);
     padding: 32px 0 24px 32px;
+    @media (max-width: 767px) {
+      display: none;
+    }
   }
   &-ctl{
     position: relative;
@@ -685,6 +688,11 @@ $wm-blue: #006cb4;
       padding: 32px 0 48px;
       position: absolute;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      .n7g-ctt{
+        @media (max-width: 767px) {
+          display: block;
+        }
+      }
     }
     .n7g-row{
       margin: 0 -16px;
