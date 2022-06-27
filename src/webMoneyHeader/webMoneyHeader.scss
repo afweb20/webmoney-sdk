@@ -1,3 +1,14 @@
+$gray50: #F9FAFB;
+$gray100: #F3F4F6;
+$gray200: #E5E7EB;
+$gray300: #D2D6DB;
+$gray400: #9DA4AE;
+$gray500: #6C737F;
+$gray600: #4D5761;
+$gray700: #384250;
+$gray800: #1F2A37;
+$gray900: #111927;
+
 @font-face {
   font-family: "Manrope";
   src: url("~common/fonts/Manrope-SemiBold.woff2") format("woff2"), url("~common/fonts/Manrope-SemiBold.woff") format("woff");
@@ -135,10 +146,14 @@
     cursor: pointer;
     margin-right: 32px;
     text-indent: -9999px;
+    transition: all 0.3s ease-out;
     & > .n7g-lki:after{
       display: none;
     }
     &.n7g-is-a{
+      background: transparent url("./images/svs-a.svg") center center no-repeat;
+    }
+    &:hover{
       background: transparent url("./images/svs-a.svg") center center no-repeat;
     }
   }
@@ -217,14 +232,14 @@
     display: block;
     font-size: 14px;
     line-height: 20px;
-    color: #101828;
+    color: $gray500;
     font-weight: 600;
     cursor: pointer;
     border-radius: 4px;
     position: relative;
     text-decoration: none;
     font-family: "Manrope", "Helvetica", sans-serif;
-    transition: all 0.2s;
+    transition: all 0.3s;
     padding: 6px 40px 6px 8px;
     margin-right: 16px;
     @include noselection;
@@ -239,8 +254,14 @@
       top: 50%;
       margin-top: -16px;
     }
+    &:hover{
+      color: #006cb4;
+      &:after{
+        background: transparent url("./images/arrow-down-a.svg") center center no-repeat;
+      }
+    }
     &.n7g-is-a{
-      color: #101828;
+      color: $gray500;
       &:after {
         transform: rotate(-180deg);
         margin-top: -15px;
@@ -255,7 +276,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    .n7g-sbtn{
+      transition: all 0.3s ease-out;
+    }
     &.n7g-is-a{
+      .n7g-sbtn{
+        background: transparent url("./images/search-a.svg") center center no-repeat;
+      }
+    }
+    &:hover{
       .n7g-sbtn{
         background: transparent url("./images/search-a.svg") center center no-repeat;
       }
@@ -414,6 +443,7 @@
     line-height: 16px;
     padding-right: 16px;
     display: block;
+    color: $gray500;
   }
   &-uim{
     width: 32px;
@@ -818,8 +848,11 @@
             display: block;
           }
           &.n7g-is-a{
-            color: #101828;
+            &:hover{
+              color: #006cb4;
+            }
             &:after {
+              background: transparent url("./images/arrow-down-a.svg") center center no-repeat;
               transform: rotate(-180deg);
               margin-top: -15px;
             }
