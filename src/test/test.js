@@ -6,8 +6,13 @@ var lang = params["lang"] != null ? params["lang"] : "ru";
 var wmid = params["wmid"] != null ? params["wmid"] : "123681594869";
 var isAppleDevice = ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhone", "iPod"].includes(navigator.platform) || navigator.userAgent.includes("Mac") && "ontouchend" in document;
 var view = isAppleDevice ? "mobile" : "desktop";
+<<<<<<< HEAD
 // view = "desktop";
 view = "adaptive";
+=======
+view = "adaptive";
+var maxWidth = "1200px";
+>>>>>>> toggle
 var loginUrl = "?wmid=123681594869&lang=" + lang;
 var logoutUrl = "?wmid=&lang=" + lang;
 
@@ -17,6 +22,7 @@ if (typeof WebMoneyHeader != "undefined") {
     rootElement: document.getElementById("webMoneyHeader"),
     testMode: true,
     view: view,
+    maxWidth: maxWidth,
     lang: lang,
     wmid: null,
     loginUrl: loginUrl,
@@ -35,6 +41,7 @@ if (typeof WebMoneyNavbar != "undefined") {
   new WebMoneyNavbar().init({
     rootElement: document.getElementById("webMoneyNavbar0"),
     view: view,
+    maxWidth: maxWidth,
     iconUrl: "https://telepay.xoney.com/img/mobile/webmoney_oplata_w.svg",
     firstLevel: [
       { title: "Каталог услуг", url : "#", active: true },
@@ -46,6 +53,7 @@ if (typeof WebMoneyNavbar != "undefined") {
   new WebMoneyNavbar().init({
     rootElement: document.getElementById("webMoneyNavbar1"),
     view: view,
+    maxWidth: maxWidth,
     primaryColor: "#e59733",
     iconUrl: "https://passport.web.money/img/key_w.png",
     firstLevel: [
@@ -64,6 +72,7 @@ if (typeof WebMoneyNavbar != "undefined") {
   new WebMoneyNavbar().init({
     rootElement: document.getElementById("webMoneyNavbar2"),
     view: view,
+    maxWidth: maxWidth,
     primaryColor: "#e59733",
     iconUrl: "https://passport.web.money/img/key_w.png",
     firstLevel: [
@@ -82,6 +91,7 @@ if (typeof WebMoneyNavbar != "undefined") {
   new WebMoneyNavbar().init({
     rootElement: document.getElementById("webMoneyNavbar3"),
     view: view,
+    maxWidth: maxWidth,
     primaryColor: "#637eea",
     iconUrl: "https://wmf.wmtransfer.com/img/Ethereum.png?v=1",
     firstLevel: [
@@ -102,6 +112,7 @@ if (typeof WebMoneyNavbar != "undefined") {
   new WebMoneyNavbar().init({
     rootElement: document.getElementById("webMoneyNavbar4"),
     view: view,
+    maxWidth: maxWidth,
     iconUrl: "https://www.webmoney.ru/img/new/services/logo-info.png",
     firstLevel: [
       { title: "Описание", url : "#", active: true }, 
@@ -125,6 +136,7 @@ if (typeof WebMoneyNavbar != "undefined") {
   new WebMoneyNavbar().init({
     rootElement: document.getElementById("webMoneyNavbar5"),
     view: view,
+    maxWidth: maxWidth,
     iconUrl: "https://www.webmoney.ru/img/new/services/logo-info.png",
     firstLevel: [
       { title: "Описание", url : "#" }, 
@@ -152,6 +164,7 @@ if (typeof WebMoneyFooter != "undefined") {
     rootElement: document.getElementById("webMoneyFooter"),
     testMode: true,
     view: view,
+    maxWidth: maxWidth,
     lang: lang,
     supportedLangs: ["ru", "en", "es", "pt", "tr", "vn"],
     illiciumPlaceId: "59",

@@ -1,3 +1,4 @@
+import randomString from "common/extensions/randomString";
 import consts from "./consts";
 
 export default {
@@ -17,6 +18,7 @@ export default {
     var testMode = options.testMode === true ? true : false;
     var domainType = this.tryParseDomainType(options);
     var view = this.tryParseView(options);
+    var maxWidth = this.tryParseMaxWidth(options);
     var lang = this.tryParseLang(options);
     var recognize = options.recognize === false ? false : true;
     var wmid = options.wmid == "" || options.wmid == null ? null : options.wmid;
@@ -24,6 +26,7 @@ export default {
     var logoutUrl = options.logoutUrl == "" || options.logoutUrl == null ? null : options.logoutUrl;
     var rid = options.rid == "" || options.rid == null ? null : options.rid;
     var onLoginBlockRendered = this.tryParseOnLoginBlockRendered(options);
+    var dynamicUniqueKey = randomString(12);
 
     if (rid == null) {
       throw new Error("rid empty");
@@ -34,13 +37,15 @@ export default {
       testMode: testMode,
       domainType: domainType,
       view: view,
+      maxWidth: maxWidth,
       lang: lang,
       recognize: recognize,
       wmid: wmid,
       loginUrl: loginUrl,
       logoutUrl: logoutUrl,
       rid: rid,
-      onLoginBlockRendered: onLoginBlockRendered
+      onLoginBlockRendered: onLoginBlockRendered,
+      dynamicUniqueKey: dynamicUniqueKey
     };
 
     return context;
@@ -87,6 +92,13 @@ export default {
     }
 
     return view;
+  },
+
+  tryParseMaxWidth: function (options) {
+
+    var maxWidth = options.maxWidth;
+
+    return maxWidth;
   },
 
   tryParseLang: function (options) {
