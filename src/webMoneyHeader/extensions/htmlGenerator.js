@@ -180,6 +180,11 @@ export default {
                   ml("span", { "class": "n7g-stl" }, getLink(context, "cashbox").title)
                 ]),
 
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "debt").url }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/debt.svg") }),
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "debt").title)
+                ]),
+
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "debtmart").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/debtmart.svg") }),
                   ml("span", { "class": "n7g-stl" }, getLink(context, "debtmart").title)
