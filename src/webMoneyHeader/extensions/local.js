@@ -23,6 +23,14 @@ var localization = {
     "tr":"Değiş tokuş",
     "vn": "Exchange"
   },
+  menuLoans: {
+    "ru":"Займы и кредиты",
+    "en":"Loans and credits",
+    "es":"Loans and credits",
+    "pt":"Loans and credits",
+    "tr":"Loans and credits",
+    "vn": "Loans and credits"
+  },
   menuPersonal: {
     "ru": "Частным лицам",
     "en": "Personal",
