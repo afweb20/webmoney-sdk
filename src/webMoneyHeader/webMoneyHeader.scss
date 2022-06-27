@@ -214,10 +214,12 @@ $wm-blue: #006cb4;
     top: 24px;
     left: 24px;
     right: 0;
+    pointer-events: none;
     &.n7g-is-a{
       opacity: 1;
       visibility: visible;
       position: static;
+      pointer-events: auto;
     }
   }
   &-cti{
