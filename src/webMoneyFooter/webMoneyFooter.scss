@@ -86,10 +86,12 @@ $gray900: #111927;
   }
   &-bnr {
     margin-bottom: 24px;
-    img {
+    img, 
+    iframe {
       display: block;
       max-width: 100%;
       border-radius: 8px;
+      margin: 0 auto;
     }
   }
   &-ln {
