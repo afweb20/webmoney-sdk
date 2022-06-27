@@ -6,13 +6,8 @@ var lang = params["lang"] != null ? params["lang"] : "ru";
 var wmid = params["wmid"] != null ? params["wmid"] : "123681594869";
 var isAppleDevice = ["iPad Simulator", "iPhone Simulator", "iPod Simulator", "iPad", "iPhone", "iPod"].includes(navigator.platform) || navigator.userAgent.includes("Mac") && "ontouchend" in document;
 var view = isAppleDevice ? "mobile" : "desktop";
-<<<<<<< HEAD
-// view = "desktop";
-view = "adaptive";
-=======
 view = "adaptive";
 var maxWidth = "1200px";
->>>>>>> toggle
 var loginUrl = "?wmid=123681594869&lang=" + lang;
 var logoutUrl = "?wmid=&lang=" + lang;
 
