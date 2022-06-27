@@ -8,6 +8,7 @@ import contextParser from "./extensions/contextParser";
 import htmlGenerator from "./extensions/htmlGenerator";
 import illiciumAsync from "./extensions/illiciumAsync";
 import langSelector from "./extensions/langSelector";
+import menu from "./extensions/menu";
 
 require("./webMoneyFooter.scss");
 
@@ -25,6 +26,7 @@ export default function WebMoneyFooter() {
 
       langSelector.init(context);
       illiciumAsync.init(context);
+      menu.init(context);
     } catch (error) {
       
       console.error(error);

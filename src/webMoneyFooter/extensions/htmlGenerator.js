@@ -105,7 +105,7 @@ export default {
 
   generateMiddlePartAboutSystem: function (context) {
 
-    return ml("div", { "class": "n9g-cln" }, [
+    return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
       ml("div", { "class" : "n9g-mtl" }, local(context, "menuAboutWebMoney")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "briefDescription").url }, getLink(context, "briefDescription").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "purseTypes").url }, getLink(context, "purseTypes").title),
@@ -120,7 +120,7 @@ export default {
 
   generateMiddlePartPurseManagement: function (context) {
 
-    return ml("div", { "class": "n9g-cln" }, [
+    return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
       ml("div", { "class" : "n9g-mtl" }, local(context, "menuPurseManagement")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperStandardMini").url }, getLink(context, "keeperStandardMini").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperWinProClassic").url }, getLink(context, "keeperWinProClassic").title),
@@ -133,7 +133,7 @@ export default {
 
   generateMiddlePartLegalInformation: function (context) {
 
-    return ml("div", { "class": "n9g-cln" }, [
+    return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
       ml("div", { "class" : "n9g-mtl" }, local(context, "menuLegalInformation")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "webMoneyTransferCode").url }, getLink(context, "webMoneyTransferCode").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "propertyRightsTransferAgreement").url }, getLink(context, "propertyRightsTransferAgreement").title),
@@ -146,7 +146,7 @@ export default {
 
   generateMiddlePartHelp: function (context) {
 
-    return ml("div", { "class": "n9g-cln" }, [
+    return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
       ml("div", { "class" : "n9g-mtl" }, local(context, "menuHelp")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "technicalSupport").url }, getLink(context, "technicalSupport").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "financialSupport").url }, getLink(context, "financialSupport").title),
@@ -166,7 +166,7 @@ export default {
 
   generateMiddlePartContacts: function (context) {
 
-    return ml("div", { "class": "n9g-cln" }, [
+    return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
       ml("div", { "class" : "n9g-mtl" }, local(context, "menuContactInformation")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "ownerAndAdministrator").url }, getLink(context, "ownerAndAdministrator").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "wmPurseGuarantors").url }, getLink(context, "wmPurseGuarantors").title),
@@ -179,7 +179,7 @@ export default {
 
   generateMiddlePartInstructions: function (context) {
 
-    return ml("div", { "class": "n9g-cln" }, [
+    return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
       ml("div", { "class" : "n9g-mtl" }, local(context, "menuInstrucciones")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "registration").url }, getLink(context, "registration").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "poluchenieAttestata").url }, getLink(context, "poluchenieAttestata").title),
