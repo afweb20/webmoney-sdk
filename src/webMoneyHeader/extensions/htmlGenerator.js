@@ -6,7 +6,9 @@ import getLink from "common/extensions/linkStorage";
 export default {
   generate: function (context) {
 
-    return ml("div", { "class": "n7g n7g-" + context.view }, [
+    var dynCls = "n7g-" + context.dynamicUniqueKey;
+
+    return ml("div", { "class": "n7g n7g-" + context.view, "data-n7g-dynamic-class": dynCls }, [
       ml("div", { "class": "n7g-flv" }, 
         ml("div", { "class": "n7g-ctr" }, [
           ml("div", { "class": "n7g-row n7g-spb" }, [

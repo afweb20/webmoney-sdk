@@ -4,6 +4,7 @@
 
 import "url-polyfill"; // IE 11 не поддерживает конструктор URL, который использует webpack 5.
 import contextParser from "./extensions/contextParser";
+import dynamicStyles from "./extensions/dynamicStyles";
 import htmlGenerator from "./extensions/htmlGenerator";
 import loginBlock from "./extensions/loginBlock";
 import menu from "./extensions/menu";
@@ -18,6 +19,8 @@ export default function WebMoneyHeader() {
     try {
 
       var context = contextParser.tryGetContext(options);
+
+      dynamicStyles.init(context);
 
       var generatedElement = htmlGenerator.generate(context);
       context.rootElement.innerHTML = "";

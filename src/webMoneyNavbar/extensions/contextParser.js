@@ -16,6 +16,7 @@ export default {
     }
 
     var view = this.tryParseView(options);
+    var maxWidth = this.tryParseMaxWidth(options);
     var primaryColor = this.tryParsePrimaryColor(options);
     var iconUrl = this.tryParseIconUrl(options);
     var firstLevel = this.tryParseFirstLevel(options);
@@ -25,6 +26,7 @@ export default {
     var context = {
       rootElement: rootElement,
       view: view,
+      maxWidth: maxWidth,
       primaryColor: primaryColor,
       iconUrl: iconUrl,
       firstLevel: firstLevel,
@@ -45,6 +47,13 @@ export default {
     }
 
     return view;
+  },
+
+  tryParseMaxWidth: function (options) {
+
+    var maxWidth = options.maxWidth;
+
+    return maxWidth;
   },
 
   tryParseIconUrl: function (options) {

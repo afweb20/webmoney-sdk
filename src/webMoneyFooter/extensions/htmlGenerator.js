@@ -7,7 +7,9 @@ export default {
 
   generate: function (context) {
 
-    return ml("div", { class: "n9g n9g-" + context.view }, [
+    var dynCls = "n9g-" + context.dynamicUniqueKey;
+
+    return ml("div", { class: "n9g n9g-" + context.view, "data-n9g-dynamic-class": dynCls }, [
       this.generateIlliciumBlock(context),
       this.generateTopPartFooter(context),
       this.generateMiddlePartFooter(context),

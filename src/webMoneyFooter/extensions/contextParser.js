@@ -1,3 +1,4 @@
+import randomString from "common/extensions/randomString";
 import consts from "./consts";
 
 export default {
@@ -17,22 +18,26 @@ export default {
     var testMode = options.testMode === true ? true : false;
     var domainType = this.tryParseDomainType(options);
     var view = this.tryParseView(options);
+    var maxWidth = this.tryParseMaxWidth(options);
     var lang = this.tryParseLang(options);
     var supportedLangs = this.tryParseSupportedLangs(options, lang);
     var illiciumPlaceId = options.illiciumPlaceId == "" || options.illiciumPlaceId == null ? null : options.illiciumPlaceId;
     var illiciumView = this.tryParseIlliciumView(options);
     var onChangeLang = this.tryParseOnChangeLang(options);
+    var dynamicUniqueKey = randomString(12);
 
     var context = {
       rootElement: rootElement,
       testMode: testMode,
       domainType: domainType,
       view: view,
+      maxWidth: maxWidth,
       lang: lang,
       supportedLangs: supportedLangs,
       illiciumPlaceId: illiciumPlaceId,
       illiciumView: illiciumView,
-      onChangeLang: onChangeLang
+      onChangeLang: onChangeLang,
+      dynamicUniqueKey: dynamicUniqueKey
     };
 
     return context;
@@ -79,6 +84,13 @@ export default {
     }
 
     return view;
+  },
+
+  tryParseMaxWidth: function (options) {
+
+    var maxWidth = options.maxWidth;
+
+    return maxWidth;
   },
 
   tryParseLang: function (options) {
