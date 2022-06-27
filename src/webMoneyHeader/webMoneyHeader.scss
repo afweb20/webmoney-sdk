@@ -174,11 +174,13 @@ $wm-blue: #006cb4;
   &-sbr{
     width: 208px;
     border-right: 1px solid $gray100;
-    padding: 24px 0 40px;
+    padding: 32px 0 40px;
   }
   &-ctt{
     width: calc(100% - 208px);
-    padding: 24px 0 24px 24px;
+    padding: 32px 0 24px 32px;
+  }
+  &-ctl{
     position: relative;
   }
   &-mtl{
@@ -187,7 +189,7 @@ $wm-blue: #006cb4;
     font-size: 16px;
     line-height: 24px;
     color: $gray400;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
     cursor: default;
   }
   &-mni{
@@ -198,7 +200,7 @@ $wm-blue: #006cb4;
     line-height: 24px;
     padding: 4px 0;
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 0px;
     &.n7g-is-a{
       font-weight: 700;
       color: $wm-blue;
@@ -211,8 +213,8 @@ $wm-blue: #006cb4;
     transition: opacity 0.3s;
     display: flex;
     flex-wrap: wrap;
-    top: 24px;
-    left: 24px;
+    top: 0;
+    left: 0;
     right: 0;
     pointer-events: none;
     &.n7g-is-a{
@@ -904,7 +906,7 @@ $wm-blue: #006cb4;
           padding: 0 16px 0 0;
         }
         @media (min-width: 768px) {
-          margin-bottom: 16px;
+          margin-bottom: 0px;
         }
       }
       &-cti{
