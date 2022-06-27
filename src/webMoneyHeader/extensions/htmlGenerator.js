@@ -260,6 +260,11 @@ export default {
                     ml("span", { "class": "n7g-stl" }, getLink(context, "publicUtilities").title)
                   ]),
 
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servSteam").url }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/steam.svg") }),
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servSteam").title)
+                  ]),
+
                   ml("a", { "class": "n7g-svi", "href": getLink(context, "servApple").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/apple.svg") }),
                     ml("span", { "class": "n7g-stl" }, getLink(context, "servApple").title)

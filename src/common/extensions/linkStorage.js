@@ -85,6 +85,10 @@ var linkStorage = {
     t: ["Подарочная карта Apple", "Apple gift card"],
     u: "plati.market/games/podarochnaja-karta-app-store-itunes/90/"
   },
+  servSteam: {
+    t: ["Steam"],
+    u: ["telepay.web.money", ["/ru", "/en", "/en", "/en", "/en"], "/operator/5714"]
+  },
   // =========================
   // Приложения
   // =========================
