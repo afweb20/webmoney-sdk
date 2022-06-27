@@ -224,6 +224,9 @@ $wm-blue: #006cb4;
       pointer-events: auto;
     }
   }
+  &-mtn{
+    display: none;
+  }
   &-cti{
     flex: 1;
   }
