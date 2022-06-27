@@ -13,6 +13,13 @@ export default {
   LANG_TR: "tr",
   LANG_VN: "vn",
 
+  SERVICE_CATEGORY_CRYPTO: "crypto",
+  SERVICE_CATEGORY_LOANS: "loans",
+  SERVICE_CATEGORY_FUNDS: "funds",
+  SERVICE_CATEGORY_EXCHANGE: "exchange",
+  SERVICE_CATEGORY_PAYMENTS: "payments",
+  SERVICE_CATEGORY_WORK: "work",
+
   SEARCH_WHERE_INFO: "info",
   SEARCH_WHERE_TRANSACTION: "transaction",
   SEARCH_WHERE_GOODS: "goods",

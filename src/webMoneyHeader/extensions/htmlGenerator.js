@@ -115,17 +115,17 @@ export default {
             ml("div", { "class": "n7g-sbr" }, [
 
               ml("div", { "class": "n7g-mtl" }, local(context, "menuProductsServices")),
-              ml("div", { "class": "n7g-mni", "data-for": "crypto" }, local(context, "menuCryptocurrency")),
-              ml("div", { "class": "n7g-mni", "data-for": "loans" }, local(context, "menuLoans")),
-              ml("div", { "class": "n7g-mni n7g-is-a", "data-for": "funds" }, local(context, "menuRaiseFunds")),
-              ml("div", { "class": "n7g-mni", "data-for": "exchange" }, local(context, "menuExchange")),
-              ml("div", { "class": "n7g-mni", "data-for": "payments" }, local(context, "menuPayments")),
-              ml("div", { "class": "n7g-mni", "data-for": "forwork" },  local(context, "menuForWork")),
+              ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_PAYMENTS }, local(context, "menuPayments")),
+              ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_FUNDS }, local(context, "menuRaiseFunds")),
+              ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_EXCHANGE }, local(context, "menuExchange")),
+              ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_LOANS }, local(context, "menuLoans")),
+              ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_CRYPTO }, local(context, "menuCryptocurrency")),
+              ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_WORK },  local(context, "menuForWork")),
 
             ]),
             ml("div", { "class": "n7g-ctt" }, [
 
-              ml("div", { "class": "n7g-ctn", "data-name": "crypto" }, [
+              ml("div", { "class": "n7g-ctn", "data-n7g-services-category-name": consts.SERVICE_CATEGORY_CRYPTO }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "servWmx").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/bitcoin.svg") }),
@@ -149,7 +149,7 @@ export default {
 
               ]),
 
-              ml("div", { "class": "n7g-ctn", "data-name": "loans" }, [
+              ml("div", { "class": "n7g-ctn", "data-n7g-services-category-name": consts.SERVICE_CATEGORY_LOANS }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "debt").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/debt.svg") }),
@@ -168,7 +168,7 @@ export default {
 
               ]),
 
-              ml("div", { "class": "n7g-ctn n7g-is-a", "data-name": "funds" }, [
+              ml("div", { "class": "n7g-ctn", "data-n7g-services-category-name": consts.SERVICE_CATEGORY_FUNDS }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "consultations").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/video-c.svg") }),
@@ -207,7 +207,7 @@ export default {
 
               ]),
 
-              ml("div", { "class": "n7g-ctn", "data-name": "exchange" }, [
+              ml("div", { "class": "n7g-ctn", "data-n7g-services-category-name": consts.SERVICE_CATEGORY_EXCHANGE }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "exchanger").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/exchanger.svg") }),
@@ -216,7 +216,7 @@ export default {
 
               ]),
 
-              ml("div", { "class": "n7g-ctn", "data-name": "payments" }, [
+              ml("div", { "class": "n7g-ctn", "data-n7g-services-category-name": consts.SERVICE_CATEGORY_PAYMENTS }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "digisellerCatalogOfdigitalGoods").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/digiseller.svg") }),
@@ -260,7 +260,7 @@ export default {
 
               ]),
 
-              ml("div", { "class": "n7g-ctn", "data-name": "forwork" }, [
+              ml("div", { "class": "n7g-ctn", "data-n7g-services-category-name": consts.SERVICE_CATEGORY_WORK }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "video").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/video.svg") }),
