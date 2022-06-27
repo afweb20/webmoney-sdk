@@ -171,7 +171,7 @@ export default {
                 ]),
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "mestkom").url }, [
-                  ml("img", { "class": "n7g-sic", "src": require("../images/services/mestkom.svg") }),
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/mestcom.svg") }),
                   ml("span", { "class": "n7g-stl" }, getLink(context, "mestkom").title)
                 ]),
 
@@ -189,6 +189,12 @@ export default {
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/debtmart.svg") }),
                   ml("span", { "class": "n7g-stl" }, getLink(context, "debtmart").title)
                 ]),
+
+                ml("a", { "class": "n7g-svi", "href": getLink(context, "credit").url }, [
+                  ml("img", { "class": "n7g-sic", "src": require("../images/services/credit.svg") }),
+                  ml("span", { "class": "n7g-stl" }, getLink(context, "credit").title)
+                ]),
+
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "shareholder").url }, [
                   ml("img", { "class": "n7g-sic", "src": require("../images/services/shareholder.svg") }),

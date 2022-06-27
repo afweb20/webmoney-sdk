@@ -465,6 +465,16 @@ var linkStorage = {
       "?lang=en"
     ]]
   },
+  credit: {
+    t: ["Биржа кредитов", "Credit Exchange", "Credit Exchange", 
+      "Credit Exchange",
+      "Credit Exchange"
+    ],
+    u: ["debt.wmtransfer.com", ["", "?lang=en", "?lang=en", 
+      "?lang=en", 
+      "?lang=en"
+    ]]
+  },
   debtmart: {
     t: ["DebtMart: Биржа долгов", "Debt market", "Bolsa de deudas", 
       "Vender a dívida",

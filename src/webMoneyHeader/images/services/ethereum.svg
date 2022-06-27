@@ -1,5 +1,5 @@
 <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="80" height="80" rx="24" fill="url(#paint0_linear_863_1397)"/>
+<rect width="80" height="80" rx="16" fill="url(#paint0_linear_933_405)"/>
 <g opacity="0.602005">
 <path d="M39.9951 11.467V32.562L57.8249 40.5291L39.9951 11.467Z" fill="white"/>
 </g>
@@ -15,7 +15,7 @@
 <path d="M22.1631 40.5291L39.9951 50.8816V32.5667L22.1631 40.5291Z" fill="white"/>
 </g>
 <defs>
-<linearGradient id="paint0_linear_863_1397" x1="81.25" y1="-3.5" x2="-5.25" y2="81.5" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_933_405" x1="81.25" y1="-3.5" x2="-5.25" y2="81.5" gradientUnits="userSpaceOnUse">
 <stop stop-color="#8793FE"/>
 <stop offset="1" stop-color="#3A59D0"/>
 </linearGradient>

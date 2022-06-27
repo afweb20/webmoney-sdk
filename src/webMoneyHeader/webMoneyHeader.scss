@@ -168,14 +168,23 @@
   }
   &-svi{
     align-items: center;
-    padding-right: 16px;
+    padding: 8px;
     display: flex;
-    margin-bottom: 24px;
+    margin-bottom: 12px;
+    background-color: #fff;
+    transition: all 0.3s ease-out;
+    border-radius: 8px;
+    &:hover {
+      background-color: #f2f4f6;
+      .n7g-stl {
+        color: #707070;
+      }
+    }
   }
   &-sic{
     width: 40px;
     height: 40px;
-    margin-right: 16px;
+    margin-right: 12px;
   }
   &-sim{
     width: 40px;
@@ -198,11 +207,8 @@
     font-size: 12px;
     line-height: 16px;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.3s ease-out;
     display: block;
-    &:hover{
-      color: #006cb4;
-    }
   }
   &-lks{
     display: flex;
@@ -784,12 +790,6 @@
           flex-wrap: wrap;
         }
       }
-      &-svi{
-        margin-bottom: 16px;
-        @media (min-width: 768px) {
-          margin-bottom: 24px;
-        }
-      }
       &-sic{
         width: 24px;
         height: 24px;
@@ -797,7 +797,7 @@
         @media (min-width: 768px) {
           width: 40px;
           height: 40px;
-          margin-right: 16px;
+          margin-right: 12px;
         }
       }
       &-lki{
