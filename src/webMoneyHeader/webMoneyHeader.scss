@@ -8,6 +8,7 @@ $gray600: #4D5761;
 $gray700: #384250;
 $gray800: #1F2A37;
 $gray900: #111927;
+$wm-blue: #006cb4;
 
 @font-face {
   font-family: "Manrope";
@@ -261,10 +262,9 @@ $gray900: #111927;
       }
     }
     &.n7g-is-a{
-      color: $gray500;
+      color: $wm-blue;
       &:after {
-        transform: rotate(-180deg);
-        margin-top: -15px;
+        background: transparent url("./images/arrow-up.svg") center center no-repeat;
       }
     }
   }
