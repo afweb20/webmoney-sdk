@@ -125,6 +125,7 @@ export default {
             ]),
             ml("div", { "class": "n7g-ctt" }, [
 
+              ml("div", { "class": "n7g-mtn" }, local(context, "menuCryptocurrency")),
               ml("div", { "class": "n7g-ctn", "data-name": "crypto" }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "servWmx").url }, [
@@ -149,6 +150,7 @@ export default {
 
               ]),
 
+              ml("div", { "class": "n7g-mtn" }, local(context, "menuLoans")),
               ml("div", { "class": "n7g-ctn", "data-name": "loans" }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "debt").url }, [
@@ -168,6 +170,7 @@ export default {
 
               ]),
 
+              ml("div", { "class": "n7g-mtn" }, local(context, "menuRaiseFunds")),
               ml("div", { "class": "n7g-ctn n7g-is-a", "data-name": "funds" }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "consultations").url }, [
@@ -207,6 +210,7 @@ export default {
 
               ]),
 
+              ml("div", { "class": "n7g-mtn" }, local(context, "menuExchange")),
               ml("div", { "class": "n7g-ctn", "data-name": "exchange" }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "exchanger").url }, [
@@ -216,6 +220,7 @@ export default {
 
               ]),
 
+              ml("div", { "class": "n7g-mtn" }, local(context, "menuPayments")),
               ml("div", { "class": "n7g-ctn", "data-name": "payments" }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "digisellerCatalogOfdigitalGoods").url }, [
@@ -260,6 +265,7 @@ export default {
 
               ]),
 
+              ml("div", { "class": "n7g-mtn" },  local(context, "menuForWork")),
               ml("div", { "class": "n7g-ctn", "data-name": "forwork" }, [
 
                 ml("a", { "class": "n7g-svi", "href": getLink(context, "video").url }, [

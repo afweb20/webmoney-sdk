@@ -440,9 +440,6 @@ $gray900: #111927;
         min-width: 320px;
         max-width: 960px;
         padding: 0 16px;
-        @media (min-width: 992px) {
-          padding: 0;
-        }
       }
       &-bnr {
         display: none;

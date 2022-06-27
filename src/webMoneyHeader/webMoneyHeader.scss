@@ -172,12 +172,12 @@ $wm-blue: #006cb4;
     padding: 0 16px;
   }
   &-sbr{
-    width: 25%;
+    width: 208px;
     border-right: 1px solid $gray100;
     padding: 24px 0 40px;
   }
   &-ctt{
-    width: 75%;
+    width: calc(100% - 208px);
     padding: 24px 0 24px 24px;
   }
   &-mtl{
@@ -735,9 +735,6 @@ $wm-blue: #006cb4;
         min-width: 320px;
         max-width: 960px;
         padding: 0 16px;
-        @media (min-width: 992px) {
-          padding: 0;
-        }
       }
       &-bgr{
         display: block;
@@ -845,10 +842,61 @@ $wm-blue: #006cb4;
         display: block;
         @media (min-width: 768px) {
           display: flex;
+          padding: 0 16px;
+        }
+      }
+      &-sbr{
+        @media (max-width: 767px) {
+          display: none;
+        }
+      }
+      &-ctt{
+        @media (max-width: 767px) {
+          width: 100%;
+          padding: 0 16px;
+        }
+      }
+      &-ctn{
+        @media (max-width: 767px) {
+          position: static;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      &-mtn{
+        font-family: "Manrope", "Helvetica", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        padding: 4px 0;
+        display: block;
+        margin-bottom: 8px;
+        @media (min-width: 768px) {
+          display: none;
+        }
+      }
+      &-svi{
+        @media (max-width: 767px) {
+          margin-right: 0;
+          width: auto;
+        }
+        @media (min-width: 768px) {
+          width: calc(50% - 24px);
+        }
+        @media (min-width: 992px) {
+          width: calc(33.333333% - 24px);
+        }
+      }
+      &-mtl{
+        @media (max-width: 767px) {
+          display: none;
         }
       }
       &-mni{
         margin-bottom: 8px;
+        @media (max-width: 767px) {
+          padding: 0 16px 0 0;
+        }
         @media (min-width: 768px) {
           margin-bottom: 16px;
         }
@@ -960,6 +1008,9 @@ $wm-blue: #006cb4;
             padding: 32px 0 48px;
             position: absolute;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            &.n7g-svs-dd.n7g-is-a{
+              padding: 0px;
+            } 
           }
         }
         .n7g-row{
