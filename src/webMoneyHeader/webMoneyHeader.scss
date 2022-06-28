@@ -163,9 +163,6 @@ $brandhover: #005794;
     &:hover{
       background: transparent url("./images/svs-a.svg") center center no-repeat;
     }
-    &-dd.n7g-slv.n7g-is-a{
-      padding: 0;
-    }
   }
   &-cnt{
     display: flex;
@@ -180,7 +177,6 @@ $brandhover: #005794;
   &-sbr{
     width: 208px;
     border-right: 1px solid $gray100;
-    padding: 32px 0 40px;
   }
   &-ctt{
     width: calc(100% - 208px);
@@ -195,7 +191,7 @@ $brandhover: #005794;
   &-mtl{
     font-family: "Manrope", "Helvetica", sans-serif;
     font-weight: 600;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 24px;
     color: $gray400;
     margin-bottom: 16px;
@@ -205,14 +201,19 @@ $brandhover: #005794;
     cursor: pointer;
     font-family: "Manrope", "Helvetica", sans-serif;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
-    padding: 4px 0;
+    padding: 8px 0;
     display: block;
     margin-bottom: 0px;
+    transition: all .3s ease-out;
+    color: $gray500;
+    &:hover{
+      color: $brand500;
+    }
     &.n7g-is-a{
       font-weight: 700;
-      color: $wm-blue;
+      color: $brand500;
     }
   }
   &-ctn{
@@ -515,7 +516,7 @@ $brandhover: #005794;
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
     border: 1px solid #eeeeee;
     background-color: #fff;
@@ -693,7 +694,7 @@ $brandhover: #005794;
     left: 0;
     right: 0;
     padding: 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
     z-index: 99;
     background-color: #fff;
     border-top: 1px solid #eeeeee;
@@ -704,9 +705,9 @@ $brandhover: #005794;
       opacity: 1;
       visibility: visible;
       transition: all 0.3s;
-      padding: 32px 0 48px;
+      padding: 24px 0 28px;
       position: absolute;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+      box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
       .n7g-ctt{
         @media (max-width: 767px) {
           display: block;
@@ -932,7 +933,7 @@ $brandhover: #005794;
         }
       }
       &-mni{
-        margin-bottom: 8px;
+        // margin-bottom: 8px;
         @media (max-width: 767px) {
           padding: 0 16px 0 0;
         }
@@ -1050,12 +1051,9 @@ $brandhover: #005794;
           }
           @media (min-width: 768px) {
             transition: all 0.3s;
-            padding: 32px 0 48px;
+            padding: 24px 0 28px;
             position: absolute;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            &.n7g-svs-dd.n7g-is-a{
-              padding: 0px;
-            } 
+            box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.1);
           }
         }
         .n7g-row{
