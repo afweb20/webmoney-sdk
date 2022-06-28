@@ -16,6 +16,7 @@ export default {
     var iconUrl = context.iconUrl;
     var firstLevel = context.firstLevel;
     var title = firstLevel.length > 0 ? firstLevel[0].title : null;
+    var iconLink = firstLevel.length > 0 ? firstLevel[0].url : "/";
 
     for (var i = 0; i < firstLevel.length; i++) {
 
@@ -32,7 +33,7 @@ export default {
     return ml("div", { "class": "n8g-ftl" }, 
       ml("div", { "class": "n8g-ctr" }, 
         ml("div", { "class": "n8g-mfbx" }, [
-          ml("div", { "class": "n8g-mcn" }, iconUrl != null ? ml("img", { "class": "n8g-icn", "src": iconUrl }) : ""),
+          ml("a", { "class": "n8g-mcn", "href" : iconLink }, iconUrl != null ? ml("img", { "class": "n8g-icn", "src": iconUrl }) : ""),
           ml("div", { "class": "n8g-mbn", "data-n8g-toggle-menu": "" }, title),
           ml("div", { "class": "n8g-mnu" }, this.generateFirstLevelMenu(context))
         ]) 
