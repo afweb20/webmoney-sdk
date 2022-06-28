@@ -450,7 +450,7 @@ var linkStorage = {
     u: "cashbox.ru"
   },
   shareholder: {
-    t: ["Shareholder: дивиденды и торговля долями", "Shareholder: Dividends and share trading", "Shareholder: dividendos", 
+    t: ["Дивиденды и торговля долями", "Dividends and share trading", "Shareholder: dividendos", 
       "Shareholder: utilização de fundos",
       "Shareholder: kar payları ve hisse satışı"
     ],
