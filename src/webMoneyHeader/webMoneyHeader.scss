@@ -680,6 +680,7 @@ $wm-blue: #006cb4;
     background-color: #fff;
     border-top: 1px solid #eeeeee;
     position: absolute;
+    overflow: hidden;
     &.n7g-is-a{
       max-height: 10000px;
       opacity: 1;
