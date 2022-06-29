@@ -2,8 +2,6 @@
 // TODO : Ссылки на соцсети брать из linkStorage.
 // TODO: ссылки на приложения
 
-import "url-polyfill"; // IE 11 не поддерживает конструктор URL, который использует webpack 5.
-import "element-closest-polyfill"; // IE 11 не поддерживает closest.
 import contextParser from "./extensions/contextParser";
 import dynamicStyles from "./extensions/dynamicStyles";
 import htmlGenerator from "./extensions/htmlGenerator";
