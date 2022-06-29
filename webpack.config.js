@@ -13,7 +13,7 @@ module.exports = (env, argv) => {
         import: "./src/webMoneyHeader/webMoneyHeader.js",
         library: {
           name: "WebMoneyHeader",
-          type: "umd",
+          type: "var",
           export: "default"
         }
       },
@@ -21,7 +21,7 @@ module.exports = (env, argv) => {
         import: "./src/webMoneyNavbar/webMoneyNavbar.js",
         library: {
           name: "WebMoneyNavbar",
-          type: "umd",
+          type: "var",
           export: "default"
         }
       },
@@ -29,15 +29,12 @@ module.exports = (env, argv) => {
         import: "./src/webMoneyFooter/webMoneyFooter.js",
         library: {
           name: "WebMoneyFooter",
-          type: "umd",
+          type: "var",
           export: "default"
         }
       },
       test: {
         import: "./src/test/test.js"
-      },
-      ie11: {
-        import: "./src/test/ie11.js"
       }
     },
     output: {
