@@ -12,7 +12,9 @@ $brand500: #036CB5;
 $white: #ffffff;
 $brandlight: rgba(3, 108, 181, 0.05);
 
-$fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
+$fontbodysemibold: 600 16px/24px "Manrope", "Helvetica", sans-serif;
+$footnotemedium: 500 12px/20px "Manrope", "Helvetica", sans-serif;
+
 
 @font-face {
   font-family: "Manrope";
@@ -107,8 +109,9 @@ $fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid $gray100;
+    box-shadow: 0px -1px 0 $gray100;
     padding: 8px 0;
+    border-bottom: 1px solid $gray100;
   }
   &-ll {
     display: flex;
@@ -210,25 +213,18 @@ $fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
     }
   }
   &-mtl {
-    color: #101828;
-    font-family: "Manrope", "Helvetica", sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 4px 0;
-    font-weight: 600;
+    font: $fontbodysemibold;
+    color: $gray600;
+    padding: 16px 0;
     cursor: default;
-    margin-bottom: 12px;
   }
   a.n9g-mlk {
-    color: #707070;
-    font-family: "Manrope", "Helvetica", sans-serif;
-    font-size: 12px;
-    line-height: 16px;
-    font-weight: 500;
+    font: $footnotemedium;
+    color: $gray500;
     cursor: pointer;
     transition: all 0.2s;
     display: block;
-    padding: 4px 0;
+    padding: 6px 0;
     &:visited,
     &:active,
     &:focus{
@@ -246,7 +242,7 @@ $fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
   &-ait {
     display: flex;
     align-items: center;
-    margin-bottom: 16px;
+    // margin-bottom: 16px;
     width: 33.333333%;
     flex-wrap: nowrap;
   }
@@ -257,23 +253,25 @@ $fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
     align-items: center;
     justify-content: center;
     display: flex;
-    margin-right: 12px;
+    // margin-right: 8px;
   }
   &-aig {
     display: block;
     max-width: 100%;
   }
   &-atx {
-    font-family: "Manrope", "Helvetica", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    color: #101828;
-    margin-right: 8px;
-    width: calc(100% - 68px);
+    font: $footnotemedium;
+    color: $gray500;
+    // font-family: "Manrope", "Helvetica", sans-serif;
+    // font-size: 12px;
+    // font-weight: 400;
+    // line-height: 16px;
+    // color: #101828;
+    // margin-right: 8px;
+    width: calc(100% - 56px);
   }
   &-brw {
-    border-top: 1px solid #d9d9d9;
+    box-shadow: 0px -1px 0 $gray100;
     padding: 24px 0 48px;
   }
   &-btp {
@@ -427,12 +425,15 @@ $fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
   }
   &.n9g-adaptive {
     a.n9g-mlk {
-      padding: 4px 8px 4px 0;
-      display: inline-flex;
-      @media (min-width: 768px) {
-        display: block;
-        padding: 4px 0;
+      @media (max-width: 575px) {
+        padding: 6px 8px;
       }
+      // padding: 4px 8px 4px 0;
+      // display: inline-flex;
+      // @media (min-width: 768px) {
+      //   display: block;
+      //   padding: 4px 0;
+      // }
     }
     a.n9g-lll {
       border-radius: 8px;
@@ -487,6 +488,7 @@ $fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
         }
         @media (max-width: 575px) {
           padding: 0;
+          border-bottom: none;
         }
       }
       &-ll {
@@ -523,6 +525,11 @@ $fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
         //   height: 20px;
         // }
       }
+      &-mdl {
+        @media (max-width: 575px) {
+          padding: 0;
+        }
+      }
       &-cln {
         width: 100%;
         margin-bottom: 16px;
@@ -531,17 +538,18 @@ $fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
             margin-bottom: 0;
             .n9g-mtl{
               position: relative;
+              box-shadow: 0px -1px 0 $gray100;
               &:after {
                 content: "";
                 display: block;
-                width: 16px;
-                height: 16px;
+                width: 24px;
+                height: 24px;
                 background: transparent url("images/arrow-down.svg") center center
                   no-repeat;
                 position: absolute;
                 right: 0;
                 top: 50%;
-                margin-top: -8px;
+                margin-top: -12px;
                 background-size: 24px;
               }
             }
@@ -549,10 +557,11 @@ $fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
               display: none;
             }
             &.n7g-is-a{
-              padding-bottom: 8px;
+              padding-bottom: 12px;
               .n9g-mtl{
                 &:after {
-                  transform: rotate(-180deg);
+                  background: transparent url("images/arrow-up.svg") center center
+                  no-repeat;
                 }
               }
               .n9g-mlk{
@@ -577,15 +586,32 @@ $fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
         }
       }
       &-mtl {
-        margin-bottom: 4px;
-        @media (min-width: 768px) {
-          margin-bottom: 12px;
+        &.n9g-smp{
+          @media (max-width: 575px) {
+            padding-top: 24px;
+            box-shadow: 0px -1px 0 $gray100;
+            color: $gray400;
+          }
+        }
+      }
+      &-pc {
+        @media (max-width: 767px) {
+          display: none;
         }
       }
       &-aps {
         margin-bottom: 0;
         @media (min-width: 768px) {
           margin-bottom: 16px;
+        }
+        @media (max-width: 575px) {
+          margin-left: -8px;
+          margin-right: -8px;
+        }
+      }
+      &-atx{
+        @media (max-width: 575px) {
+          font: $fontbodysemibold;
         }
       }
       &-ait {
@@ -594,6 +620,9 @@ $fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
         @media (min-width: 496px) {
           width: 33.333333%;
           flex-wrap: nowrap;
+        }
+        @media (max-width: 575px) {
+          padding-bottom: 8px;
         }
       }
       &-btp {

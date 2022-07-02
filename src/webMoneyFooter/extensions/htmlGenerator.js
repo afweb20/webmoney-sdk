@@ -206,8 +206,8 @@ export default {
   generateMiddlePartApps: function (context) {
 
     return ml("div", { "class": "n9g-cln n9g-cln--x2" }, [
-      ml("div", { class: "n9g-mtl"}, local(context, "menuMobileApps")),
-      ml("div", { class: "n9g-aps" }, [
+      ml("div", { class: "n9g-mtl n9g-smp"}, local(context, "menuMobileApps")),
+      ml("div", { class: "n9g-aps n9g-smp" }, [
         ml("a", { class: "n9g-ait", href: getLink(context, "appAppStore").url }, [
           ml("span", { class: "n9g-aim" }, 
             ml("img", { class: "n9g-aig", src: require("../images/apps/app-store.svg") })
@@ -219,16 +219,10 @@ export default {
             ml("img", { class: "n9g-aig", src: require("../images/apps/google-play.svg") })
           ),
           ml("span", { class: "n9g-atx" }, getLink(context, "appGooglePlay").title)
-        ]),
-        ml("a", { class: "n9g-ait", href: getLink(context, "appMicrosoftStore").url }, [
-          ml("span", { class: "n9g-aim" }, 
-            ml("img", { class: "n9g-aig", src: require("../images/apps/windows-store.svg") })
-          ),
-          ml("span", { class: "n9g-atx" }, getLink(context, "appMicrosoftStore").title)
         ])
       ]),
-      ml("div", { class: "n9g-mtl"}, local(context, "menuPcApps")),
-      ml("div", { class: "n9g-aps" }, [
+      ml("div", { class: "n9g-mtl n9g-pc"}, local(context, "menuPcApps")),
+      ml("div", { class: "n9g-aps n9g-pc" }, [
         ml("a", { class: "n9g-ait", href: getLink(context, "appWindows").url }, [
           ml("span", { class: "n9g-aim" }, 
             ml("img", { class: "n9g-aig", src: require("../images/apps/windows.svg") })
@@ -240,6 +234,12 @@ export default {
             ml("img", { class: "n9g-aig", src: require("../images/apps/os-x.svg") })
           ),
           ml("span", { class: "n9g-atx" }, getLink(context, "appMacOS").title)
+        ]),
+        ml("a", { class: "n9g-ait", href: getLink(context, "appMicrosoftStore").url }, [
+          ml("span", { class: "n9g-aim" }, 
+            ml("img", { class: "n9g-aig", src: require("../images/apps/windows-store.svg") })
+          ),
+          ml("span", { class: "n9g-atx" }, getLink(context, "appMicrosoftStore").title)
         ])
       ])
     ]);
