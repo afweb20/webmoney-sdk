@@ -8,6 +8,11 @@ $gray600: #4D5761;
 $gray700: #384250;
 $gray800: #1F2A37;
 $gray900: #111927;
+$brand500: #036CB5;
+$white: #ffffff;
+$brandlight: rgba(3, 108, 181, 0.05);
+
+$fontbodysemibold: 600 16px/24px "Manrope", sans-serif;
 
 @font-face {
   font-family: "Manrope";
@@ -95,39 +100,35 @@ $gray900: #111927;
     }
   }
   &-ln {
-    box-shadow: 0px 0px 0px 1px #eee;
     padding: 0;
-    &f {
-      flex-wrap: wrap;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
+  }
+  &-lnf {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid $gray100;
+    padding: 8px 0;
   }
   &-ll {
     display: flex;
     flex-wrap: wrap;
     width: auto;
     justify-content: flex-start;
-    a.n9g-lll {
-      color: #101828;
-      font-family: "Manrope", "Helvetica", sans-serif;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 32px;
-      cursor: pointer;
-      transition: all 0.2s;
-      display: block;
-      padding: 16px 0;
-      margin-right: 32px;
-      &:visited,
-      &:active,
-      &:focus{
-        color: #101828;
-      }
-      &:hover {
-        color: #006cb4;
-      }
+  }
+  a.n9g-lll {
+    font: $fontbodysemibold;
+    padding: 4px 16px 4px 0;
+    color: $gray600;
+    display: inline-flex;
+    transition: all 0.2s;
+    &:visited,
+    &:active,
+    &:focus{
+      color: $gray600;
+    }
+    &:hover {
+      color: $brand500;
     }
   }
   &-lr {
@@ -434,6 +435,39 @@ $gray900: #111927;
         padding: 4px 0;
       }
     }
+    a.n9g-lll {
+      border-radius: 8px;
+      cursor: pointer;
+      display: block;
+      @media (max-width: 575px) {
+        background: $brandlight;
+        width: calc(50% - 4px);
+        margin: 0 4px 8px 0;
+        padding: 4px 8px;
+        color: $brand500;
+        &:nth-child(2n){
+          margin-right: 0;
+          margin-left: 4px;
+        }
+        &:visited,
+        &:active,
+        &:focus{
+          color: $brand500;
+        }
+      }
+      // padding: 0;
+      // margin-right: 8px;
+      // @media (min-width: 360px) {
+      //   margin-right: 0;
+      // }
+      // @media (min-width: 576px) {
+      //   margin-right: 16px;
+      // }
+      // @media (min-width: 768px) {
+      //   padding: 16px 0;
+      //   margin-right: 32px;
+      // }
+    }
     .n9g{
       &-ctr {
         width: 100%;
@@ -447,38 +481,20 @@ $gray900: #111927;
           display: block;
         }
       }
-      &-ln {
-        padding: 16px 0 8px;
-        @media (min-width: 768px) {
-          padding: 0;
-        }
+      &-lnf {
+      @media (max-width: 767px) {
+        justify-content: center;
+
+      }
       }
       &-ll {
-        justify-content: center;
-        width: auto;
-        @media (min-width: 360px) {
-          justify-content: space-between;
+        
+        @media (max-width: 575px) {
+          padding: 16px 0 0;
           width: 100%;
         }
-        @media (min-width: 576px) {
-          width: auto;
-          justify-content: flex-start;
-        }
-        a.n9g-lll {
-          padding: 0;
-          margin-right: 8px;
-          @media (min-width: 360px) {
-            margin-right: 0;
-          }
-          @media (min-width: 576px) {
-            margin-right: 16px;
-          }
-          @media (min-width: 768px) {
-            padding: 16px 0;
-            margin-right: 32px;
-          }
-        }
       }
+    
       &-lr {
         padding: 16px 0 0;
         flex: 1;
