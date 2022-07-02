@@ -33,11 +33,11 @@ var localization = {
   },
   menuInstrucciones: {
     "ru": "Инструкции",
-    "en": "Instrucciones",
+    "en": "Instructions",
     "es": "Instrucciones",
     "pt": "Instruções",
     "tr": "Talimatlar",
-    "vn": "Instrucciones"
+    "vn": "Instructions"
   },
   menuHelp: {
     "ru": "Помощь",

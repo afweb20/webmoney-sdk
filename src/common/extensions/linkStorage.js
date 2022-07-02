@@ -1218,6 +1218,54 @@ var linkStorage = {
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpStart, "/registration.shtml"]
   },
+  faq: {
+    t: [
+      "FAQ"
+    ],
+    u: ["wiki.web.money/projects/webmoney/wiki/FAQ"]
+  },
+  howToRegister: {
+    t: [
+      "Как зарегистрироваться", 
+      "How to register", 
+      "Cómo registrarse", 
+      "Como se registrar",
+      "Nasıl kayıt olunur"
+    ],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpStart, "/registration.shtml"]
+  },
+  howToCreateWallet: {
+    t: [
+      "Как создать кошелек", 
+      "How to create a wallet", 
+      "Cómo crear una billetera", 
+      "Como criar uma carteira",
+      "Bir cüzdan nasıl oluşturulur"
+    ],
+    u: ["wiki.web.money/projects/webmoney/wiki/kak_sozdat_wm_koshelek_v_wm_keeper"]
+  },
+  howToTopUp: {
+    t: [
+      "Как пополнить кошелек", 
+      "How to top up your wallet", 
+      "Cómo recargar su billetera", 
+      "Como recarregar sua carteira",
+      "Cüzdanınızı nasıl doldurabilirsiniz"
+    ],
+    u: ["wiki.web.money/projects/webmoney/wiki/sposoby_popolneniya"]
+  },
+  howToIden: {
+    t: [
+      "Как пройти идентификацию", 
+      "How to complete identification", 
+      "Cómo completar la identificación", 
+      "Como completar a identificação",
+      "Tanımlama nasıl tamamlanır"
+    ],
+    u: ["wiki.web.money/projects/webmoney/wiki/sposoby_popolneniya"]
+  },
+  
   inoutOptions: {
     
     t: ["Выбор способа ввода/вывода", "Choosing a method for input/output", "Seleccionar el metodo de recarga/retiro", 
@@ -1468,8 +1516,10 @@ var linkStorage = {
     u: [constLangs, constUrlHelpFinancial, "/legal_entity_wmid.shtml"]
   },
   videoTutorials: {
-    
-    t: ["Обучающие видео", "Video tutorials", "Video Tutorial", 
+    t: [
+      "Обучающие видео", 
+      "Video tutorials", 
+      "Video Tutorial", 
       "Tutorial em vídeo",
       "Videolu eğitim"
     ],

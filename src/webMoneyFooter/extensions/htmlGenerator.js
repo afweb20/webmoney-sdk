@@ -92,12 +92,12 @@ export default {
       ml("div", { class: "n9g-ctr"}, [
         ml("div", { class: "n9g-rw"}, [
           this.generateMiddlePartAboutSystem(context),
-          this.generateMiddlePartPurseManagement(context),
+          this.generateMiddlePartInstructions(context),
+          // this.generateMiddlePartPurseManagement(context),
           this.generateMiddlePartLegalInformation(context),
           this.generateMiddlePartContacts(context),
         ]),
         ml("div", { class: "n9g-rw"}, [
-          this.generateMiddlePartInstructions(context),
           this.generateMiddlePartHelp(context),
           this.generateMiddlePartApps(context)
         ])
@@ -114,9 +114,7 @@ export default {
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "purseManagement").url }, getLink(context, "purseManagement").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "systemFees").url }, getLink(context, "systemFees").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "operationLimits").url }, getLink(context, "operationLimits").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "statistics").url }, getLink(context, "statistics").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "securityAndPrivacy").url }, getLink(context, "securityAndPrivacy").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "tabu").url }, getLink(context, "tabu").title)
     ]);
   },
 
@@ -183,23 +181,13 @@ export default {
 
     return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
       ml("div", { "class" : "n9g-mtl" }, local(context, "menuInstrucciones")),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "registration").url }, getLink(context, "registration").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "poluchenieAttestata").url }, getLink(context, "poluchenieAttestata").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "photoId").url }, getLink(context, "photoId").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "changeBl").url }, getLink(context, "changeBl").title),
-
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "inoutOptions").url }, getLink(context, "inoutOptions").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "acceptPayments").url }, getLink(context, "acceptPayments").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "repayment").url }, getLink(context, "repayment").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "faq").url }, getLink(context, "faq").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "howToRegister").url }, getLink(context, "howToRegister").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "howToCreateWallet").url }, getLink(context, "howToCreateWallet").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "howToTopUp").url }, getLink(context, "howToTopUp").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "howToIden").url }, getLink(context, "howToIden").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "videoTutorials").url }, getLink(context, "videoTutorials").title),
       
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "deleteWmid").url }, getLink(context, "deleteWmid").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "nevozvratDebt").url }, getLink(context, "nevozvratDebt").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "transactionHistory").url }, getLink(context, "transactionHistory").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "exchange").url }, getLink(context, "exchange").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "securityLimits").url }, getLink(context, "securityLimits").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "bankCards").url }, getLink(context, "bankCards").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "checkCorr").url }, getLink(context, "checkCorr").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "automats").url }, getLink(context, "automats").title),
     ]);
   },
 
