@@ -24,12 +24,12 @@ var localization = {
     "vn": "Legal information"
   },
   menuContactInformation: {
-    "ru": "Контактная информация",
-    "en": "Contact information",
-    "es": "Información del contacto",
-    "pt": "Informações de contato",
-    "tr": "İletişim bilgileri",
-    "vn": "Contact information"
+    "ru": "Контакты",
+    "en": "Contacts",
+    "es": "Contacto",
+    "pt": "Contacto",
+    "tr": "Kişi",
+    "vn": "Contacts"
   },
   menuInstrucciones: {
     "ru": "Инструкции",

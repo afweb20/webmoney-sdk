@@ -755,7 +755,10 @@ var linkStorage = {
     u: "passport.web.money"
   },
   receivePassport: {
-    t: ["Получить аттестат", "Receive WebMoney passport", "Recibir el atestado", 
+    t: [
+      "Получить аттестат", 
+      "Receive WebMoney passport", 
+      "Recibir el atestado", 
       "Receber certificado",
       "Belge alma"
     ],
@@ -944,6 +947,26 @@ var linkStorage = {
     d: constAllDomainTypes,
     u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/merchant.shtml"]
   },
+  merchantInterface: {
+    t: [
+      "Web Merchant Interface"
+    ],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/merchant.shtml"]
+  },
+  pressService: {
+    t: [
+      "Пресс-центр", 
+      "Press-centre", 
+      "Centro de prensa", 
+      "Centro de imprensa",
+      "Basın merkezi",
+      "Press-centre", 
+    ],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlLegal, "/press-service.shtml"]
+  },
+
   paymentsToBankAccounts: {
     
     t: ["Прием платежей на банковский счет", "Payments to bank accounts", "Pagos a cuentas bancarias", 
@@ -1180,7 +1203,6 @@ var linkStorage = {
     u: "subscribe.web.money/subscribe"
   },
   programInterfaces: {
-    
     t: ["API: программные интерфейсы", "API: Program interfaces", "API: aplicaciónes", 
       "API: aplicações",
       "API: program arayüzleri"
@@ -1189,8 +1211,10 @@ var linkStorage = {
     u: [constLangs, constUrlDevelopers, "/api.shtml"]
   },
   stylesAndDesign: {
-    
-    t: ["Дизайн и стили", "Styles and design", "Diseño y estilos", 
+    t: [
+      "Дизайн и стили", 
+      "Styles and design", 
+      "Diseño y estilos", 
       "Desenho e estilos",
       "Dizayn ve stiller"
     ],
@@ -1265,6 +1289,8 @@ var linkStorage = {
     ],
     u: ["wiki.web.money/projects/webmoney/wiki/sposoby_popolneniya"]
   },
+
+
   
   inoutOptions: {
     

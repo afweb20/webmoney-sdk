@@ -93,13 +93,13 @@ export default {
         ml("div", { class: "n9g-rw"}, [
           this.generateMiddlePartAboutSystem(context),
           this.generateMiddlePartInstructions(context),
-          // this.generateMiddlePartPurseManagement(context),
+          this.generateMiddlePartHelp(context),
           this.generateMiddlePartLegalInformation(context),
-          this.generateMiddlePartContacts(context),
         ]),
         ml("div", { class: "n9g-rw"}, [
-          this.generateMiddlePartHelp(context),
-          this.generateMiddlePartApps(context)
+          this.generateMiddlePartDevelopers(context),
+          this.generateMiddlePartContacts(context),
+          this.generateMiddlePartApps(context),
         ])
       ])
     );
@@ -118,16 +118,15 @@ export default {
     ]);
   },
 
-  generateMiddlePartPurseManagement: function (context) {
+  generateMiddlePartDevelopers: function (context) {
 
     return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
-      ml("div", { "class" : "n9g-mtl" }, local(context, "menuPurseManagement")),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperStandardMini").url }, getLink(context, "keeperStandardMini").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperWinProClassic").url }, getLink(context, "keeperWinProClassic").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperWebProLight").url }, getLink(context, "keeperWebProLight").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperMobile").url }, getLink(context, "keeperMobile").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperForSocialNetworks").url }, getLink(context, "keeperForSocialNetworks").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "actionBlock").url }, getLink(context, "actionBlock").title),
+      ml("div", { "class" : "n9g-mtl" },  getLink(context, "developers").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "programInterfaces").url }, getLink(context, "programInterfaces").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "merchantInterface").url }, getLink(context, "merchantInterface").title),
+      // ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperWebProLight").url }, getLink(context, "keeperWebProLight").title),
+      // ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperMobile").url }, getLink(context, "keeperMobile").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "stylesAndDesign").url }, getLink(context, "stylesAndDesign").title),
     ]);
   },
 
@@ -151,16 +150,11 @@ export default {
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "technicalSupport").url }, getLink(context, "technicalSupport").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "financialSupport").url }, getLink(context, "financialSupport").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "forum").url }, getLink(context, "forum").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "AskQuestion").url }, getLink(context, "AskQuestion").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "videoTutorials").url }, getLink(context, "videoTutorials").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "searchPayment").url }, getLink(context, "searchPayment").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "interactiveMap").url }, getLink(context, "interactiveMap").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "changeData").url }, getLink(context, "changeData").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "legalEntityWmid").url }, getLink(context, "legalEntityWmid").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "pretenzIIski").url }, getLink(context, "pretenzIIski").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "repaymentCPurse").url }, getLink(context, "repaymentCPurse").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "controlRecovery").url }, getLink(context, "controlRecovery").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "annullation").url }, getLink(context, "annullation").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "restoringControl").url }, getLink(context, "restoringControl").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "receivePassport").url }, getLink(context, "receivePassport").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "actionBlock").url }, getLink(context, "actionBlock").title),
     ]);
   },
 
@@ -168,12 +162,11 @@ export default {
 
     return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
       ml("div", { "class" : "n9g-mtl" }, local(context, "menuContactInformation")),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "ownerAndAdministrator").url }, getLink(context, "ownerAndAdministrator").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "wmPurseGuarantors").url }, getLink(context, "wmPurseGuarantors").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "contactsForLegalRequests").url }, getLink(context, "contactsForLegalRequests").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "registrars").url }, getLink(context, "registrars").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "verificationPoints").url }, getLink(context, "verificationPoints").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "cooperation").url }, getLink(context, "cooperation").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "downloadSoftware3").url }, getLink(context, "downloadSoftware3").title)
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "pressService").url }, getLink(context, "pressService").title)
     ]);
   },
 
@@ -217,17 +210,17 @@ export default {
           ),
           ml("span", { class: "n9g-atx" }, getLink(context, "appWindows").title)
         ]),
-        ml("a", { class: "n9g-ait", href: getLink(context, "appMacOS").url }, [
-          ml("span", { class: "n9g-aim" }, 
-            ml("img", { class: "n9g-aig", src: require("../images/apps/os-x.svg") })
-          ),
-          ml("span", { class: "n9g-atx" }, getLink(context, "appMacOS").title)
-        ]),
         ml("a", { class: "n9g-ait", href: getLink(context, "appMicrosoftStore").url }, [
           ml("span", { class: "n9g-aim" }, 
             ml("img", { class: "n9g-aig", src: require("../images/apps/windows-store.svg") })
           ),
           ml("span", { class: "n9g-atx" }, getLink(context, "appMicrosoftStore").title)
+        ]),
+        ml("a", { class: "n9g-ait", href: getLink(context, "appMacOS").url }, [
+          ml("span", { class: "n9g-aim" }, 
+            ml("img", { class: "n9g-aig", src: require("../images/apps/os-x.svg") })
+          ),
+          ml("span", { class: "n9g-atx" }, getLink(context, "appMacOS").title)
         ])
       ])
     ]);
