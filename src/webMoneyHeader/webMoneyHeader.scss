@@ -338,18 +338,20 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: -12px;
+    // margin-left: -12px;
     .n7g-sbtn{
       transition: all 0.3s ease-out;
     }
     &.n7g-is-a{
       .n7g-sbtn{
         background: transparent url("./images/search-a.svg") center center no-repeat;
+        background-size: 38px;
       }
     }
     &:hover{
       .n7g-sbtn{
         background: transparent url("./images/search-a.svg") center center no-repeat;
+        background-size: 38px;
       }
     }
   }
@@ -360,6 +362,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     cursor: pointer;
     position: relative;
     z-index: 1;
+    background-size: 38px;
   }
   input.n7g-sbxi{
     height: auto;
