@@ -83,6 +83,9 @@ export default {
 
       var previewElement = rootElement.querySelector("[data-n7g-preview]");
       previewElement.innerText = loginBlockData.preview;
+
+      var previewElement2 = rootElement.querySelector("[data-n7g-preview2]");
+      previewElement2.innerText = loginBlockData.preview;
       
       var avatarElements = rootElement.querySelectorAll("[data-n7g-avatar]");
 

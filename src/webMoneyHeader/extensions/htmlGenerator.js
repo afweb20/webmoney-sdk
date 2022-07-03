@@ -72,7 +72,7 @@ export default {
 
       ml("div", {"class": "n7g-lgw", "data-n7g-login-block-toggle-menu": "" }, [
         ml("div", {"class": "n7g-uln"}, [
-          // ml("div", {"class": "n7g-unm", "data-n7g-preview": ""}, ""),
+          ml("div", {"class": "n7g-unm", "data-n7g-preview": ""}, ""),
           ml("img", {"class": "n7g-uim", "data-n7g-avatar": ""})
         ]),
         ml("div", {"class": "n7g-wdw"}, [
@@ -86,7 +86,7 @@ export default {
                 ml("a", {"class": "n7g-ufnm", "data-n7g-events-url": "", "href": "#"}, 
                   ml("span", {"class": "n7g-unt", "data-n7g-display-name": ""}, "")
                 ),
-                ml("div", {"class": "n7g-unmw", "data-n7g-preview": ""}, ""),
+                ml("div", {"class": "n7g-unmw", "data-n7g-preview2": ""}, ""),
               ])
             ]) 
           ),
