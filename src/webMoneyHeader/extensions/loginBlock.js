@@ -88,6 +88,7 @@ export default {
       displayNameElement.innerText = loginBlockData.displayName;
 
       var wmidElement = rootElement.querySelector("[data-n7g-wmid]");
+      wmidElement.attributes["data-n7g-wmid"].value = loginBlockData.wmid;
       wmidElement.innerText = "WMID: " + loginBlockData.wmid;
       
       var avatarElements = rootElement.querySelectorAll("[data-n7g-avatar]");

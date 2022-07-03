@@ -87,6 +87,7 @@ export default {
                   ml("span", {"class": "n7g-unt", "data-n7g-display-name": ""}, "")
                 ),
                 ml("div", {"class": "n7g-unmw", "data-n7g-wmid": ""}, ""),
+                ml("span", {"data-n7g-copy-wmid": ""}, "[copy]"),
               ])
             ]) 
           ),
