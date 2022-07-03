@@ -513,12 +513,12 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "letterPostingService").url }, getLink(context, "letterPostingService").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "newsline").url }, getLink(context, "newsline").title),
             ]),
-            ml("div", { "class": "n7g-clm", "data-n7g-toggle-item": "" }, [
-              ml("div", { "class": "n7g-ttl" }, local(context, "menuForDevelopers")),
-              ml("a", { "class": "n7g-lnk", "href": getLink(context, "programInterfaces").url }, getLink(context, "programInterfaces").title),
-              ml("a", { "class": "n7g-lnk", "href": getLink(context, "stylesAndDesign").url }, getLink(context, "stylesAndDesign").title),
-              ml("a", { "class": "n7g-lnk", "href": getLink(context, "technicalSupport2").url }, getLink(context, "technicalSupport2").title),
-            ]),
+            // ml("div", { "class": "n7g-clm", "data-n7g-toggle-item": "" }, [
+            //   ml("div", { "class": "n7g-ttl" }, local(context, "menuForDevelopers")),
+            //   ml("a", { "class": "n7g-lnk", "href": getLink(context, "programInterfaces").url }, getLink(context, "programInterfaces").title),
+            //   ml("a", { "class": "n7g-lnk", "href": getLink(context, "stylesAndDesign").url }, getLink(context, "stylesAndDesign").title),
+            //   ml("a", { "class": "n7g-lnk", "href": getLink(context, "technicalSupport2").url }, getLink(context, "technicalSupport2").title),
+            // ]),
           ])
         ])
       )

@@ -116,6 +116,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
   &-lft{
     display: flex;
     flex: 1;
+    position: relative;
   }
   &-llg{
     display: flex;
@@ -124,7 +125,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
   &-lgo{
     display: block;
     padding: 16px 0;
-    margin-right: 32px;
+    margin-right: 24px;
   }
   &-lgi{ 
     display: block;
@@ -140,10 +141,10 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     padding-right: 64px;
   }
   &-dtr{
-    width: 2px;
-    background-color: #eeeeee;
+    width: 1px;
+    background-color: $gray100;
     height: calc(100% - 32px);
-    margin-right: 32px;
+    margin-right: 24px;
     display: block;
   }
   &-svs{
@@ -151,9 +152,10 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     width: 32px;
     height: 32px;
     cursor: pointer;
-    margin-right: 32px;
+    margin-right: 24px;
     text-indent: -9999px;
     transition: all 0.3s ease-out;
+    
     & > .n7g-lki:after{
       display: none;
     }
@@ -290,18 +292,16 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
   }
   &-lki{
     display: block;
-    font-size: 14px;
-    line-height: 20px;
+    font: $fontbodysemibold;
     color: $gray500;
-    font-weight: 600;
     cursor: pointer;
     border-radius: 4px;
     position: relative;
     text-decoration: none;
     font-family: "Manrope", "Helvetica", sans-serif;
     transition: all 0.3s;
-    padding: 6px 40px 6px 8px;
-    margin-right: 16px;
+    padding: 4px 32px 4px 8px;
+    margin-right: 24px;
     @include noselection;
     &:after{
       content: "";
@@ -310,7 +310,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
       width: 32px;
       height: 32px;
       position: absolute;
-      right: 8px;
+      right: 0px;
       top: 50%;
       margin-top: -16px;
     }
@@ -335,6 +335,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: -12px;
     .n7g-sbtn{
       transition: all 0.3s ease-out;
     }
@@ -715,38 +716,39 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     }
   }
   &-ttl{
-    font-family: "Manrope", "Helvetica", sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 4px 0;
-    display: block;
-    margin-bottom: 4px;
+    font: $fontbodysemibold;
+    color: $gray600;
+    margin-bottom: 16px;
+    cursor: default;
   }
   a.n7g-lnk{
-    text-decoration: none;
-    font-family: "Manrope", "Helvetica", sans-serif;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 16px;
-    padding: 4px 0;
-    color: #707070;
+    font: $footnotemedium;
+    color: $gray500;
     cursor: pointer;
-    transition: all 0.3s linear;
+    transition: all 0.3s;
+    display: block;
+    padding: 6px 0;
+    text-decoration: none;
     &:visited,
     &:active,
     &:focus{
-      color: #707070;
+      color: $gray500;
     }
-    display: block;
-    &:hover{
-      color: #006cb4;
+    &:hover {
+      color: $brand500;
     }
   }
   &.n7g-desktop {
     min-width: 960px;
     .n7g-slv{
       min-width: 960px;
+    }
+    .n7g-dtr{
+      display: none;
+    }
+    .n7g-svs{
+      position: absolute;
+      left: -88px;
     }
   }
   &.n7g-adaptive {
@@ -811,7 +813,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
         margin-right: 0;
         @media (min-width: 768px) {
           padding: 16px 0;
-          margin-right: 32px;
+          margin-right: 24px;
         }
       }
       &-mdl{
@@ -853,7 +855,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
           background-size: 28px;
         }
         @media (min-width: 768px) {
-          margin-right: 32px;
+          margin-right: 24px;
         }
         &.n7g-is-a{
           @media (max-width: 767px) {
@@ -961,8 +963,8 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
           }
         }
         @media (min-width: 768px) {
-          padding: 6px 40px 6px 8px;
-          margin-right: 16px;
+          padding: 4px 32px 4px 8px;
+          margin-right: 24px;
           &:after{
             display: block;
           }
