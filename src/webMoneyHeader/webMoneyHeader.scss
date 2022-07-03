@@ -8,7 +8,13 @@ $gray600: #4D5761;
 $gray700: #384250;
 $gray800: #1F2A37;
 $gray900: #111927;
-$wm-blue: #006cb4;
+$brand500: #006cb4;
+$white: #ffffff;
+
+$fontbodysemiboldtitle: 600 18px/24px "Manrope", "Helvetica", sans-serif;
+$fontbodysemibold: 600 16px/24px "Manrope", "Helvetica", sans-serif;
+$footnotemedium: 500 12px/20px "Manrope", "Helvetica", sans-serif;
+$fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
 
 @font-face {
   font-family: "Manrope";
@@ -157,12 +163,10 @@ $wm-blue: #006cb4;
     &:hover{
       background: transparent url("./images/svs-a.svg") center center no-repeat;
     }
-    &-dd.n7g-slv.n7g-is-a{
-      padding: 0;
-    }
   }
   &-cnt{
     display: flex;
+    padding: 0 16px;
   }
   &-rw{
     margin: 0 -16px;
@@ -172,13 +176,13 @@ $wm-blue: #006cb4;
     padding: 0 16px;
   }
   &-sbr{
-    width: 208px;
+    width: 300px;
+    padding-right: 24px;
     border-right: 1px solid $gray100;
-    padding: 32px 0 40px;
   }
   &-ctt{
-    width: calc(100% - 208px);
-    padding: 32px 0 24px 32px;
+    width: calc(100% - 300px);
+    padding-left: 24px;
     @media (max-width: 767px) {
       display: none;
     }
@@ -187,26 +191,31 @@ $wm-blue: #006cb4;
     position: relative;
   }
   &-mtl{
-    font-family: "Manrope", "Helvetica", sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 24px;
+    font: $fontbodysemiboldtitle;
     color: $gray400;
     margin-bottom: 16px;
     cursor: default;
   }
   &-mni{
     cursor: pointer;
-    font-family: "Manrope", "Helvetica", sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    padding: 4px 0;
+    font: $fontbodyregular;
+    padding: 8px 16px;
     display: block;
-    margin-bottom: 0px;
+    margin-bottom: 4px;
+    color: $gray500;
+    border-radius: 8px;
+    transition: all 0.3s;
+    background-color: $white;
+    &:hover{
+      background-color: $gray100;
+    }
     &.n7g-is-a{
       font-weight: 700;
-      color: $wm-blue;
+      color: $brand500;
+      background-color: $gray100;
+    }
+    &:last-child{
+      margin-bottom: 0px;
     }
   }
   &-ctn{
@@ -246,7 +255,7 @@ $wm-blue: #006cb4;
     &:hover {
       background-color: #f2f4f6;
       .n7g-stl {
-        color: #707070;
+        color: $gray600;
       }
     }
   }
@@ -270,11 +279,8 @@ $wm-blue: #006cb4;
     height: auto;
   }
   &-stl{
-    color: #707070;
-    font-family: "Manrope", sans-serif;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
+    color: $gray600;
+    font: $footnotemedium;
     cursor: pointer;
     transition: all 0.3s ease-out;
     display: block;
@@ -315,7 +321,7 @@ $wm-blue: #006cb4;
       }
     }
     &.n7g-is-a{
-      color: $wm-blue;
+      color: $brand500;
       &:after {
         background: transparent url("./images/arrow-up.svg") center center no-repeat;
       }
@@ -675,7 +681,7 @@ $wm-blue: #006cb4;
     left: 0;
     right: 0;
     padding: 0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 99;
     background-color: #fff;
     border-top: 1px solid #eeeeee;
@@ -686,7 +692,7 @@ $wm-blue: #006cb4;
       opacity: 1;
       visibility: visible;
       transition: all 0.3s;
-      padding: 32px 0 48px;
+      padding: 24px 0 28px;
       position: absolute;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
       .n7g-ctt{
@@ -918,7 +924,10 @@ $wm-blue: #006cb4;
           padding: 0 16px 0 0;
         }
         @media (min-width: 768px) {
-          margin-bottom: 0px;
+          margin-bottom: 4px;
+          &:last-child{
+            margin-bottom: 0px;
+          }
         }
       }
       &-cti{
@@ -942,6 +951,9 @@ $wm-blue: #006cb4;
         margin-right: 0;
         &.n7g-is-a{
           color: #006cb4;
+        }
+        @media (max-width: 575px) {
+          font-size: 12px;
         }
         @media (max-width: 767px) {
           &:after{
@@ -1025,12 +1037,9 @@ $wm-blue: #006cb4;
           }
           @media (min-width: 768px) {
             transition: all 0.3s;
-            padding: 32px 0 48px;
+            padding: 24px 0 28px;
             position: absolute;
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            &.n7g-svs-dd.n7g-is-a{
-              padding: 0px;
-            } 
+            box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
           }
         }
         .n7g-row{
