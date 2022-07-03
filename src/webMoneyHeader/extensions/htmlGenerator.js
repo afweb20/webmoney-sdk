@@ -86,7 +86,7 @@ export default {
                 ml("a", {"class": "n7g-ufnm", "data-n7g-events-url": "", "href": "#"}, 
                   ml("span", {"class": "n7g-unt", "data-n7g-display-name": ""}, "")
                 ),
-                ml("div", {"class": "n7g-unmw", "data-n7g-preview2": ""}, ""),
+                ml("div", {"class": "n7g-unmw", "data-n7g-wmid": ""}, ""),
               ])
             ]) 
           ),
@@ -513,13 +513,7 @@ export default {
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "files2").url }, getLink(context, "files2").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "letterPostingService").url }, getLink(context, "letterPostingService").title),
               ml("a", { "class": "n7g-lnk", "href": getLink(context, "newsline").url }, getLink(context, "newsline").title),
-            ]),
-            // ml("div", { "class": "n7g-clm", "data-n7g-toggle-item": "" }, [
-            //   ml("div", { "class": "n7g-ttl" }, local(context, "menuForDevelopers")),
-            //   ml("a", { "class": "n7g-lnk", "href": getLink(context, "programInterfaces").url }, getLink(context, "programInterfaces").title),
-            //   ml("a", { "class": "n7g-lnk", "href": getLink(context, "stylesAndDesign").url }, getLink(context, "stylesAndDesign").title),
-            //   ml("a", { "class": "n7g-lnk", "href": getLink(context, "technicalSupport2").url }, getLink(context, "technicalSupport2").title),
-            // ]),
+            ])
           ])
         ])
       )
@@ -551,14 +545,14 @@ export default {
       ))
   },
 
-  getnerateLoginBlockWmidItem: function (options, wmid, displayName, avatarUrl, loginUrl) {
+  generateLoginBlockWmidItem: function (context, wmid, displayName, avatarUrl, loginUrl) {
 
     return ml("a", {"class": "n7g-awli", "href": loginUrl}, 
       ml("span", {"class": "n7g-aww"}, [
         ml("img", {"class": "n7g-awi", "src": avatarUrl}),
         ml("span", {"class": "n7g-awif"}, [
           ml("span", {"class": "n7g-awn"}, displayName),
-          ml("span", {"class": "n7g-aww"}, wmid)
+          ml("span", {"class": "n7g-aww"}, "WMID: " + wmid)
         ])
       ])
     );

@@ -1,7 +1,7 @@
 import consts from "./consts";
 import local from "./local";
 import ml from "common/extensions/ml";
-import getLink from "common/extensions/linkStorage";
+import getLink from "./linkStorage";
 
 export default {
 
@@ -47,7 +47,7 @@ export default {
     return ml("div", { "class": "n9g-ll" },
       [
         ml("a", { "class": "n9g-lll", "href": getLink(context, "events").url }, getLink(context, "events").title),
-        ml("a", { "class": "n9g-lll", "href": getLink(context, "developers").url }, getLink(context, "developers").title),
+        ml("a", { "class": "n9g-lll", "href": getLink(context, "forum").url }, getLink(context, "forum").title),
         ml("a", { "class": "n9g-lll", "href": getLink(context, "wiki").url }, getLink(context, "wiki").title),
         ml("a", { "class": "n9g-lll", "href": getLink(context, "news").url }, getLink(context, "news").title)
       ]);
@@ -121,11 +121,9 @@ export default {
   generateMiddlePartDevelopers: function (context) {
 
     return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
-      ml("div", { "class" : "n9g-mtl" },  getLink(context, "developers").title),
+      ml("div", { "class" : "n9g-mtl" },  local(context, "menuDevelopers")),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "programInterfaces").url }, getLink(context, "programInterfaces").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "merchantInterface").url }, getLink(context, "merchantInterface").title),
-      // ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperWebProLight").url }, getLink(context, "keeperWebProLight").title),
-      // ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperMobile").url }, getLink(context, "keeperMobile").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "stylesAndDesign").url }, getLink(context, "stylesAndDesign").title),
     ]);
   },
@@ -200,6 +198,12 @@ export default {
             ml("img", { class: "n9g-aig", src: require("../images/apps/google-play.svg") })
           ),
           ml("span", { class: "n9g-atx" }, getLink(context, "appGooglePlay").title)
+        ]),
+        ml("a", { class: "n9g-ait", href: getLink(context, "appAppGallery").url }, [
+          ml("span", { class: "n9g-aim" }, 
+            ml("img", { class: "n9g-aig", src: require("../images/apps/app-gallery.svg") })
+          ),
+          ml("span", { class: "n9g-atx" }, getLink(context, "appAppGallery").title)
         ])
       ]),
       ml("div", { class: "n9g-mtl n9g-pc"}, local(context, "menuPcApps")),
