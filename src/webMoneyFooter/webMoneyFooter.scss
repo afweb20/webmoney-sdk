@@ -103,15 +103,15 @@ $footnotemedium: 500 12px/20px "Manrope", "Helvetica", sans-serif;
   }
   &-ln {
     padding: 0;
+    box-shadow: 0px -1px 0 $gray100;
+    border-bottom: 1px solid $gray100;
   }
   &-lnf {
     flex-wrap: wrap;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 0px -1px 0 $gray100;
     padding: 8px 0;
-    border-bottom: 1px solid $gray100;
   }
   &-ll {
     display: flex;
