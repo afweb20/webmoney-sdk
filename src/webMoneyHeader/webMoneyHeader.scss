@@ -181,12 +181,12 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     padding: 0 16px;
   }
   &-sbr{
-    width: 300px;
+    width: 256px;
     padding-right: 24px;
     border-right: 1px solid $gray100;
   }
   &-ctt{
-    width: calc(100% - 300px);
+    width: calc(100% - 256px);
     padding-left: 24px;
     @media (max-width: 767px) {
       display: none;
@@ -255,8 +255,8 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     background-color: #fff;
     transition: all 0.3s ease-out;
     border-radius: 8px;
-    width: calc(33.333333% - 24px);
-    margin-right: 24px;
+    width: calc(33.333333% - 8px);
+    margin-right: 8px;
     &:hover {
       background-color: #f2f4f6;
       .n7g-stl {
@@ -921,10 +921,10 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
           width: auto;
         }
         @media (min-width: 768px) {
-          width: calc(50% - 24px);
+          width: calc(50% - 8px);
         }
         @media (min-width: 992px) {
-          width: calc(33.333333% - 24px);
+          width: calc(33.333333% - 8px);
         }
       }
       &-mtl{
