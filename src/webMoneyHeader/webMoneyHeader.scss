@@ -82,7 +82,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
 .n7g {
   @include resetDiv;
   width: 100%;
-  box-shadow: 0 1px #eeeeee;
+  box-shadow: 0 1px $gray100;
   * {
     @include resetDiv;
     @include resetA;
@@ -502,33 +502,31 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     font-size: 14px;
     line-height: 16px;
     padding-right: 16px;
-    display: block;
+    display: none;
     color: $gray500;
   }
   &-uim{
-    width: 32px;
-    height: 32px;
-    border-radius: 32px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
     @include noselection;
   }
   &-wdw{
     opacity: 0;
     visibility: hidden;
     position: absolute;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.3s;
-    border: 1px solid #eeeeee;
     background-color: #fff;
     top: 100%;
     z-index: 99;
     width: 240px;
     right: 0;
-    padding: 0 0 8px;
+    padding: 0 16px 4px;
+    border-radius: 0 0 8px 8px;
   }
   &-usr{
-    background-color: #f2f4f6;
-    padding: 8px;
-    margin-bottom: 8px;
+    padding: 8px 0;
   }
   &-uwr{
     display: flex;
@@ -536,7 +534,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
   }
   &-uil{
     display: block;
-    margin-right: 8px;
+    margin-right: 12px;
   } 
   &-uifm{
     display: block;
@@ -548,17 +546,22 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     width: calc(100% - 48px);
   }
   a.n7g-ufnm{
-    color: #000;
+    color: $gray600;
     font-family: "Manrope", "Helvetica", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 20px;
     display: block;
     &:visited,
     &:active,
     &:focus{
-      color: #000;
+      color: $gray600;
     }
+  }
+  &-unmw{
+    font: $footnotemedium;
+    color: $gray400;
+    // cursor: pointer;
   }
   &-unt{
     font-family: inherit;
@@ -567,47 +570,47 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     line-height: inherit;
   }
   a.n7g-itm{
-    color: #758793;
+    color: $gray600;
     font-family: "Manrope", "Helvetica", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     line-height: 16px;
-    padding: 12px 8px 12px 40px;
+    padding: 12px 0px 12px 44px;
     display: block;
     cursor: pointer;
     transition: color .2s ease;
     &:visited,
     &:active,
     &:focus{
-      color: #758793;
+      color: $gray600;
     }
     &:hover{
-      color: #101828;
+      color: $brand500;
     }
     &--profile{
-      background: transparent url("./images/login/events.svg") 15px center no-repeat;
+      background: transparent url("./images/login/events.svg") 7px center no-repeat;
       background-size: 19px;
     }
     &--purse{
-      background: transparent url("./images/login/wallet.svg") 16px center no-repeat;
+      background: transparent url("./images/login/wallet.svg") 9px center no-repeat;
       background-size: 16px;
     }
     &--settings{
-      background: transparent url("./images/login/setting.svg") 15px center no-repeat;
+      background: transparent url("./images/login/setting.svg") 8px center no-repeat;
       background-size: 18px;
     }
     &--logout{
-      background: transparent url("./images/login/logout.svg") 16px center no-repeat;
+      background: transparent url("./images/login/logout.svg") 9px center no-repeat;
       background-size: 16px;
     }
     &--login{
-      background: transparent url("./images/login/plus.svg") 16px center no-repeat;
+      background: transparent url("./images/login/plus.svg") 9px center no-repeat;
       background-size: 13px;
-      font-size: 13px;
+      border-top: 1px solid $gray100;
     }
   }
   &-owd{
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid $gray100;
     margin-top: 8px;
     color: #101828;
     font-family: "Manrope", "Helvetica", sans-serif;
@@ -653,25 +656,31 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     color: #758793;
   }
   &-lbi{
-    font-family: "Manrope", "Helvetica", sans-serif;
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
+    font: $fontbodysemibold;
     padding: 7px 16px;
     display: block;
     border: 1px solid;
-    border-radius: 4px;
+    border-radius: 8px;
     margin-left: 16px;
     margin-right: 0; 
+    transition: all 0.3s;
     &--log{
-      background-color: #006cb4;
-      border-color: #006cb4;
+      background-color: $brand500;
+      border-color: $brand500;
       color: #fff;
+      &:hover{
+        background-color: #005794;
+        color: #fff;
+      }
     }
     &--reg{
-      border-color: #006cb4;
-      color: #006cb4;
+      border-color: #036CB5;
+      color: #036CB5;
       display: block;
+      &:hover{
+        background-color: #005794;
+        color: #fff;
+      }
     }
   }
   &-slv{
@@ -748,7 +757,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     }
     .n7g-svs{
       position: absolute;
-      left: -88px;
+      left: -80px;
     }
   }
   &.n7g-adaptive {
