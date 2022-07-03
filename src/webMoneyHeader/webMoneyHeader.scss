@@ -699,13 +699,13 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     border-top: 1px solid #eeeeee;
     position: absolute;
     overflow: hidden;
-    top: -100%;
+    // top: -100%;
     // transition: all 0.7s;
     &.n7g-is-a{
       max-height: 10000px;
       opacity: 1;
       visibility: visible;
-      transition: all 0.7s;
+      transition: all 0.3s;
       padding: 24px 0 28px;
       position: absolute;
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
