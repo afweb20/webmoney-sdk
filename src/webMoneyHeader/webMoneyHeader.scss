@@ -850,6 +850,12 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
           margin-right: 24px;
         }
       }
+      &-uim{
+        @media (max-width: 767px) {
+          width: 32px;
+          height: 32px;
+        }
+      }
       &-mdl{
         padding-left: 0;
         padding-right: 0;
@@ -915,7 +921,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
       &-ctt{
         @media (max-width: 767px) {
           width: 100%;
-          padding: 0 16px;
+          padding: 0;
         }
       }
       &-ctn{

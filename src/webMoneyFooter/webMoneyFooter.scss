@@ -387,20 +387,7 @@ $footnotemedium: 500 12px/20px "Manrope", "Helvetica", sans-serif;
       cursor: pointer;
       display: block;
       @media (max-width: 575px) {
-        background: $brandlight;
-        width: calc(50% - 4px);
-        margin: 0 4px 8px 0;
-        padding: 4px 8px;
-        color: $brand500;
-        &:nth-child(2n){
-          margin-right: 0;
-          margin-left: 4px;
-        }
-        &:visited,
-        &:active,
-        &:focus{
-          color: $brand500;
-        }
+        padding: 4px 3px;
       }
     }
     .n9g{
@@ -430,7 +417,7 @@ $footnotemedium: 500 12px/20px "Manrope", "Helvetica", sans-serif;
         
         @media (max-width: 575px) {
           padding: 16px 0 0;
-          width: 100%;
+          // width: 100%;
         }
       }
     
@@ -524,6 +511,7 @@ $footnotemedium: 500 12px/20px "Manrope", "Helvetica", sans-serif;
         @media (max-width: 575px) {
           margin-left: -8px;
           margin-right: -8px;
+          flex-direction: column;
         }
       }
       &-atx{
