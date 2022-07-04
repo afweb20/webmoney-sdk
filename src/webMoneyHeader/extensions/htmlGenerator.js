@@ -86,8 +86,15 @@ export default {
                 ml("a", {"class": "n7g-ufnm", "data-n7g-events-url": "", "href": "#"}, 
                   ml("span", {"class": "n7g-unt", "data-n7g-display-name": ""}, "")
                 ),
-                ml("div", {"class": "n7g-unmw", "data-n7g-wmid": ""}, ""),
-                ml("span", {"data-n7g-copy-wmid": ""}, "[copy]"),
+                ml("div", {
+                  "class": "n7g-unmw", 
+                  "data-n7g-wmid": "", 
+                  "data-n7g-copy-wmid": "", 
+                  "title": "Скопировать WMID"
+                }, ""),
+                ml("div", {
+                  "class": "n7g-unmwa", 
+                }, "WMID скопирован")
               ])
             ]) 
           ),

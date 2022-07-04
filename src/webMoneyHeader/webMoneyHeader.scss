@@ -550,6 +550,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
   }
   &-uif{
     width: calc(100% - 48px);
+    position: relative;
   }
   a.n7g-ufnm{
     color: $gray600;
@@ -567,7 +568,28 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
   &-unmw{
     font: $footnotemedium;
     color: $gray400;
-    // cursor: pointer;
+    background: transparent url("./images/copy.svg") right center no-repeat;
+    display: inline-flex;
+    padding-right: 20px;
+    cursor: pointer;
+    &.n7g-is-a{
+      opacity: 0;
+      & + .n7g-unmwa {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  &-unmwa{
+    font: $footnotemedium;
+    color: $gray400;
+    opacity: 0;
+    visibility: hidden;
+    cursor: default;
+    position: absolute;
+    bottom: 0;
+    pointer-events: none;
+    transition: all 0.3s;
   }
   &-unt{
     font-family: inherit;
@@ -828,6 +850,12 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
           margin-right: 24px;
         }
       }
+      &-uim{
+        @media (max-width: 767px) {
+          width: 32px;
+          height: 32px;
+        }
+      }
       &-mdl{
         padding-left: 0;
         padding-right: 0;
@@ -893,7 +921,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
       &-ctt{
         @media (max-width: 767px) {
           width: 100%;
-          padding: 0 16px;
+          padding: 0;
         }
       }
       &-ctn{
