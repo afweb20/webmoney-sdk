@@ -319,6 +319,14 @@ var localization = {
     "tr": "Giriş ayarları",
     "vn": "Thiết lập đăng nhập"
   },
+  wmidCopied: {
+    "ru": "WMID скопирован",
+    "en": "WMID copied",
+    "es": "WMID copiado",
+    "pt": "WMID copiado",
+    "tr": "WMID kopyalandı",
+    "vn": "WMID đã được sao chép"
+  },
   otherWmid: {
     "ru": "Другие WMID",
     "en": "Other WMID",

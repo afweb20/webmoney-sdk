@@ -94,7 +94,7 @@ export default {
                 }, ""),
                 ml("div", {
                   "class": "n7g-unmwa", 
-                }, "WMID скопирован")
+                }, local(context, "wmidCopied"))
               ])
             ]) 
           ),

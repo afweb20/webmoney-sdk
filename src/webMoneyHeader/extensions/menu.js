@@ -76,8 +76,9 @@ export default {
       wmidCopyElement.classList.add(activeClassName);
 
       setTimeout( function() {
+        
         wmidCopyElement.classList.remove(activeClassName);
-      }, 4000);
+      }, 2000);
 
     });
 
