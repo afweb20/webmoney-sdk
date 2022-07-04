@@ -1,3 +1,4 @@
+import copyToClipboard from "common/extensions/copyToClipboard";
 import consts from "./consts";
 
 export default {
@@ -24,6 +25,9 @@ export default {
     var searchDropDownMenuElement = rootElement.querySelector("[data-n7g-search-drop-down-menu]");
 
     var loginBlockToggleMenuElement = rootElement.querySelector("[data-n7g-login-block-toggle-menu]");
+
+    var wmidElement = rootElement.querySelector("[data-n7g-wmid]");
+    var wmidCopyElement = rootElement.querySelector("[data-n7g-copy-wmid]");
 
     burgerToggleMenuElement.addEventListener("click", function (event) {
 
@@ -56,8 +60,18 @@ export default {
     });
 
     loginBlockToggleMenuElement.addEventListener("click", function (event) {
-      
-      loginBlockToggleMenuElement.classList.toggle(activeClassName);
+
+      if (!wmidCopyElement.contains(event.target)) {
+
+        loginBlockToggleMenuElement.classList.toggle(activeClassName);
+      }
+    });
+
+    wmidCopyElement.addEventListener("click", function (event) {
+
+      var wmid = wmidElement.attributes["data-n7g-wmid"].value;
+
+      copyToClipboard(wmid);
     });
 
     window.addEventListener("click", function(event) {

@@ -82,10 +82,14 @@ export default {
       loginBlockWrapperElement.classList.add("n7g-is-logged-in");
 
       var previewElement = rootElement.querySelector("[data-n7g-preview]");
-      previewElement.innerText = loginBlockData.preview;
+      previewElement.innerText = loginBlockData.displayName;
 
-      var previewElement2 = rootElement.querySelector("[data-n7g-preview2]");
-      previewElement2.innerText = loginBlockData.preview;
+      var displayNameElement = rootElement.querySelector("[data-n7g-display-name]");
+      displayNameElement.innerText = loginBlockData.displayName;
+
+      var wmidElement = rootElement.querySelector("[data-n7g-wmid]");
+      wmidElement.attributes["data-n7g-wmid"].value = loginBlockData.wmid;
+      wmidElement.innerText = "WMID: " + loginBlockData.wmid;
       
       var avatarElements = rootElement.querySelectorAll("[data-n7g-avatar]");
 
@@ -100,9 +104,6 @@ export default {
 
         eventsUrlElements[i].href = loginBlockData.eventsUrl;
       }
-
-      var displayNameElement = rootElement.querySelector("[data-n7g-display-name]");
-      displayNameElement.innerText = loginBlockData.displayName;
 
       var keeperUrlElement = rootElement.querySelector("[data-n7g-keeper-url]");
       keeperUrlElement.href = loginBlockData.keeperUrl;
@@ -127,7 +128,7 @@ export default {
 
           var additionalUser = loginBlockData.additionalUsers[i];
 
-          var getneratedLoginBlockWmidItemElement = htmlGenerator.getnerateLoginBlockWmidItem(
+          var getneratedLoginBlockWmidItemElement = htmlGenerator.generateLoginBlockWmidItem(
             context,
             additionalUser.wmid,
             additionalUser.displayName,
@@ -240,7 +241,6 @@ export default {
         wmid: currentUser.wmid,
         tid: currentUser.tid,
         dataFillProgress: currentUser.dataFillProgress,
-        preview: "WMID: " + currentUser.wmid,
         displayName: currentUser.displayName,
         tinyAvatarUrl: this.getAvatarUrl(context, "tiny", currentUser.wmid),
         smallAvatarUrl: this.getAvatarUrl(context, "small", currentUser.wmid),

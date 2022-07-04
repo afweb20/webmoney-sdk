@@ -7,30 +7,6 @@ var localization = {
     "tr": "WebMoney Hakkında",
     "vn": "About WebMoney"
   },
-  menuPurseManagement: {
-    "ru": "Управление кошельками",
-    "en": "Purse management",
-    "es": "Manejar los monederos",
-    "pt": "Métodos para gerir contas",
-    "tr": "Cüzdanların yönetimi",
-    "vn": "Purse management"
-  },
-  menuLegalInformation: {
-    "ru": "Юридическая информация",
-    "en": "Legal information",
-    "es": "Información legal",
-    "pt": "Informação jurídica",
-    "tr": "Hukuki bilgiler",
-    "vn": "Legal information"
-  },
-  menuContactInformation: {
-    "ru": "Контакты",
-    "en": "Contacts",
-    "es": "Contacto",
-    "pt": "Contacto",
-    "tr": "Kişi",
-    "vn": "Contacts"
-  },
   menuInstrucciones: {
     "ru": "Инструкции",
     "en": "Instructions",
@@ -46,6 +22,30 @@ var localization = {
     "pt": "Ajuda",
     "tr": "Yardım",
     "vn": "Help"
+  },
+  menuLegalInformation: {
+    "ru": "Юридическая информация",
+    "en": "Legal information",
+    "es": "Información legal",
+    "pt": "Informação jurídica",
+    "tr": "Hukuki bilgiler",
+    "vn": "Legal information"
+  },
+  menuDevelopers: {
+    "ru": "Разработчикам",
+    "en": "For developers",
+    "es": "Para desorolladores",
+    "pt": "Para programadores",
+    "tr": "Geliştiriciler için",
+    "vn": "For developers"
+  },
+  menuContactInformation: {
+    "ru": "Контакты",
+    "en": "Contacts",
+    "es": "Contacto",
+    "pt": "Contacto",
+    "tr": "Kişi",
+    "vn": "Contacts"
   },
   menuMobileApps: {
     "ru": "Приложения для смартфонов",
