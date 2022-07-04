@@ -1122,6 +1122,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
         margin-bottom: 0;
         @media (max-width: 767px) {
           position: relative;
+          padding: 8px 0px;
           &:after{
             content: "";
             display: block;
