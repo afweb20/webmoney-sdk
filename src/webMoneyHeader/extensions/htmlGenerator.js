@@ -117,6 +117,7 @@ export default {
 
               ml("div", { "class": "n7g-mtl" }, local(context, "menuProductsServices")),
               ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_PAYMENTS }, local(context, "menuPayments")),
+              ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": "payments2" }, "Прием платежей"),
               ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_FUNDS }, local(context, "menuRaiseFunds")),
               ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_EXCHANGE }, local(context, "menuExchange")),
               ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_LOANS }, local(context, "menuLoans")),
@@ -149,6 +150,71 @@ export default {
                   ml("a", { "class": "n7g-svi", "href": getLink(context, "servWmf").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/ethereum.svg") }),
                     ml("span", { "class": "n7g-stl" }, getLink(context, "servWmf").title)
+                  ]),
+                  
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "indx").url }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/indx.svg") }),
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "indx").title)
+                  ]),
+
+                ]),
+
+                ml("div", { "class": "n7g-mtn" }, "Прием платежей"),
+                ml("div", { "class": "n7g-ctn", "data-n7g-services-category-name": "payments2" }, [
+
+                  ml("a", { "class": "n7g-svi", "href": "https://paylink.webmoney.ru/" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Платежная ссылка")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://vcard.webmoney.ru/" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "QR-визитка")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://www.web.money/rus/business/accept-payments/online-shop/widget.shtml"}, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Виджет/кнопка для сайта")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://www.web.money/rus/business/accept-payments/games-and-apps/x20.shtml" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Встроенные платежи")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://merchant.webmoney.ru/conf/default.asp" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Автоматизировать платежи")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://masspayment.wmtransfer.com/" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Массовые выплаты")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://rebills.wmtransfer.com/" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Периодические платежи")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://promo.web.money/webmoney-files" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Продавать файлы")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://softactivation.webmoney.ru/" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Создать магазин цифровых товаров")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://funding.webmoney.ru/" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Организовать сбор средств на проект")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://www.webmoney.ru/rus/business/accept-payments/online-shop/bank.shtml" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Принимать платежи на банковский счет")
                   ])
 
                 ]),
@@ -210,6 +276,21 @@ export default {
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/shareholder.svg") }),
                     ml("span", { "class": "n7g-stl" }, getLink(context, "shareholder").title)
                   ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://funding.webmoney.ru/group" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Организовать коллективную покупку")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://funding.webmoney.ru/tickets" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Начать продажу билетов")
+                  ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://funding.webmoney.ru/" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Краудфандинг и донаты")
+                  ])
 
                 ]),
 
@@ -315,6 +396,11 @@ export default {
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/advisor.svg") }),
                     ml("span", { "class": "n7g-stl" }, getLink(context, "advisor").title)
                   ]),
+
+                  ml("a", { "class": "n7g-svi", "href": "https://analytics.webmoney.ru/" }, [
+                    ml("img", { "class": "n7g-sic", "src": require("../images/services/no-icon.svg") }),
+                    ml("span", { "class": "n7g-stl" }, "Сервис аналитики")
+                  ])
 
                 ]),
 
