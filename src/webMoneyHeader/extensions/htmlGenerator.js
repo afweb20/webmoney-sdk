@@ -1,7 +1,7 @@
 import consts from "./consts";
 import local from "./local";
 import ml from "common/extensions/ml";
-import getLink from "common/extensions/linkStorage";
+import getLink from "./linkStorage";
 
 export default {
   generate: function (context) {
@@ -118,7 +118,7 @@ export default {
 
               ml("div", { "class": "n7g-mtl" }, local(context, "menuProductsServices")),
               ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_PAYMENTS }, local(context, "menuPayments")),
-              ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": "payments2" }, "Прием платежей"),
+              ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_ACCEPTING_PAYMENTS }, local(context, "menuAcceptingPayments")),
               ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_FUNDS }, local(context, "menuRaiseFunds")),
               ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_EXCHANGE }, local(context, "menuExchange")),
               ml("div", { "class": "n7g-mni", "data-n7g-services-category-for": consts.SERVICE_CATEGORY_LOANS }, local(context, "menuLoans")),
@@ -160,62 +160,62 @@ export default {
 
                 ]),
 
-                ml("div", { "class": "n7g-mtn" }, "Прием платежей"),
-                ml("div", { "class": "n7g-ctn", "data-n7g-services-category-name": "payments2" }, [
+                ml("div", { "class": "n7g-mtn" }, local(context, "menuAcceptingPayments")),
+                ml("div", { "class": "n7g-ctn", "data-n7g-services-category-name": consts.SERVICE_CATEGORY_ACCEPTING_PAYMENTS }, [
 
-                  ml("a", { "class": "n7g-svi", "href": "https://paylink.webmoney.ru/" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servPayLink").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/paylink.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Платежная ссылка")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servPayLink").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://vcard.webmoney.ru/" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servVcard").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/vcard.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "QR-визитка")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servVcard").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://www.web.money/rus/business/accept-payments/online-shop/widget.shtml"}, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servWidget").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/pbutton.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Виджет/кнопка для сайта")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servWidget").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://www.web.money/rus/business/accept-payments/games-and-apps/x20.shtml" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servX20").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/embpay.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Встроенные платежи")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servX20").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://merchant.webmoney.ru/conf/default.asp" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servMerchant").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/pset.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Автоматизировать платежи")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servMerchant").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://masspayment.wmtransfer.com/" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servMasspayment").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/masspaym.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Массовые выплаты")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servMasspayment").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://rebills.wmtransfer.com/" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servRebills").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/rebill.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Периодические платежи")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servRebills").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://promo.web.money/webmoney-files" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servFilesPay").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/filespay.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Продавать файлы")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servFilesPay").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://softactivation.webmoney.ru/" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servSoftactivation").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/softactivation.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Создать магазин цифровых товаров")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servSoftactivation").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://funding.webmoney.ru/" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servFunding").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/funding.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Организовать сбор средств на проект")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servFunding").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://www.webmoney.ru/rus/business/accept-payments/online-shop/bank.shtml" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servBankPay").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/bankpay.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Принимать платежи на банковский счет")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servBankPay").title)
                   ])
 
                 ]),
@@ -278,19 +278,19 @@ export default {
                     ml("span", { "class": "n7g-stl" }, getLink(context, "shareholder").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://funding.webmoney.ru/group" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servFundingGroup").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/funding.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Организовать коллективную покупку")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servFundingGroup").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://funding.webmoney.ru/tickets" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servFundingTickets").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/tickets.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Начать продажу билетов")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servFundingTickets").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://funding.webmoney.ru/" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servFunding").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/donates.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Краудфандинг и донаты")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servFunding").title)
                   ])
 
                 ]),
@@ -398,9 +398,9 @@ export default {
                     ml("span", { "class": "n7g-stl" }, getLink(context, "advisor").title)
                   ]),
 
-                  ml("a", { "class": "n7g-svi", "href": "https://analytics.webmoney.ru/" }, [
+                  ml("a", { "class": "n7g-svi", "href": getLink(context, "servAnalytics").url }, [
                     ml("img", { "class": "n7g-sic", "src": require("../images/services/analytics.svg") }),
-                    ml("span", { "class": "n7g-stl" }, "Сервис аналитики")
+                    ml("span", { "class": "n7g-stl" }, getLink(context, "servAnalytics").title)
                   ])
 
                 ]),

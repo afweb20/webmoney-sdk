@@ -18,6 +18,7 @@ export default {
   SERVICE_CATEGORY_FUNDS: "funds",
   SERVICE_CATEGORY_EXCHANGE: "exchange",
   SERVICE_CATEGORY_PAYMENTS: "payments",
+  SERVICE_CATEGORY_ACCEPTING_PAYMENTS: "acceptingPayments",
   SERVICE_CATEGORY_WORK: "work",
 
   SEARCH_WHERE_INFO: "info",

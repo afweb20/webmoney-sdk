@@ -23,6 +23,14 @@ var localization = {
     "tr":"Kripto para",
     "vn": "Cryptocurrency"
   },
+  menuAcceptingPayments: {
+    "ru":"Прием платежей",
+    "en":"Accepting payments",
+    "es":"Aceptar pagos",
+    "pt":"Aceitando pagamentos",
+    "tr":"Ödemeleri kabul etmek",
+    "vn": "Accepting payments"
+  },
   menuExchange: {
     "ru":"Обменять",
     "en":"Exchange",
