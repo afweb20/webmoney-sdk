@@ -72,6 +72,13 @@ export default {
       var wmid = wmidElement.attributes["data-n7g-wmid"].value;
 
       copyToClipboard(wmid);
+
+      wmidCopyElement.classList.add(activeClassName);
+
+      setTimeout( function() {
+        wmidCopyElement.classList.remove(activeClassName);
+      }, 4000);
+
     });
 
     window.addEventListener("click", function(event) {
