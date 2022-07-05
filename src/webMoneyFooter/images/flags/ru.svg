@@ -1,12 +1,6 @@
-<svg width="24" height="18" viewBox="0 0 24 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_287_2523" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="18">
-<rect width="24" height="18" rx="4" fill="#C4C4C4"/>
-</mask>
-<g mask="url(#mask0_287_2523)">
-<rect width="24" height="18" fill="#C4C4C4"/>
-<rect width="24" height="6" fill="white"/>
-<rect y="5.98828" width="24" height="6" fill="#0D6EFD"/>
-<rect y="12.0117" width="24" height="6" fill="#DC3545"/>
-<rect x="0.5" y="0.5" width="23" height="17" rx="3.5" stroke="#CED4DA"/>
-</g>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 8C0 5.79086 1.79086 4 4 4H20C22.2091 4 24 5.79086 24 8V10H0V8Z" fill="white"/>
+<path d="M0 9H24V15H0V9Z" fill="#0080D8"/>
+<path d="M0 15H24V17C24 19.2091 22.2091 21 20 21H4C1.79086 21 0 19.2091 0 17V15Z" fill="#F54848"/>
+<rect x="0.5" y="3.5" width="23" height="17" rx="3.5" stroke="#D2D6DB"/>
 </svg>

@@ -1,7 +1,7 @@
 import consts from "./consts";
 import local from "./local";
 import ml from "common/extensions/ml";
-import getLink from "common/extensions/linkStorage";
+import getLink from "./linkStorage";
 
 export default {
 
@@ -47,7 +47,7 @@ export default {
     return ml("div", { "class": "n9g-ll" },
       [
         ml("a", { "class": "n9g-lll", "href": getLink(context, "events").url }, getLink(context, "events").title),
-        ml("a", { "class": "n9g-lll", "href": getLink(context, "developers").url }, getLink(context, "developers").title),
+        ml("a", { "class": "n9g-lll", "href": getLink(context, "forum").url }, getLink(context, "forum").title),
         ml("a", { "class": "n9g-lll", "href": getLink(context, "wiki").url }, getLink(context, "wiki").title),
         ml("a", { "class": "n9g-lll", "href": getLink(context, "news").url }, getLink(context, "news").title)
       ]);
@@ -92,14 +92,14 @@ export default {
       ml("div", { class: "n9g-ctr"}, [
         ml("div", { class: "n9g-rw"}, [
           this.generateMiddlePartAboutSystem(context),
-          this.generateMiddlePartPurseManagement(context),
-          this.generateMiddlePartLegalInformation(context),
-          this.generateMiddlePartContacts(context),
-        ]),
-        ml("div", { class: "n9g-rw"}, [
           this.generateMiddlePartInstructions(context),
           this.generateMiddlePartHelp(context),
-          this.generateMiddlePartApps(context)
+          this.generateMiddlePartLegalInformation(context),
+        ]),
+        ml("div", { class: "n9g-rw"}, [
+          this.generateMiddlePartDevelopers(context),
+          this.generateMiddlePartContacts(context),
+          this.generateMiddlePartApps(context),
         ])
       ])
     );
@@ -114,22 +114,17 @@ export default {
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "purseManagement").url }, getLink(context, "purseManagement").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "systemFees").url }, getLink(context, "systemFees").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "operationLimits").url }, getLink(context, "operationLimits").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "statistics").url }, getLink(context, "statistics").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "securityAndPrivacy").url }, getLink(context, "securityAndPrivacy").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "tabu").url }, getLink(context, "tabu").title)
     ]);
   },
 
-  generateMiddlePartPurseManagement: function (context) {
+  generateMiddlePartDevelopers: function (context) {
 
     return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
-      ml("div", { "class" : "n9g-mtl" }, local(context, "menuPurseManagement")),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperStandardMini").url }, getLink(context, "keeperStandardMini").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperWinProClassic").url }, getLink(context, "keeperWinProClassic").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperWebProLight").url }, getLink(context, "keeperWebProLight").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperMobile").url }, getLink(context, "keeperMobile").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "keeperForSocialNetworks").url }, getLink(context, "keeperForSocialNetworks").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "actionBlock").url }, getLink(context, "actionBlock").title),
+      ml("div", { "class" : "n9g-mtl" },  local(context, "menuDevelopers")),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "programInterfaces").url }, getLink(context, "programInterfaces").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "merchantInterface").url }, getLink(context, "merchantInterface").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "stylesAndDesign").url }, getLink(context, "stylesAndDesign").title),
     ]);
   },
 
@@ -153,16 +148,11 @@ export default {
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "technicalSupport").url }, getLink(context, "technicalSupport").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "financialSupport").url }, getLink(context, "financialSupport").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "forum").url }, getLink(context, "forum").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "AskQuestion").url }, getLink(context, "AskQuestion").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "videoTutorials").url }, getLink(context, "videoTutorials").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "searchPayment").url }, getLink(context, "searchPayment").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "interactiveMap").url }, getLink(context, "interactiveMap").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "changeData").url }, getLink(context, "changeData").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "legalEntityWmid").url }, getLink(context, "legalEntityWmid").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "pretenzIIski").url }, getLink(context, "pretenzIIski").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "repaymentCPurse").url }, getLink(context, "repaymentCPurse").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "controlRecovery").url }, getLink(context, "controlRecovery").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "annullation").url }, getLink(context, "annullation").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "restoringControl").url }, getLink(context, "restoringControl").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "receivePassport").url }, getLink(context, "receivePassport").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "actionBlock").url }, getLink(context, "actionBlock").title),
     ]);
   },
 
@@ -170,12 +160,11 @@ export default {
 
     return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
       ml("div", { "class" : "n9g-mtl" }, local(context, "menuContactInformation")),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "ownerAndAdministrator").url }, getLink(context, "ownerAndAdministrator").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "wmPurseGuarantors").url }, getLink(context, "wmPurseGuarantors").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "contactsForLegalRequests").url }, getLink(context, "contactsForLegalRequests").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "registrars").url }, getLink(context, "registrars").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "verificationPoints").url }, getLink(context, "verificationPoints").title),
       ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "cooperation").url }, getLink(context, "cooperation").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "downloadSoftware3").url }, getLink(context, "downloadSoftware3").title)
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "pressService").url }, getLink(context, "pressService").title)
     ]);
   },
 
@@ -183,31 +172,21 @@ export default {
 
     return ml("div", { "class": "n9g-cln", "data-n7g-toggle-item": "" }, [
       ml("div", { "class" : "n9g-mtl" }, local(context, "menuInstrucciones")),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "registration").url }, getLink(context, "registration").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "poluchenieAttestata").url }, getLink(context, "poluchenieAttestata").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "photoId").url }, getLink(context, "photoId").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "changeBl").url }, getLink(context, "changeBl").title),
-
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "inoutOptions").url }, getLink(context, "inoutOptions").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "acceptPayments").url }, getLink(context, "acceptPayments").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "repayment").url }, getLink(context, "repayment").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "faq").url }, getLink(context, "faq").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "howToRegister").url }, getLink(context, "howToRegister").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "howToCreateWallet").url }, getLink(context, "howToCreateWallet").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "howToTopUp").url }, getLink(context, "howToTopUp").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "howToIden").url }, getLink(context, "howToIden").title),
+      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "videoTutorials").url }, getLink(context, "videoTutorials").title),
       
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "deleteWmid").url }, getLink(context, "deleteWmid").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "nevozvratDebt").url }, getLink(context, "nevozvratDebt").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "transactionHistory").url }, getLink(context, "transactionHistory").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "exchange").url }, getLink(context, "exchange").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "securityLimits").url }, getLink(context, "securityLimits").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "bankCards").url }, getLink(context, "bankCards").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "checkCorr").url }, getLink(context, "checkCorr").title),
-      ml("a", { "class" : "n9g-mlk", "href" : getLink(context, "automats").url }, getLink(context, "automats").title),
     ]);
   },
 
   generateMiddlePartApps: function (context) {
 
     return ml("div", { "class": "n9g-cln n9g-cln--x2" }, [
-      ml("div", { class: "n9g-mtl"}, local(context, "menuMobileApps")),
-      ml("div", { class: "n9g-aps" }, [
+      ml("div", { class: "n9g-mtl n9g-smp"}, local(context, "menuMobileApps")),
+      ml("div", { class: "n9g-aps n9g-smp" }, [
         ml("a", { class: "n9g-ait", href: getLink(context, "appAppStore").url }, [
           ml("span", { class: "n9g-aim" }, 
             ml("img", { class: "n9g-aig", src: require("../images/apps/app-store.svg") })
@@ -220,20 +199,26 @@ export default {
           ),
           ml("span", { class: "n9g-atx" }, getLink(context, "appGooglePlay").title)
         ]),
-        ml("a", { class: "n9g-ait", href: getLink(context, "appMicrosoftStore").url }, [
+        ml("a", { class: "n9g-ait", href: getLink(context, "appAppGallery").url }, [
           ml("span", { class: "n9g-aim" }, 
-            ml("img", { class: "n9g-aig", src: require("../images/apps/windows-store.svg") })
+            ml("img", { class: "n9g-aig", src: require("../images/apps/app-gallery.svg") })
           ),
-          ml("span", { class: "n9g-atx" }, getLink(context, "appMicrosoftStore").title)
+          ml("span", { class: "n9g-atx" }, getLink(context, "appAppGallery").title)
         ])
       ]),
-      ml("div", { class: "n9g-mtl"}, local(context, "menuPcApps")),
-      ml("div", { class: "n9g-aps" }, [
+      ml("div", { class: "n9g-mtl n9g-pc"}, local(context, "menuPcApps")),
+      ml("div", { class: "n9g-aps n9g-pc" }, [
         ml("a", { class: "n9g-ait", href: getLink(context, "appWindows").url }, [
           ml("span", { class: "n9g-aim" }, 
             ml("img", { class: "n9g-aig", src: require("../images/apps/windows.svg") })
           ),
           ml("span", { class: "n9g-atx" }, getLink(context, "appWindows").title)
+        ]),
+        ml("a", { class: "n9g-ait", href: getLink(context, "appMicrosoftStore").url }, [
+          ml("span", { class: "n9g-aim" }, 
+            ml("img", { class: "n9g-aig", src: require("../images/apps/windows-store.svg") })
+          ),
+          ml("span", { class: "n9g-atx" }, getLink(context, "appMicrosoftStore").title)
         ]),
         ml("a", { class: "n9g-ait", href: getLink(context, "appMacOS").url }, [
           ml("span", { class: "n9g-aim" }, 

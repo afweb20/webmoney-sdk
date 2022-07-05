@@ -7,13 +7,21 @@ var localization = {
     "tr": "WebMoney Hakkında",
     "vn": "About WebMoney"
   },
-  menuPurseManagement: {
-    "ru": "Управление кошельками",
-    "en": "Purse management",
-    "es": "Manejar los monederos",
-    "pt": "Métodos para gerir contas",
-    "tr": "Cüzdanların yönetimi",
-    "vn": "Purse management"
+  menuInstrucciones: {
+    "ru": "Инструкции",
+    "en": "Instructions",
+    "es": "Instrucciones",
+    "pt": "Instruções",
+    "tr": "Talimatlar",
+    "vn": "Instructions"
+  },
+  menuHelp: {
+    "ru": "Помощь",
+    "en": "Help",
+    "es": "Ayuda",
+    "pt": "Ajuda",
+    "tr": "Yardım",
+    "vn": "Help"
   },
   menuLegalInformation: {
     "ru": "Юридическая информация",
@@ -23,29 +31,21 @@ var localization = {
     "tr": "Hukuki bilgiler",
     "vn": "Legal information"
   },
+  menuDevelopers: {
+    "ru": "Разработчикам",
+    "en": "For developers",
+    "es": "Para desorolladores",
+    "pt": "Para programadores",
+    "tr": "Geliştiriciler için",
+    "vn": "For developers"
+  },
   menuContactInformation: {
-    "ru": "Контактная информация",
-    "en": "Contact information",
-    "es": "Información del contacto",
-    "pt": "Informações de contato",
-    "tr": "İletişim bilgileri",
-    "vn": "Contact information"
-  },
-  menuInstrucciones: {
-    "ru": "Инструкции",
-    "en": "Instrucciones",
-    "es": "Instrucciones",
-    "pt": "Instruções",
-    "tr": "Talimatlar",
-    "vn": "Instrucciones"
-  },
-  menuHelp: {
-    "ru": "Помощь",
-    "en": "Help",
-    "es": "Ayuda",
-    "pt": "Ajuda",
-    "tr": "Yardım",
-    "vn": "Help"
+    "ru": "Контакты",
+    "en": "Contacts",
+    "es": "Contacto",
+    "pt": "Contacto",
+    "tr": "Kişi",
+    "vn": "Contacts"
   },
   menuMobileApps: {
     "ru": "Приложения для смартфонов",

@@ -23,6 +23,14 @@ var localization = {
     "tr":"Kripto para",
     "vn": "Cryptocurrency"
   },
+  menuAcceptingPayments: {
+    "ru":"Прием платежей",
+    "en":"Accepting payments",
+    "es":"Aceptar pagos",
+    "pt":"Aceitando pagamentos",
+    "tr":"Ödemeleri kabul etmek",
+    "vn": "Accepting payments"
+  },
   menuExchange: {
     "ru":"Обменять",
     "en":"Exchange",
@@ -310,6 +318,14 @@ var localization = {
     "pt": "Configurações de sessão",
     "tr": "Giriş ayarları",
     "vn": "Thiết lập đăng nhập"
+  },
+  wmidCopied: {
+    "ru": "WMID скопирован",
+    "en": "WMID copied",
+    "es": "WMID copiado",
+    "pt": "WMID copiado",
+    "tr": "WMID kopyalandı",
+    "vn": "WMID đã được sao chép"
   },
   otherWmid: {
     "ru": "Другие WMID",

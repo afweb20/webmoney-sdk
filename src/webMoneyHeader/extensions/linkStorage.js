@@ -29,6 +29,7 @@ var constUrlHelpGeneral =  constUrlHelp + "/general";
 var constUrlHelpFinancial  =  constUrlHelp + "/financial";
 
 var constUrlBusinessAcceptPaymentsOnlineShop = "/business/accept-payments/online-shop";
+var constUrlBusinessAcceptPaymentsGamesAndApps = "/business/accept-payments/games-and-apps";
 var constUrlIndividualsCredit = "/individuals/credit";
 var constUrlDevelopers = "/developers";
 var constUrlLegal = "/legal";
@@ -88,6 +89,114 @@ var linkStorage = {
   servSteam: {
     t: ["Steam"],
     u: ["telepay.web.money", ["/ru", "/en", "/en", "/en", "/en"], "/operator/5714"]
+  },
+  servPayLink: {
+    t: ["Платежная ссылка", "Payment link", "Enlace de pago",
+      "Link de pagamento",
+      "Ödeme bağlantısı"
+    ],
+    u: "paylink.webmoney.ru"
+  },
+  servVcard: {
+    t: ["QR-визитка", "QR business card", "Tarjeta de visita QR",
+      "Cartão de visita qr",
+      "QR kartvizit"
+    ],
+    u: "vcard.webmoney.ru"
+  },
+  servWidget: {
+    t: ["Виджет/кнопка для сайта", "Widget/button for website", "",
+      "Widget/botão para site",
+      "Web sitesi için widget/düğme"
+    ],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/widget.shtml"]
+  },
+  servX20: {
+    t: ["Встроенные платежи", "Built-in payments", "Pagos incorporados",
+      "Pagamentos integrados",
+      "Yerleşik ödemeler"
+    ],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlBusinessAcceptPaymentsGamesAndApps, "/x20.shtml"]
+  },
+  servMerchant: {
+    t: ["Автоматизировать платежи", "Automate payments", "Automatice los pagos",
+      "Automatize pagamentos",
+      "Ödemeleri otomatikleştirin"
+    ],
+    u: "merchant.webmoney.ru/conf/default.asp"
+  },
+  servMasspayment: {
+    t: ["Массовые выплаты", "Mass payouts", "Pagos masivos",
+      "Pagamentos em massa",
+      "Toplu ödemeler"
+    ],
+    u: "masspayment.wmtransfer.com"
+  },
+  servRebills: {
+    t: ["Периодические платежи", "Recurring payments", "Pagos recurrentes",
+      "Pagamentos recorrentes",
+      "Pagamentos yeniden düzenlemeleri"
+    ],
+    u: "rebills.wmtransfer.com"
+  },
+  servFilesPay: {
+    t: ["Продавать файлы", "Sell files", "Vender archivos",
+      "Vender arquivos",
+      "Satıcı Arquivos"
+    ],
+    u: "promo.web.money/webmoney-files"
+  },
+  servSoftactivation: {
+    t: ["Создать магазин цифровых товаров", "Create a digital goods store", "Crear una tienda de productos digitales",
+      "Crie uma loja de produtos digitais",
+      "Dijital bir ürün mağazası oluşturun"
+    ],
+    u: "softactivation.webmoney.ru"
+  },
+  servFunding: {
+    t: ["Организовать сбор средств на проект", "Organize fundraising for the project", "Organizar la recaudación de fondos para el proyecto",
+      "Organize a arrecadação de fundos para o projeto",
+      "Proje için bağış toplama organizasyonu"
+    ],
+    u: "funding.webmoney.ru"
+  },
+  servBankPay: {
+    t: ["Принимать платежи на банковский счет", "Accept payments to a bank account", "Aceptar pagos a una cuenta bancaria",
+      "Aceitar pagamentos para uma conta bancária",
+      "Bir banka hesabına ödeme kabul edin"
+    ],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/bank.shtml"]
+  },
+  servAnalytics: {
+    t: ["Сервис аналитики", "Analytics service", "Servicio de análisis",
+      "Serviço de análise",
+      "Analitik hizmeti"
+    ],
+    u: "analytics.webmoney.ru"
+  },
+  servFundingGroup: {
+    t: ["Организовать коллективную покупку", "Organize a group purchase", "Organizar una compra en grupo",
+      "Organize uma compra em grupo",
+      "Bir grup satın alma düzenleyin"
+    ],
+    u: "funding.webmoney.ru/group"
+  },
+  servFundingTickets: {
+    t: ["Начать продажу билетов", "Start selling tickets", "Empezar a vender entradas",
+      "Comece a vender ingressos",
+      "Bilet satmaya başla"
+    ],
+    u: "funding.webmoney.ru/tickets"
+  },
+  servFunding: {
+    t: ["Краудфандинг и донаты", "Crowdfunding and donations", "Crowdfunding y donaciones",
+      "Crowdfunding e doações",
+      "Kitle fonlaması ve bağışlar"
+    ],
+    u: "funding.webmoney.ru"
   },
   // =========================
   // Приложения
@@ -422,9 +531,9 @@ var linkStorage = {
     u: "softactivation.webmoney.ru"
   },
   indx: {
-    t: ["INDX: фондовая биржа", "INDX: Stock exchange", "INDX: bolsa de fondos", 
-      "INDX: bolsa de fundos",
-      "INDX: borsa"
+    t: ["Интернет-биржа INDX", "Internet-exchange INDX", "Intercambio de Internet INDX", 
+      "Internet Exchange INDX",
+      "Internet Değişim INDX'i"
     ],
     u: "indx.money/about"
   },
@@ -755,7 +864,10 @@ var linkStorage = {
     u: "passport.web.money"
   },
   receivePassport: {
-    t: ["Получить аттестат", "Receive WebMoney passport", "Recibir el atestado", 
+    t: [
+      "Получить аттестат", 
+      "Receive WebMoney passport", 
+      "Recibir el atestado", 
       "Receber certificado",
       "Belge alma"
     ],
@@ -944,6 +1056,26 @@ var linkStorage = {
     d: constAllDomainTypes,
     u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/merchant.shtml"]
   },
+  merchantInterface: {
+    t: [
+      "Web Merchant Interface"
+    ],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlBusinessAcceptPaymentsOnlineShop, "/merchant.shtml"]
+  },
+  pressService: {
+    t: [
+      "Пресс-центр", 
+      "Press-centre", 
+      "Centro de prensa", 
+      "Centro de imprensa",
+      "Basın merkezi",
+      "Press-centre", 
+    ],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlLegal, "/press-service.shtml"]
+  },
+
   paymentsToBankAccounts: {
     
     t: ["Прием платежей на банковский счет", "Payments to bank accounts", "Pagos a cuentas bancarias", 
@@ -1180,7 +1312,6 @@ var linkStorage = {
     u: "subscribe.web.money/subscribe"
   },
   programInterfaces: {
-    
     t: ["API: программные интерфейсы", "API: Program interfaces", "API: aplicaciónes", 
       "API: aplicações",
       "API: program arayüzleri"
@@ -1189,8 +1320,10 @@ var linkStorage = {
     u: [constLangs, constUrlDevelopers, "/api.shtml"]
   },
   stylesAndDesign: {
-    
-    t: ["Дизайн и стили", "Styles and design", "Diseño y estilos", 
+    t: [
+      "Дизайн и стили", 
+      "Styles and design", 
+      "Diseño y estilos", 
       "Desenho e estilos",
       "Dizayn ve stiller"
     ],
@@ -1218,6 +1351,56 @@ var linkStorage = {
     d: constAllDomainTypes,
     u: [constLangs, constUrlHelpStart, "/registration.shtml"]
   },
+  faq: {
+    t: [
+      "FAQ"
+    ],
+    u: ["wiki.web.money/projects/webmoney/wiki/FAQ"]
+  },
+  howToRegister: {
+    t: [
+      "Как зарегистрироваться", 
+      "How to register", 
+      "Cómo registrarse", 
+      "Como se registrar",
+      "Nasıl kayıt olunur"
+    ],
+    d: constAllDomainTypes,
+    u: [constLangs, constUrlHelpStart, "/registration.shtml"]
+  },
+  howToCreateWallet: {
+    t: [
+      "Как создать кошелек", 
+      "How to create a wallet", 
+      "Cómo crear una billetera", 
+      "Como criar uma carteira",
+      "Bir cüzdan nasıl oluşturulur"
+    ],
+    u: ["wiki.web.money/projects/webmoney/wiki/kak_sozdat_wm_koshelek_v_wm_keeper"]
+  },
+  howToTopUp: {
+    t: [
+      "Как пополнить кошелек", 
+      "How to top up your wallet", 
+      "Cómo recargar su billetera", 
+      "Como recarregar sua carteira",
+      "Cüzdanınızı nasıl doldurabilirsiniz"
+    ],
+    u: ["wiki.web.money/projects/webmoney/wiki/sposoby_popolneniya"]
+  },
+  howToIden: {
+    t: [
+      "Как пройти идентификацию", 
+      "How to complete identification", 
+      "Cómo completar la identificación", 
+      "Como completar a identificação",
+      "Tanımlama nasıl tamamlanır"
+    ],
+    u: ["wiki.web.money/projects/webmoney/wiki/sposoby_popolneniya"]
+  },
+
+
+  
   inoutOptions: {
     
     t: ["Выбор способа ввода/вывода", "Choosing a method for input/output", "Seleccionar el metodo de recarga/retiro", 
@@ -1468,8 +1651,10 @@ var linkStorage = {
     u: [constLangs, constUrlHelpFinancial, "/legal_entity_wmid.shtml"]
   },
   videoTutorials: {
-    
-    t: ["Обучающие видео", "Video tutorials", "Video Tutorial", 
+    t: [
+      "Обучающие видео", 
+      "Video tutorials", 
+      "Video Tutorial", 
       "Tutorial em vídeo",
       "Videolu eğitim"
     ],
