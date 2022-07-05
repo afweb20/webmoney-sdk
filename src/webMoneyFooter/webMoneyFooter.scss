@@ -57,8 +57,10 @@ $gray900: #111927;
   background-color: transparent;
   text-decoration: none;
   &:hover,
-  &:active {
+  &:active,
+  &:visited {
     outline: none;
+    text-decoration: none;  
   }
 }
 

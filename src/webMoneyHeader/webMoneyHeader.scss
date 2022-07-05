@@ -55,7 +55,9 @@ $wm-blue: #006cb4;
   background-color: transparent;
   text-decoration: none;
   &:hover,
-  &:active {
+  &:active,
+  &:visited {
+    text-decoration: none;
     outline: none;
   }
 }
