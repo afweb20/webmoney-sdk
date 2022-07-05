@@ -143,7 +143,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     position: static;
     min-width: 320px;
     padding-left: 0;
-    padding-right: 64px;
+    padding-right: 24px;
   }
   &-dtr{
     width: 1px;
@@ -340,6 +340,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: 16px;
     // margin-left: -12px;
     .n7g-sbtn{
       transition: all 0.3s ease-out;
@@ -510,7 +511,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     font-size: 14px;
     line-height: 16px;
     padding-right: 16px;
-    display: block;
+    display: none;
     color: $gray500;
   }
   &-uim{
@@ -770,7 +771,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     cursor: pointer;
     transition: all 0.3s;
     display: block;
-    padding: 6px 0;
+    // padding: 6px 0;
     text-decoration: none;
     &:visited,
     &:active,
@@ -881,7 +882,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
         }
         @media (min-width: 768px) {
           padding-left: 0;
-          padding-right: 64px;
+          padding-right: 24px;
           display: flex;
         }
       }
@@ -1053,7 +1054,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
       &-unm{
         display: none;
         @media (min-width: 992px) {
-          display: block;
+          display: none;
         }
       }
       &-lbi{

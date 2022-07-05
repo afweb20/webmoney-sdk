@@ -23,12 +23,12 @@ export default {
                   ml("div", { "class": "n7g-lki" }, local(context, "menuServices"))
                 ),
                 this.generateFirstLevelMenu(context),
-                this.generateSearchBlock(context)
               ])
             ]),
-            ml("div", { "class": "n7g-rgt" }, 
+            ml("div", { "class": "n7g-rgt" }, [
+              this.generateSearchBlock(context),
               this.generateLoginBlock(context)
-            )
+            ])
           ]),
           ml("div", { "class": "n7g-bgr-dd", "data-n7g-burger-drop-down-menu": "" })
         ])

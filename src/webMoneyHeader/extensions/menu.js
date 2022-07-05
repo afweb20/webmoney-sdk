@@ -62,16 +62,8 @@ export default {
 
     loginBlockToggleMenuElement.addEventListener("click", function (event) {
 
-
       loginBlockToggleMenuElement.classList.toggle(activeClassName);
       loginBlockDropDownMenuElement.classList.toggle(activeClassName);
-
-      if (!wmidCopyElement.contains(event.target)) {
-
-        
-
-      }
-
     });
 
     wmidCopyElement.addEventListener("click", function (event) {
@@ -133,7 +125,8 @@ export default {
       && !servicesToggleMenuElement.classList.contains(activeClassName)
       && !individiualsToggleMenuElement.classList.contains(activeClassName)
       && !businessToggleMenuElement.classList.contains(activeClassName)
-      && !searchToggleMenuElement.classList.contains(activeClassName)) {
+      && !searchToggleMenuElement.contains(event.target)
+      && !loginBlockToggleMenuElement.contains(event.target)) {
 
         servicesToggleMenuElement.classList.add(activeClassName);
         servicesDropDownMenuElement.classList.add(activeClassName);
@@ -143,8 +136,7 @@ export default {
 
         if (servicesToggleMenuElement.classList.contains(activeClassName)
         || individiualsToggleMenuElement.classList.contains(activeClassName)
-        || businessToggleMenuElement.classList.contains(activeClassName)
-        || searchToggleMenuElement.classList.contains(activeClassName)) {
+        || businessToggleMenuElement.classList.contains(activeClassName)) {
         
           burgerToggleMenuElement.classList.add(activeClassName);
           burgerDropDownMenuElement.classList.add(activeClassName);
@@ -153,8 +145,7 @@ export default {
 
         if (!servicesToggleMenuElement.classList.contains(activeClassName)
         && !individiualsToggleMenuElement.classList.contains(activeClassName)
-        && !businessToggleMenuElement.classList.contains(activeClassName)
-        && !searchToggleMenuElement.classList.contains(activeClassName)) {
+        && !businessToggleMenuElement.classList.contains(activeClassName)) {
         
           burgerToggleMenuElement.classList.remove(activeClassName);
           burgerDropDownMenuElement.classList.remove(activeClassName);
