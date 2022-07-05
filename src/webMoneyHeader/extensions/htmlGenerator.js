@@ -36,7 +36,8 @@ export default {
       this.generateServicesDropDown(context),
       this.generateIndividualsDropDown(context),
       this.generateBusinessDropDown(context),
-      this.generateSearchDropDown(context)
+      this.generateSearchDropDown(context),
+      this.generateUserDropDown(context)
     ]);
   },
 
@@ -74,41 +75,8 @@ export default {
         ml("div", {"class": "n7g-uln"}, [
           ml("div", {"class": "n7g-unm", "data-n7g-preview": ""}, ""),
           ml("img", {"class": "n7g-uim", "data-n7g-avatar": ""})
-        ]),
-        ml("div", {"class": "n7g-wdw"}, [
-
-          ml("div", {"class": "n7g-usr"}, 
-            ml("div", {"class": "n7g-uwr"},[
-              ml("a", {"class": "n7g-uil", "data-n7g-events-url": "", "href": "#"}, 
-                ml("img", {"class": "n7g-uifm", "data-n7g-avatar": ""})
-              ),
-              ml("div", {"class": "n7g-uif"}, [
-                ml("a", {"class": "n7g-ufnm", "data-n7g-events-url": "", "href": "#"}, 
-                  ml("span", {"class": "n7g-unt", "data-n7g-display-name": ""}, "")
-                ),
-                ml("div", {
-                  "class": "n7g-unmw", 
-                  "data-n7g-wmid": "", 
-                  "data-n7g-copy-wmid": "", 
-                  "title": "Скопировать WMID"
-                }, ""),
-                ml("div", {
-                  "class": "n7g-unmwa", 
-                }, local(context, "wmidCopied"))
-              ])
-            ]) 
-          ),
-
-          ml("a", {"class": "n7g-itm n7g-itm--purse", "data-n7g-keeper-url": "", "href": "#"}, local(context, "buttonMyPurse")),
-          ml("a", {"class": "n7g-itm n7g-itm--profile", "data-n7g-events-url": "", "href": "#"}, local(context, "buttonEvents")),
-          ml("a", {"class": "n7g-itm n7g-itm--settings", "data-n7g-settings-url": "", "href": "#"}, local(context, "buttonLogInSettings")),
-          ml("a", {"class": "n7g-itm n7g-itm--logout", "data-n7g-log-out-url": "", "href": "#"}, local(context, "buttonLogOut")),
-    
-          ml("div", {"class": "n7g-owd", "data-n7g-other-wmid-text": ""}, local(context, "otherWmid")),
-
-          ml("div", {"class": "n7g-awl", "data-n7g-other-wmid-wrapper": ""}),
-          ml("a", {"class": "n7g-itm n7g-itm--login", "data-n7g-re-login-url": "", "href": "#"}, local(context, "buttonLogInAnotherWmid"))
         ])
+        
       ])
     ]);
   },
@@ -418,6 +386,49 @@ export default {
 
           ])
 
+        ])
+      )
+    );
+
+  },
+
+  generateUserDropDown : function (context) {
+
+    return ml("div", { "class": "n7g-logb-dd", "data-n7g-login-block-drop-down-menu": "" }, 
+      ml("div", { "class": "n7g-ctr" }, 
+        ml("div", {"class": "n7g-wdw"}, [
+
+          ml("div", {"class": "n7g-usr"}, 
+            ml("div", {"class": "n7g-uwr"},[
+              ml("a", {"class": "n7g-uil", "data-n7g-events-url": "", "href": "#"}, 
+                ml("img", {"class": "n7g-uifm", "data-n7g-avatar": ""})
+              ),
+              ml("div", {"class": "n7g-uif"}, [
+                ml("a", {"class": "n7g-ufnm", "data-n7g-events-url": "", "href": "#"}, 
+                  ml("span", {"class": "n7g-unt", "data-n7g-display-name": ""}, "")
+                ),
+                ml("div", {
+                  "class": "n7g-unmw", 
+                  "data-n7g-wmid": "", 
+                  "data-n7g-copy-wmid": "", 
+                  "title": "Скопировать WMID"
+                }, ""),
+                ml("div", {
+                  "class": "n7g-unmwa", 
+                }, local(context, "wmidCopied"))
+              ])
+            ]) 
+          ),
+
+          ml("a", {"class": "n7g-itm n7g-itm--purse", "data-n7g-keeper-url": "", "href": "#"}, local(context, "buttonMyPurse")),
+          ml("a", {"class": "n7g-itm n7g-itm--profile", "data-n7g-events-url": "", "href": "#"}, local(context, "buttonEvents")),
+          ml("a", {"class": "n7g-itm n7g-itm--settings", "data-n7g-settings-url": "", "href": "#"}, local(context, "buttonLogInSettings")),
+          ml("a", {"class": "n7g-itm n7g-itm--logout", "data-n7g-log-out-url": "", "href": "#"}, local(context, "buttonLogOut")),
+    
+          ml("div", {"class": "n7g-owd", "data-n7g-other-wmid-text": ""}, local(context, "otherWmid")),
+
+          ml("div", {"class": "n7g-awl", "data-n7g-other-wmid-wrapper": ""}),
+          ml("a", {"class": "n7g-itm n7g-itm--login", "data-n7g-re-login-url": "", "href": "#"}, local(context, "buttonLogInAnotherWmid"))
         ])
       )
     );

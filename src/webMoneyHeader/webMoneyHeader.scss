@@ -781,6 +781,17 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
       color: $brand500;
     }
   }
+  &-logb-dd{
+    .n7g-ctr{
+      position: relative;
+    }
+    &.n7g-is-a{
+      .n7g-wdw{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
   &.n7g-desktop {
     min-width: 960px;
     .n7g-slv{

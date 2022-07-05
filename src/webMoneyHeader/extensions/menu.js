@@ -25,6 +25,7 @@ export default {
     var searchDropDownMenuElement = rootElement.querySelector("[data-n7g-search-drop-down-menu]");
 
     var loginBlockToggleMenuElement = rootElement.querySelector("[data-n7g-login-block-toggle-menu]");
+    var loginBlockDropDownMenuElement = rootElement.querySelector("[data-n7g-login-block-drop-down-menu]");
 
     var wmidElement = rootElement.querySelector("[data-n7g-wmid]");
     var wmidCopyElement = rootElement.querySelector("[data-n7g-copy-wmid]");
@@ -61,10 +62,16 @@ export default {
 
     loginBlockToggleMenuElement.addEventListener("click", function (event) {
 
+
+      loginBlockToggleMenuElement.classList.toggle(activeClassName);
+      loginBlockDropDownMenuElement.classList.toggle(activeClassName);
+
       if (!wmidCopyElement.contains(event.target)) {
 
-        loginBlockToggleMenuElement.classList.toggle(activeClassName);
+        
+
       }
+
     });
 
     wmidCopyElement.addEventListener("click", function (event) {
@@ -112,9 +119,11 @@ export default {
         searchDropDownMenuElement.classList.remove(activeClassName);
       }
 
-      if (!loginBlockToggleMenuElement.contains(event.target)) {
+      if (!loginBlockToggleMenuElement.contains(event.target)
+      && !loginBlockDropDownMenuElement.contains(event.target)) {
 
         loginBlockToggleMenuElement.classList.remove(activeClassName);
+        loginBlockDropDownMenuElement.classList.remove(activeClassName);
       }
 
       var isBurgerVisible = burgerToggleMenuElement.offsetWidth > 0 || burgerToggleMenuElement.offsetHeight > 0;
