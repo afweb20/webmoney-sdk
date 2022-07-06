@@ -305,7 +305,8 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     text-decoration: none;
     font-family: "Manrope", "Helvetica", sans-serif;
     transition: all 0.3s;
-    padding: 4px 32px 4px 8px;
+    // padding: 4px 32px 4px 8px;
+    padding: 4px 8px;
     margin-right: 24px;
     @include noselection;
     // &:after{
