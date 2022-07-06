@@ -129,7 +129,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
   }
   &-lgo{
     display: block;
-    padding: 16px 0;
+    padding: 12px 0;
     margin-right: 24px;
   }
   &-lgi{ 
@@ -148,7 +148,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
   &-dtr{
     width: 1px;
     background-color: $gray100;
-    height: calc(100% - 32px);
+    height: calc(100% - 24px);
     margin-right: 24px;
     display: block;
   }
@@ -160,7 +160,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     margin-right: 24px;
     text-indent: -9999px;
     transition: all 0.3s ease-out;
-    
+    border-radius: 8px;
     & > .n7g-lki:after{
       display: none;
     }
@@ -308,64 +308,61 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     padding: 4px 32px 4px 8px;
     margin-right: 24px;
     @include noselection;
-    &:after{
-      content: "";
-      display: block;
-      background: transparent url("./images/arrow-down.svg") center center no-repeat;
-      width: 32px;
-      height: 32px;
-      position: absolute;
-      right: 0px;
-      top: 50%;
-      margin-top: -16px;
-    }
+    // &:after{
+    //   content: "";
+    //   display: block;
+    //   background: transparent url("./images/arrow-down.svg") center center no-repeat;
+    //   width: 32px;
+    //   height: 32px;
+    //   position: absolute;
+    //   right: 0px;
+    //   top: 50%;
+    //   margin-top: -16px;
+    // }
     &:hover{
       color: #006cb4;
-      &:after{
-        background: transparent url("./images/arrow-down-a.svg") center center no-repeat;
-      }
+      // &:after{
+      //   background: transparent url("./images/arrow-down-a.svg") center center no-repeat;
+      // }
     }
     &.n7g-is-a{
       color: $brand500;
-      &:after {
-        background: transparent url("./images/arrow-up.svg") center center no-repeat;
-      }
+      // &:after {
+      //   background: transparent url("./images/arrow-up.svg") center center no-repeat;
+      // }
     }
   }
   &-srh{
     background-color: #fff;
     border-radius: 4px;
-    right: 40px;
-    width: 40px;
+    right: 32px;
+    width: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 16px;
-    // margin-left: -12px;
     .n7g-sbtn{
       transition: all 0.3s ease-out;
+      border-radius: 8px;
     }
     &.n7g-is-a{
       .n7g-sbtn{
         background: transparent url("./images/search-a.svg") center center no-repeat;
-        background-size: 38px;
       }
     }
     &:hover{
       .n7g-sbtn{
         background: transparent url("./images/search-a.svg") center center no-repeat;
-        background-size: 38px;
       }
     }
   }
   &-sbtn{
     background: transparent url("./images/search.svg") center center no-repeat;
-    width: 38px;
-    height: 38px;
+    width: 32px;
+    height: 32px;
     cursor: pointer;
     position: relative;
     z-index: 1;
-    background-size: 38px;
   }
   input.n7g-sbxi{
     height: auto;
@@ -515,9 +512,9 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
     color: $gray500;
   }
   &-uim{
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
     @include noselection;
   }
   &-wdw{
@@ -690,11 +687,11 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
   }
   &-lbi{
     font: $fontbodysemibold;
-    padding: 7px 16px;
+    padding: 3px 16px;
     display: block;
     border: 1px solid;
     border-radius: 8px;
-    margin-left: 16px;
+    margin-left: 8px;
     margin-right: 0; 
     transition: all 0.3s;
     &--log{
@@ -705,14 +702,25 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
         background-color: #005794;
         color: #fff;
       }
+      &:visited,
+      &:active,
+      &:focus{
+        color: $white;
+      }
     }
     &--reg{
-      border-color: #036CB5;
-      color: #036CB5;
+      border-color: $brand500;
+      color: $brand500;
       display: block;
+      margin-left: 0;
       &:hover{
         background-color: #005794;
         color: #fff;
+      }
+      &:visited,
+      &:active,
+      &:focus{
+        color: $brand500;
       }
     }
   }
@@ -738,8 +746,8 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
       transition: all 0.3s;
       padding: 24px 0 28px;
       position: absolute;
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-      top: 64px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+      top: 56px;
       .n7g-ctt{
         @media (max-width: 767px) {
           display: block;
@@ -860,14 +868,8 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
         padding: 8px 0;
         margin-right: 0;
         @media (min-width: 768px) {
-          padding: 16px 0;
+          padding: 12px 0;
           margin-right: 24px;
-        }
-      }
-      &-uim{
-        @media (max-width: 767px) {
-          width: 32px;
-          height: 32px;
         }
       }
       &-mdl{
@@ -886,17 +888,22 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
           display: flex;
         }
       }
+      &-srh{
+        @media (max-width: 767px) {
+          margin-right: 0;
+        }
+      }
       &-dtr{
         display: none;
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
           display: block;
         }
       }
       &-svs{
         margin-right: 0;
-        & > .n7g-lki:after{
-          display: none;
-        }
+        // & > .n7g-lki:after{
+        //   display: none;
+        // }
         @media (max-width: 575px) {
           width: auto;
           height: auto;
@@ -906,9 +913,9 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
           }
         }
         @media (max-width: 767px) {
-          background-size: 28px;
+          // background-size: 28px;
         }
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
           margin-right: 24px;
         }
         &.n7g-is-a{
@@ -1002,6 +1009,13 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
           margin-right: 12px;
         }
       }
+      &-lgb{
+        &.n7g-is-logged-in{
+          @media (max-width: 767px) {
+            margin-left: 16px
+          }
+        }
+      }
       &-lki{
         padding: 0 8px;
         margin-right: 0;
@@ -1009,28 +1023,29 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
           color: #006cb4;
         }
         @media (max-width: 575px) {
-          font-size: 12px;
+          font-size: 14px;
         }
         @media (max-width: 767px) {
-          &:after{
-            display: none;
-          }
+          // &:after{
+          //   display: none;
+          // }
         }
-        @media (min-width: 768px) {
-          padding: 4px 32px 4px 8px;
+        @media (min-width: 992px) {
+          // padding: 4px 32px 4px 8px;
+          padding: 4px 8px;
           margin-right: 24px;
-          &:after{
-            display: block;
-          }
+          // &:after{
+          //   display: block;
+          // }
           &.n7g-is-a{
             &:hover{
               color: #006cb4;
             }
-            &:after {
-              background: transparent url("./images/arrow-down-a.svg") center center no-repeat;
-              transform: rotate(-180deg);
-              margin-top: -15px;
-            }
+            // &:after {
+            //   background: transparent url("./images/arrow-down-a.svg") center center no-repeat;
+            //   transform: rotate(-180deg);
+            //   margin-top: -15px;
+            // }
           }
         }
       }
@@ -1039,8 +1054,8 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
         right: auto;
         width: auto;
         @media (min-width: 768px) {
-          right: 40px;
-          width: 40px;
+          right: 32px;
+          width: 32px;
           display: flex;
           align-items: center;
           justify-content: center;
@@ -1058,12 +1073,8 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
         }
       }
       &-lbi{
-        margin-left: 16px;
+        margin-left: 8px;
         margin-right: 0; 
-        @media (min-width: 768px) {
-          margin-left: 16px;
-          margin-right: 0; 
-        }
         &--log{
           @media (max-width: 767px) {
             background: transparent url("./images/login.svg") center center no-repeat;
@@ -1072,12 +1083,15 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
             height: 48px;
             border-radius: 0;
             text-indent: -9999px;
-            background-size: 32px;
+            background-size: 30px;
             margin-right: -12px;
+            padding: 0;
+            margin-left: 0;
           }
         }
         &--reg{
           display: none;
+          margin-left: 0;
           @media (min-width: 768px) {
             display: block;
           }
@@ -1087,7 +1101,7 @@ $fontbodyregular: 400 16px/24px "Manrope", "Helvetica", sans-serif;
         &.n7g-is-a{
           position: static;
           padding: 16px 0;
-          box-shadow: none;
+          // box-shadow: none;
           @media (min-width: 576px) {
             padding: 16px 0 24px;
           }

@@ -238,7 +238,7 @@ export default {
       ml("div", { class: "n9g-ctr" },
         ml("div", { class: "n9g-brw" }, [
           ml("div", { class: "n9g-btp" }, [
-            ml("img", { class: "n9g-blg", src: require("../images/logo.svg") }),
+            ml("img", { class: "n9g-blg", src: require("../images/wm-logo.svg") }),
             supportedLangs.length > 1 ? this.generateLangSelector(context) : ""
           ]),
           ml("div", { class: "n9g-bbp" }, [
