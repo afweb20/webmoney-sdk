@@ -82,7 +82,7 @@ module.exports = (env, argv) => {
       }),
       new CleanWebpackPlugin()
     ],
-    mode: enviroment
+    mode: enviroment == "stage" ? "production" : enviroment 
   };
 
   if (enviroment == "development") {
@@ -99,10 +99,12 @@ module.exports = (env, argv) => {
       hot: true,
       port: 3001
     };
+  } else if (enviroment == "stage") {
+
+    config.output.publicPath = "https://cdn.web.money/layout/stage/";
   } else {
 
     config.output.publicPath = "https://cdn.web.money/layout/";
-    // config.output.publicPath = "https://cdn.web.money/layout/stage/";
   }
 
   return config;

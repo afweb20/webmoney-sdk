@@ -5,7 +5,9 @@
   "author": "Kozlov Gleb / Anastasiia Frolova",
   "scripts": {
     "publish": "webpack --config webpack.config.js",
-    "start": "webpack serve"
+    "start": "webpack serve",
+    "prod": "npm run publish --env.enviroment=production",
+    "stage": "npm run publish --env.enviroment=stage"
   },
   "devDependencies": {
     "webpack": "^5.69.1",

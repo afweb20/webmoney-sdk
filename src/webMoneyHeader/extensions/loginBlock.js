@@ -286,7 +286,7 @@ export default {
 
   getSettingsUrl: function (context) {
 
-    var settingsUrl = this.getLoginServiceUrl(context) + "/GateKeeper/context.aspx";
+    var settingsUrl = this.getLoginServiceUrl(context) + "/GateKeeper/Options.aspx";
     
     return settingsUrl;
   },
